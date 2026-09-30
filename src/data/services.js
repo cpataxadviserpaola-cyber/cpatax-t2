@@ -635,15 +635,27 @@ export const services = [
       },
       {
         question: 'What are tax treaties, and how can they help me?',
-        answer: "Tax treaties between the U.S. and other countries help prevent double taxation by clarifying which country taxes certain income, and they may reduce rates on dividends, interest, and royalties. We can interpret your country's treaty and help you use its benefits.",
+        answer: 'Tax treaties between the U.S. and other countries help prevent double taxation by clarifying which country taxes certain income, and they may reduce rates on dividends, interest, and royalties.',
+      },
+      {
+        question: 'How do I know if my country has a tax treaty with the U.S.?',
+        answer: "The IRS publishes the list of U.S. tax treaties on its website. We can help you interpret your country's treaty and make sure you receive the benefits you're entitled to.",
       },
       {
         question: 'Do international students need to file U.S. taxes?',
-        answer: 'Most F-1 and J-1 visa holders must file. Students without income usually file Form 8843, while those with income, including OPT or CPT employment, may also need to file Form 1040-NR.',
+        answer: 'Most F-1 and J-1 visa holders must file a U.S. tax return, even without income. Students without income usually file Form 8843, while those with income may also need to file Form 1040-NR.',
       },
       {
         question: 'What is Form 8843?',
         answer: 'Form 8843 declares nonresident status for F-1, J-1, and similar visa holders. It must be filed even if you had no income.',
+      },
+      {
+        question: 'Can international students claim tax treaty benefits?',
+        answer: 'Yes. Many tax treaties let students exempt certain income, such as scholarships, fellowships, or employment earnings. We can help determine whether you qualify.',
+      },
+      {
+        question: 'Do students on OPT or CPT need to file U.S. taxes?',
+        answer: 'Yes. Students working under Optional Practical Training (OPT) or Curricular Practical Training (CPT) must file a return to report that income. Depending on your status and income, this may include Form 1040-NR and Form 8843.',
       },
       {
         question: 'Can international students receive a tax refund?',

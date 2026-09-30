@@ -4,14 +4,13 @@ import Icon from './Icon.jsx';
 import { links, site } from '../data/site.js';
 import { services } from '../data/services.js';
 
-// Only Home, About and Contact link for now; items without `to` show as plain text.
 const companyLinks = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About Us' },
-  { label: 'All Services' },
-  { label: 'Financial Planning' },
-  { label: 'Client Center' },
-  { label: 'FAQ' },
+  { to: '/services', label: 'All Services' },
+  { to: '/financial-planning', label: 'Financial Planning' },
+  { to: '/client-center', label: 'Client Center' },
+  { to: '/#faq', label: 'FAQ' },
   { to: '/contact', label: 'Contact' },
 ];
 
@@ -58,7 +57,7 @@ export default function Footer() {
             <ul className="footer-links">
               {services.map((service) => (
                 <li key={service.id}>
-                  <span className="footer-static">{service.name}</span>
+                  <Link to={`/services/${service.id}`}>{service.name}</Link>
                 </li>
               ))}
             </ul>
@@ -69,7 +68,7 @@ export default function Footer() {
             <ul className="footer-links">
               {companyLinks.map(({ to, label }) => (
                 <li key={label}>
-                  {to ? <Link to={to}>{label}</Link> : <span className="footer-static">{label}</span>}
+                  <Link to={to}>{label}</Link>
                 </li>
               ))}
             </ul>
@@ -107,10 +106,20 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>
-            &copy; {new Date().getFullYear()} {site.name}. All rights reserved. South Carolina
-            licensed CPA firm serving clients nationwide, in {site.languages}.
-          </p>
+          <div className="footer-legal">
+            <p>
+              &copy; {new Date().getFullYear()} {site.name}. All rights reserved. South Carolina
+              licensed CPA firm serving clients nationwide, in {site.languages}.
+            </p>
+            <ul>
+              <li>
+                <Link to="/privacy">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to="/disclaimer">Disclaimer</Link>
+              </li>
+            </ul>
+          </div>
           <p className="disclaimer">
             The information on this website is for general informational purposes only and does
             not constitute tax, legal, or accounting advice. Please consult a qualified professional

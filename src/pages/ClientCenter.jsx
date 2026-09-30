@@ -6,7 +6,7 @@ import ProcessSteps from '../components/ProcessSteps.jsx';
 import CtaSection from '../components/CtaSection.jsx';
 import usePageMeta from '../hooks/usePageMeta.js';
 import { links } from '../data/site.js';
-import { pricingNotes, pricingTables } from '../data/pricing.js';
+import { feeFactors, pricingNotes, pricingTables } from '../data/pricing.js';
 import { deadlineCountdown, getUpcomingDeadlines } from '../data/deadlines.js';
 import { asset } from '../utils/asset.js';
 
@@ -121,6 +121,30 @@ export default function ClientCenter() {
             {pricingNotes.intro}
           </SectionHead>
           <Pricing />
+          <div className="fee-factors reveal">
+            <h3 className="fee-factors-title">
+              What affects <em>your fee</em>
+            </h3>
+            <article className="fee-factor">
+              <span className="icon-badge">
+                <Icon name="file-check" />
+              </span>
+              <h4>How organized your records are</h4>
+              <p>{feeFactors.organization}</p>
+            </article>
+            <article className="fee-factor">
+              <span className="icon-badge icon-badge-gold">
+                <Icon name="chart" />
+              </span>
+              <h4>How complex your situation is</h4>
+              <p>{feeFactors.complexity}</p>
+              <ul className="tags" aria-label="Life events that often add complexity">
+                {feeFactors.events.map((event) => (
+                  <li key={event}>{event}</li>
+                ))}
+              </ul>
+            </article>
+          </div>
           <div className="pricing-foot reveal">
             <p>
               <Icon name="file" />

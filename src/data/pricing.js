@@ -11,6 +11,29 @@ export const pricingNotes = {
     'Business engagements involving multiple states, ownership changes, significant transactions, or accounting clean-up may exceed these ranges. Final fees are confirmed after reviewing your financial statements and scope of work.',
 };
 
+// The two things that most affect a fee, with the life events that often add complexity.
+// Source: cpataxadviser.com/pricing.php.
+export const feeFactors = {
+  organization:
+    'The more organized your financial documents are, the less time it takes for us to prepare your taxes.',
+  complexity:
+    'A more complicated tax situation takes more time. Expenditures, tax breaks, and life events like these often add to it:',
+  events: [
+    'Getting married',
+    'Having a child',
+    'Rental properties',
+    'Business activity',
+    'Portfolio activity',
+    'Education expenses',
+    'Buying or selling a home',
+    'A job promotion',
+    'An inheritance',
+    'A death in the family',
+    'Retirement contributions and distributions',
+    'Side employment',
+  ],
+};
+
 export const pricingTables = [
   {
     id: 'individual',

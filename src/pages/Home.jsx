@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     question: 'How much do your services cost?',
-    answer: 'The cost depends mainly on how organized your financial information is and how complex your tax situation is. The more organized your documents, the less time preparation takes, which saves you money. For small businesses we offer tailored accounting and tax bundles. You can find our current pricing guide in the Client Center.',
+    answer: 'The cost depends mainly on how organized your financial information is and how complex your tax situation is. The more organized your documents, the less time preparation takes, which saves you money. For small businesses we offer tailored accounting and tax bundles. Your initial consultation is free, and you can find our current pricing guide in the Client Center.',
   },
   {
     question: 'Do you offer services in Spanish?',

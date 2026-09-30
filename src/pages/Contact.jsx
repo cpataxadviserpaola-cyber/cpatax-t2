@@ -7,14 +7,14 @@ import { links, site } from '../data/site.js';
 export default function Contact() {
   usePageMeta(
     'Contact Us',
-    `Contact ${site.name} in Simpsonville, SC. Call ${site.phone.display}, email ${site.email}, or schedule a consultation online.`,
+    `Contact ${site.name} in Simpsonville, SC. Call ${site.phone.display}, email ${site.email}, or schedule a free initial consultation online.`,
   );
 
   return (
     <>
       <PageHero page="Contact" eyebrow="Contact us" title={<>Let's talk about <em>your business</em></>}>
-        Send us a message, give us a call, or schedule a consultation online. We serve clients
-        nationwide, in English and Spanish.
+        Send us a message, give us a call, or schedule a free initial consultation online. We
+        serve clients nationwide, in English and Spanish.
       </PageHero>
 
       <section className="section section-tight">
@@ -51,7 +51,10 @@ export default function Contact() {
               </span>
               <div>
                 <h2>Schedule online</h2>
-                <p>Book a consultation with our founder, Paola Martinez, CPA, CFP®, at a time that works for you.</p>
+                <p>
+                  Book a free initial consultation with our founder, Paola Martinez, CPA, CFP®, at a
+                  time that works for you. We'll talk through how we can best serve you.
+                </p>
                 <a className="btn btn-gold" href={links.schedule} target="_blank" rel="noopener noreferrer">
                   Book a time
                   <Icon name="external" />

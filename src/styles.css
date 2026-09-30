@@ -628,10 +628,6 @@ strong { font-weight: 700; }
 }
 .nav-link:hover::after,
 .nav-link[aria-current="page"]::after { transform: scaleX(1); transform-origin: left; }
-/* Menu items shown without a link (pages not linked yet). */
-.nav-link-static { cursor: default; }
-.nav-link-static::after { display: none; }
-.site-header .nav-link-static:hover { color: var(--on-dark); }
 
 .nav-foot { display: none; }
 
@@ -746,8 +742,6 @@ strong { font-weight: 700; }
   }
   .site-header .nav-link { color: #fff; }
   .site-header .nav-link[aria-current="page"] { color: var(--gold-300); font-style: italic; }
-  .site-header .nav-link-static,
-  .site-header .nav-link-static:hover { color: var(--on-dark-faint); }
   .nav-link::after { display: none; }
 
   .nav .nav-foot { display: grid; gap: 1.25rem; margin-top: 2.25rem; }
@@ -930,31 +924,36 @@ strong { font-weight: 700; }
 @keyframes ribbon-draw { to { stroke-dashoffset: 0; } }
 @keyframes ribbon-drift { to { transform: translate3d(-24px, 14px, 0); } }
 
-/* ---------- Home hero: centered headline over a three-panel showcase ---------- */
+/* ---------- Home hero: the message beside the deadline and credentials, "Who we help" below ---------- */
 .hero {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   padding: clamp(2.5rem, 1rem + 3.5vw, 4.5rem) 0 clamp(3.5rem, 2rem + 3vw, 5rem);
 }
-/* Soft gold and crimson light behind the headline. */
+/* Soft gold light behind the headline and crimson behind the cards. */
 .hero::before {
   content: "";
   position: absolute;
   inset: -10% -10% 30%;
   z-index: -1;
   background:
-    radial-gradient(560px 360px at 22% 30%, rgb(223 190 134 / 24%), transparent 70%),
-    radial-gradient(620px 400px at 82% 12%, rgb(179 31 59 / 9%), transparent 70%);
+    radial-gradient(560px 380px at 18% 34%, rgb(223 190 134 / 24%), transparent 70%),
+    radial-gradient(620px 400px at 84% 16%, rgb(179 31 59 / 9%), transparent 70%);
   pointer-events: none;
 }
 
-.hero-intro { max-width: 1040px; margin: 0 auto; text-align: center; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  align-items: center;
+  gap: clamp(2.5rem, 1rem + 4vw, 5rem);
+}
 .hero-chip {
   display: inline-flex;
   align-items: center;
   gap: .65rem;
-  margin: 0 0 1.9rem;
+  margin: 0 0 1.75rem;
   padding: .5rem 1.15rem .5rem .9rem;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
@@ -964,80 +963,44 @@ strong { font-weight: 700; }
   font-weight: 600;
   color: var(--ink);
 }
+/* Wide enough for "meets real business", too narrow for "Where tax strategy meets", so the
+   headline breaks into the same three lines at every size. */
 .hero .hero-title {
-  max-width: 16ch;
-  margin: 0 auto 1.6rem;
-  font-size: clamp(3rem, 1.4rem + 4.6vw, 5.8rem);
+  max-width: 7.4em;
+  margin: 0 0 1.5rem;
+  font-size: clamp(3rem, 1.5rem + 4vw, 5.4rem);
   line-height: .96;
   letter-spacing: -.028em;
   color: var(--wine-950);
 }
-.hero-lead { max-width: 640px; margin: 0 auto 2.25rem; font-size: 1.15rem; line-height: 1.7; }
-.hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+.hero-lead { max-width: 540px; margin: 0 0 2.25rem; font-size: 1.15rem; line-height: 1.7; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
 
-.showcase {
-  display: grid;
-  grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr) minmax(0, .9fr);
-  gap: 1.25rem;
-  margin-top: clamp(3rem, 2rem + 3vw, 4.75rem);
+.hero-creds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.75rem;
+  margin: 2.5rem 0 0;
+  padding: 1.75rem 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
 }
+.hero-creds li {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  font-size: .86rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.hero-creds .icon { width: 18px; height: 18px; color: var(--gold-700); }
+
+.hero-visual { display: grid; gap: 1.25rem; }
 .show-card {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: 460px;
   border-radius: var(--radius-lg);
-}
-
-.show-portrait {
-  margin: 0;
-  background: linear-gradient(160deg, var(--wine-700), var(--wine-950));
-  box-shadow: var(--shadow);
-}
-.show-portrait img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 12%;
-  transition: transform 1.4s var(--ease);
-}
-.show-portrait:hover img { transform: scale(1.04); }
-.show-initials {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-family: var(--font-display);
-  font-size: 5rem;
-  color: var(--gold-300);
-}
-.show-portrait figcaption {
-  position: absolute;
-  left: .9rem;
-  right: .9rem;
-  bottom: .9rem;
-  display: flex;
-  flex-direction: column;
-  gap: .15rem;
-  padding: 1rem 1.2rem;
-  border: 1px solid rgb(255 255 255 / 14%);
-  border-radius: 22px;
-  background: rgb(29 10 16 / 62%);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  font-size: .8rem;
-  font-weight: 600;
-  color: var(--on-dark);
-  text-align: left;
-}
-.show-portrait figcaption strong {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.1;
-  color: #fff;
 }
 
 .show-kicker {
@@ -1064,13 +1027,19 @@ strong { font-weight: 700; }
   text-align: left;
 }
 .show-deadline .show-kicker { color: var(--gold-300); }
+/* Sits in the upper part of the card, clear of the month labels, and fades out towards the
+   left so the lines stay behind the empty right side rather than the text. */
 .show-ribbons {
   position: absolute;
-  inset: 22% -30% 0;
+  inset: -12% -30% auto;
   z-index: -1;
   width: 160%;
-  height: 78%;
-  opacity: .4;
+  /* Override the global svg max-width, which cut the lines off partway across the card. */
+  max-width: none;
+  height: 80%;
+  opacity: .45;
+  -webkit-mask-image: linear-gradient(90deg, transparent 38%, #000 62%);
+  mask-image: linear-gradient(90deg, transparent 38%, #000 62%);
 }
 .show-days {
   display: flex;
@@ -1121,10 +1090,13 @@ strong { font-weight: 700; }
 }
 .track-key { width: 12px; height: 12px; flex-shrink: 0; border-radius: 3px; background: var(--gold-500); }
 
+/* Gold credentials card. Under the deadline it runs wide: the credential line beside its
+   note, then the three facts side by side. In a narrow column (tablet and phone) the note
+   drops below and each fact becomes a row. */
 .show-facts {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1.75rem 2rem;
   background: linear-gradient(160deg, var(--gold-300), var(--gold-500) 70%, #d2ab70);
   box-shadow: var(--shadow);
   color: var(--wine-900);
@@ -1132,69 +1104,144 @@ strong { font-weight: 700; }
 }
 .show-facts .show-kicker { color: var(--crimson-700); }
 .show-facts .show-kicker .icon { stroke-width: 1.5; }
+.show-facts-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: end;
+  gap: 0 1.75rem;
+}
+.show-facts-head .show-kicker { grid-column: 1 / -1; }
 .show-cred {
-  margin: 1.4rem 0 .5rem;
+  margin: 1rem 0 0;
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 2rem + 1.6vw, 3.5rem);
+  font-size: clamp(2.5rem, 2rem + 1.3vw, 3.2rem);
   line-height: 1;
   color: var(--wine-950);
 }
 .show-cred em { color: var(--crimson-700); }
-.show-cred-text { margin: 0; font-size: .92rem; font-weight: 600; color: var(--wine-800); }
-.show-stats { display: grid; margin: auto 0 0; padding-top: 1.5rem; }
+.show-cred-text { max-width: 26ch; margin: 0 0 .3rem; font-size: .9rem; font-weight: 600; line-height: 1.45; color: var(--wine-800); }
+.show-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.4rem 0 0;
+}
 .show-stats div {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: .85rem 0;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: .35rem;
+  padding-top: .9rem;
   border-top: 1px solid rgb(59 23 34 / 16%);
 }
-.show-stats dt { font-size: .84rem; font-weight: 600; line-height: 1.35; color: var(--wine-800); }
+.show-stats dt { font-size: .82rem; font-weight: 600; line-height: 1.35; color: var(--wine-800); }
 .show-stats dd {
   flex-shrink: 0;
   margin: 0;
   font-family: var(--font-display);
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   line-height: 1;
   color: var(--wine-950);
 }
 .show-stats dd small { margin-left: .05em; font-size: .5em; font-style: italic; color: var(--crimson-700); }
 
-.hero-creds {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: .75rem 2.25rem;
-  margin: 2.75rem 0 0;
+/* "Who we help": a band of links, one per kind of client, into the matching services. */
+.hero-audience {
+  display: grid;
+  grid-template-columns: minmax(190px, 1fr) minmax(0, 4.4fr);
+  align-items: center;
+  gap: 1.5rem 2.25rem;
+  margin-top: clamp(3rem, 2rem + 3vw, 4.5rem);
+  padding: 1.25rem 1.25rem 1.25rem 2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(360px 220px at 0% 0%, rgb(223 190 134 / 18%), transparent 70%),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+.hero-audience .show-kicker { color: var(--crimson-700); }
+.hero .hero-audience-title {
+  margin: .7rem 0 0;
+  font-size: clamp(1.9rem, 1.5rem + .9vw, 2.35rem);
+  line-height: 1;
+  color: var(--wine-950);
+}
+.audience-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .75rem;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
-.hero-creds li {
-  display: inline-flex;
-  align-items: center;
-  gap: .55rem;
-  font-size: .86rem;
-  font-weight: 600;
-  color: var(--text);
+.audience-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "icon . arrow"
+    "copy copy copy";
+  align-items: start;
+  gap: .9rem .75rem;
+  height: 100%;
+  padding: 1.1rem 1.15rem 1.15rem;
+  border-radius: 20px;
+  background: rgb(244 237 235 / 60%);
+  color: var(--ink);
+  transition: background .3s var(--ease), color .3s var(--ease);
 }
-.hero-creds .icon { width: 18px; height: 18px; color: var(--gold-700); }
+.audience-icon {
+  display: grid;
+  grid-area: icon;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  color: var(--crimson-600);
+  transition: background .3s var(--ease), color .3s var(--ease);
+}
+.audience-icon .icon { width: 19px; height: 19px; }
+.audience-copy { display: flex; grid-area: copy; flex-direction: column; min-width: 0; gap: .15rem; }
+.audience-copy strong { font-size: .95rem; font-weight: 700; line-height: 1.3; }
+.audience-copy span { font-size: .8rem; line-height: 1.4; color: var(--muted); }
+.audience-arrow {
+  grid-area: arrow;
+  width: 16px;
+  height: 16px;
+  margin-top: .25rem;
+  color: var(--gold-700);
+  transition: transform .3s var(--ease), color .3s var(--ease);
+}
+.audience-link:hover { background: var(--wine-100); color: var(--crimson-700); }
+.audience-link:hover .audience-icon { background: var(--crimson-600); color: #fff; }
+.audience-link:hover .audience-arrow { transform: translateX(4px); color: var(--crimson-600); }
 
+/* Below full container width the band's heading moves above the tiles to give them room. */
+@media (max-width: 1240px) {
+  .hero-audience { grid-template-columns: 1fr; padding: 1.75rem; }
+}
 @media (max-width: 1080px) {
-  .showcase { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .show-facts { grid-column: 1 / -1; min-height: 0; }
-  .show-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
-  .show-stats div { flex-direction: column-reverse; align-items: flex-start; justify-content: flex-end; gap: .4rem; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-lead { max-width: 640px; }
+  .hero-visual { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
+  .show-facts-head { display: flex; flex-direction: column; align-items: flex-start; }
+  .show-cred { margin-bottom: .5rem; }
+  .show-stats { grid-template-columns: 1fr; gap: 0; margin-top: auto; padding-top: 1.5rem; }
+  .show-stats div { flex-direction: row; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem 0; }
+
+  .audience-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .audience-link { grid-template-areas: "icon copy arrow"; align-items: center; }
+  .audience-arrow { margin-top: 0; }
 }
 @media (max-width: 680px) {
-  .showcase { grid-template-columns: 1fr; }
-  .show-card { min-height: 0; }
-  .show-portrait { min-height: 420px; }
+  .hero-visual { grid-template-columns: 1fr; }
   .show-deadline { min-height: 400px; }
-  .show-stats { grid-template-columns: 1fr; gap: 0; }
-  .show-stats div { flex-direction: row; align-items: center; justify-content: space-between; }
   .hero-actions .btn { width: 100%; }
-  .hero-creds { justify-content: flex-start; gap: .75rem 1.5rem; }
+  .hero-creds { gap: .75rem 1.5rem; }
+  .hero-audience { padding: 1.5rem 1.25rem 1.25rem; }
+  .audience-list { grid-template-columns: 1fr; gap: .6rem; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1202,15 +1249,16 @@ strong { font-weight: 700; }
   .hero-title,
   .hero-lead,
   .hero-actions,
+  .hero-creds,
   .show-card,
-  .hero-creds { animation: rise .9s var(--ease) backwards; }
+  .hero-audience { animation: rise .9s var(--ease) backwards; }
   .hero-title { animation-delay: .08s; }
-  .hero-lead { animation-delay: .18s; }
-  .hero-actions { animation-delay: .26s; }
-  .show-card:nth-child(1) { animation-delay: .38s; }
-  .show-card:nth-child(2) { animation-delay: .48s; }
-  .show-card:nth-child(3) { animation-delay: .58s; }
-  .hero-creds { animation-delay: .7s; }
+  .hero-lead { animation-delay: .16s; }
+  .hero-actions { animation-delay: .24s; }
+  .hero-creds { animation-delay: .32s; }
+  .show-card:nth-child(1) { animation-delay: .3s; }
+  .show-card:nth-child(2) { animation-delay: .42s; }
+  .hero-audience { animation-delay: .55s; }
   .track-month i { animation: grow-bar .7s .9s var(--ease) backwards; }
 }
 @keyframes rise { from { opacity: 0; transform: translateY(24px); } }
@@ -2436,87 +2484,102 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
   .cta-actions .btn { width: 100%; }
 }
 
-/* ---------- Inner page banner: carries on from the header above it ---------- */
-.page-hero {
+/* ---------- Inner page banner: the title and breadcrumb beside the intro ---------- */
+.page-head {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding-block: clamp(3rem, 1.75rem + 4.5vw, 6rem) clamp(4.5rem, 3rem + 5vw, 7.5rem);
-  background:
-    var(--grain),
-    radial-gradient(820px 520px at 92% 22%, rgb(179 31 59 / 24%), transparent 62%),
-    radial-gradient(640px 420px at 0% 100%, rgb(223 190 134 / 8%), transparent 60%),
-    linear-gradient(180deg, var(--wine-950), var(--wine-900));
+  padding-block: clamp(2.75rem, 1.5rem + 3.5vw, 5rem) clamp(3rem, 2rem + 3.5vw, 5.5rem);
 }
-.page-hero-ribbons {
+/* The same soft gold and crimson light as the home banner. */
+.page-head::before {
+  content: "";
   position: absolute;
-  top: 20%;
-  left: 30%;
+  inset: -20% -10% 0;
   z-index: -1;
-  width: 80%;
-  height: 90%;
-  opacity: .6;
-  /* Fade in from the left so the lines don't start at a hard edge. */
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 35%);
-  mask-image: linear-gradient(90deg, transparent, #000 35%);
+  background:
+    radial-gradient(560px 360px at 14% 40%, rgb(223 190 134 / 22%), transparent 70%),
+    radial-gradient(620px 400px at 88% 10%, rgb(179 31 59 / 8%), transparent 70%);
+  pointer-events: none;
 }
-.page-hero h1 { max-width: 20ch; margin-bottom: 1.4rem; font-size: clamp(2.6rem, 1.7rem + 3.2vw, 4.4rem); }
-.page-hero-lead { max-width: 640px; margin: 0; font-size: 1.15rem; line-height: 1.7; }
-.page-hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2.5rem; }
-/* Leaves room for the first section to rise over the bottom of the banner. */
-.page-hero-overlap { padding-bottom: clamp(9rem, 7rem + 6vw, 12.5rem); }
-.overlap-up { position: relative; z-index: 2; margin-top: calc(-1 * clamp(5rem, 4rem + 3vw, 7rem)); }
 
+/* Sits under the title, lined up with its left edge. */
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: .7rem;
-  margin-bottom: 2.25rem;
-  font-size: .8rem;
+  gap: .4rem .75rem;
+  margin-top: 1.6rem;
+  font-size: .82rem;
   font-weight: 600;
-  color: var(--on-dark-muted);
+  line-height: 1.4;
+  color: var(--ink);
 }
-.surface-dark .breadcrumb a { color: var(--on-dark-strong); }
-.surface-dark .breadcrumb a:hover { color: var(--gold-300); }
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--crimson-600); }
 .breadcrumb-sep { width: 16px; height: 1px; background: var(--gold-600); }
 
+/* Both columns line up along the bottom: the breadcrumb on the left, the intro or its
+   buttons on the right. */
+.page-head-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  align-items: end;
+  gap: 2rem clamp(2.5rem, 1rem + 4vw, 5rem);
+}
+.page-head h1 {
+  margin: 0;
+  font-size: clamp(2.7rem, 1.6rem + 3.3vw, 4.6rem);
+  line-height: 1;
+  letter-spacing: -.02em;
+  color: var(--wine-950);
+}
+.page-head-lead { max-width: 34rem; margin: 0; font-size: 1.1rem; line-height: 1.7; }
+.page-head-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+
+@media (max-width: 900px) {
+  .page-head-grid { grid-template-columns: 1fr; }
+}
 @media (max-width: 640px) {
-  .page-hero-ribbons { top: 40%; left: 0; width: 140%; }
-  .page-hero-actions .btn { width: 100%; }
+  .page-head-actions .btn { width: 100%; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .page-hero-inner > * { animation: rise .9s var(--ease) backwards; }
-  .page-hero-inner > :nth-child(2) { animation-delay: .06s; }
-  .page-hero-inner > :nth-child(3) { animation-delay: .12s; }
-  .page-hero-inner > :nth-child(4) { animation-delay: .2s; }
-  .page-hero-inner > :nth-child(5) { animation-delay: .28s; }
+  .page-head-title,
+  .page-head-side { animation: rise .9s var(--ease) backwards; }
+  .page-head-title { animation-delay: .06s; }
+  .page-head-side { animation-delay: .16s; }
 }
 
 /* ---------- Services page ---------- */
-/* Links to each group of services, in the page banner. */
+/* Links to each group of services, just under the page banner. The negative margin pulls
+   the row up into the banner's bottom padding so it reads as part of the banner. */
+.cat-nav {
+  margin-top: calc(-1 * clamp(1.25rem, .75rem + 2vw, 3rem));
+  padding-bottom: clamp(2.5rem, 1.75rem + 2vw, 3.5rem);
+}
 .cat-nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
   margin: 0;
-  padding: 0;
+  padding: 1.75rem 0 0;
+  border-top: 1px solid var(--line);
   list-style: none;
 }
-.surface-dark .cat-nav a {
+.cat-nav a {
   display: inline-flex;
   align-items: center;
   gap: .45rem;
   padding: .6rem 1.15rem;
-  border: 1px solid rgb(255 255 255 / 18%);
+  border: 1px solid var(--line-strong);
   border-radius: 999px;
-  background: rgb(255 255 255 / 4%);
+  background: var(--surface);
   font-size: .86rem;
   font-weight: 700;
-  color: var(--on-dark-strong);
+  color: var(--ink);
   transition: background-color .25s ease, border-color .25s ease, color .25s ease;
 }
-.surface-dark .cat-nav a:hover { border-color: var(--gold-500); background: var(--gold-500); color: var(--wine-950); }
+.cat-nav a:hover { border-color: var(--wine-900); background: var(--wine-900); color: #fff; }
 .cat-nav .icon { width: 15px; height: 15px; }
 
 .cat-grid {
@@ -3054,6 +3117,33 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 }
 .pricing-foot p { display: flex; flex: 1 1 420px; gap: .75rem; margin: 0; font-size: .92rem; }
 .pricing-foot p .icon { width: 22px; height: 22px; margin-top: 1px; color: var(--gold-700); }
+
+/* What affects your fee: organization beside complexity, with common life events as tags. */
+.fee-factors {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 1.25rem;
+  max-width: 1140px;
+  margin: clamp(3rem, 2rem + 3vw, 4.5rem) auto 0;
+}
+.fee-factors-title {
+  grid-column: 1 / -1;
+  margin: 0 0 .5rem;
+  font-size: clamp(1.8rem, 1.4rem + 1.2vw, 2.4rem);
+  text-align: center;
+}
+.fee-factor {
+  padding: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+}
+.fee-factor h4 { margin: 1.1rem 0 .5rem; font-size: 1.45rem; line-height: 1.15; }
+.fee-factor p { margin: 0; font-size: .94rem; }
+.fee-factor .tags { margin: 1.1rem 0 0; }
+@media (max-width: 760px) {
+  .fee-factors { grid-template-columns: 1fr; }
+}
 @media (max-width: 1100px) {
   .tiers-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -3215,8 +3305,30 @@ a.option-main:hover { color: var(--crimson-600); }
   .form-grid { grid-template-columns: 1fr; }
 }
 
+/* ---------- Legal pages: privacy policy and disclaimer ---------- */
+.legal { max-width: 760px; }
+.legal h2 { margin: 2.75rem 0 .8rem; font-size: clamp(1.6rem, 1.35rem + .9vw, 2.1rem); }
+.legal h2:first-child { margin-top: 0; }
+.legal p,
+.legal li { font-size: 1.03rem; line-height: 1.75; }
+.legal > p { margin: 0 0 1rem; }
+.legal > ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+.legal > ul li + li { margin-top: .5rem; }
+.legal strong { color: var(--ink); }
+.legal-contact {
+  margin-top: 3rem;
+  padding: 1.6rem 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+}
+.legal-contact p { margin: 0 0 1rem; font-weight: 600; color: var(--ink); }
+.legal-contact ul { display: grid; gap: .6rem; margin: 0; padding: 0; list-style: none; }
+.legal-contact li { display: flex; align-items: flex-start; gap: .65rem; font-size: .95rem; line-height: 1.5; }
+.legal-contact .icon { flex-shrink: 0; width: 17px; height: 17px; margin-top: 3px; color: var(--gold-700); }
+
 /* ---------- Financial Planning ---------- */
-.prose p { font-size: 1.03rem; }
+.prose p:not(.eyebrow) { font-size: 1.03rem; }
 .prose .btn { margin-top: 1rem; }
 .expect-card {
   padding: clamp(1.75rem, 3.5vw, 2.75rem);
@@ -3366,8 +3478,7 @@ a.option-main:hover { color: var(--crimson-600); }
 }
 .site-footer .footer-title-spaced { margin-top: 2.25rem; }
 .footer-links { display: grid; gap: .75rem; margin: 0; padding: 0; list-style: none; }
-.surface-dark .footer-links a,
-.footer-static { color: var(--on-dark); }
+.surface-dark .footer-links a { color: var(--on-dark); }
 .surface-dark .footer-links a:hover { color: #fff; }
 .footer-icons a,
 .footer-icons li { display: inline-flex; align-items: flex-start; gap: .6rem; line-height: 1.5; }
@@ -3383,6 +3494,9 @@ a.option-main:hover { color: var(--crimson-600); }
   color: var(--on-dark-faint);
 }
 .footer-bottom p { max-width: 520px; margin: 0; }
+.footer-legal ul { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; margin: .75rem 0 0; padding: 0; list-style: none; }
+.site-footer .footer-legal a { color: var(--on-dark); }
+.site-footer .footer-legal a:hover { color: #fff; }
 .footer-bottom .disclaimer { max-width: 620px; }
 @media (max-width: 960px) {
   .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

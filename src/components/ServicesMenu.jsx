@@ -28,7 +28,7 @@ const columns = [
 
 // "Services" item in the main navigation. On desktop it opens a dropdown panel listing
 // every service by group; inside the mobile menu the same list expands in place.
-export default function ServicesMenu() {
+export default function ServicesMenu({ style }) {
   const [open, setOpen] = useState(false);
   const itemRef = useRef(null);
   const buttonRef = useRef(null);
@@ -92,6 +92,7 @@ export default function ServicesMenu() {
     <li
       ref={itemRef}
       className={`nav-item has-menu${open ? ' is-open' : ''}`}
+      style={style}
       onMouseEnter={() => canHover() && openMenu()}
       onMouseLeave={() => canHover() && closeMenuSoon()}
       onBlur={onBlur}

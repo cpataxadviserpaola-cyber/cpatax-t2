@@ -5,13 +5,12 @@ import Icon from './Icon.jsx';
 import ServicesMenu from './ServicesMenu.jsx';
 import { links, site } from '../data/site.js';
 
-// Only Home, About and Contact link for now; items without `to` show as plain text.
-// To bring Services back with its dropdown, restore `to: '/services', menu: true`.
+// `menu: true` renders the item as the Services dropdown.
 const navLinks = [
   { to: '/', label: 'Home', end: true },
-  { label: 'Services' },
+  { to: '/services', label: 'Services', menu: true },
   { to: '/about', label: 'About' },
-  { label: 'Client Center' },
+  { to: '/client-center', label: 'Client Center' },
   { to: '/contact', label: 'Contact' },
 ];
 
@@ -87,14 +86,7 @@ export default function Header() {
           <ul className="nav-list">
             {navLinks.map(({ to, label, end, menu }, index) => {
               const style = { '--i': index };
-              if (!to) {
-                return (
-                  <li key={label} style={style}>
-                    <span className="nav-link nav-link-static">{label}</span>
-                  </li>
-                );
-              }
-              if (menu) return <ServicesMenu key={to} />;
+              if (menu) return <ServicesMenu key={to} style={style} />;
               return (
                 <li key={to} style={style}>
                   <NavLink className="nav-link" to={to} end={end}>

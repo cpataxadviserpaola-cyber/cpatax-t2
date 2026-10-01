@@ -237,7 +237,7 @@ export const services = [
     tagline: 'Clean-ups, ledgers, quarterly reviews',
     headline: 'Leave the bookkeeping to us and focus on growing your business',
     summary:
-      "Accurate bookkeeping is essential to your company's long-term viability. Experienced, affordable, and reliable, we serve a variety of industries and clients.",
+      "Accurate bookkeeping is essential to your company's long-term viability. Experienced and reliable, we serve a variety of industries and clients.",
     description:
       'We serve clients from self-employed, home-based business owners to small and medium-sized businesses with employees, using current technology to provide personalized service.',
     idealFor: 'self-employed owners and small and medium-sized businesses',

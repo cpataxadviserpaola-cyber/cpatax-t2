@@ -63,7 +63,7 @@ export default function WhyUs({ id }) {
             eyebrow="The CPA Tax Adviser difference"
             title={<>Built differently from the <em>typical tax office</em></>}
           >
-            Affordable, experienced, and friendly, with the expertise to guide decisions that go far
+            Experienced and friendly, with the expertise to guide decisions that go far
             beyond compliance.
           </SectionHead>
           <ul className="why-index reveal" aria-label="What sets us apart">

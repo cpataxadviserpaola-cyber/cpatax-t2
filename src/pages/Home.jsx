@@ -25,7 +25,7 @@ const pillars = [
   {
     icon: 'building',
     title: 'Who we are',
-    text: 'A full-service CPA firm licensed in South Carolina. We are affordable, experienced, and friendly.',
+    text: 'A full-service CPA firm licensed in South Carolina. We are experienced and friendly.',
     link: { to: '/about', label: 'About our firm' },
   },
   {

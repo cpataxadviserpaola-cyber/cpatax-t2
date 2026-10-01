@@ -1,6 +1,7 @@
 // Services offered by the firm (source: cpataxadviser.com). They feed the Home and
-// Services pages, the header menu, the footer, the contact form, and each service's own
-// page at /services/<id>. Adding an entry here creates its page and menu item.
+// Services pages, the footer, the contact form, and each service's own page at
+// /services/<id>. Adding an entry here creates its page; add it to the header menu in
+// src/data/navigation.js.
 //
 // category     business | individual | international (see serviceCategories)
 // name         short label for cards, menus, links, and the contact form
@@ -564,7 +565,75 @@ export const services = [
         answer: 'Yes. We help self-employed owners with Schedule C preparation, including bookkeeping catch-up work and setting up a recordkeeping system.',
       },
     ],
-    related: ['planning', 'international', 'bookkeeping'],
+    related: ['individual-planning', 'international', 'planning'],
+  },
+  {
+    id: 'individual-planning',
+    category: 'individual',
+    icon: 'chart',
+    name: 'Individual Tax Projections & Strategies',
+    title: 'Tax Projections & Strategies for Individuals',
+    chip: 'Tax Projections',
+    tagline: 'Know where you stand before year-end',
+    headline: 'Plan ahead and keep more of your hard-earned money',
+    summary:
+      'Tax projections and personalized strategies for professionals, executives, and pre-retirees, so there are no surprises at tax time.',
+    description:
+      "Planning is the key to successfully and legally reducing your tax liability. A tax projection shows where you stand while there is still time to act, and our strategies help you act on it.",
+    notice:
+      'We are currently focused on small business owners and are not onboarding new individual clients. Contact us to join our waiting list.',
+    idealFor: 'professionals, executives, and pre-retirees',
+    included: [
+      'Tax projections before year-end',
+      'Paycheck withholding review and adjustment',
+      'Estimated tax calculations for the self-employed',
+      'Tax deferral through pension and retirement plans',
+      'Investments that produce tax-exempt income',
+      'Every tax credit and deduction you deserve',
+    ],
+    cta: 'Join the waiting list',
+    overview: [
+      "There is more to taxes than filling out forms once a year. A projection estimates this year's tax before it is final, so you can make changes while they still count.",
+      'We review your income, investments, and plans, then recommend strategies such as withholding changes and retirement contributions. As a CPA and CFP® professional, our founder connects your tax strategy with your long-term financial goals.',
+    ],
+    highlights: [
+      {
+        icon: 'chart',
+        title: 'Projections and strategies',
+        text: 'Tax projections show where you stand before year-end, while there is still time to act.',
+      },
+      {
+        icon: 'target',
+        title: 'Withholding that fits',
+        text: "We review and adjust your paycheck withholding so you keep more of your money. Why give the IRS a free loan?",
+      },
+      {
+        icon: 'award',
+        title: 'A CPA + CFP® perspective',
+        text: 'Your tax strategy connects to your long-term goals, from retirement contributions to investments.',
+      },
+    ],
+    process: [
+      { title: 'Understand your goals', text: 'We review your income, investments, and plans for the years ahead.' },
+      { title: 'Project your taxes', text: "We estimate this year's tax and identify credits, deductions, and deferral opportunities." },
+      { title: 'Put the plan in place', text: 'You receive clear recommendations, from withholding changes to retirement contributions.' },
+      { title: 'Review through the year', text: 'We revisit your plan as your situation and tax laws change.' },
+    ],
+    faqs: [
+      {
+        question: 'Are you accepting new individual clients?',
+        answer: 'We are currently focused on serving small business owners and are not onboarding new individual clients. You are welcome to contact us to join our waiting list.',
+      },
+      {
+        question: 'When should I start tax planning?',
+        answer: 'As early in the year as possible. Many strategies, such as contributions through a workplace retirement plan or the timing of income and expenses, must be in place by December 31 to count for that year.',
+      },
+      {
+        question: 'How does tax planning connect with financial planning?',
+        answer: 'Our founder is both a CPA and a CFP® professional. For broader financial planning, we work with our affiliated firm, Yellow Oak Financial Planning.',
+      },
+    ],
+    related: ['individual', 'planning', 'international'],
   },
   {
     id: 'international',
@@ -670,46 +739,3 @@ export const findService = (id) => services.find((service) => service.id === id)
 
 export const servicesIn = (category) => services.filter((service) => service.category === category);
 
-// Industries the firm specializes in (Services page and Home page band).
-export const industries = [
-  {
-    icon: 'briefcase',
-    title: 'Service-oriented businesses',
-    text: 'We help service-based companies streamline their accounting, payroll, and tax processes.',
-  },
-  {
-    icon: 'laptop',
-    title: 'Consultants and freelancers',
-    text: "You wear many hats, from client relationships to delivering great work. Handling your finances doesn't have to be one of them.",
-  },
-  {
-    icon: 'trend',
-    title: 'Investment advisers',
-    text: 'A highly regulated, complex environment that calls for precise financial management and strategic planning.',
-  },
-  {
-    icon: 'home',
-    title: 'Real estate professionals',
-    text: 'A dynamic industry full of opportunities, with its own unique financial challenges.',
-  },
-  {
-    icon: 'globe',
-    title: 'International business owners',
-    text: 'Guidance through U.S. tax laws and financial reporting requirements for owners with international ties.',
-  },
-  {
-    icon: 'award',
-    title: 'Lawyers, doctors, and dentists',
-    text: 'Your expertise drives your practice, and our expertise helps ensure its financial success.',
-  },
-  {
-    icon: 'users',
-    title: 'Minority & women-owned businesses',
-    text: 'As a certified MWBE, you face unique challenges and opportunities. We understand them firsthand.',
-  },
-  {
-    icon: 'chat',
-    title: 'Marketing and advertising agencies',
-    text: 'Creative projects, client deadlines, and financial complexity, balanced with clear numbers.',
-  },
-];

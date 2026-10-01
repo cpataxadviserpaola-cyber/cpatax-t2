@@ -11,7 +11,7 @@ const members = team.filter((person) => !person.featured);
 
 // Team: the founder in a dark spotlight card with her portrait, then the rest of the team
 // in an open row. "Read bio" opens the person's full bio in a modal window.
-export default function TeamSection({ soft = false, showAboutLink = false }) {
+export default function TeamSection({ id, soft = false, showAboutLink = false }) {
   const dialogRef = useRef(null);
   const triggerRef = useRef(null);
   const [selected, setSelected] = useState(null);
@@ -36,7 +36,7 @@ export default function TeamSection({ soft = false, showAboutLink = false }) {
   const closeBio = () => dialogRef.current?.close();
 
   return (
-    <section className={`section team${soft ? ' section-white' : ''}`}>
+    <section className={`section team${soft ? ' section-white' : ''}`} id={id}>
       <div className="container">
         <div className="section-head-row">
           <SectionHead eyebrow="Meet our team" title={<>The people behind <em>your numbers</em></>}>
@@ -186,18 +186,13 @@ function PersonAction({ action, className = 'btn btn-primary' }) {
   );
 }
 
-// The person's photo if one is set, otherwise their initials on a wine disc.
+// The person's photo if one is set (the square headshot when small), otherwise their
+// initials on a wine disc.
 function Avatar({ person, small = false }) {
   const className = small ? 'member-avatar' : 'founder-avatar';
   if (person.photo) {
-    if (small) {
-      return (
-        <span className={`${className} face-crop`}>
-          <img src={asset(person.photo)} alt={`${person.name}, ${person.role}`} />
-        </span>
-      );
-    }
-    return <img className={className} src={asset(person.photo)} alt={`${person.name}, ${person.role}`} />;
+    const src = small ? person.avatar ?? person.photo : person.photo;
+    return <img className={className} src={asset(src)} alt={`${person.name}, ${person.role}`} />;
   }
   return (
     <span className={`${className} is-initials`} aria-hidden="true">

@@ -8,9 +8,11 @@ const companyLinks = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About Us' },
   { to: '/services', label: 'All Services' },
+  { to: '/industries', label: 'Industries' },
+  { to: '/tax-season', label: 'Tax Season' },
+  { to: '/resources', label: 'Resources' },
   { to: '/financial-planning', label: 'Financial Planning' },
-  { to: '/client-center', label: 'Client Center' },
-  { to: '/#faq', label: 'FAQ' },
+  { to: '/resources#faq', label: 'FAQs' },
   { to: '/contact', label: 'Contact' },
 ];
 

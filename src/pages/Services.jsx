@@ -5,7 +5,8 @@ import SectionHead from '../components/SectionHead.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
 import CtaSection from '../components/CtaSection.jsx';
 import usePageMeta from '../hooks/usePageMeta.js';
-import { industries, serviceCategories, servicesIn } from '../data/services.js';
+import { serviceCategories, servicesIn } from '../data/services.js';
+import { industries } from '../data/industries.js';
 
 // Label and short introduction shown beside each group of services.
 const categoryIntro = {
@@ -93,14 +94,21 @@ export default function Services() {
           </SectionHead>
           <div className="industry-grid reveal">
             {industries.map((industry) => (
-              <div className="industry" key={industry.title}>
+              <Link className="industry" key={industry.id} to={`/industries#${industry.id}`}>
                 <span className="industry-icon">
                   <Icon name={industry.icon} />
                 </span>
                 <h3>{industry.title}</h3>
                 <p>{industry.text}</p>
-              </div>
+              </Link>
             ))}
+            <Link className="industry industry-more" to="/industries">
+              <span className="industry-icon">
+                <Icon name="arrow" />
+              </span>
+              <h3>All industries</h3>
+              <p>See how we help businesses in each field, and the services that fit.</p>
+            </Link>
           </div>
         </div>
       </section>

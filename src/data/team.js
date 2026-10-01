@@ -4,6 +4,7 @@
 // credentials  shown after the name
 // seal         short credential on the portrait (leave empty for none)
 // photo        portrait in public/team/; without one, the initials are shown instead
+// avatar       square head-and-shoulders crop of the photo for the small round pictures
 // summary      one line for the team card
 // highlight    a line from the person's bio, shown in italics
 // facts        short chips on the featured card
@@ -19,6 +20,7 @@ export const team = [
     role: 'Founder & CPA, CFP®',
     initials: 'PM',
     photo: '/team/paola-martinez.jpg',
+    avatar: '/team/paola-martinez-avatar.jpg',
     summary:
       'Founder of CPA Tax Adviser, working with closely held businesses and their owners on strategy that goes far beyond compliance.',
     highlight:

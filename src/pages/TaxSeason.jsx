@@ -8,8 +8,10 @@ import usePageMeta from '../hooks/usePageMeta.js';
 import { links } from '../data/site.js';
 import { feeFactors, pricingNotes, pricingTables } from '../data/pricing.js';
 import { deadlineCountdown, getUpcomingDeadlines } from '../data/deadlines.js';
+import { portalSteps, taxSeasonSteps } from '../data/process.js';
 import { asset } from '../utils/asset.js';
 
+// Tax Tool Box: our own client tools first, then the IRS's online tools.
 const tools = [
   {
     icon: 'lock',
@@ -39,81 +41,64 @@ const tools = [
     href: links.refund,
     label: "IRS Where's My Refund",
   },
-];
-
-const portalSteps = [
-  { icon: 'user', title: 'Log in', text: 'Sign in to the client portal with the credentials from your invitation email.' },
-  { icon: 'file', title: 'Upload documents', text: 'Add your tax forms and records securely, no printing or scanning required.' },
-  { icon: 'file-check', title: 'Review and sign', text: 'Review engagement letters and returns, and sign them electronically.' },
-  { icon: 'chat', title: 'Message our team', text: 'Ask questions and receive updates in one secure place.' },
+  {
+    icon: 'banknote',
+    title: 'Pay the IRS',
+    text: 'Make a federal tax payment straight from your bank account, at no cost.',
+    href: links.irsDirectPay,
+    label: 'IRS Direct Pay',
+  },
+  {
+    icon: 'user',
+    title: 'Your IRS account',
+    text: 'See your balance, payment history, and tax records with the IRS.',
+    href: links.irsAccount,
+    label: 'IRS online account',
+  },
+  {
+    icon: 'target',
+    title: 'Check your withholding',
+    text: 'Estimate how much tax your employer or pension provider should withhold.',
+    href: links.irsWithholding,
+    label: 'IRS Withholding Estimator',
+  },
+  {
+    icon: 'file',
+    title: '2026 pricing guide',
+    text: 'Our current fees for individual and business tax preparation, in one PDF.',
+    href: asset(links.pricingGuide),
+    label: 'Download the guide',
+  },
 ];
 
 const monthOf = (date) => date.toLocaleDateString('en-US', { month: 'short' });
 
-export default function ClientCenter() {
+// Sections follow the Tax Season menu: process, pricing, client portal, tax tool box, then
+// the upcoming IRS deadlines.
+export default function TaxSeason() {
   usePageMeta(
-    'Client Center',
-    'Client portal login, online payments, scheduling, refund tracking, upcoming IRS deadlines, and the 2026 pricing guide for CPA Tax Adviser clients.',
+    'Tax Season',
+    'Our tax season process, pricing and the 2026 pricing guide, the client portal tutorial and login, a tax tool box, and upcoming IRS deadlines for CPA Tax Adviser clients.',
   );
 
   const upcoming = getUpcomingDeadlines(4);
 
   return (
     <>
-      <PageHero page="Client Center" eyebrow="Client center" title={<>Tax season tools <em>and resources</em></>}>
-        Log in to your portal, pay your invoice, schedule time with us, and see our current
-        pricing, all in one place.
+      <PageHero page="Tax Season" eyebrow="Tax season" title={<>Tax season, <em>made simple</em></>}>
+        How tax season works with us, what it costs, and the tools you need, from the client portal
+        to the IRS deadlines ahead.
       </PageHero>
 
-      <section className="section section-tight">
+      <section className="section section-white" id="process">
         <div className="container">
-          <div className="tool-grid reveal">
-            {tools.map((tool) => (
-              <a className="tool-card" key={tool.title} href={tool.href} target="_blank" rel="noopener noreferrer">
-                <span className="tool-top">
-                  <span className="icon-badge">
-                    <Icon name={tool.icon} />
-                  </span>
-                  <span className="svc-card-go">
-                    <Icon name="arrow-up-right" />
-                  </span>
-                </span>
-                <h2>{tool.title}</h2>
-                <p>{tool.text}</p>
-                <span className="tool-link">{tool.label}</span>
-              </a>
-            ))}
-          </div>
+          <SectionHead eyebrow="Our tax season process" title={<>From documents to <em>filed return</em></>} center>
+            A clear, paperless process that keeps you informed at every step, from your first
+            appointment to the plan for next year.
+          </SectionHead>
+          <ProcessSteps steps={taxSeasonSteps} />
         </div>
       </section>
-
-      {upcoming.length > 0 && (
-        <section className="section section-white">
-          <div className="container calendar">
-            <SectionHead eyebrow="Tax calendar" title={<>Upcoming <em>IRS deadlines</em></>}>
-              Federal deadlines for calendar-year filers. Weekends, holidays, and disaster relief
-              can move a date, so check with us if you're unsure.
-            </SectionHead>
-            <ol className="deadline-list reveal">
-              {upcoming.map((deadline, index) => (
-                <li className={index === 0 ? 'is-next' : undefined} key={deadline.date}>
-                  <span className="dl-date" aria-hidden="true">
-                    <small>{monthOf(deadline.day)}</small>
-                    {deadline.day.getDate()}
-                  </span>
-                  <span className="dl-body">
-                    <time className="sr-only" dateTime={deadline.date}>
-                      {deadline.day.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}:
-                    </time>
-                    <span className="dl-what">{deadline.label}</span>
-                    <span className="dl-left">{deadlineCountdown(deadline.daysLeft)}</span>
-                  </span>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
-      )}
 
       <section className="section" id="pricing">
         <div className="container">
@@ -161,14 +146,74 @@ export default function ClientCenter() {
         </div>
       </section>
 
-      <section className="section section-white">
+      <section className="section section-white" id="client-portal">
         <div className="container">
-          <SectionHead eyebrow="Client portal" title={<>Getting around <em>the portal</em></>} center>
+          <SectionHead eyebrow="Client portal tutorial" title={<>Getting around <em>the portal</em></>} center>
             Our secure client portal keeps your documents, signatures, and messages in one place.
           </SectionHead>
           <ProcessSteps steps={portalSteps} />
+          <p className="section-action reveal">
+            <a className="btn btn-primary btn-lg" href={links.portal} target="_blank" rel="noopener noreferrer">
+              <Icon name="lock" />
+              Log in to the client portal
+            </a>
+          </p>
         </div>
       </section>
+
+      <section className="section" id="tax-toolbox">
+        <div className="container">
+          <SectionHead eyebrow="Tax tool box" title={<>Everything you need, <em>in one place</em></>} center>
+            Log in, pay, book time with us, track your refund, and reach the IRS's own online
+            tools. Each opens in a new tab.
+          </SectionHead>
+          <div className="tool-grid reveal">
+            {tools.map((tool) => (
+              <a className="tool-card" key={tool.title} href={tool.href} target="_blank" rel="noopener noreferrer">
+                <span className="tool-top">
+                  <span className="icon-badge">
+                    <Icon name={tool.icon} />
+                  </span>
+                  <span className="svc-card-go">
+                    <Icon name="arrow-up-right" />
+                  </span>
+                </span>
+                <h3>{tool.title}</h3>
+                <p>{tool.text}</p>
+                <span className="tool-link">{tool.label}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {upcoming.length > 0 && (
+        <section className="section section-white" id="deadlines">
+          <div className="container calendar">
+            <SectionHead eyebrow="Tax calendar" title={<>Upcoming <em>IRS deadlines</em></>}>
+              Federal deadlines for calendar-year filers. Weekends, holidays, and disaster relief
+              can move a date, so check with us if you're unsure.
+            </SectionHead>
+            <ol className="deadline-list reveal">
+              {upcoming.map((deadline, index) => (
+                <li className={index === 0 ? 'is-next' : undefined} key={deadline.date}>
+                  <span className="dl-date" aria-hidden="true">
+                    <small>{monthOf(deadline.day)}</small>
+                    {deadline.day.getDate()}
+                  </span>
+                  <span className="dl-body">
+                    <time className="sr-only" dateTime={deadline.date}>
+                      {deadline.day.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}:
+                    </time>
+                    <span className="dl-what">{deadline.label}</span>
+                    <span className="dl-left">{deadlineCountdown(deadline.daysLeft)}</span>
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      )}
 
       <CtaSection
         title={<>Questions about <em>tax season?</em></>}

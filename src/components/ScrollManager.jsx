@@ -2,9 +2,10 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 
 // Scrolls to the top when the page changes, or to the matching section when the
-// URL has a hash (e.g. /services#irs).
+// URL has a hash (e.g. /services#irs). Following a link to the page or section already
+// shown (a menu link clicked twice) scrolls again too.
 export default function ScrollManager() {
-  const { pathname, hash } = useLocation();
+  const { pathname, hash, key } = useLocation();
 
   useEffect(() => {
     if (hash) {
@@ -20,7 +21,7 @@ export default function ScrollManager() {
       }
     }
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-  }, [pathname, hash]);
+  }, [pathname, hash, key]);
 
   return null;
 }

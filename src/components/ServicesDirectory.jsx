@@ -4,7 +4,9 @@ import SectionHead from './SectionHead.jsx';
 import { serviceCategories, servicesIn } from '../data/services.js';
 
 const business = servicesIn('business');
-const others = [...servicesIn('individual'), ...servicesIn('international')];
+// One card per group beside the business panel; a group with several services links to each.
+const sideGroups = ['individual', 'international'].map((id) => ({ id, items: servicesIn(id) }));
+const groupTitle = { individual: 'Individual Tax Services', international: 'International Tax Services' };
 const categoryName = Object.fromEntries(
   serviceCategories.map((category) => [category.id, category.label.replace(/ (client )?services$/, '')]),
 );
@@ -63,27 +65,42 @@ export default function ServicesDirectory() {
           </div>
 
           <div className="dir-side">
-            {others.map((service) => (
-              <article className="dir-card" key={service.id}>
-                <div className="dir-card-top">
-                  <span className="icon-badge">
-                    <Icon name={service.icon} />
-                  </span>
-                  <span className="dir-card-cat">{categoryName[service.category]}</span>
-                </div>
-                <h3>{service.name}</h3>
-                <p>{service.summary}</p>
-                {service.notice && (
-                  <p className="dir-note">
-                    <Icon name="clock" />
-                    Waiting list for new individual clients
-                  </p>
-                )}
-                <Link className="link-arrow" to={`/services/${service.id}`}>
-                  Learn more <Icon name="arrow" />
-                </Link>
-              </article>
-            ))}
+            {sideGroups.map(({ id, items }) => {
+              const [lead] = items;
+              return (
+                <article className="dir-card" key={id}>
+                  <div className="dir-card-top">
+                    <span className="icon-badge">
+                      <Icon name={lead.icon} />
+                    </span>
+                    <span className="dir-card-cat">{categoryName[id]}</span>
+                  </div>
+                  <h3>{groupTitle[id]}</h3>
+                  <p>{lead.summary}</p>
+                  {lead.notice && (
+                    <p className="dir-note">
+                      <Icon name="clock" />
+                      Waiting list for new individual clients
+                    </p>
+                  )}
+                  {items.length > 1 ? (
+                    <ul className="dir-card-links">
+                      {items.map((service) => (
+                        <li key={service.id}>
+                          <Link className="link-arrow" to={`/services/${service.id}`}>
+                            {service.name} <Icon name="arrow" />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <Link className="link-arrow" to={`/services/${lead.id}`}>
+                      Learn more <Icon name="arrow" />
+                    </Link>
+                  )}
+                </article>
+              );
+            })}
 
             <article className="dir-card dir-card-gold">
               <div className="dir-card-top">

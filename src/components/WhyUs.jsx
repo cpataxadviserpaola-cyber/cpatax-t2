@@ -54,9 +54,9 @@ const cards = [
   },
 ];
 
-export default function WhyUs() {
+export default function WhyUs({ id }) {
   return (
-    <section className="section section-white why">
+    <section className="section section-white why" id={id}>
       <div className="container why-grid">
         <div className="why-intro">
           <SectionHead

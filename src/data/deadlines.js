@@ -1,5 +1,5 @@
 // Federal tax deadlines for calendar-year filers, shown on the Home page, in the closing
-// call to action, and in the Client Center's tax calendar. Keep them in date order. Dates
+// call to action, and on the Tax Season page's tax calendar. Keep them in date order. Dates
 // that have passed drop off automatically; when the list runs low, add the next year's
 // dates after checking them on IRS.gov (weekends, holidays, and disaster relief can move
 // a deadline).

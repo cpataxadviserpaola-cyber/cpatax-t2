@@ -1,16 +1,10 @@
 import LegalPage from '../components/LegalPage.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { site } from '../data/site.js';
 
 // Source: cpataxadviser.com/privacy.php, word for word, with headings added. One line is
 // replaced: the old site said online information is stored in its web host's datacenters,
 // which is not true of this site, so it now refers to the client portal.
 export default function Privacy() {
-  usePageMeta(
-    'Privacy Policy',
-    `How ${site.name} collects, protects, and shares nonpublic personal information, as required by the Gramm-Leach-Bliley Act.`,
-  );
-
   return (
     <LegalPage
       page="Privacy Policy"

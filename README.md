@@ -17,7 +17,7 @@ Requires [Node.js](https://nodejs.org) 20.19+ or 22.12+.
 ```bash
 npm install       # install dependencies
 npm run dev       # start the dev server at http://localhost:5173
-npm run build     # production build into dist/
+npm run build     # production build into dist/, with each page's SEO tags written in
 npm run preview   # serve the production build locally
 ```
 
@@ -37,7 +37,8 @@ npm run preview   # serve the production build locally
 ## Project structure
 
 ```
-index.html              HTML shell, fonts, default title and description
+index.html              HTML shell and fonts
+scripts/seo-pages.js    After a build, writes each page's HTML with its SEO tags
 public/favicon.svg      Site icon
 public/team/            Team photos
 public/files/           Downloads (2026 pricing guide PDF)
@@ -46,6 +47,7 @@ src/
   App.jsx               Route definitions
   styles.css            All site styles; colors and fonts are CSS variables at the top
   data/
+    seo.js              Each page's title, description, keywords, and sharing tags
     site.js             Firm name, phone, email, address, hours, form endpoint, commitments
     services.js         The services and all the content of their pages (also feeds the
                         Home directory, footer and contact form)
@@ -59,7 +61,6 @@ src/
                         (PageHero, SectionHead, ServicesDirectory, WhyUs, Comparison,
                         ProcessSteps, FaqSection, CtaSection, Ribbons…)
   hooks/
-    usePageMeta.js      Sets each page's tab title and meta description
     useReveal.js        Fades `.reveal` elements in as they scroll into view
   utils/asset.js        Resolves files in public/ against the site's base URL
   pages/                One component per route
@@ -74,7 +75,7 @@ Content lives in data files, so each change updates every page that uses it:
 - **`src/data/team.js`**: team members, roles, bios, and photos (portrait files go in `public/team/`).
 - **`src/data/pricing.js`**: pricing tiers shown in the Client Center. Update it together with the PDF in `public/files/`.
 - **`src/data/deadlines.js`**: the tax deadlines counted down in the top bar. Past dates drop off on their own; add the next year's dates before the list runs out.
-- **Default title and description**: in `index.html`.
+- **`src/data/seo.js`**: each page's search title, meta description, keywords, and what shared links show (Open Graph and X), by page address. Canonical URLs are built from `siteUrl` there. `npm run build` writes these into every page's HTML so search engines and link previews see them.
 
 When the firm starts accepting individual clients again, update `announcement` in `site.js`, remove the `notice` on the individual service in `services.js`, and adjust the waiting-list notes on the Contact page and in the Home FAQ.
 

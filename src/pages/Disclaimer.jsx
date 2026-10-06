@@ -1,14 +1,8 @@
 import LegalPage from '../components/LegalPage.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { site } from '../data/site.js';
 
 // Source: cpataxadviser.com/disclaimer.php, word for word.
 export default function Disclaimer() {
-  usePageMeta(
-    'Disclaimer',
-    `The terms that apply to the information on the ${site.name} website, including that it is not tax, accounting, or financial advice.`,
-  );
-
   return (
     <LegalPage
       page="Disclaimer"

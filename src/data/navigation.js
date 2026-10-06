@@ -1,5 +1,5 @@
 import { links } from './site.js';
-import { findService } from './services.js';
+import { findService, servicePath } from './services.js';
 import { industries } from './industries.js';
 
 // Main menu in the header: desktop dropdowns and the full-screen menu on small screens.
@@ -11,8 +11,8 @@ import { industries } from './industries.js';
 // at the bottom of the dropdown.
 
 const service = (id, label) => {
-  const { icon, tagline } = findService(id);
-  return { label, to: `/services/${id}`, icon, text: tagline };
+  const item = findService(id);
+  return { label, to: servicePath(item), icon: item.icon, text: item.tagline };
 };
 
 const industryLinks = industries.map((industry) => ({

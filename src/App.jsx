@@ -12,6 +12,7 @@ import FinancialPlanning from './pages/FinancialPlanning.jsx';
 import Privacy from './pages/Privacy.jsx';
 import Disclaimer from './pages/Disclaimer.jsx';
 import NotFound from './pages/NotFound.jsx';
+import { services } from './data/services.js';
 
 export default function App() {
   return (
@@ -20,6 +21,11 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="services" element={<Services />} />
         <Route path="services/:serviceId" element={<ServiceDetail />} />
+        {services
+          .filter((service) => service.slug)
+          .map((service) => (
+            <Route key={service.id} path={service.slug} element={<ServiceDetail id={service.id} />} />
+          ))}
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="tax-season" element={<TaxSeason />} />

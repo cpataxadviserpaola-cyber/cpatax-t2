@@ -2,17 +2,11 @@ import { Link } from 'react-router';
 import Icon from '../components/Icon.jsx';
 import PageHero from '../components/PageHero.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { industries } from '../data/industries.js';
-import { findService } from '../data/services.js';
+import { findService, servicePath } from '../data/services.js';
 
 // One card per industry, each reachable at /industries#<id> from the header menu.
 export default function Industries() {
-  usePageMeta(
-    'Industries',
-    'Accounting, bookkeeping, payroll, and tax services for real estate, healthcare, legal, manufacturing, restaurants, retail, e-commerce, contractors, investment advisers, MWBEs, and marketing agencies.',
-  );
-
   return (
     <>
       <PageHero page="Industries" eyebrow="Industries" title={<>Specialized knowledge <em>for your field</em></>}>
@@ -34,7 +28,7 @@ export default function Industries() {
                 <ul className="ind-services">
                   {industry.services.map((id) => (
                     <li key={id}>
-                      <Link to={`/services/${id}`}>
+                      <Link to={servicePath(findService(id))}>
                         {findService(id).name}
                         <Icon name="arrow" />
                       </Link>

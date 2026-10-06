@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "build:gh-pages": "vite build --base=/CPATaxAdviser/",
-    "postbuild": "node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
-    "postbuild:gh-pages": "node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "postbuild": "node scripts/seo-pages.js",
+    "postbuild:gh-pages": "node scripts/seo-pages.js",
     "preview": "vite preview"
   },
   "dependencies": {

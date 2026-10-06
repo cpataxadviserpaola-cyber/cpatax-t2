@@ -6,7 +6,6 @@ import CtaSection from '../components/CtaSection.jsx';
 import TeamSection from '../components/TeamSection.jsx';
 import WhyUs from '../components/WhyUs.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { commitments, links, site } from '../data/site.js';
 import { workSteps } from '../data/process.js';
 
@@ -62,11 +61,6 @@ const technology = [
 ];
 
 export default function About() {
-  usePageMeta(
-    'About Us',
-    `Learn about ${site.name}, a South Carolina Minority/Women-Owned Business Enterprise founded by Paola Martinez, CPA, CFP®, and meet our team.`,
-  );
-
   return (
     <>
       <PageHero

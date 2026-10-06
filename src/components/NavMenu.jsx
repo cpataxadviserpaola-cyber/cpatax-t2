@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { Link, NavLink } from 'react-router';
+import { Link, NavLink, matchPath, useLocation } from 'react-router';
 import Icon from './Icon.jsx';
 
 // Hover opens a menu only with a mouse on the desktop layout (see DESKTOP_QUERY in Header.jsx).
@@ -16,6 +16,13 @@ export default function NavMenu({ item, open, onOpen, onCloseSoon, onClose, styl
   const panelRef = useRef(null);
   const [shift, setShift] = useState(0);
   const panelId = `menu-${item.id}`;
+
+  // The item is marked current on its own page and the pages under it, like a NavLink, and
+  // also on any page its dropdown links to (a service with its own address, say).
+  const { pathname } = useLocation();
+  const current =
+    matchPath({ path: item.to, end: false }, pathname) ||
+    item.columns.flat().some((group) => group.items.some((link) => link.to === pathname));
 
   const canHover = () => window.matchMedia(HOVER_QUERY).matches;
 
@@ -88,9 +95,9 @@ export default function NavMenu({ item, open, onOpen, onCloseSoon, onClose, styl
       onBlur={onBlur}
     >
       <div className="nav-item-row">
-        <NavLink className="nav-link" to={item.to}>
+        <Link className="nav-link" to={item.to} aria-current={current ? 'page' : undefined}>
           {item.label}
-        </NavLink>
+        </Link>
         <button
           ref={buttonRef}
           className="nav-caret"

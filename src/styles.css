@@ -2828,6 +2828,24 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 .feature-rows li:first-child { padding-top: .25rem; border-top: 0; }
 .feature-rows h3 { margin: .1rem 0 .4rem; font-size: 1.55rem; }
 .feature-rows p { margin: 0; font-size: .95rem; }
+.detail-block > :last-child { margin-bottom: 0; }
+.detail-block > p + :is(.feature-rows, .steps, .checklist, .faq) { margin-top: 2rem; }
+.detail-points { gap: .9rem; }
+.detail-closing { margin-top: 1.75rem; }
+.detail-callout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid #e8d2a8;
+  border-radius: 24px;
+  background: var(--gold-100);
+}
+.detail-callout p { flex: 1 1 20rem; max-width: 48ch; margin: 0; color: var(--wine-950); }
+.detail-callout strong { display: block; }
 
 /* --sticky-max (set by useStickyFit) lets a card taller than the window scroll until its
    button is in view before it sticks. */
@@ -2873,7 +2891,8 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 @media (max-width: 480px) {
   .feature-rows li { flex-direction: column; gap: 1rem; }
   .talk-actions,
-  .talk-actions .btn { width: 100%; }
+  .talk-actions .btn,
+  .detail-callout .btn { width: 100%; }
 }
 
 .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }

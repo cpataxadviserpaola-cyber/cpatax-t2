@@ -5,7 +5,6 @@ import SectionHead from '../components/SectionHead.jsx';
 import FaqSection from '../components/FaqSection.jsx';
 import NewsletterForm from '../components/NewsletterForm.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { links } from '../data/site.js';
 import { articles } from '../data/articles.js';
 import { faqs } from '../data/faqs.js';
@@ -56,11 +55,6 @@ const formatDate = (date) =>
 // Blog, guides, the newsletter sign-up, and frequently asked questions, in the order of the
 // Resources menu.
 export default function Resources() {
-  usePageMeta(
-    'Resources',
-    'Articles, guides, the newsletter, and answers to frequently asked questions from CPA Tax Adviser.',
-  );
-
   return (
     <>
       <PageHero page="Resources" eyebrow="Resources" title={<>Guides, insights, <em>and answers</em></>}>

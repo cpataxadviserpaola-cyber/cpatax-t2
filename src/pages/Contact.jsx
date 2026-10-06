@@ -1,15 +1,9 @@
 import Icon from '../components/Icon.jsx';
 import PageHero from '../components/PageHero.jsx';
 import ContactForm from '../components/ContactForm.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { links, site } from '../data/site.js';
 
 export default function Contact() {
-  usePageMeta(
-    'Contact Us',
-    `Contact ${site.name} in Simpsonville, SC. Call ${site.phone.display}, email ${site.email}, or schedule a free initial consultation online.`,
-  );
-
   return (
     <>
       <PageHero page="Contact" eyebrow="Contact us" title={<>Let's talk about <em>your business</em></>}>

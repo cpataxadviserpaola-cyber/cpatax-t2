@@ -4,7 +4,6 @@ import PageHero from '../components/PageHero.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { serviceCategories, servicesIn } from '../data/services.js';
 import { industries } from '../data/industries.js';
 
@@ -29,11 +28,6 @@ const categoryIntro = {
 const groupId = (category) => `group-${category.id}`;
 
 export default function Services() {
-  usePageMeta(
-    'Services',
-    'Business tax preparation, tax planning, small business accounting, bookkeeping, payroll, business advisory, QuickBooks, individual, and international tax services from CPA Tax Adviser.',
-  );
-
   return (
     <>
       <PageHero page="Services" eyebrow="What we do" title={<>We're on <em>your side</em></>}>

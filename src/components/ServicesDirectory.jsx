@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import Icon from './Icon.jsx';
 import SectionHead from './SectionHead.jsx';
-import { serviceCategories, servicesIn } from '../data/services.js';
+import { serviceCategories, servicePath, servicesIn } from '../data/services.js';
 
 const business = servicesIn('business');
 // One card per group beside the business panel; a group with several services links to each.
@@ -37,7 +37,7 @@ export default function ServicesDirectory() {
             <ul className="dir-list">
               {business.map((service) => (
                 <li key={service.id}>
-                  <Link className="dir-link" to={`/services/${service.id}`}>
+                  <Link className="dir-link" to={servicePath(service)}>
                     <span className="dir-icon">
                       <Icon name={service.icon} />
                     </span>
@@ -87,14 +87,14 @@ export default function ServicesDirectory() {
                     <ul className="dir-card-links">
                       {items.map((service) => (
                         <li key={service.id}>
-                          <Link className="link-arrow" to={`/services/${service.id}`}>
+                          <Link className="link-arrow" to={servicePath(service)}>
                             {service.name} <Icon name="arrow" />
                           </Link>
                         </li>
                       ))}
                     </ul>
                   ) : (
-                    <Link className="link-arrow" to={`/services/${lead.id}`}>
+                    <Link className="link-arrow" to={servicePath(lead)}>
                       Learn more<span className="sr-only"> about {lead.name}</span> <Icon name="arrow" />
                     </Link>
                   )}

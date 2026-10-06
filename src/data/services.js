@@ -1,8 +1,11 @@
 // Services offered by the firm (source: cpataxadviser.com). They feed the Home and
 // Services pages, the footer, the contact form, and each service's own page at
-// /services/<id>. Adding an entry here creates its page; add it to the header menu in
-// src/data/navigation.js.
+// /services/<id> (or /<slug>/). Adding an entry here creates its page; add it to the
+// header menu in src/data/navigation.js.
 //
+// slug         optional address for the service's page at the top of the site, /<slug>/
+//              (kept from the firm's current site); /services/<id> then forwards to it.
+//              Link to a service's page with servicePath(service).
 // category     business | individual | international (see serviceCategories)
 // name         short label for cards, menus, links, and the contact form
 // title        heading for the full description on the Services page
@@ -10,9 +13,11 @@
 // tagline      one-line description in the header menu
 // headline     main heading on the service's own page
 // summary      card text on the Home page and related-service cards
-// description  intro under the page headings
+// description  intro under the page headings (search details are in src/data/seo.js)
 // notice       optional note shown prominently on the service's page
 // cta          label for the service's contact button
+// sections     optional blocks for the service's page, in order, in place of the standard
+//              overview, highlights, process, and faqs (see DetailBlock in ServiceDetail.jsx)
 // related      ids of services suggested at the bottom of the service's page
 
 export const serviceCategories = [
@@ -229,66 +234,184 @@ export const services = [
   },
   {
     id: 'bookkeeping',
+    slug: 'bookkeeping-services-in-simpsonville',
     category: 'business',
     icon: 'ledger',
     name: 'Bookkeeping',
     title: 'Bookkeeping Services',
     chip: 'Bookkeeping',
     tagline: 'Clean-ups, ledgers, quarterly reviews',
-    headline: 'Leave the bookkeeping to us and focus on growing your business',
+    // Page copy from the firm's bookkeeping page brief; keep it word for word.
+    headline: 'Bookkeeping Services for Small Businesses in Simpsonville, SC',
     summary:
       "Accurate bookkeeping is essential to your company's long-term viability. Experienced and reliable, we serve a variety of industries and clients.",
     description:
-      'We serve clients from self-employed, home-based business owners to small and medium-sized businesses with employees, using current technology to provide personalized service.',
-    idealFor: 'self-employed owners and small and medium-sized businesses',
+      'We provide accurate and reliable bookkeeping services to help small businesses keep their financial records organized, up to date, and tax-ready.',
     included: [
-      'Bookkeeping clean-ups',
-      'Quarterly bookkeeping reviews',
-      'General ledger maintenance',
-      'Account reconciliations',
-      'Form 1099 and 1096 preparation',
-      'Outsourced bookkeeping',
+      'Bank & Credit Card Reconciliation',
+      'Income & Expense Tracking',
+      'Payroll Transaction Recording',
+      'General Ledger & Chart of Accounts Management',
+      'Monthly Book Closing & Financial Reporting',
+      'Year-End Bookkeeping & Tax-Ready Records',
     ],
     cta: 'Discuss your books',
-    overview: [
-      'Whether you are starting a new business and need help setting up your books, or you are established and want to improve your current system, we can help.',
-      'We keep your financial records accurate, organized, and up to date, so you always understand your numbers and are ready at tax time.',
-    ],
-    highlights: [
+    sections: [
       {
-        icon: 'ledger',
-        title: 'Clean-ups and catch-ups',
-        text: 'Behind on your books? We clean up and organize your records so you can file accurately.',
+        eyebrow: 'Overview',
+        title: 'Keep Your Books Organized. Make Better Business Decisions.',
+        paragraphs: [
+          'Keeping up with bookkeeping can take valuable time away from running your business. At CPA Tax Adviser, we provide dependable bookkeeping services across the USA, helping small business owners keep their financial records accurate, organized, and up to date.',
+          'From monthly bookkeeping and account reconciliation to financial reporting and year-end records, we handle your bookkeeping needs on a monthly basis, helping you keep your financial records organized while you focus on managing and growing your business.',
+        ],
+        callout: {
+          title: 'Need help with your bookkeeping Services?',
+          text: 'Contact CPA Tax Adviser today.',
+        },
       },
       {
-        icon: 'calendar',
-        title: 'Quarterly reviews',
-        text: 'Regular reviews keep your records accurate throughout the year, not just at year-end.',
+        eyebrow: 'Our approach',
+        title: 'Bookkeeping Support Built Around Your Business',
+        paragraphs: [
+          'Every business has different bookkeeping needs. A new business may need help setting up its accounts and recordkeeping process, while an established company may need ongoing monthly support or help cleaning up years of financial records.',
+          'CPA Tax Adviser works with small businesses, self-employed professionals, and business owners who need practical bookkeeping support without having to manage everything themselves.',
+          'Our approach starts with understanding how your business operates and what you need from your financial records. We then help organize your books, keep transactions properly recorded, and maintain the records you need throughout the year.',
+          'Whether you need regular monthly bookkeeping or catch-up bookkeeping services, our goal is to make your financial records easier to understand and manage.',
+        ],
       },
       {
-        icon: 'users',
-        title: 'A dedicated bookkeeper',
-        text: 'Our bookkeeper works closely with you to keep your financial foundation strong.',
+        eyebrow: 'Services',
+        title: 'Our Bookkeeping Services',
+        paragraphs: [
+          'Our bookkeeping services cover the core financial recordkeeping tasks that small businesses need throughout the year.',
+        ],
+        features: [
+          {
+            icon: 'card',
+            title: 'Bank & Credit Card Reconciliation',
+            text: 'We compare your bank and credit card activity with your accounting records to help identify missing transactions, discrepancies, and items that need attention.',
+          },
+          {
+            icon: 'trend',
+            title: 'Income & Expense Tracking',
+            text: 'We keep your business income and expenses properly recorded and organized, giving you a clearer picture of where your money is coming from and where it is going.',
+          },
+          {
+            icon: 'banknote',
+            title: 'Payroll Transaction Recording',
+            text: 'We record payroll-related transactions accurately within your bookkeeping records so your financial statements reflect your business activity.',
+          },
+          {
+            icon: 'ledger',
+            title: 'General Ledger & Chart of Accounts Management',
+            text: 'A properly maintained general ledger and chart of accounts provide the foundation for clean and useful financial records.',
+          },
+          {
+            icon: 'chart',
+            title: 'Monthly Book Closing & Financial Reporting',
+            text: 'We help keep your books current and prepare important reports such as Profit & Loss Statements, Balance Sheets, and Cash Flow Statements.',
+          },
+          {
+            icon: 'file-check',
+            title: 'Year-End Bookkeeping & Tax-Ready Records',
+            text: 'At year-end, organized books make it easier to review your financial activity and prepare the records needed for tax work.',
+          },
+        ],
       },
-    ],
-    process: [
-      { title: 'Review your records', text: 'We look at your current books, software, and accounts.' },
-      { title: 'Clean up and organize', text: 'We catch up, reconcile, and correct your records.' },
-      { title: 'Maintain', text: 'We keep your general ledger and accounts current.' },
-      { title: 'Stay tax-ready', text: 'Your books are ready for tax preparation and financial reporting.' },
-    ],
-    faqs: [
       {
-        question: 'Can you catch up on months of bookkeeping?',
-        answer: 'Yes. Bookkeeping clean-ups are one of our core services, including catch-up work for small business owners who have fallen behind.',
+        eyebrow: 'How it works',
+        title: 'How Our Bookkeeping Process Works',
+        paragraphs: ['We keep the process straightforward and focused on your business.'],
+        steps: [
+          {
+            title: 'Understand Your Business',
+            text: 'We start by learning about your business, your current bookkeeping setup, and the type of support you need.',
+          },
+          {
+            title: 'Review Your Existing Records',
+            text: 'We review your accounts and financial records to identify missing information, inconsistencies, or areas that need cleanup.',
+          },
+          {
+            title: 'Organize Your Books',
+            text: 'Transactions are properly categorized and recorded, while accounts, reconciliations, and other bookkeeping details are brought into order.',
+          },
+          {
+            title: 'Maintain Your Books Regularly',
+            text: 'With monthly bookkeeping support, we keep your records updated so you do not have to deal with a backlog at the end of the year.',
+          },
+          {
+            title: 'Provide Financial Reports',
+            text: 'Financial reports are available when applicable, giving you access to the information you need to review your business performance and make informed decisions.',
+          },
+          {
+            title: 'Keep Your Records Tax-Ready',
+            text: 'We maintain organized financial records throughout the year, making the transition into tax preparation easier.',
+          },
+        ],
       },
       {
-        question: 'Do you prepare 1099s?',
-        answer: 'Yes. We prepare Forms 1099 and 1096 as part of our bookkeeping services.',
+        eyebrow: 'Why choose us',
+        title: 'Why Choose CPA Tax Adviser?',
+        paragraphs: [
+          'Your bookkeeping should do more than record transactions. It should give you a reliable view of your business finances.',
+          'At CPA Tax Adviser, we focus on providing bookkeeping support that fits the way small businesses actually operate.',
+        ],
+        points: [
+          { label: 'Personalized service', text: 'We take the time to understand your business and bookkeeping needs.' },
+          { label: 'Accurate records', text: 'We focus on keeping transactions, accounts, and financial records properly organized.' },
+          { label: 'Ongoing support', text: 'Regular bookkeeping helps prevent your financial records from falling behind.' },
+          { label: 'Support for growing businesses', text: 'Our services can support businesses as their financial activity and bookkeeping needs change.' },
+          { label: 'Better financial visibility', text: 'Organized books make it easier to review income, expenses, cash flow, and overall business performance.' },
+          { label: 'Tax-ready records', text: 'Keeping your books current throughout the year can make year-end financial review much easier.' },
+        ],
+        closing:
+          'If you are searching for a bookkeeping company in Simpsonville, you can rely on CPA Tax Adviser for practical bookkeeping support designed around your business.',
       },
       {
-        question: 'Do you work with QuickBooks?',
-        answer: 'Yes. We set up, review, and tune up QuickBooks, including QuickBooks Online, and train your team to use it.',
+        eyebrow: 'Next steps',
+        title: 'Take Bookkeeping Off Your To-Do List',
+        paragraphs: [
+          'You started your business to serve your customers and build something valuable—not to spend every week sorting through transactions and financial records.',
+          'Let CPA Tax Adviser handle your bookkeeping while you focus on running your business.',
+        ],
+        callout: {
+          title:
+            'Looking for reliable bookkeeping services in Simpsonville, SC? Contact CPA Tax Adviser today to discuss your bookkeeping needs.',
+        },
+      },
+      {
+        eyebrow: 'FAQ',
+        title: 'Frequently Asked Questions',
+        faqs: [
+          {
+            question: 'What bookkeeping services do you provide for small businesses?',
+            answer: 'We provide a range of bookkeeping services, including bank and credit card reconciliation, income and expense tracking, payroll transaction recording, general ledger management, monthly book closing, financial reporting, and year-end bookkeeping and tax-ready Records.',
+          },
+          {
+            question: 'Do you provide monthly bookkeeping services?',
+            answer: 'Yes. Monthly bookkeeping can help keep your financial records current throughout the year. Regular bookkeeping also makes it easier to review your business finances and address issues before they become larger problems.',
+          },
+          {
+            question: 'Can you help clean up old or incomplete bookkeeping records?',
+            answer: 'Yes. If your books have fallen behind or contain records that need to be organized, catch-up bookkeeping and cleanup can help bring your financial records up to date.',
+          },
+          {
+            question: 'Do you work with QuickBooks?',
+            answer: 'Yes. We work with QuickBooks Online and other cloud-based accounting software that supports our remote working environment.',
+          },
+          {
+            question: 'Why is bookkeeping important for a small business?',
+            answer: 'Good bookkeeping gives you a clearer view of your income, expenses, cash flow, and overall financial position. It also helps you maintain organized records throughout the year.',
+          },
+          {
+            question: 'Can bookkeeping help prepare my business for tax time?',
+            answer: 'Yes. Once all required data is submitted, we usually prioritize completing the bookkeeping needed for tax preparation, helping keep your records accurate and tax-ready.',
+          },
+          {
+            question: 'How do I get started with your bookkeeping services?',
+            answer: 'Contact CPA Tax Adviser and tell us about your business, your current bookkeeping setup, and the type of support you need. We can discuss your requirements and determine the appropriate bookkeeping service for your business.',
+          },
+        ],
       },
     ],
     related: ['quickbooks', 'payroll', 'accounting'],
@@ -736,6 +859,9 @@ export const services = [
 ];
 
 export const findService = (id) => services.find((service) => service.id === id);
+
+// Address of a service's own page: /<slug>/ when it has one, otherwise /services/<id>.
+export const servicePath = (service) => (service.slug ? `/${service.slug}/` : `/services/${service.id}`);
 
 export const servicesIn = (category) => services.filter((service) => service.category === category);
 

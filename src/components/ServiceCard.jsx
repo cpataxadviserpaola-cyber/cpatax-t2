@@ -1,11 +1,12 @@
 import { Link } from 'react-router';
 import Icon from './Icon.jsx';
+import { servicePath } from '../data/services.js';
 
 // Card linking to a service's own page. With `showIncluded`, the first few items from
 // "What's included" are listed too.
 export default function ServiceCard({ service, id, showIncluded = false }) {
   return (
-    <Link className="svc-card" id={id} to={`/services/${service.id}`}>
+    <Link className="svc-card" id={id} to={servicePath(service)}>
       <span className="svc-card-top">
         <span className="icon-badge">
           <Icon name={service.icon} />

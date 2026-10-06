@@ -1,10 +1,7 @@
 import { Link } from 'react-router';
 import Icon from '../components/Icon.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 
 export default function NotFound() {
-  usePageMeta('Page Not Found', 'The page you were looking for could not be found.');
-
   return (
     <section className="section not-found">
       <div className="container">

@@ -2,7 +2,6 @@ import Icon from '../components/Icon.jsx';
 import PageHero from '../components/PageHero.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { links } from '../data/site.js';
 
 // Source: cpataxadviser.com, "Beyond Taxes | Financial Planning".
@@ -22,11 +21,6 @@ const audiences = [
 ];
 
 export default function FinancialPlanning() {
-  usePageMeta(
-    'Financial Planning',
-    'Personalized financial guidance beyond tax season through our affiliated firm, Yellow Oak Financial Planning.',
-  );
-
   return (
     <>
       <PageHero

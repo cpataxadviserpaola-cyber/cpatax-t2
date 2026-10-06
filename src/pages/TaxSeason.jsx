@@ -4,7 +4,6 @@ import PageHero from '../components/PageHero.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { links } from '../data/site.js';
 import { feeFactors, pricingNotes, pricingTables } from '../data/pricing.js';
 import { deadlineCountdown, getUpcomingDeadlines } from '../data/deadlines.js';
@@ -76,11 +75,6 @@ const monthOf = (date) => date.toLocaleDateString('en-US', { month: 'short' });
 // Sections follow the Tax Season menu: process, pricing, client portal, tax tool box, then
 // the upcoming IRS deadlines.
 export default function TaxSeason() {
-  usePageMeta(
-    'Tax Season',
-    'Our tax season process, pricing and the 2026 pricing guide, the client portal tutorial and login, a tax tool box, and upcoming IRS deadlines for CPA Tax Adviser clients.',
-  );
-
   const upcoming = getUpcomingDeadlines(4);
 
   return (

@@ -10,7 +10,6 @@ import SectionHead from '../components/SectionHead.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
 import FaqSection from '../components/FaqSection.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import usePageMeta from '../hooks/usePageMeta.js';
 import { site } from '../data/site.js';
 import { industries } from '../data/industries.js';
 import { workSteps } from '../data/process.js';
@@ -44,11 +43,6 @@ const pillars = [
 ];
 
 export default function Home() {
-  usePageMeta(
-    null,
-    'CPA Tax Adviser is a South Carolina licensed CPA firm in Simpsonville, SC, providing business tax preparation, tax planning, accounting, bookkeeping, payroll, QuickBooks, and international tax services nationwide, in English and Spanish.',
-  );
-
   return (
     <>
       <HomeHero />

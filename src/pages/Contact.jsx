@@ -39,8 +39,10 @@ export default function Contact() {
               </span>
               <div>
                 <h2>Email us</h2>
+                {/* <wbr> lets a narrow phone wrap the address after the @, not mid-word. */}
                 <a className="option-main" href={`mailto:${site.email}`}>
-                  {site.email}
+                  {site.email.split('@')[0]}@<wbr />
+                  {site.email.split('@')[1]}
                 </a>
               </div>
             </div>

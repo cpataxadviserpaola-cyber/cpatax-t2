@@ -1,9 +1,63 @@
 /* ==========================================================================
    CPA Tax Adviser — global styles (imported once in src/main.jsx)
-   Tokens · Base · Layout · Buttons · Header · Ribbons · Home hero · Home sections ·
+   Fonts · Tokens · Base · Layout · Buttons · Header · Ribbons · Home hero · Home sections ·
    Why us · Compare · Finder · Team · Steps · FAQ · Call to action · Page header ·
    Services · Service page · About · Tax Season · Industries · Resources · Contact · Footer · Motion
    ========================================================================== */
+
+/* ---------- Fonts ---------- */
+/* Manrope (text, one variable file for every weight) and Instrument Serif (headings), served
+   from the site itself rather than Google Fonts so nothing holds up the first paint. Each comes
+   in two parts: Latin (English and Spanish) and Latin Extended, which browsers download only
+   when a page uses one of its letters. index.html preloads the Latin files. */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("./assets/fonts/manrope-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("./assets/fonts/manrope-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/instrument-serif-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/instrument-serif-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/instrument-serif-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/instrument-serif-italic-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
 /* ---------- Tokens ---------- */
 :root {
@@ -360,11 +414,14 @@ strong { font-weight: 700; }
 }
 
 /* ---------- Buttons & links ---------- */
+/* A label stays on one line wherever it fits; when a button alone is wider than the space
+   it has (a long label on a narrow phone), the label wraps instead of pushing the page wide. */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: .6rem;
+  max-width: 100%;
   padding: .9rem 1.55rem;
   border: 1px solid transparent;
   border-radius: 999px;
@@ -373,7 +430,7 @@ strong { font-weight: 700; }
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: .01em;
-  white-space: nowrap;
+  text-align: center;
   cursor: pointer;
   transition: background-color .25s ease, color .25s ease, border-color .25s ease,
               box-shadow .3s ease, transform .3s var(--ease);
@@ -521,6 +578,12 @@ strong { font-weight: 700; }
 @media (max-width: 560px) {
   .topbar-inner { justify-content: center; }
   .deadline-what { display: none; }
+}
+/* Smallest phones: tighter spacing so the label, date, and countdown fit on one line. */
+@media (max-width: 400px) {
+  .deadline { gap: .5rem; }
+  .deadline-label { letter-spacing: .1em; }
+  .deadline-left { padding-inline: .5rem; }
 }
 
 /* ---------- Header: deep wine bar that turns to frosted glass once the page scrolls ---------- */
@@ -1448,7 +1511,7 @@ strong { font-weight: 700; }
   gap: clamp(2.5rem, 6vw, 6rem);
   align-items: start;
 }
-.why-intro { position: sticky; top: calc(var(--header-h-scrolled) + 2rem); }
+.why-intro { position: sticky; top: min(calc(var(--header-h-scrolled) + 2rem), var(--sticky-max, 100vh)); }
 .why-intro .section-head { margin-bottom: 2rem; }
 .why-index { display: grid; gap: .7rem; margin: 0; padding: 0; list-style: none; }
 .why-index li { display: flex; align-items: center; gap: .7rem; font-weight: 600; color: var(--ink); }
@@ -1647,8 +1710,9 @@ strong { font-weight: 700; }
   color: var(--wine-900);
 }
 
-/* Secure uploads */
-.uploads { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+/* Secure uploads. The column is capped at the card's width so long file names are cut short
+   with an ellipsis rather than widening the card past the screen on phones. */
+.uploads { display: grid; grid-template-columns: minmax(0, 1fr); gap: .55rem; margin: 0; padding: 0; list-style: none; }
 .uploads li {
   display: flex;
   align-items: center;
@@ -1678,9 +1742,9 @@ strong { font-weight: 700; }
   overflow: hidden;
   font-weight: 700;
   white-space: nowrap;
-  text-overflow: ellipsis;
   color: var(--ink);
 }
+.file-title { overflow: hidden; text-overflow: ellipsis; }
 .file-name small { font-size: .72rem; font-weight: 500; color: var(--muted); }
 .file-ok {
   display: inline-flex;
@@ -1692,6 +1756,10 @@ strong { font-weight: 700; }
   color: var(--green-700);
 }
 .file-ok .icon { width: 13px; height: 13px; }
+/* On the smallest phones the lock alone says "encrypted", leaving room for the file name. */
+@media (max-width: 400px) {
+  .file-ok-text { display: none; }
+}
 .file-bar {
   display: block;
   height: 5px;
@@ -2078,7 +2146,11 @@ strong { font-weight: 700; }
   font-size: 5rem;
   color: var(--gold-300);
 }
+/* Tablets keep the portrait beside the text, a little smaller; phones put it on top. */
 @media (max-width: 900px) {
+  .spotlight-photo .founder-avatar { width: clamp(180px, 26vw, 230px); }
+}
+@media (max-width: 640px) {
   .spotlight { grid-template-columns: 1fr; }
   .spotlight-photo { order: -1; padding: clamp(2rem, 4.5vw, 4rem) clamp(2rem, 4.5vw, 4rem) 0; }
   .spotlight-photo .founder-avatar { width: min(100%, 240px); }
@@ -2156,7 +2228,7 @@ strong { font-weight: 700; }
 @media (max-width: 560px) {
   .people { grid-template-columns: 1fr; }
   .person,
-  .person:nth-child(odd) { padding: 2rem 0; border-left: 0; }
+  .person + .person { padding: 2rem 0; border-left: 0; }
   .person + .person { border-top: 1px solid var(--line); }
   .team-strip { align-items: flex-start; }
 }
@@ -2757,7 +2829,9 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 .feature-rows h3 { margin: .1rem 0 .4rem; font-size: 1.55rem; }
 .feature-rows p { margin: 0; font-size: .95rem; }
 
-.detail-aside { position: sticky; top: calc(var(--header-h-scrolled) + 1.5rem); }
+/* --sticky-max (set by useStickyFit) lets a card taller than the window scroll until its
+   button is in view before it sticks. */
+.detail-aside { position: sticky; top: min(calc(var(--header-h-scrolled) + 1.5rem), var(--sticky-max, 100vh)); }
 .included-card {
   padding: 2rem;
   border-radius: 30px;
@@ -3026,7 +3100,7 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
   border-radius: 999px;
   background: rgb(255 255 255 / 6%);
   font: inherit;
-  font-size: .97rem;
+  font-size: 1rem; /* 16px or more, or iPhones zoom the page when the field is tapped */
   color: #fff;
   transition: border-color .2s ease, background-color .2s ease;
 }
@@ -3269,7 +3343,7 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
   .tiers-4 { grid-template-columns: 1fr; }
   .pricing-tabs { width: 100%; }
   .pricing-tab { flex: 1; padding: .7rem .6rem; font-size: .82rem; line-height: 1.25; }
-  .pricing-foot .btn { width: 100%; white-space: normal; text-align: center; }
+  .pricing-foot .btn { width: 100%; }
 }
 
 /* ---------- Contact ---------- */
@@ -3300,7 +3374,8 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 .option-main {
   display: inline-block;
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  /* Scales down on phones so the email address stays on one line where it can. */
+  font-size: clamp(1.3rem, 1rem + 1.6vw, 1.6rem);
   line-height: 1.2;
   overflow-wrap: anywhere;
   color: var(--wine-950);
@@ -3354,7 +3429,7 @@ a.option-main:hover { color: var(--crimson-600); }
   border-radius: 14px;
   background: var(--bg);
   font: inherit;
-  font-size: .97rem;
+  font-size: 1rem; /* 16px or more, or iPhones zoom the page when the field is tapped */
   color: var(--ink);
   transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
 }
@@ -3418,6 +3493,9 @@ a.option-main:hover { color: var(--crimson-600); }
 }
 @media (max-width: 560px) {
   .form-grid { grid-template-columns: 1fr; }
+  /* A smaller icon and padding leave room for the email address on one line. */
+  .option { gap: .9rem; padding: 1.25rem; }
+  .option-icon { width: 40px; height: 40px; }
 }
 
 /* ---------- Legal pages: privacy policy and disclaimer ---------- */
@@ -3439,7 +3517,7 @@ a.option-main:hover { color: var(--crimson-600); }
 }
 .legal-contact p { margin: 0 0 1rem; font-weight: 600; color: var(--ink); }
 .legal-contact ul { display: grid; gap: .6rem; margin: 0; padding: 0; list-style: none; }
-.legal-contact li { display: flex; align-items: flex-start; gap: .65rem; font-size: .95rem; line-height: 1.5; }
+.legal-contact li { display: flex; align-items: flex-start; gap: .65rem; font-size: .95rem; line-height: 1.5; overflow-wrap: anywhere; }
 .legal-contact .icon { flex-shrink: 0; width: 17px; height: 17px; margin-top: 3px; color: var(--gold-700); }
 
 /* ---------- Financial Planning ---------- */

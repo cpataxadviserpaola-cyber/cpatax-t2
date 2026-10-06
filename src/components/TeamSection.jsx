@@ -187,12 +187,20 @@ function PersonAction({ action, className = 'btn btn-primary' }) {
 }
 
 // The person's photo if one is set (the square headshot when small), otherwise their
-// initials on a wine disc.
+// initials on a wine disc. Photos sit well down the page, so they load as it scrolls.
 function Avatar({ person, small = false }) {
   const className = small ? 'member-avatar' : 'founder-avatar';
   if (person.photo) {
     const src = small ? person.avatar ?? person.photo : person.photo;
-    return <img className={className} src={asset(src)} alt={`${person.name}, ${person.role}`} />;
+    return (
+      <img
+        className={className}
+        src={asset(src)}
+        alt={`${person.name}, ${person.role}`}
+        loading="lazy"
+        decoding="async"
+      />
+    );
   }
   return (
     <span className={`${className} is-initials`} aria-hidden="true">

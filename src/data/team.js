@@ -19,8 +19,8 @@ export const team = [
     seal: 'CPA',
     role: 'Founder & CPA, CFP®',
     initials: 'PM',
-    photo: '/team/paola-martinez.jpg',
-    avatar: '/team/paola-martinez-avatar.jpg',
+    photo: '/team/paola-martinez.webp',
+    avatar: '/team/paola-martinez-avatar.webp',
     summary:
       'Founder of CPA Tax Adviser, working with closely held businesses and their owners on strategy that goes far beyond compliance.',
     highlight:

@@ -7,6 +7,7 @@ import ProcessSteps from '../components/ProcessSteps.jsx';
 import { FaqList } from '../components/FaqSection.jsx';
 import CtaSection from '../components/CtaSection.jsx';
 import usePageMeta from '../hooks/usePageMeta.js';
+import useStickyFit from '../hooks/useStickyFit.js';
 import { links, site } from '../data/site.js';
 import { findService, serviceCategories } from '../data/services.js';
 import NotFound from './NotFound.jsx';
@@ -25,6 +26,7 @@ export default function ServiceDetail() {
 // beside a "What's included" card that stays in view.
 function ServicePage({ service }) {
   usePageMeta(service.name, service.description);
+  const asideRef = useStickyFit();
 
   const contactLink = `/contact?service=${service.id}`;
   const related = service.related.map(findService);
@@ -140,7 +142,7 @@ function ServicePage({ service }) {
             </div>
           </div>
 
-          <aside className="detail-aside">
+          <aside className="detail-aside" ref={asideRef}>
             <div className="included-card surface-dark">
               <span className="icon-badge included-icon">
                 <Icon name={service.icon} />

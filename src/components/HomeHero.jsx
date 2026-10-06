@@ -33,7 +33,7 @@ export default function HomeHero() {
           <div className="hero-copy">
             <p className="hero-chip">
               <span className="status-dot" aria-hidden="true" />
-              {site.announcement}
+              Your Trusted Tax and Accounting Partner
             </p>
 
             <h1 className="hero-title">
@@ -41,13 +41,12 @@ export default function HomeHero() {
             </h1>
 
             <p className="hero-lead">
-              We help business owners, professionals, and individuals make informed tax decisions
-              through practical advice, personalized strategies, and year-round guidance.
+              We provide personalized accounting and tax preparation, planning, and advisory services for businesses, professionals, and individuals—helping you navigate today’s tax requirements while planning for tomorrow. 
             </p>
 
             <div className="hero-actions">
               <Link className="btn btn-primary btn-lg" to="/contact">
-                Schedule a consultation
+                Speak With an Advisor
                 <Icon name="arrow" />
               </Link>
               <a className="btn btn-outline btn-lg" href={site.phone.href}>

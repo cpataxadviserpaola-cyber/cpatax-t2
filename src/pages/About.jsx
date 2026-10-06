@@ -69,12 +69,31 @@ export default function About() {
 
   return (
     <>
-      <PageHero page="About" eyebrow="About us" title={<>A trusted partner in your <em>financial journey</em></>}>
-        We'd like to give you an opportunity to get to know our staff and our firm's values before
-        you come to see us.
+      <PageHero
+        page="About"
+        eyebrow="About us"
+        title={
+          <>
+            Trusted expertise.
+            <br />
+            Personal attention.
+            <br />
+            <em>Business-focused solutions.</em>
+          </>
+        }
+        actions={
+          <Link className="btn btn-primary btn-lg" to="#story">
+            Learn more
+            <Icon name="arrow" />
+          </Link>
+        }
+      >
+        We’re a dedicated team committed to providing reliable tax, accounting, and financial
+        solutions that help individuals and businesses stay organized, compliant, and prepared for
+        what’s ahead.
       </PageHero>
 
-      <section className="section section-white">
+      <section className="section section-white" id="story">
         <div className="container story">
           <div className="story-copy reveal">
             <p className="eyebrow">Our story</p>

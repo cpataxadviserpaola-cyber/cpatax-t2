@@ -1,10 +1,20 @@
 import Icon from './Icon.jsx';
 import SectionHead from './SectionHead.jsx';
+import useStickyFit from '../hooks/useStickyFit.js';
 import { monthNames, touchpoints } from '../data/yearPlan.js';
 
-// What sets the firm apart. The intro stays in view while the cards on the right pile up
-// on top of each other as the page scrolls (on wide screens).
+// What sets the firm apart. The intro and its checklist stay in view while the cards on the
+// right pile up on top of each other as the page scrolls (on wide screens).
 // The figures echo the service commitments in src/data/site.js; keep them in step.
+const highlights = [
+  'Proactive tax planning',
+  'Year-round support',
+  'Business advisory',
+  'Personalized strategies',
+  'Secure & paperless',
+  'International clients',
+];
+
 const cards = [
   {
     tone: 'dark',
@@ -55,22 +65,25 @@ const cards = [
 ];
 
 export default function WhyUs({ id }) {
+  const introRef = useStickyFit();
+
   return (
     <section className="section section-white why" id={id}>
       <div className="container why-grid">
-        <div className="why-intro">
+        <div className="why-intro" ref={introRef}>
           <SectionHead
             eyebrow="The CPA Tax Adviser difference"
-            title={<>Built differently from the <em>typical tax office</em></>}
+            title={<>More than tax planning &amp; <em>preparation.</em></>}
           >
-            Experienced and friendly, with the expertise to guide decisions that go far
-            beyond compliance.
+            We provide experienced tax and advisory support designed to help businesses,
+            professionals, and individuals make informed decisions and plan confidently for the
+            future.
           </SectionHead>
           <ul className="why-index reveal" aria-label="What sets us apart">
-            {cards.map((card) => (
-              <li key={card.kicker}>
+            {highlights.map((item) => (
+              <li key={item}>
                 <Icon name="check" />
-                {card.kicker}
+                {item}
               </li>
             ))}
           </ul>
@@ -177,12 +190,12 @@ function UploadPreview() {
             <Icon name="file" />
           </span>
           <span className="file-name">
-            {file.name}
+            <span className="file-title">{file.name}</span>
             <small>{file.size}</small>
           </span>
           <span className="file-ok">
             <Icon name="lock" />
-            Encrypted
+            <span className="file-ok-text">Encrypted</span>
           </span>
         </li>
       ))}
@@ -191,7 +204,7 @@ function UploadPreview() {
           <Icon name="file" />
         </span>
         <span className="file-name">
-          1098_Mortgage.pdf
+          <span className="file-title">1098_Mortgage.pdf</span>
           <span className="file-bar">
             <span />
           </span>

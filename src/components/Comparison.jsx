@@ -6,37 +6,37 @@ import { site } from '../data/site.js';
 const rows = [
   {
     topic: 'Availability',
-    typical: 'Busy in spring, hard to reach the rest of the year',
-    ours: 'Year-round guidance, not just at tax time',
+    typical: 'Seasonal support when tax deadlines are approaching',
+    ours: 'Year-round guidance when important decisions arise',
   },
   {
     topic: 'Relationship',
-    typical: 'A different preparer each season',
-    ours: 'A trusted partner who builds a lasting relationship',
+    typical: 'A tax preparer you see once a year',
+    ours: 'A long-term advisor who knows your business',
   },
   {
     topic: 'Business insight',
-    typical: 'Focused only on filling in forms',
-    ours: 'Understands how your business truly operates',
+    typical: 'Focused on preparing and filing your returns',
+    ours: 'Looks beyond the numbers to understand your business',
   },
   {
     topic: 'Approach',
-    typical: 'Enters the numbers you bring in',
-    ours: 'Proactively recommends tax-saving strategies',
+    typical: 'Reactive when tax issues come up',
+    ours: 'Proactive planning to identify opportunities before deadlines',
   },
   {
     topic: 'Pricing',
-    typical: 'Unclear until the bill arrives',
-    ours: 'Published pricing guide and tailored business bundles',
+    typical: 'Limited visibility into total costs',
+    ours: 'Clear pricing and tailored advisory solutions',
   },
   {
     topic: 'Convenience',
-    typical: 'Paper forms and office visits',
-    ours: 'Secure client portal, online payments, English and Spanish',
+    typical: 'Traditional paperwork and office appointments',
+    ours: 'Secure digital communication and streamlined document sharing',
   },
 ];
 
-// A typical seasonal tax office and the firm, side by side, one topic per row.
+// A traditional seasonal tax office and the firm, side by side, one topic per row.
 export default function Comparison() {
   return (
     <section className="section">
@@ -47,7 +47,7 @@ export default function Comparison() {
 
         <div className="versus reveal">
           <div className="versus-card versus-typical">
-            <h3 className="versus-label">Typical tax office</h3>
+            <h3 className="versus-label">Traditional tax office</h3>
             <ul className="versus-list">
               {rows.map((row) => (
                 <li key={row.topic}>

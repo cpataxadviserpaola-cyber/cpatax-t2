@@ -95,7 +95,7 @@ export default function ServicesDirectory() {
                     </ul>
                   ) : (
                     <Link className="link-arrow" to={`/services/${lead.id}`}>
-                      Learn more <Icon name="arrow" />
+                      Learn more<span className="sr-only"> about {lead.name}</span> <Icon name="arrow" />
                     </Link>
                   )}
                 </article>
@@ -115,7 +115,7 @@ export default function ServicesDirectory() {
                 Yellow Oak Financial Planning.
               </p>
               <Link className="link-arrow" to="/financial-planning">
-                Learn more <Icon name="arrow" />
+                Learn more<span className="sr-only"> about Financial Planning</span> <Icon name="arrow" />
               </Link>
             </article>
           </div>

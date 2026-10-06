@@ -31,7 +31,7 @@ const pillars = [
   {
     icon: 'briefcase',
     title: 'What we do',
-    text: 'Outstanding service built on three principles: professionalism, responsiveness, and quality.',
+    text: 'Our firm provides outstanding service to our clients because of our dedication to our underlying principles.',
     link: { to: '/services', label: 'Our services' },
   },
   {
@@ -59,7 +59,13 @@ export default function Home() {
             <p className="eyebrow">Our mission</p>
             <p className="intro-mission">{site.mission}</p>
             <p className="intro-sign">
-              <img className="intro-avatar" src={asset(founder.avatar ?? founder.photo)} alt="" />
+              <img
+                className="intro-avatar"
+                src={asset(founder.avatar ?? founder.photo)}
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
               <span>
                 <small>Founded by</small>
                 {founder.name}, {founder.credentials}
@@ -106,7 +112,7 @@ export default function Home() {
       <section className="section section-white">
         <div className="container">
           <SectionHead eyebrow="How it works" title={<>Getting started is <em>simple</em></>} center>
-            A straightforward process designed to save you time and give you peace of mind.
+            A simple procedure that will offer you peace of mind and save you time.
           </SectionHead>
           <ProcessSteps steps={workSteps} />
         </div>

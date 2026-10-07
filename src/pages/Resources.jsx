@@ -143,6 +143,12 @@ export default function Resources() {
               );
             })}
           </div>
+          <p className="section-action reveal">
+            <Link className="btn btn-outline" to="/guides">
+              Browse all financial guides
+              <Icon name="arrow" />
+            </Link>
+          </p>
         </div>
       </section>
 

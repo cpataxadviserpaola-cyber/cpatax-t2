@@ -126,6 +126,158 @@ export const pages = {
       'Articles, guides, the newsletter, and answers to frequently asked questions from CPA Tax Adviser.',
     keywords: '',
   },
+  '/guides': {
+    title: 'Financial Guides | CPA Tax Adviser',
+    description:
+      'Practical, unbiased financial guides from CPA Tax Adviser on life events, business strategies, investment strategies, and tax strategies for business owners.',
+    keywords: '',
+  },
+
+  // Guide topic pages (topicPages in src/data/guides.js)
+  '/guides/life-events/getting-married': {
+    title: 'Getting Married: Financial Guides | CPA Tax Adviser',
+    description:
+      'Financial guides, frequently asked questions, and a spending calculator for couples getting married, from CPA Tax Adviser.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/financial-guidelines': {
+    title: 'Getting Married (or Divorced): Some Financial Guidelines | CPA Tax Adviser',
+    description:
+      'Financial and legal decisions to make when you marry, divorce, or remarry: life insurance, property ownership, money management, credit, and dividing property.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/life-insurance': {
+    title: 'Life Insurance: How Much and What Kind To Buy | CPA Tax Adviser',
+    description:
+      'Whether you need life insurance, a worksheet to work out how much, how term and cash value policies differ, and how to shop for a policy.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/your-financial-plan': {
+    title: 'Your Financial Plan: Getting Started On a Secure Future | CPA Tax Adviser',
+    description:
+      'Start a financial plan: set your goals, work out your net worth and cash flow, build a safety net, and decide how much to save, with worksheets for each step.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/document-locator': {
+    title: 'Document Locator System: A Handy Aid For Keeping Track of Your Records | CPA Tax Adviser',
+    description:
+      'A simple system for filing your important personal records so you, your spouse, or your executor can find them, with a list of where to file each document.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/budgeting': {
+    title: 'Budgeting: How To Prepare a Workable Plan | CPA Tax Adviser',
+    description:
+      'Build a budget in four steps: analyze your income and expenses, set budgeting goals, create your monthly budget, and review how well you keep to it.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/credit-reports': {
+    title: 'Credit Reports: What You Should Know—And Do—About Yours | CPA Tax Adviser',
+    description:
+      'How lenders evaluate credit, how to get and read your credit reports, how to dispute errors, and what affects your credit standing, with agencies to contact.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/post-mortem-letter': {
+    title: 'Post-Mortem Letter: How To Prepare It and What To Include | CPA Tax Adviser',
+    description:
+      'What a postmortem letter does, how to get it to your executors, and what it should contain so your survivors can find your assets, records, and advisers.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/retirement-distributions-when': {
+    title: 'Retirement Plan Distributions: When To Take Them | CPA Tax Adviser',
+    description:
+      'When you must start withdrawing from retirement plans, what happens to the funds after you die, how your heirs are taxed, and tax planning ideas.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/retirement-distributions-how': {
+    title: 'Retirement Plan Distributions: How To Take Them | CPA Tax Adviser',
+    description:
+      'Your options for taking retirement plan distributions, from lump sums and rollovers to partial withdrawals, and how each is taxed.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/estate-planning': {
+    title: 'Estate Planning: How To Get Started | CPA Tax Adviser',
+    description:
+      'A road map to estate planning: estate and gift taxes, wills, trusts, postmortem letters, living wills, life insurance, disclaimers, and lifetime gifts.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/funerals': {
+    title: 'Funerals: What To Do At This Stressful Time | CPA Tax Adviser',
+    description:
+      'How to arrange a funeral, how the FTC Funeral Rule protects you, what the itemized statement shows, how to complain, and benefits for widows and widowers.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/your-retirement-plan': {
+    title: 'Your Retirement Plan: How To Get Started | CPA Tax Adviser',
+    description:
+      'Get started on retirement planning: estimate your retirement income, set goals and work out how much to save each year, and choose investments.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/saving-money': {
+    title: 'Saving Money: 10 Major Ways To Increase Your Nest Egg | CPA Tax Adviser',
+    description:
+      'Ten ways to grow your nest egg by spending less, from a financial plan and automatic savings to lower mortgage, credit card, bank, insurance, and utility costs.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/disability-insurance': {
+    title: 'Disability Insurance: What To Look For | CPA Tax Adviser',
+    description:
+      'How to protect your earning power with disability insurance: employer and government coverage, and what to look for in a private policy.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/disability-benefits': {
+    title: "Disability Benefits: How To Get All You're Entitled To | CPA Tax Adviser",
+    description:
+      'Social Security disability benefits: who qualifies, how payments work, changes you must report, case reviews, returning to work, and your right to appeal.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/homeowners-insurance': {
+    title: "Homeowner's Insurance: How To Get The Best Coverage and Value | CPA Tax Adviser",
+    description:
+      "What homeowner's insurance covers, the coverage to consider, how to shop for a policy, a glossary of terms, and an inventory sheet for your belongings.",
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/asset-allocation': {
+    title: 'Asset Allocation: How To Diversify For Maximum Return | CPA Tax Adviser',
+    description:
+      'What asset allocation is, how it works, the main asset classes, how allocation models are built, and how the efficient frontier balances risk and return.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/social-security-benefits': {
+    title: 'Social Security Benefits: How To Get The Maximum Amount | CPA Tax Adviser',
+    description:
+      'Social Security retirement benefits: eligibility, how your benefit is figured, early, full, and delayed retirement, family benefits, applying, and Medicare.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/investment-basics': {
+    title: 'Investment Basics: What You Should Know | CPA Tax Adviser',
+    description:
+      'A starting point for new investors: how securities are traded and priced, how investors are protected, the main types of investments, risk and return, and a glossary.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/investing-in-mutual-funds': {
+    title: 'Investing In Mutual Funds: The Time-Tested Guidelines | CPA Tax Adviser',
+    description:
+      'How to choose a mutual fund: comparing performance, costs, investment philosophy, and customer service, and the risks of money market, bond, and stock funds.',
+    keywords: '',
+  },
+  '/guides/life-events/getting-married/survivor-benefits': {
+    title: 'Survivor Benefits: A Guide To This Often Overlooked Insurance Add-On | CPA Tax Adviser',
+    description:
+      'Social Security survivors benefits: who is eligible, how much your family can receive, how to apply, Medicare, and how your information is kept private.',
+    keywords: '',
+  },
+  '/guides/life-events/death-of-a-loved-one': {
+    title: 'Coping with Death of a Loved One: Financial Guides | CPA Tax Adviser',
+    description:
+      'Financial guides and answers to common questions on the death of a spouse, funerals, and preparing a postmortem letter, from CPA Tax Adviser.',
+    keywords: '',
+  },
+  '/guides/life-events/death-of-a-loved-one/death-of-a-spouse': {
+    title: 'Death of a Spouse: Financial Steps You Should Take | CPA Tax Adviser',
+    description:
+      'The financial steps to take after the death of a spouse: collecting papers, survivor and veterans benefits, the will, probate, taxes, and changing ownership.',
+    keywords: '',
+  },
   '/financial-planning': {
     title: 'Financial Planning | CPA Tax Adviser',
     description:

@@ -2847,6 +2847,59 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 .detail-callout p { flex: 1 1 20rem; max-width: 48ch; margin: 0; color: var(--wine-950); }
 .detail-callout strong { display: block; }
 
+/* Blocks laid out from a firm's page document (`content` in src/data/services.js) */
+.detail-note { margin: 0 0 1.75rem; font-size: .8rem; font-style: italic; line-height: 1.55; white-space: pre-line; color: var(--muted); }
+.detail-subhead { margin: 2.6rem 0 .9rem; font-size: clamp(1.6rem, 1.4rem + .7vw, 2rem); }
+.detail-block > h2 + .detail-subhead { margin-top: 0; }
+.detail-block > p + .detail-list,
+.detail-list { gap: .7rem; margin: 1.1rem 0 1.6rem; }
+.detail-list li { font-size: .97rem; }
+.detail-numbered { display: grid; gap: 1.1rem; margin: 1.6rem 0 0; padding: 0; list-style: none; counter-reset: item; }
+.detail-numbered li { position: relative; padding-left: 3.4rem; line-height: 1.65; counter-increment: item; }
+.detail-numbered li::before {
+  content: counter(item);
+  position: absolute;
+  top: -.1rem;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: var(--gold-100);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--gold-700);
+}
+.detail-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.detail-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--card-bg);
+  color: var(--text);
+}
+.detail-card.is-link { transition: transform .45s var(--ease), box-shadow .45s ease, border-color .3s ease; }
+.detail-card.is-link:hover { transform: translateY(-4px); border-color: transparent; box-shadow: var(--shadow); color: var(--text); }
+.detail-card-title { margin: 0 0 .5rem; font-size: 1.45rem; }
+.detail-card p { margin: 0; font-size: .9rem; }
+.detail-card.is-link p { margin-bottom: 1.1rem; }
+.detail-card-arrow { width: 18px; height: 18px; margin-top: auto; color: var(--crimson-600); transition: transform .3s var(--ease); }
+.detail-card.is-link:hover .detail-card-arrow { transform: translateX(4px); }
+@media (max-width: 600px) {
+  .detail-cards { grid-template-columns: 1fr; }
+}
+
 /* --sticky-max (set by useStickyFit) lets a card taller than the window scroll until its
    button is in view before it sticks. */
 .detail-aside { position: sticky; top: min(calc(var(--header-h-scrolled) + 1.5rem), var(--sticky-max, 100vh)); }
@@ -3078,6 +3131,176 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 }
 @media (max-width: 640px) {
   .ind-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Guides ---------- */
+.guide-groups { display: grid; gap: 2.5rem; }
+.guide-groups .label { margin: 0 0 1rem; font-family: var(--font-sans); line-height: 1.4; }
+.guide-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; margin: 0; padding: 0; list-style: none; }
+.guide-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card-bg);
+  font-size: .92rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--ink);
+  transition: transform .45s var(--ease), box-shadow .45s ease, border-color .3s ease, color .3s ease;
+}
+.guide-links a:hover { transform: translateY(-3px); border-color: transparent; box-shadow: var(--shadow); color: var(--crimson-600); }
+.guide-links .icon { flex: none; width: 16px; height: 16px; stroke-width: 2; color: var(--crimson-600); transition: transform .3s var(--ease); }
+.guide-links a:hover .icon { transform: translate(2px, -2px); }
+.guide-links a:hover .icon.is-internal { transform: translateX(3px); }
+.guide-groups.is-wide .guide-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 960px) {
+  .guide-groups.is-wide .guide-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .guide-links,
+  .guide-groups.is-wide .guide-links { grid-template-columns: 1fr; }
+}
+
+/* A guide's own page (GuideArticle.jsx): its contents in the sticky column, the text beside. */
+.article-aside { display: grid; justify-items: start; gap: 1rem; }
+.article-aside nav { width: 100%; margin-bottom: .75rem; }
+.article-aside .label { margin: 0 0 .9rem; }
+.article-toc { display: grid; gap: .2rem; margin: 0; padding: 0; list-style: none; counter-reset: toc; }
+.article-toc a {
+  display: flex;
+  gap: .8rem;
+  padding: .55rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--ink);
+  counter-increment: toc;
+}
+.article-toc a::before { content: counter(toc, decimal-leading-zero); font-family: var(--font-display); font-size: 1.1rem; font-weight: 400; line-height: 1.25; color: var(--gold-700); }
+.article-toc a:hover { color: var(--crimson-600); }
+.article-toc.is-plain a::before { content: none; }
+
+/* min-width: 0 lets a wide table scroll inside its frame instead of widening the column. */
+.article { min-width: 0; max-width: 760px; }
+.article > section { margin-top: 3.5rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+.article > section:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.article h2 { margin: 0 0 1.25rem; font-size: clamp(2rem, 1.5rem + 1.5vw, 2.8rem); }
+.article h3 { margin: 2.5rem 0 .8rem; font-size: clamp(1.45rem, 1.3rem + .5vw, 1.75rem); }
+.article h4 { margin: 1.75rem 0 .5rem; font-family: var(--font-sans); font-size: 1.03rem; font-weight: 700; line-height: 1.45; letter-spacing: 0; }
+.article p,
+.article li { font-size: 1.03rem; line-height: 1.75; }
+.article p { margin: 0 0 1rem; }
+.article :is(ul, ol) { margin: 0 0 1.25rem; padding-left: 1.4rem; }
+.article li + li { margin-top: .5rem; }
+.article li > ul { margin: 0; }
+.article li::marker { color: var(--gold-700); font-weight: 700; }
+/* A figure in a guide, such as the efficient frontier chart in Asset Allocation. */
+.article-figure { margin: 1.75rem 0; padding: 1.25rem 1.25rem 1rem; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); }
+.article-figure svg { display: block; width: 100%; height: auto; }
+.article-figure figcaption { margin-top: .75rem; font-size: .88rem; line-height: 1.5; color: var(--muted); }
+.frontier-chart text { font-family: var(--font-sans); font-size: 13px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.frontier-grid { stroke: var(--line); stroke-width: 1; }
+.frontier-line { fill: none; stroke: var(--crimson-600); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.frontier-chart .frontier-name { font-weight: 700; fill: var(--text); }
+.frontier-hit { fill: transparent; }
+.frontier-dot { fill: var(--crimson-600); stroke: var(--surface); stroke-width: 2; }
+.frontier-point.is-inefficient .frontier-dot { fill: #2a78d6; }
+.frontier-chart .frontier-label { font-size: 15px; font-weight: 700; fill: var(--ink); }
+/* The chart scales down with the page, so its text is set larger on small screens to stay readable. */
+@media (max-width: 640px) {
+  .frontier-chart text { font-size: 22px; }
+  .frontier-chart .frontier-label { font-size: 26px; }
+}
+/* A glossary: each term in bold with its definition after it. */
+.article-glossary { display: grid; gap: 1rem; margin: 0 0 1.25rem; }
+.article-glossary div { padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.article-glossary div:last-child { padding-bottom: 0; border-bottom: 0; }
+.article-glossary dt { font-weight: 700; color: var(--ink); }
+.article-glossary dd { margin: .25rem 0 0; font-size: 1.03rem; line-height: 1.75; }
+/* A list of short items (such as states) in as many columns as fit. */
+.article .article-columns { columns: 3 10rem; column-gap: 2rem; }
+.article .article-columns li { margin: 0 0 .5rem; break-inside: avoid; }
+.article :is(p, address) a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.article-address {
+  display: grid;
+  gap: .1rem;
+  margin: 0 0 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--gold-600);
+  border-radius: 0 18px 18px 0;
+  background: var(--bg);
+  font-size: .97rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+.article-address strong { color: var(--ink); }
+
+.article-callout,
+.article-related { margin: 1.75rem 0; padding: 1.4rem 1.6rem; border-radius: 22px; }
+.article-callout { border: 1px solid #e8d2a8; background: var(--gold-100); }
+.article-callout.is-note { border-color: var(--line); background: var(--wine-100); }
+.article :is(.article-callout, .article-related) .label { margin: 0 0 .5rem; color: var(--gold-700); }
+.article .article-callout.is-note .label { color: var(--wine-700); }
+.article-callout.is-caution { border-color: #f1c9d1; background: var(--crimson-100); }
+.article-callout.is-example { border-color: var(--line); background: var(--bg); }
+.article-callout .article-table { margin-bottom: 0; }
+.article .article-callout.is-caution .label { color: var(--crimson-700); }
+.article-callout p { color: var(--wine-950); }
+.article .article-callout > :last-child { margin-bottom: 0; }
+.article-related { border: 1px solid var(--line); background: var(--bg); }
+.article-related p:not(.label) { margin-bottom: .9rem; font-size: .95rem; }
+.article .article-related .guide-links { grid-template-columns: 1fr; margin: 0; padding: 0; }
+.article .article-related .guide-links li { margin: 0; font-size: .92rem; }
+.article .article-related .guide-links a { background: var(--surface); }
+
+.article .article-agencies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding: 0; list-style: none; }
+.article .article-agencies li { display: grid; align-content: start; gap: .15rem; margin: 0; padding: 1.4rem 1.5rem; border: 1px solid var(--line); border-radius: 22px; background: var(--bg); font-size: .95rem; line-height: 1.55; }
+.article-agencies strong { margin-bottom: .4rem; color: var(--ink); line-height: 1.4; }
+.article-agencies a { justify-self: start; margin-bottom: .4rem; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.article .article-agencies p { font-size: .9rem; line-height: 1.6; }
+.article .article-agencies .article-agency-text { margin: 0 0 .5rem; }
+.article .article-agencies .article-agency-note { margin: .6rem 0 0; }
+
+/* Worksheets and comparisons. A table wider than the column scrolls inside its frame. */
+.article-table { margin: 1.5rem 0 1.75rem; overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.article-table table { width: 100%; border-collapse: collapse; font-size: .92rem; line-height: 1.55; }
+.article-table :is(th, td) { padding: .75rem 1rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.article-table tbody tr:last-child > * { border-bottom: 0; }
+.article-table thead :is(th, td) { background: var(--bg); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.article-table tbody th { font-weight: 700; color: var(--ink); }
+.article-table .is-group td { padding-top: 1rem; background: var(--bg); font-weight: 700; color: var(--ink); }
+.article-table .is-item td:first-child { padding-left: 2rem; }
+.article-table .is-total td { font-weight: 700; color: var(--ink); }
+.article-table-note { font-size: .85rem; color: var(--muted); }
+.article-table .is-amount { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.article-table thead .is-amount { white-space: normal; }
+/* A write-in line for an amount: the dollar sign, then a dashed rule. */
+.article-blank { width: 9.5rem; min-width: 6.5rem; vertical-align: bottom !important; color: var(--muted); }
+.article-blank::after { content: ""; display: inline-block; width: calc(100% - 1rem); margin-left: .3rem; border-bottom: 1px dashed var(--line-strong); }
+/* A blank in the first column (a goal, say) and the blanks of a many-column worksheet share
+   the space instead of keeping a fixed width. */
+.article-blank:first-child,
+.article-table.is-wide .article-blank { width: auto; }
+.article-blank:first-child { min-width: 10rem; }
+/* The item column of a statement or list, so it gets a steady share and statements one
+   after another line up. */
+.article-col-label { width: 40%; }
+/* A line to write on in running text, such as a statement's date. */
+.article-fill { font-weight: 700; color: var(--ink); }
+.article-line { display: inline-block; width: 9rem; margin: 0 .3rem; border-bottom: 1px dashed var(--line-strong); }
+/* A table with many columns keeps them readable and scrolls on small screens. */
+.article-table.is-wide table { min-width: 640px; }
+
+.article-disclaimer { margin: 3.5rem 0 0; padding: 1.4rem 1.6rem; border: 1px dashed var(--line-strong); border-radius: 22px; }
+.article .article-disclaimer { font-size: .85rem; font-style: italic; line-height: 1.65; color: var(--muted); }
+@media (max-width: 640px) {
+  .article .article-agencies { grid-template-columns: 1fr; }
 }
 
 /* ---------- Resources ---------- */

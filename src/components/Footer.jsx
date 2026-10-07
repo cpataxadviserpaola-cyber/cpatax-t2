@@ -11,6 +11,7 @@ const companyLinks = [
   { to: '/industries', label: 'Industries' },
   { to: '/tax-season', label: 'Tax Season' },
   { to: '/resources', label: 'Resources' },
+  { to: '/guides', label: 'Guides' },
   { to: '/financial-planning', label: 'Financial Planning' },
   { to: '/resources#faq', label: 'FAQs' },
   { to: '/contact', label: 'Contact' },

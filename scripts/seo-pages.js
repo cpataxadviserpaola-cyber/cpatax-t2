@@ -10,12 +10,14 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { pageHead, pages } from '../src/data/seo.js';
 import { servicePath, services } from '../src/data/services.js';
+import { articlePages, topicPages } from '../src/data/guides.js';
 
 const outDir = process.argv[2] ?? 'dist';
 
-const missing = services.map(servicePath).filter((path) => !(path in pages));
+const ownPages = [...services.map(servicePath), ...Object.values(topicPages), ...Object.values(articlePages)];
+const missing = ownPages.filter((path) => !(path in pages));
 if (missing.length) {
-  console.error(`src/data/seo.js has no entry for these service pages: ${missing.join(', ')}`);
+  console.error(`src/data/seo.js has no entry for these service or guide pages: ${missing.join(', ')}`);
   process.exit(1);
 }
 

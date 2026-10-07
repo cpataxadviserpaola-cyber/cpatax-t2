@@ -18,11 +18,14 @@ export default function NavMenu({ item, open, onOpen, onCloseSoon, onClose, styl
   const panelId = `menu-${item.id}`;
 
   // The item is marked current on its own page and the pages under it, like a NavLink, and
-  // also on any page its dropdown links to (a service with its own address, say).
+  // also on any page its dropdown links to (a service with its own address, say) or under
+  // one (a guide topic under /guides).
   const { pathname } = useLocation();
   const current =
     matchPath({ path: item.to, end: false }, pathname) ||
-    item.columns.flat().some((group) => group.items.some((link) => link.to === pathname));
+    item.columns
+      .flat()
+      .some((group) => group.items.some((link) => link.to === pathname || pathname.startsWith(`${link.to}/`)));
 
   const canHover = () => window.matchMedia(HOVER_QUERY).matches;
 

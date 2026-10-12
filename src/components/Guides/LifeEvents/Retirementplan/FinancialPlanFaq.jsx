@@ -1,0 +1,177 @@
+import GuideArticle, { Callout } from '../../GuideArticle.jsx';
+
+// Source: cpataxadviser.com/life-events.php?item=12 (Developing a Financial Plan: Frequently Asked
+// Questions), word for word. The six rules of thumb are subheadings, without the full stop after
+// each, and the "Tip" box keeps the library's label. The library's page has no introduction, so the
+// banner's opening line (`lead`) is written for this site, as on the other FAQ pages.
+// Address: /guides/life-events/planning-for-retirement/financial-plan-faq (articlePages in
+// src/data/guides.js). The FAQ's earlier address under Developing a Financial Plan redirects here.
+
+const sections = [
+  {
+    id: 'long-term-goals',
+    title: 'How do I determine my long-term financial goals?',
+    body: (
+      <p>
+        The first step is to decide what you realistically want to achieve financially. Financial goals might include
+        early retirement, travel, a vacation home, securing your family's financial comfort on the death of a
+        bread-winner, planning for the care of elderly relatives or building a family business.
+      </p>
+    ),
+  },
+  {
+    id: 'rules-of-thumb',
+    title: 'Is there any validity to financial planning "rules of thumb" such as "saving 10 percent of your gross income?"',
+    body: (
+      <>
+        <p>
+          The following <strong>rules of thumb</strong> may work for some people, but they do not make financial sense
+          for everyone. What is more important is to be able to know whether a particular rule of thumb suits your
+          situation. Here are six of the more common rules along with some considerations that should not be
+          overlooked.
+        </p>
+
+        <h3>1. Life insurance should equal five times your yearly salary</h3>
+        <p>
+          This rule of thumb has been used to answer the question: How much life insurance should I have? The ideal
+          amount of life insurance is the amount that will, when invested, generate enough income to allow your
+          survivors to maintain the level of income they are used to. "Five times your salary" will accomplish this
+          objective in some cases, but there is no substitute for making the calculations necessary to find out how much
+          life insurance you need to buy for your particular situation. The amount of life insurance you need depends on
+          how many people there are in your family, whether there are other sources of income besides your salary, how
+          old your children are, and a few other factors.
+        </p>
+
+        <h3>2. Save 10 percent of your salary per year</h3>
+        <p>
+          You may need to save much more than ten percent of your gross income to have a comfortable retirement. The
+          amount you need to save for retirement depends on how large your existing nest egg is and how old you are.
+          Those who started saving late in life, for instance in their 40s, need to save at least 15 or 20 percent per
+          year.
+        </p>
+
+        <h3>3. Contribute as much as you can to retirement plans</h3>
+        <p>
+          This makes sense for most people, but if you've accumulated a large amount of money in a retirement plan, say
+          close to a million dollars, you may reach the point where the negatives of contributing to your retirement
+          plan savings outweigh the positives.
+        </p>
+
+        <h3>4. You need 80 percent of your pre-retirement income to retire comfortably</h3>
+        <p>
+          Although people may need 80 percent of their salaries during the first few years of retirement, later on, they
+          are often able to live comfortably on less. The amount of income you need depends on whether you have paid off
+          your mortgage, whether you will have other sources of retirement income, and other factors.
+        </p>
+
+        <h3>5. Subtract your age from 100 and invest that percentage in stocks</h3>
+        <p>
+          This is one of those "cookie cutter" rules that only pans out for certain investors. For others, it results in
+          a portfolio that is much too conservative. The best method of allocating percentages among various types of
+          investments depends on your investment goals and needs and your willingness to risk your capital. In this
+          case, rules of thumb do not serve the investor very well at all.
+        </p>
+
+        <h3>6. Maintain an emergency fund of six months' worth of expenses</h3>
+        <p>
+          Depending on your family's situation, three months' worth of expenses might be enough. On the other hand, for
+          some families, even six months' worth might be totally inadequate. The amount you should keep on hand depends
+          on how easy it would be for you to take out a short-term loan and how much money you have in savings and
+          investments among other things.
+        </p>
+
+        <Callout label="Tip">
+          <p>
+            Do not rely on any rule of thumb to make financial decisions. Instead consider carefully what your needs and
+            goals are, and then calculate what you'll need to do to fulfill them.
+          </p>
+        </Callout>
+      </>
+    ),
+  },
+  {
+    id: 'women',
+    title: 'What do women in particular need to keep in mind with regard to financial planning?',
+    body: (
+      <>
+        <p>
+          With more women remaining single, nearly half of all marriages ending in divorce, and the odds of becoming a
+          widow by the age of 55 hovering around 75 percent, nearly 9 out of 10 women will be solely responsible for
+          their financial well-being at some point in their lives. But many are ill-prepared to do so.
+        </p>
+        <p>Here are several areas where women fall behind when it comes to planning for their financial future:</p>
+        <ul>
+          <li>
+            Women save considerably less for retirement, on average 60 percent less than men according to a 2010 study
+            conducted by LIMRA of close to 2,500 employees. This is significant because women typically live longer than
+            their male counterparts and need more retirement savings.
+          </li>
+          <li>
+            In that same LIMRA study, 29 percent of men and only 14 percent of women consider themselves knowledgeable
+            about financial services and products. Fifty-four percent of women felt at least somewhat knowledgeable about
+            financial products and services, but nearly three-quarters of men felt the same way.
+          </li>
+          <li>
+            And, in 2011 a Harris Interactive survey commissioned by RocketLawyer.com found that of the more than 1,000
+            people surveyed, 5 percent of the women do not have a will, 26 percent of them citing cost as the primary
+            reason they don't have one.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 'unmarried-couples',
+    title: 'What special problems do unmarried couples have to be concerned with in financial and estate planning?',
+    body: (
+      <>
+        <p>
+          In 2016, 18 million adults were cohabiting, according to a new Pew Research Center analysis of the Current
+          Population Survey. This represents an increase of 29 percent since 2007. Because unmarried couples don't enjoy
+          the same legal rights and protection as married couples do, financial planning considerations for issues such
+          as retirement planning, estate planning, and taxes can be quite different. For example:
+        </p>
+        <ul>
+          <li>
+            Unmarried partners do not automatically inherit each other's property. When an unmarried partner dies
+            intestate (without a will) the estate is divided according to laws of the state, with property and assets
+            typically going to parents or siblings and rarely or never to the beloved partner. In other words, married
+            couples who do not have a will have state intestacy laws to back them up, but unmarried couples need to have
+            a will in place in order to make sure that their wishes are met.
+          </li>
+          <li>
+            Couples who aren't married also do not have the right to speak for each other in the event of a medical
+            crisis. If your life partner loses consciousness or becomes incapacitated, someone has to make a decision
+            whether to go ahead with a medical procedure. That person should be you, but unless you have a health care
+            directive such as a living will in place, you have no legal right to make decisions for your partner.
+          </li>
+          <li>
+            Tax and estate issues are also more complicated. In most cases, it makes more sense not to own property such
+            as a car or electronics equipment together or to have a joint loan. Whereas marital assets can be divided
+            equally by a judge, there is no legal recourse for unmarried couples in the event of a breakup. Another
+            example is home ownership. If one partner is listed as the sole owner of a home that the couple lives in
+            together and he or she dies, the surviving partner might be left homeless. This can be resolved by properly
+            titling assets, in this case making sure the home is in joint tenancy with rights of survivorship.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+];
+
+export default function FinancialPlanFaq() {
+  return (
+    <GuideArticle
+      category="life-events"
+      topic="/guides/life-events/planning-for-retirement"
+      page="Developing a Financial Plan: Frequently Asked Questions"
+      title={
+        <>
+          Developing a Financial Plan: <em>Frequently Asked Questions</em>
+        </>
+      }
+      lead="Answers to common questions about setting long-term financial goals, the limits of financial planning rules of thumb, and the planning concerns of women and unmarried couples."
+      sections={sections}
+    />
+  );
+}

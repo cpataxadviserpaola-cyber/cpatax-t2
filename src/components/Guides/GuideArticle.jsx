@@ -14,12 +14,14 @@ const disclaimer =
 // library's disclaimer at the end.
 //
 // category  id of the guide's category in src/data/guides.js
-// topic     address of the topic page it belongs to, which gives the breadcrumb its name
+// topic     address of the topic page it belongs to, which gives the breadcrumb its name; a guide in
+//           a category without topic pages (Investment Strategies, Tax Strategies) leaves it out
 // page      short name for the breadcrumb
 // title     the guide's title
 // lead      the opening paragraph, shown in the banner
 // children  text before the first section
-// sections  the guide's sections: id (its anchor), title, and body
+// sections  the guide's sections: id (its anchor), title, and body; a guide without headings
+//           leaves it out, and has no contents list
 // numbered  false when the section titles carry their own numbers ("1. ..."), so the contents
 //           list doesn't number them again
 export default function GuideArticle({
@@ -29,11 +31,14 @@ export default function GuideArticle({
   title,
   lead,
   children,
-  sections,
+  sections = [],
   numbered = true,
 }) {
   const category = guideCategories.find((item) => item.id === categoryId);
-  const topic = category.groups.flatMap((group) => group.items).find((item) => item.to === topicPath);
+  const categoryLink = { to: `/guides#${category.id}`, title: category.title };
+  const topic = topicPath
+    ? category.groups.flatMap((group) => group.items).find((item) => item.to === topicPath)
+    : categoryLink;
 
   return (
     <>
@@ -42,8 +47,8 @@ export default function GuideArticle({
         parents={[
           { to: '/resources', label: 'Resources' },
           { to: '/guides', label: 'Guides' },
-          { to: `/guides#${category.id}`, label: category.title },
-          { to: topic.to, label: topic.title },
+          { to: categoryLink.to, label: categoryLink.title },
+          ...(topicPath ? [{ to: topic.to, label: topic.title }] : []),
         ]}
         eyebrow="Financial guide"
         title={title}
@@ -54,16 +59,18 @@ export default function GuideArticle({
       <section className="section section-white">
         <div className="container cat-grid">
           <aside className="cat-aside article-aside reveal">
-            <nav aria-label="In this guide">
-              <p className="label">In this guide</p>
-              <ol className={`article-toc${numbered ? '' : ' is-plain'}`}>
-                {sections.map((section) => (
-                  <li key={section.id}>
-                    <Link to={`#${section.id}`}>{section.title}</Link>
-                  </li>
-                ))}
-              </ol>
-            </nav>
+            {sections.length > 0 && (
+              <nav aria-label="In this guide">
+                <p className="label">In this guide</p>
+                <ol className={`article-toc${numbered ? '' : ' is-plain'}`}>
+                  {sections.map((section) => (
+                    <li key={section.id}>
+                      <Link to={`#${section.id}`}>{section.title}</Link>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            )}
             <Link className="link-arrow" to={topic.to}>
               More on {topic.title.toLowerCase()} <Icon name="arrow" />
             </Link>
@@ -192,12 +199,12 @@ export function Blank({ amount = false }) {
 }
 
 // A pointer to other guides, with their links (from guide() in src/data/guides.js): `guide`
-// for one, `guides` for several.
+// for one, `guides` for several, and an optional line before them (`children`).
 export function RelatedGuide({ guide, guides = [guide], children }) {
   return (
     <aside className="article-related">
       <p className="label">{guides.length > 1 ? 'Related guides' : 'Related guide'}</p>
-      <p>{children}</p>
+      {children && <p>{children}</p>}
       <ul className="guide-links">
         {guides.map((item) => (
           <li key={item.title}>

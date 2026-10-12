@@ -446,7 +446,7 @@ export default function EstatePlanning() {
   return (
     <GuideArticle
       category="life-events"
-      topic="/guides/life-events/getting-married"
+      topic="/guides/life-events/planning-your-estate"
       page="Estate Planning"
       title={
         <>

@@ -394,7 +394,7 @@ export default function DocumentLocator() {
   return (
     <GuideArticle
       category="life-events"
-      topic="/guides/life-events/getting-married"
+      topic="/guides/life-events/planning-your-estate"
       page="Document Locator System"
       title={
         <>

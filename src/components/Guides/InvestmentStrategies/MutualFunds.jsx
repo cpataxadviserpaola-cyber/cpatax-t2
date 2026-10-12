@@ -1,13 +1,14 @@
-import GuideArticle, { Agencies, Callout } from '../../GuideArticle.jsx';
+import GuideArticle, { Agencies, Callout } from '../GuideArticle.jsx';
 
-// Source: cpataxadviser.com/life-events.php?item=92 (Investing In Mutual Funds: The Time-Tested
-// Guidelines), word for word. Hyphens used as dashes are now dashes, the "Tip:"/"Caution:"/
+// Source: cpataxadviser.com/investment-strategies.php?item=92 (Investing In Mutual Funds: The
+// Time-Tested Guidelines; the same text as life-events.php?item=92), word for word. Hyphens used as dashes are now dashes, the "Tip:"/"Caution:"/
 // "Example:" lead-ins are the boxes' labels, and the organizations are shown as cards (their
 // descriptions without the surrounding parentheses). The library's contents also list
 // "Recommended Reading" and "Computer Programs," which have no text there, so they are left out.
-// The SEC documents link goes to the SEC's home page.
-// Address: /guides/life-events/getting-married/investing-in-mutual-funds (articlePages in
-// src/data/guides.js).
+// The SEC documents link goes to the SEC's home page. Investment Strategies has no topic pages, so
+// the breadcrumb ends at the category.
+// Address: /guides/investment-strategies/investing-in-mutual-funds (articlePages in
+// src/data/guides.js; its earlier address under Getting Married redirects here).
 
 const external = { target: '_blank', rel: 'noopener noreferrer' };
 
@@ -493,8 +494,7 @@ const sections = [
 export default function MutualFunds() {
   return (
     <GuideArticle
-      category="life-events"
-      topic="/guides/life-events/getting-married"
+      category="investment-strategies"
       page="Investing In Mutual Funds"
       title={
         <>

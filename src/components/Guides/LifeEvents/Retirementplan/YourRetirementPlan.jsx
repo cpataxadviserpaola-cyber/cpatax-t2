@@ -4,8 +4,8 @@ import { guide } from '../../../../data/guides.js';
 // Source: cpataxadviser.com/life-events.php?item=54 (Your Retirement Plan: How To Get Started),
 // word for word. Hyphens used as dashes are now dashes, related guides are named by their
 // titles in the library, and the Social Security link uses its secure address.
-// Address: /guides/life-events/getting-married/your-retirement-plan (articlePages in
-// src/data/guides.js).
+// Address: /guides/life-events/planning-for-retirement/your-retirement-plan (articlePages in
+// src/data/guides.js; its earlier address under Getting Married redirects here).
 const related = guide('life-events.php');
 
 const sections = [
@@ -267,7 +267,7 @@ export default function YourRetirementPlan() {
   return (
     <GuideArticle
       category="life-events"
-      topic="/guides/life-events/getting-married"
+      topic="/guides/life-events/planning-for-retirement"
       page="Your Retirement Plan"
       title={
         <>

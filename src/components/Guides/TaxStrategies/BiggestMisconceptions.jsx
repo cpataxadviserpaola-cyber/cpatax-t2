@@ -1,0 +1,163 @@
+import GuideArticle, { Callout } from '../GuideArticle.jsx';
+
+// Source: cpataxadviser.com/taxstrategies-businessowners.php?item=128 (7 Biggest Misconceptions
+// Business Owners Have About Their Returns), word for word. The library's opening paragraph is the
+// banner's text (`lead`), and its seven numbered bold lead-ins are the guide's sections (numbered
+// in their titles, so the contents list doesn't number them again). The caution box keeps the
+// library's label. "(sole proprietors and S Corps)" and "for tax years 2018 through 2025" are as
+// the library has them. Back-to-top anchors omitted. Tax Strategies has no topic pages, so the
+// breadcrumb ends at the category.
+// Address: /guides/tax-strategies/7-biggest-misconceptions (articlePages in src/data/guides.js).
+
+const sections = [
+  {
+    id: 'start-up-costs',
+    title: '1. All Start-up Costs Are Immediately Deductible',
+    body: (
+      <>
+        <p>
+          Business start-up costs refer to expenses incurred before you begin operating your business. Business start-up
+          costs include both start-up and organizational costs and vary depending on the type of business. Examples of
+          these types of costs include advertising, travel, surveys, and training. These start-up and organizational costs
+          are generally called capital expenditures.
+        </p>
+        <p>
+          Costs for a particular asset (such as machinery or office equipment) are recovered through depreciation or
+          Section 179 expensing. When you start a business, you can elect to deduct or amortize certain business start-up
+          costs.
+        </p>
+        <p>
+          You can elect to deduct up to $5,000 of business start-up and $5,000 of organizational costs paid or incurred;
+          however, the $5,000 deduction is reduced by the amount your total start-up or organizational costs exceed
+          $50,000, and any remaining costs must be amortized.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: 'audit-proof',
+    title: '2. Overpaying the IRS Makes You "Audit Proof"',
+    body: (
+      <p>
+        The IRS doesn't care if you pay the right amount of taxes or overpay your taxes. They do care if you pay less than
+        you owe and you can't substantiate your deductions. Even if you overpay in one area, the IRS will still hit you with
+        interest and penalties if you underpay in another. It is never a good idea to knowingly or unknowingly overpay the
+        IRS. The best way to "Audit Proof" yourself is to properly document your expenses and make sure you are getting good
+        advice from your tax accountant.
+      </p>
+    ),
+  },
+  {
+    id: 'incorporated',
+    title: '3. You Can Take More Deductions if You Are Incorporated',
+    body: (
+      <p>
+        Self-employed individuals (sole proprietors and S Corps) qualify for many of the same deductions that incorporated
+        businesses do, and for many small businesses, being incorporated is an unnecessary expense and burden. Start-ups can
+        spend thousands of dollars in legal and accounting fees setting up a corporation, only to discover soon thereafter
+        that they need to change their name or move the company in a different direction. In addition, plenty of small
+        business owners who incorporate don't make money for the first few years and find themselves saddled with minimum
+        corporate tax payments and no income.
+      </p>
+    ),
+  },
+  {
+    id: 'home-office-red-flag',
+    title: '4. The Home Office Deduction Is a Red Flag for an Audit',
+    body: (
+      <p>
+        While it used to be a red flag, this is no longer true as long as you keep excellent records that satisfy IRS
+        requirements. Because of the proliferation of home offices, tax officials cannot possibly audit all tax returns
+        containing the home office deduction. In other words, there is no need to fear an audit just because you take the
+        home office deduction. A high deduction-to-income ratio, however, may raise a red flag and lead to an audit.
+      </p>
+    ),
+  },
+  {
+    id: 'business-expenses',
+    title: "5. Business Expenses Are Not Deductible if You Don't Take the Home Office Deduction",
+    body: (
+      <>
+        <p>
+          You are still eligible to take deductions for business supplies, business-related phone bills, travel expenses,
+          printing, wages paid to employees or contract workers, depreciation of equipment used for your business, and
+          other expenses related to running a home-based business, whether or not you take the home office deduction.
+        </p>
+        <Callout label="Caution">
+          <p>
+            Tax reform legislation passed in 2017 repealed certain itemized deductions on Schedule A,{' '}
+            <em>Itemized Deductions</em> of Form 1040 for tax years 2018 through 2025, including employee business expense
+            deductions related to home office use.
+          </p>
+        </Callout>
+      </>
+    ),
+  },
+  {
+    id: 'extensions',
+    title: '6. Requesting an Extension on Your Taxes Is an Extension To Pay Taxes',
+    body: (
+      <p>
+        Extensions enable you to extend your filing date only. Penalties and interest begin accruing from the date your
+        taxes are due.
+      </p>
+    ),
+  },
+  {
+    id: 'part-time-owners',
+    title: '7. Part-Time Business Owners Cannot Set Up Self-Employed Pension Plans',
+    body: (
+      <>
+        <p>
+          If you start up a company while you have a salaried position complete with a 401K plan, you can still set up a
+          SEP-IRA for your business and take the deduction.
+        </p>
+        <p>
+          Understanding how the tax system works is beneficial to any business owner, whether you run a small to
+          medium-sized business or are a sole proprietor. Whether it is a missed payment or filing deadline, an improperly
+          claimed deduction, or incomplete records, a tax headache is only one mistake away. Furthermore, even if you
+          delegate the tax preparation to someone else, you are still liable for the accuracy of your tax returns.
+        </p>
+      </>
+    ),
+  },
+];
+
+export default function BiggestMisconceptions() {
+  return (
+    <GuideArticle
+      category="tax-strategies"
+      page="7 Biggest Misconceptions"
+      title={
+        <>
+          7 Biggest Misconceptions <em>Business Owners Have About Their Returns</em>
+        </>
+      }
+      lead="One of the biggest hurdles you'll face in running your own business is staying on top of your numerous obligations to federal, state, and local tax agencies. Tax codes seem to be in a constant state of flux, making the Internal Revenue Code barely understandable to most people."
+      sections={sections}
+      numbered={false}
+    >
+      <p>
+        The old legal saying that "ignorance of the law is no excuse" is perhaps most often applied in tax settings. It is
+        safe to assume that a tax auditor presenting an assessment of additional taxes, penalties, and interest will not
+        look kindly on an "I didn't know I was required to do that" claim. On the flip side, it is surprising how many small
+        businesses overpay their taxes, neglecting to take deductions they're legally entitled to that can help them lower
+        their tax bill.
+      </p>
+      <p>
+        Preparing your taxes and strategizing as to how to keep more of your hard-earned dollars in your pocket becomes
+        increasingly difficult with each passing year. Your best course of action to save time, frustration, money, and an
+        auditor knocking on your door, is to have a professional accountant handle your taxes.
+      </p>
+      <p>
+        Tax professionals have years of experience with tax preparation, religiously attend tax seminars, read scores of
+        journals, magazines, and monthly tax tips, among other things, to correctly interpret the changing tax code.
+      </p>
+      <p>
+        When it comes to tax planning for small businesses, the complexity of tax law generates a lot of folklore and
+        misinformation that also leads to costly mistakes. With that in mind, here is a look at some of the more common
+        small business tax misperceptions.
+      </p>
+    </GuideArticle>
+  );
+}

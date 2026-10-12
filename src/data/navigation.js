@@ -126,7 +126,6 @@ export const mainNav = [
       [
         {
           items: [
-            { label: 'Blog', to: '/resources#blog', icon: 'newspaper', text: 'Insights from our team' },
             { label: 'Guides', to: '/guides', icon: 'book', text: 'Life events, business, investing, and taxes' },
             { label: 'Newsletter', to: '/resources#newsletter', icon: 'mail', text: 'Tax tips in your inbox' },
             { label: 'FAQs', to: '/resources#faq', icon: 'help', text: 'Answers to common questions' },

@@ -27,7 +27,7 @@ export default function GuideGroups({ groups, wide = false }) {
           {group.label && <h3 className="label">{group.label}</h3>}
           <ul className="guide-links">
             {group.items.map((guide) => (
-              <li key={guide.title}>
+              <li key={guide.to ?? guide.href}>
                 <GuideLink guide={guide} />
               </li>
             ))}

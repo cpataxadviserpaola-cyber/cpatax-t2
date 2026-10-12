@@ -11,6 +11,7 @@ const groups = [
     items: [
       [1, 'Getting Married (or Divorced): Some Financial Guidelines'],
       [47, 'Life Insurance: How Much and What Kind To Buy'],
+      [93, 'Survivor Benefits: A Guide To This Often Overlooked Insurance Add-On'],
     ].map(lifeEvents),
   },
   {

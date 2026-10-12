@@ -11,10 +11,9 @@ import { faqs } from '../data/faqs.js';
 import { asset } from '../utils/asset.js';
 
 const sections = [
-  { id: 'blog', label: 'Blog' },
-  { id: 'guides', label: 'Guides' },
-  { id: 'newsletter', label: 'Newsletter' },
-  { id: 'faq', label: 'FAQs' },
+  { to: '/guides', label: 'Guides' },
+  { to: '/resources#newsletter', label: 'Newsletter' },
+  { to: '/resources#faq', label: 'FAQs' },
 ];
 
 // Guides already on the site. `href` opens in a new tab; `to` stays on the site.
@@ -66,8 +65,8 @@ export default function Resources() {
         <div className="container">
           <ul>
             {sections.map((section) => (
-              <li key={section.id}>
-                <Link to={`#${section.id}`}>{section.label}</Link>
+              <li key={section.to}>
+                <Link to={section.to}>{section.label}</Link>
               </li>
             ))}
           </ul>

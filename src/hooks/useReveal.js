@@ -22,7 +22,25 @@ export default function useReveal() {
       { rootMargin: '0px 0px -6% 0px', threshold: 0.08 },
     );
 
-    document.querySelectorAll('.reveal:not(.is-visible)').forEach((node) => observer.observe(node));
-    return () => observer.disconnect();
+    const watch = (root) => root.querySelectorAll('.reveal:not(.is-visible)').forEach((node) => observer.observe(node));
+    watch(document);
+
+    // A guide renders only once its code has downloaded, after this has run, so also watch
+    // for `.reveal` elements added later.
+    const additions = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) =>
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeType !== Node.ELEMENT_NODE) return;
+          if (node.matches('.reveal:not(.is-visible)')) observer.observe(node);
+          watch(node);
+        }),
+      );
+    });
+    additions.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      observer.disconnect();
+      additions.disconnect();
+    };
   }, [pathname]);
 }

@@ -216,6 +216,9 @@ strong { font-weight: 700; }
 }
 .skip-link:focus { top: 1rem; color: #fff; }
 
+/* Stands in for a guide while its code downloads (see Layout.jsx). */
+.page-loading { min-height: 100vh; }
+
 /* Wine surfaces: light text, white headings, gold accents and focus rings. */
 .surface-dark {
   --focus-ring: var(--gold-500);

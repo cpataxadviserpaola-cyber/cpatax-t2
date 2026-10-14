@@ -46,23 +46,26 @@ export const pages = {
   },
 
   // Service pages (addresses from src/data/services.js)
-  '/services/business-tax': {
-    title: 'Business Tax Preparation | CPA Tax Adviser',
+  '/business-tax-preparation-services/': {
+    title: 'Business Tax Preparation Services | South Carolina',
     description:
-      'It is important to develop a relationship with a tax preparation firm that understands how your business works. As your trusted advisor, we make sure you stay on top of your tax obligations and avoid penalties and fees that reduce your profitability.',
-    keywords: '',
+      'Get professional business tax preparation, tax filing, payroll tax, sales tax, and tax planning services for businesses in South Carolina.',
+    keywords:
+      'tax services in south carolina, tax preparation simpsonville sc, tax preparation near me, business tax return preparation, tax accountant simpsonville sc, tax preparer south carolina',
   },
-  '/services/planning': {
-    title: 'Tax Planning | CPA Tax Adviser',
+  '/tax-planning-services-simpsonville-sc/': {
+    title: 'Tax Planning Services | CPA Tax Adviser',
     description:
-      "Many people feel like their tax bill is too high. The good news is that it doesn't have to be. Planning is the key to successfully and legally reducing your tax liability.",
-    keywords: '',
+      'Explore tax planning services. Get proactive tax strategies, year-end planning, and personalized guidance.',
+    keywords:
+      'tax planning services in south carolina, tax planning services simpsonville sc, tax strategy for small business, year-end tax planning simpsonville sc, business tax planning sc, tax planning south carolina, corporate tax planning, individual tax return, tax help near me, irs tax help, best tax filing service, best tax preparer near me',
   },
-  '/services/accounting': {
-    title: 'Small Business Accounting | CPA Tax Adviser',
+  '/small-business-accounting-service-sc/': {
+    title: 'Small Business Accounting Services | CPA Tax Adviser',
     description:
-      'As accountants, we handle the numbers so you can focus on your product or service. As your trusted financial advisor, our job is to help you succeed.',
-    keywords: '',
+      'Professional small business accounting services, bookkeeping, tax, reporting, and financial support to keep you organized and help you make informed decisions.',
+    keywords:
+      'small business accountancy services, small business bookkeeping and tax, accounting services near me for small business, accountant small business near me, accounting and tax services for small business, small company accountant, small business accounting services, small business accounting service, accounting companies for small business',
   },
   '/bookkeeping-services-in-simpsonville/': {
     title: 'Essential Bookkeeping Services for Small Businesses',

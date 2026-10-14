@@ -87,7 +87,7 @@ function ServicePage({ service }) {
                 lead={index === 0}
                 action={
                   <Link className="btn btn-primary" to={contactLink}>
-                    {service.cta}
+                    {section.callout?.action ?? service.cta}
                     <Icon name="arrow" />
                   </Link>
                 }
@@ -192,7 +192,8 @@ function standardSections(service) {
 
 // One block of the story: a heading over paragraphs and any of an "Ideal for" note, rows of
 // features, process steps, a checklist of points with a closing line, questions, and a
-// callout beside the contact button (`action`). A block can instead list its `content` in
+// callout ({ title, text }) beside the contact button (`action`), which reads the callout's
+// own `action` when it has one, or else the service's `cta`. A block can instead list its `content` in
 // the order the firm wrote it (see ContentItem), with an optional `note` in small print
 // above its heading and an `id` to link to. The first block's opening paragraph is set
 // larger, as the lead.

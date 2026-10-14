@@ -1,14 +1,19 @@
-// Federal tax deadlines for calendar-year filers, shown on the Home page, in the closing
-// call to action, and on the Tax Season page's tax calendar. Keep them in date order. Dates
-// that have passed drop off automatically; when the list runs low, add the next year's
-// dates after checking them on IRS.gov (weekends, holidays, and disaster relief can move
-// a deadline).
+// Federal tax deadlines for calendar-year filers, shown on the Tax Season page's tax
+// calendar. The one marked `headline` (April's filing deadline) is the "Next IRS deadline"
+// counted down in the top bar, on the Home page and in the closing call to action. Keep them
+// in date order. Dates that have passed drop off automatically; when the list runs low, add
+// the next year's dates, with its April deadline marked `headline`, after checking them on
+// IRS.gov (weekends, holidays, and disaster relief can move a deadline).
 export const deadlines = [
   { date: '2026-10-15', label: 'Extended 2025 individual and C corporation returns due' },
   { date: '2027-01-15', label: 'Fourth-quarter 2026 estimated tax payment due' },
   { date: '2027-02-01', label: 'W-2 and 1099-NEC forms due' },
   { date: '2027-03-15', label: '2026 partnership and S corporation returns due' },
-  { date: '2027-04-15', label: '2026 individual and C corporation returns and first-quarter estimated tax due' },
+  {
+    date: '2027-04-15',
+    label: '2026 individual and C corporation returns and first-quarter estimated tax due',
+    headline: true,
+  },
   { date: '2027-06-15', label: 'Second-quarter 2027 estimated tax payment due' },
   { date: '2027-09-15', label: 'Third-quarter estimated tax and extended partnership and S corporation returns due' },
   { date: '2027-10-15', label: 'Extended 2026 individual and C corporation returns due' },
@@ -45,7 +50,8 @@ export function getUpcomingDeadlines(count = deadlines.length, now = new Date())
     .slice(0, count);
 }
 
-// Returns the first deadline on or after today, or null once every listed date has passed.
+// Returns the first headline deadline on or after today, or null once every listed one has
+// passed.
 export function getNextDeadline(now = new Date()) {
-  return getUpcomingDeadlines(1, now)[0] ?? null;
+  return getUpcomingDeadlines(deadlines.length, now).find((deadline) => deadline.headline) ?? null;
 }

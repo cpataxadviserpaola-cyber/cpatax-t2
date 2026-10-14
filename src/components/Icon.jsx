@@ -157,6 +157,7 @@ const paths = {
     </>
   ),
   menu: <path d="M4 7h16M4 12h16M4 17h16" />,
+  minus: <path d="M5 12h14" />,
   newspaper: (
     <>
       <path d="M7 4h13v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9h4" />

@@ -13,7 +13,7 @@ const companyLinks = [
   { to: '/resources', label: 'Resources' },
   { to: '/guides', label: 'Guides' },
   { to: '/financial-planning', label: 'Financial Planning' },
-  { to: '/resources#faq', label: 'FAQs' },
+  { to: '/#faq', label: 'FAQs' },
   { to: '/contact', label: 'Contact' },
 ];
 
@@ -123,11 +123,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <p className="disclaimer">
-            The information on this website is for general informational purposes only and does
-            not constitute tax, legal, or accounting advice. Please consult a qualified professional
-            about your specific situation.
-          </p>
+          <p className="disclaimer">Website designed and developed by Milta Accounting Services.</p>
         </div>
       </div>
     </footer>

@@ -123,7 +123,163 @@ export const pages = {
   '/resources': {
     title: 'Resources | CPA Tax Adviser',
     description:
-      'Articles, guides, the newsletter, and answers to frequently asked questions from CPA Tax Adviser.',
+      'Interactive financial calculators for paychecks, benefits, and taxes, plus a few of our favorite websites: forms, government, finance, news, and software.',
+    keywords: '',
+  },
+  '/resources/calculators/bonus-net-after-taxes': {
+    title: 'How Much Will My Company Bonus Net After Taxes? | CPA Tax Adviser',
+    description:
+      'Estimate your take-home pay from a company bonus after federal income tax withholding, Social Security, Medicare, retirement plan contributions, and other deductions, with 2026 IRS withholding figures.',
+    keywords: '',
+  },
+  '/resources/calculators/hourly-to-salary': {
+    title: 'Convert My Hourly Wage To An Equivalent Annual Salary | CPA Tax Adviser',
+    description:
+      'Convert an hourly wage into its weekly pay, monthly pay, and annual salary, based on the hours and weeks you work each year.',
+    keywords: '',
+  },
+  '/resources/calculators/interest-tax-implications': {
+    title: 'What Are The Tax Implications Of Paying Interest? | CPA Tax Adviser',
+    description:
+      'See which of the interest you pay this year, on mortgages, investments, business and personal debt, is deductible under the 2026 rules and what it saves you in tax.',
+    keywords: '',
+  },
+  '/resources/calculators/social-security-tax': {
+    title: 'How Much Of My Social Security Benefit May Be Taxed? | CPA Tax Adviser',
+    description:
+      'Work through the IRS Publication 915 worksheet to see how much of your Social Security benefits may be taxable, up to 85%, and the federal tax on it.',
+    keywords: '',
+  },
+  '/resources/calculators/compare-investment-growth': {
+    title: 'Compare Taxable, Tax-Deferred And Tax-Free Investment Growth | CPA Tax Adviser',
+    description:
+      'Compare what the same savings may grow to, after taxes, in a fully-taxable account, a tax-deferred account and a tax-free investment, year by year.',
+    keywords: '',
+  },
+  '/resources/calculators/capital-gains-tax': {
+    title: 'Capital Gains (Losses) Tax Estimator | CPA Tax Adviser',
+    description:
+      'Estimate the 2026 federal tax on your long-term capital gains at the 0%, 15% and 20% rates, or what a net capital loss saves you and carries forward.',
+    keywords: '',
+  },
+  '/resources/calculators/self-employment-tax': {
+    title: 'How Much Self-Employment Tax Will I Pay? | CPA Tax Adviser',
+    description:
+      'Estimate your 2026 self-employment tax: the Social Security and Medicare tax on your self-employment income, any Additional Medicare Tax, and the half you can deduct.',
+    keywords: '',
+  },
+  '/resources/calculators/investment-interest': {
+    title: 'Will My Investment Interest Be Deductible? | CPA Tax Adviser',
+    description:
+      'See how much of the interest you pay to invest, such as margin interest, you can deduct against your investment income this year, the tax it saves, and what carries forward.',
+    keywords: '',
+  },
+  '/resources/calculators/payroll-withholdings': {
+    title: 'Should I Adjust My Payroll Withholdings? | CPA Tax Adviser',
+    description:
+      'Check whether your federal tax withholding will cover your 2026 tax, and how much to withhold from each paycheck for the rest of the year to come out even.',
+    keywords: '',
+  },
+  '/resources/calculators/federal-income-tax': {
+    title: 'Federal Income Tax Estimator | CPA Tax Adviser',
+    description:
+      'Estimate your 2026 federal income tax with your effective and marginal tax rates, including the new deductions for tips, overtime, car loan interest and seniors, the child tax credit, and pass-through income.',
+    keywords: '',
+  },
+  '/resources/calculators/tax-freedom-day': {
+    title: 'Tax Freedom Day | CPA Tax Adviser',
+    description:
+      'See how many days of 2026 you work to pay your federal income, Social Security and Medicare taxes, and the day you start earning money for yourself.',
+    keywords: '',
+  },
+  '/resources/calculators/tax-refund-estimator': {
+    title: 'Tax Refund Estimator | CPA Tax Adviser',
+    description:
+      'Estimate your 2026 federal tax and whether you will get a refund or owe, including the new deductions for tips, overtime, car loan interest and seniors, the child tax credit, and pass-through income.',
+    keywords: '',
+  },
+  '/resources/calculators/tax-equivalent-yield': {
+    title: 'What Is My Tax-Equivalent Yield? | CPA Tax Adviser',
+    description:
+      'Find the taxable yield that matches a tax-free yield, such as a municipal bond, after federal tax alone and after federal and state tax.',
+    keywords: '',
+  },
+  '/resources/calculators/itemize-or-standard': {
+    title: 'Should I Itemize Or Take The Standard Deduction? | CPA Tax Adviser',
+    description:
+      'Compare your itemized deductions with your 2026 standard deduction, including the senior deduction, the SALT cap, and the new charitable deduction rules, to see which is larger.',
+    keywords: '',
+  },
+  '/resources/calculators/estate-tax': {
+    title: 'What Is My Potential Estate Tax Liability? | CPA Tax Adviser',
+    description:
+      'Estimate the federal estate tax on your estate with the 2026 $15 million exclusion, after probate and final expenses and charitable contributions, projected as far ahead as you like.',
+    keywords: '',
+  },
+  '/resources/calculators/exercise-stock-options': {
+    title: "Should I Exercise My 'In-The-Money' Stock Options? | CPA Tax Adviser",
+    description:
+      'Compare exercising and holding, exercising and selling, and deferring your in-the-money employee stock options, after income and capital gains taxes, to see which may leave you with the most.',
+    keywords: '',
+  },
+  '/resources/calculators/stock-options': {
+    title: 'What Is The Future Value Of My Employee Stock Options? | CPA Tax Adviser',
+    description:
+      'Estimate what your employee stock options may be worth when they expire, and the before-tax gain over the strike price, at your expected return and 2 points above and below it.',
+    keywords: '',
+  },
+  '/resources/calculators/salary-to-hourly': {
+    title: 'Convert My Salary To An Equivalent Hourly Wage | CPA Tax Adviser',
+    description:
+      'Convert an annual salary into its monthly pay, weekly pay, and hourly wage, based on the hours and weeks you work each year.',
+    keywords: '',
+  },
+  '/resources/calculators/payroll-adjustments': {
+    title: 'How Will Payroll Adjustments Affect My Take-Home Pay? | CPA Tax Adviser',
+    description:
+      'Compare your take-home pay now with a what-if paycheck: a change in pay, filing status, allowances, retirement plan contributions, or other deductions, with 2026 IRS withholding figures.',
+    keywords: '',
+  },
+  '/resources/calculators/457-plan-contribution': {
+    title: 'What Is The Impact Of Increasing My 457 Plan Contribution? | CPA Tax Adviser',
+    description:
+      'See how much more your 457 plan could hold at retirement if you raise your contribution, including any employer match, with a year-by-year table and graph.',
+    keywords: '',
+  },
+  '/resources/calculators/401k-contribution': {
+    title: 'What Is The Impact Of Increasing My 401(k) Contribution? | CPA Tax Adviser',
+    description:
+      'See how much more your 401(k) could hold at retirement if you raise your contribution, including any employer match, with a year-by-year table and graph.',
+    keywords: '',
+  },
+  '/resources/calculators/403b-contribution': {
+    title: 'What Is The Impact Of Increasing My 403(b) Contribution? | CPA Tax Adviser',
+    description:
+      'See how much more your 403(b) could hold at retirement if you raise your contribution, including any employer match, with a year-by-year table and graph.',
+    keywords: '',
+  },
+  '/resources/calculators/457-plan-value': {
+    title: 'What May My 457 Plan Be Worth? | CPA Tax Adviser',
+    description:
+      'Estimate what your 457 plan may be worth at retirement from your salary, contributions, employer match, and return, with a year-by-year table and graph.',
+    keywords: '',
+  },
+  '/resources/calculators/401k-plan-value': {
+    title: 'What May My 401(k) Be Worth? | CPA Tax Adviser',
+    description:
+      'Estimate what your 401(k) may be worth at retirement from your salary, contributions, employer match, and return, with a year-by-year table and graph.',
+    keywords: '',
+  },
+  '/resources/calculators/403b-plan-value': {
+    title: 'What May My 403(b) Plan Be Worth? | CPA Tax Adviser',
+    description:
+      'Estimate what your 403(b) plan may be worth at retirement from your salary, contributions, employer match, and return, with a year-by-year table and graph.',
+    keywords: '',
+  },
+  '/newsletter': {
+    title: 'Newsletter | CPA Tax Adviser',
+    description:
+      "This month's newsletter from CPA Tax Adviser: tax and business articles, quick tax tips, and upcoming tax due dates, with sign-up for email updates.",
     keywords: '',
   },
   '/guides': {

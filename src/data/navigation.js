@@ -126,9 +126,11 @@ export const mainNav = [
       [
         {
           items: [
+            { label: 'Financial Calculators', to: '/resources#financial-calculators', icon: 'chart', text: 'Paychecks, benefits, and taxes' },
+            { label: 'Internet Links', to: '/resources#internet-links', icon: 'globe', text: 'A few of our favorite sites' },
             { label: 'Guides', to: '/guides', icon: 'book', text: 'Life events, business, investing, and taxes' },
-            { label: 'Newsletter', to: '/resources#newsletter', icon: 'mail', text: 'Tax tips in your inbox' },
-            { label: 'FAQs', to: '/resources#faq', icon: 'help', text: 'Answers to common questions' },
+            { label: 'Newsletter', to: '/newsletter', icon: 'mail', text: "This month's tax articles and due dates" },
+            { label: 'FAQs', to: '/#faq', icon: 'help', text: 'Answers to common questions' },
           ],
         },
       ],

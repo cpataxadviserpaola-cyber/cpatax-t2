@@ -10,6 +10,7 @@ import TaxSeason from './pages/TaxSeason.jsx';
 import Industries from './pages/Industries.jsx';
 import Resources from './pages/Resources.jsx';
 import Guides from './pages/Guides.jsx';
+import Newsletter from './pages/Newsletter.jsx';
 import FinancialPlanning from './pages/FinancialPlanning.jsx';
 import Privacy from './pages/Privacy.jsx';
 import Disclaimer from './pages/Disclaimer.jsx';
@@ -191,6 +192,28 @@ const BusinessRecordkeepingFaq = lazy(() => import('./components/Guides/TaxStrat
 const DeathOfALovedOne = lazy(() => import('./components/Guides/LifeEvents/DeathOfALovedOne/DeathOfALovedOne.jsx'));
 const DeathOfASpouse = lazy(() => import('./components/Guides/LifeEvents/DeathOfALovedOne/DeathOfASpouse.jsx'));
 const DeathOfALovedOneFaq = lazy(() => import('./components/Guides/LifeEvents/CopingwithDeathofaLovedOne/DeathOfALovedOneFaq.jsx'));
+// Calculators load the same way.
+const BonusNetAfterTaxes = lazy(() => import('./components/Calculators/BonusNetAfterTaxes.jsx'));
+const PlanContributionIncrease = lazy(() => import('./components/Calculators/PlanContributionIncrease.jsx'));
+const PlanValue = lazy(() => import('./components/Calculators/PlanValue.jsx'));
+const PayrollAdjustments = lazy(() => import('./components/Calculators/PayrollAdjustments.jsx'));
+const SalaryToHourly = lazy(() => import('./components/Calculators/SalaryToHourly.jsx'));
+const HourlyToSalary = lazy(() => import('./components/Calculators/HourlyToSalary.jsx'));
+const StockOptionValue = lazy(() => import('./components/Calculators/StockOptionValue.jsx'));
+const StockOptionExercise = lazy(() => import('./components/Calculators/StockOptionExercise.jsx'));
+const EstateTax = lazy(() => import('./components/Calculators/EstateTax.jsx'));
+const ItemizeOrStandard = lazy(() => import('./components/Calculators/ItemizeOrStandard.jsx'));
+const TaxEquivalentYield = lazy(() => import('./components/Calculators/TaxEquivalentYield.jsx'));
+const TaxRefundEstimator = lazy(() => import('./components/Calculators/TaxRefundEstimator.jsx'));
+const TaxFreedomDay = lazy(() => import('./components/Calculators/TaxFreedomDay.jsx'));
+const FederalIncomeTax = lazy(() => import('./components/Calculators/FederalIncomeTax.jsx'));
+const PayrollWithholdings = lazy(() => import('./components/Calculators/PayrollWithholdings.jsx'));
+const InvestmentInterest = lazy(() => import('./components/Calculators/InvestmentInterest.jsx'));
+const SelfEmploymentTax = lazy(() => import('./components/Calculators/SelfEmploymentTax.jsx'));
+const CapitalGainsTax = lazy(() => import('./components/Calculators/CapitalGainsTax.jsx'));
+const InvestmentGrowth = lazy(() => import('./components/Calculators/InvestmentGrowth.jsx'));
+const SocialSecurityTax = lazy(() => import('./components/Calculators/SocialSecurityTax.jsx'));
+const InterestDeductions = lazy(() => import('./components/Calculators/InterestDeductions.jsx'));
 
 export default function App() {
   return (
@@ -211,7 +234,33 @@ export default function App() {
         <Route path="client-center" element={<Navigate to="/tax-season" replace />} />
         <Route path="industries" element={<Industries />} />
         <Route path="resources" element={<Resources />} />
+        <Route path="resources/calculators/bonus-net-after-taxes" element={<BonusNetAfterTaxes />} />
+        <Route path="resources/calculators/457-plan-contribution" element={<PlanContributionIncrease plan="457" />} />
+        <Route path="resources/calculators/403b-contribution" element={<PlanContributionIncrease plan="403b" />} />
+        <Route path="resources/calculators/401k-contribution" element={<PlanContributionIncrease plan="401k" />} />
+        <Route path="resources/calculators/403b-plan-value" element={<PlanValue plan="403b" />} />
+        <Route path="resources/calculators/401k-plan-value" element={<PlanValue plan="401k" />} />
+        <Route path="resources/calculators/457-plan-value" element={<PlanValue plan="457" />} />
+        <Route path="resources/calculators/payroll-adjustments" element={<PayrollAdjustments />} />
+        <Route path="resources/calculators/salary-to-hourly" element={<SalaryToHourly />} />
+        <Route path="resources/calculators/hourly-to-salary" element={<HourlyToSalary />} />
+        <Route path="resources/calculators/stock-options" element={<StockOptionValue />} />
+        <Route path="resources/calculators/exercise-stock-options" element={<StockOptionExercise />} />
+        <Route path="resources/calculators/estate-tax" element={<EstateTax />} />
+        <Route path="resources/calculators/itemize-or-standard" element={<ItemizeOrStandard />} />
+        <Route path="resources/calculators/tax-equivalent-yield" element={<TaxEquivalentYield />} />
+        <Route path="resources/calculators/tax-refund-estimator" element={<TaxRefundEstimator />} />
+        <Route path="resources/calculators/tax-freedom-day" element={<TaxFreedomDay />} />
+        <Route path="resources/calculators/federal-income-tax" element={<FederalIncomeTax />} />
+        <Route path="resources/calculators/payroll-withholdings" element={<PayrollWithholdings />} />
+        <Route path="resources/calculators/investment-interest" element={<InvestmentInterest />} />
+        <Route path="resources/calculators/self-employment-tax" element={<SelfEmploymentTax />} />
+        <Route path="resources/calculators/capital-gains-tax" element={<CapitalGainsTax />} />
+        <Route path="resources/calculators/compare-investment-growth" element={<InvestmentGrowth />} />
+        <Route path="resources/calculators/social-security-tax" element={<SocialSecurityTax />} />
+        <Route path="resources/calculators/interest-tax-implications" element={<InterestDeductions />} />
         <Route path="guides" element={<Guides />} />
+        <Route path="newsletter" element={<Newsletter />} />
         <Route path="guides/life-events/becoming-a-parent" element={<BecomingAParent />} />
         <Route path="guides/life-events/dealing-with-your-bank/bank-accounts" element={<BankAccountsGuide />} />
         <Route path="guides/life-events/dealing-with-your-bank/bank-accounts-faq" element={<BankAccountsFaq />} />

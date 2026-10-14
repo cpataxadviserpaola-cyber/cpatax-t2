@@ -1,179 +1,128 @@
 import { Link } from 'react-router';
 import Icon from '../components/Icon.jsx';
 import PageHero from '../components/PageHero.jsx';
-import SectionHead from '../components/SectionHead.jsx';
-import FaqSection from '../components/FaqSection.jsx';
-import NewsletterForm from '../components/NewsletterForm.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import { links } from '../data/site.js';
-import { articles } from '../data/articles.js';
-import { faqs } from '../data/faqs.js';
-import { asset } from '../utils/asset.js';
+import { calculatorCategories, calculatorUrl } from '../data/calculators.js';
+import { linkCategories } from '../data/internetLinks.jsx';
+
+// Source: cpataxadviser.com/resources.php and the two pages it leads to, word for word: Financial
+// Calculators (calc-section.php, src/data/calculators.js) and Internet Links (links.php,
+// src/data/internetLinks.jsx). Each is a section here, opening with its page's introduction;
+// resources.php's captions are shorter versions of the same two lines. The library shows one
+// category at a time; here each category is on the page, listed in the section's side column.
+// Of the calculators, only the categories rebuilt on this site are shown (`shownCategories`);
+// the others stay in calculators.js, left off the page. A calculator rebuilt on this site (with
+// a `to` in calculators.js) opens here; any other opens on calcxml.com. The page banner's text
+// is written for this site.
+
+const shownCategories = ['paycheck-benefits', 'taxation'];
 
 const sections = [
-  { to: '/guides', label: 'Guides' },
-  { to: '/resources#newsletter', label: 'Newsletter' },
-  { to: '/resources#faq', label: 'FAQs' },
-];
-
-// Guides already on the site. `href` opens in a new tab; `to` stays on the site.
-const guides = [
   {
-    icon: 'file',
-    title: '2026 pricing guide',
-    text: 'Our current fees for individual and business tax preparation, in one PDF.',
-    href: asset(links.pricingGuide),
-    label: 'Download the PDF',
+    id: 'financial-calculators',
+    icon: 'chart',
+    title: 'Financial Calculators',
+    intro:
+      "Please try our wide variety of interactive financial problem solvers. Simply enter your criteria and you'll get your questions answered with dynamic graphs and personalized reports.",
+    categories: calculatorCategories
+      .filter((category) => shownCategories.includes(category.id))
+      .map((category) => ({
+        id: category.id,
+        title: category.title,
+        items: category.calculators.map((calculator) => ({
+          title: calculator.title,
+          to: calculator.to,
+          url: calculator.url ?? calculatorUrl(calculator.id),
+          text: calculator.text,
+        })),
+      })),
   },
   {
-    icon: 'calendar',
-    title: 'Upcoming IRS deadlines',
-    text: 'The next federal tax deadlines for calendar-year filers, with a countdown to each.',
-    to: '/tax-season#deadlines',
-    label: 'See the tax calendar',
-  },
-  {
-    icon: 'laptop',
-    title: 'Client portal tutorial',
-    text: 'How to log in, upload documents, sign, and message our team in the portal.',
-    to: '/tax-season#client-portal',
-    label: 'Read the tutorial',
-  },
-  {
+    id: 'internet-links',
     icon: 'globe',
-    title: 'International tax questions',
-    text: 'Form 1040-NR, FBAR and FATCA, tax treaties, and filing as an international student.',
-    to: '/services/international#faq',
-    label: 'Read the answers',
+    title: 'Internet Links',
+    intro:
+      "Finding what you're looking for on the internet can be quite a daunting task. We've made it a little easier by selecting a few of our favorite sites.",
+    categories: linkCategories.map((category) => ({
+      id: category.id,
+      title: category.title,
+      items: category.links,
+    })),
   },
 ];
 
-const formatDate = (date) =>
-  new Date(`${date}T00:00:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-
-// Blog, guides, the newsletter sign-up, and frequently asked questions, in the order of the
-// Resources menu.
 export default function Resources() {
   return (
     <>
-      <PageHero page="Resources" eyebrow="Resources" title={<>Guides, insights, <em>and answers</em></>}>
-        Practical information to help you stay organized and make informed tax decisions all year,
-        not just at tax time.
+      <PageHero page="Resources" eyebrow="Resources" title={<>Tools <em>and links</em></>}>
+        Interactive financial calculators and a few of our favorite websites, in one place.
       </PageHero>
 
       <nav className="cat-nav" aria-label="Resources">
         <div className="container">
           <ul>
             {sections.map((section) => (
-              <li key={section.to}>
-                <Link to={section.to}>{section.label}</Link>
+              <li key={section.id}>
+                <Link to={`#${section.id}`}>
+                  <Icon name={section.icon} />
+                  {section.title}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       </nav>
 
-      <section className="section section-white" id="blog">
-        <div className="container">
-          <SectionHead eyebrow="Blog" title={<>Insights from <em>our team</em></>}>
-            Tax planning ideas, deadline reminders, and small business finance, in plain language.
-          </SectionHead>
-          {articles.length > 0 ? (
-            <div className="tool-grid reveal">
-              {articles.map((article) => (
-                <a className="tool-card" key={article.title} href={article.href} target="_blank" rel="noopener noreferrer">
-                  <time className="label" dateTime={article.date}>
-                    {formatDate(article.date)}
-                  </time>
-                  <h3>{article.title}</h3>
-                  <p>{article.summary}</p>
-                  <span className="tool-link">Read the article</span>
-                </a>
+      {sections.map((section, index) => (
+        <section
+          className={`section cat-section${index % 2 === 0 ? ' section-white' : ''}`}
+          id={section.id}
+          key={section.id}
+        >
+          <div className="container cat-grid">
+            <aside className="cat-aside article-aside reveal">
+              <p className="eyebrow">Resources</p>
+              <h2>{section.title}</h2>
+              <p>{section.intro}</p>
+              <nav aria-label={`${section.title} categories`}>
+                <p className="label">Categories</p>
+                <ol className="article-toc is-plain">
+                  {section.categories.map((category) => (
+                    <li key={category.id}>
+                      <Link to={`#${category.id}`}>{category.title}</Link>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+              {section.note && <p className="resource-note">{section.note}</p>}
+            </aside>
+
+            <div className="article resource-list">
+              {section.categories.map((category) => (
+                <section id={category.id} key={category.id}>
+                  <h3>{category.title}</h3>
+                  <ul className="article-agencies">
+                    {category.items.map((item) => (
+                      <li key={item.title}>
+                        <strong>
+                          {item.to ? (
+                            <Link to={item.to}>{item.title}</Link>
+                          ) : (
+                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                              {item.title}
+                            </a>
+                          )}
+                        </strong>
+                        <p className="article-agency-text">{item.text}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               ))}
             </div>
-          ) : (
-            <div className="empty-note reveal">
-              <span className="icon-badge icon-badge-gold">
-                <Icon name="newspaper" />
-              </span>
-              <p>
-                <strong>Our first articles are on the way.</strong> Subscribe to the newsletter to
-                hear when they're published.
-              </p>
-              <Link className="btn btn-outline" to="#newsletter">
-                Subscribe
-                <Icon name="arrow" />
-              </Link>
-            </div>
-          )}
-        </div>
-      </section>
-
-      <section className="section" id="guides">
-        <div className="container">
-          <SectionHead eyebrow="Guides" title={<>Helpful guides <em>and how-tos</em></>}>
-            Quick references for working with us and staying on top of your taxes.
-          </SectionHead>
-          <div className="tool-grid reveal">
-            {guides.map((guide) => {
-              const content = (
-                <>
-                  <span className="tool-top">
-                    <span className="icon-badge">
-                      <Icon name={guide.icon} />
-                    </span>
-                    <span className="svc-card-go">
-                      <Icon name={guide.href ? 'arrow-up-right' : 'arrow'} />
-                    </span>
-                  </span>
-                  <h3>{guide.title}</h3>
-                  <p>{guide.text}</p>
-                  <span className="tool-link">{guide.label}</span>
-                </>
-              );
-              return guide.href ? (
-                <a className="tool-card" key={guide.title} href={guide.href} target="_blank" rel="noopener noreferrer">
-                  {content}
-                </a>
-              ) : (
-                <Link className="tool-card" key={guide.title} to={guide.to}>
-                  {content}
-                </Link>
-              );
-            })}
           </div>
-          <p className="section-action reveal">
-            <Link className="btn btn-outline" to="/guides">
-              Browse all financial guides
-              <Icon name="arrow" />
-            </Link>
-          </p>
-        </div>
-      </section>
-
-      <section className="section section-white" id="newsletter">
-        <div className="container">
-          <div className="newsletter surface-dark reveal">
-            <div>
-              <p className="eyebrow">Newsletter</p>
-              <h2>
-                Tax tips, <em>in your inbox</em>
-              </h2>
-              <p>
-                Deadline reminders, tax planning ideas, and news from our firm, sent to your inbox
-                when there's something worth knowing.
-              </p>
-            </div>
-            <NewsletterForm />
-          </div>
-        </div>
-      </section>
-
-      <FaqSection
-        title={<>Frequently asked <em>questions</em></>}
-        lead="Answers to what new clients ask us most."
-        faqs={faqs}
-      />
+        </section>
+      ))}
 
       <CtaSection
         soft

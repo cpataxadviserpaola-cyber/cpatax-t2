@@ -2,7 +2,8 @@
    CPA Tax Adviser — global styles (imported once in src/main.jsx)
    Fonts · Tokens · Base · Layout · Buttons · Header · Ribbons · Home hero · Home sections ·
    Why us · Compare · Finder · Team · Steps · FAQ · Call to action · Page header ·
-   Services · Service page · About · Tax Season · Industries · Resources · Contact · Footer · Motion
+   Services · Service page · About · Tax Season · Industries · Resources · Contact · Calculators ·
+   Footer · Motion
    ========================================================================== */
 
 /* ---------- Fonts ---------- */
@@ -3171,6 +3172,19 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 
 /* A guide's own page (GuideArticle.jsx): its contents in the sticky column, the text beside. */
 .article-aside { display: grid; justify-items: start; gap: 1rem; }
+/* A column taller than the window (the Resources page's calculator categories) scrolls on its
+   own while it sticks, so its last links stay in reach. The padding, offset by the negative
+   margin, keeps focus rings from being clipped. Below 961px the column doesn't stick. */
+@media (min-width: 961px) {
+  .article-aside {
+    max-height: calc(100vh - var(--header-h-scrolled) - 3rem);
+    margin-inline: -6px;
+    padding: 0 6px 6px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+}
 .article-aside nav { width: 100%; margin-bottom: .75rem; }
 .article-aside .label { margin: 0 0 .9rem; }
 .article-toc { display: grid; gap: .2rem; margin: 0; padding: 0; list-style: none; counter-reset: toc; }
@@ -3269,6 +3283,9 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 .article-agencies strong { margin-bottom: .4rem; color: var(--ink); line-height: 1.4; }
 .article-agencies a { justify-self: start; margin-bottom: .4rem; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .article .article-agencies p { font-size: .9rem; line-height: 1.6; }
+/* The Resources page's lists (calculators, links): each category's heading starts its block. */
+.resource-list > section > h3:first-child { margin-top: 0; }
+.resource-note { font-size: .88rem; color: var(--muted); }
 .article .article-agencies .article-agency-text { margin: 0 0 .5rem; }
 .article .article-agencies .article-agency-note { margin: .6rem 0 0; }
 
@@ -3746,6 +3763,506 @@ a.option-main:hover { color: var(--crimson-600); }
   /* A smaller icon and padding leave room for the email address on one line. */
   .option { gap: .9rem; padding: 1.25rem; }
   .option-icon { width: 40px; height: 40px; }
+}
+
+/* ---------- Calculators: the form beside its results (src/components/Calculators) ---------- */
+/* Two equal columns. Before there are results, the right one stretches to the form's height. */
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 4vw, 4rem);
+}
+.calc-form { align-self: start; padding: clamp(1.5rem, 3vw, 2.5rem); }
+/* On wide screens the form stays in view beside the results; one taller than the window
+   scrolls until its Calculate button shows, then stays (useStickyFit sets --sticky-max). */
+@media (min-width: 961px) {
+  .calc-form { position: sticky; top: min(calc(var(--header-h-scrolled) + 1.5rem), var(--sticky-max, 100vh)); }
+}
+.calc-form h2 { margin-bottom: 0; font-size: clamp(1.7rem, 1.4rem + 1vw, 2.2rem); }
+
+/* A group of fields under a small heading with a rule after it. */
+.calc-section { min-width: 0; margin: 1.75rem 0 0; padding: 0; border: 0; }
+.calc-section legend { display: flex; align-items: center; gap: .9rem; width: 100%; margin: 0 0 1rem; padding: 0; color: var(--gold-700); }
+.calc-section legend::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+/* Fields two to a row. Each field's label, box and notes are rows shared with its neighbor
+   (subgrid), so the boxes line up even when one label runs to more lines. */
+.calc-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.calc-row.is-single { grid-template-columns: minmax(0, 1fr); }
+/* A field that takes the whole row, so a wide help table or a long label has room; its box
+   keeps the usual width, and so does its label when it has a "?" button to keep beside the box. */
+.calc-row > .field.is-wide { grid-column: 1 / -1; }
+.calc-row > .field.is-wide > :nth-child(2),
+.calc-row > .field.is-wide:has(.field-help) > .field-label { width: calc(50% - .5rem); }
+/* min-width: 0 lets a wide help table scroll in its panel instead of widening the field. */
+.calc-row > .field { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: .45rem; min-width: 0; }
+/* The same entries side by side under column headings (Current, What-If): each row's label
+   once, above its boxes. Two columns stay side by side on a phone too; three (Value, Growth,
+   Liability) stack when the form is narrow, each box with its column's heading beside it. */
+.calc-pairs { display: grid; gap: 1.1rem; }
+.calc-pairs-head,
+.calc-pair { display: grid; grid-template-columns: repeat(var(--columns, 2), minmax(0, 1fr)); column-gap: 1rem; }
+.field-caption { display: none; }
+.calc-pairs.is-stackable { container: calc-pairs / inline-size; }
+@container calc-pairs (max-width: 459px) {
+  .calc-pairs-head { display: none; }
+  .calc-pair { grid-template-columns: minmax(0, 1fr); row-gap: .55rem; }
+  .calc-pair > .field { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); align-items: center; column-gap: .75rem; row-gap: .4rem; }
+  .calc-pair > .field > .field-notes { grid-column: 1 / -1; }
+  .calc-pair > .field > .field-notes:empty { display: none; }
+  .field-caption { display: block; font-size: .78rem; font-weight: 600; color: var(--muted); }
+}
+.calc-pairs-head span {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--wine-900);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--wine-900);
+}
+.calc-pair-label { grid-column: 1 / -1; margin: 0 0 .45rem; font-size: .8rem; font-weight: 700; letter-spacing: .02em; line-height: 1.4; color: var(--ink); }
+@media (max-width: 560px) {
+  .calc-pairs-head,
+  .calc-pair { column-gap: .6rem; }
+  .calc-pair .calc-switch span { padding-inline: .2rem; font-size: .85rem; }
+  .calc-pair .calc-stepper button { width: 32px; height: 32px; }
+}
+
+/* The label, and a "?" button at the end of its row when the field has help. */
+.field-label { display: flex; align-items: flex-end; justify-content: space-between; gap: .5rem; align-self: end; }
+.field-label > :is(label, span) { line-height: 1.4; }
+.field-label > span { font-size: .8rem; font-weight: 700; letter-spacing: .02em; color: var(--ink); }
+.field-help {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0 0 -3px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--gold-700);
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease;
+}
+.field-help .icon { width: 18px; height: 18px; }
+.field-help:hover,
+.field-help[aria-expanded="true"] { background: var(--gold-100); color: var(--wine-900); }
+.field-notes { display: grid; grid-template-columns: minmax(0, 1fr); gap: .4rem; min-width: 0; }
+.field-note { margin: 0; font-size: .8rem; line-height: 1.5; color: var(--muted); }
+.field-hint { padding: .75rem .9rem; border-radius: 12px; background: var(--gold-100); font-size: .8rem; line-height: 1.5; color: #684b1f; }
+.field-hint > p { margin: 0; }
+.field-error { margin: 0; font-size: .82rem; font-weight: 600; line-height: 1.45; color: var(--red-700); }
+.field input[aria-invalid="true"] { border-color: var(--red-700); }
+
+/* A box with its unit inside: $ before an amount, % after a percentage. */
+.calc-affix { position: relative; }
+.calc-affix > span { position: absolute; top: 50%; translate: 0 -50%; font-weight: 600; color: var(--muted); pointer-events: none; }
+.calc-affix.has-prefix > span:first-child { left: 1.05rem; }
+.calc-affix.has-suffix > span:last-child { right: 1.05rem; }
+.field .calc-affix input { font-variant-numeric: tabular-nums; }
+.field .calc-affix.has-prefix input { padding-left: 2.1rem; }
+.field .calc-affix.has-suffix input { padding-right: 2.4rem; }
+
+/* Married / Single: two buttons in one box, the chosen one filled. */
+.calc-switch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .25rem;
+  padding: .25rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg);
+}
+.calc-switch label { position: relative; display: block; cursor: pointer; }
+.field .calc-switch input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: 0; cursor: pointer; }
+.calc-switch span {
+  display: block;
+  padding: .7rem .5rem;
+  border-radius: 10px;
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text);
+  transition: background-color .2s ease, color .2s ease;
+}
+.calc-switch label:hover input:not(:checked) + span { background: var(--wine-100); color: var(--ink); }
+.calc-switch input:checked + span { background: var(--wine-900); color: #fff; }
+.calc-switch input:focus-visible + span { outline: 2px solid var(--wine-700); outline-offset: 2px; }
+
+/* A count with − and + buttons either side of it, in one box. */
+.calc-stepper {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  padding: 0 .45rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg);
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.calc-stepper:hover { border-color: var(--line-strong); }
+.calc-stepper:focus-within { border-color: var(--wine-700); background: var(--surface); box-shadow: 0 0 0 4px rgb(223 190 134 / 35%); }
+.field .calc-stepper input,
+.field .calc-stepper input:focus {
+  flex: 1;
+  min-width: 0;
+  padding-inline: .25rem;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.calc-stepper button {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--wine-900);
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.calc-stepper button:hover:not(:disabled) { border-color: var(--wine-900); background: var(--wine-900); color: #fff; }
+.calc-stepper button:disabled { opacity: .4; cursor: default; }
+.calc-stepper .icon { width: 16px; height: 16px; stroke-width: 2.2; }
+
+.calc-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--line); }
+.calc-actions .btn-primary { flex: 1 1 12rem; }
+
+.calc-output { display: flex; flex-direction: column; gap: 1.5rem; min-width: 0; }
+.calc-output .article-disclaimer { margin: 0; }
+.calc-results h2 { margin-bottom: 1.25rem; font-size: clamp(2rem, 1.5rem + 1.5vw, 2.8rem); }
+/* Focus moves to the heading when results appear; it isn't something to click. */
+.calc-results h2:focus { outline: none; }
+.calc-results h3 { margin: 2.25rem 0 .9rem; }
+.calc-answer { padding: 1.4rem 1.6rem; border: 1px solid #e8d2a8; border-radius: 22px; background: var(--gold-100); }
+.calc-results .calc-answer .label { margin: 0 0 .5rem; font-family: var(--font-sans); line-height: 1.4; color: var(--gold-700); }
+.calc-answer p { margin: 0; font-size: 1.1rem; line-height: 1.6; color: var(--wine-950); }
+.calc-answer strong { color: var(--crimson-700); }
+/* The amounts in the results sentence, set out on their own, side by side. */
+.calc-figures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1rem 0 0; }
+.calc-figures div { padding: 1.1rem 1.25rem; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.calc-figures dt { font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.calc-figures dd { margin: .3rem 0 0; font-size: clamp(1.35rem, 1.15rem + .6vw, 1.7rem); font-weight: 700; line-height: 1.2; color: var(--ink); overflow-wrap: anywhere; }
+@media (max-width: 480px) {
+  .calc-figures { grid-template-columns: 1fr; }
+}
+.calc-answer .calc-answer-note { margin-top: .75rem; font-size: .88rem; line-height: 1.55; color: #684b1f; }
+.calc-table { margin: 0; }
+/* A worksheet's line numbers, beside its lines. */
+.calc-table .calc-line { width: 2.75rem; padding-right: 0; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* On a phone, a results table with three columns of amounts gives each row's label a line of its
+   own, with the three amounts in equal columns under it, so they all fit, however large. */
+@media (max-width: 560px) {
+  .calc-results .calc-table:has(thead th:nth-child(4)) :is(table, thead, tbody) { display: block; }
+  .calc-results .calc-table:has(thead th:nth-child(4)) tr {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-bottom: 1px solid var(--line);
+  }
+  .calc-results .calc-table:has(thead th:nth-child(4)) tbody tr:last-child { border-bottom: 0; }
+  .calc-results .calc-table:has(thead th:nth-child(4)) :is(th, td) { padding: .6rem .8rem; border-bottom: 0; }
+  .calc-results .calc-table:has(thead th:nth-child(4)) :is(th, td):first-child { grid-column: 1 / -1; padding-bottom: 0; }
+  .calc-results .calc-table:has(thead th:nth-child(4)) thead th:first-child { padding-top: .8rem; }
+  /* A year-by-year table sets its columns closer too (one with many still scrolls sideways). */
+  .calc-details .calc-table table { font-size: .84rem; }
+  .calc-details .calc-table :is(th, td) { padding: .6rem .45rem; }
+  .calc-details .calc-table :is(th, td):first-child { padding-left: .8rem; }
+  .calc-details .calc-table :is(th, td):last-child { padding-right: .8rem; }
+  .calc-details .calc-table thead th { letter-spacing: .04em; }
+}
+/* A note from CalcXML under a graph. */
+.calc-results .calc-results-text { margin: 1rem 0 0; font-size: .92rem; line-height: 1.65; }
+/* A year-by-year table, across the page under the form and results. */
+.calc-details { margin-top: clamp(3rem, 2rem + 3vw, 4.5rem); }
+.calc-details h3 { margin: 0 0 1rem; }
+.calc-details thead tr:first-child th { text-align: center; }
+.calc-details thead tr:first-child th + th,
+.calc-details thead tr:last-child th:nth-child(5),
+.calc-details tbody td:nth-child(5) { border-left: 1px solid var(--line); }
+/* Before there are results: fills the space beside the form, its message in the middle. */
+.calc-empty {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 4vw, 3rem);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-lg);
+  background: var(--bg);
+  text-align: center;
+}
+.calc-empty-icon { display: grid; place-items: center; width: 64px; height: 64px; margin-bottom: .6rem; border-radius: 50%; background: var(--gold-100); color: var(--gold-700); }
+.calc-empty-icon .icon { width: 28px; height: 28px; }
+.calc-empty strong { font-size: 1.1rem; color: var(--ink); }
+.calc-empty p { max-width: 26rem; margin: 0; }
+.calc-note { padding: 1.4rem 1.6rem; border: 1px solid var(--line); border-radius: 22px; background: var(--bg); }
+.calc-note .label { margin: 0 0 .5rem; }
+.calc-note p:not(.label) { margin: 0; font-size: .9rem; line-height: 1.65; }
+@media (max-width: 960px) {
+  .calc-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .calc-row { grid-template-columns: minmax(0, 1fr); }
+  .calc-row > .field.is-wide > :nth-child(2),
+  .calc-row > .field.is-wide:has(.field-help) > .field-label { width: auto; }
+  .calc-actions .btn { flex: 1 1 auto; }
+}
+
+/* A calculator's results graph: its frame, title, legend, the tip shown on pointing at a part,
+   and the note shown instead when there's nothing to draw. */
+.calc-chart {
+  margin: 0;
+  padding: 1.4rem 1.5rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+}
+.chart-title { margin-bottom: .75rem; font-size: .95rem; font-weight: 700; color: var(--ink); }
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem 1.1rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  font-size: .82rem;
+  line-height: 1.4;
+}
+.chart-legend li { display: flex; align-items: center; gap: .45rem; }
+.chart-swatch { flex: none; width: 12px; height: 12px; border-radius: 3px; background: var(--series); }
+.chart-tip {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: .1rem;
+  width: max-content;
+  max-width: 180px;
+  padding: .5rem .75rem;
+  border-radius: 10px;
+  background: var(--wine-950);
+  box-shadow: var(--shadow-sm);
+  font-size: .78rem;
+  line-height: 1.35;
+  color: var(--on-dark);
+  pointer-events: none;
+}
+.chart-tip strong { font-size: .95rem; color: #fff; }
+.chart-empty { margin: 0; padding: 1.25rem 1.5rem; border: 1px dashed var(--line-strong); border-radius: 18px; color: var(--muted); }
+/* High-contrast modes would wipe out the colors that tell the parts apart. */
+@media (forced-colors: active) {
+  .chart-swatch,
+  .paycheck-seg,
+  .growth-seg,
+  .growth-tip-row i { forced-color-adjust: none; }
+}
+
+/* The bonus calculator's graph (PaycheckChart.jsx): a bar per paycheck, split into its parts.
+   The six colors, in this order along a bar, were checked for colorblind readers; the two
+   lightest (gold, green) fall under 3:1 on white, so the summary table carries every value. */
+.paycheck-chart {
+  --series-1: #91314a; /* take-home */
+  --series-2: #cfa354; /* taxes */
+  --series-3: #009399; /* FICA */
+  --series-4: #d24d42; /* 401(k)/403(b)/457 */
+  --series-5: #5759a6; /* pre-tax */
+  --series-6: #71a255; /* after-tax */
+}
+/* The stock option calculator's bars (StockOptionValue.jsx): the strike price, then the gain.
+   The pair was checked for colorblind readers and both clear 3:1 on white. */
+.paycheck-chart.is-options {
+  --series-1: #009399; /* strike price */
+  --series-2: #91314a; /* net gain */
+}
+/* The interest calculator's bars (InterestDeductions.jsx): each kind's interest, split into the
+   tax it saves, then the rest. The pair is the validated wine and its muted companion. */
+.paycheck-chart.is-interest {
+  --series-1: #91314a; /* tax savings */
+  --series-2: #8f7a80; /* interest after tax savings */
+}
+.paycheck-plot { position: relative; }
+.paycheck-row + .paycheck-row { margin-top: 1.1rem; }
+.paycheck-row-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .25rem 1rem;
+  margin: 0 0 .45rem;
+  font-size: .86rem;
+  line-height: 1.4;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.paycheck-row-label,
+.paycheck-row-head strong { font-weight: 700; color: var(--ink); }
+/* The bar's baseline on the left, and a hairline at each axis step behind it. */
+.paycheck-track {
+  position: relative;
+  height: 24px;
+  border-left: 1px solid var(--line-strong);
+  background: linear-gradient(to right, var(--line) 1px, transparent 1px) 0 0 / calc(100% / var(--steps)) 100% repeat-x;
+  box-shadow: inset -1px 0 0 var(--line);
+}
+.paycheck-seg { position: absolute; top: 0; bottom: 0; background: var(--series); transition: filter .2s ease; }
+/* A 2px gap in the chart's own color between parts, and a rounded end. */
+.paycheck-seg:not(:last-child) { box-shadow: inset -2px 0 0 var(--surface); }
+.paycheck-seg:last-child { border-radius: 0 4px 4px 0; }
+.paycheck-seg:hover,
+.paycheck-seg:focus-visible { filter: brightness(1.12); }
+.paycheck-seg:focus-visible { z-index: 1; outline: 2px solid var(--ink); outline-offset: 2px; }
+.paycheck-axis {
+  position: relative;
+  height: 1.3rem;
+  margin-top: .5rem;
+  font-size: .75rem;
+  line-height: 1.3;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.paycheck-axis span { position: absolute; top: 0; translate: -50% 0; white-space: nowrap; }
+.paycheck-axis span:first-child { translate: none; }
+.paycheck-axis span:last-child { translate: -100% 0; }
+.paycheck-chart .chart-tip { text-align: center; translate: -50% calc(-100% - 8px); }
+
+/* The retirement plan calculators' graph (GrowthChart.jsx): a column per year, its parts
+   stacked up it. Each set of colors, in its order up a column, was checked for colorblind
+   readers; the gold falls under 3:1 on white, so the tip and the tables carry every value.
+   The same colors mean the same things in both: teal what's already in the plan, wine your
+   contributions. */
+.growth-chart.is-increase {
+  --series-1: #009399; /* existing balance */
+  --series-2: #91314a; /* current contribution level */
+  --series-3: #cfa354; /* additional proposed contributions */
+}
+.growth-chart.is-accumulation {
+  --series-1: #009399; /* current balance */
+  --series-2: #91314a; /* your contribution */
+  --series-3: #5759a6; /* employer match */
+  --series-4: #cfa354; /* interest growth */
+}
+.growth-plot { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); column-gap: .5rem; }
+.growth-y { position: relative; height: 220px; font-size: .72rem; line-height: 1; color: var(--muted); font-variant-numeric: tabular-nums; }
+.growth-y span { position: absolute; right: 0; translate: 0 50%; white-space: nowrap; }
+/* The baseline, and a hairline at each axis step behind the columns. */
+.growth-area {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 220px;
+  border-bottom: 1px solid var(--line-strong);
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(to top, var(--line) 1px, transparent 1px) 0 100% / 100% calc(100% / var(--steps)) repeat-y;
+  box-shadow: inset 0 1px 0 var(--line);
+}
+.growth-area:focus { outline: none; }
+.growth-area:focus-visible { outline: 2px solid var(--wine-700); outline-offset: 4px; }
+.growth-slot { display: flex; flex: 1 1 0; align-items: flex-end; justify-content: center; min-width: 0; height: 100%; }
+/* The columns are no wider than 24px, rounded at the top, square at the baseline. */
+.growth-column {
+  display: flex;
+  flex-direction: column-reverse;
+  width: min(24px, 70%);
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+  transition: opacity .2s ease;
+}
+.growth-seg { flex: 0 0 0; min-height: 0; background: var(--series); }
+/* A 2px gap in the chart's own color between parts. */
+.growth-seg + .growth-seg { box-shadow: inset 0 -2px 0 var(--surface); }
+.growth-area.has-active .growth-slot:not(.is-active) .growth-column { opacity: .45; }
+.growth-x { display: flex; grid-column: 2; margin-top: .45rem; font-size: .72rem; line-height: 1.2; color: var(--muted); font-variant-numeric: tabular-nums; }
+.growth-x span { flex: 1 1 0; min-width: 0; text-align: center; white-space: nowrap; }
+.growth-x-title { grid-column: 2; margin: .35rem 0 0; font-size: .75rem; font-weight: 600; text-align: center; color: var(--muted); }
+/* No wider than the plot; on a phone the names wrap. */
+.growth-tip { top: .4rem; gap: .3rem; max-width: 100%; }
+.growth-tip strong { margin-bottom: .1rem; }
+.growth-tip-row { display: grid; grid-template-columns: 10px minmax(0, 1fr) auto; align-items: center; gap: .5rem; }
+.growth-tip-row i { width: 10px; height: 3px; border-radius: 2px; background: var(--series); }
+.growth-tip-row b { justify-self: end; padding-left: .75rem; font-weight: 700; color: #fff; font-variant-numeric: tabular-nums; }
+.growth-tip-row.is-total { grid-template-columns: minmax(0, 1fr) auto; margin-top: .15rem; padding-top: .35rem; border-top: 1px solid rgb(255 255 255 / 14%); }
+@media (max-width: 560px) {
+  .calc-chart { padding-inline: 1rem; }
+  .growth-plot { grid-template-columns: 2.9rem minmax(0, 1fr); column-gap: .35rem; }
+  .growth-tip { font-size: .72rem; }
+}
+
+/* Help shown as a chart (helpCharts.jsx): a bar and value for each line. */
+.help-bars { margin: 0; }
+.help-bars figcaption { margin-bottom: .55rem; font-weight: 700; color: var(--wine-950); }
+.help-bars ul { display: grid; gap: .3rem; margin: 0 0 .55rem; padding: 0; list-style: none; }
+.help-bars li { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr) 2.6rem; align-items: center; gap: .5rem; }
+.help-bars-bar { height: 8px; width: calc(var(--share) * 100%); border-radius: 0 3px 3px 0; background: var(--wine-700); }
+.help-bars strong { text-align: right; font-variant-numeric: tabular-nums; color: var(--wine-950); }
+/* Long names go on their own line above their bar. */
+.help-bars.is-stacked li { grid-template-columns: minmax(0, 1fr) 2.6rem; row-gap: .15rem; }
+.help-bars.is-stacked .help-bars-label { grid-column: 1 / -1; }
+.help-bars p { margin: 0; font-size: .75rem; }
+.help-bars p + p { margin-top: .2rem; }
+
+/* The estate tax calculator's graph (ShareBar.jsx): one bar split into its shares, wine for
+   taxes and expenses and teal for the heirs (checked for colorblind readers; both clear 3:1 on
+   white), each share's percentage and amount written beside its color. */
+.share-chart { --series-1: #91314a; --series-2: #009399; }
+.share-bar { display: flex; gap: 2px; height: 24px; margin: .25rem 0 1.1rem; overflow: hidden; border-radius: 4px; }
+.share-bar span { min-width: 2px; background: var(--series); }
+.share-legend { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; font-size: .9rem; line-height: 1.4; }
+.share-legend li { display: grid; grid-template-columns: 12px minmax(0, 1fr) auto auto; align-items: center; column-gap: .65rem; }
+.share-label { color: var(--ink); }
+.share-legend strong { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+.share-amount { min-width: 7rem; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+@media (forced-colors: active) {
+  .share-bar span { forced-color-adjust: none; }
+}
+/* The estate tax summary: the sign of each step between the label and the amount. */
+.estate-table .estate-sign { width: 2.25rem; text-align: center; font-weight: 700; color: var(--muted); }
+
+/* Help shown as a table (helpCharts.jsx), scrolling sideways when it's wider than the panel. */
+.help-table { margin: 0; }
+.help-table figcaption { margin-bottom: .55rem; font-weight: 700; color: var(--wine-950); }
+.help-table-scroll { margin: 0 0 .55rem; overflow-x: auto; border-radius: 8px; background: rgb(255 255 255 / 55%); }
+.help-table table { width: 100%; border-collapse: collapse; font-size: .72rem; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.help-table :is(th, td) { padding: .35rem .4rem; border-bottom: 1px solid #ecdcbc; text-align: left; white-space: nowrap; }
+.help-table thead th { vertical-align: bottom; white-space: normal; }
+.help-table th { font-weight: 700; color: var(--wine-950); }
+.help-table tbody tr:last-child > * { border-bottom: 0; }
+.help-table p { margin: 0; font-size: .75rem; }
+
+/* The stock option exercise calculator's graph (AlternativesChart.jsx): a bar for each
+   alternative from a zero line, the best in wine, the others in a muted wine-gray (both clear
+   3:1 on white), with its name and amount written beside it. */
+.alternatives-chart { --best: #91314a; --other: #8f7a80; }
+.alt-rows { display: grid; gap: 1.1rem; margin: 0; padding: 0; list-style: none; }
+.alt-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .25rem 1rem;
+  margin: 0 0 .45rem;
+  font-size: .9rem;
+  line-height: 1.4;
+}
+.alt-label { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .5rem; font-weight: 600; color: var(--ink); }
+.alt-head strong { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+.alt-badge { padding: .15rem .6rem; border-radius: 999px; background: var(--wine-100); font-size: .7rem; font-weight: 700; letter-spacing: .04em; color: var(--wine-700); }
+.alt-track { position: relative; height: 22px; }
+.alt-track::before { content: ""; position: absolute; top: -4px; bottom: -4px; left: var(--zero); width: 1px; background: var(--line-strong); }
+.alt-bar { position: absolute; top: 0; bottom: 0; border-radius: 0 4px 4px 0; background: var(--other); }
+.alt-bar.is-loss { border-radius: 4px 0 0 4px; }
+.is-best .alt-bar { background: var(--best); }
+@media (forced-colors: active) {
+  .alt-bar { forced-color-adjust: none; }
 }
 
 /* ---------- Legal pages: privacy policy and disclaimer ---------- */

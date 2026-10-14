@@ -5,14 +5,18 @@ import Ribbons from './Ribbons.jsx';
 import { commitments, site } from '../data/site.js';
 import { monthNames, touchpoints } from '../data/yearPlan.js';
 import { formatDeadlineLong, getNextDeadline } from '../data/deadlines.js';
+import { serviceCategories } from '../data/services.js';
 
 // Entry points into the Services page groups (see groupId in Services.jsx) and Financial Planning.
+// A group whose services are all hidden (src/data/services.js) isn't on the Services page, so
+// its entry is left out.
+const shownGroups = serviceCategories.map((category) => `/services#group-${category.id}`);
 const audiences = [
-  { icon: 'briefcase', title: 'Business owners', text: 'Tax, accounting & payroll', to: '/services#group-business' },
+  { icon: 'briefcase', title: 'Business owners', text: 'Tax, accounting & bookkeeping', to: '/services#group-business' },
   { icon: 'user', title: 'Individuals', text: 'Returns & tax projections', to: '/services#group-individual' },
   { icon: 'globe', title: 'International clients', text: 'Nonresidents & expats', to: '/services#group-international' },
   { icon: 'trend', title: 'Financial planning', text: 'With our affiliate, Yellow Oak', to: '/financial-planning' },
-];
+].filter((item) => !item.to.startsWith('/services#') || shownGroups.includes(item.to));
 
 const credentials = [
   { icon: 'shield', label: 'SC licensed CPA firm' },
@@ -104,7 +108,7 @@ export default function HomeHero() {
               Find the right <em>service</em>
             </h2>
           </div>
-          <ul className="audience-list">
+          <ul className="audience-list" style={{ '--count': audiences.length }}>
             {audiences.map((item) => (
               <li key={item.title}>
                 <Link className="audience-link" to={item.to}>

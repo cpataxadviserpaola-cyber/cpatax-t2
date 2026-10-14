@@ -8,15 +8,17 @@ import { FaqList } from '../components/FaqSection.jsx';
 import CtaSection from '../components/CtaSection.jsx';
 import useStickyFit from '../hooks/useStickyFit.js';
 import { links, site } from '../data/site.js';
-import { findService, serviceCategories, servicePath } from '../data/services.js';
+import { findService, hiddenServiceIds, serviceCategories, servicePath, services } from '../data/services.js';
 import NotFound from './NotFound.jsx';
 
 // Page for a single service at /services/:serviceId, or at /<slug>/ for a service with its
 // own address (App.jsx passes its `id`). Any other address for such a service, like
-// /services/<id> or the slug without its closing slash, forwards to /<slug>/.
+// /services/<id> or the slug without its closing slash, forwards to /<slug>/. A hidden
+// service's address forwards to /services.
 export default function ServiceDetail({ id }) {
   const { serviceId } = useParams();
   const { pathname, search, hash } = useLocation();
+  if (hiddenServiceIds.includes(id ?? serviceId)) return <Navigate to="/services" replace />;
   const service = findService(id ?? serviceId);
   if (!service) return <NotFound />;
   if (service.slug && pathname !== servicePath(service)) {
@@ -33,7 +35,13 @@ function ServicePage({ service }) {
   const asideRef = useStickyFit();
 
   const contactLink = `/contact?service=${service.id}`;
-  const related = service.related.map(findService);
+  // Its related services that are shown, topped up to three with the other shown services.
+  const related = [
+    ...new Set([
+      ...service.related.map(findService).filter(Boolean),
+      ...services.filter((item) => item.id !== service.id),
+    ]),
+  ].slice(0, 3);
   const category = serviceCategories.find((item) => item.id === service.category);
   const sections = service.sections ?? standardSections(service);
 

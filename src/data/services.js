@@ -19,14 +19,20 @@
 // sections     optional blocks for the service's page, in order, in place of the standard
 //              overview, highlights, process, and faqs (see DetailBlock in ServiceDetail.jsx)
 // related      ids of services suggested at the bottom of the service's page
+//
+// A service in hiddenServiceIds is left off the site: its page forwards to /services, and it's
+// out of every list (menus, cards, related services, industries, the contact form). Its entry
+// stays here, so taking its id out of the list brings it back.
 
-export const serviceCategories = [
+export const hiddenServiceIds = ['payroll', 'advisory', 'quickbooks', 'individual', 'individual-planning', 'international'];
+
+const allCategories = [
   { id: 'business', label: 'Business services' },
   { id: 'individual', label: 'Individual services' },
   { id: 'international', label: 'International client services' },
 ];
 
-export const services = [
+const allServices = [
   {
     id: 'business-tax',
     category: 'business',
@@ -883,6 +889,12 @@ export const services = [
     related: ['individual', 'business-tax', 'planning'],
   },
 ];
+
+// The services shown on the site, and the groups that have any.
+export const services = allServices.filter((service) => !hiddenServiceIds.includes(service.id));
+export const serviceCategories = allCategories.filter((category) =>
+  services.some((service) => service.category === category.id),
+);
 
 export const findService = (id) => services.find((service) => service.id === id);
 

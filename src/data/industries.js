@@ -3,15 +3,49 @@
 //
 // title     name used on cards, menus, and tags
 // text      short description on the industry's card
-// services  ids of services (src/data/services.js) linked from the card
+// services  ids of services (src/data/services.js) linked from the card; a hidden service is
+//           left out
+//
+// An industry in hiddenIndustryIds is left off the site: it's out of the menu, the pages and
+// their lists. Its entry stays here, so taking its id out of the list brings it back.
 
-export const industries = [
+export const hiddenIndustryIds = ['healthcare', 'legal', 'manufacturing', 'restaurant', 'retail', 'ecommerce', 'mwbe'];
+
+const allIndustries = [
+  {
+    id: 'contractors',
+    icon: 'wrench',
+    title: 'Contractor Firms',
+    text: 'Contractors juggle job costs, equipment, and 1099s, which call for precise financial management and strategic planning.',
+    services: ['accounting', 'payroll', 'planning'],
+  },
   {
     id: 'real-estate',
     icon: 'home',
-    title: 'Real Estate',
+    title: 'Real Estate Firms',
     text: 'A dynamic industry full of opportunities, with its own unique financial challenges. We help agents, investors, and property owners track income and expenses and plan ahead at tax time.',
     services: ['business-tax', 'planning', 'bookkeeping'],
+  },
+  {
+    id: 'consulting',
+    icon: 'briefcase',
+    title: 'Consulting Firms',
+    text: 'We help consultants and other service-based firms streamline their accounting and tax processes, so handling the finances is one less hat to wear.',
+    services: ['accounting', 'bookkeeping', 'payroll'],
+  },
+  {
+    id: 'marketing',
+    icon: 'chat',
+    title: 'Marketing Firms',
+    text: 'Creative projects, client deadlines, and financial complexity, balanced with clear numbers. We help agencies follow project profitability, pay their teams, and plan for taxes.',
+    services: ['accounting', 'payroll', 'planning'],
+  },
+  {
+    id: 'investment-advisers',
+    icon: 'trend',
+    title: 'Investment Advisory Firms',
+    text: 'Investment advisory firms work in a highly regulated, complex environment that calls for precise financial management and strategic planning.',
+    services: ['accounting', 'payroll', 'planning'],
   },
   {
     id: 'healthcare',
@@ -56,31 +90,13 @@ export const industries = [
     services: ['bookkeeping', 'quickbooks', 'business-tax'],
   },
   {
-    id: 'contractors-advisers',
-    icon: 'wrench',
-    title: 'Contractors & Investment Advisory Firms',
-    text: 'Contractors juggle job costs, equipment, and 1099s, while investment advisory firms work in a highly regulated, complex environment. Both call for precise financial management and strategic planning.',
-    services: ['accounting', 'payroll', 'planning'],
-  },
-  {
-    id: 'business-services',
-    icon: 'briefcase',
-    title: 'Accounting Business Services',
-    text: 'We help service-based companies, consultants, and freelancers streamline their accounting, payroll, and tax processes, so handling the finances is one less hat to wear.',
-    services: ['accounting', 'bookkeeping', 'payroll'],
-  },
-  {
     id: 'mwbe',
     icon: 'users',
     title: 'Minority & Women-Owned Businesses (MWBEs)',
     text: 'As a certified MWBE, you face unique challenges and opportunities. We understand them firsthand, as a South Carolina Minority/Women-Owned Business Enterprise ourselves.',
     services: ['advisory', 'accounting', 'business-tax'],
   },
-  {
-    id: 'marketing',
-    icon: 'chat',
-    title: 'Marketing & Advertising Agencies',
-    text: 'Creative projects, client deadlines, and financial complexity, balanced with clear numbers. We help agencies follow project profitability, pay their teams, and plan for taxes.',
-    services: ['accounting', 'payroll', 'planning'],
-  },
 ];
+
+// The industries shown on the site, in this order.
+export const industries = allIndustries.filter((industry) => !hiddenIndustryIds.includes(industry.id));

@@ -11,7 +11,7 @@ import { industries } from '../data/industries.js';
 const categoryIntro = {
   business: {
     eyebrow: 'For business owners',
-    text: 'Tax preparation and planning, accounting, bookkeeping, payroll, advisory, and QuickBooks services for sole proprietorships, LLCs, partnerships, and corporations.',
+    text: 'Tax preparation and planning, accounting, and bookkeeping services for sole proprietorships, LLCs, partnerships, and corporations.',
   },
   individual: {
     eyebrow: 'For individuals',

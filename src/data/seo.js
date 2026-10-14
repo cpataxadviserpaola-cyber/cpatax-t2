@@ -117,7 +117,7 @@ export const pages = {
   '/industries': {
     title: 'Industries | CPA Tax Adviser',
     description:
-      'Accounting, bookkeeping, payroll, and tax services for real estate, healthcare, legal, manufacturing, restaurants, retail, e-commerce, contractors, investment advisers, MWBEs, and marketing agencies.',
+      'Accounting, bookkeeping, and tax services for contractor, real estate, consulting, marketing, and investment advisory firms.',
     keywords: '',
   },
   '/resources': {

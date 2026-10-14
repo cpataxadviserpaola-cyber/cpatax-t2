@@ -1213,7 +1213,8 @@ strong { font-weight: 700; }
 }
 .audience-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* A column per entry (--count, set by HomeHero.jsx), so the row is filled however many show. */
+  grid-template-columns: repeat(var(--count, 4), minmax(0, 1fr));
   gap: .75rem;
   margin: 0;
   padding: 0;

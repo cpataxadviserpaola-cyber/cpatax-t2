@@ -7,6 +7,7 @@ import TeamSection from '../components/TeamSection.jsx';
 import WhyUs from '../components/WhyUs.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
 import { commitments, links, site } from '../data/site.js';
+import { findService, servicePath } from '../data/services.js';
 import { workSteps } from '../data/process.js';
 
 // The firm's three underlying principles (source: cpataxadviser.com, Our Values).
@@ -55,8 +56,8 @@ const technology = [
     icon: 'laptop',
     vendor: 'QuickBooks Online',
     title: 'Cloud accounting',
-    text: 'We set up, review, and tune up QuickBooks and QuickBooks Online for your business.',
-    link: { to: '/services/quickbooks', label: 'QuickBooks services' },
+    text: 'We work with QuickBooks Online and other cloud-based accounting software for your books.',
+    link: { to: servicePath(findService('bookkeeping')), label: 'Bookkeeping services' },
   },
 ];
 

@@ -9,7 +9,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { pageHead, pages } from '../src/data/seo.js';
-import { servicePath, services } from '../src/data/services.js';
+import { hiddenServiceIds, servicePath, services } from '../src/data/services.js';
 import { articlePages, topicPages } from '../src/data/guides.js';
 
 const outDir = process.argv[2] ?? 'dist';
@@ -44,8 +44,12 @@ function save(file, path) {
 }
 
 // Each page is saved as <address>/index.html, and also as <address>.html when its address
-// has no closing slash, so it is found however the host maps addresses to files.
-for (const path of Object.keys(pages)) {
+// has no closing slash, so it is found however the host maps addresses to files. A hidden
+// service's page isn't saved: its address gets 404.html, and the site's script forwards it to
+// /services.
+const hiddenPaths = new Set(hiddenServiceIds.map((id) => `/services/${id}`));
+const shown = Object.keys(pages).filter((path) => !hiddenPaths.has(path));
+for (const path of shown) {
   if (path === '/') save('index.html', path);
   else if (path.endsWith('/')) save(`${path}index.html`, path);
   else {
@@ -55,4 +59,4 @@ for (const path of Object.keys(pages)) {
 }
 save('404.html', null);
 
-console.log(`SEO tags written for ${Object.keys(pages).length} pages and 404.html.`);
+console.log(`SEO tags written for ${shown.length} pages and 404.html.`);

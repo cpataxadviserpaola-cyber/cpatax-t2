@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import Brand from './Brand.jsx';
 import Icon from './Icon.jsx';
 import { links, site } from '../data/site.js';
-import { services, servicePath } from '../data/services.js';
+import { menuServices } from '../data/navigation.js';
 
 const companyLinks = [
   { to: '/', label: 'Home' },
@@ -58,9 +58,9 @@ export default function Footer() {
           <div>
             <h2 className="footer-title">Services</h2>
             <ul className="footer-links">
-              {services.map((service) => (
-                <li key={service.id}>
-                  <Link to={servicePath(service)}>{service.name}</Link>
+              {menuServices.map(({ to, label }) => (
+                <li key={to}>
+                  <Link to={to}>{label}</Link>
                 </li>
               ))}
             </ul>

@@ -5,7 +5,10 @@ import { serviceCategories, servicePath, servicesIn } from '../data/services.js'
 
 const business = servicesIn('business');
 // One card per group beside the business panel; a group with several services links to each.
-const sideGroups = ['individual', 'international'].map((id) => ({ id, items: servicesIn(id) }));
+// A group whose services are all hidden (src/data/services.js) has no card.
+const sideGroups = ['individual', 'international']
+  .map((id) => ({ id, items: servicesIn(id) }))
+  .filter((group) => group.items.length);
 const groupTitle = { individual: 'Individual Tax Services', international: 'International Tax Services' };
 const categoryName = Object.fromEntries(
   serviceCategories.map((category) => [category.id, category.label.replace(/ (client )?services$/, '')]),

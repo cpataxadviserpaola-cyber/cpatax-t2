@@ -15,6 +15,15 @@ const service = (id, label) => {
   return { label, to: servicePath(item), icon: item.icon, text: item.tagline };
 };
 
+// The services in the header's Services menu and the footer's Services list. The other services'
+// pages are still on the site, listed on the All Services page.
+export const menuServices = [
+  service('accounting', 'Small Business Accounting'),
+  service('bookkeeping', 'Bookkeeping Services'),
+  service('business-tax', 'Tax Preparation for Businesses'),
+  service('planning', 'Tax Planning Services'),
+];
+
 const industryLinks = industries.map((industry) => ({
   label: industry.title,
   to: `/industries#${industry.id}`,
@@ -49,28 +58,7 @@ export const mainNav = [
       [
         {
           label: 'Business services',
-          items: [
-            service('accounting', 'Small Business Accounting'),
-            service('bookkeeping', 'Bookkeeping Services'),
-            service('payroll', 'Payroll Services'),
-            service('advisory', 'Business Advisory Services'),
-            service('business-tax', 'Tax Preparation for Businesses'),
-            service('planning', 'Tax Planning Services'),
-            service('quickbooks', 'Services for QuickBooks'),
-          ],
-        },
-      ],
-      [
-        {
-          label: 'Individual services',
-          items: [
-            service('individual', 'Tax Preparation Only'),
-            service('individual-planning', 'Tax Projections & Strategies'),
-          ],
-        },
-        {
-          label: 'International client services',
-          items: [service('international', 'Tax Preparation Only')],
+          items: menuServices,
         },
       ],
     ],

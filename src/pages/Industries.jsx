@@ -26,7 +26,7 @@ export default function Industries() {
                 <p>{industry.text}</p>
                 <p className="label">How we help</p>
                 <ul className="ind-services">
-                  {industry.services.map((id) => (
+                  {industry.services.filter(findService).map((id) => (
                     <li key={id}>
                       <Link to={servicePath(findService(id))}>
                         {findService(id).name}

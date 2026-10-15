@@ -57,7 +57,6 @@ export const returnsHelp = (
     stacked
   />
 );
-
 // 2026 federal income tax brackets, by filing status, as on CalcXML's table, but with the rate
 // first rather than last, so it stays in view when the table scrolls sideways.
 const brackets = [

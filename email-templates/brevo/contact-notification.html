@@ -1,0 +1,131 @@
+<!--
+  Brevo transactional template: new contact form message, sent to the firm.
+
+  Subject:   New consultation request: {{ params.service }} from {{ params.name }}
+  To:        contactus@cpataxadviser.com
+  Reply-to:  set "replyTo" to the visitor's email in the API call, so Reply goes to them.
+
+  Params (match the contact form fields):
+    params.name     required
+    params.email    required
+    params.service  the service label, e.g. "Bookkeeping" or "General inquiry"
+    params.message  required
+    params.company  optional
+    params.phone    optional
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <title>New consultation request</title>
+  <style>
+    body { margin: 0; padding: 0; }
+    a { color: #971a32; }
+    @media (max-width: 620px) {
+      .container { width: 100% !important; }
+      .px { padding-left: 24px !important; padding-right: 24px !important; }
+      .label { display: block !important; width: auto !important; padding-bottom: 2px !important; }
+      .value { display: block !important; padding-top: 0 !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#fbf8f3;">
+  <!-- Preview text shown next to the subject in the inbox -->
+  <div style="display:none; max-height:0; overflow:hidden; mso-hide:all;">
+    {{ params.name }} sent a message through the website about {{ params.service }}.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fbf8f3;">
+    <tr>
+      <td align="center" style="padding:32px 12px;">
+        <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background-color:#ffffff; border:1px solid #ebe3dc; border-radius:16px; overflow:hidden;">
+
+          <!-- Header -->
+          <tr>
+            <td class="px" style="background-color:#2a0f18; padding:28px 40px;">
+              <p style="margin:0; font-family:Georgia, 'Times New Roman', serif; font-size:24px; line-height:1.2; color:#dfbe86;">CPA Tax Adviser</p>
+              <p style="margin:4px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#cdbcc0;">Website contact form</p>
+            </td>
+          </tr>
+
+          <!-- Title -->
+          <tr>
+            <td class="px" style="padding:36px 40px 8px; font-family:Arial, Helvetica, sans-serif;">
+              <p style="margin:0 0 12px;">
+                <span style="display:inline-block; padding:5px 12px; background-color:#f8f0e1; border-radius:999px; font-size:12px; font-weight:bold; color:#7a5a26;">{{ params.service }}</span>
+              </p>
+              <h1 style="margin:0; font-family:Georgia, 'Times New Roman', serif; font-size:28px; font-weight:normal; line-height:1.25; color:#241519;">New consultation request</h1>
+              <p style="margin:10px 0 0; font-size:15px; line-height:1.6; color:#4d4146;">{{ params.name }} filled in the contact form on cpataxadviser.com.</p>
+            </td>
+          </tr>
+
+          <!-- Contact details -->
+          <tr>
+            <td class="px" style="padding:24px 40px 8px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5;">
+                <tr>
+                  <td class="label" width="130" style="width:130px; padding:12px 0; border-top:1px solid #ebe3dc; color:#76686d; vertical-align:top;">Name</td>
+                  <td class="value" style="padding:12px 0; border-top:1px solid #ebe3dc; color:#241519; font-weight:bold;">{{ params.name }}</td>
+                </tr>
+                <tr>
+                  <td class="label" width="130" style="width:130px; padding:12px 0; border-top:1px solid #ebe3dc; color:#76686d; vertical-align:top;">Company</td>
+                  <td class="value" style="padding:12px 0; border-top:1px solid #ebe3dc; color:#241519;">{% if params.company %}{{ params.company }}{% else %}<span style="color:#76686d;">Not provided</span>{% endif %}</td>
+                </tr>
+                <tr>
+                  <td class="label" width="130" style="width:130px; padding:12px 0; border-top:1px solid #ebe3dc; color:#76686d; vertical-align:top;">Email</td>
+                  <td class="value" style="padding:12px 0; border-top:1px solid #ebe3dc;"><a href="mailto:{{ params.email }}" style="color:#971a32; text-decoration:underline;">{{ params.email }}</a></td>
+                </tr>
+                <tr>
+                  <td class="label" width="130" style="width:130px; padding:12px 0; border-top:1px solid #ebe3dc; color:#76686d; vertical-align:top;">Phone</td>
+                  <td class="value" style="padding:12px 0; border-top:1px solid #ebe3dc; color:#241519;">{% if params.phone %}<a href="tel:{{ params.phone }}" style="color:#971a32; text-decoration:underline;">{{ params.phone }}</a>{% else %}<span style="color:#76686d;">Not provided</span>{% endif %}</td>
+                </tr>
+                <tr>
+                  <td class="label" width="130" style="width:130px; padding:12px 0; border-top:1px solid #ebe3dc; border-bottom:1px solid #ebe3dc; color:#76686d; vertical-align:top;">Interested in</td>
+                  <td class="value" style="padding:12px 0; border-top:1px solid #ebe3dc; border-bottom:1px solid #ebe3dc; color:#241519;">{{ params.service }}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Message -->
+          <tr>
+            <td class="px" style="padding:24px 40px 8px; font-family:Arial, Helvetica, sans-serif;">
+              <p style="margin:0 0 10px; font-size:12px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; color:#76686d;">Message</p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:18px 20px; background-color:#fbf8f3; border-left:3px solid #dfbe86; border-radius:4px; font-size:15px; line-height:1.65; color:#241519; white-space:pre-wrap;">{{ params.message }}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Reply button -->
+          <tr>
+            <td class="px" style="padding:28px 40px 40px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="background-color:#971a32; border-radius:999px;">
+                    <a href="mailto:{{ params.email }}?subject=Re%3A%20Your%20consultation%20request" style="display:inline-block; padding:14px 28px; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; color:#ffffff; text-decoration:none;">Reply to {{ params.name }}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td class="px" style="padding:20px 40px; background-color:#f4edeb; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:1.6; color:#76686d;">
+              Sent automatically from the contact form at cpataxadviser.com. The visitor was asked not to include Social Security numbers or other sensitive details.
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

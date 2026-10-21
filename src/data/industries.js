@@ -1,51 +1,69 @@
-// Industries the firm serves. They feed the Industries page (one card each, linked from
-// /industries#<id>), the header menu, the Services page band, and the Home page tags.
+// Industries the firm serves. They feed the Industries page (one card each, with "Read more"
+// leading to the industry's own page), the header menu, the Services page band, and the
+// Home page tags.
 //
-// title     name used on cards, menus, and tags
+// slug      address of the industry's own page, /industry/<slug>/ (from the firm's page
+//           brief). Link to it with industryPath(industry).
+// title     short name used in menus, tags, and the breadcrumb
+// heading   headline on the industry's card on the Industries page; without one, the title
+//           is used
 // text      short description on the industry's card
-// services  ids of services (src/data/services.js) linked from the card; a hidden service is
-//           left out
+// services  ids of services (src/data/services.js) linked from the industry's page; a hidden
+//           service is left out
 //
+// A shown industry's page is its own file in src/components/Industries/, routed in App.jsx,
+// and needs an entry in src/data/seo.js; the build stops and names any that is missing one.
 // An industry in hiddenIndustryIds is left off the site: it's out of the menu, the pages and
-// their lists. Its entry stays here, so taking its id out of the list brings it back.
+// their lists. Its entry stays here, so taking its id out of the list brings it back (give
+// it a slug and a page first).
 
 export const hiddenIndustryIds = ['healthcare', 'legal', 'manufacturing', 'restaurant', 'retail', 'ecommerce', 'mwbe'];
 
 const allIndustries = [
   {
     id: 'contractors',
+    slug: 'accounting-firms-for-contractors',
     icon: 'wrench',
     title: 'Contractor Firms',
-    text: 'Contractors juggle job costs, equipment, and 1099s, which call for precise financial management and strategic planning.',
-    services: ['accounting', 'payroll', 'planning'],
+    heading: 'Accounting Firms for Contractors',
+    text: 'Get bookkeeping, accounting, tax planning, and tax preparation support for contractors and construction companies. Keep your financial records organized.',
+    services: ['accounting', 'bookkeeping', 'planning', 'business-tax'],
   },
   {
     id: 'real-estate',
+    slug: 'accounting-services-for-real-estate-firms',
     icon: 'home',
     title: 'Real Estate Firms',
-    text: 'A dynamic industry full of opportunities, with its own unique financial challenges. We help agents, investors, and property owners track income and expenses and plan ahead at tax time.',
-    services: ['business-tax', 'planning', 'bookkeeping'],
+    heading: 'Bookkeeping & Tax Services for Property Management',
+    text: 'Get real estate accounting, bookkeeping, property management bookkeeping, tax planning, and tax preparation support for your real estate business.',
+    services: ['accounting', 'bookkeeping', 'planning', 'business-tax'],
   },
   {
     id: 'consulting',
+    slug: 'accounting-solutions-for-consulting-businesses',
     icon: 'briefcase',
     title: 'Consulting Firms',
-    text: 'We help consultants and other service-based firms streamline their accounting and tax processes, so handling the finances is one less hat to wear.',
-    services: ['accounting', 'bookkeeping', 'payroll'],
+    heading: 'Best Accounting Solutions for Consulting Businesses',
+    text: 'CPA Tax Adviser offers accounting services for consulting firms to manage expenses, maintain financial clarity, and make informed decisions.',
+    services: ['accounting', 'bookkeeping', 'planning', 'business-tax'],
   },
   {
     id: 'marketing',
+    slug: 'accounting-services-for-marketing-firms',
     icon: 'chat',
     title: 'Marketing Firms',
-    text: 'Creative projects, client deadlines, and financial complexity, balanced with clear numbers. We help agencies follow project profitability, pay their teams, and plan for taxes.',
-    services: ['accounting', 'payroll', 'planning'],
+    heading: 'Accounting Services for Marketing Firms',
+    text: 'At CPA Tax Adviser, we provide accounting services for investment advisory firms, including bookkeeping, financial reporting, tax planning, and tax preparation support.',
+    services: ['accounting', 'bookkeeping', 'planning', 'business-tax'],
   },
   {
     id: 'investment-advisers',
+    slug: 'accounting-services-for-investment-advisory',
     icon: 'trend',
     title: 'Investment Advisory Firms',
-    text: 'Investment advisory firms work in a highly regulated, complex environment that calls for precise financial management and strategic planning.',
-    services: ['accounting', 'payroll', 'planning'],
+    heading: 'Accounting Services for Investment Advisory Firms',
+    text: 'Accounting services for investment advisory firms, including bookkeeping, financial reporting, tax planning, and tax preparation support.',
+    services: ['accounting', 'bookkeeping', 'planning', 'business-tax'],
   },
   {
     id: 'healthcare',
@@ -100,3 +118,8 @@ const allIndustries = [
 
 // The industries shown on the site, in this order.
 export const industries = allIndustries.filter((industry) => !hiddenIndustryIds.includes(industry.id));
+
+export const findIndustry = (id) => industries.find((industry) => industry.id === id);
+
+// Address of an industry's own page.
+export const industryPath = (industry) => `/industry/${industry.slug}/`;

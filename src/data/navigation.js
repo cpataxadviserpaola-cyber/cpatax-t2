@@ -24,6 +24,7 @@ export const menuServices = [
   service('planning', 'Tax Planning Services'),
 ];
 
+// Each industry's link goes to its card on the Industries page, which highlights it.
 const industryLinks = industries.map((industry) => ({
   label: industry.title,
   to: `/industries#${industry.id}`,

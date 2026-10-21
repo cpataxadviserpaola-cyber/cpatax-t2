@@ -2900,6 +2900,7 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 .detail-card p { margin: 0; font-size: .9rem; }
 .detail-card.is-link p { margin-bottom: 1.1rem; }
 .detail-card-arrow { width: 18px; height: 18px; margin-top: auto; color: var(--crimson-600); transition: transform .3s var(--ease); }
+.detail-cards + p { margin-top: 1.5rem; }
 .detail-card.is-link:hover .detail-card-arrow { transform: translateX(4px); }
 @media (max-width: 600px) {
   .detail-cards { grid-template-columns: 1fr; }
@@ -2926,6 +2927,28 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
   gap: .7rem;
 }
 .included-card .checklist li { font-size: .92rem; }
+/* Links to the services an industry uses, in the card beside an industry page. */
+.included-links {
+  display: grid;
+  margin: 1.25rem 0 1.75rem;
+  padding: .5rem 0 0;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  list-style: none;
+}
+.included-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .7rem 0;
+  border-bottom: 1px solid rgb(255 255 255 / 6%);
+  font-size: .95rem;
+  font-weight: 600;
+  color: #fff;
+}
+.included-links a:hover { color: var(--gold-300); }
+.included-links .icon { flex: none; width: 16px; height: 16px; color: var(--gold-300); transition: transform .3s var(--ease); }
+.included-links a:hover .icon { transform: translateX(3px); }
 
 .talk-card {
   display: flex;
@@ -3116,21 +3139,31 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 }
 .ind-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
 .ind-card:hover .icon-badge { background: var(--wine-900); color: var(--gold-300); }
-.ind-card h2 { margin: 1.5rem 0 .6rem; font-size: 1.75rem; }
-.ind-card > p:not(.label) { margin: 0 0 1.5rem; font-size: .94rem; }
-.ind-card .label { margin: auto 0 .75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
-.ind-services { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; }
-.ind-services a {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-  font-size: .9rem;
-  font-weight: 700;
-  color: var(--wine-900);
+.ind-card h3 { margin: 1.5rem 0 .6rem; font-size: 1.6rem; }
+.ind-card > p { margin: 0 0 1.5rem; font-size: .94rem; }
+.ind-card .link-arrow { align-self: flex-start; margin-top: auto; }
+/* The card a header menu link points to (/industries#<id>): a gold ring that pulses in once
+   the card has risen into view, then stays. */
+.ind-card[data-highlighted] {
+  border-color: var(--gold-500);
+  box-shadow: 0 0 0 4px rgb(223 190 134 / 40%), var(--shadow);
 }
-.ind-services a:hover { color: var(--crimson-600); }
-.ind-services .icon { width: 15px; height: 15px; stroke-width: 2; transition: transform .3s var(--ease); }
-.ind-services a:hover .icon { transform: translateX(3px); }
+.ind-card[data-highlighted] .icon-badge { background: var(--wine-900); color: var(--gold-300); }
+/* It skips rising in (see "Scroll reveal"): the page scrolls to it before it would rise, and
+   lining up its lowered position would leave it tucked under the header once it rose. */
+.has-reveal .ind-card[data-highlighted] {
+  opacity: 1;
+  translate: none;
+  transition: transform .45s var(--ease), box-shadow .45s ease;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ind-card[data-highlighted] { animation: ind-highlight 1.1s .5s ease-out 2; }
+}
+@keyframes ind-highlight {
+  0% { box-shadow: 0 0 0 0 rgb(223 190 134 / 70%), var(--shadow); }
+  60% { box-shadow: 0 0 0 14px rgb(223 190 134 / 0%), var(--shadow); }
+  100% { box-shadow: 0 0 0 4px rgb(223 190 134 / 40%), var(--shadow); }
+}
 @media (max-width: 1024px) {
   .ind-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

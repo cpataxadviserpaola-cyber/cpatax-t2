@@ -5,7 +5,7 @@ import SectionHead from '../components/SectionHead.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
 import CtaSection from '../components/CtaSection.jsx';
 import { serviceCategories, servicesIn } from '../data/services.js';
-import { industries } from '../data/industries.js';
+import { industries, industryPath } from '../data/industries.js';
 
 // Label and short introduction shown beside each group of services.
 const categoryIntro = {
@@ -88,7 +88,7 @@ export default function Services() {
           </SectionHead>
           <div className="industry-grid reveal">
             {industries.map((industry) => (
-              <Link className="industry" key={industry.id} to={`/industries#${industry.id}`}>
+              <Link className="industry" key={industry.id} to={industryPath(industry)}>
                 <span className="industry-icon">
                   <Icon name={industry.icon} />
                 </span>

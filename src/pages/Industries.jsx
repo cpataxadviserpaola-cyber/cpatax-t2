@@ -1,41 +1,49 @@
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import Icon from '../components/Icon.jsx';
 import PageHero from '../components/PageHero.jsx';
+import SectionHead from '../components/SectionHead.jsx';
 import CtaSection from '../components/CtaSection.jsx';
+import IndustryCard from '../components/Industries/IndustryCard.jsx';
 import { industries } from '../data/industries.js';
-import { findService, servicePath } from '../data/services.js';
 
-// One card per industry, each reachable at /industries#<id> from the header menu.
+// One card per industry, with "Read more" leading to the industry's own page. The header menu
+// links to each card at /industries#<id>; the page scrolls to it (ScrollManager) and the card
+// is highlighted.
 export default function Industries() {
+  const { hash } = useLocation();
+  const targetId = decodeURIComponent(hash.slice(1));
+
   return (
     <>
-      <PageHero page="Industries" eyebrow="Industries" title={<>Specialized knowledge <em>for your field</em></>}>
-        Every industry has its own numbers, rules, and pressures. Our specialized knowledge has
-        helped many professionals thrive, and we're ready to help you too.
+      <PageHero
+        page="Industries"
+        eyebrow="Industries"
+        title={<>Accounting and Tax Services <em>for the Companies Listed Below</em></>}
+        actions={
+          <Link className="btn btn-primary btn-lg" to="/contact">
+            Book a Consultation
+            <Icon name="arrow" />
+          </Link>
+        }
+      >
+        Get reliable bookkeeping, accounting, financial reporting, and tax support to keep your
+        business finances organized.
       </PageHero>
 
       <section className="section section-white">
         <div className="container">
+          <SectionHead
+            eyebrow="Our Industries"
+            title={<>Professional Accounting, Bookkeeping &amp; Tax Services <em>for Businesses</em></>}
+          />
           <div className="ind-grid">
             {industries.map((industry) => (
-              <article className="ind-card reveal" id={industry.id} key={industry.id}>
-                <span className="icon-badge">
-                  <Icon name={industry.icon} />
-                </span>
-                <h2>{industry.title}</h2>
-                <p>{industry.text}</p>
-                <p className="label">How we help</p>
-                <ul className="ind-services">
-                  {industry.services.filter(findService).map((id) => (
-                    <li key={id}>
-                      <Link to={servicePath(findService(id))}>
-                        {findService(id).name}
-                        <Icon name="arrow" />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </article>
+              <IndustryCard
+                key={industry.id}
+                id={industry.id}
+                industry={industry}
+                highlighted={industry.id === targetId}
+              />
             ))}
           </div>
         </div>

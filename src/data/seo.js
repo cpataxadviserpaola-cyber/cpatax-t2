@@ -123,6 +123,42 @@ export const pages = {
       'Accounting, bookkeeping, and tax services for contractor, real estate, consulting, marketing, and investment advisory firms.',
     keywords: '',
   },
+  // Industry pages (addresses from src/data/industries.js), from the firm's page briefs
+  '/industry/accounting-firms-for-contractors/': {
+    title: 'Accounting Firms for Contractors | Bookkeeping & Tax Services',
+    description:
+      'Get bookkeeping, accounting, tax planning, and tax preparation support for contractors and construction companies. Keep your financial records organized.',
+    keywords:
+      'bookkeeping for contractors, bookkeeping for construction companies, bookkeeping for small construction business, accounting for construction companies, accounting for construction, construction tax planning, tax planning for contractors, accounting for contracting companies, construction accounting firms, accounting for construction companies, accounting firms for contractors, tax preparation contractors firms, tax planning contractors firms, accounting services for contractors firms, bookkeeping for contractor firms, contractor firms bookkeeping, contractor firms accounting services',
+  },
+  '/industry/accounting-services-for-real-estate-firms/': {
+    title: 'Bookkeeping & Tax Services for Property Management | CPA Tax Adviser',
+    description:
+      'Get real estate accounting, bookkeeping, property management bookkeeping, tax planning, and tax preparation support for your real estate business.',
+    keywords:
+      'bookkeeping for real estate, property management bookkeeping, bookkeeping for real estate agents, bookkeeping for real estate investors, property management bookkeeping services, real estate accounting services, accounting services for real estate firms, tax planning for real estate firms, tax preparation real estate firms, accounting firms specializing in real estate, real estate company accounting, real estate tax accounting firm, real estate accounting firms, realestate accounting',
+  },
+  '/industry/accounting-solutions-for-consulting-businesses/': {
+    title: 'Best Accounting Solutions for Consulting Businesses | CPA Tax Adviser',
+    description:
+      'CPA Tax Adviser offers accounting services for consulting firms to manage expenses, maintain financial clarity, and make informed decisions.',
+    keywords:
+      'accounting consulting firms near me, accounting advisory firms, accounting services for consulting firms, tax planning consulting firms, tax preparation consulting firms, professional tax accountant near me, best accounting consulting firms, accounting and finance consulting firms, consulting for accounting firms, bookkeeping for consulting, bookkeeping for consulting agents, consulting accounting services',
+  },
+  '/industry/accounting-services-for-marketing-firms/': {
+    title: 'Accounting Services for Marketing Firms | CPA Tax Adviser',
+    description:
+      'At CPA Tax Adviser, we provide accounting services for investment advisory firms, including bookkeeping, financial reporting, tax planning, and tax preparation support.',
+    keywords:
+      'accounting services for marketing firms, tax planning for marketing firms, tax preparation for marketing firms, accounting for marketing agencies, financial services marketing firms, marketing accounting services, marketing for an accounting firm, accounting firm marketing firm, marketing for accounting firms, bookkeeping for marketing firms, marketing firms bookkeeping, marketing firms bookkeeping services, marketing firms accounting services, accounting services for marketing firms',
+  },
+  '/industry/accounting-services-for-investment-advisory/': {
+    title: 'Accounting Services for Investment Advisory Firms | CPA Tax Adviser',
+    description:
+      'Accounting services for investment advisory firms, including bookkeeping, financial reporting, tax planning, and tax preparation support.',
+    keywords:
+      'accounting services for investment advisory firms, tax planning for investment advisory firms, tax preparation investment advisory firms, accounting services for financial advisory, tax accountant and financial advisor near me, accounting and tax consultancy, financial advisor tax accountant, accounting and tax consultancy firm, tax planning financial advisor, financial advisor tax accountant near me, bookkeeping for investment advisory firms, investment advisory bookkeeping, investment advisory bookkeeping services, investment advisory accounting services, accounting services for investment advisory',
+  },
   '/resources': {
     title: 'Resources | CPA Tax Adviser',
     description:

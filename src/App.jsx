@@ -16,6 +16,16 @@ import Privacy from './pages/Privacy.jsx';
 import Disclaimer from './pages/Disclaimer.jsx';
 import NotFound from './pages/NotFound.jsx';
 import { services } from './data/services.js';
+import { industries, industryPath } from './data/industries.js';
+
+// Each industry's own page (src/components/Industries/), by its id in src/data/industries.js.
+const industryPages = {
+  contractors: lazy(() => import('./components/Industries/ContractorFirms.jsx')),
+  'real-estate': lazy(() => import('./components/Industries/RealEstateFirms.jsx')),
+  consulting: lazy(() => import('./components/Industries/ConsultingFirms.jsx')),
+  marketing: lazy(() => import('./components/Industries/MarketingFirms.jsx')),
+  'investment-advisers': lazy(() => import('./components/Industries/InvestmentAdvisoryFirms.jsx')),
+};
 
 // Each guide's code downloads when the guide is first opened, so a visit doesn't load all of them.
 const BecomingAParent = lazy(() => import('./components/Guides/LifeEvents/BecomingAParent/BecomingAParent.jsx'));
@@ -233,6 +243,10 @@ export default function App() {
         {/* The Tax Season page used to be called the Client Center. */}
         <Route path="client-center" element={<Navigate to="/tax-season" replace />} />
         <Route path="industries" element={<Industries />} />
+        {industries.map((industry) => {
+          const IndustryPage = industryPages[industry.id];
+          return <Route key={industry.id} path={industryPath(industry)} element={<IndustryPage />} />;
+        })}
         <Route path="resources" element={<Resources />} />
         <Route path="resources/calculators/bonus-net-after-taxes" element={<BonusNetAfterTaxes />} />
         <Route path="resources/calculators/457-plan-contribution" element={<PlanContributionIncrease plan="457" />} />

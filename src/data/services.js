@@ -17,7 +17,7 @@
 // notice       optional note shown prominently on the service's page
 // cta          label for the service's contact button
 // sections     optional blocks for the service's page, in order, in place of the standard
-//              overview, highlights, process, and faqs (see DetailBlock in ServiceDetail.jsx)
+//              overview, highlights, process, and faqs (see src/components/DetailBlock.jsx)
 // related      ids of services suggested at the bottom of the service's page
 //
 // A service in hiddenServiceIds is left off the site: its page forwards to /services, and it's

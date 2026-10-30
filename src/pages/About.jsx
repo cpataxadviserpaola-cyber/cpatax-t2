@@ -3,63 +3,10 @@ import Icon from '../components/Icon.jsx';
 import PageHero from '../components/PageHero.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import TeamSection from '../components/TeamSection.jsx';
 import WhyUs from '../components/WhyUs.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
-import { commitments, links, site } from '../data/site.js';
-import { findService, servicePath } from '../data/services.js';
+import { commitments, site } from '../data/site.js';
 import { workSteps } from '../data/process.js';
-
-// The firm's three underlying principles (source: cpataxadviser.com, Our Values).
-const values = [
-  {
-    icon: 'award',
-    title: 'Professionalism',
-    text: 'By combining our expertise, experience, and the energy of our staff, each client receives close personal and professional attention. Our specialized staff and high standards set us apart.',
-  },
-  {
-    icon: 'clock',
-    title: 'Responsiveness',
-    text: 'Companies who choose our firm rely on competent advice and fast, accurate personnel. Our growth comes from client referrals and the respect we have earned in the financial community.',
-  },
-  {
-    icon: 'target',
-    title: 'Quality',
-    text: "An accounting firm is known for the quality of its service. Our reputation reflects the high standards we demand of ourselves, supported by continuing professional education.",
-  },
-];
-
-// Tools the firm uses with clients (About > Technology).
-const technology = [
-  {
-    icon: 'lock',
-    vendor: 'TaxDome',
-    title: 'Secure client portal',
-    text: 'Upload documents, sign forms electronically, and message our team in one secure place.',
-    link: { href: links.portal, label: 'Log in to the portal' },
-  },
-  {
-    icon: 'card',
-    vendor: 'CPACharge',
-    title: 'Online payments',
-    text: 'Pay your invoice securely online, any time, from any device.',
-    link: { href: links.payment, label: 'Pay my fee' },
-  },
-  {
-    icon: 'calendar',
-    vendor: 'Calendly',
-    title: 'Online scheduling',
-    text: 'Book a consultation or check-in at a time that works for you.',
-    link: { href: links.schedule, label: 'Book a time' },
-  },
-  {
-    icon: 'laptop',
-    vendor: 'QuickBooks Online',
-    title: 'Cloud accounting',
-    text: 'We work with QuickBooks Online and other cloud-based accounting software for your books.',
-    link: { to: servicePath(findService('bookkeeping')), label: 'Bookkeeping services' },
-  },
-];
 
 export default function About() {
   return (
@@ -150,26 +97,6 @@ export default function About() {
 
       <WhyUs id="why-choose" />
 
-      <section className="section">
-        <div className="container">
-          <SectionHead eyebrow="Our values" title={<>Three principles behind <em>outstanding service</em></>} center>
-            Our firm provides outstanding service to our clients because of our dedication to
-            professionalism, responsiveness, and quality.
-          </SectionHead>
-          <div className="values reveal">
-            {values.map((value) => (
-              <article className="value" key={value.title}>
-                <span className="icon-badge">
-                  <Icon name={value.icon} />
-                </span>
-                <h3>{value.title}</h3>
-                <p>{value.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section section-white" id="how-we-work">
         <div className="container">
           <SectionHead eyebrow="How we work" title={<>Getting started is <em>simple</em></>} center>
@@ -179,38 +106,6 @@ export default function About() {
           <ProcessSteps steps={workSteps} />
         </div>
       </section>
-
-      <section className="section" id="technology">
-        <div className="container">
-          <SectionHead eyebrow="Technology" title={<>The tools <em>we use</em></>} center>
-            Secure, paperless tools that let you work with us from anywhere, without printing,
-            scanning, or extra trips to the office.
-          </SectionHead>
-          <div className="values values-4 reveal">
-            {technology.map((tool) => (
-              <article className="value tech" key={tool.vendor}>
-                <span className="icon-badge">
-                  <Icon name={tool.icon} />
-                </span>
-                <p className="tech-vendor">{tool.vendor}</p>
-                <h3>{tool.title}</h3>
-                <p>{tool.text}</p>
-                {tool.link.href ? (
-                  <a className="link-arrow" href={tool.link.href} target="_blank" rel="noopener noreferrer">
-                    {tool.link.label} <Icon name="arrow-up-right" />
-                  </a>
-                ) : (
-                  <Link className="link-arrow" to={tool.link.to}>
-                    {tool.link.label} <Icon name="arrow" />
-                  </Link>
-                )}
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <TeamSection id="team" soft />
 
       <CtaSection
         title={<>Let's work <em>together</em></>}

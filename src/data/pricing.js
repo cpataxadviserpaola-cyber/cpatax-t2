@@ -1,37 +1,12 @@
 // Average investment ranges from the CPA Tax Adviser Pricing Guide 2026
 // (public/files/CPA-Tax-Adviser-Pricing-Guide-2026.pdf). Update both together.
 export const pricingNotes = {
-  intro:
-    "Your tax return is more than forms: it's strategy, compliance, and risk management. Tax preparation is not one-size-fits-all. Fees are based on the complexity of your financial situation, the reporting required, and the level of technical analysis involved.",
   typical:
     'Because most of our clients have business activity, investments, rental properties, or multi-state considerations, the typical investment falls between $900 and $1,500+.',
   final:
     'The ranges shown reflect the average investment for clients within each complexity tier. Final fees are determined after evaluating your specific tax situation and required reporting.',
   business:
     'Business engagements involving multiple states, ownership changes, significant transactions, or accounting clean-up may exceed these ranges. Final fees are confirmed after reviewing your financial statements and scope of work.',
-};
-
-// The two things that most affect a fee, with the life events that often add complexity.
-// Source: cpataxadviser.com/pricing.php.
-export const feeFactors = {
-  organization:
-    'The more organized your financial documents are, the less time it takes for us to prepare your taxes.',
-  complexity:
-    'A more complicated tax situation takes more time. Expenditures, tax breaks, and life events like these often add to it:',
-  events: [
-    'Getting married',
-    'Having a child',
-    'Rental properties',
-    'Business activity',
-    'Portfolio activity',
-    'Education expenses',
-    'Buying or selling a home',
-    'A job promotion',
-    'An inheritance',
-    'A death in the family',
-    'Retirement contributions and distributions',
-    'Side employment',
-  ],
 };
 
 export const pricingTables = [

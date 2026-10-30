@@ -1,5 +1,5 @@
 // Eyebrow label, heading, and optional lead paragraph that open most sections.
-// `title` may contain an <em> for the italic accent.
+// `title` may contain an <em> for the accent color.
 export default function SectionHead({ eyebrow, title, center = false, children }) {
   return (
     <div className={`section-head reveal${center ? ' center' : ''}`}>

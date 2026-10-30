@@ -1,192 +1,127 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import Icon from './Icon.jsx';
-import CountUp from './CountUp.jsx';
-import Ribbons from './Ribbons.jsx';
-import { commitments, site } from '../data/site.js';
-import { monthNames, touchpoints } from '../data/yearPlan.js';
-import { formatDeadlineLong, getNextDeadline } from '../data/deadlines.js';
-import { serviceCategories } from '../data/services.js';
+import { site } from '../data/site.js';
+import { asset } from '../utils/asset.js';
 
-// Entry points into the Services page groups (see groupId in Services.jsx) and Financial Planning.
-// A group whose services are all hidden (src/data/services.js) isn't on the Services page, so
-// its entry is left out.
-const shownGroups = serviceCategories.map((category) => `/services#group-${category.id}`);
-const audiences = [
-  { icon: 'briefcase', title: 'Business owners', text: 'Tax, accounting & bookkeeping', to: '/services#group-business' },
-  { icon: 'user', title: 'Individuals', text: 'Returns & tax projections', to: '/services#group-individual' },
-  { icon: 'globe', title: 'International clients', text: 'Nonresidents & expats', to: '/services#group-international' },
-  { icon: 'trend', title: 'Financial planning', text: 'With our affiliate, Yellow Oak', to: '/financial-planning' },
-].filter((item) => !item.to.startsWith('/services#') || shownGroups.includes(item.to));
-
-const credentials = [
-  { icon: 'shield', label: 'SC licensed CPA firm' },
-  { icon: 'award', label: 'CPA + CFP® founder' },
-  { icon: 'users', label: 'Minority & women-owned' },
-  { icon: 'chat', label: 'English & Spanish' },
-  { icon: 'globe', label: 'Serving clients nationwide' },
+// The banner's slides, in the firm's words: a headline, a line under it, and a button. `label`
+// names the slide for screen readers. `line` is a list of short facts set side by side;
+// otherwise `text` is a sentence. The photos are free Unsplash photos (unsplash.com/license:
+// images.unsplash.com/photo-1551836022-aadb801c60ae, -1579621970563-ebec7560ff3e, mirrored so
+// the plant sits clear of the text, and -1521791136064-7986c2920216), saved in public/hero/
+// at 1920 and 960 pixels wide; they only set the scene, so they have no alt text.
+const slides = [
+  {
+    label: 'Welcome',
+    photo: 'client-meeting',
+    title: 'Trusted tax and accounting support to help you save more and grow.',
+    line: ['South Carolina Licensed CPA Firm', 'Helping Clients Across the U.S.'],
+    action: { to: '/contact', label: 'Speak with your CPA' },
+  },
+  {
+    label: 'Growth',
+    photo: 'savings-growth',
+    title: 'Smart Tax Planning. Steady Growth.',
+    text: 'Keep more of what you earn and watch it grow.',
+    action: { to: '/services', label: 'See How We Help' },
+  },
+  {
+    label: 'Partnership',
+    photo: 'handshake',
+    title: 'A Partner for Every Stage of Growth',
+    text: 'From startups to established practices, we grow with you.',
+    action: { to: '/contact', label: 'Get Started Today' },
+  },
 ];
+const SLIDE_MS = 6000;
 
-// Split layout: the message and calls to action on the left; on the right, a countdown to the
-// next IRS deadline over the year's check-ins, above the firm's credentials and key facts.
-// A "Who we help" band underneath links each kind of client straight to their services.
+// The home page banner: the slides fading one into the next on their own, with a bar per slide
+// (the current one fills while it shows) to jump to it. The slideshow holds while the pointer
+// is over it or keyboard focus is inside it, so a slide stays put while it's read or its
+// button is used. The page's main heading is there for screen readers and
+// search engines only.
 export default function HomeHero() {
+  const [slide, setSlide] = useState(0);
+  // Visitors who ask for less motion get no automatic changes; the bars still switch slides.
+  const [reducedMotion] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const [held, setHeld] = useState(false);
+  const stopped = reducedMotion || held;
+
+  // Moves on to the next slide after SLIDE_MS; picking a slide, or the pointer or focus
+  // leaving, starts the wait over.
+  useEffect(() => {
+    if (stopped) return undefined;
+    const timer = setTimeout(() => setSlide((index) => (index + 1) % slides.length), SLIDE_MS);
+    return () => clearTimeout(timer);
+  }, [slide, stopped]);
+
   return (
-    <section className="hero">
-      <div className="container">
-        <div className="hero-grid">
-          <div className="hero-copy">
-            <p className="hero-chip">
-              <span className="status-dot" aria-hidden="true" />
-              Your Trusted Tax and Accounting Partner
-            </p>
+    <section
+      className="hero"
+      aria-roledescription="carousel"
+      aria-label="Highlights"
+      onMouseEnter={() => setHeld(true)}
+      onMouseLeave={() => setHeld(false)}
+      onFocus={() => setHeld(true)}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setHeld(false);
+      }}
+    >
+      <h1 className="sr-only">{site.slogan}</h1>
 
-            <h1 className="hero-title">
-              Where tax strategy meets <em>real business understanding.</em>
-            </h1>
-
-            <p className="hero-lead">
-              We provide personalized accounting and tax preparation, planning, and advisory services for businesses, professionals, and individuals—helping you navigate today’s tax requirements while planning for tomorrow. 
-            </p>
-
-            <div className="hero-actions">
-              <Link className="btn btn-primary btn-lg" to="/contact">
-                Speak With an Advisor
-                <Icon name="arrow" />
-              </Link>
-              <a className="btn btn-outline btn-lg" href={site.phone.href}>
-                <Icon name="phone" />
-                {site.phone.display}
-              </a>
-            </div>
-
-            <ul className="hero-creds" aria-label="Credentials">
-              {credentials.map((item) => (
-                <li key={item.label}>
-                  <Icon name={item.icon} />
-                  {item.label}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="hero-visual">
-            <DeadlineCard />
-
-            <div className="show-card show-facts">
-              <div className="show-facts-head">
-                <p className="show-kicker">
-                  <Icon name="sparkle" />
-                  Dual credentials
+      {/* Screen readers hear a new slide only once the slideshow has stopped moving. */}
+      <div className="hero-track" aria-live={stopped ? 'polite' : 'off'}>
+        {slides.map((item, index) => (
+          <div
+            key={item.label}
+            className={`hero-slide${index === slide ? ' is-active' : ''}`}
+            role="group"
+            aria-roledescription="slide"
+            aria-label={`${item.label}, ${index + 1} of ${slides.length}`}
+            inert={index !== slide}
+          >
+            <img
+              className="hero-photo"
+              src={asset(`hero/${item.photo}-1920.webp`)}
+              srcSet={`${asset(`hero/${item.photo}-960.webp`)} 960w, ${asset(`hero/${item.photo}-1920.webp`)} 1920w`}
+              sizes="100vw"
+              alt=""
+              fetchPriority={index === 0 ? 'high' : 'low'}
+            />
+            <div className="container hero-caption surface-dark">
+              <h2 className="hero-title">{item.title}</h2>
+              {item.line ? (
+                <p className="hero-line">
+                  {item.line.map((fact) => (
+                    <span key={fact}>{fact}</span>
+                  ))}
                 </p>
-                <p className="show-cred">
-                  CPA <em>+</em> CFP<sup className="reg">®</sup>
-                </p>
-                <p className="show-cred-text">Tax strategy meets long-term financial planning.</p>
-              </div>
-              <dl className="show-stats">
-                {commitments.map((item) => (
-                  <div key={item.short}>
-                    <dt>{item.short}</dt>
-                    <dd>
-                      {item.value}
-                      {item.unit && <small>{item.unit}</small>}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          </div>
-        </div>
-
-        <nav className="hero-audience" aria-labelledby="audience-title">
-          <div className="hero-audience-head">
-            <p className="show-kicker">
-              <Icon name="users" />
-              Who we help
-            </p>
-            <h2 className="hero-audience-title" id="audience-title">
-              Find the right <em>service</em>
-            </h2>
-          </div>
-          <ul className="audience-list" style={{ '--count': audiences.length }}>
-            {audiences.map((item) => (
-              <li key={item.title}>
-                <Link className="audience-link" to={item.to}>
-                  <span className="audience-icon">
-                    <Icon name={item.icon} />
-                  </span>
-                  <span className="audience-copy">
-                    <strong>{item.title}</strong>
-                    <span>{item.text}</span>
-                  </span>
-                  <Icon name="arrow" className="audience-arrow" />
+              ) : (
+                <p className="hero-lead">{item.text}</p>
+              )}
+              <div className="hero-actions">
+                <Link className="btn btn-gold btn-lg" to={item.action.to}>
+                  {item.action.label}
+                  <Icon name="arrow" />
                 </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className={`hero-slides-nav${stopped ? ' is-paused' : ''}`} style={{ '--slide-ms': `${SLIDE_MS}ms` }}>
+        {slides.map((item, index) => (
+          <button
+            key={item.label}
+            type="button"
+            className="hero-slides-dot"
+            aria-label={`Show slide ${index + 1} of ${slides.length}: ${item.label}`}
+            aria-pressed={index === slide}
+            onClick={() => setSlide(index)}
+          />
+        ))}
       </div>
     </section>
-  );
-}
-
-// Days until the next IRS deadline, above a strip of the months in which we check in
-// with clients (the current month is marked).
-function DeadlineCard() {
-  const deadline = getNextDeadline();
-  const month = new Date().getMonth();
-  const checkIns = touchpoints.map((point) => point.month);
-
-  return (
-    <div className="show-card show-deadline surface-dark">
-      <Ribbons className="show-ribbons" />
-      <p className="show-kicker">
-        <Icon name="calendar" />
-        {deadline ? 'Next IRS deadline' : 'Year-round support'}
-      </p>
-
-      {deadline && deadline.daysLeft > 0 && (
-        <p className="show-days">
-          <CountUp value={deadline.daysLeft} />
-          <span className="show-days-unit">{deadline.daysLeft === 1 ? 'day left' : 'days left'}</span>
-        </p>
-      )}
-      {deadline && deadline.daysLeft === 0 && (
-        <p className="show-days">
-          Today
-          <span className="show-days-unit">due</span>
-        </p>
-      )}
-      {!deadline && (
-        <p className="show-days">
-          12
-          <span className="show-days-unit">months a year</span>
-        </p>
-      )}
-      {deadline && (
-        <>
-          <p className="show-date">{formatDeadlineLong(deadline.day)}</p>
-          <p className="show-what">{deadline.label}</p>
-        </>
-      )}
-
-      <div className="show-track" aria-hidden="true">
-        <div className="track-months">
-          {monthNames.map((name, index) => (
-            <span
-              key={name}
-              className={`track-month${checkIns.includes(index) ? ' is-touch' : ''}${index === month ? ' is-now' : ''}`}
-            >
-              <i />
-              {name.charAt(0)}
-            </span>
-          ))}
-        </div>
-        <p className="track-label">
-          <span className="track-key" />
-          Your check-ins with us, all year long
-        </p>
-      </div>
-    </div>
   );
 }

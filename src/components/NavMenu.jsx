@@ -1,20 +1,17 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link, NavLink, matchPath, useLocation } from 'react-router';
 import Icon from './Icon.jsx';
 
 // Hover opens a menu only with a mouse on the desktop layout (see DESKTOP_QUERY in Header.jsx).
 const HOVER_QUERY = '(hover: hover) and (min-width: 1101px)';
-// Closest a dropdown may come to the edge of the window.
-const EDGE = 16;
 
 // An item in the main navigation with a dropdown (see src/data/navigation.js). On desktop
-// the dropdown is a panel under the item; inside the mobile menu it expands in place.
-// The header keeps track of which dropdown is open, so only one shows at a time.
+// the dropdown is a crimson bar across the window under the menu, its links in a line;
+// inside the mobile menu it expands in place. The header keeps track of which dropdown is
+// open, so only one shows at a time.
 export default function NavMenu({ item, open, onOpen, onCloseSoon, onClose, style }) {
   const itemRef = useRef(null);
   const buttonRef = useRef(null);
-  const panelRef = useRef(null);
-  const [shift, setShift] = useState(0);
   const panelId = `menu-${item.id}`;
 
   // The item is marked current on its own page and the pages under it, like a NavLink, and
@@ -28,26 +25,6 @@ export default function NavMenu({ item, open, onOpen, onCloseSoon, onClose, styl
       .some((group) => group.items.some((link) => link.to === pathname || pathname.startsWith(`${link.to}/`)));
 
   const canHover = () => window.matchMedia(HOVER_QUERY).matches;
-
-  // The dropdown is centered under its item; slide it sideways if that would push it past
-  // the edge of the window (a wide panel under an item near either end of the menu).
-  useLayoutEffect(() => {
-    if (!open) return undefined;
-
-    const place = () => {
-      const anchor = itemRef.current.getBoundingClientRect();
-      const width = panelRef.current.offsetWidth;
-      const left = anchor.left + anchor.width / 2 - width / 2;
-      const max = document.documentElement.clientWidth - EDGE;
-      if (left < EDGE) setShift(EDGE - left);
-      else if (left + width > max) setShift(max - left - width);
-      else setShift(0);
-    };
-
-    place();
-    window.addEventListener('resize', place);
-    return () => window.removeEventListener('resize', place);
-  }, [open]);
 
   // While open, close on Escape or on a click outside the menu.
   useEffect(() => {
@@ -114,7 +91,7 @@ export default function NavMenu({ item, open, onOpen, onCloseSoon, onClose, styl
         </button>
       </div>
 
-      <div ref={panelRef} className={panelClasses} id={panelId} style={{ '--mega-shift': `${shift}px` }}>
+      <div className={panelClasses} id={panelId}>
         <div className="mega-columns">
           {item.columns.map((groups, index) => (
             <div className="mega-col" key={index}>

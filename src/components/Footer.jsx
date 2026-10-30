@@ -3,19 +3,7 @@ import Brand from './Brand.jsx';
 import Icon from './Icon.jsx';
 import { links, site } from '../data/site.js';
 import { menuServices } from '../data/navigation.js';
-
-const companyLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About Us' },
-  { to: '/services', label: 'All Services' },
-  { to: '/industries', label: 'Industries' },
-  { to: '/tax-season', label: 'Tax Season' },
-  { to: '/resources', label: 'Resources' },
-  { to: '/guides', label: 'Guides' },
-  { to: '/financial-planning', label: 'Financial Planning' },
-  { to: '/#faq', label: 'FAQs' },
-  { to: '/contact', label: 'Contact' },
-];
+import { industries } from '../data/industries.js';
 
 const clientTools = [
   { href: links.portal, label: 'Client portal login', icon: 'lock' },
@@ -31,16 +19,20 @@ export default function Footer() {
           <div className="footer-brand">
             <Brand />
             <p className="footer-slogan">{site.slogan}</p>
-            <div className="footer-reach">
-              <a className="footer-pill" href={site.phone.href}>
-                <Icon name="phone" />
-                {site.phone.display}
-              </a>
-              <a className="footer-pill" href={`mailto:${site.email}`}>
-                <Icon name="mail" />
-                {site.email}
-              </a>
-            </div>
+            <ul className="footer-links footer-icons">
+              <li>
+                <a href={site.phone.href}>
+                  <Icon name="phone" />
+                  {site.phone.display}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${site.email}`}>
+                  <Icon name="mail" />
+                  {site.email}
+                </a>
+              </li>
+            </ul>
             <ul className="footer-social">
               <li>
                 <a href={links.linkedin} target="_blank" rel="noopener noreferrer" aria-label="CPA Tax Adviser on LinkedIn">
@@ -67,11 +59,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="footer-title">Company</h2>
+            {/* Each goes to the industry's card on the Industries page, which highlights it. */}
+            <h2 className="footer-title">Industries</h2>
             <ul className="footer-links">
-              {companyLinks.map(({ to, label }) => (
-                <li key={label}>
-                  <Link to={to}>{label}</Link>
+              {industries.map((industry) => (
+                <li key={industry.id}>
+                  <Link to={`/industries#${industry.id}`}>{industry.title}</Link>
                 </li>
               ))}
             </ul>

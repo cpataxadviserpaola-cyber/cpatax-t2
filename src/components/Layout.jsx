@@ -2,7 +2,6 @@ import { Suspense } from 'react';
 import { Outlet } from 'react-router';
 import ScrollManager from './ScrollManager.jsx';
 import PageSeo from './PageSeo.jsx';
-import TopBar from './TopBar.jsx';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import useReveal from '../hooks/useReveal.js';
@@ -15,7 +14,6 @@ export default function Layout() {
       <ScrollManager />
       <PageSeo />
       <a className="skip-link" href="#main">Skip to main content</a>
-      <TopBar />
       <Header />
       <main id="main">
         {/* A guide's code downloads the first time it's opened; until then the page keeps its

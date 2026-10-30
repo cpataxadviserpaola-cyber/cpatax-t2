@@ -1,6 +1,6 @@
-// Industries the firm serves. They feed the Industries page (one card each, with "Read more"
-// leading to the industry's own page), the header menu, the Services page band, and the
-// Home page tags.
+// Industries the firm serves. They feed the Industries page (one card each), the header menu,
+// the footer, the Services page band (linking to the industry's own page), and the "Other
+// industries" cards on each industry's page.
 //
 // slug      address of the industry's own page, /industry/<slug>/ (from the firm's page
 //           brief). Link to it with industryPath(industry).
@@ -24,9 +24,9 @@ const allIndustries = [
     id: 'contractors',
     slug: 'accounting-firms-for-contractors',
     icon: 'wrench',
-    title: 'Contractor Firms',
-    heading: 'Accounting Firms for Contractors',
-    text: 'Get bookkeeping, accounting, tax planning, and tax preparation support for contractors and construction companies. Keep your financial records organized.',
+    title: 'Service Companies',
+    heading: 'Accounting Firms for Service Companies',
+    text: 'Get bookkeeping, accounting, tax planning, and tax preparation support for service companies. Keep your financial records organized.',
     services: ['accounting', 'bookkeeping', 'planning', 'business-tax'],
   },
   {

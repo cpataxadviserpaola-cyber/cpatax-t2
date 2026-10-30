@@ -21,10 +21,6 @@ export const deadlines = [
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
-// "Oct 15"
-export const formatDeadlineDay = (date) =>
-  date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-
 // "Thursday, October 15"
 export const formatDeadlineLong = (date) =>
   date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });

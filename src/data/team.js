@@ -6,7 +6,7 @@
 // photo        portrait in public/team/; without one, the initials are shown instead
 // avatar       square head-and-shoulders crop of the photo for the small round pictures
 // summary      one line for the team card
-// highlight    a line from the person's bio, shown in italics
+// highlight    a line from the person's bio, shown as a quote
 // facts        short chips on the featured card
 // bio          full bio, shown in the "Read bio" window
 // action       main button; `external: true` opens in a new tab
@@ -53,24 +53,6 @@ export const team = [
       'Outside of work, Kari enjoys spending time with her husband and daughter, coaching youth softball, and creating meals to share with family and friends.',
     ],
     focus: ['Accurate, compliant returns', 'Income, deduction & credit review'],
-    action: { label: 'Contact our team', href: '/contact' },
-  },
-  {
-    id: 'verna-duke',
-    name: 'Verna "Vee" Duke',
-    credentials: '',
-    seal: '',
-    role: 'Administrative Assistant & Team Facilitator',
-    initials: 'VD',
-    photo: null,
-    summary: 'Helps clients with questions and keeps every process running smoothly.',
-    highlight: "While taxes are serious, the process doesn't have to feel overwhelming.",
-    bio: [
-      'Vee is the engine that keeps everything running smoothly behind the scenes. As the firm\'s administrative assistant and team facilitator, she supports both clients and the internal team, ensuring processes feel seamless and stress-free.',
-      'She assists clients with general questions and helps them navigate the website with ease. She handles administrative tasks, develops materials, and streamlines systems.',
-      'With her positive attitude and problem-solving mindset, Vee brings structure, clarity, and efficiency to every part of the firm.',
-    ],
-    focus: ['Client questions', 'Administrative support', 'Processes & systems'],
     action: { label: 'Contact our team', href: '/contact' },
   },
   {

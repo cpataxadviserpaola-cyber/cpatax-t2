@@ -21,7 +21,6 @@ export default function OpportunityFinder() {
     <section className="section finder surface-dark" id="finder">
       <div className="container">
         <div className="finder-head reveal">
-          <p className="eyebrow">Tax opportunity finder</p>
           <h2>
             Where could you <em>be saving?</em>
           </h2>

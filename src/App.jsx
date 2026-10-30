@@ -5,8 +5,14 @@ import Home from './pages/Home.jsx';
 import Services from './pages/Services.jsx';
 import ServiceDetail from './pages/ServiceDetail.jsx';
 import About from './pages/About.jsx';
+import Team from './pages/Team.jsx';
+import Values from './pages/Values.jsx';
 import Contact from './pages/Contact.jsx';
 import TaxSeason from './pages/TaxSeason.jsx';
+import TaxSeasonProcess from './pages/TaxSeasonProcess.jsx';
+import TaxSeasonPricing from './pages/TaxSeasonPricing.jsx';
+import TaxToolbox from './pages/TaxToolbox.jsx';
+import ClientPortalTutorial from './pages/ClientPortalTutorial.jsx';
 import Industries from './pages/Industries.jsx';
 import Resources from './pages/Resources.jsx';
 import Guides from './pages/Guides.jsx';
@@ -238,8 +244,14 @@ export default function App() {
             <Route key={service.id} path={service.slug} element={<ServiceDetail id={service.id} />} />
           ))}
         <Route path="about" element={<About />} />
+        <Route path="team" element={<Team />} />
+        <Route path="our-values" element={<Values />} />
         <Route path="contact" element={<Contact />} />
         <Route path="tax-season" element={<TaxSeason />} />
+        <Route path="tax-season/process" element={<TaxSeasonProcess />} />
+        <Route path="tax-season/pricing" element={<TaxSeasonPricing />} />
+        <Route path="tax-season/toolbox" element={<TaxToolbox />} />
+        <Route path="tax-season/client-portal" element={<ClientPortalTutorial />} />
         {/* The Tax Season page used to be called the Client Center. */}
         <Route path="client-center" element={<Navigate to="/tax-season" replace />} />
         <Route path="industries" element={<Industries />} />

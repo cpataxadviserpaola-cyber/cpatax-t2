@@ -9,9 +9,10 @@ import { links, site } from '../data/site.js';
 // Must match the breakpoint where styles.css switches to the full-screen mobile menu.
 const DESKTOP_QUERY = '(min-width: 1101px)';
 
-// Deep wine bar under the top bar that turns to frosted glass once the page scrolls: the
-// logo, the main menu (src/data/navigation.js), and the consultation button. Below the
-// desktop breakpoint the menu opens full screen.
+// Deep wine bar that turns to frosted glass once the page scrolls. On desktops: the logo in
+// the center, over a menu bar with the main menu (src/data/navigation.js) on the left and
+// links to payments, the client portal, and our phone number on the right. Below the desktop
+// breakpoint the menu opens full screen.
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -124,6 +125,28 @@ export default function Header() {
             })}
           </ul>
 
+          {/* Desktop only; the full-screen menu has the same links in its foot. */}
+          <ul className="nav-utility">
+            <li>
+              <a href={links.payment} target="_blank" rel="noopener noreferrer">
+                <Icon name="card" />
+                Pay my fee
+              </a>
+            </li>
+            <li>
+              <a href={links.portal} target="_blank" rel="noopener noreferrer">
+                <Icon name="lock" />
+                Client portal
+              </a>
+            </li>
+            <li>
+              <a href={site.phone.href}>
+                <Icon name="phone" />
+                {site.phone.display}
+              </a>
+            </li>
+          </ul>
+
           {/* Shown inside the full-screen menu on small screens only. */}
           <div className="nav-foot">
             <Link className="btn btn-gold btn-lg nav-cta" to="/contact">
@@ -148,11 +171,6 @@ export default function Header() {
         </nav>
 
         <div className="header-actions">
-          <Link className="btn btn-gold header-cta" to="/contact">
-            Get a Free Consultation
-            <Icon name="arrow" />
-          </Link>
-
           <button
             ref={toggleRef}
             className="nav-toggle"

@@ -7,7 +7,6 @@ export const site = {
     'A South Carolina licensed CPA firm helping business owners, professionals, and individuals nationwide make informed tax decisions.',
   mission:
     'Our mission is simple: to simplify complex tax matters, build lasting relationships, and become a trusted partner in your financial journey.',
-  announcement: 'Now accepting new small business clients',
   phone: { display: '(864) 432-6922', href: 'tel:+18644326922' },
   fax: '(864) 642-3780',
   email: 'contactus@cpataxadviser.com',

@@ -1,10 +1,8 @@
 import Icon from './Icon.jsx';
 import SectionHead from './SectionHead.jsx';
-import useStickyFit from '../hooks/useStickyFit.js';
 import { monthNames, touchpoints } from '../data/yearPlan.js';
 
-// What sets the firm apart. The intro and its checklist stay in view while the cards on the
-// right pile up on top of each other as the page scrolls (on wide screens).
+// What sets the firm apart: the intro beside its checklist, then a grid of cards.
 // The figures echo the service commitments in src/data/site.js; keep them in step.
 const highlights = [
   'Proactive tax planning',
@@ -64,13 +62,11 @@ const cards = [
   },
 ];
 
-export default function WhyUs({ id }) {
-  const introRef = useStickyFit();
-
+export default function WhyUs({ id, showCards = true }) {
   return (
     <section className="section section-white why" id={id}>
-      <div className="container why-grid">
-        <div className="why-intro" ref={introRef}>
+      <div className="container">
+        <div className="why-intro">
           <SectionHead
             eyebrow="The CPA Tax Adviser difference"
             title={<>More than tax planning &amp; <em>preparation.</em></>}
@@ -89,22 +85,23 @@ export default function WhyUs({ id }) {
           </ul>
         </div>
 
-        <div className="why-stack">
-          {cards.map((card, index) => (
-            <article
-              key={card.kicker}
-              className={`why-card why-${card.tone} reveal${card.tone === 'dark' ? ' surface-dark' : ''}`}
-              style={{ '--i': index }}
-            >
-              <div className="why-copy">
-                <p className="why-kicker">{card.kicker}</p>
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
-              </div>
-              <div className="why-visual">{card.visual}</div>
-            </article>
-          ))}
-        </div>
+        {showCards && (
+          <div className="why-grid">
+            {cards.map((card) => (
+              <article
+                key={card.kicker}
+                className={`why-card why-${card.tone} reveal${card.tone === 'dark' ? ' surface-dark' : ''}`}
+              >
+                <div className="why-copy">
+                  <p className="why-kicker">{card.kicker}</p>
+                  <h3>{card.title}</h3>
+                  <p>{card.text}</p>
+                </div>
+                <div className="why-visual">{card.visual}</div>
+              </article>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

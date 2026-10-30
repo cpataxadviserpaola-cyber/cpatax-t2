@@ -3,21 +3,14 @@ import Icon from '../components/Icon.jsx';
 import HomeHero from '../components/HomeHero.jsx';
 import ServicesDirectory from '../components/ServicesDirectory.jsx';
 import WhyUs from '../components/WhyUs.jsx';
-import Comparison from '../components/Comparison.jsx';
 import OpportunityFinder from '../components/OpportunityFinder.jsx';
-import TeamSection from '../components/TeamSection.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
 import FaqSection from '../components/FaqSection.jsx';
 import CtaSection from '../components/CtaSection.jsx';
 import { site } from '../data/site.js';
-import { industries } from '../data/industries.js';
 import { workSteps } from '../data/process.js';
 import { faqs } from '../data/faqs.js';
-import { team } from '../data/team.js';
-import { asset } from '../utils/asset.js';
-
-const founder = team.find((person) => person.featured);
 
 // "Who we are / What we do / Who we serve" from the firm's homepage.
 const pillars = [
@@ -37,7 +30,6 @@ const pillars = [
     icon: 'users',
     title: 'Who we serve',
     text: 'A broad range of services for business owners, executives, and independent professionals.',
-    tags: industries.map((industry) => industry.title),
     link: { to: '/industries', label: 'Industries we serve' },
   },
 ];
@@ -48,23 +40,32 @@ export default function Home() {
       <HomeHero />
 
       <section className="section section-white">
-        <div className="container intro">
-          <div className="intro-lead reveal">
-            <p className="eyebrow">Our mission</p>
-            <p className="intro-mission">{site.mission}</p>
-            <p className="intro-sign">
-              <img
-                className="intro-avatar"
-                src={asset(founder.avatar ?? founder.photo)}
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-              <span>
-                <small>Founded by</small>
-                {founder.name}, {founder.credentials}
-              </span>
-            </p>
+        <div className="container">
+          {/* The firm's welcome, then the pillars under it. */}
+          <div className="welcome reveal">
+            <div>
+              <h2>
+                Welcome to <em>CPA Tax Adviser!</em>
+              </h2>
+              <p className="welcome-creds">
+                <span>South Carolina Licensed CPA Firm</span>
+                <span>Serving Clients Nationwide</span>
+              </p>
+              <p className="welcome-slogan">{site.slogan}</p>
+            </div>
+            <div>
+              <p className="lead">
+                Helping business owners, professionals, and individuals simplify complex tax
+                matters and make informed financial decisions.
+              </p>
+              <p>
+                At CPA Tax Adviser, we help business owners, professionals, and individuals make
+                informed tax decisions through practical advice, personalized strategies, and
+                year-round guidance. Whether you&rsquo;re running a business, managing investments,
+                or navigating international tax matters, we&rsquo;re committed to making the
+                process clear, straightforward, and helping you plan ahead.
+              </p>
+            </div>
           </div>
 
           <div className="intro-pillars reveal">
@@ -76,13 +77,6 @@ export default function Home() {
                 <div>
                   <h3>{pillar.title}</h3>
                   <p>{pillar.text}</p>
-                  {pillar.tags && (
-                    <ul className="tags" aria-label="Industries we serve">
-                      {pillar.tags.map((tag) => (
-                        <li key={tag}>{tag}</li>
-                      ))}
-                    </ul>
-                  )}
                   <Link className="link-arrow" to={pillar.link.to}>
                     {pillar.link.label} <Icon name="arrow" />
                   </Link>
@@ -95,13 +89,9 @@ export default function Home() {
 
       <ServicesDirectory />
 
-      <WhyUs />
-
-      <Comparison />
+      <WhyUs showCards={false} />
 
       <OpportunityFinder />
-
-      <TeamSection showAboutLink />
 
       <section className="section section-white">
         <div className="container">
@@ -119,6 +109,7 @@ export default function Home() {
       />
 
       <CtaSection
+        compact
         soft
         title={<>Ready to become more organized and <em>confident?</em></>}
         text="Let's talk about your business, your taxes, and the plan that gets you where you want to be."

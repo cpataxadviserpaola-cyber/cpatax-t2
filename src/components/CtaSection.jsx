@@ -6,11 +6,18 @@ import { formatDeadlineLong, getNextDeadline } from '../data/deadlines.js';
 
 // Closing call to action: the page's own message in a wine panel beside a gold panel
 // counting down to the next IRS deadline. The second button defaults to the phone number.
-export default function CtaSection({ title, text, soft = false, to = '/contact', secondary }) {
+export default function CtaSection({
+  title,
+  text,
+  soft = false,
+  compact = false,
+  to = '/contact',
+  secondary,
+}) {
   const deadline = getNextDeadline();
 
   return (
-    <section className={`section section-cta${soft ? ' section-white' : ''}`}>
+    <section className={`section section-cta${soft ? ' section-white' : ''}${compact ? ' section-cta-compact' : ''}`}>
       <div className="container">
         <div className="cta reveal">
           <div className="cta-main surface-dark">

@@ -6,9 +6,9 @@ import CtaSection from '../components/CtaSection.jsx';
 import IndustryCard from '../components/Industries/IndustryCard.jsx';
 import { industries } from '../data/industries.js';
 
-// One card per industry, with "Read more" leading to the industry's own page. The header menu
-// links to each card at /industries#<id>; the page scrolls to it (ScrollManager) and the card
-// is highlighted.
+// One card per industry, without a link to the industry's own page. The footer links to each
+// card at /industries#<id>; the page scrolls to it (ScrollManager) and the card is
+// highlighted.
 export default function Industries() {
   const { hash } = useLocation();
   const targetId = decodeURIComponent(hash.slice(1));
@@ -34,7 +34,7 @@ export default function Industries() {
         <div className="container">
           <SectionHead
             eyebrow="Our Industries"
-            title={<>Professional Accounting, Bookkeeping &amp; Tax Services <em>for Businesses</em></>}
+            title={<>Accounting and Tax Solutions <em>for All Different Industries</em></>}
           />
           <div className="ind-grid">
             {industries.map((industry) => (
@@ -43,6 +43,7 @@ export default function Industries() {
                 id={industry.id}
                 industry={industry}
                 highlighted={industry.id === targetId}
+                readMore={false}
               />
             ))}
           </div>

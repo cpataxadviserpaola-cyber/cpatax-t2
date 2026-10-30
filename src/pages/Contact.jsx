@@ -1,14 +1,14 @@
 import Icon from '../components/Icon.jsx';
 import PageHero from '../components/PageHero.jsx';
 import ContactForm from '../components/ContactForm.jsx';
-import { links, site } from '../data/site.js';
+import { site } from '../data/site.js';
 
 export default function Contact() {
   return (
     <>
       <PageHero page="Contact" eyebrow="Contact us" title={<>Let's talk about <em>your business</em></>}>
-        Send us a message, give us a call, or schedule a free initial consultation online. We
-        serve clients nationwide, in English and Spanish.
+        Send us a message or give us a call. We serve clients nationwide, in English and
+        Spanish.
       </PageHero>
 
       <section className="section section-tight">
@@ -37,23 +37,6 @@ export default function Contact() {
                 <a className="option-main" href={`mailto:${site.email}`}>
                   {site.email.split('@')[0]}@<wbr />
                   {site.email.split('@')[1]}
-                </a>
-              </div>
-            </div>
-
-            <div className="option option-dark surface-dark">
-              <span className="option-icon">
-                <Icon name="calendar" />
-              </span>
-              <div>
-                <h2>Schedule online</h2>
-                <p>
-                  Book a free initial consultation with our founder, Paola Martinez, CPA, CFP®, at a
-                  time that works for you. We'll talk through how we can best serve you.
-                </p>
-                <a className="btn btn-gold" href={links.schedule} target="_blank" rel="noopener noreferrer">
-                  Book a time
-                  <Icon name="external" />
                 </a>
               </div>
             </div>

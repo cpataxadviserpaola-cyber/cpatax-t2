@@ -35,7 +35,49 @@ export const pages = {
   '/about': {
     title: 'About Us | CPA Tax Adviser',
     description:
-      'Learn about CPA Tax Adviser, a South Carolina Minority/Women-Owned Business Enterprise founded by Paola Martinez, CPA, CFP®, and meet our team.',
+      'Learn about CPA Tax Adviser, a South Carolina Minority/Women-Owned Business Enterprise founded by Paola Martinez, CPA, CFP®.',
+    keywords: '',
+  },
+  '/team': {
+    title: 'Meet Our Team | CPA Tax Adviser',
+    description:
+      'Meet the CPA Tax Adviser team serving business owners, professionals, and individuals in English and Spanish.',
+    keywords: '',
+  },
+  '/our-values': {
+    title: 'Our Values | CPA Tax Adviser',
+    description:
+      'Learn about CPA Tax Adviser’s commitment to professionalism, responsiveness, and quality service.',
+    keywords: '',
+  },
+  '/tax-season': {
+    title: 'Tax Season | CPA Tax Adviser',
+    description:
+      'Find tax season process information, pricing, client portal guidance, online tools, and upcoming IRS deadlines.',
+    keywords: '',
+  },
+  '/tax-season/process': {
+    title: 'Our Tax Season Process | CPA Tax Adviser',
+    description:
+      'Learn what to expect during tax season, from submitting your documents through preparation, CPA review, payment, and e-filing.',
+    keywords: '',
+  },
+  '/tax-season/pricing': {
+    title: 'Tax Preparation Pricing | CPA Tax Adviser',
+    description:
+      'Review individual and business tax preparation pricing, fee factors, and download the 2026 pricing guide.',
+    keywords: '',
+  },
+  '/tax-season/toolbox': {
+    title: 'Tax Tool Box | CPA Tax Adviser',
+    description:
+      'Access client payments, scheduling, IRS refund tracking, direct pay, withholding, and account tools.',
+    keywords: '',
+  },
+  '/tax-season/client-portal': {
+    title: 'Client Portal Tutorial | CPA Tax Adviser',
+    description:
+      'Learn how to use the secure client portal to upload documents, sign forms, and message CPA Tax Adviser.',
     keywords: '',
   },
   '/services': {
@@ -1382,7 +1424,7 @@ export const pages = {
   '/contact': {
     title: 'Contact Us | CPA Tax Adviser',
     description:
-      'Contact CPA Tax Adviser in Simpsonville, SC. Call (864) 432-6922, email contactus@cpataxadviser.com, or schedule a free initial consultation online.',
+      'Contact CPA Tax Adviser in Simpsonville, SC. Call (864) 432-6922, email contactus@cpataxadviser.com, or send us a message online.',
     keywords: '',
   },
   '/privacy': {

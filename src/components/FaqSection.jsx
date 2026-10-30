@@ -22,15 +22,16 @@ export function FaqList({ faqs }) {
   );
 }
 
-// Centered FAQ section, closing with a strip for anything the list doesn't answer.
+// FAQ section: the heading and a box for anything the list doesn't answer on the left, the
+// questions on the right; on narrow screens the box follows the questions.
 export default function FaqSection({ title, lead, faqs, contactLink = '/contact', soft = false }) {
   return (
     <section className={`section${soft ? ' section-white' : ''}`} id="faq">
       <div className="container faq-wrap">
-        <SectionHead eyebrow="FAQ" title={title} center>
+        <SectionHead eyebrow="FAQ" title={title}>
           {lead}
         </SectionHead>
-        <div className="reveal">
+        <div className="faq-main reveal">
           <FaqList faqs={faqs} />
         </div>
         <div className="faq-help reveal">

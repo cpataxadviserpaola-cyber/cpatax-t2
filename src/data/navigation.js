@@ -33,6 +33,7 @@ const industryLinks = industries.map((industry) => ({
 const half = Math.ceil(industryLinks.length / 2);
 
 export const mainNav = [
+  { id: 'home', label: 'Home', to: '/' },
   {
     id: 'about',
     label: 'About',
@@ -41,11 +42,8 @@ export const mainNav = [
       [
         {
           items: [
-            { label: 'About', to: '/about', icon: 'building', text: 'Our story, mission, and values' },
-            { label: 'Why Choose Us', to: '/about#why-choose', icon: 'award', text: 'What sets our firm apart' },
-            { label: 'How We Work', to: '/about#how-we-work', icon: 'target', text: 'Getting started, step by step' },
-            { label: 'Technology', to: '/about#technology', icon: 'laptop', text: 'The tools we use' },
-            { label: 'Meet Our Team', to: '/about#team', icon: 'users', text: 'The people behind your numbers' },
+            { label: 'Our Values', to: '/our-values', icon: 'target', text: 'Professionalism, responsiveness, and quality' },
+            { label: 'Meet Our Team', to: '/team', icon: 'users', text: 'The people behind your numbers' },
           ],
         },
       ],
@@ -78,9 +76,9 @@ export const mainNav = [
         {
           label: 'Tax season',
           items: [
-            { label: 'Our Tax Season Process', to: '/tax-season#process', icon: 'calendar', text: 'What happens, step by step' },
-            { label: 'Pricing', to: '/tax-season#pricing', icon: 'banknote', text: 'Our fees and 2026 pricing guide' },
-            { label: 'Tax Tool Box', to: '/tax-season#tax-toolbox', icon: 'toolbox', text: 'Refund status, IRS payments, and more' },
+            { label: 'Our Tax Season Process', to: '/tax-season/process', icon: 'calendar', text: 'What happens, step by step' },
+            { label: 'Pricing', to: '/tax-season/pricing', icon: 'banknote', text: 'Our fees and 2026 pricing guide' },
+            { label: 'Tax Tool Box', to: '/tax-season/toolbox', icon: 'toolbox', text: 'Refund status, IRS payments, and more' },
           ],
         },
       ],
@@ -88,24 +86,12 @@ export const mainNav = [
         {
           label: 'Client portal',
           items: [
-            { label: 'Tutorial', to: '/tax-season#client-portal', icon: 'laptop', text: 'Getting around the portal' },
+            { label: 'Tutorial', to: '/tax-season/client-portal', icon: 'laptop', text: 'Getting around the portal' },
             { label: 'Login', href: links.portal, icon: 'lock', text: 'Upload, sign, and message us' },
           ],
         },
       ],
     ],
-  },
-  {
-    id: 'industries',
-    label: 'Industries',
-    to: '/industries',
-    compact: true,
-    columns: [[{ items: industryLinks.slice(0, half) }], [{ items: industryLinks.slice(half) }]],
-    foot: {
-      text: "Don't see your industry?",
-      action: { to: '/contact', label: 'Ask our team' },
-      all: { to: '/industries', label: 'All industries' },
-    },
   },
   {
     id: 'resources',
@@ -124,6 +110,18 @@ export const mainNav = [
         },
       ],
     ],
+  },
+  {
+    id: 'industries',
+    label: 'Industries',
+    to: '/industries',
+    compact: true,
+    columns: [[{ items: industryLinks.slice(0, half) }], [{ items: industryLinks.slice(half) }]],
+    foot: {
+      text: "Don't see your industry?",
+      action: { to: '/contact', label: 'Ask our team' },
+      all: { to: '/industries', label: 'All industries' },
+    },
   },
   { id: 'contact', label: 'Contact', to: '/contact' },
 ];

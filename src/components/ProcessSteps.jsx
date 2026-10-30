@@ -1,7 +1,8 @@
 import Icon from './Icon.jsx';
 
 // Steps as a row of cards joined by arrows (`layout="cards"`), or as a vertical timeline
-// (`layout="timeline"`). A step may carry an `icon`; without one a plain marker is shown.
+// (`layout="timeline"`). A step may carry an `icon`; without one a plain marker is shown. Its
+// `text` and its list of `points` are both optional.
 export default function ProcessSteps({ steps, layout = 'cards' }) {
   return (
     <ol className={`steps steps-${layout} reveal`}>
@@ -15,7 +16,14 @@ export default function ProcessSteps({ steps, layout = 'cards' }) {
               Step {index + 1}
             </p>
             <h3>{step.title}</h3>
-            <p>{step.text}</p>
+            {step.text && <p>{step.text}</p>}
+            {step.points && (
+              <ul className="step-points">
+                {step.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            )}
           </div>
         </li>
       ))}

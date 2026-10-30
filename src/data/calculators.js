@@ -412,84 +412,84 @@ export const calculatorCategories = [
       {
         id: 'pay01',
         title: 'How Much Will My Company Bonus Net After Taxes?',
-        text: 'A bonus from your employer is always a good, however, you may want to estimate what you will actually take-home after federal withholding taxes, social security taxes and other deductions are taken out.',
+        text: 'Estimates your bonus after taxes and deductions.',
         // Rebuilt on this site (src/components/Calculators/BonusNetAfterTaxes.jsx).
         to: '/resources/calculators/bonus-net-after-taxes',
       },
       {
         id: 'pay10',
         title: 'What Is The Impact Of Increasing My 457 Plan Contribution?',
-        text: 'It may surprise you how significant your retirement accumulation may be simply by increasing the percent of your salary that you save each month in your 457 Plan.',
+        text: 'Shows how increased contributions can grow your retirement savings.',
         // Rebuilt on this site (src/components/Calculators/PlanContributionIncrease.jsx).
         to: '/resources/calculators/457-plan-contribution',
       },
       {
         id: 'pay11',
         title: 'What May My 403(b) Plan Be Worth?',
-        text: 'It may surprise you how significant your retirement accumulation may become simply by saving a small percentage of your salary each month in your 403(b) Plan.',
+        text: 'Estimates the future value of your 403(b) retirement savings.',
         // Rebuilt on this site (src/components/Calculators/PlanValue.jsx).
         to: '/resources/calculators/403b-plan-value',
       },
       {
         id: 'pay12',
         title: 'What Is The Impact Of Increasing My 403(b) Contribution?',
-        text: 'It may surprise you how significant your retirement accumulation may be simply by increasing the percent of your salary that you save each month in your 403(b).',
+        text: 'Shows how increased contributions may boost your retirement savings.',
         // Rebuilt on this site (src/components/Calculators/PlanContributionIncrease.jsx).
         to: '/resources/calculators/403b-contribution',
       },
       {
         id: 'pay02',
         title: 'How Will Payroll Adjustments Affect My Take-Home Pay?',
-        text: 'Many factors can affect your eligibility and contribution limits to either the Traditional IRA or Roth IRA - tax filing status, your current earned income level and whether or not you participate in a retirement plan at work.',
+        text: 'Estimates how payroll changes affect your take-home pay.',
         // Rebuilt on this site (src/components/Calculators/PayrollAdjustments.jsx).
         to: '/resources/calculators/payroll-adjustments',
       },
       {
         id: 'pay03',
         title: 'Convert My Salary To An Equivalent Hourly Wage',
-        text: 'Use this calculator to determine what your hourly wage equates to when given your annual salary - it may surprise you what you make on an hourly basis.',
+        text: 'Converts your annual salary into an hourly wage.',
         // Rebuilt on this site (src/components/Calculators/SalaryToHourly.jsx).
         to: '/resources/calculators/salary-to-hourly',
       },
       {
         id: 'pay04',
         title: 'Convert My Hourly Wage To An Equivalent Annual Salary',
-        text: 'Use this calculator to determine your equivalent annual salary when given what you get paid per hour - it may surprise you what you make on a yearly basis.',
+        text: 'Calculates your annual salary based on your hourly wage.',
         // Rebuilt on this site (src/components/Calculators/HourlyToSalary.jsx).
         to: '/resources/calculators/hourly-to-salary',
       },
       {
         id: 'pay05',
         title: 'What Is The Future Value Of My Employee Stock Options?',
-        text: "Your company-issued employee stock options may not be 'in-the-money' today but assuming an investment growth rate may be worth some money in the future.",
+        text: 'Estimates the potential future value of your employee stock options.',
         // Rebuilt on this site (src/components/Calculators/StockOptionValue.jsx).
         to: '/resources/calculators/stock-options',
       },
       {
         id: 'pay06',
         title: "Should I Exercise My 'In-The-Money' Stock Options?",
-        text: "When your employee stock options become 'in-the-money', where the current price is greater than the strike price, you can choose from one of three basic sell strategies.",
+        text: 'Helps evaluate options for exercising or selling profitable stock options.',
         // Rebuilt on this site (src/components/Calculators/StockOptionExercise.jsx).
         to: '/resources/calculators/exercise-stock-options',
       },
       {
         id: 'pay07',
         title: 'What May My 401(k) Be Worth?',
-        text: 'It may surprise you how significant your retirement accumulation may become simply by saving a small percentage of your salary each month in your 401(k) plan.',
+        text: 'Estimates the future value of your 401(k) retirement savings.',
         // Rebuilt on this site (src/components/Calculators/PlanValue.jsx, with the 403(b) one).
         to: '/resources/calculators/401k-plan-value',
       },
       {
         id: 'pay08',
         title: 'What Is The Impact Of Increasing My 401(k) Contribution?',
-        text: 'It may surprise you how significant your retirement accumulation may be simply by increasing the percent of your salary that you save each month in your 401(k).',
+        text: 'Shows how increased contributions may grow your retirement savings.',
         // Rebuilt on this site (src/components/Calculators/PlanContributionIncrease.jsx, with the 457 and 403(b) ones).
         to: '/resources/calculators/401k-contribution',
       },
       {
         id: 'pay09',
         title: 'What May My 457 Plan Be Worth?',
-        text: 'It may surprise you how significant your retirement accumulation may become simply by saving a small percentage of your salary each month in your 457 Plan. Use this calculator to estimate how much your plan may accumulate for retirement.',
+        text: 'Estimates the potential future value of your 457 retirement plan.',
         // Rebuilt on this site (src/components/Calculators/PlanValue.jsx, with the 403(b) and 401(k) ones).
         to: '/resources/calculators/457-plan-value',
       },

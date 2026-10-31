@@ -1,5 +1,4 @@
 import LegalPage from '../components/LegalPage.jsx';
-import { site } from '../data/site.js';
 
 // Source: cpataxadviser.com/disclaimer.php, word for word.
 export default function Disclaimer() {

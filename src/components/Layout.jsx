@@ -16,8 +16,8 @@ export default function Layout() {
       <a className="skip-link" href="#main">Skip to main content</a>
       <Header />
       <main id="main">
-        {/* A guide's code downloads the first time it's opened; until then the page keeps its
-            height so the footer doesn't jump up. */}
+        {/* A page's code (every page but Home) downloads the first time it's opened; until then
+            the page keeps its height so the footer doesn't jump up. */}
         <Suspense fallback={<div className="page-loading" aria-busy="true" />}>
           <Outlet />
         </Suspense>

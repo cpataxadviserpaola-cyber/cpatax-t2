@@ -25,8 +25,8 @@ export default function useReveal() {
     const watch = (root) => root.querySelectorAll('.reveal:not(.is-visible)').forEach((node) => observer.observe(node));
     watch(document);
 
-    // A guide renders only once its code has downloaded, after this has run, so also watch
-    // for `.reveal` elements added later.
+    // Pages other than Home render only once their code has downloaded, after this has run,
+    // so also watch for `.reveal` elements added later.
     const additions = new MutationObserver((mutations) => {
       mutations.forEach((mutation) =>
         mutation.addedNodes.forEach((node) => {

@@ -2,27 +2,31 @@ import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router';
 import Layout from './components/Layout.jsx';
 import Home from './pages/Home.jsx';
-import Services from './pages/Services.jsx';
-import ServiceDetail from './pages/ServiceDetail.jsx';
-import About from './pages/About.jsx';
-import Team from './pages/Team.jsx';
-import Values from './pages/Values.jsx';
-import Contact from './pages/Contact.jsx';
-import TaxSeason from './pages/TaxSeason.jsx';
-import TaxSeasonProcess from './pages/TaxSeasonProcess.jsx';
-import TaxSeasonPricing from './pages/TaxSeasonPricing.jsx';
-import TaxToolbox from './pages/TaxToolbox.jsx';
-import ClientPortalTutorial from './pages/ClientPortalTutorial.jsx';
-import Industries from './pages/Industries.jsx';
-import Resources from './pages/Resources.jsx';
-import Guides from './pages/Guides.jsx';
-import Newsletter from './pages/Newsletter.jsx';
-import FinancialPlanning from './pages/FinancialPlanning.jsx';
-import Privacy from './pages/Privacy.jsx';
-import Disclaimer from './pages/Disclaimer.jsx';
 import NotFound from './pages/NotFound.jsx';
 import { services } from './data/services.js';
 import { industries, industryPath } from './data/industries.js';
+
+// The home page comes with the site's main script, so it shows as soon as that has loaded. Every
+// other page's code downloads the first time it's opened, which keeps the main script small on
+// phones.
+const Services = lazy(() => import('./pages/Services.jsx'));
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail.jsx'));
+const About = lazy(() => import('./pages/About.jsx'));
+const Team = lazy(() => import('./pages/Team.jsx'));
+const Values = lazy(() => import('./pages/Values.jsx'));
+const Contact = lazy(() => import('./pages/Contact.jsx'));
+const TaxSeason = lazy(() => import('./pages/TaxSeason.jsx'));
+const TaxSeasonProcess = lazy(() => import('./pages/TaxSeasonProcess.jsx'));
+const TaxSeasonPricing = lazy(() => import('./pages/TaxSeasonPricing.jsx'));
+const TaxToolbox = lazy(() => import('./pages/TaxToolbox.jsx'));
+const ClientPortalTutorial = lazy(() => import('./pages/ClientPortalTutorial.jsx'));
+const Industries = lazy(() => import('./pages/Industries.jsx'));
+const Resources = lazy(() => import('./pages/Resources.jsx'));
+const Guides = lazy(() => import('./pages/Guides.jsx'));
+const Newsletter = lazy(() => import('./pages/Newsletter.jsx'));
+const FinancialPlanning = lazy(() => import('./pages/FinancialPlanning.jsx'));
+const Privacy = lazy(() => import('./pages/Privacy.jsx'));
+const Disclaimer = lazy(() => import('./pages/Disclaimer.jsx'));
 
 // Each industry's own page (src/components/Industries/), by its id in src/data/industries.js.
 const industryPages = {

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 
-// How long to wait for a section that isn't on the page yet (a guide whose code is still
+// How long to wait for a section that isn't on the page yet (a page whose code is still
 // downloading) before giving up on scrolling to it.
 const WAIT_FOR_TARGET_MS = 5000;
 
@@ -31,8 +31,8 @@ export default function ScrollManager() {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     if (!id) return undefined;
 
-    // A guide's code downloads the first time it's opened, so its sections may not be on the
-    // page yet: scroll to the section once it appears.
+    // A page's code (every page but Home) downloads the first time it's opened, so its
+    // sections may not be on the page yet: scroll to the section once it appears.
     const watcher = new MutationObserver(() => {
       const found = document.getElementById(id);
       if (found) {

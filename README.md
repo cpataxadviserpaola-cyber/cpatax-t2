@@ -38,7 +38,7 @@ npm run preview   # serve the production build locally
 
 ```
 index.html              HTML shell and fonts
-scripts/seo-pages.js    After a build, writes each page's HTML with its SEO tags
+scripts/seo-pages.js    After a build, writes each page's HTML with its SEO tags (the home page's also preloads the banner photo)
 public/favicon.svg      Site icon
 public/team/            Team photos
 public/files/           Downloads (2026 pricing guide PDF)

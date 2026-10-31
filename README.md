@@ -27,7 +27,7 @@ npm run preview   # serve the production build locally
 | --- | --- | --- |
 | `/` | `src/pages/Home.jsx` | Centered hero over a showcase (founder portrait, next IRS deadline countdown, key facts), mission and who we serve, services directory, what sets us apart (stacking cards), comparison, tax opportunity finder, team, process, FAQ |
 | `/services` | `src/pages/Services.jsx` | Services grouped by business, individual, and international, each group beside its introduction; industries; financial planning |
-| `/services/:id` | `src/pages/ServiceDetail.jsx` | One page per service (see the ids in `src/data/services.js`): overview, what to expect, process, FAQs beside a "What's included" card that stays in view, then related services |
+| `/services/:id` | `src/pages/ServiceDetail.jsx` | One page per service (see the ids in `src/data/services.js`): overview, what to expect, process, and FAQs in one reading column, then related services |
 | `/about` | `src/pages/About.jsx` | Firm story and key facts, mission, core values, team |
 | `/client-center` | `src/pages/ClientCenter.jsx` | Client portal, online payment, scheduling, refund tracking, upcoming IRS deadlines, 2026 pricing (individual and business tabs) |
 | `/financial-planning` | `src/pages/FinancialPlanning.jsx` | Financial planning through Yellow Oak Financial Planning |

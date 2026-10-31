@@ -7,7 +7,7 @@ import { mainNav } from '../data/navigation.js';
 import { links, site } from '../data/site.js';
 
 // Must match the breakpoint where styles.css switches to the full-screen mobile menu.
-const DESKTOP_QUERY = '(min-width: 1101px)';
+const DESKTOP_QUERY = '(min-width: 1201px)';
 
 // Deep wine bar that turns to frosted glass once the page scrolls. On desktops: the logo in
 // the center, over a menu bar with the main menu (src/data/navigation.js) on the left and

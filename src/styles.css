@@ -88,7 +88,8 @@
   --shadow: 0 26px 50px -28px rgb(42 15 24 / 30%);
   --shadow-lg: 0 40px 80px -40px rgb(29 10 16 / 42%);
 
-  --container: 1240px;
+  /* 1240px at the browser's normal size, made 10% wider to match the larger text (see html). */
+  --container: 1364px;
   /* Header height at the top of the page and once the page has scrolled (it shrinks).
      Sticky elements and anchor jumps leave room for the header. Desktops, where the menu
      gets its own row, set taller heights (see the header). */
@@ -104,7 +105,10 @@
 *::before,
 *::after { box-sizing: border-box; }
 
+/* The whole site reads 10% larger than the browser's normal size. Text and spacing are set in
+   rem, so they all follow this. A visitor's own browser text size still applies on top. */
 html {
+  font-size: 110%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   background: var(--bg);
@@ -591,7 +595,7 @@ button, input, select, textarea { font-family: inherit; }
 /* Desktops (keep in sync with DESKTOP_QUERY in Header.jsx): under the logo, a wine menu bar
    across the window with the menu on the left and payments, the client portal, and the phone
    number on the right. The header grows a little shorter once the page scrolls. */
-@media (min-width: 1101px) {
+@media (min-width: 1201px) {
   :root {
     --header-h: 134px;
     --header-h-scrolled: 110px;
@@ -664,7 +668,7 @@ button, input, select, textarea { font-family: inherit; }
 }
 
 /* Full-screen menu (keep in sync with DESKTOP_QUERY in Header.jsx). */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .nav-toggle { display: inline-flex; }
 
   .nav {
@@ -774,7 +778,7 @@ button, input, select, textarea { font-family: inherit; }
 .mega-all { display: inline-flex; align-items: center; gap: .35rem; white-space: nowrap; }
 .mega-all .icon { width: 15px; height: 15px; }
 
-@media (min-width: 1101px) {
+@media (min-width: 1201px) {
   /* As wide as the menu bar, right under it, in the burgundy of its item's tab. The shadow
      carries the color out to the edges of the window, and the clip keeps it to the bar's own
      height. */
@@ -839,7 +843,7 @@ button, input, select, textarea { font-family: inherit; }
 }
 /* Narrow desktops: tighter spacing so the menu and the links beside it, and each dropdown's
    links, fit on one line. */
-@media (min-width: 1101px) and (max-width: 1240px) {
+@media (min-width: 1201px) and (max-width: 1320px) {
   .nav-link { padding-left: .6rem; padding-right: .6rem; }
   .nav-link::after { left: .6rem; right: .6rem; }
   .has-menu .nav-link { padding-right: .25rem; }
@@ -850,7 +854,7 @@ button, input, select, textarea { font-family: inherit; }
   .site-header .mega-link { padding-inline: .65rem; }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .has-menu .nav-link { flex: 1; }
   .nav-caret { width: 44px; height: 44px; color: var(--on-dark); }
   .mega {
@@ -2106,24 +2110,14 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 .steps-timeline .step-body { padding-top: .6rem; }
 
 /* ---------- FAQ ---------- */
-/* The heading and the help box on the left, the questions on the right; one column, with the
-   help box last, on narrow screens. */
+/* One centered column: the heading, the questions, then the help box, kept to a comfortable
+   reading width. */
 .faq-wrap {
   display: grid;
-  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
-  grid-template-areas:
-    "head list"
-    "help list";
-  grid-template-rows: auto 1fr;
-  gap: 1.75rem clamp(2.5rem, 6vw, 5.5rem);
-  align-items: start;
+  gap: clamp(2rem, 1.6rem + 1.5vw, 2.75rem);
+  max-width: 52rem;
 }
-.faq-wrap > .section-head { grid-area: head; margin-bottom: 0; }
-.faq-main { grid-area: list; }
-.faq-wrap > .faq-help { grid-area: help; }
-@media (max-width: 900px) {
-  .faq-wrap { grid-template-columns: 1fr; grid-template-areas: "head" "list" "help"; grid-template-rows: none; }
-}
+.faq-wrap > .section-head { margin-bottom: 0; }
 
 /* Questions as a list divided by thin lines; an answer opens under its question. */
 .faq { display: grid; border-top: 1px solid var(--line); }
@@ -2531,7 +2525,8 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
   .beyond { grid-template-columns: 1fr; }
 }
 
-/* ---------- Service page: story beside a sticky "What's included" card ---------- */
+/* ---------- Service and industry pages: the story down the page (industry pages keep a
+   sticky card beside it; service pages are one reading column) ---------- */
 .notice-bar { border-block: 1px solid #e8d2a8; background: var(--gold-100); color: #684b1f; }
 .notice-bar-inner { display: flex; align-items: center; gap: .75rem; padding-block: 1rem; font-weight: 600; }
 .notice-bar-inner p { margin: 0; }
@@ -2543,6 +2538,8 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
   gap: clamp(2.5rem, 6vw, 6rem);
   align-items: start;
 }
+/* About as wide as the column beside the card was; full width once the layout stacks. */
+.detail-single { grid-template-columns: minmax(0, 48rem); }
 .detail-block + .detail-block {
   margin-top: clamp(3rem, 2.5rem + 2vw, 4.5rem);
   padding-top: clamp(3rem, 2.5rem + 2vw, 4.5rem);

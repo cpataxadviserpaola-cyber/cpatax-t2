@@ -5,7 +5,6 @@ import SectionHead from '../components/SectionHead.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
 import DetailBlock from '../components/DetailBlock.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import useStickyFit from '../hooks/useStickyFit.js';
 import { links, site } from '../data/site.js';
 import { findService, hiddenServiceIds, serviceCategories, servicePath, services } from '../data/services.js';
 import NotFound from './NotFound.jsx';
@@ -28,11 +27,8 @@ export default function ServiceDetail({ id }) {
   return <ServicePage key={service.id} service={service} />;
 }
 
-// The story of the service down the page, block by block, beside a "What's included" card
-// that stays in view.
+// The story of the service down the page, block by block, in a single reading column.
 function ServicePage({ service }) {
-  const asideRef = useStickyFit();
-
   const contactLink = `/contact?service=${service.id}`;
   // Its related services that are shown, topped up to three with the other shown services.
   const related = [
@@ -77,7 +73,7 @@ function ServicePage({ service }) {
       )}
 
       <section className="section section-white">
-        <div className="container detail">
+        <div className="container detail detail-single">
           <div className="detail-main">
             {sections.map((section, index) => (
               <DetailBlock
@@ -110,27 +106,6 @@ function ServicePage({ service }) {
               </div>
             </div>
           </div>
-
-          <aside className="detail-aside" ref={asideRef}>
-            <div className="included-card surface-dark">
-              <span className="icon-badge included-icon">
-                <Icon name={service.icon} />
-              </span>
-              <h2 className="included-title">What's included</h2>
-              <ul className="checklist">
-                {service.included.map((item) => (
-                  <li key={item}>
-                    <Icon name="check" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link className="btn btn-gold btn-block" to={contactLink}>
-                Request a quote
-                <Icon name="arrow" />
-              </Link>
-            </div>
-          </aside>
         </div>
       </section>
 

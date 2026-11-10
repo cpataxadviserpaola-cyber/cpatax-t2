@@ -61,7 +61,12 @@ export default function NavMenu({ item, open, onOpen, onCloseSoon, onClose, styl
     else onOpen();
   };
 
-  const panelClasses = ['mega', `mega-cols-${item.columns.length}`, item.compact && 'is-compact']
+  const panelClasses = [
+    'mega',
+    `mega-cols-${item.columns.length}`,
+    item.compact && 'is-compact',
+    item.panel && 'is-panel',
+  ]
     .filter(Boolean)
     .join(' ');
 

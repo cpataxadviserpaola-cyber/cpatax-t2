@@ -24,7 +24,7 @@
 // out of every list (menus, cards, related services, industries, the contact form). Its entry
 // stays here, so taking its id out of the list brings it back.
 
-export const hiddenServiceIds = ['payroll', 'advisory', 'quickbooks', 'individual', 'individual-planning', 'international'];
+export const hiddenServiceIds = ['payroll', 'advisory', 'quickbooks'];
 
 const allCategories = [
   { id: 'business', label: 'Business services' },
@@ -41,20 +41,19 @@ const allServices = [
     name: 'Business Tax Preparation',
     title: 'Tax Preparation for Businesses',
     chip: 'Business Tax',
-    tagline: 'Federal, state, payroll and sales tax',
-    // Page copy from the firm's business tax preparation page brief; keep it word for word.
+    tagline: 'Federal, state, and payroll tax',
+    // Page copy from the firm's business tax preparation page brief; keep it word for word,
+    // except that sales tax is left out: the firm doesn't offer sales tax compliance.
     // The brief has no banner of its own: the banner takes its page title and description.
     headline: 'Business Tax Preparation Services',
-    summary:
-      'State and federal business returns, payroll and sales tax compliance, and entity structuring, from an advisor who works with you all year.',
+    summary: 'State and federal business returns and payroll tax, from an advisor who works with you all year.',
     description:
-      'Get professional business tax preparation, tax filing, payroll tax, sales tax, and tax planning services for businesses in South Carolina.',
+      'Get professional business tax preparation, tax filing, payroll tax, and tax planning services for businesses in South Carolina.',
     included: [
       'State and federal income tax preparation and filing',
       'Business tax planning',
       'Tax strategy service',
       'Profit and loss statements',
-      'Local and state sales tax compliance',
       'State and federal payroll tax',
     ],
     cta: 'Discuss your business taxes',
@@ -137,7 +136,7 @@ const allServices = [
           },
           {
             title: 'Address Tax Compliance Requirements',
-            text: 'We help manage applicable sales tax and payroll tax requirements to keep your business current with required filings.',
+            text: 'We help manage applicable payroll tax requirements to keep your business current with required filings.',
           },
         ],
       },
@@ -154,7 +153,7 @@ const allServices = [
         faqs: [
           {
             question: 'What business tax preparation services do you provide?',
-            answer: 'We provide state and federal income tax preparation and filing, sales tax compliance, and business tax planning services.',
+            answer: 'We provide state and federal income tax preparation and filing, payroll tax, and business tax planning services.',
           },
           {
             question: 'What business tax strategies do you offer?',
@@ -794,7 +793,6 @@ const allServices = [
       'SAS 112 compliance',
       'Business valuations and due diligence',
       'Budget and cash flow analysis and management',
-      'Business entity selection and restructuring',
       'Financial projections and forecasts',
       'Assistance with debt and financing',
       'Business expansion and acquisition analysis',
@@ -819,7 +817,6 @@ const allServices = [
               'SAS 112 compliance',
               'Business valuations and due diligence',
               'Budget and cash flow analysis and management',
-              'Business entity selection and restructuring',
               'Financial projections and forecasts',
               'Assistance with debt and financing',
               'Business expansion and acquisition analysis',
@@ -1016,8 +1013,6 @@ const allServices = [
       'We evaluate your individual tax situation and guide you through any tax challenges, so you keep more of your hard-earned money.',
     description:
       "Our goal is to minimize your tax liability. We stay up to date on federal and state tax laws through continuing education, so you don't miss out on the credits and deductions you are entitled to.",
-    notice:
-      'We are currently focused on small business owners and are not onboarding new individual clients. Contact us to join our waiting list.',
     included: [
       'Accurate returns, filed on time',
       'Estimated taxes for the self-employed',
@@ -1026,7 +1021,7 @@ const allServices = [
       'Extensions and estimated tax calculations',
       'Withholding review and adjustment',
     ],
-    cta: 'Join the waiting list',
+    cta: 'Discuss your tax return',
     sections: [
       {
         content: [
@@ -1052,8 +1047,8 @@ const allServices = [
     id: 'individual-planning',
     category: 'individual',
     icon: 'chart',
-    name: 'Individual Tax Projections & Strategies',
-    title: 'Tax Projections & Strategies for Individuals',
+    name: 'Individual Tax Planning',
+    title: 'Tax Planning for Individuals',
     chip: 'Tax Projections',
     tagline: 'Know where you stand before year-end',
     headline: 'Plan ahead and keep more of your hard-earned money',
@@ -1061,8 +1056,6 @@ const allServices = [
       'Tax projections and personalized strategies for professionals, executives, and pre-retirees, so there are no surprises at tax time.',
     description:
       "Planning is the key to successfully and legally reducing your tax liability. A tax projection shows where you stand while there is still time to act, and our strategies help you act on it.",
-    notice:
-      'We are currently focused on small business owners and are not onboarding new individual clients. Contact us to join our waiting list.',
     included: [
       'Tax projections before year-end',
       'Paycheck withholding review and adjustment',
@@ -1071,7 +1064,7 @@ const allServices = [
       'Investments that produce tax-exempt income',
       'Every tax credit and deduction you deserve',
     ],
-    cta: 'Join the waiting list',
+    cta: 'Plan your taxes with us',
     sections: [
       {
         content: [
@@ -1122,8 +1115,8 @@ const allServices = [
     id: 'international',
     category: 'international',
     icon: 'globe',
-    name: 'International Tax Services',
-    title: 'International Client Services',
+    name: 'International Tax Preparation',
+    title: 'Tax Preparation for International Clients',
     chip: 'International',
     tagline: 'Nonresidents, expats, FBAR, treaties',
     headline: 'U.S. tax filing for nonresidents, expatriates, and international clients',
@@ -1166,7 +1159,7 @@ const allServices = [
       { title: 'Review your status', text: 'We confirm your residency status, income sources, and filing requirements.' },
       { title: 'Check treaties', text: 'We identify tax treaty provisions that may apply to you.' },
       { title: 'Prepare & file', text: 'We prepare your returns and any FBAR, FATCA, or Form 8843 filings.' },
-      { title: 'Plan ahead', text: 'We help you stay compliant in the years that follow.' },
+      { title: 'Stay compliant', text: 'We help you stay compliant in the years that follow.' },
     ],
     faqs: [
       {

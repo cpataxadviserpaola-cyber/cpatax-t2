@@ -7,22 +7,47 @@ import { industries } from './industries.js';
 // An item with `columns` opens a dropdown. Each column holds groups, and each group has an
 // optional heading and its links. A link has `to` (a page on this site, optionally with a
 // #section) or `href` (another website, opened in a new tab), an `icon`, and an optional
-// `text` shown under it. `compact` lays the links out as a tighter list. `foot` adds a strip
-// at the bottom of the dropdown.
+// `text` shown under it. `compact` lays the links out as a tighter list. `panel` shows the
+// dropdown on desktops as a panel of columns, each a list of links, instead of a bar of links
+// in a line, for more links than fit on one. `foot` adds a strip at the bottom of the
+// dropdown.
 
 const service = (id, label) => {
   const item = findService(id);
   return { label, to: servicePath(item), icon: item.icon, text: item.tagline };
 };
 
-// The services in the header's Services menu and the footer's Services list. The other services'
-// pages are still on the site, listed on the All Services page.
-export const menuServices = [
-  service('accounting', 'Small Business Accounting'),
-  service('bookkeeping', 'Bookkeeping Services'),
-  service('business-tax', 'Tax Preparation for Businesses'),
-  service('planning', 'Tax Planning Services'),
+// The services in the header's Services menu, by column and group, and in the footer's Services
+// list. The other services' pages are still on the site, listed on the All Services page.
+const menuServiceColumns = [
+  [
+    {
+      label: 'Business',
+      items: [
+        service('accounting', 'Small Business Accounting'),
+        service('bookkeeping', 'Bookkeeping Services'),
+        service('business-tax', 'Tax Preparation for Businesses'),
+        service('planning', 'Tax Planning Services'),
+      ],
+    },
+  ],
+  [
+    {
+      label: 'Individual',
+      items: [
+        service('individual', 'Individual Tax Preparation'),
+        service('individual-planning', 'Individual Tax Planning'),
+      ],
+    },
+  ],
+  [
+    {
+      label: 'International',
+      items: [service('international', 'International Tax Preparation')],
+    },
+  ],
 ];
+export const menuServices = menuServiceColumns.flat().flatMap((group) => group.items);
 
 // Each industry's link goes to its card on the Industries page, which highlights it.
 const industryLinks = industries.map((industry) => ({
@@ -53,14 +78,8 @@ export const mainNav = [
     id: 'services',
     label: 'Services',
     to: '/services',
-    columns: [
-      [
-        {
-          label: 'Business services',
-          items: menuServices,
-        },
-      ],
-    ],
+    panel: true,
+    columns: menuServiceColumns,
     foot: {
       text: 'Not sure which service fits?',
       action: { to: '/contact', label: 'Ask our team' },

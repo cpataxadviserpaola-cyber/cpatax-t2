@@ -65,8 +65,7 @@ export default function Contact() {
             <p>Share a little about your situation and the services you need. We'll get back to you soon.</p>
             <p className="notice">
               We are currently focused on small business owners with sole proprietorships, LLCs,
-              partnerships, or corporations, and are not onboarding new individual clients. Individuals
-              are welcome to contact us to join our waiting list.
+              partnerships, or corporations, and are also onboarding new individual clients.
             </p>
             <ContactForm />
           </div>

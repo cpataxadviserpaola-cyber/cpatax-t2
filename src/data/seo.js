@@ -91,7 +91,7 @@ export const pages = {
   '/business-tax-preparation-services/': {
     title: 'Business Tax Preparation Services | South Carolina',
     description:
-      'Get professional business tax preparation, tax filing, payroll tax, sales tax, and tax planning services for businesses in South Carolina.',
+      'Get professional business tax preparation, tax filing, payroll tax, and tax planning services for businesses in South Carolina.',
     keywords:
       'tax services in south carolina, tax preparation simpsonville sc, tax preparation near me, business tax return preparation, tax accountant simpsonville sc, tax preparer south carolina',
   },
@@ -141,13 +141,13 @@ export const pages = {
     keywords: '',
   },
   '/services/individual-planning': {
-    title: 'Individual Tax Projections & Strategies | CPA Tax Adviser',
+    title: 'Individual Tax Planning | CPA Tax Adviser',
     description:
       'Planning is the key to successfully and legally reducing your tax liability. A tax projection shows where you stand while there is still time to act, and our strategies help you act on it.',
     keywords: '',
   },
   '/services/international': {
-    title: 'International Tax Services | CPA Tax Adviser',
+    title: 'International Tax Preparation | CPA Tax Adviser',
     description:
       'Nonresidents, expatriates, and individuals with foreign income face unique challenges when filing U.S. taxes. We simplify the process, keep you compliant, and look for every treaty benefit available to you.',
     keywords: '',

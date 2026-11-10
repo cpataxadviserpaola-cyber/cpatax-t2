@@ -2,7 +2,7 @@
 export const faqs = [
   {
     question: 'Are you accepting new clients?',
-    answer: 'We are currently focused on serving small business owners with sole proprietorships, LLCs, partnerships, or corporations. We are not onboarding new individual clients at this time, but you are welcome to contact us to join our waiting list.',
+    answer: 'Yes. We are currently focused on serving small business owners with sole proprietorships, LLCs, partnerships, or corporations, and we are also onboarding new individual clients.',
   },
   {
     question: 'Do you work with clients outside South Carolina?',

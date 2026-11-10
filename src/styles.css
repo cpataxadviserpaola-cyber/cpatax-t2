@@ -840,6 +840,52 @@ button, input, select, textarea { font-family: inherit; }
   .mega-foot p { display: none; }
   .site-header .mega-foot .mega-all { font-size: .86rem; font-weight: 700; color: var(--gold-300); }
   .site-header .mega-foot .mega-all:hover { color: #fff; }
+
+  /* A panel dropdown: its columns side by side, each a heading over a list of its links, and
+     the foot in a strip along the bottom. */
+  .mega.is-panel {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 1.1rem;
+  }
+  .is-panel .mega-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 2rem;
+  }
+  .is-panel .mega-col,
+  .is-panel .mega-group,
+  .is-panel .mega-list { flex-direction: column; align-items: stretch; }
+  .is-panel .mega-list { gap: .1rem; }
+  .is-panel .mega-heading,
+  .is-panel .mega-col + .mega-col .mega-heading {
+    margin: 0 0 .45rem;
+    padding: 0 .75rem .5rem;
+    border: 0;
+    border-bottom: 1px solid rgb(223 190 134 / 22%);
+  }
+  .site-header .is-panel .mega-link {
+    height: auto;
+    padding: .5rem .75rem;
+    border-radius: 10px;
+    line-height: 1.35;
+    white-space: normal;
+  }
+  .site-header .is-panel .mega-link[aria-current="page"] { box-shadow: none; background: rgb(29 10 16 / 30%); }
+  .is-panel .mega-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: .8rem 0 0;
+    padding: .75rem .75rem;
+    border-top: 1px solid rgb(223 190 134 / 22%);
+  }
+  .is-panel .mega-foot p { display: block; font-size: .84rem; color: var(--on-dark); }
+  .is-panel .mega-foot p a { font-weight: 700; color: var(--gold-300); }
+  .is-panel .mega-foot p a:hover { color: #fff; }
 }
 /* Narrow desktops: tighter spacing so the menu and the links beside it, and each dropdown's
    links, fit on one line. */

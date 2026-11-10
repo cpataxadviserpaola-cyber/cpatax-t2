@@ -90,7 +90,7 @@ const allIndustries = [
     id: 'restaurant',
     icon: 'utensils',
     title: 'Restaurant',
-    text: 'Thin margins, tipped employees, and sales tax call for close attention to the numbers. We handle payroll and sales tax compliance and show you where your money goes.',
+    text: 'Thin margins, tipped employees, and sales tax call for close attention to the numbers. We handle payroll tax compliance and show you where your money goes.',
     services: ['payroll', 'bookkeeping', 'business-tax'],
   },
   {

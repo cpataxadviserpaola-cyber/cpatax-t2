@@ -935,7 +935,8 @@ button, input, select, textarea { font-family: inherit; }
     padding: .85rem 1rem;
     font-size: .85rem;
   }
-  .site-header .mega-foot a { font-weight: 700; color: var(--crimson-600); }
+  .site-header .mega-foot a { font-weight: 700; color: var(--gold-300); }
+  .site-header .mega-foot a:hover { color: #fff; }
 }
 
 /* ---------- Ribbons: fine gold and crimson lines echoing the logo ---------- */

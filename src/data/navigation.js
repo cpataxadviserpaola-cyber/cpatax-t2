@@ -63,9 +63,12 @@ export const mainNav = [
     id: 'about',
     label: 'About',
     to: '/about',
+    panel: true,
+    foot: { all: { to: '/about', label: 'About us' } },
     columns: [
       [
         {
+          label: 'Our firm',
           items: [
             { label: 'Our Values', to: '/our-values', icon: 'target', text: 'Professionalism, responsiveness, and quality' },
             { label: 'Meet Our Team', to: '/team', icon: 'users', text: 'The people behind your numbers' },
@@ -118,12 +121,20 @@ export const mainNav = [
     id: 'resources',
     label: 'Resources',
     to: '/resources',
+    panel: true,
+    foot: { all: { to: '/resources', label: 'All resources' } },
     columns: [
       [
         {
           items: [
             { label: 'Financial Calculators', to: '/resources#financial-calculators', icon: 'chart', text: 'Paychecks, benefits, and taxes' },
             { label: 'Internet Links', to: '/resources#internet-links', icon: 'globe', text: 'A few of our favorite sites' },
+          ],
+        },
+      ],
+      [
+        {
+          items: [
             { label: 'Guides', to: '/guides', icon: 'book', text: 'Life events, business, investing, and taxes' },
             { label: 'Newsletter', to: '/newsletter', icon: 'mail', text: "This month's tax articles and due dates" },
             { label: 'FAQs', to: '/#faq', icon: 'help', text: 'Answers to common questions' },
@@ -137,6 +148,7 @@ export const mainNav = [
     label: 'Industries',
     to: '/industries',
     compact: true,
+    panel: true,
     columns: [[{ items: industryLinks.slice(0, half) }], [{ items: industryLinks.slice(half) }]],
     foot: {
       text: "Don't see your industry?",

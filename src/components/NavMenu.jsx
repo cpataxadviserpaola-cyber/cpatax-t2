@@ -117,9 +117,11 @@ export default function NavMenu({ item, open, onOpen, onCloseSoon, onClose, styl
         </div>
         {item.foot && (
           <div className="mega-foot">
-            <p>
-              {item.foot.text} <Link to={item.foot.action.to}>{item.foot.action.label}</Link>
-            </p>
+            {item.foot.text && (
+              <p>
+                {item.foot.text} <Link to={item.foot.action.to}>{item.foot.action.label}</Link>
+              </p>
+            )}
             <Link className="mega-all" to={item.foot.all.to}>
               {item.foot.all.label} <Icon name="arrow" />
             </Link>

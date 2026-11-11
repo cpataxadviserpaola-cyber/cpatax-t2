@@ -24,7 +24,7 @@ export const pages = {
   '/': {
     title: 'CPA Tax Adviser | Simpsonville, SC CPA Firm Serving Clients Nationwide',
     description:
-      'CPA Tax Adviser is a South Carolina licensed CPA firm in Simpsonville, SC, providing business tax preparation, tax planning, accounting, bookkeeping, payroll, QuickBooks, and international tax services nationwide, in English and Spanish.',
+      'CPA Tax Adviser is a South Carolina licensed CPA firm in Simpsonville, SC, providing business tax preparation, tax planning, accounting, bookkeeping, business consulting, QuickBooks, and international tax services nationwide, in English and Spanish.',
     keywords: '',
     og: {
       title: 'CPA Tax Adviser | Where tax strategy meets real business understanding',
@@ -83,7 +83,7 @@ export const pages = {
   '/services': {
     title: 'Services | CPA Tax Adviser',
     description:
-      'Business tax preparation, tax planning, small business accounting, bookkeeping, payroll, business advisory, QuickBooks, individual, and international tax services from CPA Tax Adviser.',
+      'Business tax preparation, tax planning, small business accounting, bookkeeping, business advisory, QuickBooks, individual, and international tax services from CPA Tax Adviser.',
     keywords: '',
   },
 
@@ -91,7 +91,7 @@ export const pages = {
   '/business-tax-preparation-services/': {
     title: 'Business Tax Preparation Services | South Carolina',
     description:
-      'Get professional business tax preparation, tax filing, payroll tax, and tax planning services for businesses in South Carolina.',
+      'Get professional business tax preparation, tax filing, and tax planning services for businesses in South Carolina.',
     keywords:
       'tax services in south carolina, tax preparation simpsonville sc, tax preparation near me, business tax return preparation, tax accountant simpsonville sc, tax preparer south carolina',
   },
@@ -105,7 +105,7 @@ export const pages = {
   '/small-business-accounting-service-sc/': {
     title: 'Small Business Accounting Services | CPA Tax Adviser',
     description:
-      'Professional small business accounting services, bookkeeping, tax, reporting, and financial support to keep you organized and help you make informed decisions.',
+      'Professional small business accounting services, bookkeeping, tax, reporting, and business consulting to keep you organized and help you make informed decisions.',
     keywords:
       'small business accountancy services, small business bookkeeping and tax, accounting services near me for small business, accountant small business near me, accounting and tax services for small business, small company accountant, small business accounting services, small business accounting service, accounting companies for small business',
   },

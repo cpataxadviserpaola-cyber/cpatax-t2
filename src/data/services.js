@@ -41,20 +41,20 @@ const allServices = [
     name: 'Business Tax Preparation',
     title: 'Tax Preparation for Businesses',
     chip: 'Business Tax',
-    tagline: 'Federal, state, and payroll tax',
+    tagline: 'Federal and state business returns',
     // Page copy from the firm's business tax preparation page brief; keep it word for word,
-    // except that sales tax is left out: the firm doesn't offer sales tax compliance.
+    // except that sales tax and payroll tax are left out: the firm doesn't offer sales tax
+    // compliance, and doesn't advertise payroll.
     // The brief has no banner of its own: the banner takes its page title and description.
     headline: 'Business Tax Preparation Services',
-    summary: 'State and federal business returns and payroll tax, from an advisor who works with you all year.',
+    summary: 'State and federal business returns and tax planning, from an advisor who works with you all year.',
     description:
-      'Get professional business tax preparation, tax filing, payroll tax, and tax planning services for businesses in South Carolina.',
+      'Get professional business tax preparation, tax filing, and tax planning services for businesses in South Carolina.',
     included: [
       'State and federal income tax preparation and filing',
       'Business tax planning',
       'Tax strategy service',
       'Profit and loss statements',
-      'State and federal payroll tax',
     ],
     cta: 'Discuss your business taxes',
     sections: [
@@ -136,7 +136,7 @@ const allServices = [
           },
           {
             title: 'Address Tax Compliance Requirements',
-            text: 'We help manage applicable payroll tax requirements to keep your business current with required filings.',
+            text: 'We help keep your business current with its required tax filings and deadlines.',
           },
         ],
       },
@@ -153,7 +153,7 @@ const allServices = [
         faqs: [
           {
             question: 'What business tax preparation services do you provide?',
-            answer: 'We provide state and federal income tax preparation and filing, payroll tax, and business tax planning services.',
+            answer: 'We provide state and federal income tax preparation and filing, as well as business tax planning services.',
           },
           {
             question: 'What business tax strategies do you offer?',
@@ -362,8 +362,10 @@ const allServices = [
     name: 'Small Business Accounting',
     title: 'Small Business Accounting',
     chip: 'Accounting',
-    tagline: 'Statements, cash flow, outsourced CFO',
-    // Page copy from the firm's small business accounting page brief; keep it word for word.
+    tagline: 'Statements, cash flow, business consulting',
+    // Page copy from the firm's small business accounting page brief; keep it word for word,
+    // except for the Business Consulting additions: the firm consults on strategy (tax or not)
+    // and doesn't offer outsourced CFO work.
     headline: 'Small Business Accounting Services',
     summary:
       'You have more important things to do than keep your own books. We take care of them so you can get back to running your business and generating profits.',
@@ -372,8 +374,9 @@ const allServices = [
     included: [
       'Financial Reporting & Analysis',
       'Cash Flow & Profitability',
-      'Budgeting & Financial Forecasting',
+      'Business Consulting',
       'Strategic Tax Planning',
+      'Budgeting & Financial Forecasting',
       'Accounting System Setup',
       'Financial Statements',
       'Profit & Loss & Balance Sheets',
@@ -410,6 +413,11 @@ const allServices = [
             icon: 'banknote',
             title: 'Cash Flow & Profitability',
             text: 'Review your financial information to help you better understand cash flow and profitability.',
+          },
+          {
+            icon: 'users',
+            title: 'Business Consulting',
+            text: 'Suggest practical strategies, tax-related or not, to help you improve cash flow and grow your business.',
           },
           {
             icon: 'trend',
@@ -502,6 +510,10 @@ const allServices = [
             answer: 'Yes. We provide strategic tax planning support to help small business owners make informed decisions based on their financial situation and business goals.',
           },
           {
+            question: 'Do you offer business consulting?',
+            answer: 'Yes. We suggest practical strategies, tax-related or not, to help small business owners improve cash flow and grow their business.',
+          },
+          {
             question: 'Can you help set up my accounting system?',
             answer: 'Yes. We can assist with accounting system setup, including organizing the Chart of Accounts and General Ledger based on your business needs.',
           },
@@ -520,7 +532,7 @@ const allServices = [
         ],
       },
     ],
-    related: ['bookkeeping', 'payroll', 'business-tax'],
+    related: ['bookkeeping', 'business-tax', 'planning'],
   },
   {
     id: 'bookkeeping',

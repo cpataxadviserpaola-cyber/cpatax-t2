@@ -32,7 +32,8 @@ export default function Services() {
     <>
       <PageHero page="Services" eyebrow="What we do" title={<>We're on <em>your side</em></>}>
         Tax law is complex. That's why it pays to have an accounting firm you can trust. From cash
-        flow statements to payroll and tax returns, we are here to help your business succeed.
+        flow statements to tax returns and business consulting, we are here to help your business
+        succeed.
       </PageHero>
 
       <nav className="cat-nav" aria-label="Service groups">

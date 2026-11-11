@@ -9,8 +9,8 @@ import { industries } from './industries.js';
 // #section) or `href` (another website, opened in a new tab), an `icon`, and an optional
 // `text` shown under it. `compact` lays the links out as a tighter list. `panel` shows the
 // dropdown on desktops as a panel of columns, each a list of links, instead of a bar of links
-// in a line, for more links than fit on one. `foot` adds a strip at the bottom of the
-// dropdown.
+// in a line, for more links than fit on one. `foot` adds a link to the whole section (`all`),
+// with an optional line of `text` and an `action` link.
 
 const service = (id, label) => {
   const item = findService(id);
@@ -90,6 +90,8 @@ export const mainNav = [
     id: 'tax-season',
     label: 'Tax Season',
     to: '/tax-season',
+    panel: true,
+    foot: { all: { to: '/tax-season', label: 'Tax season overview' } },
     columns: [
       [
         {

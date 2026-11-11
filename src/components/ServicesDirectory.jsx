@@ -11,8 +11,8 @@ export default function ServicesDirectory() {
       <div className="container">
         <div className="section-head-row">
           <SectionHead eyebrow="What we do" title={<>Comprehensive accounting &amp; <em>tax services</em></>}>
-            From cash flow statements to payroll and tax returns, we are here to help your
-            business succeed.
+            From cash flow statements to tax returns and business consulting, we are here to help
+            your business succeed.
           </SectionHead>
           <Link className="btn btn-outline" to="/services">
             View all services

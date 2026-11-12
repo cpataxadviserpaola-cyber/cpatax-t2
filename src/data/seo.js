@@ -18,7 +18,7 @@ export const siteUrl = 'https://www.cpataxadviser.com';
 
 // Image for shared links when a page has none of its own: a file in public/, ideally
 // 1200 × 630 pixels (for example '/social/cpa-tax-adviser.png'). '' shares without one.
-export const defaultImage = '';
+export const defaultImage = '/logo.png';
 
 export const pages = {
   '/': {

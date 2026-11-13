@@ -8,7 +8,7 @@
 //
 // Usage: node scripts/seo-pages.js [build folder, default dist]
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { pageHead, pages, siteUrl } from '../src/data/seo.js';
 import { hiddenServiceIds, servicePath, services } from '../src/data/services.js';
@@ -117,14 +117,21 @@ function save(file, path) {
 // /services.
 const hiddenPaths = new Set(hiddenServiceIds.map((id) => `/services/${id}`));
 const shown = Object.keys(pages).filter((path) => !hiddenPaths.has(path));
-const sitemap = [
+const expectedSitemap = [
   '<?xml version="1.0" encoding="UTF-8"?>',
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
   ...shown.map((path) => `  <url><loc>${escape(new URL(path, `${siteUrl}/`).href)}</loc></url>`),
   '</urlset>',
   '',
 ].join('\n');
+const sitemapPath = new URL('../src/sitemap.xml', import.meta.url);
+const sitemap = readFileSync(sitemapPath, 'utf8').replace(/\r\n/g, '\n');
+if (sitemap !== expectedSitemap) {
+  console.error('src/sitemap.xml must list exactly the canonical URLs in src/data/seo.js.');
+  process.exit(1);
+}
 writeFileSync(join(outDir, 'sitemap.xml'), sitemap);
+copyFileSync(new URL('../src/robots.txt', import.meta.url), join(outDir, 'robots.txt'));
 
 for (const path of shown) {
   if (path === '/') save('index.html', path);

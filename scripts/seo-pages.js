@@ -10,7 +10,7 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { pageHead, pages } from '../src/data/seo.js';
+import { pageHead, pages, siteUrl } from '../src/data/seo.js';
 import { hiddenServiceIds, servicePath, services } from '../src/data/services.js';
 import { industries, industryPath } from '../src/data/industries.js';
 import { articlePages, topicPages } from '../src/data/guides.js';
@@ -117,6 +117,15 @@ function save(file, path) {
 // /services.
 const hiddenPaths = new Set(hiddenServiceIds.map((id) => `/services/${id}`));
 const shown = Object.keys(pages).filter((path) => !hiddenPaths.has(path));
+const sitemap = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...shown.map((path) => `  <url><loc>${escape(new URL(path, `${siteUrl}/`).href)}</loc></url>`),
+  '</urlset>',
+  '',
+].join('\n');
+writeFileSync(join(outDir, 'sitemap.xml'), sitemap);
+
 for (const path of shown) {
   if (path === '/') save('index.html', path);
   else if (path.endsWith('/')) save(`${path}index.html`, path);

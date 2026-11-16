@@ -24,8 +24,7 @@ const menuServiceColumns = [
     {
       label: 'Business',
       items: [
-        service('accounting', 'Small Business Accounting'),
-        service('bookkeeping', 'Bookkeeping Services'),
+        service('accounting', 'Small Business Accounting & Bookkeeping'),
         service('business-tax', 'Tax Preparation for Businesses'),
         service('planning', 'Tax Planning Services'),
       ],
@@ -36,7 +35,7 @@ const menuServiceColumns = [
       label: 'Individual',
       items: [
         service('individual', 'Individual Tax Preparation'),
-        service('individual-planning', 'Individual Tax Planning'),
+        service('individual-planning', 'Tax Projection'),
       ],
     },
   ],

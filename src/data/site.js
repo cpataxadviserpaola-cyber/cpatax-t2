@@ -12,9 +12,18 @@ export const site = {
   email: 'contactus@cpataxadviser.com',
   address: ['677 Fairview Rd #80638', 'Simpsonville, SC 29680'],
   languages: 'English and Spanish',
-  // URL of a form service (for example a Formspree endpoint) that receives contact
-  // form submissions. While empty, the form opens the visitor's email app instead.
-  formEndpoint: '',
+  // URL of a form service (e.g. Formspree, a custom backend API, or serverless endpoint)
+  // that receives contact form submissions. While empty, the form can use Brevo directly
+  // or fall back to opening the visitor's email app.
+  formEndpoint: import.meta.env.VITE_FORM_ENDPOINT || '',
+
+  // Brevo transactional email configuration
+  brevo: {
+    apiKey: import.meta.env.VITE_BREVO_API_KEY || '',
+    notificationTemplateId: import.meta.env.VITE_BREVO_NOTIFICATION_TEMPLATE_ID || '',
+    autoReplyTemplateId: import.meta.env.VITE_BREVO_AUTOREPLY_TEMPLATE_ID || '',
+    receiverEmail: import.meta.env.VITE_FORM_RECEIVER_EMAIL || 'contactus@cpataxadviser.com',
+  },
 };
 
 // Online tools and profiles the firm already uses.

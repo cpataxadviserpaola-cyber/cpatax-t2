@@ -83,7 +83,7 @@ export const pages = {
   '/services': {
     title: 'Services | CPA Tax Adviser',
     description:
-      'Business tax preparation, tax planning, small business accounting, bookkeeping, business advisory, QuickBooks, individual, and international tax services from CPA Tax Adviser.',
+      'Business tax preparation, tax planning, small business accounting, bookkeeping, business consulting, QuickBooks, individual, and international tax services from CPA Tax Adviser.',
     keywords: '',
   },
 
@@ -123,7 +123,7 @@ export const pages = {
     keywords: '',
   },
   '/services/advisory': {
-    title: 'Business Advisory | CPA Tax Adviser',
+    title: 'Business Consulting | CPA Tax Adviser',
     description:
       "We combine industry experience with time-tested solutions to develop a framework on which to build your company's success.",
     keywords: '',
@@ -141,7 +141,7 @@ export const pages = {
     keywords: '',
   },
   '/services/individual-planning': {
-    title: 'Individual Tax Planning | CPA Tax Adviser',
+    title: 'Tax Projection | CPA Tax Adviser',
     description:
       'Planning is the key to successfully and legally reducing your tax liability. A tax projection shows where you stand while there is still time to act, and our strategies help you act on it.',
     keywords: '',

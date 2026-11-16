@@ -64,8 +64,9 @@ export default function Contact() {
             </h2>
             <p>Share a little about your situation and the services you need. We'll get back to you soon.</p>
             <p className="notice">
-              We are currently focused on small business owners with sole proprietorships, LLCs,
-              partnerships, or corporations, and are also onboarding new individual clients.
+              While our specialty is supporting small businesses, we also provide tailored services
+              to sole proprietors, LLCs, partnerships, and corporations. We also welcome and support
+              new individual clients with reliable, personalized financial and accounting solutions.
             </p>
             <ContactForm />
           </div>

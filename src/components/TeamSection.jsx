@@ -7,7 +7,8 @@ import { team } from '../data/team.js';
 import { asset } from '../utils/asset.js';
 
 const founder = team.find((person) => person.featured);
-const members = team.filter((person) => !person.featured);
+const coreMembers = team.filter((person) => !person.featured && !person.outsourced);
+const outsourcedMembers = team.filter((person) => person.outsourced);
 
 // Team: the founder in a dark spotlight card with her portrait, then the rest of the team
 // in an open row. "Read bio" opens the person's full bio in a modal window.
@@ -86,7 +87,7 @@ export default function TeamSection({ id, soft = false, showAboutLink = false })
         </article>
 
         <ul className="people reveal">
-          {members.map((person) => (
+          {coreMembers.map((person) => (
             <li className="person" key={person.id}>
               <Avatar person={person} small />
               <h3>{person.name}</h3>
@@ -99,6 +100,34 @@ export default function TeamSection({ id, soft = false, showAboutLink = false })
             </li>
           ))}
         </ul>
+
+        {outsourcedMembers.length > 0 && (
+          <div className="outsourced-section reveal">
+            <div className="section-head-row">
+              <SectionHead
+                eyebrow="Specialized support"
+                title={<>Our <em>outsourced team</em></>}
+              >
+                Trusted professionals and specialists who collaborate closely with our firm to support client accounts.
+              </SectionHead>
+            </div>
+
+            <ul className="people reveal">
+              {outsourcedMembers.map((person) => (
+                <li className="person" key={person.id}>
+                  <Avatar person={person} small />
+                  <h3>{person.name}</h3>
+                  <p className="member-role">{person.role}</p>
+                  <p className="person-summary">{person.summary}</p>
+                  <button className="member-more" type="button" aria-haspopup="dialog" onClick={(event) => openBio(person, event)}>
+                    Read bio<span className="sr-only"> of {person.name}</span>
+                    <Icon name="arrow" />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <p className="team-strip reveal">
           <Icon name="award" />

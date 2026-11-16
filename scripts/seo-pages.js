@@ -11,7 +11,7 @@
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { pageHead, pages } from '../src/data/seo.js';
-import { hiddenServiceIds, servicePath, services } from '../src/data/services.js';
+import { allServices, hiddenServiceIds, servicePath, services } from '../src/data/services.js';
 import { industries, industryPath } from '../src/data/industries.js';
 import { articlePages, topicPages } from '../src/data/guides.js';
 
@@ -115,7 +115,11 @@ function save(file, path) {
 // has no closing slash, so it is found however the host maps addresses to files. A hidden
 // service's page isn't saved: its address gets 404.html, and the site's script forwards it to
 // /services.
-const hiddenPaths = new Set(hiddenServiceIds.map((id) => `/services/${id}`));
+const hiddenPaths = new Set(
+  allServices
+    .filter((s) => hiddenServiceIds.includes(s.id))
+    .flatMap((s) => [`/services/${s.id}`, servicePath(s)])
+);
 const shown = Object.keys(pages).filter((path) => !hiddenPaths.has(path));
 const sitemapPath = new URL('../src/sitemap.xml', import.meta.url);
 copyFileSync(sitemapPath, join(outDir, 'sitemap.xml'));

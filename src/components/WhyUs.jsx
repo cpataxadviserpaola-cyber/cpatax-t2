@@ -1,26 +1,17 @@
 import Icon from './Icon.jsx';
 import SectionHead from './SectionHead.jsx';
-import { monthNames, touchpoints } from '../data/yearPlan.js';
 
 // What sets the firm apart: the intro beside its checklist, then a grid of cards.
 // The figures echo the service commitments in src/data/site.js; keep them in step.
 const highlights = [
   'Proactive tax planning',
-  'Year-round support',
-  'Business advisory',
+  'Business consulting',
   'Personalized strategies',
   'Secure & paperless',
   'International clients',
 ];
 
 const cards = [
-  {
-    tone: 'dark',
-    kicker: 'Year-round guidance',
-    title: 'With you in every season, not just at tax time',
-    text: 'We work with you all year long to develop strategies that lower your tax bill.',
-    visual: <YearTimeline />,
-  },
   {
     tone: 'light',
     kicker: 'A trusted partner',
@@ -104,42 +95,6 @@ export default function WhyUs({ id, showCards = true }) {
         )}
       </div>
     </section>
-  );
-}
-
-const TYPICAL = [3];
-
-// Two rows of months: a typical firm is active only at filing time; we are there all year.
-function YearTimeline() {
-  const ours = touchpoints.map((point) => point.month);
-  const row = (label, active, className) => (
-    <div className={`year-row ${className}`}>
-      <span className="year-label">{label}</span>
-      {monthNames.map((name, month) => (
-        <span key={name} className={`year-dot${active.includes(month) ? ' is-on' : ''}`} />
-      ))}
-    </div>
-  );
-
-  return (
-    <div className="year" aria-hidden="true">
-      {row('Typical firm', TYPICAL, 'is-typical')}
-      {row('With us', ours, 'is-ours')}
-      <div className="year-row year-months">
-        <span />
-        {monthNames.map((name) => (
-          <span key={name}>{name.charAt(0)}</span>
-        ))}
-      </div>
-      <ul className="year-legend">
-        {touchpoints.map((point) => (
-          <li key={point.month}>
-            <strong>{monthNames[point.month]}</strong>
-            {point.label}
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }
 

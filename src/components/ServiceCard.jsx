@@ -19,7 +19,7 @@ export default function ServiceCard({ service, id, showIncluded = false }) {
       <p>{service.summary}</p>
       {showIncluded && (
         <ul className="checklist">
-          {service.included.slice(0, 4).map((item) => (
+          {service.included.map((item) => (
             <li key={item}>
               <Icon name="check" />
               {item}
@@ -27,10 +27,12 @@ export default function ServiceCard({ service, id, showIncluded = false }) {
           ))}
         </ul>
       )}
-      <span className="svc-card-more">
-        Learn more
-        <Icon name="arrow" />
-      </span>
+      {!service.hideLearnMore && (
+        <span className="svc-card-more">
+          Learn more
+          <Icon name="arrow" />
+        </span>
+      )}
     </Link>
   );
 }

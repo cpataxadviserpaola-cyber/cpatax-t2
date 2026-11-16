@@ -1948,6 +1948,10 @@ button, input, select, textarea { font-family: inherit; }
 .member-more:hover { color: var(--crimson-600); }
 .member-more:hover .icon { transform: translateX(3px); }
 
+.outsourced-section {
+  margin-top: clamp(3.5rem, 3rem + 3vw, 5.5rem);
+}
+
 .team-strip {
   display: flex;
   align-items: center;

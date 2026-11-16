@@ -36,8 +36,10 @@ export default function ContactForm() {
     const serviceLabel =
       serviceOptions.find((option) => option.value === values.service)?.label ?? 'General inquiry';
 
-    // No form service connected yet: hand the message to the visitor's email app.
-    if (!site.formEndpoint) {
+    const brevo = site.brevo?.apiKey ? site.brevo : null;
+
+    // No form service or Brevo API connected yet: hand the message to the visitor's email app.
+    if (!site.formEndpoint && !brevo) {
       const subject = `Consultation request: ${serviceLabel}`;
       const body = [
         `Name: ${values.name}`,
@@ -58,21 +60,77 @@ export default function ContactForm() {
     }
 
     setSending(true);
-    formData.set('service', serviceLabel);
+
     try {
-      const response = await fetch(site.formEndpoint, {
-        method: 'POST',
-        body: formData,
-        headers: { Accept: 'application/json' },
-      });
-      if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+      if (brevo) {
+        // 1. Send notification email to the firm via Brevo Transactional Email API (v3)
+        const notificationPayload = {
+          templateId: Number(brevo.notificationTemplateId) || undefined,
+          to: [{ email: brevo.receiverEmail || site.email, name: site.name }],
+          replyTo: { email: values.email, name: values.name },
+          params: {
+            name: values.name,
+            email: values.email,
+            company: values.company || 'Not provided',
+            phone: values.phone || 'Not provided',
+            service: serviceLabel,
+            message: values.message,
+          },
+        };
+
+        const res = await fetch('https://api.brevo.com/v3/smtp/email', {
+          method: 'POST',
+          headers: {
+            accept: 'application/json',
+            'content-type': 'application/json',
+            'api-key': brevo.apiKey,
+          },
+          body: JSON.stringify(notificationPayload),
+        });
+
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({}));
+          throw new Error(errData.message || `Brevo request failed: ${res.status}`);
+        }
+
+        // 2. If configured, send confirmation auto-reply to the visitor
+        if (brevo.autoReplyTemplateId) {
+          await fetch('https://api.brevo.com/v3/smtp/email', {
+            method: 'POST',
+            headers: {
+              accept: 'application/json',
+              'content-type': 'application/json',
+              'api-key': brevo.apiKey,
+            },
+            body: JSON.stringify({
+              templateId: Number(brevo.autoReplyTemplateId),
+              to: [{ email: values.email, name: values.name }],
+              replyTo: { email: site.email, name: site.name },
+              params: {
+                name: values.name,
+                service: serviceLabel,
+                message: values.message,
+              },
+            }),
+          }).catch((err) => console.warn('Brevo auto-reply warning:', err));
+        }
+      } else {
+        formData.set('service', serviceLabel);
+        const response = await fetch(site.formEndpoint, {
+          method: 'POST',
+          body: formData,
+          headers: { Accept: 'application/json' },
+        });
+        if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+      }
 
       setValues(emptyForm);
       setStatus({
         type: 'success',
         message: "Thank you! Your request has been sent, and we'll be in touch soon.",
       });
-    } catch {
+    } catch (err) {
+      console.error('Contact form submission error:', err);
       setStatus({
         type: 'error',
         message: 'Sorry, your message could not be sent. Please call or email us directly.',

@@ -24,7 +24,7 @@
 // out of every list (menus, cards, related services, industries, the contact form). Its entry
 // stays here, so taking its id out of the list brings it back.
 
-export const hiddenServiceIds = ['payroll', 'advisory', 'quickbooks'];
+export const hiddenServiceIds = ['payroll', 'advisory', 'quickbooks', 'bookkeeping'];
 
 const allCategories = [
   { id: 'business', label: 'Business services' },
@@ -32,7 +32,7 @@ const allCategories = [
   { id: 'international', label: 'International client services' },
 ];
 
-const allServices = [
+export const allServices = [
   {
     id: 'business-tax',
     slug: 'business-tax-preparation-services',
@@ -47,13 +47,12 @@ const allServices = [
     // compliance, and doesn't advertise payroll.
     // The brief has no banner of its own: the banner takes its page title and description.
     headline: 'Business Tax Preparation Services',
-    summary: 'State and federal business returns and tax planning, from an advisor who works with you all year.',
+    summary: 'State and federal business returns and tax planning.',
     description:
       'Get professional business tax preparation, tax filing, and tax planning services for businesses in South Carolina.',
     included: [
       'State and federal income tax preparation and filing',
-      'Business tax planning',
-      'Tax strategy service',
+      'IRS-compliant recordkeeping',
       'Profit and loss statements',
     ],
     cta: 'Discuss your business taxes',
@@ -80,14 +79,9 @@ const allServices = [
             text: "We assist businesses with state and federal income tax preparation and filing, ensuring that necessary tax returns are correctly completed and filed in compliance with relevant regulations. Our services help you stay organized during the tax filing process while meeting small businesses' tax preparation demands.",
           },
           {
-            icon: 'chart',
-            title: 'Business Tax Planning',
-            text: 'Effective tax planning helps businesses prepare for upcoming tax obligations and make informed financial decisions. Our tax planning services in Simpsonville, SC, focus on helping small businesses organize their tax-related financial information and apply established tax planning strategies to help minimize tax liability.',
-          },
-          {
-            icon: 'target',
-            title: 'Tax Strategy Service',
-            text: 'A well-defined tax strategy helps small businesses make informed financial decisions and manage their tax liability. Our tax strategy services in Simpsonville, SC, focus on applying practical tax planning strategies that support business financial goals and help businesses prepare for future tax obligations.',
+            icon: 'file-check',
+            title: 'IRS-Compliant Recordkeeping',
+            text: 'We help you maintain organized records and documentation that comply with IRS standards, supporting accurate business tax preparation and audit readiness.',
           },
           {
             icon: 'ledger',
@@ -152,28 +146,12 @@ const allServices = [
         title: 'Frequently Asked Questions',
         faqs: [
           {
-            question: 'What business tax preparation services do you provide?',
-            answer: 'We provide state and federal income tax preparation and filing, as well as business tax planning services.',
-          },
-          {
-            question: 'What business tax strategies do you offer?',
-            answer: 'We help businesses explore tax planning strategies to manage their tax obligations and identify opportunities to minimize tax liability.',
-          },
-          {
-            question: 'Are state and federal business tax filing services offered by you?',
-            answer: 'Yes. We provide state and federal income tax preparation and filing for businesses based on applicable tax requirements.',
-          },
-          {
             question: 'Do you provide business tax planning services?',
             answer: 'Yes. We provide business tax planning services to help businesses prepare for upcoming tax obligations and manage their tax liability.',
           },
           {
             question: 'Do you provide business tax strategy support?',
             answer: 'Yes. We provide tax strategy support to help businesses identify tax planning opportunities and make informed decisions about their tax obligations.',
-          },
-          {
-            question: 'Do you provide profit and loss statements?',
-            answer: 'Yes. We provide profit and loss statements to help businesses understand their financial performance and support tax preparation and business management.',
           },
         ],
       },
@@ -184,7 +162,7 @@ const allServices = [
     id: 'planning',
     slug: 'tax-planning-services-simpsonville-sc',
     category: 'business',
-    icon: 'chart',
+    icon: 'target',
     name: 'Tax Planning',
     title: 'Tax Planning & Strategy',
     chip: 'Tax Planning',
@@ -197,7 +175,8 @@ const allServices = [
       "Use Professional Federal, State, and Tax Planning and Preparation Services to Simplify Your Tax Filing Process! We take care of complex tax files and paperwork so you don't have to.",
     included: [
       'Tax credit and deduction review',
-      'IRS-compliant recordkeeping',
+      'Business tax planning',
+      'Tax strategy service',
       'Year-round tax planning strategies',
       'Paycheck withholding review',
       'Tax deferral through pension and retirement plans',
@@ -222,9 +201,7 @@ const allServices = [
           {
             list: [
               'We carefully review your tax situation to identify the tax credits and deductions you may be eligible to claim.',
-              'We help you establish a recordkeeping system that meets IRS requirements and keeps your tax records organized.',
-              'We work with you throughout the year—not just during tax season—to develop tax planning strategies that may help reduce your tax liability.',
-              'We review your paycheck withholding and help ensure it accurately reflects your tax situation.',
+              'We develop business tax planning and proactive tax strategies to help minimize your tax liability.',
               'We help you explore ways to defer tax liabilities through pension plans, retirement contributions, and other applicable plans.',
               'We help identify suitable investments that may provide federal or state tax-exempt income, where applicable.',
             ],
@@ -247,12 +224,8 @@ const allServices = [
             text: 'Plan for your tax obligations throughout the year instead of waiting until tax season.',
           },
           {
-            label: 'Accurate Tax Withholding',
-            text: 'Review your paycheck withholding to help ensure it reflects your current tax situation and avoid unnecessary overpayment.',
-          },
-          {
-            label: 'IRS-Compliant Recordkeeping',
-            text: 'Maintain a recordkeeping system that supports accurate financial and tax records and meets IRS requirements.',
+            label: 'Business Tax Strategy',
+            text: 'Apply practical, forward-looking tax planning strategies that support your business goals and future obligations.',
           },
           {
             label: 'Plan for Tax Deferral Opportunities',
@@ -276,7 +249,7 @@ const allServices = [
         eyebrow: 'Next steps',
         title: 'Ready to Plan Your Taxes More Effectively?',
         paragraphs: [
-          'Take control of your tax planning with professional guidance tailored to your individual or business needs. Contact us today to discuss your tax situation and explore the right tax planning strategies for you.',
+          'Take control of your tax planning with professional guidance tailored to your business needs. Contact us today to discuss your tax situation and explore the right tax planning strategies for you.',
         ],
         callout: { title: 'Get Started Today', action: 'Contact Us' },
       },
@@ -330,16 +303,8 @@ const allServices = [
             answer: 'Yes. We review your tax situation to help identify applicable tax deductions and credits you may be eligible to claim based on your circumstances.',
           },
           {
-            question: 'Can you help me organize my tax records?',
-            answer: 'Yes. We can help you establish an organized recordkeeping system designed to keep your financial and tax records properly maintained and aligned with applicable IRS requirements.',
-          },
-          {
-            question: 'Can you review my paycheck withholding?',
-            answer: 'Yes. We can review your current withholding and help determine whether it appears appropriate for your overall tax situation. We can also discuss potential adjustments when needed.',
-          },
-          {
             question: 'Can you help me reduce my tax liability?',
-            answer: 'We can help identify legal tax planning strategies that may reduce or defer your tax liability, depending on your individual or business circumstances. Tax results vary, so we focus on strategies appropriate to your situation.',
+            answer: 'We can help identify legal tax planning strategies that may reduce or defer your tax liability, depending on your business circumstances. Tax results vary, so we focus on strategies appropriate to your situation.',
           },
           {
             question: 'Can you help with retirement and pension planning for tax purposes?',
@@ -359,28 +324,26 @@ const allServices = [
     slug: 'small-business-accounting-service-sc',
     category: 'business',
     icon: 'building',
-    name: 'Small Business Accounting',
-    title: 'Small Business Accounting',
-    chip: 'Accounting',
+    name: 'Small Business Accounting & Bookkeeping',
+    title: 'Small Business Accounting & Bookkeeping',
+    chip: 'Accounting & Bookkeeping',
     tagline: 'Statements, cash flow, business consulting',
+    hideLearnMore: true,
     // Page copy from the firm's small business accounting page brief; keep it word for word,
     // except for the Business Consulting additions: the firm consults on strategy (tax or not)
     // and doesn't offer outsourced CFO work.
-    headline: 'Small Business Accounting Services',
+    headline: 'Small Business Accounting & Bookkeeping Services',
     summary:
-      'You have more important things to do than keep your own books. We take care of them so you can get back to running your business and generating profits.',
+      'We help small businesses manage their finances with accurate bookkeeping and reliable accounting support, giving you more time to focus on running and growing your business.',
     description:
       'We provide reliable accounting, bookkeeping, tax, and financial support to help small businesses stay organized, understand their numbers, and make confident decisions.',
     included: [
       'Financial Reporting & Analysis',
-      'Cash Flow & Profitability',
-      'Business Consulting',
+      'Bank & Credit Card Reconciliation',
+      'Income & Expense Tracking',
+      'Cash Flow & Profitability Management',
+      'General Ledger & Account Management',
       'Strategic Tax Planning',
-      'Budgeting & Financial Forecasting',
-      'Accounting System Setup',
-      'Financial Statements',
-      'Profit & Loss & Balance Sheets',
-      'Business Tax Returns',
     ],
     cta: 'Schedule a Consultation',
     sections: [
@@ -789,9 +752,9 @@ const allServices = [
     id: 'advisory',
     category: 'business',
     icon: 'target',
-    name: 'Business Advisory',
-    title: 'Business Advisory Services',
-    chip: 'Advisory',
+    name: 'Business Consulting',
+    title: 'Business Consulting Services',
+    chip: 'Consulting',
     tagline: 'Strategy, valuations, and forecasts',
     headline: 'Business planning is the foundation of future success',
     summary:
@@ -820,7 +783,7 @@ const allServices = [
           { heading: "If You Feel Like You're Spinning Your Wheels, We Can Help." },
           'With years of proven expertise in business planning, we make sure that business owners like you have the information - and insights - they need to remain competitive and ensure financial stability for you and your loved ones for years to come.',
           'We combine industry experience with time-tested solutions to develop a framework upon which to build your company’s success. Even better, when you leave the business planning to us, you can get back to doing what you enjoy and do best--running your business.',
-          'Our business planning and advisory services include:',
+          'Our business planning and consulting services include:',
           {
             list: [
               'Planning for strategic growth',
@@ -1058,8 +1021,8 @@ const allServices = [
   {
     id: 'individual-planning',
     category: 'individual',
-    icon: 'chart',
-    name: 'Individual Tax Planning',
+    icon: 'calculator',
+    name: 'Tax Projection',
     title: 'Tax Planning for Individuals',
     chip: 'Tax Projections',
     tagline: 'Know where you stand before year-end',

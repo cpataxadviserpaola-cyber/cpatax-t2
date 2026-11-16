@@ -1,4 +1,3 @@
-import { Link } from 'react-router';
 import Icon from '../components/Icon.jsx';
 import PageHero from '../components/PageHero.jsx';
 import CtaSection from '../components/CtaSection.jsx';
@@ -24,15 +23,8 @@ const principles = [
     icon: 'target',
     title: 'Quality',
     paragraphs: [
-      "An accounting firm is known for the quality of its service. Our firm's reputation reflects the high standards we demand of ourselves.",
-      'Our primary goal as a trusted advisor is to be available and to provide insightful advice to enable our clients to make informed financial decisions. We do not accept anything less from ourselves and this is what we deliver to you.',
       'We believe in continuously educating ourselves to strengthen our technical expertise, expand our financial knowledge, and improve the quality of service we provide to our clients.',
       'We stay informed about the latest tax laws, regulatory changes, and updates to the tax system so that we can offer accurate guidance, effective solutions, and better support to meet our clients\' evolving financial needs.',
-      'Our high service quality and "raving fan" clients are the result of our commitment to excellence.',
-      <>
-        We will answer all of your questions, as they impact both your tax and financial
-        situations. We welcome you to <Link to="/contact">contact us</Link> anytime.
-      </>,
     ],
   },
 ];

@@ -18,7 +18,9 @@
 // cta          label for the service's contact button
 // sections     optional blocks for the service's page, in order, in place of the standard
 //              overview, highlights, process, and faqs (see src/components/DetailBlock.jsx)
-// related      ids of services suggested at the bottom of the service's page
+// related      ids of services suggested at the bottom of the service's page; up to three
+//              shown, topped up with other services when fewer of them are shown
+// relatedOnly  optional; true shows only the related services, without topping them up
 //
 // A service in hiddenServiceIds is left off the site: its page forwards to /services, and it's
 // out of every list (menus, cards, related services, industries, the contact form). Its entry
@@ -45,14 +47,16 @@ export const allServices = [
     // Page copy from the firm's business tax preparation page brief; keep it word for word,
     // except that sales tax and payroll tax are left out: the firm doesn't offer sales tax
     // compliance, and doesn't advertise payroll.
-    // The brief has no banner of its own: the banner takes its page title and description.
+    // The brief has no banner of its own: the banner takes its page title, and a description
+    // the firm gave later (the search description in src/data/seo.js still names South Carolina).
     headline: 'Business Tax Preparation Services',
     summary: 'State and federal business returns and tax planning.',
     description:
-      'Get professional business tax preparation, tax filing, and tax planning services for businesses in South Carolina.',
+      'Get professional business tax preparation, tax filing, and tax planning services for businesses.',
     included: [
       'State and federal income tax preparation and filing',
-      'IRS-compliant recordkeeping',
+      'Business tax planning',
+      'Tax strategy service',
       'Profit and loss statements',
     ],
     cta: 'Discuss your business taxes',
@@ -79,9 +83,14 @@ export const allServices = [
             text: "We assist businesses with state and federal income tax preparation and filing, ensuring that necessary tax returns are correctly completed and filed in compliance with relevant regulations. Our services help you stay organized during the tax filing process while meeting small businesses' tax preparation demands.",
           },
           {
-            icon: 'file-check',
-            title: 'IRS-Compliant Recordkeeping',
-            text: 'We help you maintain organized records and documentation that comply with IRS standards, supporting accurate business tax preparation and audit readiness.',
+            icon: 'target',
+            title: 'Business Tax Planning',
+            text: 'Effective tax planning helps businesses prepare for upcoming tax obligations and make informed financial decisions. Our tax planning services focus on helping small businesses organize their tax-related financial information and apply established tax planning strategies to help minimize tax liability.',
+          },
+          {
+            icon: 'trend',
+            title: 'Tax Strategy Service',
+            text: 'A well-defined tax strategy helps small businesses make informed financial decisions and manage their tax liability. Our tax strategy services focus on applying practical tax planning strategies that support business financial goals and help businesses prepare for future tax obligations.',
           },
           {
             icon: 'ledger',
@@ -156,7 +165,9 @@ export const allServices = [
         ],
       },
     ],
-    related: ['planning', 'bookkeeping', 'advisory'],
+    // Business services only: no individual services among its suggestions.
+    related: ['planning', 'accounting', 'bookkeeping', 'advisory'],
+    relatedOnly: true,
   },
   {
     id: 'planning',
@@ -186,7 +197,7 @@ export const allServices = [
     sections: [
       {
         eyebrow: 'Overview',
-        title: 'Best Tax Planning Services in South Carolina, USA',
+        title: 'Best Remote CPA Service in Simpsonville',
         paragraphs: [
           'Many individuals and businesses feel they are paying more in taxes than necessary. Our tax services help you understand your tax situation, identify available tax-saving opportunities, and plan ahead for your tax obligations.',
           'We provide tax planning and tax strategy support throughout the year, helping you make informed financial decisions and manage your tax liability more effectively.',
@@ -212,7 +223,7 @@ export const allServices = [
         eyebrow: 'Benefits',
         title: 'Benefits of Our Tax Planning Services',
         paragraphs: [
-          'Our tax planning services are designed to help individuals and businesses better understand their tax situation, plan ahead, and make informed decisions throughout the year.',
+          'Our tax planning services are designed to help businesses better understand their tax situation, plan ahead, and make informed decisions throughout the year.',
         ],
         points: [
           {
@@ -309,10 +320,6 @@ export const allServices = [
           {
             question: 'Can you help with retirement and pension planning for tax purposes?',
             answer: 'Yes. We can help you explore applicable retirement contributions, pension plans, and other qualifying strategies that may provide opportunities to defer taxes while supporting your long-term financial goals.',
-          },
-          {
-            question: 'When should I start tax planning?',
-            answer: 'The earlier you begin, the more opportunities you may have to plan ahead. Year-round tax planning allows you to address potential deductions, credits, withholding, retirement contributions, and other tax considerations before the end of the tax year.',
           },
         ],
       },
@@ -438,7 +445,7 @@ export const allServices = [
         eyebrow: 'Nationwide',
         title: 'Accounting Support Wherever Your Business Operates',
         paragraphs: [
-          "We provide accounting support for small businesses in Simpsonville, SC, and across the USA. Whether you're searching for accounting services near me for small business or looking for a dependable accounting partner beyond your local area, we provide professional support based on your business needs.",
+          "We provide accounting support for small businesses across the USA. Whether you're searching for accounting services near me for small business or looking for a dependable accounting partner beyond your local area, we provide professional support based on your business needs.",
         ],
       },
       {
@@ -485,8 +492,8 @@ export const allServices = [
             answer: 'Yes. We use QuickBooks Online, which supports our remote working environment and allows us to manage accounting tasks efficiently.',
           },
           {
-            question: 'Do you provide accounting services in Simpsonville, SC?',
-            answer: 'Yes. We provide accounting services in Simpsonville, SC, as well as support businesses across the USA.',
+            question: 'Do you provide accounting services across the USA?',
+            answer: 'Yes. We provide accounting services across the USA.',
           },
           {
             question: 'How do I get started with your accounting services?',

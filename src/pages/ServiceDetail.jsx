@@ -30,11 +30,12 @@ export default function ServiceDetail({ id }) {
 // The story of the service down the page, block by block, in a single reading column.
 function ServicePage({ service }) {
   const contactLink = `/contact?service=${service.id}`;
-  // Its related services that are shown, topped up to three with the other shown services.
+  // Its related services that are shown, topped up to three with the other shown services
+  // unless the service asks for its related services only.
   const related = [
     ...new Set([
       ...service.related.map(findService).filter(Boolean),
-      ...services.filter((item) => item.id !== service.id),
+      ...(service.relatedOnly ? [] : services.filter((item) => item.id !== service.id)),
     ]),
   ].slice(0, 3);
   const category = serviceCategories.find((item) => item.id === service.category);

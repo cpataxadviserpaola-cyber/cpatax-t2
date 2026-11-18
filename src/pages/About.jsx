@@ -109,7 +109,7 @@ export default function About() {
 
       <CtaSection
         title={<>Let's work <em>together</em></>}
-        text="Find out how a trusted advisor can help you become more organized, efficient, and confident in your financial direction."
+        text="Find out how a trusted advisor can help you become more organized, efficient, and confident in your direction."
         secondary={
           <Link className="btn btn-ghost-light btn-lg" to="/services">
             Our services

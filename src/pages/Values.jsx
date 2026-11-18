@@ -7,16 +7,16 @@ const principles = [
     icon: 'award',
     title: 'Professionalism',
     paragraphs: [
-      'Our firm is one of the leading firms in the area. By combining our expertise, experience and the energy of our staff, each client receives close personal and professional attention.',
-      'We make sure that every client is served by the expertise of our whole firm.',
+      'Our firm is one of the leading firms in the area. By combining our expertise, experience, and the energy of our staff, we ensure that every client receives close personal and professional attention.',
+      'We make sure that every client benefits from the collective expertise of our entire firm.',
     ],
   },
   {
     icon: 'clock',
     title: 'Responsiveness',
     paragraphs: [
-      'Because we get new business from the people who know us best, client referrals have fueled our growth in the recent years.',
-      'Through hard work, we have earned the respect of the business and financial communities. This respect illustrates our diverse talents, dedication and ability to respond quickly.',
+      'We gain new business from the people who know us best; client referrals have fueled our growth in recent years.',
+      'Through hard work, we have earned the respect of the business and financial communities. This recognition reflects our diverse talents, dedication, and ability to respond quickly.',
     ],
   },
   {

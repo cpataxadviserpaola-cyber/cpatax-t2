@@ -324,7 +324,9 @@ export const allServices = [
         ],
       },
     ],
-    related: ['business-tax', 'individual', 'advisory'],
+    // Business services only: no individual services among its suggestions.
+    related: ['business-tax', 'accounting', 'advisory'],
+    relatedOnly: true,
   },
   {
     id: 'accounting',
@@ -502,7 +504,9 @@ export const allServices = [
         ],
       },
     ],
+    // Business services only: no individual services among its suggestions.
     related: ['bookkeeping', 'business-tax', 'planning'],
+    relatedOnly: true,
   },
   {
     id: 'bookkeeping',

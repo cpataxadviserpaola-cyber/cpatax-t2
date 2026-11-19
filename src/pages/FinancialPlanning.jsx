@@ -13,6 +13,9 @@ const expectations = [
   'A judgment-free space to ask questions and learn',
 ];
 
+// The "Planning for every stage" section is hidden for now; set to true to show it again.
+const showAudiences = false;
+
 const audiences = [
   { icon: 'briefcase', title: 'Professionals and business owners', text: 'Building long-term wealth alongside a growing career or company.' },
   { icon: 'home', title: 'Families', text: 'Looking for more financial organization and a shared plan.' },
@@ -77,22 +80,24 @@ export default function FinancialPlanning() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <SectionHead eyebrow="Who it's for" title={<>Planning for <em>every stage</em></>} center />
-          <div className="audience-grid reveal">
-            {audiences.map((audience) => (
-              <article className="audience" key={audience.title}>
-                <span className="icon-badge">
-                  <Icon name={audience.icon} />
-                </span>
-                <h3>{audience.title}</h3>
-                <p>{audience.text}</p>
-              </article>
-            ))}
+      {showAudiences && (
+        <section className="section">
+          <div className="container">
+            <SectionHead eyebrow="Who it's for" title={<>Planning for <em>every stage</em></>} center />
+            <div className="audience-grid reveal">
+              {audiences.map((audience) => (
+                <article className="audience" key={audience.title}>
+                  <span className="icon-badge">
+                    <Icon name={audience.icon} />
+                  </span>
+                  <h3>{audience.title}</h3>
+                  <p>{audience.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <CtaSection
         soft

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
 import Icon from './Icon.jsx';
 import { defaultSituations, opportunities, situations } from '../data/opportunities.js';
+import { links } from '../data/site.js';
 
 // Interactive checklist: visitors pick what applies to them and see the tax
 // opportunities a CPA would review first.
@@ -55,10 +55,10 @@ export default function OpportunityFinder() {
           <p className="finder-note">
             General information only. What applies to you depends on your full situation.
           </p>
-          <Link className="btn btn-gold" to="/contact?service=planning">
-            Review mine with a CPA
-            <Icon name="arrow" />
-          </Link>
+          <a className="btn btn-gold" href={links.schedule} target="_blank" rel="noopener noreferrer">
+            Review Yours with Your CPA
+            <Icon name="external" />
+          </a>
         </div>
 
         {count > 0 ? (

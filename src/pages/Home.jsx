@@ -8,7 +8,7 @@ import SectionHead from '../components/SectionHead.jsx';
 import ProcessSteps from '../components/ProcessSteps.jsx';
 import FaqSection from '../components/FaqSection.jsx';
 import CtaSection from '../components/CtaSection.jsx';
-import { site } from '../data/site.js';
+import { links, site } from '../data/site.js';
 import { workSteps } from '../data/process.js';
 import { faqs } from '../data/faqs.js';
 
@@ -111,6 +111,7 @@ export default function Home() {
       <CtaSection
         compact
         soft
+        href={links.schedule}
         title={<>Ready to become more organized and <em>confident?</em></>}
         text="Let's talk about your business, your taxes, and the plan that gets you where you want to be."
       />

@@ -6,6 +6,7 @@ import ServiceCard from '../components/ServiceCard.jsx';
 import CtaSection from '../components/CtaSection.jsx';
 import { serviceCategories, servicesIn } from '../data/services.js';
 import { industries, industryPath } from '../data/industries.js';
+import { links } from '../data/site.js';
 
 // Label and short introduction shown beside each group of services.
 const categoryIntro = {
@@ -15,7 +16,7 @@ const categoryIntro = {
   },
   individual: {
     eyebrow: 'For individuals',
-    text: 'Personal tax returns, projections, and withholding reviews for professionals, executives, and pre-retirees.',
+    text: 'Personal tax returns, projections, and withholding reviews for professionals, executives, pre-retirees, and High-Net-Worth Individuals.',
   },
   international: {
     eyebrow: 'For international clients',
@@ -30,9 +31,19 @@ const groupId = (category) => `group-${category.id}`;
 export default function Services() {
   return (
     <>
-      <PageHero page="Services" eyebrow="What we do" title={<>We're on <em>your side</em></>}>
-        Tax law is complex. That's why it pays to have an accounting firm you can trust. From cash
-        flow statements to tax returns and business consulting, we are here to help your business
+      <PageHero
+        page="Services"
+        eyebrow="What we do"
+        title={<>We're on <em>your side</em></>}
+        actions={
+          <a className="btn btn-primary btn-lg" href={links.schedule} target="_blank" rel="noopener noreferrer">
+            Schedule a consultation
+            <Icon name="external" />
+          </a>
+        }
+      >
+        Tax law is complex. That's why it pays to have a CPA firm you can trust. From cash flow
+        statements to tax returns and business consulting, we are here to help your business
         succeed.
       </PageHero>
 
@@ -117,8 +128,9 @@ export default function Services() {
                 Personalized financial guidance <em>beyond tax season</em>
               </h2>
               <p>
-                Through our affiliated firm, Yellow Oak Financial Planning, we help professionals,
-                business owners, families, and pre-retirees build a plan around their goals.
+                Although Yellow Oak is now focused on women, it will continue accepting all clients
+                referred by CPA Tax Adviser, regardless of their profession, business type, or
+                personal situation.
               </p>
             </div>
             <div className="beyond-panel">

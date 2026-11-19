@@ -57,7 +57,7 @@ export const allServices = [
       'State and federal income tax preparation and filing',
       'Business tax planning',
       'Tax strategy service',
-      'Profit and loss statements',
+      'Financial Statements',
     ],
     cta: 'Discuss your business taxes',
     sections: [
@@ -1039,7 +1039,7 @@ export const allServices = [
     tagline: 'Know where you stand before year-end',
     headline: 'Plan ahead and keep more of your hard-earned money',
     summary:
-      'Tax projections and personalized strategies for professionals, executives, and pre-retirees, so there are no surprises at tax time.',
+      'Tax projections and personalized strategies for professionals, executives, pre-retirees, and High-Net-Worth Individuals, so there are no surprises at tax time.',
     description:
       "Planning is the key to successfully and legally reducing your tax liability. A tax projection shows where you stand while there is still time to act, and our strategies help you act on it.",
     included: [
@@ -1048,7 +1048,7 @@ export const allServices = [
       'Estimated tax calculations for the self-employed',
       'Tax deferral through pension and retirement plans',
       'Investments that produce tax-exempt income',
-      'Every tax credit and deduction you deserve',
+      "Every tax credit and deduction you're eligible for",
     ],
     cta: 'Plan your taxes with us',
     sections: [

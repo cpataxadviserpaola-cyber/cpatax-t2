@@ -5,13 +5,15 @@ import { site } from '../data/site.js';
 import { formatDeadlineLong, getNextDeadline } from '../data/deadlines.js';
 
 // Closing call to action: the page's own message in a wine panel beside a gold panel
-// counting down to the next IRS deadline. The second button defaults to the phone number.
+// counting down to the next IRS deadline. The main button goes to `to` on this site, or to
+// `href` (opened in a new tab) when given. The second button defaults to the phone number.
 export default function CtaSection({
   title,
   text,
   soft = false,
   compact = false,
   to = '/contact',
+  href,
   secondary,
 }) {
   const deadline = getNextDeadline();
@@ -26,10 +28,17 @@ export default function CtaSection({
             <h2>{title}</h2>
             <p className="cta-text">{text}</p>
             <div className="cta-actions">
-              <Link className="btn btn-gold btn-lg" to={to}>
-                Schedule a consultation
-                <Icon name="arrow" />
-              </Link>
+              {href ? (
+                <a className="btn btn-gold btn-lg" href={href} target="_blank" rel="noopener noreferrer">
+                  Schedule a consultation
+                  <Icon name="external" />
+                </a>
+              ) : (
+                <Link className="btn btn-gold btn-lg" to={to}>
+                  Schedule a consultation
+                  <Icon name="arrow" />
+                </Link>
+              )}
               {secondary ?? (
                 <a className="btn btn-ghost-light btn-lg" href={site.phone.href}>
                   <Icon name="phone" />

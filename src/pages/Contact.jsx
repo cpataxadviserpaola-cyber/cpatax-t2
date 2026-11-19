@@ -64,9 +64,11 @@ export default function Contact() {
             </h2>
             <p>Share a little about your situation and the services you need. We'll get back to you soon.</p>
             <p className="notice">
-              While our specialty is supporting small businesses, we also provide tailored services
-              to sole proprietors, LLCs, partnerships, and corporations. We also welcome and support
-              new individual clients with reliable, personalized financial and accounting solutions.
+              While our expertise focuses on small businesses—including sole proprietors, LLCs,
+              partnerships, and corporations—and individuals with international tax needs, we are
+              also currently welcoming new individual clients with complex tax situations, such as
+              equity compensation, multiple income sources, and other specialized tax matters. If
+              you're looking for personalized tax guidance, we'd love to hear from you!
             </p>
             <ContactForm />
           </div>

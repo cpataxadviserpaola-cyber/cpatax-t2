@@ -1863,7 +1863,7 @@ button, input, select, textarea { font-family: inherit; }
 .spotlight-facts .icon { width: 14px; height: 14px; stroke-width: 2.75; color: var(--gold-500); }
 .spotlight-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
 /* Founder portrait: the whole photo, framed beside the text, with a thin gold outline set
-   off from its edge like a mat. The frame takes the photo's own shape (653 x 979), so
+   off from its edge like a mat. The frame takes the photo's own shape (800 x 1200), so
    nothing is cropped. */
 .spotlight-photo {
   align-self: center;
@@ -1872,7 +1872,7 @@ button, input, select, textarea { font-family: inherit; }
 .spotlight-photo .founder-avatar {
   display: block;
   width: clamp(230px, 24vw, 320px);
-  aspect-ratio: 653 / 979;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
   object-position: 50% 10%;
   border-radius: 24px;
@@ -1929,7 +1929,7 @@ button, input, select, textarea { font-family: inherit; }
   color: var(--gold-300);
 }
 .person h3 { margin: 1.35rem 0 .35rem; font-size: var(--fs-card); }
-.person-summary { margin: .8rem 0 1.25rem; font-size: .92rem; }
+.person .member-role { margin-bottom: 1.25rem; }
 .member-more {
   display: inline-flex;
   align-items: center;

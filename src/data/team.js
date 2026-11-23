@@ -5,7 +5,6 @@
 // seal         short credential on the portrait (leave empty for none)
 // photo        portrait in public/team/; without one, the initials are shown instead
 // avatar       square head-and-shoulders crop of the photo for the small round pictures
-// summary      one line for the team card
 // highlight    a line from the person's bio, shown as a quote
 // facts        short chips on the featured card
 // bio          full bio, shown in the "Read bio" window
@@ -21,8 +20,6 @@ export const team = [
     initials: 'PM',
     photo: '/team/paola-martinez.webp',
     avatar: '/team/paola-martinez-avatar.webp',
-    summary:
-      'Founder of CPA Tax Adviser, working with closely held businesses and their owners on strategy that goes far beyond compliance.',
     highlight:
       'Rather than serving as a once-a-year tax preparer, she acts as a trusted partner, guiding business decisions and creating structure for sustainable growth.',
     facts: ['Licensed CPA', 'CFP® professional', "Master's in Accountancy", '13+ years in tax', 'English & Spanish'],
@@ -44,7 +41,6 @@ export const team = [
     role: 'Admin Assistant & Tax Preparer',
     initials: 'KN',
     photo: null,
-    summary: 'Makes sure every return is accurate, complete, and fully compliant.',
     highlight:
       'Clients may not always see her work directly, but they benefit from it in every return prepared with care and accuracy.',
     bio: [
@@ -64,7 +60,6 @@ export const team = [
     initials: 'AJ',
     outsourced: true,
     photo: null,
-    summary: "Keeps clients' financial records accurate, organized, and up to date.",
     highlight: "Annie is the backbone of the firm's financial operations.",
     bio: [
       "With extensive experience in bookkeeping and a sharp attention to detail, Annie ensures that clients' financial records are accurate, organized, and up to date.",
@@ -82,7 +77,6 @@ export const team = [
     role: 'Tax Preparer',
     initials: 'AP',
     photo: null,
-    summary: 'Detail-oriented tax preparer committed to accuracy and compliance.',
     highlight: 'Her structured approach helps maintain high standards in every return she supports.',
     bio: [
       'Adriana is a detail-oriented tax preparer committed to accuracy and compliance. She ensures every return is complete, organized, and aligned with current tax regulations, carefully reviewing income, deductions, and credits.',
@@ -97,17 +91,14 @@ export const team = [
     name: 'John Willson',
     credentials: '',
     seal: '',
-    role: 'Virtual Assistant',
+    role: 'Business Systems & Operations',
     initials: 'JW',
     outsourced: true,
     photo: null,
-    summary: 'John helps businesses strengthen their digital presence and create new opportunities for growth.',
     highlight:
       'With a business-focused approach, John helps turn digital opportunities into meaningful connections and supports businesses in reaching their growth goals.',
     bio: [
-      'As a Virtual Assistant, John supports businesses with website development, lead generation, and digital brand awareness. He focuses on helping businesses build a strong online presence and connect with the right audience.',
-      'From developing business websites to identifying potential customers, he works on digital activities that improve visibility, attract prospects, and generate quality leads.',
-      'With a business-focused approach, John helps turn digital opportunities into meaningful connections and supports businesses in reaching their growth goals.',
+      'John Wilson is passionate about digital marketing and website development, helping businesses build a strong online presence and connect with their audience. He works on creating and managing websites, improving online visibility through SEO, and developing digital marketing strategies that support business growth.',
     ],
     focus: ['Website Development', 'Quality Lead Generation', 'Digital Business Awareness'],
     action: { label: 'Discuss Your Business Growth', href: '/contact' },

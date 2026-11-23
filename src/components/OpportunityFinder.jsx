@@ -25,7 +25,7 @@ export default function OpportunityFinder() {
             Where could you <em>be saving?</em>
           </h2>
           <p className="lead">
-            Choose what applies to you and see where one of our CPAs would look first.
+            Choose what applies to you and see what our CPAs would recommend first.
           </p>
 
           <div className="finder-chips" role="group" aria-label="Your situation">
@@ -56,7 +56,7 @@ export default function OpportunityFinder() {
             General information only. What applies to you depends on your full situation.
           </p>
           <a className="btn btn-gold" href={links.schedule} target="_blank" rel="noopener noreferrer">
-            Review Yours with Your CPA
+            Review Yours with Our CPA
             <Icon name="external" />
           </a>
         </div>

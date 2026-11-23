@@ -92,7 +92,6 @@ export default function TeamSection({ id, soft = false, showAboutLink = false })
               <Avatar person={person} small />
               <h3>{person.name}</h3>
               <p className="member-role">{person.role}</p>
-              <p className="person-summary">{person.summary}</p>
               <button className="member-more" type="button" aria-haspopup="dialog" onClick={(event) => openBio(person, event)}>
                 Read bio<span className="sr-only"> of {person.name}</span>
                 <Icon name="arrow" />
@@ -118,7 +117,6 @@ export default function TeamSection({ id, soft = false, showAboutLink = false })
                   <Avatar person={person} small />
                   <h3>{person.name}</h3>
                   <p className="member-role">{person.role}</p>
-                  <p className="person-summary">{person.summary}</p>
                   <button className="member-more" type="button" aria-haspopup="dialog" onClick={(event) => openBio(person, event)}>
                     Read bio<span className="sr-only"> of {person.name}</span>
                     <Icon name="arrow" />

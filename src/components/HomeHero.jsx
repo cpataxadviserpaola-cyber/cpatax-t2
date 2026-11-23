@@ -7,17 +7,17 @@ import { asset } from '../utils/asset.js';
 // The banner's slides, in the firm's words: a headline, a line under it, and a button. `label`
 // names the slide for screen readers. `line` is a list of short facts set side by side;
 // otherwise `text` is a sentence. A button goes to `to` on this site, or to `href` (opened in
-// a new tab). The photos are free Unsplash photos (unsplash.com/license:
-// images.unsplash.com/photo-1551836022-aadb801c60ae, -1579621970563-ebec7560ff3e, mirrored so
-// the plant sits clear of the text, and -1521791136064-7986c2920216), saved in public/hero/
-// at 1920 and 960 pixels wide; they only set the scene, so they have no alt text.
+// a new tab). The first photo (client-meeting) was supplied by the firm; the others are free
+// Unsplash photos (unsplash.com/license: images.unsplash.com/photo-1579621970563-ebec7560ff3e,
+// mirrored so the plant sits clear of the text, and -1521791136064-7986c2920216). All are saved
+// in public/hero/ at 1920 and 960 pixels wide; they only set the scene, so they have no alt text.
 const slides = [
   {
     label: 'Welcome',
     photo: 'client-meeting',
     title: 'Trusted tax and accounting support to help you save more and grow.',
     line: ['South Carolina Licensed CPA Firm', 'Helping Clients Across the U.S.'],
-    action: { href: links.schedule, label: 'Speak with your CPA' },
+    action: { href: links.schedule, label: 'Speak with our CPA' },
   },
   {
     label: 'Growth',

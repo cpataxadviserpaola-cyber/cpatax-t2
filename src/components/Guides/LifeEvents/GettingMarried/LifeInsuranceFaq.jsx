@@ -7,7 +7,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'underwriting',
-    title: 'How do insurers assess applicants?',
+    title: 'How Do Insurers Assess Applicants?',
     body: (
       <p>
         Insurers review information such as age, health history, tobacco use, occupation, and
@@ -20,7 +20,7 @@ const sections = [
   },
   {
     id: 'agent-questions',
-    title: 'What should I ask an insurance agent?',
+    title: 'What Should I Ask an Insurance Agent?',
     body: (
       <>
         <p>Ask for clear explanations of the policy and how it fits your needs. Useful questions include:</p>
@@ -40,7 +40,7 @@ const sections = [
   },
   {
     id: 'pitfalls',
-    title: 'What should I watch for when buying coverage?',
+    title: 'What Should I Watch For When Buying Coverage?',
     body: (
       <p>
         Be cautious if a policy’s costs, benefits, or assumptions are difficult to explain, or if
@@ -53,7 +53,7 @@ const sections = [
   },
   {
     id: 'compare',
-    title: 'How can I compare policy costs?',
+    title: 'How Can I Compare Policy Costs?',
     body: (
       <p>
         Compare policies with the same coverage amount, duration, and assumptions. Review the
@@ -66,7 +66,7 @@ const sections = [
   },
   {
     id: 'need',
-    title: 'Do I need life insurance?',
+    title: 'Do I Need Life Insurance?',
     body: (
       <p>
         Coverage may be useful when someone would face financial difficulty if you died, or when you
@@ -79,7 +79,7 @@ const sections = [
   },
   {
     id: 'amount',
-    title: 'How much coverage should I consider?',
+    title: 'How Much Coverage Should I Consider?',
     body: (
       <p>
         Estimate the resources your family may need, then account for income replacement, debts,
@@ -92,7 +92,7 @@ const sections = [
   },
   {
     id: 'types',
-    title: 'What type of life insurance should I compare?',
+    title: 'What Type of Life Insurance Should I Compare?',
     body: (
       <>
         <p>
@@ -102,7 +102,7 @@ const sections = [
           is suitable: compare the contract, duration, premium structure, guarantees, and how long
           you expect to need coverage.
         </p>
-        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind To Buy'])}>
+        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind to Buy'])}>
           See the related guide for a fuller discussion of coverage needs and policy types:
         </RelatedGuide>
       </>
@@ -110,7 +110,7 @@ const sections = [
   },
   {
     id: 'resources',
-    title: 'Where can I find independent information?',
+    title: 'Where Can I Find Independent Information?',
     body: (
       <p>
         Your state insurance department can provide information about insurance products, licensing,

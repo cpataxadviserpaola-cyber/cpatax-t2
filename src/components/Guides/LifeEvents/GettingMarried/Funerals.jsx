@@ -336,10 +336,10 @@ const sections = [
           the other at an unreduced rate at age 65. Since the rules vary depending on the situation, talk to a
           Social Security representative about the options available to you.
         </p>
-        <RelatedGuide guide={related([56, 'Social Security Benefits: How To Get The Maximum Amount'])}>
+        <RelatedGuide guide={related([56, 'Social Security Benefits: How to Get the Maximum Amount'])}>
           Please see the Financial Guide:
         </RelatedGuide>
-        <RelatedGuide guide={related([93, 'Survivor Benefits: A Guide To This Often Overlooked Insurance Add-On'])}>
+        <RelatedGuide guide={related([93, 'Survivor Benefits: A Guide to This Often Overlooked Insurance Add-On'])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -368,7 +368,7 @@ export default function Funerals() {
       page="Funerals"
       title={
         <>
-          Funerals: <em>What To Do At This Stressful Time</em>
+          Funerals: <em>What to Do at This Stressful Time</em>
         </>
       }
       lead="Americans arrange more than two million funerals each year, often costing $10,000 or more. What are your options? What is required by law? What information are you entitled to? This Guide provides the answers to these and other questions."

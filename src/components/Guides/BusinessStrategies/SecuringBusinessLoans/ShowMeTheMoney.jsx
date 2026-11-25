@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'loan-myths',
-    title: 'Avoid common assumptions about business loans',
+    title: 'Avoid Common Assumptions About Business Loans',
     body: (
       <>
         <p>
@@ -21,7 +21,7 @@ const sections = [
   },
   {
     id: 'bank-perspective',
-    title: 'Understand the lender’s perspective',
+    title: 'Understand the Lender’s Perspective',
     body: (
       <p>
         Lenders must protect depositors, comply with regulators, and manage risk while serving their communities.
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     id: 'choose-a-bank',
-    title: 'Choose a lender that fits your business',
+    title: 'Choose a Lender That Fits Your Business',
     body: (
       <p>
         Banks differ in the financing they offer, interest rates, risk tolerance, staff expertise, services, and
@@ -46,7 +46,7 @@ const sections = [
   },
   {
     id: 'build-relationship',
-    title: 'Build a relationship before you need financing',
+    title: 'Build a Relationship Before You Need Financing',
     body: (
       <p>
         Get to know the lender and loan officer before a financing emergency. A bank that understands your business
@@ -58,7 +58,7 @@ const sections = [
   },
   {
     id: 'loan-proposal',
-    title: 'Prepare a complete loan proposal',
+    title: 'Prepare a Complete Loan Proposal',
     body: (
       <>
         <p>
@@ -80,7 +80,7 @@ const sections = [
   },
   {
     id: 'prepare-before-applying',
-    title: 'Do your homework before applying',
+    title: 'Do Your Homework Before Applying',
     body: (
       <>
         <p>The source recommends three preparations:</p>
@@ -104,7 +104,7 @@ const sections = [
   },
   {
     id: 'respond-to-concerns',
-    title: 'Address concerns clearly and ask for advice',
+    title: 'Address Concerns Clearly and Ask for Advice',
     body: (
       <p>
         A loan application can involve scrutiny and possible rejection, so preparation can make the process more
@@ -116,7 +116,7 @@ const sections = [
   },
   {
     id: 'myths-in-detail',
-    title: 'Loan assumptions the source cautions against',
+    title: 'Loan Assumptions the Source Cautions Against',
     body: (
       <>
         <p>
@@ -135,7 +135,7 @@ const sections = [
   },
   {
     id: 'local-bank-details',
-    title: 'Compare local banks and their requirements',
+    title: 'Compare Local Banks and Their Requirements',
     body: (
       <p>
         The article emphasizes that lenders vary in the types of financing offered, pricing, risk tolerance, staff
@@ -149,7 +149,7 @@ const sections = [
   },
   {
     id: 'relationship-details',
-    title: 'Establish a track record with the bank',
+    title: 'Establish a Track Record with the Bank',
     body: (
       <p>
         The source recommends beginning the relationship before financing is urgently needed, not first approaching
@@ -162,7 +162,7 @@ const sections = [
   },
   {
     id: 'preparation-details',
-    title: 'Add detail to your application materials',
+    title: 'Add Detail to Your Application Materials',
     body: (
       <p>
         The guide recommends preparing a complete business plan and a two-page executive summary for situations
@@ -176,7 +176,7 @@ const sections = [
   },
   {
     id: 'additional-source-details',
-    title: 'Additional details from the source',
+    title: 'Additional Details from the Source',
     body: (
       <>
         <p>
@@ -214,7 +214,7 @@ export default function ShowMeTheMoney() {
       category="business-strategies"
       topic="/guides/business-strategies/securing-business-loans"
       page="Strategies for Securing a Loan"
-      title="Show Me The Money! Strategies For Securing a Loan"
+      title="Show Me the Money! Strategies for Securing a Loan"
       lead="Prepare for a business loan by understanding the lender’s risk concerns, choosing a suitable bank, building a relationship early, and presenting a well-supported proposal."
       sections={sections}
       numbered={false}

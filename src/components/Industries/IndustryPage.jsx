@@ -73,7 +73,7 @@ export default function IndustryPage({ id, banner, sections }) {
               <span className="icon-badge included-icon">
                 <Icon name={industry.icon} />
               </span>
-              <h2 className="included-title">Our services</h2>
+              <h2 className="included-title">Our Services</h2>
               <ul className="included-links">
                 {services.map((service) => (
                   <li key={service.id}>
@@ -96,7 +96,7 @@ export default function IndustryPage({ id, banner, sections }) {
       <section className="section">
         <div className="container">
           <div className="section-head-row">
-            <SectionHead eyebrow="Industries" title={<>Other industries <em>we serve</em></>} />
+            <SectionHead eyebrow="Industries" title={<>Other Industries <em>We Serve</em></>} />
             <Link className="btn btn-outline" to="/industries">
               All industries
               <Icon name="arrow" />
@@ -112,7 +112,7 @@ export default function IndustryPage({ id, banner, sections }) {
 
       <CtaSection
         soft
-        title={<>Ready to <em>get started?</em></>}
+        title={<>Ready to <em>Get Started?</em></>}
         text="Book a free, no-obligation consultation and find out how we can help."
       />
     </>

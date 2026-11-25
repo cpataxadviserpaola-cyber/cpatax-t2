@@ -90,7 +90,7 @@ const documents = [
 const sections = [
   {
     id: 'what-erisa-does',
-    title: 'What Does ERISA Do For You?',
+    title: 'What Does ERISA Do for You?',
     body: (
       <>
         <p>
@@ -147,7 +147,7 @@ const sections = [
           speaking, there are two types of pension plans: (1) defined benefit plans and (2) defined contribution plans.
         </p>
 
-        <h3>What is a Defined Benefit Plan?</h3>
+        <h3>What Is a Defined Benefit Plan?</h3>
         <p>
           A defined benefit plan, usually a traditional pension plan, promises you a specified monthly benefit at
           retirement. The plan may state this promised benefit as an exact dollar amount, such as $100 per month at
@@ -158,7 +158,7 @@ const sections = [
         </p>
         <p>The general rules of ERISA apply to defined benefit plans, and some specialized rules also apply.</p>
 
-        <h3>What is a Defined Contribution Plan?</h3>
+        <h3>What Is a Defined Contribution Plan?</h3>
         <p>
           A defined contribution plan, on the other hand, does not promise you a specific amount of benefits at
           retirement. In these plans, you or your employer (or both) contribute to your individual account under the
@@ -198,7 +198,7 @@ const sections = [
           set up an IRA to accept your employer's contributions. (Sometimes the employer does this.) Your employer can
           contribute a percentage of your pay into a SEP each year.
         </p>
-        <RelatedGuide guide={related([121, 'Employee Benefits: How To Handle Them'])}>
+        <RelatedGuide guide={related([121, 'Employee Benefits: How to Handle Them'])}>
           For tax rules and contribution limits on pension and other employee retirement plans, see the Financial Guide:
         </RelatedGuide>
         <p>
@@ -260,7 +260,7 @@ const sections = [
           <p>To learn more about your plan's assets, ask the plan administrator for a copy of the annual report in its entirety.</p>
         </Callout>
 
-        <h3>What is the Summary Plan Description?</h3>
+        <h3>What Is the Summary Plan Description?</h3>
         <p>
           One of the most important documents you are entitled to receive automatically when you become a participant of
           an ERISA-covered pension plan or a beneficiary receiving benefits under such a plan, is a summary of the plan,
@@ -280,7 +280,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>What if You Can't Obtain these Documents?</h3>
+        <h3>What If You Can't Obtain These Documents?</h3>
         <p>
           If you are unable to get the summary plan description, the summary annual report, or the annual report from the
           plan administrator, you may be able to obtain a copy by writing to the Department of Labor, PWBA, Public
@@ -365,7 +365,7 @@ const sections = [
           </li>
         </ul>
 
-        <h3>How is "Service" Measured?</h3>
+        <h3>How Is "Service" Measured?</h3>
         <p>
           ERISA has rules for how employers must measure employees' employment to determine how the eligibility, benefit
           accrual, and vesting rules apply. ERISA generally defines a year of service as 1,000 hours of service during a
@@ -381,7 +381,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>What is Benefit Accrual and How Does it Work?</h3>
+        <h3>What Is Benefit Accrual and How Does It Work?</h3>
         <p>
           When you participate in a pension plan, you accrue (earn) pension benefits. Your accrued benefit is the amount
           of benefit that has accumulated or been allocated in your name under the plan as of a particular point in time.
@@ -480,7 +480,7 @@ const sections = [
   },
   {
     id: 'leave-and-return',
-    title: 'What if You Leave Your Job and Return Later?',
+    title: 'What If You Leave Your Job and Return Later?',
     body: (
       <>
         <p>
@@ -538,7 +538,7 @@ const sections = [
   },
   {
     id: 'vesting',
-    title: 'What is Vesting and How does it Work?',
+    title: 'What Is Vesting and How Does It Work?',
     body: (
       <>
         <p>
@@ -751,7 +751,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>What is a Qualified Joint and Survivor Annuity (QJSA)?</h3>
+        <h3>What Is a Qualified Joint and Survivor Annuity (QJSA)?</h3>
         <p>
           The QJSA requirement applies to defined benefit plans and money purchase plans. ERISA says the retirement benefit
           payment must be paid in a series of equal, periodic payments over your lifetime, with a payment continuing to
@@ -769,7 +769,7 @@ const sections = [
           <li>Your spouse consents to the waiver in writing, as witnessed by a notary or plan representative.</li>
         </ul>
 
-        <h3>What is a Qualified Pre-Retirement Survivor Annuity (QPSA)?</h3>
+        <h3>What Is a Qualified Pre-Retirement Survivor Annuity (QPSA)?</h3>
         <p>
           A survivor annuity must also be offered by a defined benefit or money purchase plan if a married participant with
           a vested benefit dies before he or she begins receiving benefits. This survivor annuity is called a qualified
@@ -778,7 +778,7 @@ const sections = [
           consent to the waiver of the QPSA in writing, witnessed by a notary or plan representative.
         </p>
 
-        <h3>What Survivor Benefit Rules Apply to Defined Contribution Plans (such as 401(k) Plans)?</h3>
+        <h3>What Survivor Benefit Rules Apply to Defined Contribution Plans (Such as 401(k) Plans)?</h3>
         <p>
           Most profit sharing and stock bonus plans, e.g., 401(k) plans, generally need not offer a survivor annuity.
           However, there are different rules for such plans that protect the spouse as beneficiary.
@@ -983,7 +983,7 @@ const sections = [
   },
   {
     id: 'merger',
-    title: 'Is Your Accrued Benefit Protected if Your Plan Merges?',
+    title: 'Is Your Accrued Benefit Protected If Your Plan Merges?',
     body: (
       <>
         <p>
@@ -1070,7 +1070,7 @@ const sections = [
           prospective rights is punishable by a fine of up to $10,000 and/or up to one year in prison.
         </p>
 
-        <h3>Can Your Creditors Get to Your Pension if You Get into Financial Trouble?</h3>
+        <h3>Can Your Creditors Get to Your Pension If You Get into Financial Trouble?</h3>
         <p>
           In general, your pension benefits cannot be taken away from you by people to whom you owe money. However, the IRS
           can attach such benefits for tax claims. And the law makes a limited further exception when family support is at

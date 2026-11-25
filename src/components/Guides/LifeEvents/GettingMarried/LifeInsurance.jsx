@@ -84,7 +84,7 @@ const sections = [
           providing for a buy-out of a business interest. These will not be discussed in this guide,
           however.
         </p>
-        <RelatedGuide guide={related([73, 'Estate Planning: How To Get Started'])}>
+        <RelatedGuide guide={related([73, 'Estate Planning: How to Get Started'])}>
           Please see the Financial Guide:
         </RelatedGuide>
         <p>
@@ -95,7 +95,7 @@ const sections = [
         </p>
         <p>Here are some typical insurance situations along with typical insurance needs:</p>
 
-        <h4>Situation 1: Families or single parents with young children or other dependents</h4>
+        <h4>Situation 1: Families or Single Parents with Young Children or Other Dependents</h4>
         <p>
           The younger your children, the more insurance you need. If both spouses earn income, then
           both spouses should be insured, with insurance amounts proportionate to salary amounts. If the
@@ -107,7 +107,7 @@ const sections = [
           non-wage earner should be secondary to insurance on the life of the wage earner.
         </p>
 
-        <h4>Situation 2: Adults with no children or other dependents</h4>
+        <h4>Situation 2: Adults with No Children or Other Dependents</h4>
         <p>
           If your spouse could live comfortably without your income, then you will need less insurance
           than the people in Situation (1). However, you will still need some life insurance. At a
@@ -118,7 +118,7 @@ const sections = [
           spouse, on the amount of savings you have, and on the amount of debt you both have.
         </p>
 
-        <h4>Situation 3: Single adults with no dependents</h4>
+        <h4>Situation 3: Single Adults with No Dependents</h4>
         <p>
           You will need only enough insurance to cover burial expenses and debts unless you want to use
           insurance for estate planning purposes.
@@ -175,7 +175,7 @@ const sections = [
         </p>
         <p>Here is a line-by-line discussion of how to prepare the worksheet.</p>
 
-        <h3>Line 1: Calculate The "Annual Income Needed"</h3>
+        <h3>Line 1: Calculate the "Annual Income Needed"</h3>
         <p>
           Line 1 of the worksheet, "Annual Income Needed," is the amount that your survivors would need to
           live comfortably. It is important not to underestimate this amount. If there are recurring
@@ -225,14 +225,14 @@ const sections = [
         </Callout>
         <p>Do not include other insurance proceeds here; this will be accounted for later.</p>
 
-        <h3>Line 3: Determine The "Shortfall"</h3>
+        <h3>Line 3: Determine the "Shortfall"</h3>
         <p>
           Line 3 represents the shortfall, i.e., the amount you need your insurance proceeds to replace.
           This is determined by subtracting the "Annual Income From Other Sources" amount from the "Annual
           Income Needed."
         </p>
 
-        <h3>Line 4: Determine the "Amount Of Proceeds Needed"</h3>
+        <h3>Line 4: Determine the "Amount of Proceeds Needed"</h3>
         <p>
           Line 4 is the amount that will generate the investment income needed to make up the annual
           "Shortfall" in Line 3.
@@ -341,7 +341,7 @@ const sections = [
   },
   {
     id: 'types',
-    title: 'Types Of Insurance',
+    title: 'Types of Insurance',
     body: (
       <>
         <p>
@@ -491,7 +491,7 @@ const sections = [
   },
   {
     id: 'shopping',
-    title: 'How To Shop For Insurance',
+    title: 'How to Shop for Insurance',
     body: (
       <>
         <p>
@@ -524,7 +524,7 @@ const sections = [
   },
   {
     id: 'policy',
-    title: 'Shopping For A Policy',
+    title: 'Shopping for a Policy',
     body: (
       <>
         <p>
@@ -575,7 +575,7 @@ export default function LifeInsurance() {
       page="Life Insurance"
       title={
         <>
-          Life Insurance: <em>How Much and What Kind To Buy</em>
+          Life Insurance: <em>How Much and What Kind to Buy</em>
         </>
       }
       lead="How much life insurance do you need? What type is appropriate? You should review your life insurance needs each time you have a major life event. Here is what you need to know to properly plan for your life insurance needs to buy enough and to get the most for your money."

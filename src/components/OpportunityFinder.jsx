@@ -22,7 +22,7 @@ export default function OpportunityFinder() {
       <div className="container">
         <div className="finder-head reveal">
           <h2>
-            Where could you <em>be saving?</em>
+            Where Could You <em>Be Saving?</em>
           </h2>
           <p className="lead">
             Choose what applies to you and see what our CPAs would recommend first.

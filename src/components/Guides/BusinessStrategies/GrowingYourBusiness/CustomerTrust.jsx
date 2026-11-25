@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'customer-testimonials',
-    title: 'Use customer testimonials responsibly',
+    title: 'Use Customer Testimonials Responsibly',
     body: (
       <>
         <p>
@@ -23,7 +23,7 @@ const sections = [
   },
   {
     id: 'collect-feedback',
-    title: 'How to collect feedback',
+    title: 'How to Collect Feedback',
     body: (
       <p>
         Start by providing a strong product and service. Ask customers what they value, what distinguishes their
@@ -36,7 +36,7 @@ const sections = [
   },
   {
     id: 'review-and-use',
-    title: 'Review and use testimonials',
+    title: 'Review and Use Testimonials',
     body: (
       <p>
         Obtain the customer’s approval for the final statement and the way it will be presented. Keep records of
@@ -47,7 +47,7 @@ const sections = [
   },
   {
     id: 'customer-advisory-groups',
-    title: 'Learn from customer advisory groups',
+    title: 'Learn from Customer Advisory Groups',
     body: (
       <p>
         A customer advisory group can be another source of detailed feedback. Invite participants to describe how
@@ -65,7 +65,7 @@ export default function CustomerTrust() {
       category="business-strategies"
       topic="/guides/business-strategies/growing-your-business"
       page="Customer Trust"
-      title="How To Get Your Customers To Trust You"
+      title="How to Get Your Customers to Trust You"
       lead="Earn credibility by delivering a good customer experience and using authentic, permission-based customer feedback."
       sections={sections}
       numbered={false}

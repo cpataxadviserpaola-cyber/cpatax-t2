@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'business-or-job',
-    title: 'Do you have a business or a job?',
+    title: 'Do You Have a Business or a Job?',
     body: (
       <>
         <p>
@@ -21,7 +21,7 @@ const sections = [
   },
   {
     id: 'design-the-business',
-    title: 'Design the business you want to build',
+    title: 'Design the Business You Want to Build',
     body: (
       <>
         <p>
@@ -40,7 +40,7 @@ const sections = [
   },
   {
     id: 'build-and-delegate',
-    title: 'Test, document, and delegate the work',
+    title: 'Test, Document, and Delegate the Work',
     body: (
       <p>
         Develop procedures for each role by trying them in practice, measuring whether they work, and documenting
@@ -51,7 +51,7 @@ const sections = [
   },
   {
     id: 'values-and-judgment',
-    title: 'Let values and judgment guide the systems',
+    title: 'Let Values and Judgment Guide the Systems',
     body: (
       <>
         <p>
@@ -74,7 +74,7 @@ export default function GrowWithLessStress() {
       category="business-strategies"
       topic="/guides/business-strategies/growing-your-business"
       page="Grow Your Business With Less Stress"
-      title="How to Profitably Grow Your Business With Less Stress"
+      title="How to Profitably Grow Your Business with Less Stress"
       lead="A business owner’s role is not just to do the technical work, but to build an organization that can operate well without depending on the owner for every task."
       sections={sections}
       numbered={false}

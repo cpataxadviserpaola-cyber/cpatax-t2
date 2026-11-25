@@ -171,7 +171,7 @@ const sections = [
   },
   {
     id: 'extra-charge',
-    title: 'Extra Charge For Using A Credit Card',
+    title: 'Extra Charge for Using a Credit Card',
     body: (
       <>
         <p>Some merchants seek to impose a service fee for all credit card purchases.</p>
@@ -212,7 +212,7 @@ const sections = [
   },
   {
     id: 'id-by-check',
-    title: 'ID When Paying By Check',
+    title: 'ID When Paying by Check',
     body: (
       <>
         <p>
@@ -272,7 +272,7 @@ const sections = [
   },
   {
     id: 'other-cards',
-    title: 'Cards Other Than The "Big Three"',
+    title: 'Cards Other Than the "Big Three"',
     body: (
       <>
         <p>
@@ -290,7 +290,7 @@ const sections = [
   },
   {
     id: 'complain',
-    title: 'How To Complain',
+    title: 'How to Complain',
     body: (
       <>
         <p>When merchants violate the policies described here, report them to Visa, MasterCard, and American Express.</p>
@@ -307,7 +307,7 @@ const sections = [
   },
   {
     id: 'personal-information-states',
-    title: 'States That Prohibit Recording Of Personal Information',
+    title: 'States That Prohibit Recording of Personal Information',
     body: (
       <>
         <p>
@@ -330,7 +330,7 @@ const sections = [
   },
   {
     id: 'check-states',
-    title: 'States That Prohibit Recording A Credit Card Number On A Check',
+    title: 'States That Prohibit Recording a Credit Card Number on a Check',
     body: (
       <>
         <p>The following states prohibit merchants from recording your credit card number on your check:</p>
@@ -362,7 +362,7 @@ export default function MerchantAbuses() {
       page="Merchant Credit Card Abuses"
       title={
         <>
-          Merchant Credit Card Abuses: <em>What They Cannot Ask You To Do</em>
+          Merchant Credit Card Abuses: <em>What They Cannot Ask You to Do</em>
         </>
       }
       lead="Many merchants engraft their own rules to your use of a credit card, usually without the right to do so. What are you required to do and what can you rightfully refuse to do? The Financial Guide explains your rights."

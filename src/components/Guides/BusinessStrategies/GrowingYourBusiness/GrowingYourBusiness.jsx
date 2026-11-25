@@ -7,26 +7,26 @@ const businessGuides = guide('business-strategies.php', 11);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
       [109, 'Evaluating Your Market: A Basic Review'],
       [110, 'Pricing Your Products and Services: A Basic Review'],
-      [111, 'Developing An Advertising Program: A Basic Review'],
+      [111, 'Developing an Advertising Program: A Basic Review'],
       [112, 'Referrals: The Secret to Building a Better Business Faster'],
-      [113, 'How To Get Your Customers To Trust You'],
-      [114, 'The Nicest Way To Build Your Business'],
+      [113, 'How to Get Your Customers to Trust You'],
+      [114, 'The Nicest Way to Build Your Business'],
       [115, 'Developing a Unique Selling Proposition'],
       [116, "Uncover Your Business's Most Valuable Hidden Asset"],
-      [117, 'How to Profitably Grow Your Business With Less Stress'],
-      [122, 'Raising Capital: How To Get Money For a Small Business'],
+      [117, 'How to Profitably Grow Your Business with Less Stress'],
+      [122, 'Raising Capital: How to Get Money for a Small Business'],
     ].map(businessGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [[143, 'Marketing and Pricing: Frequently Asked Questions']].map(businessGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [['bus05', 'How many units do I need to sell to breakeven?']].map(calculator),
   },
 ];

@@ -39,7 +39,7 @@ const sections = [
   },
   {
     id: 'terms',
-    title: "Examine The Card's Terms",
+    title: "Examine the Card's Terms",
     body: (
       <>
         <p>
@@ -219,7 +219,7 @@ const sections = [
   },
   {
     id: 'balance-computations',
-    title: 'How Different Balance Computations Affect The Cost of Credit',
+    title: 'How Different Balance Computations Affect the Cost of Credit',
     body: (
       <>
         <p>
@@ -324,7 +324,7 @@ const sections = [
   },
   {
     id: 'disputes',
-    title: 'How To Dispute Improper Charges',
+    title: 'How to Dispute Improper Charges',
     body: (
       <>
         <p>
@@ -339,7 +339,7 @@ const sections = [
           more time, it may take up to 45 days, provided it credits your account with the disputed amount until the
           dispute is resolved.
         </p>
-        <RelatedGuide guide={related([29, 'Merchant Credit Card Abuses: What They Cannot Ask You To Do'])}>
+        <RelatedGuide guide={related([29, 'Merchant Credit Card Abuses: What They Cannot Ask You to Do'])}>
           For a listing of what merchants are allowed to ask, please see the Financial Guide:
         </RelatedGuide>
         <p>
@@ -352,7 +352,7 @@ const sections = [
           If you charged your purchase to a charge or credit card account, or you arranged for the payment to be
           automatically withdrawn from a bank account, send a copy of your letter to the card issuer or bank.
         </p>
-        <RelatedGuide guide={related([30, 'Your Credit Card Rights: What To Do If You Have a Problem'])}>
+        <RelatedGuide guide={related([30, 'Your Credit Card Rights: What to Do If You Have a Problem'])}>
           For a more in-depth discussion of your rights in the event of a dispute with a merchant, please see the
           Financial Guide:
         </RelatedGuide>
@@ -383,7 +383,7 @@ export default function CreditCards() {
       page="Credit Cards"
       title={
         <>
-          Credit Cards: <em>How To Choose—And Use—Them Wisely</em>
+          Credit Cards: <em>How to Choose—And Use—Them Wisely</em>
         </>
       }
       lead="Using your credit cards wisely is largely a matter of being informed—e.g., how much your card company is charging you for credit—and by following some simple tips for using the card."

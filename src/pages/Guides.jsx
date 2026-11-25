@@ -14,7 +14,7 @@ export default function Guides() {
         page="Guides"
         parents={[{ to: '/resources', label: 'Resources' }]}
         eyebrow="Guides"
-        title={<>Practical, unbiased <em>financial guides</em></>}
+        title={<>Practical, Unbiased <em>Financial Guides</em></>}
       >
         Choose any of the categories below to find practical, unbiased information to help you
         reach your financial goals.
@@ -54,7 +54,7 @@ export default function Guides() {
 
       <CtaSection
         soft
-        title={<>Want advice for <em>your situation?</em></>}
+        title={<>Want Advice for <em>Your Situation?</em></>}
         text="These guides are a good place to start. Our team can help you apply them to your own taxes and finances, in English or Spanish."
       />
     </>

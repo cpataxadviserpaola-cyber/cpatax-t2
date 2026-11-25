@@ -52,8 +52,8 @@ const sections = [
   {
     title: 'Asset Transactions',
     columns: [
-      { title: 'Purchase price', ...money },
-      { title: 'Sales price', ...money },
+      { title: 'Purchase Price', ...money },
+      { title: 'Sales Price', ...money },
     ],
     rows: Array.from({ length: transactionCount }, (_, index) => ({
       label: `Asset Transaction #${index + 1}`,
@@ -210,7 +210,7 @@ export default function CapitalGainsTax() {
       cta={{
         title: (
           <>
-            Selling an <em>investment?</em>
+            Selling an <em>Investment?</em>
           </>
         ),
         text: 'Our team can help you time your sales and use your losses for the lowest tax, in English or Spanish.',

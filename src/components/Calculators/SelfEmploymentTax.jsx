@@ -164,7 +164,7 @@ export default function SelfEmploymentTax() {
       cta={{
         title: (
           <>
-            Working <em>for yourself?</em>
+            Working <em>for Yourself?</em>
           </>
         ),
         text: 'Our team can help you plan your estimated payments and lower your self-employment tax, in English or Spanish.',

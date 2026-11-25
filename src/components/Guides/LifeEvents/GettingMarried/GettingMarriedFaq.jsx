@@ -7,7 +7,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'legal-rights',
-    title: 'How can marriage affect a couple’s legal rights?',
+    title: 'How Can Marriage Affect a Couple’s Legal Rights?',
     body: (
       <p>
         Marriage can affect inheritance, decision-making, and ownership rights, but the details depend
@@ -20,7 +20,7 @@ const sections = [
   },
   {
     id: 'planning',
-    title: 'What planning steps should unmarried partners consider?',
+    title: 'What Planning Steps Should Unmarried Partners Consider?',
     body: (
       <>
         <p>
@@ -42,7 +42,7 @@ const sections = [
   },
   {
     id: 'life-insurance',
-    title: 'Do married couples need life insurance?',
+    title: 'Do Married Couples Need Life Insurance?',
     body: (
       <>
         <p>
@@ -51,7 +51,7 @@ const sections = [
           future costs such as child care or education. Estimate the gap the policy would need to
           cover, and review coverage when family or financial circumstances change.
         </p>
-        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind To Buy'])}>
+        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind to Buy'])}>
           For a more detailed discussion, see:
         </RelatedGuide>
       </>
@@ -59,7 +59,7 @@ const sections = [
   },
   {
     id: 'name-change',
-    title: 'Who should be notified after a name change?',
+    title: 'Who Should Be Notified After a Name Change?',
     body: (
       <>
         <p>
@@ -84,7 +84,7 @@ const sections = [
   },
   {
     id: 'will',
-    title: 'Should you update your will after getting married?',
+    title: 'Should You Update Your Will After Getting Married?',
     body: (
       <p>
         Review your will and broader estate plan after marriage. A life change may affect who you
@@ -96,7 +96,7 @@ const sections = [
   },
   {
     id: 'taxes',
-    title: 'What tax questions should couples consider?',
+    title: 'What Tax Questions Should Couples Consider?',
     body: (
       <>
         <p>
@@ -116,7 +116,7 @@ const sections = [
   },
   {
     id: 'property',
-    title: 'How can married couples own property?',
+    title: 'How Can Married Couples Own Property?',
     body: (
       <p>
         Property may be held by one person or jointly, and joint ownership can include different

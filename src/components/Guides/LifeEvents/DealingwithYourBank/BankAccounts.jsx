@@ -81,7 +81,7 @@ const agencies = [
 const sections = [
   {
     id: 'comparing-types-of-accounts',
-    title: 'Comparing Types Of Accounts',
+    title: 'Comparing Types of Accounts',
     body: (
       <>
         <p>The accounts offered by depository institutions generally fall within one of these types:</p>
@@ -226,7 +226,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>Summary Of Features</h3>
+        <h3>Summary of Features</h3>
         <p>The table below summarizes the available account types and their features:</p>
         <ArticleTable label="Summary of account features" wide>
           <thead>
@@ -300,7 +300,7 @@ const sections = [
   },
   {
     id: 'choosing-an-account',
-    title: 'Choosing An Account',
+    title: 'Choosing an Account',
     body: (
       <>
         <p>
@@ -474,7 +474,7 @@ const sections = [
   },
   {
     id: 'getting-a-better-deal',
-    title: 'Getting A Better Deal',
+    title: 'Getting a Better Deal',
     body: (
       <>
         <p>
@@ -541,7 +541,7 @@ const sections = [
           this protection. Don't neglect to inquire about this service if it would suit your situation.
         </p>
 
-        <h3>Truth In Savings</h3>
+        <h3>Truth in Savings</h3>
         <p>
           The Truth in Savings Act, a federal law, requires depository institutions to disclose to you the important terms
           of their consumer deposit accounts. Institutions must tell you:
@@ -642,7 +642,7 @@ const sections = [
           protections.
         </p>
 
-        <h3>What Record Will I Have Of My Transactions?</h3>
+        <h3>What Record Will I Have of My Transactions?</h3>
         <p>A canceled check is permanent proof that a payment has been made. Is proof of payment available with EFT services?</p>
         <p>
           The answer is yes. If you use an ATM to withdraw money or make deposits, or a point-of-sale terminal to pay for a
@@ -661,7 +661,7 @@ const sections = [
           of checking and reconciling EFT transactions with your bank balance.
         </p>
 
-        <h3>What About Loss Or Theft?</h3>
+        <h3>What About Loss or Theft?</h3>
         <p>
           It's important to be aware of the potential risk in using an EFT card, specifically, that the risks differ from
           those involved with credit cards. On lost or stolen credit cards, your loss is limited to $50 per card. On an EFT
@@ -730,7 +730,7 @@ const sections = [
           unwanted card.
         </p>
 
-        <h3>Do I Have To Use EFT?</h3>
+        <h3>Do I Have to Use EFT?</h3>
         <p>
           The EFT Act forbids a creditor from requiring you to repay a loan or other credit by EFT, except in the case of
           overdraft checking plans.
@@ -749,7 +749,7 @@ const sections = [
       <>
         <p>Here are some frequently asked questions about pre-authorized plans:</p>
 
-        <h3>How will I know a pre-authorized credit has been made?</h3>
+        <h3>How Will I Know a Pre-Authorized Credit Has Been Made?</h3>
         <p>
           There are various ways you may be notified. Notice may be given by your employer (or whoever is sending the funds)
           that the deposit has been sent to your financial institution. Otherwise, a financial institution may provide notice
@@ -757,14 +757,14 @@ const sections = [
           institutions also have the option of giving you a telephone number you can call to check on a pre-authorized credit.
         </p>
 
-        <h3>How do I stop a pre-authorized payment?</h3>
+        <h3>How Do I Stop a Pre-Authorized Payment?</h3>
         <p>
           You may stop any pre-authorized payment by calling or writing the financial institution so that your order is
           received at least three business days before the payment date. Written confirmation of a telephone notice to stop
           payment may be required.
         </p>
 
-        <h3>If the payments I pre-authorize vary in amount from month to month, how will I know how much will be transferred out of my account?</h3>
+        <h3>If the Payments I Pre-Authorize Vary in Amount from Month to Month, How Will I Know How Much Will Be Transferred Out of My Account?</h3>
         <p>You have the right to be notified of all varying payments at least 10 days in advance.</p>
         <p>
           Or, you may choose to specify a range of amounts and to be told only when a transfer falls outside that range. You
@@ -772,7 +772,7 @@ const sections = [
           company.
         </p>
 
-        <h3>Do the EFT Act protections apply to all pre-authorized plans?</h3>
+        <h3>Do the EFT Act Protections Apply to All Pre-Authorized Plans?</h3>
         <p>
           No. They do not apply to automatic transfers from your account to the institution that holds your account or vice
           versa. For example, they do not apply to automatic payments made on a mortgage held by the financial institution
@@ -839,7 +839,7 @@ export default function BankAccounts() {
       category="life-events"
       topic="/guides/life-events/dealing-with-your-bank"
       page="Bank Accounts"
-      title={<>Bank Accounts: <em>What To Look and Ask For</em></>}
+      title={<>Bank Accounts: <em>What to Look and Ask For</em></>}
       lead="What type of account should you keep your money in at a bank or savings and loan association? How can you find the account that will charge you the least amount of money for the services you need? This Financial Guide helps you choose the most cost-effective type of account."
       sections={sections}
     >

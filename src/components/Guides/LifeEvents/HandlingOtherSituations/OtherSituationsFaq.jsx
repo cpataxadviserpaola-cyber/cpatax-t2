@@ -12,7 +12,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'consumer-complaint',
-    title: 'How Can I Resolve A Consumer Complaint?',
+    title: 'How Can I Resolve a Consumer Complaint?',
     body: (
       <>
         <p>
@@ -126,7 +126,7 @@ const sections = [
   },
   {
     id: 'insurance-costs',
-    title: 'How Can I Save On My Insurance Costs?',
+    title: 'How Can I Save on My Insurance Costs?',
     body: (
       <>
         <p>Here are some ways to save on insurance of all types:</p>
@@ -183,7 +183,7 @@ const sections = [
   },
   {
     id: 'phone-bill',
-    title: 'How Can I Reduce The Cost Of My Phone Bill?',
+    title: 'How Can I Reduce the Cost of My Phone Bill?',
     body: (
       <>
         <p>
@@ -203,7 +203,7 @@ const sections = [
   },
   {
     id: 'mortgage-cost',
-    title: 'How Can I Reduce The Cost Of My Mortgage?',
+    title: 'How Can I Reduce the Cost of My Mortgage?',
     body: (
       <>
         <p>Consider the following options to help you reduce the cost of your mortgage:</p>

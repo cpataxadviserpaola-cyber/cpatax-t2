@@ -3,7 +3,7 @@ import GuideArticle from '../../../GuideArticle.jsx';
 const sections = [
   {
     id: 'what-is-cash-flow',
-    title: 'What is cash flow?',
+    title: 'What Is Cash Flow?',
     body: (
       <p>
         Cash flow is money moving into and out of a business. Customer receipts—cash sales and collections on
@@ -15,7 +15,7 @@ const sections = [
   },
   {
     id: 'cash-flow-and-profit',
-    title: 'Cash flow versus profit',
+    title: 'Cash Flow Versus Profit',
     body: (
       <p>
         Profit measures income less expenses over a period; cash flow tracks when money is actually received and paid.
@@ -26,7 +26,7 @@ const sections = [
   },
   {
     id: 'analyze-cash-flow',
-    title: 'Analyzing your cash flow',
+    title: 'Analyzing Your Cash Flow',
     body: (
       <>
         <p>Review the timing and management of the main components that affect cash:</p>
@@ -52,7 +52,7 @@ const sections = [
   },
   {
     id: 'manage-cash-flow',
-    title: 'Managing cash-flow gaps',
+    title: 'Managing Cash-Flow Gaps',
     body: (
       <p>
         Some gaps result from deliberate choices, such as buying extra stock for a discount or investing in expansion;

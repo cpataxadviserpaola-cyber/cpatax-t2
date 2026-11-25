@@ -13,7 +13,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'prepare-financially',
-    title: 'How do I prepare financially for divorce?',
+    title: 'How Do I Prepare Financially for Divorce?',
     body: (
       <>
         <p>
@@ -66,7 +66,7 @@ const sections = [
   },
   {
     id: 'credit-card-accounts',
-    title: 'How should we handle credit card accounts during a divorce?',
+    title: 'How Should We Handle Credit Card Accounts During a Divorce?',
     body: (
       <>
         <p>
@@ -91,7 +91,7 @@ const sections = [
   },
   {
     id: 'spouses-poor-credit',
-    title: "What do I do if my current or former spouse's poor credit affects me?",
+    title: "What Do I Do If My Current or Former Spouse's Poor Credit Affects Me?",
     body: (
       <>
         <p>
@@ -110,7 +110,7 @@ const sections = [
   },
   {
     id: 'credit-history',
-    title: 'What happens to my credit history after a divorce?',
+    title: 'What Happens to My Credit History After a Divorce?',
     body: (
       <>
         <p>
@@ -142,7 +142,7 @@ const sections = [
   },
   {
     id: 'legal-issues',
-    title: 'What are the legal issues that must be faced in most divorces?',
+    title: 'What Are the Legal Issues That Must Be Faced in Most Divorces?',
     body: (
       <>
         <p>
@@ -181,7 +181,7 @@ const sections = [
   },
   {
     id: 'property-division',
-    title: 'How does property get divided in a divorce?',
+    title: 'How Does Property Get Divided in a Divorce?',
     body: (
       <>
         <p>
@@ -210,7 +210,7 @@ const sections = [
   },
   {
     id: 'tax-implications',
-    title: 'What are the tax implications of divorce?',
+    title: 'What Are the Tax Implications of Divorce?',
     body: (
       <>
         <p>
@@ -254,7 +254,7 @@ const sections = [
   },
   {
     id: 'retirement-plans',
-    title: 'What happens when retirement plans or IRAs are divided up in a divorce?',
+    title: 'What Happens When Retirement Plans or IRAs Are Divided Up in a Divorce?',
     body: (
       <p>
         Generally, when these plans are split up there is no taxable event if pursuant to a qualified domestic relations
@@ -266,7 +266,7 @@ const sections = [
   },
   {
     id: 'cost-of-divorce',
-    title: 'Can I deduct the cost of getting a divorce?',
+    title: 'Can I Deduct the Cost of Getting a Divorce?',
     body: (
       <>
         <p>
@@ -285,7 +285,7 @@ const sections = [
   },
   {
     id: 'dependency-exemption',
-    title: 'Who is entitled to deduct the dependency exemption of a child after divorce?',
+    title: 'Who Is Entitled to Deduct the Dependency Exemption of a Child After Divorce?',
     body: (
       <>
         <p>

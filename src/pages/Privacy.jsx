@@ -8,11 +8,11 @@ export default function Privacy() {
   return (
     <LegalPage
       page="Privacy Policy"
-      title={<>Privacy <em>policy</em></>}
+      title={<>Privacy <em>Policy</em></>}
       lead="Here is our Privacy Policy required by the Gramm-Leach-Bliley Act of 1999."
       question="If you have any questions about this policy, please do not hesitate to contact us."
     >
-      <h2>Information we collect</h2>
+      <h2>Information We Collect</h2>
       <p>We collect nonpublic personal information about you from the following sources:</p>
       <ul>
         <li>Information we receive from you on applications, tax organizers, worksheets and other documents;</li>
@@ -20,7 +20,7 @@ export default function Privacy() {
         <li>Information we receive from a consumer-reporting agency.</li>
       </ul>
 
-      <h2>What we share</h2>
+      <h2>What We Share</h2>
       <p>
         <strong>
           We do not disclose any nonpublic personal information about our clients or former
@@ -28,7 +28,7 @@ export default function Privacy() {
         </strong>
       </p>
 
-      <h2>How we protect it</h2>
+      <h2>How We Protect It</h2>
       <p>
         We restrict access to nonpublic personal information about you to those members of our
         firm who need to know that information to provide services to you. We maintain physical,

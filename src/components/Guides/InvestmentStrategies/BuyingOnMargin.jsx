@@ -3,7 +3,7 @@ import GuideArticle, { Callout } from '../GuideArticle.jsx';
 const sections = [
   {
     id: 'how-margin-works',
-    title: 'How buying on margin works',
+    title: 'How Buying on Margin Works',
     body: (
       <>
         <p>
@@ -29,7 +29,7 @@ const sections = [
   },
   {
     id: 'risks',
-    title: 'Understand the risks',
+    title: 'Understand the Risks',
     body: (
       <>
         <p>Before opening a margin account, understand that:</p>
@@ -54,7 +54,7 @@ const sections = [
   },
   {
     id: 'agreement',
-    title: 'Read the margin agreement',
+    title: 'Read the Margin Agreement',
     body: (
       <>
         <p>
@@ -72,7 +72,7 @@ const sections = [
   },
   {
     id: 'margin-rules',
-    title: 'Know the margin requirements',
+    title: 'Know the Margin Requirements',
     body: (
       <>
         <p>
@@ -99,7 +99,7 @@ const sections = [
   },
   {
     id: 'margin-calls',
-    title: 'Respond to margin calls',
+    title: 'Respond to Margin Calls',
     body: (
       <>
         <p>
@@ -125,7 +125,7 @@ export default function BuyingOnMargin() {
       category="investment-strategies"
       topic="/guides/life-events/getting-married/investment-basics"
       page="Buying On Margin"
-      title="Buying On Margin: How It Works and What To Watch Out For"
+      title="Buying on Margin: How It Works and What to Watch Out For"
       lead="Buying on margin means borrowing from a brokerage firm to purchase securities. It can increase gains, but it can also magnify losses, trigger demands for more collateral, and lead to forced sales."
       sections={sections}
     />

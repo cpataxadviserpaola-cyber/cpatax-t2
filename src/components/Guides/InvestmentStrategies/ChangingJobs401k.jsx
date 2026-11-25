@@ -11,7 +11,7 @@ import GuideArticle, { Callout } from '../GuideArticle.jsx';
 const sections = [
   {
     id: 'alternatives',
-    title: 'What are the Alternatives?',
+    title: 'What Are the Alternatives?',
     body: (
       <>
         <p>

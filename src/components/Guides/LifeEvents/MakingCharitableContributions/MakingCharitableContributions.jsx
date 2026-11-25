@@ -8,17 +8,17 @@ const charityGuides = guide('life-events.php', 19);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [75, 'Charitable Contributions: How To Give Wisely'],
+      [75, 'Charitable Contributions: How to Give Wisely'],
       [76, 'Charitable Contributions of Property: Maximizing the Deduction'],
-      [77, 'What Records You Must Keep Relating To Your Charitable Contributions'],
+      [77, 'What Records You Must Keep Relating to Your Charitable Contributions'],
       [78, 'Advanced Charity Techniques: Maximizing Your Deduction'],
-      [79, 'Fraudulent Charities: How To Protect Yourself'],
+      [79, 'Fraudulent Charities: How to Protect Yourself'],
     ].map(charityGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [39, 'Charitable Contributions: Frequently Asked Questions'],
       [40, 'Charitable Deductions: Frequently Asked Questions'],

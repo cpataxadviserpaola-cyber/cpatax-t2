@@ -7,17 +7,17 @@ const estateGuides = guide('life-events.php', 18);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [73, 'Estate Planning: How To Get Started'],
+      [73, 'Estate Planning: How to Get Started'],
       [74, 'Postmortem Letter: How To Prepare It and What To Include'],
-      [58, 'Retirement Plan Distributions: When To Take Them'],
-      [59, 'Retirement Plan Distributions: How To Take Them'],
-      [60, 'Roth IRAs: How They Work and How To Use Them'],
+      [58, 'Retirement Plan Distributions: When to Take Them'],
+      [59, 'Retirement Plan Distributions: How to Take Them'],
+      [60, 'Roth IRAs: How They Work and How to Use Them'],
     ].map(estateGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [41, 'Living Trusts: Frequently Asked Questions'],
       [28, 'Wills: Frequently Asked Questions'],
@@ -25,7 +25,7 @@ const groups = [
     ].map(estateGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [['inc01', 'What Is My Potential Estate Tax Liability?']].map(calculator),
   },
 ];

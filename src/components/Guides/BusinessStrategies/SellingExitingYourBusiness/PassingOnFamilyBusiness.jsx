@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'succession-is-broader',
-    title: 'Succession involves more than choosing a successor',
+    title: 'Succession Involves More Than Choosing a Successor',
     body: (
       <p>
         Identifying, developing, and installing the next chief executive is only one part of a family-business
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'balance-family-business',
-    title: 'Balance family and business considerations',
+    title: 'Balance Family and Business Considerations',
     body: (
       <p>
         A transition brings together strategic, operational, financial, legal, estate, cultural, and personal
@@ -26,7 +26,7 @@ const sections = [
   },
   {
     id: 'plan-across-areas',
-    title: 'Plan across the whole enterprise',
+    title: 'Plan Across the Whole Enterprise',
     body: (
       <p>
         The source calls attention to planning areas that may be neglected when succession is treated too narrowly:
@@ -38,7 +38,7 @@ const sections = [
   },
   {
     id: 'start-early',
-    title: 'Start planning early and involve key people',
+    title: 'Start Planning Early and Involve Key People',
     body: (
       <p>
         Begin while there is time to work through complex changes in personal, family, and business finances. Include
@@ -56,7 +56,7 @@ export default function PassingOnFamilyBusiness() {
       category="business-strategies"
       topic="/guides/business-strategies/selling-exiting-your-business"
       page="Passing On a Family Business"
-      title="Successfully Pass On Your Family Business To Next Generation"
+      title="Successfully Pass On Your Family Business to Next Generation"
       lead="A successful family-business transition involves the family, executives, advisers, business strategy, governance, and finances—not just selecting a successor."
       sections={sections}
       numbered={false}

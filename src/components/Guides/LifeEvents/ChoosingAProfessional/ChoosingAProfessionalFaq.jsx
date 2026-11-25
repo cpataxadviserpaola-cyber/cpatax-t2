@@ -10,7 +10,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'when-to-hire',
-    title: 'When should I hire a lawyer?',
+    title: 'When Should I Hire a Lawyer?',
     body: (
       <>
         <p>
@@ -45,7 +45,7 @@ const sections = [
   },
   {
     id: 'handle-dispute-on-your-own',
-    title: 'How would I handle a dispute on my own?',
+    title: 'How Would I Handle a Dispute on My Own?',
     body: (
       <>
         <p>
@@ -100,7 +100,7 @@ const sections = [
   },
   {
     id: 'find-a-good-lawyer',
-    title: 'How do I find a good lawyer?',
+    title: 'How Do I Find a Good Lawyer?',
     body: (
       <>
         <p>
@@ -139,7 +139,7 @@ const sections = [
   },
   {
     id: 'questions-to-ask',
-    title: 'What questions should I ask?',
+    title: 'What Questions Should I Ask?',
     body: (
       <>
         <p>Before committing yourself to a consultation, ask potential candidates the following questions:</p>
@@ -178,7 +178,7 @@ const sections = [
   },
   {
     id: 'legal-fee-arrangements',
-    title: 'What legal fee arrangements are best for me?',
+    title: 'What Legal Fee Arrangements Are Best for Me?',
     body: (
       <>
         <p>
@@ -248,7 +248,7 @@ const sections = [
   },
   {
     id: 'save-money-on-legal-fees',
-    title: 'How can I save money on legal fees?',
+    title: 'How Can I Save Money on Legal Fees?',
     body: (
       <>
         <p>

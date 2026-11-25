@@ -306,7 +306,7 @@ const sections = [
   },
   {
     id: 'tip-6',
-    title: 'Tip #6: Factor Re-invested Dividends & Capital Gain Distributions into Your Calculations',
+    title: 'Tip #6: Factor Re-Invested Dividends & Capital Gain Distributions into Your Calculations',
     body: (
       <>
         <p>
@@ -668,7 +668,7 @@ export default function MutualFundTaxation() {
       page="Mutual Fund Taxation"
       title={
         <>
-          Mutual Fund Taxation: <em>How To Cut The Tax Bite</em>
+          Mutual Fund Taxation: <em>How to Cut the Tax Bite</em>
         </>
       }
       lead="How are distributions from mutual funds taxed? What happens when they are reinvested? How are capital gains on sales of mutual funds determined? This Financial Guide provides you with tips on reducing the tax on mutual fund activities."

@@ -46,7 +46,7 @@ const sections = [
             <em>Budget your expenses.</em> Create a spending plan that allows you to reduce your debts. Itemize your
             necessary expenses (such as housing and healthcare) and optional expenses (such as entertainment and vacation
             travel). Stick to the plan.
-            <RelatedGuide guide={related([11, 'Budgeting: How To Prepare a Workable Plan'])}>
+            <RelatedGuide guide={related([11, 'Budgeting: How to Prepare a Workable Plan'])}>
               For some guidance in this regard, please see the Financial Guide:
             </RelatedGuide>
             <Callout label="Tip">
@@ -91,7 +91,7 @@ const sections = [
             <em>Prepare a financial plan.</em> A financial plan can alleviate financial worries about the future and
             ensure that you will meet your financial goals whether they relate to retirement, asset acquisition,
             education, or just vacations.
-            <RelatedGuide guide={related([10, 'Your Financial Plan: Getting Started On a Secure Future'])}>
+            <RelatedGuide guide={related([10, 'Your Financial Plan: Getting Started on a Secure Future'])}>
               For guidance on how to begin the financial planning process, please see the Financial Guide:
             </RelatedGuide>
           </li>
@@ -180,7 +180,7 @@ const sections = [
             recommendations from people you know and trust, and from employee assistance programs.
           </p>
         </Callout>
-        <RelatedGuide guide={related([36, 'Lawyers: How To Choose The Right One'])}>
+        <RelatedGuide guide={related([36, 'Lawyers: How to Choose the Right One'])}>
           For information on making sure you pick the right lawyer, please see the Financial Guide:
         </RelatedGuide>
         <p>
@@ -193,7 +193,7 @@ const sections = [
   },
   {
     id: 'scams',
-    title: 'Scams And Pitfalls',
+    title: 'Scams and Pitfalls',
     body: (
       <>
         <p>
@@ -216,7 +216,7 @@ const sections = [
         </Callout>
         <p>Here are some common promises made by credit clinics and the reasons consumers should beware of such claims:</p>
 
-        <h3>"Based on little-known loopholes in Federal credit laws, we can show you how to clean up your credit report!"</h3>
+        <h3>"Based on Little-Known Loopholes in Federal Credit Laws, We Can Show You How to Clean Up Your Credit Report!"</h3>
         <p>
           These "loopholes" are merely the provisions of the Fair Credit Reporting Act (FCRA), under which you have the
           right to challenge information in your credit report you believe incorrect. We discussed these provisions
@@ -230,7 +230,7 @@ const sections = [
           "frivolous" disputes of file information and to refuse to respond to repeated disputes of the same data.
         </p>
 
-        <h3>"We can show you how to remove negative information from your file—including judgments."</h3>
+        <h3>"We Can Show You How to Remove Negative Information from Your File—including Judgments."</h3>
         <p>
           Some clinics tell consumers to pay off any bills outstanding with the creditor in exchange for the removal of
           negative information. Or, they may tell a consumer who has an account in collections to pay part of the balance
@@ -240,7 +240,7 @@ const sections = [
           wasted.
         </p>
 
-        <h3>"We can get you a major credit card—even if you've been through bankruptcy!"</h3>
+        <h3>"We Can Get You a Major Credit Card—even If You've Been Through Bankruptcy!"</h3>
         <p>
           What you are not told is that you will have to "secure" the card first. Most credit cards are unsecured; that
           is, you are not pledging any of your assets as collateral for any credit you may use. A card is secured when a

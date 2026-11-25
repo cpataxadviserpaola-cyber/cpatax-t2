@@ -31,7 +31,7 @@ const sections = [
           premium is.
         </p>
 
-        <h3>When are Benefits Paid?</h3>
+        <h3>When Are Benefits Paid?</h3>
         <p>
           To receive benefits, you must usually suffer serious cognitive impairment or be unable to
           perform several "activities of daily living" independently. Long-term care insurance
@@ -117,7 +117,7 @@ const sections = [
   },
   {
     id: 'pros-and-cons',
-    title: 'The Pros And Cons',
+    title: 'The Pros and Cons',
     body: (
       <>
         <p>
@@ -145,7 +145,7 @@ const sections = [
           </li>
         </ul>
 
-        <h3>Reasons against Buying LTCI</h3>
+        <h3>Reasons Against Buying LTCI</h3>
         <ul>
           <li>
             You cannot afford the premiums or don't have enough assets to protect. The National
@@ -322,7 +322,7 @@ const sections = [
             years of age in 2023, you can deduct up to $4,770 (up from $4,510 in 2022).
           </p>
         </Callout>
-        <RelatedGuide guide={related([49, "Disability Benefits: How To Get All You're Entitled To"])}>
+        <RelatedGuide guide={related([49, "Disability Benefits: How to Get All You're Entitled To"])}>
           Consider the possibility of receiving benefits under a disability policy, please see the
           Financial Guide
         </RelatedGuide>
@@ -331,7 +331,7 @@ const sections = [
   },
   {
     id: 'select-an-insurer',
-    title: 'How To Select An Insurer',
+    title: 'How to Select an Insurer',
     body: (
       <>
         <p>
@@ -366,7 +366,7 @@ const sections = [
   },
   {
     id: 'what-to-look-for',
-    title: 'What To Look For In A Policy',
+    title: 'What to Look For in a Policy',
     body: (
       <>
         <p>
@@ -438,7 +438,7 @@ export default function LongTermCareInsurance() {
       page="Long-Term Care Insurance"
       title={
         <>
-          Long-Term Care Insurance: <em>How To Get The Best Deal</em>
+          Long-Term Care Insurance: <em>How to Get the Best Deal</em>
         </>
       }
       lead="Many people are concerned about the cost of long-term care for themselves or a family member. As the result of a prolonged illness, disability, or injury, older individuals may need long-term care when they can no longer do the ordinary tasks of everyday living or when their health requires constant day-to-day monitoring. Here are the facts you need to decide whether to purchase long-term care insurance and to choose the most cost-effective method of providing for the possibility of long-term care."

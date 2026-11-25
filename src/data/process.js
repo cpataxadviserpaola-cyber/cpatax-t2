@@ -2,12 +2,12 @@
 
 // How a new client gets started (Home page and About > How We Work).
 export const workSteps = [
-  { icon: 'calendar', title: 'Schedule a consultation', text: 'Book a convenient time online or give us a call to discuss your needs, goals, and important deadlines.' },
-  { icon: 'lock', title: 'Share your documents', text: 'Securely upload your tax forms and financial records through our client portal—no printing or scanning required.' },
-  { icon: 'file-check', title: 'We prepare & review', text: 'Our team prepares your tax return or financial documents and carefully reviews everything for accuracy, compliance, and potential savings.' },
+  { icon: 'calendar', title: 'Schedule a Consultation', text: 'Book a convenient time online or give us a call to discuss your needs, goals, and important deadlines.' },
+  { icon: 'lock', title: 'Share Your Documents', text: 'Securely upload your tax forms and financial records through our client portal—no printing or scanning required.' },
+  { icon: 'file-check', title: 'We Prepare & Review', text: 'Our team prepares your tax return or financial documents and carefully reviews everything for accuracy, compliance, and potential savings.' },
   {
     icon: 'trend',
-    title: 'File & plan ahead',
+    title: 'File & Plan Ahead',
     points: [
       'Electronic Filing: We handle electronic filing to ensure accurate and timely submission of your documents.',
       'Strategic Planning: We provide guidance and help you plan effective strategies for the year ahead.',
@@ -49,8 +49,8 @@ export const taxSeasonSteps = [
 
 // Getting around the client portal (Tax Season > Client Portal > Tutorial).
 export const portalSteps = [
-  { icon: 'user', title: 'Log in', text: 'Sign in to the client portal with the credentials from your invitation email.' },
-  { icon: 'file', title: 'Upload documents', text: 'Add your tax forms and records securely, no printing or scanning required.' },
-  { icon: 'file-check', title: 'Review and sign', text: 'Review engagement letters and returns, and sign them electronically.' },
-  { icon: 'chat', title: 'Message our team', text: 'Ask questions and receive updates in one secure place.' },
+  { icon: 'user', title: 'Log In', text: 'Sign in to the client portal with the credentials from your invitation email.' },
+  { icon: 'file', title: 'Upload Documents', text: 'Add your tax forms and records securely, no printing or scanning required.' },
+  { icon: 'file-check', title: 'Review and Sign', text: 'Review engagement letters and returns, and sign them electronically.' },
+  { icon: 'chat', title: 'Message Our Team', text: 'Ask questions and receive updates in one secure place.' },
 ];

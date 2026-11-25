@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'price',
-    title: 'How should I choose an asking price?',
+    title: 'How Should I Choose an Asking Price?',
     body: (
       <p>
         Consider recent sales of similar homes, the property’s condition, current competition, and local market
@@ -15,7 +15,7 @@ const sections = [
   },
   {
     id: 'prepare',
-    title: 'What should I do to prepare my home for sale?',
+    title: 'What Should I Do to Prepare My Home for Sale?',
     body: (
       <p>
         Address safety and maintenance concerns, remove clutter, and make the home easy for buyers to view. Before
@@ -26,7 +26,7 @@ const sections = [
   },
   {
     id: 'disclosures',
-    title: 'Do I have to disclose problems with the property?',
+    title: 'Do I Have to Disclose Problems with the Property?',
     body: (
       <p>
         Seller disclosure requirements depend on state and local law and the details of the transaction. Do not
@@ -37,7 +37,7 @@ const sections = [
   },
   {
     id: 'offers',
-    title: 'How should I compare offers?',
+    title: 'How Should I Compare Offers?',
     body: (
       <p>
         Compare more than the proposed price. Consider financing, appraisal and inspection terms, requested
@@ -48,7 +48,7 @@ const sections = [
   },
   {
     id: 'taxes',
-    title: 'Could selling my home affect my taxes?',
+    title: 'Could Selling My Home Affect My Taxes?',
     body: (
       <p>
         It can. A gain or loss is generally determined using the sale proceeds and your adjusted tax basis, and

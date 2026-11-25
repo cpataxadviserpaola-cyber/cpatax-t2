@@ -16,7 +16,7 @@ export const defaultSituations = ['self-employed', 'homeowner'];
 
 export const opportunities = [
   {
-    title: 'Home office deduction',
+    title: 'Home Office Deduction',
     text: 'If part of your home is used regularly and exclusively for your business, a share of your home costs may be deductible.',
     for: ['self-employed', 'business'],
   },
@@ -26,32 +26,32 @@ export const opportunities = [
     for: ['self-employed', 'business'],
   },
   {
-    title: 'Qualified business income deduction',
+    title: 'Qualified Business Income Deduction',
     text: 'Many owners of pass-through businesses can deduct up to 20% of their qualified business income.',
     for: ['self-employed', 'business'],
   },
   {
-    title: 'Quarterly estimated payments',
+    title: 'Quarterly Estimated Payments',
     text: 'Paying the right amount each quarter helps you avoid underpayment penalties and a large bill in April.',
     for: ['self-employed', 'business', 'investor', 'rental'],
   },
   {
-    title: 'Equipment and vehicle write-offs',
+    title: 'Equipment and Vehicle Write-Offs',
     text: 'Depreciation rules may let you deduct much of the cost of qualifying equipment in the year it goes into service.',
     for: ['business', 'self-employed'],
   },
   {
-    title: 'Entity structure review',
+    title: 'Entity Structure Review',
     text: 'Comparing LLC, S corporation, and C corporation treatment can reveal meaningful savings as you grow.',
     for: ['business'],
   },
   {
-    title: 'Mortgage interest and property taxes',
+    title: 'Mortgage Interest and Property Taxes',
     text: 'If you itemize, mortgage interest and state and local taxes can be deductible, within annual limits.',
     for: ['homeowner'],
   },
   {
-    title: 'Home sale exclusion',
+    title: 'Home Sale Exclusion',
     text: 'Up to $250,000 of gain on your main home, or $500,000 for married couples, can be tax-free if you qualify.',
     for: ['homeowner'],
   },
@@ -61,62 +61,62 @@ export const opportunities = [
     for: ['children'],
   },
   {
-    title: 'Child and dependent care credit',
+    title: 'Child and Dependent Care Credit',
     text: 'Daycare and after-school care costs that allow you to work can earn a credit.',
     for: ['children'],
   },
   {
-    title: '529 education savings',
+    title: '529 Education Savings',
     text: 'Earnings grow tax-free for qualified education costs, and many states offer a deduction for contributions.',
     for: ['children'],
   },
   {
-    title: 'Tax-loss harvesting',
+    title: 'Tax-Loss Harvesting',
     text: 'Selling investments at a loss can offset gains and up to $3,000 of other income each year.',
     for: ['investor'],
   },
   {
-    title: 'Long-term gain timing',
+    title: 'Long-Term Gain Timing',
     text: 'Holding investments for more than a year can qualify gains for lower long-term rates.',
     for: ['investor'],
   },
   {
-    title: 'Rental depreciation',
+    title: 'Rental Depreciation',
     text: 'Deducting the cost of a rental building over time can significantly reduce taxable rental income.',
     for: ['rental'],
   },
   {
-    title: '1031 exchange',
+    title: '1031 Exchange',
     text: 'Reinvesting sale proceeds into a like-kind property can defer tax on the gain.',
     for: ['rental'],
   },
   {
-    title: 'Roth conversion timing',
+    title: 'Roth Conversion Timing',
     text: 'Converting part of a traditional IRA in a lower-income year may reduce taxes over your lifetime.',
     for: ['retirement'],
   },
   {
-    title: 'Required minimum distribution planning',
+    title: 'Required Minimum Distribution Planning',
     text: 'Planning withdrawals before required distributions begin can help keep you in a lower bracket.',
     for: ['retirement'],
   },
   {
-    title: 'Catch-up contributions',
+    title: 'Catch-Up Contributions',
     text: 'At 50 or older, you can contribute extra to 401(k) plans and IRAs.',
     for: ['retirement'],
   },
   {
-    title: 'Qualified charitable distributions',
+    title: 'Qualified Charitable Distributions',
     text: 'At 70½ or older, giving directly from an IRA can count toward required distributions without adding to taxable income.',
     for: ['charity', 'retirement'],
   },
   {
-    title: 'Donating appreciated investments',
+    title: 'Donating Appreciated Investments',
     text: 'Giving investments held for more than a year can avoid capital gains tax and may still be deductible.',
     for: ['charity', 'investor'],
   },
   {
-    title: 'Bunching donations',
+    title: 'Bunching Donations',
     text: 'Grouping several years of gifts into one year can help you itemize and deduct more.',
     for: ['charity'],
   },

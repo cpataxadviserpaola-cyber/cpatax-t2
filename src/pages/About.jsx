@@ -16,11 +16,11 @@ export default function About() {
         eyebrow="About us"
         title={
           <>
-            Trusted expertise.
+            Trusted Expertise.
             <br />
-            Personal attention.
+            Personal Attention.
             <br />
-            <em>Business-focused solutions.</em>
+            <em>Business-Focused Solutions.</em>
           </>
         }
         actions={
@@ -40,7 +40,7 @@ export default function About() {
           <div className="story-copy reveal">
             <p className="eyebrow">Our story</p>
             <h2>
-              Where tax strategy meets <em>real business understanding</em>
+              Where Tax Strategy Meets <em>Real Business Understanding</em>
             </h2>
             <p className="story-lead">
               {site.name} was founded by Paola Martinez, CPA, CFP<sup className="reg">®</sup>, and is a South
@@ -99,7 +99,7 @@ export default function About() {
 
       <section className="section section-white" id="how-we-work">
         <div className="container">
-          <SectionHead eyebrow="How we work" title={<>Getting started is <em>simple</em></>} center>
+          <SectionHead eyebrow="How we work" title={<>Getting Started Is <em>Simple</em></>} center>
             A straightforward process designed to save you time and give you peace of mind, with
             year-round guidance once we're working together.
           </SectionHead>
@@ -108,7 +108,7 @@ export default function About() {
       </section>
 
       <CtaSection
-        title={<>Let's work <em>together</em></>}
+        title={<>Let's Work <em>Together</em></>}
         text="Find out how a trusted advisor can help you become more organized, efficient, and confident in your direction."
         secondary={
           <Link className="btn btn-ghost-light btn-lg" to="/services">

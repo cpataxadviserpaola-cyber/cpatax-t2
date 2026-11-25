@@ -61,7 +61,7 @@ const sections = [
             adjusted gross income goes up.
           </p>
         </Callout>
-        <RelatedGuide guide={related([56, 'Social Security Benefits: How To Get The Maximum Amount'])}>
+        <RelatedGuide guide={related([56, 'Social Security Benefits: How to Get the Maximum Amount'])}>
           Also, if you earn income while you are receiving Social Security, your benefit may be decreased. For the
           specific rule, see the Related Financial Guide:
         </RelatedGuide>
@@ -90,7 +90,7 @@ const sections = [
   },
   {
     id: 'goals',
-    title: 'Establishing Goals For Retirement',
+    title: 'Establishing Goals for Retirement',
     body: (
       <>
         <p>
@@ -235,7 +235,7 @@ const sections = [
           three, only the Treasury bills offer a rate that will keep up with inflation. For the average individual
           saving for retirement, it is recommended that these vehicles make up only a portion of investments.
         </p>
-        <RelatedGuide guide={related([84, 'Asset Allocation: How To Diversify For Maximum Return'])}>
+        <RelatedGuide guide={related([84, 'Asset Allocation: How to Diversify for Maximum Return'])}>
           Please see the Financial Guide:
         </RelatedGuide>
 
@@ -255,7 +255,7 @@ const sections = [
           Mutual funds are an excellent retirement savings vehicle. By balancing a mutual fund portfolio to
           minimize risk and maximize growth, a higher return can be achieved than with safer investments.
         </p>
-        <RelatedGuide guide={related([92, 'Investing In Mutual Funds: The Time-Tested Guidelines'])}>
+        <RelatedGuide guide={related([92, 'Investing in Mutual Funds: The Time-Tested Guidelines'])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -271,7 +271,7 @@ export default function YourRetirementPlan() {
       page="Your Retirement Plan"
       title={
         <>
-          Your Retirement Plan: <em>How To Get Started</em>
+          Your Retirement Plan: <em>How to Get Started</em>
         </>
       }
       lead="The number of people who are financially unprepared for retirement is staggering. One study revealed that more than half of the adults in the U.S. were planning to depend solely on Social Security for retirement income. Another study indicated that the great majority of Americans do not save nearly enough money. This Financial Guide provides you with the information you need to get started on this important task."

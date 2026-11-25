@@ -10,7 +10,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'taxes-after-death',
-    title: 'Will my estate have to pay taxes after I die?',
+    title: 'Will My Estate Have to Pay Taxes After I Die?',
     body: (
       <p>
         It depends. The federal government imposes estate taxes at your death only if your property is worth more than a
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     id: 'state-estate-taxes',
-    title: 'Do states also impose estate taxes?',
+    title: 'Do States Also Impose Estate Taxes?',
     body: (
       <>
         <p>
@@ -71,7 +71,7 @@ const sections = [
   },
   {
     id: 'minimize-federal',
-    title: 'How can I minimize federal estate taxes?',
+    title: 'How Can I Minimize Federal Estate Taxes?',
     body: (
       <p>
         There are several ways. One common way to do this is to leave your children, directly or in trust, an amount up
@@ -81,7 +81,7 @@ const sections = [
   },
   {
     id: 'avoid-state',
-    title: 'Can I avoid paying state estate taxes?',
+    title: 'Can I Avoid Paying State Estate Taxes?',
     body: (
       <>
         <p>
@@ -98,7 +98,7 @@ const sections = [
   },
   {
     id: 'give-property-away',
-    title: 'Can I just give all my property away before I die and avoid estate taxes?',
+    title: 'Can I Just Give All My Property Away Before I Die and Avoid Estate Taxes?',
     body: (
       <>
         <p>

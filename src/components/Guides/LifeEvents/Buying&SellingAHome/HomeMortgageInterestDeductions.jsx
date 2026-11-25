@@ -80,7 +80,7 @@ const sections = [
   },
   {
     id: 'what-is-secured-debt',
-    title: 'What is "Secured Debt?"',
+    title: 'What Is "Secured Debt?"',
     body: (
       <>
         <p>
@@ -125,7 +125,7 @@ const sections = [
   },
   {
     id: 'what-is-qualified-home',
-    title: 'What is a "Qualified Home?"',
+    title: 'What Is a "Qualified Home?"',
     body: (
       <>
         <p>

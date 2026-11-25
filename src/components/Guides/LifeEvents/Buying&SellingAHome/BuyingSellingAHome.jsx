@@ -7,22 +7,22 @@ const homeGuides = guide('life-events.php', 17);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [63, 'Buying a Home: What To Do and How To Do It'],
-      [64, "Homeowner's Insurance: How To Get The Best Coverage and Value"],
-      [65, 'Mortgage Alternatives: How To Choose The Right One'],
+      [63, 'Buying a Home: What to Do and How to Do It'],
+      [64, "Homeowner's Insurance: How to Get the Best Coverage and Value"],
+      [65, 'Mortgage Alternatives: How to Choose the Right One'],
       [66, 'Home Mortgage Interest Deductions'],
       [67, 'The Deductibility of Points'],
       [68, 'Refinancing Your Mortgage: When and How'],
-      [69, 'Selling Your Home: How To Do It Effectively'],
-      [70, 'Selling Your Home: How To Minimize the Tax On the Gain'],
+      [69, 'Selling Your Home: How to Do It Effectively'],
+      [70, 'Selling Your Home: How to Minimize the Tax on the Gain'],
       [71, 'Which Moving Expenses Are Deductible?'],
-      [72, 'The Deduction For Real Estate Taxes'],
+      [72, 'The Deduction for Real Estate Taxes'],
     ].map(homeGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [2, 'Buying a Home: Frequently Asked Questions'],
       [150, "Homeowner's Insurance: Frequently Asked Questions"],
@@ -32,7 +32,7 @@ const groups = [
     ].map(homeGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [
       ['hom02', 'Should I Refinance My Mortgage?'],
       ['hom04', 'Comparing Mortgage Terms (i.e. 15, 20, 30 year)'],
@@ -42,7 +42,7 @@ const groups = [
 
 export default function BuyingSellingAHome() {
   return (
-    <GuideTopic category="life-events" title="Buying & Selling A Home" groups={groups}>
+    <GuideTopic category="life-events" title="Buying & Selling a Home" groups={groups}>
       This section is dedicated to another major life event. Within you will find a series of
       articles chosen to bequeath you with the knowledge necessary to make the best decisions you
       can when buying or selling a home.

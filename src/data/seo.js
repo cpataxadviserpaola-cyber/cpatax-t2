@@ -27,7 +27,7 @@ export const pages = {
       'CPA Tax Adviser is a South Carolina licensed CPA firm in Simpsonville, SC, providing business tax preparation, tax planning, accounting, bookkeeping, business consulting, QuickBooks, and international tax services nationwide, in English and Spanish.',
     keywords: '',
     og: {
-      title: 'CPA Tax Adviser | Where tax strategy meets real business understanding',
+      title: 'CPA Tax Adviser | Where Tax Strategy Meets Real Business Understanding',
       description:
         'South Carolina licensed CPA firm helping business owners, professionals, and individuals nationwide, in English and Spanish.',
     },
@@ -214,25 +214,25 @@ export const pages = {
     keywords: '',
   },
   '/resources/calculators/hourly-to-salary': {
-    title: 'Convert My Hourly Wage To An Equivalent Annual Salary | CPA Tax Adviser',
+    title: 'Convert My Hourly Wage to an Equivalent Annual Salary | CPA Tax Adviser',
     description:
       'Convert an hourly wage into its weekly pay, monthly pay, and annual salary, based on the hours and weeks you work each year.',
     keywords: '',
   },
   '/resources/calculators/interest-tax-implications': {
-    title: 'What Are The Tax Implications Of Paying Interest? | CPA Tax Adviser',
+    title: 'What Are the Tax Implications of Paying Interest? | CPA Tax Adviser',
     description:
       'See which of the interest you pay this year, on mortgages, investments, business and personal debt, is deductible under the 2026 rules and what it saves you in tax.',
     keywords: '',
   },
   '/resources/calculators/social-security-tax': {
-    title: 'How Much Of My Social Security Benefit May Be Taxed? | CPA Tax Adviser',
+    title: 'How Much of My Social Security Benefit May Be Taxed? | CPA Tax Adviser',
     description:
       'Work through the IRS Publication 915 worksheet to see how much of your Social Security benefits may be taxable, up to 85%, and the federal tax on it.',
     keywords: '',
   },
   '/resources/calculators/compare-investment-growth': {
-    title: 'Compare Taxable, Tax-Deferred And Tax-Free Investment Growth | CPA Tax Adviser',
+    title: 'Compare Taxable, Tax-Deferred and Tax-Free Investment Growth | CPA Tax Adviser',
     description:
       'Compare what the same savings may grow to, after taxes, in a fully-taxable account, a tax-deferred account and a tax-free investment, year by year.',
     keywords: '',
@@ -286,7 +286,7 @@ export const pages = {
     keywords: '',
   },
   '/resources/calculators/itemize-or-standard': {
-    title: 'Should I Itemize Or Take The Standard Deduction? | CPA Tax Adviser',
+    title: 'Should I Itemize or Take the Standard Deduction? | CPA Tax Adviser',
     description:
       'Compare your itemized deductions with your 2026 standard deduction, including the senior deduction, the SALT cap, and the new charitable deduction rules, to see which is larger.',
     keywords: '',
@@ -298,19 +298,19 @@ export const pages = {
     keywords: '',
   },
   '/resources/calculators/exercise-stock-options': {
-    title: "Should I Exercise My 'In-The-Money' Stock Options? | CPA Tax Adviser",
+    title: "Should I Exercise My 'In-the-Money' Stock Options? | CPA Tax Adviser",
     description:
       'Compare exercising and holding, exercising and selling, and deferring your in-the-money employee stock options, after income and capital gains taxes, to see which may leave you with the most.',
     keywords: '',
   },
   '/resources/calculators/stock-options': {
-    title: 'What Is The Future Value Of My Employee Stock Options? | CPA Tax Adviser',
+    title: 'What Is the Future Value of My Employee Stock Options? | CPA Tax Adviser',
     description:
       'Estimate what your employee stock options may be worth when they expire, and the before-tax gain over the strike price, at your expected return and 2 points above and below it.',
     keywords: '',
   },
   '/resources/calculators/salary-to-hourly': {
-    title: 'Convert My Salary To An Equivalent Hourly Wage | CPA Tax Adviser',
+    title: 'Convert My Salary to an Equivalent Hourly Wage | CPA Tax Adviser',
     description:
       'Convert an annual salary into its monthly pay, weekly pay, and hourly wage, based on the hours and weeks you work each year.',
     keywords: '',
@@ -322,19 +322,19 @@ export const pages = {
     keywords: '',
   },
   '/resources/calculators/457-plan-contribution': {
-    title: 'What Is The Impact Of Increasing My 457 Plan Contribution? | CPA Tax Adviser',
+    title: 'What Is the Impact of Increasing My 457 Plan Contribution? | CPA Tax Adviser',
     description:
       'See how much more your 457 plan could hold at retirement if you raise your contribution, including any employer match, with a year-by-year table and graph.',
     keywords: '',
   },
   '/resources/calculators/401k-contribution': {
-    title: 'What Is The Impact Of Increasing My 401(k) Contribution? | CPA Tax Adviser',
+    title: 'What Is the Impact of Increasing My 401(k) Contribution? | CPA Tax Adviser',
     description:
       'See how much more your 401(k) could hold at retirement if you raise your contribution, including any employer match, with a year-by-year table and graph.',
     keywords: '',
   },
   '/resources/calculators/403b-contribution': {
-    title: 'What Is The Impact Of Increasing My 403(b) Contribution? | CPA Tax Adviser',
+    title: 'What Is the Impact of Increasing My 403(b) Contribution? | CPA Tax Adviser',
     description:
       'See how much more your 403(b) could hold at retirement if you raise your contribution, including any employer match, with a year-by-year table and graph.',
     keywords: '',
@@ -390,13 +390,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/choosing-a-professional': {
-    title: 'Choosing A Professional: Financial Guides | CPA Tax Adviser',
+    title: 'Choosing a Professional: Financial Guides | CPA Tax Adviser',
     description:
       'Guides and answers to common questions on choosing the right lawyer and getting good financial advice, from CPA Tax Adviser.',
     keywords: '',
   },
   '/guides/life-events/choosing-a-professional/lawyers': {
-    title: 'Lawyers: How To Choose The Right One | CPA Tax Adviser',
+    title: 'Lawyers: How to Choose the Right One | CPA Tax Adviser',
     description:
       'A comprehensive 10-step guide on how to decide if you need a lawyer, find reputable candidates, interview them, and manage legal fees and your ongoing case.',
     keywords: '',
@@ -426,13 +426,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/planning-for-retirement': {
-    title: 'Planning For Retirement: Financial Guides | CPA Tax Adviser',
+    title: 'Planning for Retirement: Financial Guides | CPA Tax Adviser',
     description:
       'Financial guides, answers to common questions, and calculators on retirement saving, Social Security, IRAs and Roth IRAs, annuities, and retirement plan distributions.',
     keywords: '',
   },
   '/guides/life-events/planning-for-retirement/your-retirement-plan': {
-    title: 'Your Retirement Plan: How To Get Started | CPA Tax Adviser',
+    title: 'Your Retirement Plan: How to Get Started | CPA Tax Adviser',
     description:
       'Get started on retirement planning: estimate your retirement income, set goals and work out how much to save each year, and choose investments.',
     keywords: '',
@@ -444,13 +444,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/planning-for-retirement/count-on-social-security': {
-    title: 'Should You Count On Social Security? | CPA Tax Adviser',
+    title: 'Should You Count on Social Security? | CPA Tax Adviser',
     description:
       'How much to rely on Social Security in retirement: check your benefit estimate and earnings record, weigh when to start benefits, and plan to save on your own.',
     keywords: '',
   },
   '/guides/life-events/planning-for-retirement/roth-iras': {
-    title: 'Roth IRAs: How They Work and How To Use Them | CPA Tax Adviser',
+    title: 'Roth IRAs: How They Work and How to Use Them | CPA Tax Adviser',
     description:
       'How Roth IRA contributions and withdrawals are taxed, converting from a traditional IRA, withdrawal requirements, the saver’s credit, and Roth IRAs in estate planning.',
     keywords: '',
@@ -492,13 +492,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/buying-and-maintaining-a-car': {
-    title: 'Buying & Maintaining A Car: Financial Guides | CPA Tax Adviser',
+    title: 'Buying & Maintaining a Car: Financial Guides | CPA Tax Adviser',
     description:
       'Financial guides, answers to common questions, and calculators on buying or leasing your next car, auto payments, and cutting your car insurance costs.',
     keywords: '',
   },
   '/guides/life-events/buying-and-selling-a-home': {
-    title: 'Buying & Selling A Home: Financial Guides | CPA Tax Adviser',
+    title: 'Buying & Selling a Home: Financial Guides | CPA Tax Adviser',
     description:
       'Financial guides, answers to common questions, and calculators to help you make the best decisions when buying, financing, or selling a home.',
     keywords: '',
@@ -534,7 +534,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/making-charitable-contributions/giving-wisely': {
-    title: 'Charitable Contributions: How To Give Wisely | CPA Tax Adviser',
+    title: 'Charitable Contributions: How to Give Wisely | CPA Tax Adviser',
     description:
       'How to check out a charity before you give money or time: mail, phone and door-to-door appeals, thrift stores, fund-raising events, affinity cards, and disaster appeals.',
     keywords: '',
@@ -546,7 +546,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/making-charitable-contributions/records-to-keep': {
-    title: 'What Records You Must Keep Relating To Your Charitable Contributions | CPA Tax Adviser',
+    title: 'What Records You Must Keep Relating to Your Charitable Contributions | CPA Tax Adviser',
     description:
       'The records and acknowledgments you need to deduct cash and noncash charitable contributions at each dollar level, plus out-of-pocket and car expenses.',
     keywords: '',
@@ -558,7 +558,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/making-charitable-contributions/fraudulent-charities': {
-    title: 'Fraudulent Charities: How To Protect Yourself | CPA Tax Adviser',
+    title: 'Fraudulent Charities: How to Protect Yourself | CPA Tax Adviser',
     description:
       'How the states and the IRS regulate charities, the public documents you can get on a charity, and how to file a complaint against a fraudulent charity.',
     keywords: '',
@@ -582,7 +582,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/avoiding-scams/con-artists': {
-    title: 'Con Artists: How To Spot and Stop Them | CPA Tax Adviser',
+    title: 'Con Artists: How to Spot and Stop Them | CPA Tax Adviser',
     description:
       'How to recognize a con artist: the buzzwords and tip-offs, common con games, questions that expose a securities con, ten steps for avoiding scams, and telemarketing fraud.',
     keywords: '',
@@ -648,7 +648,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/business-strategies/starting-a-business': {
-    title: 'Starting A Business: Financial Guides | CPA Tax Adviser',
+    title: 'Starting a Business: Financial Guides | CPA Tax Adviser',
     description:
       'Financial guides, answers to common questions, and a calculator on starting a business: choosing a form of organization, incorporating, LLCs, business plans, and raising capital.',
     keywords: '',
@@ -678,7 +678,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/business-strategies/selling-exiting-your-business/business-succession': {
-    title: 'Your Business Succession: How To Plan For It | CPA Tax Adviser',
+    title: 'Your Business Succession: How to Plan for It | CPA Tax Adviser',
     description:
       'Review family-business transfer options and coordinate family, business, succession, and estate planning to prepare for ownership transition.',
     keywords: '',
@@ -690,13 +690,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/business-strategies/selling-exiting-your-business/winning-exit-plan': {
-    title: 'Maximize Your Wealth With a Winning Exit Plan | CPA Tax Adviser',
+    title: 'Maximize Your Wealth with a Winning Exit Plan | CPA Tax Adviser',
     description:
       'Compare family ownership transfer, an employee stock ownership plan, a third-party sale, and liquidation when planning a business exit.',
     keywords: '',
   },
   '/guides/business-strategies/securing-business-loans/show-me-the-money': {
-    title: 'Show Me The Money! Strategies For Securing a Loan | CPA Tax Adviser',
+    title: 'Show Me the Money! Strategies for Securing a Loan | CPA Tax Adviser',
     description:
       'Prepare for a business loan by understanding lender concerns, selecting a suitable bank, building a relationship, and assembling a business plan, financial statements, references, and repayment information.',
     keywords: '',
@@ -726,13 +726,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/business-strategies/growing-your-business/customer-trust': {
-    title: 'How To Get Your Customers To Trust You | CPA Tax Adviser',
+    title: 'How to Get Your Customers to Trust You | CPA Tax Adviser',
     description:
       'Build credibility with a strong customer experience and genuine, approved testimonials used responsibly in business marketing.',
     keywords: '',
   },
   '/guides/business-strategies/growing-your-business/customer-appreciation': {
-    title: 'The Nicest Way To Build Your Business | CPA Tax Adviser',
+    title: 'The Nicest Way to Build Your Business | CPA Tax Adviser',
     description:
       'Strengthen customer loyalty with attentive service, sincere appreciation, personal follow-up, and thoughtful thank-you notes.',
     keywords: '',
@@ -750,7 +750,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/business-strategies/growing-your-business/grow-with-less-stress': {
-    title: 'How to Profitably Grow Your Business With Less Stress | CPA Tax Adviser',
+    title: 'How to Profitably Grow Your Business with Less Stress | CPA Tax Adviser',
     description:
       'Create clear roles and repeatable business processes while preserving the judgment and flexibility needed to serve customers well.',
     keywords: '',
@@ -786,7 +786,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/business-strategies/running-your-business/employee-benefits': {
-    title: 'Employee Benefits: How To Handle Them | CPA Tax Adviser',
+    title: 'Employee Benefits: How to Handle Them | CPA Tax Adviser',
     description:
       'An overview of required and optional benefits, health and insurance plans, self-funding, plan selection, and retirement benefits for employers.',
     keywords: '',
@@ -822,7 +822,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/business-strategies/starting-a-business/business-plans': {
-    title: 'Business Plans: How To Prepare An Effective One | CPA Tax Adviser',
+    title: 'Business Plans: How to Prepare an Effective One | CPA Tax Adviser',
     description:
       'How to prepare a business plan: questions to answer before you start a business, and what to include on your mission, products and markets, finances, and operations.',
     keywords: '',
@@ -864,13 +864,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/business-strategies/starting-a-business/raising-capital': {
-    title: 'Raising Capital: How To Get Money For a Small Business | CPA Tax Adviser',
+    title: 'Raising Capital: How to Get Money for a Small Business | CPA Tax Adviser',
     description:
       'Where to find money for a small business, how to borrow and write a loan proposal, how lenders review your request, and the SBA loan programs available.',
     keywords: '',
   },
   '/guides/life-events/buying-and-selling-a-home/buying-a-home': {
-    title: 'Buying a Home: What To Do and How To Do It | CPA Tax Adviser',
+    title: 'Buying a Home: What to Do and How to Do It | CPA Tax Adviser',
     description:
       'A practical guide to buying a home: choosing a real estate agent, understanding contracts, inspections, title searches, closing costs, and protecting yourself throughout the process.',
     keywords: '',
@@ -906,7 +906,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/buying-and-selling-a-home/homeowners-insurance': {
-    title: "Homeowner's Insurance: How To Get The Best Coverage and Value | CPA Tax Adviser",
+    title: "Homeowner's Insurance: How to Get the Best Coverage and Value | CPA Tax Adviser",
     description:
       "How to evaluate and buy homeowner's insurance: coverage types, replacement cost vs. actual cash value, liability protection, flood and earthquake riders, and tips to lower your premium.",
     keywords: '',
@@ -924,13 +924,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/buying-and-selling-a-home/selling-your-home-effectively': {
-    title: 'Selling Your Home: How To Do It Effectively | CPA Tax Adviser',
+    title: 'Selling Your Home: How to Do It Effectively | CPA Tax Adviser',
     description:
       'Tips for getting the best price when selling your home: finding a good agent, reviewing the listing agreement, speeding up the sale, negotiating effectively, and planning your move.',
     keywords: '',
   },
   '/guides/life-events/buying-and-selling-a-home/selling-your-home-minimize-tax': {
-    title: 'Selling Your Home: How To Minimize the Tax On the Gain | CPA Tax Adviser',
+    title: 'Selling Your Home: How to Minimize the Tax on the Gain | CPA Tax Adviser',
     description:
       'Key rules for minimizing taxes when selling your home: the $250,000/$500,000 exclusion, ownership and use tests, adjusted basis, non-traditional sales, and recapture of federal subsidy.',
     keywords: '',
@@ -942,19 +942,19 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/buying-and-selling-a-home/the-deduction-for-real-estate-taxes': {
-    title: 'The Deduction For Real Estate Taxes | CPA Tax Adviser',
+    title: 'The Deduction for Real Estate Taxes | CPA Tax Adviser',
     description:
       'Explains which real estate tax expenses homeowners can deduct, the $10,000 SALT limit under TCJA, how deductions are split on a sale, and items not considered real estate taxes.',
     keywords: '',
   },
   '/guides/life-events/buying-and-maintaining-a-car/buy-or-lease': {
-    title: 'Your Next Car: Should You Buy Or Lease? | CPA Tax Adviser',
+    title: 'Your Next Car: Should You Buy or Lease? | CPA Tax Adviser',
     description:
       'Decide whether to lease or buy your next car: how leases work, initial, ongoing and final costs, option rights, and questions to ask before you sign.',
     keywords: '',
   },
   '/guides/life-events/buying-and-maintaining-a-car/car-insurance': {
-    title: 'Car Insurance: 10 Cost-Cutters To Save You Money | CPA Tax Adviser',
+    title: 'Car Insurance: 10 Cost-Cutters to Save You Money | CPA Tax Adviser',
     description:
       'Ten ways to cut your car insurance costs, from comparison shopping and higher deductibles to discounts and repair networks, plus a checklist for getting quotes.',
     keywords: '',
@@ -972,13 +972,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/getting-a-loan/mortgage-alternatives': {
-    title: 'Mortgage Alternatives: How To Choose The Right One | CPA Tax Adviser',
+    title: 'Mortgage Alternatives: How to Choose the Right One | CPA Tax Adviser',
     description:
       'Compare fixed-rate, 15-year, adjustable-rate, balloon, graduated payment, and other mortgages, plus buy-downs, reverse mortgages, and the contract clauses to watch for.',
     keywords: '',
   },
   '/guides/life-events/getting-a-loan/mortgage-lock-ins': {
-    title: 'Mortgage Lock-ins: Questions To Ask | CPA Tax Adviser',
+    title: 'Mortgage Lock-Ins: Questions to Ask | CPA Tax Adviser',
     description:
       'What to ask lenders about locking in your mortgage rate and points, lock-in fees and expiration, speeding up loan processing, and how escrow accounts work.',
     keywords: '',
@@ -990,7 +990,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/getting-a-loan/home-equity-loans': {
-    title: 'Home Equity Loans: How To Shop For The One That Is Best For You | CPA Tax Adviser',
+    title: 'Home Equity Loans: How to Shop for the One That Is Best for You | CPA Tax Adviser',
     description:
       'How a home equity line of credit works, what it costs, how you repay it, how it compares with a second mortgage, and how to compare APRs and loan terms.',
     keywords: '',
@@ -1008,7 +1008,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/buying-insurance/long-term-care-insurance': {
-    title: 'Long-Term Care Insurance: How To Get The Best Deal | CPA Tax Adviser',
+    title: 'Long-Term Care Insurance: How to Get the Best Deal | CPA Tax Adviser',
     description:
       'Decide whether long-term care insurance is right for you: how policies work, the pros and cons, alternatives such as Medicaid, cost, and choosing an insurer and policy.',
     keywords: '',
@@ -1044,7 +1044,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/dealing-with-your-bank/bank-accounts': {
-    title: 'Bank Accounts: What To Look and Ask For | CPA Tax Adviser',
+    title: 'Bank Accounts: What to Look and Ask For | CPA Tax Adviser',
     description:
       'Compare checking, savings, money-market, and time-deposit accounts, understand fees and electronic transfers, and learn how to protect and monitor your account.',
     keywords: '',
@@ -1062,7 +1062,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/dealing-with-your-bank/applying-for-a-loan': {
-    title: 'Applying For a Loan: How To Get The Best Loan At The Lowest Cost | CPA Tax Adviser',
+    title: 'Applying for a Loan: How to Get the Best Loan at the Lowest Cost | CPA Tax Adviser',
     description:
       'Compare loan types, APR, fees, rate terms, monthly payments, total borrowing costs, and repayment risks before choosing a loan.',
     keywords: '',
@@ -1098,19 +1098,19 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/improving-your-credit/credit-cards': {
-    title: 'Credit Cards: How To Choose—And Use—Them Wisely | CPA Tax Adviser',
+    title: 'Credit Cards: How to Choose—And Use—Them Wisely | CPA Tax Adviser',
     description:
       'How to compare credit card rates, fees, grace periods, and balance methods, use cards wisely, and dispute improper charges, from CPA Tax Adviser.',
     keywords: '',
   },
   '/guides/life-events/improving-your-credit/merchant-credit-card-abuses': {
-    title: 'Merchant Credit Card Abuses: What They Cannot Ask You To Do | CPA Tax Adviser',
+    title: 'Merchant Credit Card Abuses: What They Cannot Ask You to Do | CPA Tax Adviser',
     description:
       'What merchants cannot require when you pay by card or check, including personal information, minimum charges, and surcharges, and how to complain, from CPA Tax Adviser.',
     keywords: '',
   },
   '/guides/life-events/improving-your-credit/credit-card-rights': {
-    title: 'Your Credit Card Rights: What To Do If You Have a Problem | CPA Tax Adviser',
+    title: 'Your Credit Card Rights: What to Do If You Have a Problem | CPA Tax Adviser',
     description:
       'Your rights to prompt payment credit, refunds, billing error corrections, limits on unauthorized charges, and dispute resolution with merchants, from CPA Tax Adviser.',
     keywords: '',
@@ -1146,7 +1146,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/preparing-for-college/bank-accounts': {
-    title: 'Bank Accounts: What To Look and Ask For | CPA Tax Adviser',
+    title: 'Bank Accounts: What to Look and Ask For | CPA Tax Adviser',
     description:
       'Compare bank and credit-union accounts by access, fees, rates, services, deposit insurance, and questions to ask before opening an account.',
     keywords: '',
@@ -1170,7 +1170,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/getting-married/life-insurance': {
-    title: 'Life Insurance: How Much and What Kind To Buy | CPA Tax Adviser',
+    title: 'Life Insurance: How Much and What Kind to Buy | CPA Tax Adviser',
     description:
       'Whether you need life insurance, a worksheet to work out how much, how term and cash value policies differ, and how to shop for a policy.',
     keywords: '',
@@ -1182,19 +1182,19 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/getting-married/your-financial-plan': {
-    title: 'Your Financial Plan: Getting Started On a Secure Future | CPA Tax Adviser',
+    title: 'Your Financial Plan: Getting Started on a Secure Future | CPA Tax Adviser',
     description:
       'Start a financial plan: set your goals, work out your net worth and cash flow, build a safety net, and decide how much to save, with worksheets for each step.',
     keywords: '',
   },
   '/guides/life-events/getting-married/document-locator': {
-    title: 'Document Locator System: A Handy Aid For Keeping Track of Your Records | CPA Tax Adviser',
+    title: 'Document Locator System: A Handy Aid for Keeping Track of Your Records | CPA Tax Adviser',
     description:
       'A simple system for filing your important personal records so you, your spouse, or your executor can find them, with a list of where to file each document.',
     keywords: '',
   },
   '/guides/life-events/getting-married/budgeting': {
-    title: 'Budgeting: How To Prepare a Workable Plan | CPA Tax Adviser',
+    title: 'Budgeting: How to Prepare a Workable Plan | CPA Tax Adviser',
     description:
       'Build a budget in four steps: analyze your income and expenses, set budgeting goals, create your monthly budget, and review how well you keep to it.',
     keywords: '',
@@ -1206,67 +1206,67 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/getting-married/post-mortem-letter': {
-    title: 'Post-Mortem Letter: How To Prepare It and What To Include | CPA Tax Adviser',
+    title: 'Post-Mortem Letter: How to Prepare It and What to Include | CPA Tax Adviser',
     description:
       'What a postmortem letter does, how to get it to your executors, and what it should contain so your survivors can find your assets, records, and advisers.',
     keywords: '',
   },
   '/guides/life-events/getting-married/retirement-distributions-when': {
-    title: 'Retirement Plan Distributions: When To Take Them | CPA Tax Adviser',
+    title: 'Retirement Plan Distributions: When to Take Them | CPA Tax Adviser',
     description:
       'When you must start withdrawing from retirement plans, what happens to the funds after you die, how your heirs are taxed, and tax planning ideas.',
     keywords: '',
   },
   '/guides/life-events/getting-married/retirement-distributions-how': {
-    title: 'Retirement Plan Distributions: How To Take Them | CPA Tax Adviser',
+    title: 'Retirement Plan Distributions: How to Take Them | CPA Tax Adviser',
     description:
       'Your options for taking retirement plan distributions, from lump sums and rollovers to partial withdrawals, and how each is taxed.',
     keywords: '',
   },
   '/guides/life-events/getting-married/estate-planning': {
-    title: 'Estate Planning: How To Get Started | CPA Tax Adviser',
+    title: 'Estate Planning: How to Get Started | CPA Tax Adviser',
     description:
       'A road map to estate planning: estate and gift taxes, wills, trusts, postmortem letters, living wills, life insurance, disclaimers, and lifetime gifts.',
     keywords: '',
   },
   '/guides/life-events/getting-married/funerals': {
-    title: 'Funerals: What To Do At This Stressful Time | CPA Tax Adviser',
+    title: 'Funerals: What to Do at This Stressful Time | CPA Tax Adviser',
     description:
       'How to arrange a funeral, how the FTC Funeral Rule protects you, what the itemized statement shows, how to complain, and benefits for widows and widowers.',
     keywords: '',
   },
   '/guides/life-events/getting-married/saving-money': {
-    title: 'Saving Money: 10 Major Ways To Increase Your Nest Egg | CPA Tax Adviser',
+    title: 'Saving Money: 10 Major Ways to Increase Your Nest Egg | CPA Tax Adviser',
     description:
       'Ten ways to grow your nest egg by spending less, from a financial plan and automatic savings to lower mortgage, credit card, bank, insurance, and utility costs.',
     keywords: '',
   },
   '/guides/life-events/getting-married/disability-insurance': {
-    title: 'Disability Insurance: What To Look For | CPA Tax Adviser',
+    title: 'Disability Insurance: What to Look For | CPA Tax Adviser',
     description:
       'How to protect your earning power with disability insurance: employer and government coverage, and what to look for in a private policy.',
     keywords: '',
   },
   '/guides/life-events/getting-married/disability-benefits': {
-    title: "Disability Benefits: How To Get All You're Entitled To | CPA Tax Adviser",
+    title: "Disability Benefits: How to Get All You're Entitled To | CPA Tax Adviser",
     description:
       'Social Security disability benefits: who qualifies, how payments work, changes you must report, case reviews, returning to work, and your right to appeal.',
     keywords: '',
   },
   '/guides/life-events/getting-married/homeowners-insurance': {
-    title: "Homeowner's Insurance: How To Get The Best Coverage and Value | CPA Tax Adviser",
+    title: "Homeowner's Insurance: How to Get the Best Coverage and Value | CPA Tax Adviser",
     description:
       "What homeowner's insurance covers, the coverage to consider, how to shop for a policy, a glossary of terms, and an inventory sheet for your belongings.",
     keywords: '',
   },
   '/guides/life-events/getting-married/asset-allocation': {
-    title: 'Asset Allocation: How To Diversify For Maximum Return | CPA Tax Adviser',
+    title: 'Asset Allocation: How to Diversify for Maximum Return | CPA Tax Adviser',
     description:
       'What asset allocation is, how it works, the main asset classes, how allocation models are built, and how the efficient frontier balances risk and return.',
     keywords: '',
   },
   '/guides/life-events/getting-married/social-security-benefits': {
-    title: 'Social Security Benefits: How To Get The Maximum Amount | CPA Tax Adviser',
+    title: 'Social Security Benefits: How to Get the Maximum Amount | CPA Tax Adviser',
     description:
       'Social Security retirement benefits: eligibility, how your benefit is figured, early, full, and delayed retirement, family benefits, applying, and Medicare.',
     keywords: '',
@@ -1278,7 +1278,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/investment-strategies/buying-on-margin': {
-    title: 'Buying On Margin: How It Works and What To Watch Out For | CPA Tax Adviser',
+    title: 'Buying on Margin: How It Works and What to Watch Out For | CPA Tax Adviser',
     description:
       'How margin accounts work, how borrowing can magnify gains and losses, margin requirements and calls, and what to review in your brokerage agreement.',
     keywords: '',
@@ -1290,7 +1290,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/investment-strategies/investment-clubs': {
-    title: 'Investment Clubs: What You Need To Know | CPA Tax Adviser',
+    title: 'Investment Clubs: What You Need to Know | CPA Tax Adviser',
     description:
       'How investment clubs pool money and make decisions, and how member participation, securities offerings, adviser activity, and state and federal rules may affect them.',
     keywords: '',
@@ -1314,19 +1314,19 @@ export const pages = {
     keywords: '',
   },
   '/guides/investment-strategies/investing-in-mutual-funds': {
-    title: 'Investing In Mutual Funds: The Time-Tested Guidelines | CPA Tax Adviser',
+    title: 'Investing in Mutual Funds: The Time-Tested Guidelines | CPA Tax Adviser',
     description:
       'How to choose a mutual fund: comparing performance, costs, investment philosophy, and customer service, and the risks of money market, bond, and stock funds.',
     keywords: '',
   },
   '/guides/investment-strategies/mutual-fund-taxation': {
-    title: 'Mutual Fund Taxation: How To Cut The Tax Bite | CPA Tax Adviser',
+    title: 'Mutual Fund Taxation: How to Cut the Tax Bite | CPA Tax Adviser',
     description:
       'How mutual fund distributions are taxed, and 13 tips to cut the tax: reinvested dividends, exchanges, tax-exempt funds, cost basis, and choosing which shares you sell.',
     keywords: '',
   },
   '/guides/investment-strategies/penny-stocks': {
-    title: 'Penny Stocks: How To Investigate Them and Avoid the Traps | CPA Tax Adviser',
+    title: 'Penny Stocks: How to Investigate Them and Avoid the Traps | CPA Tax Adviser',
     description:
       'What microcap or penny stocks are, where they trade, which companies report to the SEC, common penny stock frauds, and the steps and red flags to check before you invest.',
     keywords: '',
@@ -1350,7 +1350,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/tax-strategies/tax-planning-for-small-business-owners': {
-    title: 'Tax Planning For Small Business Owners | CPA Tax Adviser',
+    title: 'Tax Planning for Small Business Owners | CPA Tax Adviser',
     description:
       'How small business owners can plan to cut taxes legally: tax avoidance vs. evasion, planning goals, meal and auto deductions, and Section 179 and bonus depreciation.',
     keywords: '',
@@ -1362,7 +1362,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/tax-strategies/7-ways-to-save-even-more-income-taxes': {
-    title: '7 Ways To Save Even More Income Taxes | CPA Tax Adviser',
+    title: '7 Ways to Save Even More Income Taxes | CPA Tax Adviser',
     description:
       'Seven tax-saving ideas for business owners: funding your IRA, choosing a retirement plan, leasehold improvements, meals and gifts, your computer, and dinner money.',
     keywords: '',
@@ -1374,13 +1374,13 @@ export const pages = {
     keywords: '',
   },
   '/guides/tax-strategies/turn-your-vacation-into-a-tax-deduction': {
-    title: 'Turn your Vacation Into a Tax Deduction | CPA Tax Adviser',
+    title: 'Turn Your Vacation into a Tax Deduction | CPA Tax Adviser',
     description:
       'How business owners can deduct travel costs on a trip that mixes business and vacation: setting appointments, business days, weekends, and the records to keep.',
     keywords: '',
   },
   '/guides/tax-strategies/retirement-plan-options-for-small-businesses': {
-    title: 'Retirement Plan Options For Small Businesses | CPA Tax Adviser',
+    title: 'Retirement Plan Options for Small Businesses | CPA Tax Adviser',
     description:
       'Retirement plans for small businesses compared: defined benefit and contribution plans, SIMPLE IRAs, SEPs, 401(k)s, profit-sharing plans, and choosing by your goals.',
     keywords: '',
@@ -1392,7 +1392,7 @@ export const pages = {
     keywords: '',
   },
   '/guides/life-events/getting-married/survivor-benefits': {
-    title: 'Survivor Benefits: A Guide To This Often Overlooked Insurance Add-On | CPA Tax Adviser',
+    title: 'Survivor Benefits: A Guide to This Often Overlooked Insurance Add-On | CPA Tax Adviser',
     description:
       'Social Security survivors benefits: who is eligible, how much your family can receive, how to apply, Medicare, and how your information is kept private.',
     keywords: '',

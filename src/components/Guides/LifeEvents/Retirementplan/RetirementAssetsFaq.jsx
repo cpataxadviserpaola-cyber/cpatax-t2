@@ -11,7 +11,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'heirs-income-tax',
-    title: 'Will my heirs owe income taxes when they inherit my retirement assets?',
+    title: 'Will My Heirs Owe Income Taxes When They Inherit My Retirement Assets?',
     body: (
       <>
         <p>
@@ -29,7 +29,7 @@ const sections = [
   },
   {
     id: 'heirs-estate-tax',
-    title: 'Will my heirs owe estate taxes on inherited retirement assets?',
+    title: 'Will My Heirs Owe Estate Taxes on Inherited Retirement Assets?',
     body: (
       <p>
         Your retirement assets will be included in your taxable estate. But because of the currently high estate tax
@@ -40,12 +40,12 @@ const sections = [
   },
   {
     id: 'annuity',
-    title: 'Is estate tax deferred if my heir gets an annuity?',
+    title: 'Is Estate Tax Deferred If My Heir Gets an Annuity?',
     body: <p>No. The estate is taxed on the annuity's present value.</p>,
   },
   {
     id: 'minimize-tax',
-    title: 'How can I minimize or eliminate tax on inherited retirement assets?',
+    title: 'How Can I Minimize or Eliminate Tax on Inherited Retirement Assets?',
     body: (
       <>
         <p>You can minimize or eliminate tax on inherited retirement assets by using the following methods:</p>
@@ -69,7 +69,7 @@ const sections = [
   },
   {
     id: 'how-to-take-distributions',
-    title: 'How should I take distributions from my retirement plan?',
+    title: 'How Should I Take Distributions from My Retirement Plan?',
     body: (
       <>
         <p>
@@ -102,7 +102,7 @@ const sections = [
   },
   {
     id: 'lump-sum',
-    title: 'When should I take a lump-sum distribution from my retirement plan?',
+    title: 'When Should I Take a Lump-Sum Distribution from My Retirement Plan?',
     body: (
       <p>
         Your personal needs should decide. You may need a lump sum to buy a retirement home or business, but be aware of
@@ -113,7 +113,7 @@ const sections = [
   },
   {
     id: 'changing-jobs',
-    title: "What should I do about my retirement plan assets in my ex-employer's plan if I change jobs?",
+    title: "What Should I Do About My Retirement Plan Assets in My Ex-Employer's Plan If I Change Jobs?",
     body: (
       <>
         <p>There are several things you might do depending upon your needs:</p>
@@ -131,7 +131,7 @@ const sections = [
   },
   {
     id: 'creditors',
-    title: 'Can creditors get at my retirement assets?',
+    title: 'Can Creditors Get at My Retirement Assets?',
     body: (
       <p>
         In general, employer plans such as your 401(k), IRAs, and pension plan funds are protected from general
@@ -144,7 +144,7 @@ const sections = [
   },
   {
     id: 'state-tax',
-    title: 'How will my state tax affect my retirement withdrawals?',
+    title: 'How Will My State Tax Affect My Retirement Withdrawals?',
     body: (
       <>
         <p>Each state is different, but in general, consider the following:</p>
@@ -164,7 +164,7 @@ const sections = [
   },
   {
     id: 'required-withdrawals',
-    title: "I understand that I'm required to take money out of my retirement plan after I reach age 73. Why is that?",
+    title: "I Understand That I'm Required to Take Money Out of My Retirement Plan After I Reach Age 73. Why Is That?",
     body: (
       <p>
         Retirement plans offer the biggest tax shelter in the federal system since funds grow tax-free while in the
@@ -175,7 +175,7 @@ const sections = [
   },
   {
     id: 'continue-shelter',
-    title: 'How can I continue the tax shelter for retirement plan assets after age 73?',
+    title: 'How Can I Continue the Tax Shelter for Retirement Plan Assets After Age 73?',
     body: (
       <p>
         The shelter can continue for many of those assets for a long time, assuming you don't need them to live on. You
@@ -188,7 +188,7 @@ const sections = [
   {
     id: 'assets-at-death',
     title:
-      'Suppose there are still retirement assets in my account at my death. Can the shelter continue for those who receive those assets?',
+      'Suppose There Are Still Retirement Assets in My Account at My Death. Can the Shelter Continue for Those Who Receive Those Assets?',
     body: (
       <p>
         Many rules regarding inherited retirement accounts changed with the passage of the Setting Every Community Up
@@ -201,7 +201,7 @@ const sections = [
   },
   {
     id: 'moving-states',
-    title: 'Can moving to another state when I retire save me state taxes on my retirement plan?',
+    title: 'Can Moving to Another State When I Retire Save Me State Taxes on My Retirement Plan?',
     body: (
       <p>
         Money from retirement plans, including 401(k)s, IRAs, company pensions, and other plans, is taxed according to

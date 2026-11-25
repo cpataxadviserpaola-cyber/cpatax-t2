@@ -881,7 +881,7 @@ export default function RaisingCapital() {
       page="Raising Capital"
       title={
         <>
-          Raising Capital: <em>How To Get Money For a Small Business</em>
+          Raising Capital: <em>How to Get Money for a Small Business</em>
         </>
       }
       lead="In addition to drive, ambition and a great deal of planning, starting and expanding a small business generally requires capital. Capital may come from family, friends, lenders or others. This Financial Guide provides an overview of how to get the capital you need to start or grow your business."

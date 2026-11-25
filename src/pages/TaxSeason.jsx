@@ -39,14 +39,14 @@ export default function TaxSeason() {
 
   return (
     <>
-      <PageHero page="Tax Season" eyebrow="Tax season" title={<>Tax season, <em>made simple</em></>}>
+      <PageHero page="Tax Season" eyebrow="Tax season" title={<>Tax Season, <em>Made Simple</em></>}>
         Choose a topic to find the tax season information you need. Our process, pricing, client
         portal guidance, and tax tools each have their own page.
       </PageHero>
 
       <section className="section section-white">
         <div className="container">
-          <SectionHead eyebrow="Explore tax season" title={<>Choose what you <em>need</em></>} center>
+          <SectionHead eyebrow="Explore tax season" title={<>Choose What You <em>Need</em></>} center>
             Find step-by-step guidance, pricing, the client portal tutorial, and useful tax tools.
           </SectionHead>
           <div className="tool-grid reveal">
@@ -72,7 +72,7 @@ export default function TaxSeason() {
       {upcoming.length > 0 && (
         <section className="section" id="deadlines">
           <div className="container calendar">
-            <SectionHead eyebrow="Tax calendar" title={<>Upcoming <em>IRS deadlines</em></>}>
+            <SectionHead eyebrow="Tax calendar" title={<>Upcoming <em>IRS Deadlines</em></>}>
               Federal deadlines for calendar-year filers. Weekends, holidays, and disaster relief
               can move a date, so check with us if you're unsure.
             </SectionHead>
@@ -98,7 +98,7 @@ export default function TaxSeason() {
       )}
 
       <CtaSection
-        title={<>Questions about <em>tax season?</em></>}
+        title={<>Questions About <em>Tax Season?</em></>}
         text="Our team is happy to help with your documents, your return, or your account."
       />
     </>

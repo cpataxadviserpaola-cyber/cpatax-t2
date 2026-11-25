@@ -10,7 +10,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'decide',
-    title: 'Step 1: Decide Whether You Need A Lawyer',
+    title: 'Step 1: Decide Whether You Need a Lawyer',
     body: (
       <>
         <p>
@@ -221,7 +221,7 @@ const sections = [
   },
   {
     id: 'interview',
-    title: 'Step 4: Interview The Candidates',
+    title: 'Step 4: Interview the Candidates',
     body: (
       <>
         <p>
@@ -448,7 +448,7 @@ const sections = [
           will pay for the services.
         </p>
 
-        <h3>Types Of Fee Arrangements</h3>
+        <h3>Types of Fee Arrangements</h3>
         <p>Here are several common types of fee arrangements used by lawyers:</p>
         <p>
           <em>Flat fee.</em> The lawyer will charge you a specific total fee for your case. A
@@ -716,7 +716,7 @@ const sections = [
   },
   {
     id: 'relationship',
-    title: 'Step 7: Define Your Relationship And Stay Involved',
+    title: 'Step 7: Define Your Relationship and Stay Involved',
     body: (
       <>
         <p>
@@ -885,7 +885,7 @@ const sections = [
           all the areas detailed above.
         </p>
 
-        <h3>Do You Need An Elder Law Specialist?</h3>
+        <h3>Do You Need an Elder Law Specialist?</h3>
         <p>
           The answer depends on your situation. If you already have a good working relationship
           with an attorney, discuss your particular legal needs with that attorney. Ask about your
@@ -966,7 +966,7 @@ const sections = [
           </a>
         </p>
 
-        <h3>Other Sources of Legal Assistance For Senior Citizens</h3>
+        <h3>Other Sources of Legal Assistance for Senior Citizens</h3>
         <p>There are a number of sources of legal help for elderly people:</p>
         <p>
           The <strong><em>Administration on Aging</em></strong>, headquartered in Washington, D.C.
@@ -1082,7 +1082,7 @@ export default function Lawyers() {
       page="Lawyers: How To Choose The Right One"
       title={
         <>
-          Lawyers: <em>How To Choose The Right One</em>
+          Lawyers: <em>How to Choose the Right One</em>
         </>
       }
       lead="When seeking legal aid, as in purchasing any product or service, it's important to be a smart consumer: to be well informed and to know exactly what you are getting for your money. This Financial Guide discusses how to find an attorney who will provide cost-effective help with your legal problems."

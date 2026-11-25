@@ -204,7 +204,7 @@ export default function FraudulentCharities() {
       page="Fraudulent Charities"
       title={
         <>
-          Fraudulent Charities: <em>How To Protect Yourself</em>
+          Fraudulent Charities: <em>How to Protect Yourself</em>
         </>
       }
       lead="By knowing the many ways that charities are regulated, both by the states and the IRS, you can better protect yourself against fraudulent charities and know that your charitable contribution will be properly used for the intended purpose. And if you do fall prey, you should know how to complain most effectively."
@@ -215,7 +215,7 @@ export default function FraudulentCharities() {
         Giving to a charity is a worthy objective. However, for you and society to get the maximum benefit from your
         contribution, you need to give wisely and make sure that your contribution serves the intended purpose.
       </p>
-      <RelatedGuide guide={related([75, 'Charitable Contributions: How To Give Wisely'])}>
+      <RelatedGuide guide={related([75, 'Charitable Contributions: How to Give Wisely'])}>
         Please see the Financial Guide:
       </RelatedGuide>
       <p>

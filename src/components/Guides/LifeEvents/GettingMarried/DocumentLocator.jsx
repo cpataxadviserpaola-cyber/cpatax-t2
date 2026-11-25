@@ -255,7 +255,7 @@ const sections = [
   },
   {
     id: 'documents',
-    title: 'Documents You Should Be Able To Locate Easily',
+    title: 'Documents You Should Be Able to Locate Easily',
     body: (
       <>
         <p>
@@ -398,7 +398,7 @@ export default function DocumentLocator() {
       page="Document Locator System"
       title={
         <>
-          Document Locator System: <em>A Handy Aid For Keeping Track of Your Records</em>
+          Document Locator System: <em>A Handy Aid for Keeping Track of Your Records</em>
         </>
       }
       lead="Are you able to locate insurance contracts, wills, and other important personal records quickly and easily? With this simple document locator system, you no longer need to wonder where to file a paper or where to find it."

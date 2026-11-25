@@ -188,7 +188,7 @@ const sections = [
   },
   {
     id: 'older-cars',
-    title: '4. Drop Collision And Comprehensive On Older Cars',
+    title: '4. Drop Collision and Comprehensive on Older Cars',
     body: (
       <>
         <p>
@@ -216,7 +216,7 @@ const sections = [
   },
   {
     id: 'low-profile-car',
-    title: '5. Buy A Low Profile Car',
+    title: '5. Buy a Low Profile Car',
     body: (
       <>
         <p>
@@ -229,7 +229,7 @@ const sections = [
           latest study shows that it costs three to four times as much to insure a Porsche as a Ford. If you buy a used
           car, insurance will be significantly lower.
         </p>
-        <RelatedGuide guide={related([62, 'Your Next Car: Should You Buy Or Lease?'])}>
+        <RelatedGuide guide={related([62, 'Your Next Car: Should You Buy or Lease?'])}>
           Please see the Financial Guide
         </RelatedGuide>
         <Callout label="Tip">
@@ -284,7 +284,7 @@ const sections = [
   },
   {
     id: 'collect-benefits',
-    title: "8. Collect All Of The Benefits You're Entitled To",
+    title: "8. Collect All of the Benefits You're Entitled To",
     body: (
       <>
         <p>
@@ -362,7 +362,7 @@ const sections = [
   },
   {
     id: 'drive-carefully',
-    title: '10. Drive Carefully And Take Your Car Key',
+    title: '10. Drive Carefully and Take Your Car Key',
     body: (
       <p>
         Finally, at the risk of being obvious, drive carefully. Accidents can greatly increase your premiums as well as
@@ -427,7 +427,7 @@ export default function CarInsurance() {
       page="Car Insurance"
       title={
         <>
-          Car Insurance: <em>10 Cost-Cutters To Save You Money</em>
+          Car Insurance: <em>10 Cost-Cutters to Save You Money</em>
         </>
       }
       lead="The amount of money you spend for car insurance can vary dramatically depending on the insurance company you choose, the coverage you want and the kind of car you drive. Are you spending more than you need to on insurance premiums? This Financial Guide will help you get the most for your car insurance dollar."

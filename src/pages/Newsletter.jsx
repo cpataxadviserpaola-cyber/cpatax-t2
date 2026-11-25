@@ -358,7 +358,7 @@ export default function Newsletter() {
         eyebrow={`${issue} issue`}
         title={
           <>
-            Our <em>newsletter</em>
+            Our <em>Newsletter</em>
           </>
         }
       >
@@ -419,7 +419,7 @@ export default function Newsletter() {
             <div>
               <p className="eyebrow">Email updates</p>
               <h2>
-                Get the newsletter <em>by email</em>
+                Get the Newsletter <em>by Email</em>
               </h2>
               <p>Enter your email below to subscribe to our monthly newsletter.</p>
             </div>
@@ -432,7 +432,7 @@ export default function Newsletter() {
         soft
         title={
           <>
-            Want advice for <em>your situation?</em>
+            Want Advice for <em>Your Situation?</em>
           </>
         }
         text="Our team can help you apply these updates to your own taxes and business, in English or Spanish."

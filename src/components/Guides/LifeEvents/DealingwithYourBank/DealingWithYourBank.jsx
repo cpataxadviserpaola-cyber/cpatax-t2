@@ -5,10 +5,10 @@ const bankGuides = guide('life-events.php', 5);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [22, 'Bank Accounts: What To Look and Ask For'],
-      [23, 'Applying For a Loan: How To Get The Best Loan At The Lowest Cost'],
+      [22, 'Bank Accounts: What to Look and Ask For'],
+      [23, 'Applying for a Loan: How to Get the Best Loan at the Lowest Cost'],
     ].map(bankGuides),
   },
   {

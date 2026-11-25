@@ -86,7 +86,7 @@ const sections = [
   },
   {
     id: 'after-death',
-    title: 'Withdrawal after You Die',
+    title: 'Withdrawal After You Die',
     body: (
       <>
         <p>
@@ -301,7 +301,7 @@ export default function RetirementDistributionsWhen() {
       page="Retirement Plan Distributions: When"
       title={
         <>
-          Retirement Plan Distributions: <em>When To Take Them</em>
+          Retirement Plan Distributions: <em>When to Take Them</em>
         </>
       }
       lead="When must you start withdrawing the funds in your retirement plans? And what happens if the funds aren't withdrawn before you die? To what extent will your heirs be taxed? The rules are complex but there are ways the savvy taxpayer can maximize the tax shelter."
@@ -329,7 +329,7 @@ export default function RetirementDistributionsWhen() {
         that provides the plan, or to withdrawals from traditional IRAs—in those cases, you are subject to the
         mandatory withdrawal rules.
       </p>
-      <RelatedGuide guide={related([60, 'Roth IRAs: How They Work and How To Use Them'])}>
+      <RelatedGuide guide={related([60, 'Roth IRAs: How They Work and How to Use Them'])}>
         Roth IRAs are another exception. For a discussion of Roth IRAs, please see the Financial Guide:
       </RelatedGuide>
       <p>
@@ -345,7 +345,7 @@ export default function RetirementDistributionsWhen() {
         will help avoid unnecessary tax headaches for you and your heirs. Because of the complexity of the rules,
         professional guidance in this area is strongly suggested.
       </p>
-      <RelatedGuide guide={related([59, 'Retirement Plan Distributions: How To Take Them'])}>
+      <RelatedGuide guide={related([59, 'Retirement Plan Distributions: How to Take Them'])}>
         The tax treatment will be dictated not only by the <strong><em>timing</em></strong> of the withdrawal
         (i.e., <strong><em>when</em></strong> to take it) but also by the <strong><em>form</em></strong> of the
         withdrawal (i.e., <strong><em>how</em></strong> to take it). This Financial Guide discusses the "when."

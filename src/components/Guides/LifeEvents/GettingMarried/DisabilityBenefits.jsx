@@ -204,7 +204,7 @@ const sections = [
           explained in this section.
         </p>
 
-        <h3>If you work while receiving disability payments</h3>
+        <h3>If You Work While Receiving Disability Payments</h3>
         <p>
           Notify SSA if you take a job or become self-employed, no matter how little you earn. Tell them how many
           hours you expect to work and when your work starts or stops. If you still are disabled, then you will be
@@ -214,7 +214,7 @@ const sections = [
           expenses.
         </p>
 
-        <h3>If you receive other disability benefits</h3>
+        <h3>If You Receive Other Disability Benefits</h3>
         <p>
           Social Security benefits for you and your family may be reduced if you are eligible for workers'
           compensation (including payments through the black lung program) or disability benefits from certain
@@ -226,7 +226,7 @@ const sections = [
           <li>Your benefits change or stop.</li>
         </ul>
 
-        <h3>If you are offered services under the Ticket to Work Program</h3>
+        <h3>If You Are Offered Services Under the Ticket to Work Program</h3>
         <p>
           Social Security may send you a Ticket that you can use to obtain services to help you go to work or earn
           more money. You may take the Ticket to your state vocational rehabilitation agency or an Employment
@@ -235,7 +235,7 @@ const sections = [
           the Ticket Program is voluntary, and the services are provided at no cost to you.
         </p>
 
-        <h3>If you move</h3>
+        <h3>If You Move</h3>
         <p>
           When you plan to move, give SSA your new address and phone number as soon as you know them. Also, let
           them know the names of any family members who are getting benefits and are moving with you. Even if you
@@ -248,7 +248,7 @@ const sections = [
           . Be sure you also file a change of address with your post office.
         </p>
 
-        <h3>If you change direct deposit accounts</h3>
+        <h3>If You Change Direct Deposit Accounts</h3>
         <p>
           If you change financial institutions or open a new account, be sure to say that you want to sign up for
           direct deposit. You also can change your direct deposit online if you have a personal identification
@@ -258,7 +258,7 @@ const sections = [
           deposited into the new account.
         </p>
 
-        <h3>If you are unable to manage your benefits</h3>
+        <h3>If You Are Unable to Manage Your Benefits</h3>
         <p>
           Sometimes, people are unable to manage their money. When this happens, Social Security should be
           notified. They can arrange to send benefits to a relative or another person who agrees to use the money
@@ -276,7 +276,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>If you get a pension from work not covered by Social Security</h3>
+        <h3>If You Get a Pension from Work Not Covered by Social Security</h3>
         <p>
           If you start receiving a pension from a job for which you did not pay Social Security taxes—such as the
           federal civil service system, some state or local pension systems, nonprofit organizations, or a foreign
@@ -284,14 +284,14 @@ const sections = [
           pension changes.
         </p>
 
-        <h3>If you get married or divorced</h3>
+        <h3>If You Get Married or Divorced</h3>
         <p>
           If you get married or divorced, your Social Security benefits may be affected, depending on the kind of
           benefits you receive.
         </p>
         <p>If your benefits are stopped because of marriage or remarriage, they may be started again if the marriage ends.</p>
 
-        <h3>If you change your name</h3>
+        <h3>If You Change Your Name</h3>
         <p>
           If you change your name by marriage, divorce, or court order, you must tell SSA immediately. If you do
           not give them this information, your benefits will be issued under your old name, and if you have direct
@@ -299,7 +299,7 @@ const sections = [
           your identification differs from the name on your check.
         </p>
 
-        <h3>If you care for a child who receives benefits</h3>
+        <h3>If You Care for a Child Who Receives Benefits</h3>
         <p>
           If you receive benefits because you are caring for a disabled worker's child who is younger than age 16
           or disabled, notify SSA right away if the child leaves your care. You must give them the name and address
@@ -312,20 +312,20 @@ const sections = [
         </p>
         <p>Your benefits usually stop when the youngest, unmarried child in your care reaches age 16 unless the child is disabled.</p>
 
-        <h3>If you become a parent after entitlement</h3>
+        <h3>If You Become a Parent After Entitlement</h3>
         <p>
           If you become the parent of a child after entitlement (including an adopted child), let SSA know so they
           can determine if the child qualifies for benefits.
         </p>
 
-        <h3>If a child receiving benefits is adopted</h3>
+        <h3>If a Child Receiving Benefits Is Adopted</h3>
         <p>
           When a child receiving benefits is adopted by someone else, let SSA know their new name, the date of the
           adoption decree, and the adopting parent's name and address. The adoption will not cause the child's
           benefits to stop.
         </p>
 
-        <h3>If you have an outstanding warrant for your arrest</h3>
+        <h3>If You Have an Outstanding Warrant for Your Arrest</h3>
         <p>You must tell SSA if you have an outstanding arrest warrant for any of the following felony offenses:</p>
         <ul>
           <li>Flight to avoid prosecution or confinement;</li>
@@ -337,7 +337,7 @@ const sections = [
           outstanding arrest warrant for felony offenses.
         </p>
 
-        <h3>If you are convicted of a crime</h3>
+        <h3>If You Are Convicted of a Crime</h3>
         <p>
           Tell SSA immediately if you are convicted of a crime. Regular disability benefits or any underpayments
           that may be due are not paid for the months a person is confined for a crime. Any family members eligible
@@ -356,14 +356,14 @@ const sections = [
           <li>Incompetent to stand trial.</li>
         </ul>
 
-        <h3>If you violate a condition of parole or probation</h3>
+        <h3>If You Violate a Condition of Parole or Probation</h3>
         <p>
           You must tell SSA if you are violating a condition of your probation or parole imposed under federal or
           state law. You cannot receive regular disability benefits or any underpayment that may be due for any
           month in which you violate a condition of your probation or parole.
         </p>
 
-        <h3>If you leave the United States</h3>
+        <h3>If You Leave the United States</h3>
         <p>
           If you are a U.S. citizen, you can travel to or live in most foreign countries without affecting your
           Social Security benefits. There are, however, a few countries where Social Security payments generally
@@ -393,14 +393,14 @@ const sections = [
           (Publication No. 05-10137).
         </p>
 
-        <h3>If your citizenship status changes</h3>
+        <h3>If Your Citizenship Status Changes</h3>
         <p>
           If you are not a U.S. citizen, let SSA know if you become a U.S. citizen or if your non-citizen status
           changes. If your immigration status expires, you must give SSA new evidence that shows you continue to be
           in the United States lawfully.
         </p>
 
-        <h3>If a beneficiary dies</h3>
+        <h3>If a Beneficiary Dies</h3>
         <p>
           Let SSA know if a person receiving Social Security benefits dies. Benefits are not payable for the month
           of death. That means if the person died at any time in July, for example, the check received in August
@@ -409,7 +409,7 @@ const sections = [
         </p>
         <p>Family members may be eligible for Social Security Survivors Benefits when a person getting disability benefits dies.</p>
 
-        <h3>If you are receiving Social Security and Railroad Retirement benefits</h3>
+        <h3>If You Are Receiving Social Security and Railroad Retirement Benefits</h3>
         <p>
           If you receive both Social Security and Railroad Retirement benefits based on your spouse's work and your
           spouse dies, you must tell SSA immediately. You will no longer be eligible to receive both benefits. You
@@ -568,7 +568,7 @@ const sections = [
           39 months after the trial work period. Beyond that, you may purchase coverage with a monthly premium.
         </p>
 
-        <h3>Help With Work Expenses</h3>
+        <h3>Help with Work Expenses</h3>
         <p>
           If you need certain equipment or services to help you work, the money you pay for them can be deducted
           from your earnings in deciding whether you are doing "substantial" work. It does not matter if you also
@@ -706,7 +706,7 @@ export default function DisabilityBenefits() {
       page="Disability Benefits"
       title={
         <>
-          Disability Benefits: <em>How To Get All You're Entitled To</em>
+          Disability Benefits: <em>How to Get All You're Entitled To</em>
         </>
       }
       lead={

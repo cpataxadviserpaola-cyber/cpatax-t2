@@ -12,7 +12,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'how-to-take-distributions',
-    title: 'How should I take distributions from my retirement plan?',
+    title: 'How Should I Take Distributions from My Retirement Plan?',
     body: (
       <>
         <p>
@@ -46,7 +46,7 @@ const sections = [
   },
   {
     id: 'lump-sum',
-    title: 'When is it best to take a lump-sum distribution from my retirement plan?',
+    title: 'When Is It Best to Take a Lump-Sum Distribution from My Retirement Plan?',
     body: (
       <p>
         Your personal needs should decide. You may need a lump sum to buy a retirement home or business. If your
@@ -56,7 +56,7 @@ const sections = [
   },
   {
     id: 'changing-jobs',
-    title: "What should I do about my retirement plan assets in my ex-employer's plan if I change jobs?",
+    title: "What Should I Do About My Retirement Plan Assets in My Ex-Employer's Plan If I Change Jobs?",
     body: (
       <>
         <p>There are several things you might do depending upon your needs:</p>
@@ -74,7 +74,7 @@ const sections = [
   },
   {
     id: 'creditors',
-    title: 'Can creditors get at my retirement assets?',
+    title: 'Can Creditors Get at My Retirement Assets?',
     body: (
       <p>
         In general, employer plans such as your 401(k), IRAs, and pension plan funds are protected from general
@@ -87,7 +87,7 @@ const sections = [
   },
   {
     id: 'state-tax',
-    title: 'How will my state tax affect my retirement withdrawals?',
+    title: 'How Will My State Tax Affect My Retirement Withdrawals?',
     body: (
       <>
         <p>Each state is different, but in general, consider the following:</p>
@@ -107,7 +107,7 @@ const sections = [
   },
   {
     id: 'moving-states',
-    title: 'Can moving to another state when I retire save me state taxes on my retirement plan?',
+    title: 'Can Moving to Another State When I Retire Save Me State Taxes on My Retirement Plan?',
     body: (
       <>
         <p>
@@ -127,7 +127,7 @@ const sections = [
   },
   {
     id: 'reverse-mortgage',
-    title: 'What is a reverse mortgage?',
+    title: 'What Is a Reverse Mortgage?',
     body: (
       <>
         <p>

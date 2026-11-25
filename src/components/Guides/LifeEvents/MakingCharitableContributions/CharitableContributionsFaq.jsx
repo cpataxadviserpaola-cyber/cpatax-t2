@@ -11,7 +11,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'spot-a-scam',
-    title: 'How can I spot a charity scam?',
+    title: 'How Can I Spot a Charity Scam?',
     body: (
       <>
         <p>These are some common-sense suggestions for avoiding rip-offs:</p>
@@ -48,7 +48,7 @@ const sections = [
   },
   {
     id: 'mail-solicitations',
-    title: 'What should I watch out for with mail solicitations?',
+    title: 'What Should I Watch Out for with Mail Solicitations?',
     body: (
       <>
         <p>
@@ -89,7 +89,7 @@ const sections = [
   },
   {
     id: 'door-to-door',
-    title: 'What should I watch out for with door-to-door solicitations?',
+    title: 'What Should I Watch Out for with Door-to-Door Solicitations?',
     body: (
       <>
         <p>
@@ -138,7 +138,7 @@ const sections = [
   },
   {
     id: 'maximize-tax-benefit',
-    title: 'How can I maximize my tax benefit from charitable contributions?',
+    title: 'How Can I Maximize My Tax Benefit from Charitable Contributions?',
     body: (
       <>
         <p>
@@ -192,7 +192,7 @@ const sections = [
   },
   {
     id: 'tax-effective-ways',
-    title: 'What are the most tax-effective ways of donating?',
+    title: 'What Are the Most Tax-Effective Ways of Donating?',
     body: (
       <>
         <p>
@@ -289,7 +289,7 @@ const sections = [
   },
   {
     id: 'planned-or-deferred-gift',
-    title: 'Should I make a planned or deferred gift?',
+    title: 'Should I Make a Planned or Deferred Gift?',
     body: (
       <>
         <p>
@@ -308,7 +308,7 @@ const sections = [
   },
   {
     id: 'giving-time',
-    title: 'Is it wise to give my time to charity?',
+    title: 'Is It Wise to Give My Time to Charity?',
     body: (
       <>
         <p>
@@ -338,7 +338,7 @@ const sections = [
   },
   {
     id: 'thrift-stores',
-    title: 'How do charity thrift stores work?',
+    title: 'How Do Charity Thrift Stores Work?',
     body: (
       <>
         <p>There are three major types of thrift store operations:</p>
@@ -400,7 +400,7 @@ const sections = [
   },
   {
     id: 'event-tickets',
-    title: 'How are tickets to charitable events treated?',
+    title: 'How Are Tickets to Charitable Events Treated?',
     body: (
       <>
         <p>

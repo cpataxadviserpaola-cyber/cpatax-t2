@@ -187,7 +187,7 @@ export default function DeductionForRealEstateTaxes() {
     <GuideArticle
       category="life-events"
       topic="/guides/life-events/buying-and-selling-a-home"
-      title="The Deduction For Real Estate Taxes"
+      title="The Deduction for Real Estate Taxes"
       sections={sections}
     >
       <>

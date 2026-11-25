@@ -16,7 +16,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'lease-or-buy',
-    title: 'Should I lease or buy my next car?',
+    title: 'Should I Lease or Buy My Next Car?',
     body: (
       <>
         <p>
@@ -40,7 +40,7 @@ const sections = [
   },
   {
     id: 'best-buy',
-    title: 'How do I get the "best buy" when buying a new car?',
+    title: 'How Do I Get the "Best Buy" When Buying a New Car?',
     body: (
       <>
         <p>
@@ -94,7 +94,7 @@ const sections = [
   },
   {
     id: 'negotiate-purchase',
-    title: 'How should I negotiate for a new car?',
+    title: 'How Should I Negotiate for a New Car?',
     body: (
       <>
         <p>
@@ -126,7 +126,7 @@ const sections = [
   },
   {
     id: 'negotiate-lease',
-    title: 'Should I negotiate a car lease the same way as I purchase a car?',
+    title: 'Should I Negotiate a Car Lease the Same Way as I Purchase a Car?',
     body: (
       <>
         <p>
@@ -162,7 +162,7 @@ const sections = [
   },
   {
     id: 'how-a-lease-works',
-    title: 'How does an auto lease work?',
+    title: 'How Does an Auto Lease Work?',
     body: (
       <>
         <p>
@@ -193,7 +193,7 @@ const sections = [
   },
   {
     id: 'initial-costs',
-    title: 'What are the initial (up-front) costs of leasing a car?',
+    title: 'What Are the Initial (Up-Front) Costs of Leasing a Car?',
     body: (
       <>
         <p>
@@ -215,7 +215,7 @@ const sections = [
   },
   {
     id: 'questions-to-ask',
-    title: 'What questions should I ask about a car lease?',
+    title: 'What Questions Should I Ask About a Car Lease?',
     body: (
       <>
         <p>
@@ -247,7 +247,7 @@ const sections = [
   },
   {
     id: 'security-deposit',
-    title: 'Why is a security deposit required when I lease a car?',
+    title: 'Why Is a Security Deposit Required When I Lease a Car?',
     body: (
       <p>
         The Lessor is allowed to keep the security deposit if you owe money at the end of your lease or if you missed a
@@ -259,7 +259,7 @@ const sections = [
   },
   {
     id: 'end-of-lease-charges',
-    title: 'How much can a dealer charge me at the end of an auto lease?',
+    title: 'How Much Can a Dealer Charge Me at the End of an Auto Lease?',
     body: (
       <>
         <p>
@@ -299,7 +299,7 @@ const sections = [
   },
   {
     id: 'ongoing-disclosures',
-    title: 'What ongoing lease items must the dealer disclose?',
+    title: 'What Ongoing Lease Items Must the Dealer Disclose?',
     body: (
       <p>
         The Consumer Leasing Act requires dealers to disclose the total number of payments, the amount of each payment,
@@ -310,7 +310,7 @@ const sections = [
   },
   {
     id: 'maintenance',
-    title: 'What about maintenance?',
+    title: 'What About Maintenance?',
     body: (
       <p>
         Maintenance is part of the lease and specifies whether the dealer assumes the maintenance expenses or the
@@ -323,11 +323,11 @@ const sections = [
   },
   {
     id: 'final-costs',
-    title: 'What are the typical final (lease-end) costs?',
+    title: 'What Are the Typical Final (Lease-End) Costs?',
     body: (
       <>
         <p>Final costs include:</p>
-        <h3>Excess mileage charges</h3>
+        <h3>Excess Mileage Charges</h3>
         <p>
           Mileage limitations usually occur with a closed-end lease. If you have gone over the allowable mileage at the
           end of your lease, you will have to pay a fee.
@@ -356,18 +356,18 @@ const sections = [
           With an open-end lease, although there is no penalty, if you exceed the mileage limit the appraisal value at
           the end of the lease term will usually be lower.
         </p>
-        <h3>Default fees</h3>
+        <h3>Default Fees</h3>
         <p>
           These cover any payments or security deposits that the dealer does not receive from you and legal fees and
           costs the dealer incurs to repossess the car.
         </p>
-        <h3>Excessive wear and tear charges</h3>
+        <h3>Excessive Wear and Tear Charges</h3>
         <p>
           You'll have to pay charges for excessive wear and tear when you return the car at the end of the lease unless
           the contract reads otherwise. The dealer must tell you in writing the specific definition of excessive wear and
           tear. Generally, it means anything beyond normal usage (mechanical or physical).
         </p>
-        <h3>Disposition charges</h3>
+        <h3>Disposition Charges</h3>
         <p>
           These are the costs of cleaning the car, giving it a tune-up, and doing final maintenance. If the agreement
           does not state otherwise, the dealer may pass these costs on to you.
@@ -377,7 +377,7 @@ const sections = [
   },
   {
     id: 'purchase-option',
-    title: 'What is a lease-purchase option?',
+    title: 'What Is a Lease-Purchase Option?',
     body: (
       <>
         <p>
@@ -396,7 +396,7 @@ const sections = [
   },
   {
     id: 'early-termination',
-    title: 'What is a lease early-termination option?',
+    title: 'What Is a Lease Early-Termination Option?',
     body: (
       <p>
         If you terminate your lease after, say, 36 months on a 48-month lease, you will have to pay an extra charge,
@@ -409,7 +409,7 @@ const sections = [
   },
   {
     id: 'capitalized-cost-reduction',
-    title: 'What is a "capitalized cost reduction"?',
+    title: 'What Is a "Capitalized Cost Reduction"?',
     body: (
       <>
         <p>

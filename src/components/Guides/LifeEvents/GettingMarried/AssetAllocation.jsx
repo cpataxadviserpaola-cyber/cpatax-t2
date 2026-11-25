@@ -106,7 +106,7 @@ function EfficientFrontierChart() {
 const sections = [
   {
     id: 'what-it-is',
-    title: 'What is Asset Allocation?',
+    title: 'What Is Asset Allocation?',
     body: (
       <>
         <p>
@@ -258,7 +258,7 @@ const sections = [
   },
   {
     id: 'right-for-you',
-    title: 'What Is Right For You?',
+    title: 'What Is Right for You?',
     body: (
       <>
         <p>
@@ -361,7 +361,7 @@ export default function AssetAllocation() {
       page="Asset Allocation"
       title={
         <>
-          Asset Allocation: <em>How To Diversify For Maximum Return</em>
+          Asset Allocation: <em>How to Diversify for Maximum Return</em>
         </>
       }
       lead={

@@ -10,7 +10,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'variable-annuities',
-    title: 'What are variable annuities?',
+    title: 'What Are Variable Annuities?',
     body: (
       <>
         <p>
@@ -37,7 +37,7 @@ const sections = [
   },
   {
     id: 'how-they-work',
-    title: 'How do annuities work?',
+    title: 'How Do Annuities Work?',
     body: (
       <>
         <p>
@@ -57,7 +57,7 @@ const sections = [
   },
   {
     id: 'should-i-invest',
-    title: 'Should I invest in annuities?',
+    title: 'Should I Invest in Annuities?',
     body: (
       <>
         <p>There are two reasons to use an annuity as an investment vehicle:</p>
@@ -100,7 +100,7 @@ const sections = [
   },
   {
     id: 'immediate-annuity',
-    title: 'Should a retiree purchase an immediate annuity?',
+    title: 'Should a Retiree Purchase an Immediate Annuity?',
     body: (
       <>
         <p>
@@ -143,7 +143,7 @@ const sections = [
   },
   {
     id: 'life-insurance',
-    title: 'How do life annuities differ from life insurance?',
+    title: 'How Do Life Annuities Differ from Life Insurance?',
     body: (
       <>
         <p>
@@ -164,7 +164,7 @@ const sections = [
   },
   {
     id: 'down-side',
-    title: "What's the down side to buying an annuity?",
+    title: "What's the Down Side to Buying an Annuity?",
     body: (
       <p>
         You cannot get to your money during the growth period without incurring taxes and penalties. The tax code
@@ -176,7 +176,7 @@ const sections = [
   },
   {
     id: 'types',
-    title: 'What types of annuities are available?',
+    title: 'What Types of Annuities Are Available?',
     body: (
       <>
         <p>
@@ -235,7 +235,7 @@ const sections = [
   },
   {
     id: 'collecting',
-    title: 'What are my options for collecting my annuity?',
+    title: 'What Are My Options for Collecting My Annuity?',
     body: (
       <>
         <p>
@@ -292,7 +292,7 @@ const sections = [
   },
   {
     id: 'qualified-plan-tax',
-    title: "What's the tax on payouts from a qualified plan or IRA annuity?",
+    title: "What's the Tax on Payouts from a Qualified Plan or IRA Annuity?",
     body: (
       <>
         <p>
@@ -318,7 +318,7 @@ const sections = [
   },
   {
     id: 'ira-annuities',
-    title: 'Is it a good idea to buy annuities for my IRA or qualified plan?',
+    title: 'Is It a Good Idea to Buy Annuities for My IRA or Qualified Plan?',
     body: (
       <p>
         Though this is sometimes done, no tax advantage is gained by putting annuities in such a plan since qualified
@@ -330,7 +330,7 @@ const sections = [
   },
   {
     id: 'payouts-taxed',
-    title: 'How will my annuity payouts be taxed?',
+    title: 'How Will My Annuity Payouts Be Taxed?',
     body: (
       <>
         <p>
@@ -377,7 +377,7 @@ const sections = [
   },
   {
     id: 'beneficiaries-heirs',
-    title: 'What tax must my beneficiaries or heirs pay if my annuity continues after my death?',
+    title: 'What Tax Must My Beneficiaries or Heirs Pay If My Annuity Continues After My Death?',
     body: (
       <>
         <p>
@@ -402,7 +402,7 @@ const sections = [
   },
   {
     id: 'shop',
-    title: 'How should I shop for an annuity?',
+    title: 'How Should I Shop for an Annuity?',
     body: (
       <>
         <p>
@@ -431,7 +431,7 @@ const sections = [
   },
   {
     id: 'hidden-costs',
-    title: 'What are the added or hidden costs in buying an annuity?',
+    title: 'What Are the Added or Hidden Costs in Buying an Annuity?',
     body: (
       <>
         <p>There are costs associated with annuities. Here are the most important items you should be aware of:</p>
@@ -476,7 +476,7 @@ const sections = [
   },
   {
     id: 'annuity-or-lump-sum',
-    title: 'Is it better to take an annuity or a lump-sum distribution?',
+    title: 'Is It Better to Take an Annuity or a Lump-Sum Distribution?',
     body: (
       <>
         <p>As in so many areas of retirement planning, that depends upon your particular needs and circumstances.</p>
@@ -496,7 +496,7 @@ const sections = [
   },
   {
     id: 'joint-and-survivor',
-    title: 'What is a joint and survivor annuity?',
+    title: 'What Is a Joint and Survivor Annuity?',
     body: (
       <>
         <p>
@@ -512,7 +512,7 @@ const sections = [
   },
   {
     id: 'change-joint-and-survivor',
-    title: "Can I change from a joint and survivor annuity if it doesn't meet my needs?",
+    title: "Can I Change from a Joint and Survivor Annuity If It Doesn't Meet My Needs?",
     body: (
       <>
         <p>

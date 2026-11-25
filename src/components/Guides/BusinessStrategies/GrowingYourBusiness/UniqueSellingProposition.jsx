@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'what-is-a-usp',
-    title: 'What is a unique selling proposition?',
+    title: 'What Is a Unique Selling Proposition?',
     body: (
       <>
         <p>
@@ -21,7 +21,7 @@ const sections = [
   },
   {
     id: 'identify-what-matters',
-    title: 'Identify what customers value',
+    title: 'Identify What Customers Value',
     body: (
       <p>
         Develop the USP around the features that best represent your offer to the target customer. For example, a
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     id: 'understand-motivation',
-    title: 'Understand why customers buy',
+    title: 'Understand Why Customers Buy',
     body: (
       <p>
         Demographics such as age, gender, and income can help describe a market, but they may not explain the reasons
@@ -46,7 +46,7 @@ const sections = [
   },
   {
     id: 'ask-customers',
-    title: 'Ask customers what sets you apart',
+    title: 'Ask Customers What Sets You Apart',
     body: (
       <p>
         If you already have customers, ask why they choose your product or service instead of a competitor’s. Their
@@ -57,7 +57,7 @@ const sections = [
   },
   {
     id: 'usp-examples',
-    title: 'Recognize the idea in established brands',
+    title: 'Recognize the Idea in Established Brands',
     body: (
       <p>
         The source points to familiar brand propositions as examples of a clear, memorable distinction: a candy
@@ -70,7 +70,7 @@ const sections = [
   },
   {
     id: 'develop-before-launch',
-    title: 'Develop a USP before you have customers',
+    title: 'Develop a USP Before You Have Customers',
     body: (
       <p>
         If the business is new and does not yet have customers to interview, apply the same customer-centered

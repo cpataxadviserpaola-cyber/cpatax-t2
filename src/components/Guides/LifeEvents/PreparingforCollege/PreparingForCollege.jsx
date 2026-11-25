@@ -5,32 +5,32 @@ const related = guide('life-events.php');
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [24, 'Credit Cards: How To Choose—And Use—Them Wisely'],
-      [22, 'Bank Accounts: What To Look and Ask For'],
-      [43, 'Car Insurance: 10 Cost-Cutters To Save You Money'],
+      [24, 'Credit Cards: How to Choose—And Use—Them Wisely'],
+      [22, 'Bank Accounts: What to Look and Ask For'],
+      [43, 'Car Insurance: 10 Cost-Cutters to Save You Money'],
       [68, 'Refinancing Your Mortgage: When and How'],
-      [52, 'Home Equity Loans: How To Shop For The One That Is Best For You'],
-      [10, 'Your Financial Plan: Getting Started On a Secure Future'],
-      [11, 'Budgeting: How To Prepare a Workable Plan'],
-      [100, 'Saving Money: 10 Major Ways To Increase Your Nest Egg'],
+      [52, 'Home Equity Loans: How to Shop for the One That Is Best for You'],
+      [10, 'Your Financial Plan: Getting Started on a Secure Future'],
+      [11, 'Budgeting: How to Prepare a Workable Plan'],
+      [100, 'Saving Money: 10 Major Ways to Increase Your Nest Egg'],
       [83, 'Investment Basics: What You Should Know'],
     ].map(related),
   },
   {
-    label: 'Official college-planning resources',
+    label: 'Official College-Planning Resources',
     items: [
       {
-        title: 'Federal Student Aid: Prepare for college',
+        title: 'Federal Student Aid: Prepare for College',
         href: 'https://studentaid.gov/resources/prepare-for-college',
       },
       {
-        title: 'Federal Student Aid: FAFSA form and application information',
+        title: 'Federal Student Aid: FAFSA Form and Application Information',
         href: 'https://studentaid.gov/h/apply-for-aid/fafsa',
       },
       {
-        title: 'IRS information on qualified tuition programs (529 plans)',
+        title: 'IRS Information on Qualified Tuition Programs (529 Plans)',
         href: 'https://www.irs.gov/taxtopics/tc313',
       },
     ],

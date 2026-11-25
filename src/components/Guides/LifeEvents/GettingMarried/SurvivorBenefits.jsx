@@ -156,7 +156,7 @@ const sections = [
           earnings exceed certain limits. There are no limits once you reach 70.
         </p>
 
-        <h3>Pensions from work not covered by Social Security</h3>
+        <h3>Pensions from Work Not Covered by Social Security</h3>
         <p>
           If you get a pension from work where you paid Social Security taxes, that pension will not affect your Social
           Security benefits. However, if you get a pension from work that was not covered by Social Security—for
@@ -288,7 +288,7 @@ export default function SurvivorBenefits() {
       page="Survivor Benefits"
       title={
         <>
-          Survivor Benefits: <em>A Guide To This Often Overlooked Insurance Add-On</em>
+          Survivor Benefits: <em>A Guide to This Often Overlooked Insurance Add-On</em>
         </>
       }
       lead="Many people think that Social Security only provides retirement checks, but that's just part of what the Social Security Administration (SSA) does. In the event of your death, your survivors may also be entitled to Social Security benefits, an important consideration when figuring out how much life insurance you'll need to provide for your family when you die."
@@ -300,7 +300,7 @@ export default function SurvivorBenefits() {
         widowers (and divorced widows and widowers), children, and dependent parents. It's a benefit that shouldn't be
         overlooked when figuring out your life insurance needs.
       </p>
-      <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind To Buy'])}>
+      <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind to Buy'])}>
         Please see the Financial Guide:
       </RelatedGuide>
       <p>

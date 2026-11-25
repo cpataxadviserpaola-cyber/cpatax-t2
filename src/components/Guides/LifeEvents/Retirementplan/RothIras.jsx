@@ -125,7 +125,7 @@ const sections = [
         </ol>
         <p>Disregard rollover contributions from other Roth IRAs for this purpose.</p>
 
-        <h3>Aggregation (grouping and adding) rules</h3>
+        <h3>Aggregation (Grouping and Adding) Rules</h3>
         <p>
           Determine the taxable amounts distributed (withdrawn), distributions, and contributions by grouping and adding
           them together as follows.
@@ -163,7 +163,7 @@ const sections = [
           </ul>
         </Callout>
 
-        <h3>Distributions after Owner's Death</h3>
+        <h3>Distributions After Owner's Death</h3>
         <p>
           Qualified distributions after the owner's death are tax-free to heirs. Nonqualified distributions after
           death, which are distributions where the 5-year holding period wasn't met, are taxable income to heirs as
@@ -373,7 +373,7 @@ export default function RothIras() {
       page="Roth IRAs"
       title={
         <>
-          Roth IRAs: <em>How They Work and How To Use Them</em>
+          Roth IRAs: <em>How They Work and How to Use Them</em>
         </>
       }
       lead={`Roth IRAs differ from other tax-favored retirement plans, including other IRAs (called "traditional IRAs"), in that they promise complete tax exemption on distribution. There are other important differences as well, and many qualifications about their use. This Financial Guide shows how they work, how they compare with other retirement devices—and why YOU might want one, or more.`}

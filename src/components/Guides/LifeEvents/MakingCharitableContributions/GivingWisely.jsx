@@ -122,7 +122,7 @@ const sections = [
   },
   {
     id: 'telephone-door-to-door-street',
-    title: 'Telephone, Door-To-Door, And Street Solicitations',
+    title: 'Telephone, Door-to-Door, and Street Solicitations',
     body: (
       <>
         <p>
@@ -259,7 +259,7 @@ const sections = [
   },
   {
     id: 'fund-raising-events',
-    title: 'Fund-Raising Dinners, Variety Shows, And Other Events',
+    title: 'Fund-Raising Dinners, Variety Shows, and Other Events',
     body: (
       <>
         <p>
@@ -447,7 +447,7 @@ const sections = [
   },
   {
     id: 'police-firefighter',
-    title: 'Police And Firefighter Appeals',
+    title: 'Police and Firefighter Appeals',
     body: (
       <>
         <p>In reviewing such appeals, potential donors should be aware of the following points.</p>
@@ -603,7 +603,7 @@ export default function GivingWisely() {
       page="Charitable Contributions"
       title={
         <>
-          Charitable Contributions: <em>How To Give Wisely</em>
+          Charitable Contributions: <em>How to Give Wisely</em>
         </>
       }
       lead="Since charities ask for larger and more frequent donations from the public these days, soliciting by mail, telephone, television, and radio, for example, they should be checked out before you donate money or time. Here are some tips on how to maximize your charity dollar and avoid scams."
@@ -633,7 +633,7 @@ export default function GivingWisely() {
           (usually a division of the state attorney's general office) and with the Better Business Bureau (BBB).
         </li>
       </ul>
-      <RelatedGuide guide={related([79, 'Fraudulent Charities: How To Protect Yourself'])}>
+      <RelatedGuide guide={related([79, 'Fraudulent Charities: How to Protect Yourself'])}>
         Please see the Financial Guide:
       </RelatedGuide>
       <Callout label="Tip">

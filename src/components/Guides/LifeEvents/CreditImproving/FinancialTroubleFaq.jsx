@@ -12,7 +12,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'too-much-debt',
-    title: 'How can I tell whether I have too much debt?',
+    title: 'How Can I Tell Whether I Have Too Much Debt?',
     body: (
       <>
         <p>If you answer yes to any one of the following questions, you should take action:</p>
@@ -37,7 +37,7 @@ const sections = [
   },
   {
     id: 'steps',
-    title: 'What steps should I take if I get into financial trouble?',
+    title: 'What Steps Should I Take If I Get into Financial Trouble?',
     body: (
       <>
         <p>Here are some specific steps you can take if you are in financial trouble.</p>
@@ -111,7 +111,7 @@ const sections = [
   },
   {
     id: 'debt-collector',
-    title: 'What can I do if I am being hounded by a debt collector?',
+    title: 'What Can I Do If I Am Being Hounded by a Debt Collector?',
     body: (
       <>
         <p>
@@ -179,7 +179,7 @@ const sections = [
   },
   {
     id: 'rights',
-    title: 'What are my rights against banks, creditors and debt collectors?',
+    title: 'What Are My Rights Against Banks, Creditors and Debt Collectors?',
     body: (
       <>
         <p>You have the following rights:</p>

@@ -10,20 +10,20 @@ export default function TaxToolbox() {
         page="Tax Tool Box"
         parents={[{ to: '/tax-season', label: 'Tax Season' }]}
         eyebrow="Tax tool box"
-        title={<>Helpful tools, <em>all in one place</em></>}
+        title={<>Helpful Tools, <em>All in One Place</em></>}
       >
         Quickly access client services and IRS tools for payments, refund tracking, and tax
         withholding.
       </PageHero>
       <section className="section section-white">
         <div className="container">
-          <SectionHead eyebrow="Online tools" title={<>Choose a <em>tool</em></>} center>
+          <SectionHead eyebrow="Online tools" title={<>Choose a <em>Tool</em></>} center>
             Each link opens the relevant secure client service or official IRS website in a new tab.
           </SectionHead>
           <TaxToolboxContent />
         </div>
       </section>
-      <CtaSection title={<>Need a hand with <em>tax season?</em></>} text="Our team is happy to help." />
+      <CtaSection title={<>Need a Hand with <em>Tax Season?</em></>} text="Our team is happy to help." />
     </>
   );
 }

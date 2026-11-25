@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'budget',
-    title: 'How much home can I reasonably afford?',
+    title: 'How Much Home Can I Reasonably Afford?',
     body: (
       <p>
         Start with a monthly budget that includes more than the mortgage payment. Property taxes, homeowners
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'preapproval',
-    title: 'Does mortgage preapproval guarantee a loan?',
+    title: 'Does Mortgage Preapproval Guarantee a Loan?',
     body: (
       <p>
         No. A preapproval is an early estimate based on the information and documents reviewed by a lender. The
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     id: 'inspection',
-    title: 'Should I get a home inspection?',
+    title: 'Should I Get a Home Inspection?',
     body: (
       <p>
         An independent inspection can help identify visible issues with a home’s structure and major systems before
@@ -36,7 +36,7 @@ const sections = [
   },
   {
     id: 'offer',
-    title: 'What should I consider before making an offer?',
+    title: 'What Should I Consider Before Making an Offer?',
     body: (
       <p>
         Compare recent sales and the home’s condition with your budget, then decide which terms matter to you. An
@@ -48,7 +48,7 @@ const sections = [
   },
   {
     id: 'closing',
-    title: 'What should I expect at closing?',
+    title: 'What Should I Expect at Closing?',
     body: (
       <p>
         Before closing, review the final loan terms, settlement statement, and amount due, and ask about any

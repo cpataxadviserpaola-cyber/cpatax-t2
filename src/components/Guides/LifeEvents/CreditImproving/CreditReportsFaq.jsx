@@ -13,7 +13,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'check',
-    title: 'How can I check my credit report?',
+    title: 'How Can I Check My Credit Report?',
     body: (
       <>
         <p>
@@ -79,7 +79,7 @@ const sections = [
   },
   {
     id: 'errors',
-    title: 'What if there is an error on my credit report?',
+    title: 'What If There Is an Error on My Credit Report?',
     body: (
       <>
         <p>
@@ -145,7 +145,7 @@ const sections = [
   },
   {
     id: 'build-history',
-    title: 'How can I build a credit history so that I can establish credit?',
+    title: 'How Can I Build a Credit History So That I Can Establish Credit?',
     body: (
       <>
         <p>
@@ -203,7 +203,7 @@ const sections = [
   },
   {
     id: 'who-can-see',
-    title: 'Who can see my credit file?',
+    title: 'Who Can See My Credit File?',
     body: (
       <>
         <p>
@@ -236,7 +236,7 @@ const sections = [
   },
   {
     id: 'decipher',
-    title: 'How can I decipher my credit report?',
+    title: 'How Can I Decipher My Credit Report?',
     body: (
       <>
         <p>

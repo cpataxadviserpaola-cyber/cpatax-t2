@@ -3,7 +3,7 @@ import GuideArticle, { FigureTable } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'customer-list',
-    title: 'Your customer list as a business asset',
+    title: 'Your Customer List as a Business Asset',
     body: (
       <p>
         The source argues that a business’s customer list can be one of its most valuable assets, even though it
@@ -16,7 +16,7 @@ const sections = [
   },
   {
     id: 'lifetime-value',
-    title: 'Why estimate customer lifetime value?',
+    title: 'Why Estimate Customer Lifetime Value?',
     body: (
       <p>
         Customer lifetime value estimates the contribution a customer may generate over the expected relationship.
@@ -28,7 +28,7 @@ const sections = [
   },
   {
     id: 'calculate-value',
-    title: 'How to estimate customer lifetime value',
+    title: 'How to Estimate Customer Lifetime Value',
     body: (
       <p>
         Estimate the profit from expected customer transactions over the period you expect to retain the customer.
@@ -41,7 +41,7 @@ const sections = [
   },
   {
     id: 'worked-example',
-    title: 'Source example: a computer software store',
+    title: 'Source Example: A Computer Software Store',
     body: (
       <>
         <p>
@@ -72,7 +72,7 @@ const sections = [
   },
   {
     id: 'marketing-investment',
-    title: 'Use the estimate as a marketing benchmark',
+    title: 'Use the Estimate as a Marketing Benchmark',
     body: (
       <p>
         Compare the value of the customers gained with the campaign investment to evaluate the return from promotion.

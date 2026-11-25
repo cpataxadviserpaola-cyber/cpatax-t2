@@ -5,7 +5,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'needs',
-    title: 'What should I consider before choosing an account?',
+    title: 'What Should I Consider Before Choosing an Account?',
     body: (
       <p>
         Match the account to how you handle money. A checking account may suit frequent payments
@@ -17,7 +17,7 @@ const sections = [
   },
   {
     id: 'fees',
-    title: 'Which fees and requirements should I ask about?',
+    title: 'Which Fees and Requirements Should I Ask About?',
     body: (
       <>
         <p>Ask for the fee schedule and find out:</p>
@@ -37,7 +37,7 @@ const sections = [
   },
   {
     id: 'interest',
-    title: 'How do I compare interest and account features?',
+    title: 'How Do I Compare Interest and Account Features?',
     body: (
       <p>
         For interest-bearing accounts, compare the annual percentage yield (APY), minimum balance
@@ -49,7 +49,7 @@ const sections = [
   },
   {
     id: 'safety',
-    title: 'Is my deposit protected?',
+    title: 'Is My Deposit Protected?',
     body: (
       <p>
         Check that the bank is insured by the FDIC or the credit union by the NCUA, and understand
@@ -69,7 +69,7 @@ const sections = [
   },
   {
     id: 'before-opening',
-    title: 'What should I do before opening an account?',
+    title: 'What Should I Do Before Opening an Account?',
     body: (
       <p>
         Compare the account agreement and fee schedule from more than one institution. Confirm
@@ -87,7 +87,7 @@ export default function BankAccounts() {
       category="life-events"
       topic="/guides/life-events/preparing-for-college"
       page="Bank Accounts"
-      title={<>Bank Accounts: <em>What To Look and Ask For</em></>}
+      title={<>Bank Accounts: <em>What to Look and Ask For</em></>}
       lead="The right account depends on how you save, spend, and access your money. Compare fees, requirements, services, interest, and deposit protection before opening one."
       sections={sections}
     />

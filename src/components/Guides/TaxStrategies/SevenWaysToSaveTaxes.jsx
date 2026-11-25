@@ -205,7 +205,7 @@ export default function SevenWaysToSaveTaxes() {
       page="7 Ways To Save Even More Income Taxes"
       title={
         <>
-          7 Ways To Save <em>Even More Income Taxes</em>
+          7 Ways to Save <em>Even More Income Taxes</em>
         </>
       }
       lead="Seven ways for business owners to save tax: funding your IRA, choosing a retirement plan, leasehold improvements, meals and gifts, your home computer, and dinner money."

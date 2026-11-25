@@ -8,7 +8,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'gut-feeling',
-    title: "Don't Just Look At Numbers; What's Your Gut Telling You?",
+    title: "Don't Just Look at Numbers; What's Your Gut Telling You?",
     body: (
       <>
         <p>
@@ -73,7 +73,7 @@ const sections = [
   },
   {
     id: 'following-advice',
-    title: 'Have you been following the advice?',
+    title: 'Have You Been Following the Advice?',
     body: (
       <p>
         If you haven't put your plan into practice, what's stopping you? If it is because the
@@ -85,7 +85,7 @@ const sections = [
   },
   {
     id: 'clear-advice',
-    title: 'Is the advice clear to you?',
+    title: 'Is the Advice Clear to You?',
     body: (
       <>
         <p>
@@ -102,7 +102,7 @@ const sections = [
   },
   {
     id: 'good-listener',
-    title: 'Is your financial advisor a good listener?',
+    title: 'Is Your Financial Advisor a Good Listener?',
     body: (
       <>
         <p>

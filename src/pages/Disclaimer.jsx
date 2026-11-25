@@ -5,11 +5,11 @@ export default function Disclaimer() {
   return (
     <LegalPage
       page="Disclaimer"
-      title={<>Website <em>disclaimer</em></>}
+      title={<>Website <em>Disclaimer</em></>}
       lead="The terms that apply to the information on this website."
       question="If you have any questions about this disclaimer, please contact us."
     >
-      <h2>No rendering of advice</h2>
+      <h2>No Rendering of Advice</h2>
       <p>
         The information contained within this website is provided for informational purposes
         only and is not intended to substitute for obtaining accounting, tax, or financial advice
@@ -26,7 +26,7 @@ export default function Disclaimer() {
         purpose of avoiding penalties under U.S. federal tax law.
       </p>
 
-      <h2>Accuracy of information</h2>
+      <h2>Accuracy of Information</h2>
       <p>
         While we use reasonable efforts to furnish accurate and up-to-date information, we do not
         warrant that any information contained in or made available through this website is
@@ -37,7 +37,7 @@ export default function Disclaimer() {
         this website or such other materials or communications.
       </p>
 
-      <h2>Disclaimer of warranties and limitations of liability</h2>
+      <h2>Disclaimer of Warranties and Limitations of Liability</h2>
       <p>
         This website is provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis.
         Use of this website is at your own risk. We and our suppliers disclaim all warranties.
@@ -45,7 +45,7 @@ export default function Disclaimer() {
         this website.
       </p>
 
-      <h2>Links to third party websites</h2>
+      <h2>Links to Third Party Websites</h2>
       <p>
         For your convenience, this website may contain hyperlinks to websites and servers
         maintained by third parties. We do not control, evaluate, endorse or guarantee content

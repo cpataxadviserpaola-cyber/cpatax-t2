@@ -205,7 +205,7 @@ export default function InterestDeductions() {
     <CalculatorPage
       page="Interest Tax Implications"
       category={{ to: '/resources#taxation', label: 'Taxation' }}
-      title="What Are The Tax Implications Of Paying Interest?"
+      title="What Are the Tax Implications of Paying Interest?"
       intro={intro}
       formTitle="Your Interest"
       sections={sections}
@@ -229,7 +229,7 @@ export default function InterestDeductions() {
       cta={{
         title: (
           <>
-            Making the most of your <em>interest deductions?</em>
+            Making the Most of Your <em>Interest Deductions?</em>
           </>
         ),
         text: 'Our team can help you see which of your interest is deductible and how to keep it that way, in English or Spanish.',

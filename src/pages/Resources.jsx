@@ -54,7 +54,7 @@ const sections = [
 export default function Resources() {
   return (
     <>
-      <PageHero page="Resources" eyebrow="Resources" title={<>Tools <em>and links</em></>}>
+      <PageHero page="Resources" eyebrow="Resources" title={<>Tools <em>and Links</em></>}>
         Interactive financial calculators and a few of our favorite websites, in one place.
       </PageHero>
 
@@ -126,7 +126,7 @@ export default function Resources() {
 
       <CtaSection
         soft
-        title={<>Have a question we <em>didn't answer?</em></>}
+        title={<>Have a Question We <em>Didn't Answer?</em></>}
         text="Our team is happy to help, in English or Spanish."
       />
     </>

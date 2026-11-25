@@ -12,7 +12,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'who-is-entitled',
-    title: 'Who is entitled to Social Security disability benefits?',
+    title: 'Who Is Entitled to Social Security Disability Benefits?',
     body: (
       <>
         <p>
@@ -75,7 +75,7 @@ const sections = [
   },
   {
     id: 'when-benefits-begin',
-    title: 'When do Social Security disability benefits begin?',
+    title: 'When Do Social Security Disability Benefits Begin?',
     body: (
       <>
         <p>
@@ -98,7 +98,7 @@ const sections = [
   },
   {
     id: 'taxable',
-    title: 'Are Social Security disability benefits taxable?',
+    title: 'Are Social Security Disability Benefits Taxable?',
     body: (
       <p>
         Some people who get Social Security must pay taxes on their benefits. The rules are the same regardless of
@@ -114,7 +114,7 @@ const sections = [
   },
   {
     id: 'how-long',
-    title: 'How long do Social Security disability payments continue?',
+    title: 'How Long Do Social Security Disability Payments Continue?',
     body: (
       <>
         <p>
@@ -131,7 +131,7 @@ const sections = [
   },
   {
     id: 'retirement-age',
-    title: 'What happens to Social Security disability benefits when I reach retirement age?',
+    title: 'What Happens to Social Security Disability Benefits When I Reach Retirement Age?',
     body: (
       <>
         <p>
@@ -149,7 +149,7 @@ const sections = [
   },
   {
     id: 'claim-turned-down',
-    title: 'What happens if Social Security turns down my claim for disability benefits?',
+    title: 'What Happens If Social Security Turns Down My Claim for Disability Benefits?',
     body: (
       <>
         <p>
@@ -204,7 +204,7 @@ const sections = [
   },
   {
     id: 'retirement-benefits',
-    title: 'Will I receive Social Security when I retire?',
+    title: 'Will I Receive Social Security When I Retire?',
     body: (
       <>
         <p>
@@ -224,7 +224,7 @@ const sections = [
   },
   {
     id: 'find-out-what-you-will-get',
-    title: 'How can I find out what Social Security will pay me when I retire?',
+    title: 'How Can I Find Out What Social Security Will Pay Me When I Retire?',
     body: (
       <p>
         You can create a{' '}
@@ -237,7 +237,7 @@ const sections = [
   },
   {
     id: 'count-on-social-security',
-    title: 'Can I count on Social Security being around when I retire?',
+    title: 'Can I Count on Social Security Being Around When I Retire?',
     body: (
       <p>
         With retirement on the horizon for scores of baby boomers, Social Security will likely be in your future;

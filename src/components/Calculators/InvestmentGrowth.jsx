@@ -196,7 +196,7 @@ export default function InvestmentGrowth() {
     <CalculatorPage
       page="Investment Growth"
       category={{ to: '/resources#taxation', label: 'Taxation' }}
-      title="Compare Taxable, Tax-Deferred And Tax-Free Investment Growth"
+      title="Compare Taxable, Tax-Deferred and Tax-Free Investment Growth"
       intro={intro}
       formTitle="Your Savings and Returns"
       sections={sections}
@@ -218,7 +218,7 @@ export default function InvestmentGrowth() {
       cta={{
         title: (
           <>
-            Choosing where to <em>invest?</em>
+            Choosing Where to <em>Invest?</em>
           </>
         ),
         text: 'Our team can help you weigh taxable, tax-deferred and tax-free accounts for your situation, in English or Spanish.',

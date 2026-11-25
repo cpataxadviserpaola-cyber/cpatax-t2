@@ -211,7 +211,7 @@ export default function PayrollAdjustments() {
       cta={{
         title: (
           <>
-            Thinking about a <em>payroll change?</em>
+            Thinking About a <em>Payroll Change?</em>
           </>
         ),
         text: 'Our team can help you set your withholding and choose your benefits, in English or Spanish.',

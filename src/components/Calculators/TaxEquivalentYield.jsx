@@ -91,7 +91,7 @@ export default function TaxEquivalentYield() {
       cta={{
         title: (
           <>
-            Comparing <em>investments?</em>
+            Comparing <em>Investments?</em>
           </>
         ),
         text: 'Our team can help you weigh tax-free and taxable investments for your tax bracket, in English or Spanish.',

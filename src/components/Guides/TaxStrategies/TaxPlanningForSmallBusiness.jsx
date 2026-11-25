@@ -150,7 +150,7 @@ export default function TaxPlanningForSmallBusiness() {
       page="Tax Planning For Small Business Owners"
       title={
         <>
-          Tax Planning For <em>Small Business Owners</em>
+          Tax Planning for <em>Small Business Owners</em>
         </>
       }
       lead="Tax planning is the process of determining when, whether, and how to conduct business and personal transactions to defer, reduce or eliminate tax liability."

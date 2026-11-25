@@ -236,7 +236,7 @@ const sections = [
           lower the premium.
         </p>
 
-        <h3>Actual Cash Value Or Replacement Cost</h3>
+        <h3>Actual Cash Value or Replacement Cost</h3>
         <p>
           If you insure your belongings for their "actual cash value," you will not get their replacement value at
           the time of a loss. Actual cash value refers to the value of your belongings after taking into account
@@ -266,7 +266,7 @@ const sections = [
   },
   {
     id: 'coverage',
-    title: 'Policy Coverage To Consider',
+    title: 'Policy Coverage to Consider',
     body: (
       <>
         <p>
@@ -474,7 +474,7 @@ const sections = [
   },
   {
     id: 'shopping',
-    title: 'Shopping For A Policy',
+    title: 'Shopping for a Policy',
     body: (
       <>
         <p>
@@ -511,13 +511,13 @@ const sections = [
           percent by going up to $2,500, and 37 percent by raising it to $5,000.
         </p>
 
-        <h3>Considering Buying Home And Auto Policies From the Same Insurer</h3>
+        <h3>Considering Buying Home and Auto Policies from the Same Insurer</h3>
         <p>
           Many companies that sell homeowner's, auto and liability coverage will take 5 to 15 percent off your
           premium if you buy two or more policies from them. This is called a multiple policy discount.
         </p>
 
-        <h3>Consider Insurance Cost Before Buying A Home</h3>
+        <h3>Consider Insurance Cost Before Buying a Home</h3>
         <p>
           When buying a home, don't overlook the insurance costs. These may affect the price you are willing to pay
           for the home. Among the factors to consider:
@@ -577,13 +577,13 @@ const sections = [
           available.
         </p>
 
-        <h3>Stay With the Same Insurer</h3>
+        <h3>Stay with the Same Insurer</h3>
         <p>
           If you've kept your coverage with one company for several years, you may get a reduction in your premiums
           of 5 or 10 percent, depending on the insurer.
         </p>
 
-        <h3>Check Your Policy Once A Year</h3>
+        <h3>Check Your Policy Once a Year</h3>
         <p>
           Compare the limits in your policy with the value of your possessions at least once a year to make sure your
           policy covers major purchases and/or additions to your home.
@@ -595,7 +595,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>Look For Private Insurance First</h3>
+        <h3>Look for Private Insurance First</h3>
         <p>
           If you live in a high-risk area, that is, one that is vulnerable to coastal storms, fires, or crime, and
           have been buying your homeowner's insurance through a government plan, you may find that there are steps
@@ -670,7 +670,7 @@ export default function HomeownersInsurance() {
       page="Homeowner's Insurance"
       title={
         <>
-          Homeowner's Insurance: <em>How To Get The Best Coverage and Value</em>
+          Homeowner's Insurance: <em>How to Get the Best Coverage and Value</em>
         </>
       }
       lead="Maintaining adequate homeowner's insurance is a vital part of owning a residence and your homeowner's policy should be chosen carefully. This Financial Guide discusses the policy provisions to consider when deciding which homeowner's insurance policy to buy to be sure that your home is adequately insured and that you are getting the most insurance value for your money."

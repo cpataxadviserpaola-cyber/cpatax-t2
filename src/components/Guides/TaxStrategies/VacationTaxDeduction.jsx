@@ -13,7 +13,7 @@ import GuideArticle, { Callout } from '../GuideArticle.jsx';
 const sections = [
   {
     id: 'appointments',
-    title: '1. Make all your business appointments before you leave for your trip',
+    title: '1. Make All Your Business Appointments Before You Leave for Your Trip',
     body: (
       <>
         <p>
@@ -49,7 +49,7 @@ const sections = [
   },
   {
     id: 'business-travel',
-    title: '2. Make Sure your Trip is All "Business Travel"',
+    title: '2. Make Sure Your Trip Is All "Business Travel"',
     body: (
       <>
         <p>
@@ -76,7 +76,7 @@ const sections = [
   },
   {
     id: 'on-the-road-expenses',
-    title: "3. Make sure that you deduct all of your on-the-road-expenses for each day you're away",
+    title: "3. Make Sure That You Deduct All of Your On-the-Road-Expenses for Each Day You're Away",
     body: (
       <>
         <p>
@@ -115,7 +115,7 @@ const sections = [
   },
   {
     id: 'sandwich-weekends',
-    title: '4. Sandwich weekends between business days',
+    title: '4. Sandwich Weekends Between Business Days',
     body: (
       <>
         <p>
@@ -133,7 +133,7 @@ const sections = [
   },
   {
     id: 'majority-business-days',
-    title: '5. Make the majority of your trip days business days',
+    title: '5. Make the Majority of Your Trip Days Business Days',
     body: (
       <>
         <p>
@@ -174,7 +174,7 @@ export default function VacationTaxDeduction() {
       page="Turn your Vacation Into a Tax Deduction"
       title={
         <>
-          Turn your Vacation Into <em>a Tax Deduction</em>
+          Turn Your Vacation into <em>a Tax Deduction</em>
         </>
       }
       lead="How would you like to legally deduct every dime you spend on vacation this year? This financial guide offers strategies that help you do just that."

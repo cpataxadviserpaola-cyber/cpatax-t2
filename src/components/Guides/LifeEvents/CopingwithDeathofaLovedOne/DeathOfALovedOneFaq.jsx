@@ -15,7 +15,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'papers-needed',
-    title: 'What papers will I need if a family member dies?',
+    title: 'What Papers Will I Need If a Family Member Dies?',
     body: (
       <>
         <p>Here is a list of the papers that you will probably need:</p>
@@ -58,7 +58,7 @@ const sections = [
   },
   {
     id: 'deceased-assets',
-    title: "What steps should I take regarding the deceased's assets?",
+    title: "What Steps Should I Take Regarding the Deceased's Assets?",
     body: (
       <>
         <p>
@@ -112,7 +112,7 @@ const sections = [
   },
   {
     id: 'funeral-costs',
-    title: 'How can I avoid overpaying for the funeral of a family member?',
+    title: 'How Can I Avoid Overpaying for the Funeral of a Family Member?',
     body: (
       <>
         <p>
@@ -170,7 +170,7 @@ const sections = [
   },
   {
     id: 'social-security-benefits',
-    title: 'What Social Security benefits are surviving family members entitled to?',
+    title: 'What Social Security Benefits Are Surviving Family Members Entitled To?',
     body: (
       <>
         <p>
@@ -197,7 +197,7 @@ const sections = [
   },
   {
     id: 'probate',
-    title: 'What is probate?',
+    title: 'What Is Probate?',
     body: (
       <>
         <p>
@@ -229,7 +229,7 @@ const sections = [
   },
   {
     id: 'taxes-due',
-    title: 'What taxes are due upon the death of a family member?',
+    title: 'What Taxes Are Due Upon the Death of a Family Member?',
     body: (
       <>
         <p>Here is a summary of the various taxes that may have to be paid on the death of a family member:</p>
@@ -261,7 +261,7 @@ const sections = [
   },
   {
     id: 'refusing-property',
-    title: 'Can I refuse to accept property bequeathed to me by a family member so as to cut taxes?',
+    title: 'Can I Refuse to Accept Property Bequeathed to Me by a Family Member So as to Cut Taxes?',
     body: (
       <>
         <p>
@@ -284,7 +284,7 @@ const sections = [
   },
   {
     id: 'joint-return',
-    title: 'Can I file a joint return for the year my spouse dies?',
+    title: 'Can I File a Joint Return for the Year My Spouse Dies?',
     body: (
       <p>
         Yes, the surviving spouse can elect to file a joint return provided they did not remarry prior to the end of the
@@ -294,7 +294,7 @@ const sections = [
   },
   {
     id: 'life-insurance-proceeds',
-    title: 'Must I pay taxes on the proceeds of a life insurance policy payable to me?',
+    title: 'Must I Pay Taxes on the Proceeds of a Life Insurance Policy Payable to Me?',
     body: (
       <p>
         Generally, no. Proceeds of life insurance policies are not taxable income unless the recipient paid for the right
@@ -305,7 +305,7 @@ const sections = [
   {
     id: 'retirement-distributions',
     title:
-      'If I receive distributions from a retirement plan or an IRA of the deceased, must I pay income taxes on the distribution?',
+      'If I Receive Distributions from a Retirement Plan or an IRA of the Deceased, Must I Pay Income Taxes on the Distribution?',
     body: (
       <p>
         Generally, yes. This is known as income in respect of a decedent. Since the deceased has not paid income tax on
@@ -316,7 +316,7 @@ const sections = [
   },
   {
     id: 'no-will',
-    title: "How will my spouse's assets be distributed if he/she died without a will?",
+    title: "How Will My Spouse's Assets Be Distributed If He/she Died Without a Will?",
     body: (
       <p>
         Assets held jointly with right of survivorship will transfer by law to the joint holder. Insurance policies or

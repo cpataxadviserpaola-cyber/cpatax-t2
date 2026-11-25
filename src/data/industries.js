@@ -103,7 +103,7 @@ const allIndustries = [
   {
     id: 'ecommerce',
     icon: 'cart',
-    title: 'E-commerce',
+    title: 'E-Commerce',
     text: 'Selling online can mean sales tax in several states, marketplace fees, and payment platform reports. We help you reconcile it all and stay compliant.',
     services: ['bookkeeping', 'quickbooks', 'business-tax'],
   },

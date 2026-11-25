@@ -34,7 +34,7 @@ export default function Services() {
       <PageHero
         page="Services"
         eyebrow="What we do"
-        title={<>We're on <em>your side</em></>}
+        title={<>We're on <em>Your Side</em></>}
         actions={
           <a className="btn btn-primary btn-lg" href={links.schedule} target="_blank" rel="noopener noreferrer">
             Schedule a consultation
@@ -94,7 +94,7 @@ export default function Services() {
 
       <section className="section industries surface-dark">
         <div className="container">
-          <SectionHead eyebrow="Industries" title={<>Specialized knowledge <em>for your field</em></>} center>
+          <SectionHead eyebrow="Industries" title={<>Specialized Knowledge <em>for Your Field</em></>} center>
             Our specialized knowledge has helped many professionals thrive, and we're ready to help
             you too.
           </SectionHead>
@@ -112,7 +112,7 @@ export default function Services() {
               <span className="industry-icon">
                 <Icon name="arrow" />
               </span>
-              <h3>All industries</h3>
+              <h3>All Industries</h3>
               <p>See how we help businesses in each field, and the services that fit.</p>
             </Link>
           </div>
@@ -125,7 +125,7 @@ export default function Services() {
             <div className="beyond-copy">
               <p className="eyebrow">Beyond taxes</p>
               <h2>
-                Personalized financial guidance <em>beyond tax season</em>
+                Personalized Financial Guidance <em>Beyond Tax Season</em>
               </h2>
               <p>
                 Although Yellow Oak is now focused on women, it will continue accepting all clients
@@ -147,7 +147,7 @@ export default function Services() {
 
       <CtaSection
         soft
-        title={<>Not sure which service <em>you need?</em></>}
+        title={<>Not Sure Which Service <em>You Need?</em></>}
         text="Tell us about your business and we'll recommend the right approach."
       />
     </>

@@ -168,14 +168,14 @@ const sections = [
           <li>You conducted business during the meal.</li>
           <li>Active conduct of business was your main purpose.</li>
         </ul>
-        <h3>How Do You Meet The "Associated With" Test?</h3>
+        <h3>How Do You Meet the "Associated with" Test?</h3>
         <p>
           Even if you can't show that the meal was "directly related" as discussed above, you can still deduct the expenses
           as long as you can prove the meal was "associated" with your business. To meet this test, the meal must directly
           precede or come after a substantial business discussion. Further, you must have had a clear business purpose when
           you took on the expense.
         </p>
-        <h3>For Whom Can You Get The Deduction?</h3>
+        <h3>For Whom Can You Get the Deduction?</h3>
         <p>
           The person you dined with must be a business associate. That is, it must be someone who could reasonably be
           expected to be a customer or conduct business with you, including an employee or professional advisor.

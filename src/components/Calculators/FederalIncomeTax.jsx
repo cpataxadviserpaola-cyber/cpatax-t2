@@ -112,7 +112,7 @@ export default function FederalIncomeTax() {
       cta={{
         title: (
           <>
-            Want to lower <em>your tax?</em>
+            Want to Lower <em>Your Tax?</em>
           </>
         ),
         text: 'Our team can help you plan your taxes for the year ahead, in English or Spanish.',

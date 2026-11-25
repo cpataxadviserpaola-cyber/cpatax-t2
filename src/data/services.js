@@ -29,9 +29,9 @@
 export const hiddenServiceIds = ['payroll', 'advisory', 'quickbooks', 'bookkeeping'];
 
 const allCategories = [
-  { id: 'business', label: 'Business services' },
-  { id: 'individual', label: 'Individual services' },
-  { id: 'international', label: 'International client services' },
+  { id: 'business', label: 'Business Services' },
+  { id: 'individual', label: 'Individual Services' },
+  { id: 'international', label: 'International Client Services' },
 ];
 
 export const allServices = [
@@ -700,7 +700,7 @@ export const allServices = [
     title: 'Payroll Services',
     chip: 'Payroll',
     tagline: 'Pay runs, payroll tax, W-2s and 1099s',
-    headline: 'Cost-effective payroll services for your business',
+    headline: 'Cost-Effective Payroll Services for Your Business',
     summary:
       "Payroll solutions that meet your business's needs and let you spend your time doing what you do best: running your company.",
     description:
@@ -723,25 +723,25 @@ export const allServices = [
     highlights: [
       {
         icon: 'users',
-        title: 'A dedicated specialist',
+        title: 'A Dedicated Specialist',
         text: 'One payroll specialist works with you throughout the entire payroll process.',
       },
       {
         icon: 'clock',
-        title: 'Hours back every month',
+        title: 'Hours Back Every Month',
         text: 'Skip the hours small business owners typically spend on payroll each month.',
       },
       {
         icon: 'shield',
-        title: 'Compliant filings',
+        title: 'Compliant Filings',
         text: 'Payroll taxes are calculated, paid, and filed on schedule.',
       },
     ],
     process: [
-      { title: 'Set up payroll', text: 'We gather employee details, pay schedules, and tax accounts.' },
-      { title: 'Run each payroll', text: 'Employees are paid by direct deposit or check.' },
-      { title: 'File and pay taxes', text: 'We handle payroll tax payments, filings, and reports.' },
-      { title: 'Year-end forms', text: 'We process W-2s, W-3s, and 1099s.' },
+      { title: 'Set Up Payroll', text: 'We gather employee details, pay schedules, and tax accounts.' },
+      { title: 'Run Each Payroll', text: 'Employees are paid by direct deposit or check.' },
+      { title: 'File and Pay Taxes', text: 'We handle payroll tax payments, filings, and reports.' },
+      { title: 'Year-End Forms', text: 'We process W-2s, W-3s, and 1099s.' },
     ],
     faqs: [
       {
@@ -767,7 +767,7 @@ export const allServices = [
     title: 'Business Consulting Services',
     chip: 'Consulting',
     tagline: 'Strategy, valuations, and forecasts',
-    headline: 'Business planning is the foundation of future success',
+    headline: 'Business Planning Is the Foundation of Future Success',
     summary:
       "If your plans and ideas are still locked up inside your head, a strategic plan can help you clarify your company's direction.",
     description:
@@ -825,7 +825,7 @@ export const allServices = [
     title: 'Services for QuickBooks',
     chip: 'QuickBooks',
     tagline: 'Setup, training, and tune-ups',
-    headline: 'QuickBooks, set up and running the way your business works',
+    headline: 'QuickBooks, Set Up and Running the Way Your Business Works',
     summary:
       'QuickBooks is ideal accounting software for small to mid-sized businesses. We set it up, train your team, and keep it running smoothly.',
     description:
@@ -886,7 +886,7 @@ export const allServices = [
                 to: '#quickbooks-answers',
               },
               {
-                title: 'Tune-up for QuickBooks',
+                title: 'Tune-Up for QuickBooks',
                 text: "Whether you need to prepare your books for tax time, a financial review or you just need to clean up some problem areas, you'll get your QuickBooks running smoothly again with a complete Tune-up.",
               },
               {
@@ -958,7 +958,7 @@ export const allServices = [
         title: 'Training for QuickBooks',
         content: [
           'Once QuickBooks is set up and working properly, we can train you or your employees to properly operate QuickBooks specifically for your business.',
-          { heading: 'Why choose one-on-one attention instead of taking a class?' },
+          { heading: 'Why Choose One-on-One Attention Instead of Taking a Class?' },
           {
             list: [
               'We come to your location.',
@@ -974,7 +974,7 @@ export const allServices = [
         id: 'quickbooks-answers',
         title: 'Answers to QuickBooks Questions',
         content: [
-          { heading: 'Questions about QuickBooks?' },
+          { heading: 'Questions About QuickBooks?' },
           'QuickBooks users are generally not stumped by the software, they are stumped by the accounting information necessary to complete the transactions. Quick access to correct information is essential to maintain the accuracy of your financial records.',
           'Employees in your accounting department will find comfort in knowing an expert in QuickBooks is only an email or phone call away, preventing many wasted hours of aggravation and embarrassment.',
           'How much does it cost? $20 per question.',
@@ -994,7 +994,7 @@ export const allServices = [
     title: 'Individual Tax Preparation',
     chip: 'Individual Tax',
     tagline: 'Personal returns and projections',
-    headline: 'Your source for trusted personal accounting and tax preparation',
+    headline: 'Your Source for Trusted Personal Accounting and Tax Preparation',
     summary:
       'We evaluate your individual tax situation and guide you through any tax challenges, so you keep more of your hard-earned money.',
     description:
@@ -1037,7 +1037,7 @@ export const allServices = [
     title: 'Tax Planning for Individuals',
     chip: 'Tax Projections',
     tagline: 'Know where you stand before year-end',
-    headline: 'Plan ahead and keep more of your hard-earned money',
+    headline: 'Plan Ahead and Keep More of Your Hard-Earned Money',
     summary:
       'Tax projections and personalized strategies for professionals, executives, pre-retirees, and High-Net-Worth Individuals, so there are no surprises at tax time.',
     description:
@@ -1061,18 +1061,18 @@ export const allServices = [
             list: [
               'Tax Saving Strategies: A Helpful Checklist',
               'Travel and Entertainment: Maximizing the Tax Benefits',
-              'The "Nanny Tax" Rules: What To Do If You Have Household Employees',
-              'Higher Education Costs: How To Get The Best Tax Treatment',
-              'Selling Your Home: How To Minimize the Tax On the Gain',
+              'The "Nanny Tax" Rules: What to Do If You Have Household Employees',
+              'Higher Education Costs: How to Get the Best Tax Treatment',
+              'Selling Your Home: How to Minimize the Tax on the Gain',
               'The Deductibility of Points',
               'Annuities: How They Work and When You Should Use Them',
-              'Retirement Plan Distributions: When To Take Them',
-              'Retirement Plan Distributions: How To Take Them',
-              'Roth IRAs: How They Work and How To Use Them',
-              'Mutual Fund Taxation: How To Cut The Tax Bite',
+              'Retirement Plan Distributions: When to Take Them',
+              'Retirement Plan Distributions: How to Take Them',
+              'Roth IRAs: How They Work and How to Use Them',
+              'Mutual Fund Taxation: How to Cut the Tax Bite',
               'Advanced Charity Techniques: Maximizing Your Deduction',
               'Charitable Contributions of Property: Maximizing the Deduction',
-              'Charitable Contributions: How To Give Wisely',
+              'Charitable Contributions: How to Give Wisely',
             ],
           },
           { heading: 'Frequently Asked Questions' },
@@ -1105,7 +1105,7 @@ export const allServices = [
     title: 'Tax Preparation for International Clients',
     chip: 'International',
     tagline: 'Nonresidents, expats, FBAR, treaties',
-    headline: 'U.S. tax filing for nonresidents, expatriates, and international clients',
+    headline: 'U.S. Tax Filing for Nonresidents, Expatriates, and International Clients',
     summary:
       'Nonresident returns, FBAR and FATCA reporting, and tax treaty benefits for individuals and business owners with international ties.',
     description:
@@ -1127,7 +1127,7 @@ export const allServices = [
     highlights: [
       {
         icon: 'globe',
-        title: 'Nonresident returns',
+        title: 'Nonresident Returns',
         text: 'Form 1040-NR for nonresidents with U.S. income, such as rental properties or wages.',
       },
       {
@@ -1137,15 +1137,15 @@ export const allServices = [
       },
       {
         icon: 'landmark',
-        title: 'Treaty benefits',
+        title: 'Treaty Benefits',
         text: 'We review applicable tax treaties to help reduce double taxation and increase savings.',
       },
     ],
     process: [
-      { title: 'Review your status', text: 'We confirm your residency status, income sources, and filing requirements.' },
-      { title: 'Check treaties', text: 'We identify tax treaty provisions that may apply to you.' },
-      { title: 'Prepare & file', text: 'We prepare your returns and any FBAR, FATCA, or Form 8843 filings.' },
-      { title: 'Stay compliant', text: 'We help you stay compliant in the years that follow.' },
+      { title: 'Review Your Status', text: 'We confirm your residency status, income sources, and filing requirements.' },
+      { title: 'Check Treaties', text: 'We identify tax treaty provisions that may apply to you.' },
+      { title: 'Prepare & File', text: 'We prepare your returns and any FBAR, FATCA, or Form 8843 filings.' },
+      { title: 'Stay Compliant', text: 'We help you stay compliant in the years that follow.' },
     ],
     faqs: [
       {

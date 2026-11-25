@@ -6,7 +6,7 @@ const related = guide('business-strategies.php');
 const sections = [
   {
     id: 'liability',
-    title: 'Which kinds of business organization or business entity will limit my liability to business creditors?',
+    title: 'Which Kinds of Business Organization or Business Entity Will Limit My Liability to Business Creditors?',
     body: (
       <p>
         Corporations, limited liability companies (LLCs), limited partnerships, and limited liability partnerships
@@ -18,7 +18,7 @@ const sections = [
   },
   {
     id: 'double-taxation',
-    title: 'What is the "corporate double tax" and how can it be avoided?',
+    title: 'What Is the "Corporate Double Tax" and How Can It Be Avoided?',
     body: (
       <p>
         A C corporation is generally subject to tax on its income, and its owners may also owe individual tax when they
@@ -30,7 +30,7 @@ const sections = [
   },
   {
     id: 'tax-entity-choice',
-    title: 'Which types of business entity are best for tax purposes?',
+    title: 'Which Types of Business Entity Are Best for Tax Purposes?',
     body: (
       <p>
         There is no single best choice for every business. Pass-through treatment generally means owners report their
@@ -42,7 +42,7 @@ const sections = [
   },
   {
     id: 'pass-through-entities',
-    title: 'Which are the "pass-through" entities?',
+    title: 'Which Are the "Pass-Through" Entities?',
     body: (
       <p>
         Common forms include sole proprietorships, general and limited partnerships, LLPs, LLCs, and S corporations.
@@ -55,7 +55,7 @@ const sections = [
   },
   {
     id: 'liability-and-double-tax',
-    title: 'What entities will let me both limit my liability and avoid the double tax?',
+    title: 'What Entities Will Let Me Both Limit My Liability and Avoid the Double Tax?',
     body: (
       <p>
         The source guide identifies S corporations in many cases, along with LLCs, LLPs, and limited partnerships for
@@ -67,7 +67,7 @@ const sections = [
   },
   {
     id: 'llc-benefits',
-    title: 'What’s so great about limited liability companies (LLCs)?',
+    title: 'What’s So Great About Limited Liability Companies (LLCs)?',
     body: (
       <>
         <p>
@@ -93,7 +93,7 @@ const sections = [
   },
   {
     id: 'professional-practices',
-    title: 'What special considerations are there if my business is a professional practice?',
+    title: 'What Special Considerations Are There If My Business Is a Professional Practice?',
     body: (
       <p>
         An entity does not protect a professional from liability for their own malpractice. Depending on state law and
@@ -106,7 +106,7 @@ const sections = [
   },
   {
     id: 'changing-structure',
-    title: 'What are the federal tax consequences of changing your form of business organization?',
+    title: 'What Are the Federal Tax Consequences of Changing Your Form of Business Organization?',
     body: (
       <p>
         Changing an entity’s legal form or federal tax classification can trigger tax. The source guide gives examples
@@ -120,7 +120,7 @@ const sections = [
   },
   {
     id: 'state-rules',
-    title: 'Do state business entity rules follow federal tax rules?',
+    title: 'Do State Business Entity Rules Follow Federal Tax Rules?',
     body: (
       <p>
         Federal tax classification and state business law are distinct. Choosing corporate tax treatment for a

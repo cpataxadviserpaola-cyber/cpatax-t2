@@ -8,16 +8,16 @@ const illnessGuides = guide('life-events.php', 22);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [50, 'Long-Term Care Insurance: How To Get The Best Deal'],
-      [48, 'Disability Insurance: What To Look For'],
-      [49, "Disability Benefits: How To Get All You're Entitled To"],
-      [56, 'Social Security Benefits: How To Get The Maximum Amount'],
+      [50, 'Long-Term Care Insurance: How to Get the Best Deal'],
+      [48, 'Disability Insurance: What to Look For'],
+      [49, "Disability Benefits: How to Get All You're Entitled To"],
+      [56, 'Social Security Benefits: How to Get the Maximum Amount'],
     ].map(illnessGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [148, 'Disability Insurance: Frequently Asked Questions'],
       [27, 'Social Security Benefits: Frequently Asked Questions'],

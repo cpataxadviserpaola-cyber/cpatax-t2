@@ -31,7 +31,7 @@ const agencies = creditAgencies.map((agency) =>
 const sections = [
   {
     id: 'prompt-credit',
-    title: 'Prompt Credit For Payment',
+    title: 'Prompt Credit for Payment',
     body: (
       <>
         <p>
@@ -52,7 +52,7 @@ const sections = [
   },
   {
     id: 'refunds',
-    title: 'Refunds Of Credit Balances',
+    title: 'Refunds of Credit Balances',
     body: (
       <p>
         When you return merchandise or pay more than you owe, you have the option of keeping the credit balance on your
@@ -63,7 +63,7 @@ const sections = [
   },
   {
     id: 'errors',
-    title: 'Resolution Of Errors',
+    title: 'Resolution of Errors',
     body: (
       <>
         <p>
@@ -107,7 +107,7 @@ const sections = [
   },
   {
     id: 'unauthorized-charges',
-    title: 'Removal Of Unauthorized Charges',
+    title: 'Removal of Unauthorized Charges',
     body: (
       <>
         <p>
@@ -129,7 +129,7 @@ const sections = [
   },
   {
     id: 'disputes',
-    title: 'Resolution Of Disputes',
+    title: 'Resolution of Disputes',
     body: (
       <>
         <p>
@@ -209,10 +209,10 @@ const sections = [
           after the seller receives your request to cancel.
         </p>
 
-        <h3>Refusal Of Delivery</h3>
+        <h3>Refusal of Delivery</h3>
         <p>You may refuse a delivery of damaged or spoiled items.</p>
 
-        <h3>Withholding Of Payment In Case Of Dispute</h3>
+        <h3>Withholding of Payment in Case of Dispute</h3>
         <p>You need not pay a disputed amount while your dispute is being reviewed by the card issuer.</p>
         <p>
           If you receive something C.O.D., you have the right to stop payment on a check made out to a seller, but not one
@@ -299,7 +299,7 @@ export default function CreditCardRights() {
       page="Your Credit Card Rights"
       title={
         <>
-          Your Credit Card Rights: <em>What To Do If You Have a Problem</em>
+          Your Credit Card Rights: <em>What to Do If You Have a Problem</em>
         </>
       }
       lead="Federal law grants consumers several rights relating to their credit card transactions, against the card companies and in the case of a dispute with a merchant. This Financial Guide discusses these important rights in depth."

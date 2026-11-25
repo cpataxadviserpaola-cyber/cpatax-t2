@@ -12,7 +12,7 @@ export default function ClientPortalTutorial() {
         page="Client Portal Tutorial"
         parents={[{ to: '/tax-season', label: 'Tax Season' }]}
         eyebrow="Client portal tutorial"
-        title={<>Getting around <em>the portal</em></>}
+        title={<>Getting Around <em>the Portal</em></>}
       >
         Our secure client portal keeps your documents, signatures, and messages in one place.
       </PageHero>
@@ -27,7 +27,7 @@ export default function ClientPortalTutorial() {
           </p>
         </div>
       </section>
-      <CtaSection title={<>Questions about the <em>portal?</em></>} text="Contact our team for help accessing your account." />
+      <CtaSection title={<>Questions About the <em>Portal?</em></>} text="Contact our team for help accessing your account." />
     </>
   );
 }

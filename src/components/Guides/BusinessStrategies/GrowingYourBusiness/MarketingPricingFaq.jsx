@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'market-research',
-    title: 'How do I research whether my small business’ product or service will sell?',
+    title: 'How Do I Research Whether My Small Business’ Product or Service Will Sell?',
     body: (
       <p>
         Research customers, competitors, and potential suppliers to understand where demand exists and what customers
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'research-questions',
-    title: 'What market research questions should I ask?',
+    title: 'What Market Research Questions Should I Ask?',
     body: (
       <p>
         Learn who your customers are, what they need, and what they can afford. Investigate demand, how it might be
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     id: 'pricing-costs',
-    title: 'What costs should I consider when determining how much to charge?',
+    title: 'What Costs Should I Consider When Determining How Much to Charge?',
     body: (
       <p>
         Include direct material and labor costs, related employment costs, and overhead that cannot be assigned

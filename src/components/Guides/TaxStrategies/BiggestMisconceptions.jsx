@@ -12,7 +12,7 @@ import GuideArticle, { Callout } from '../GuideArticle.jsx';
 const sections = [
   {
     id: 'start-up-costs',
-    title: '1. All Start-up Costs Are Immediately Deductible',
+    title: '1. All Start-Up Costs Are Immediately Deductible',
     body: (
       <>
         <p>
@@ -49,7 +49,7 @@ const sections = [
   },
   {
     id: 'incorporated',
-    title: '3. You Can Take More Deductions if You Are Incorporated',
+    title: '3. You Can Take More Deductions If You Are Incorporated',
     body: (
       <p>
         Self-employed individuals (sole proprietors and S Corps) qualify for many of the same deductions that incorporated
@@ -75,7 +75,7 @@ const sections = [
   },
   {
     id: 'business-expenses',
-    title: "5. Business Expenses Are Not Deductible if You Don't Take the Home Office Deduction",
+    title: "5. Business Expenses Are Not Deductible If You Don't Take the Home Office Deduction",
     body: (
       <>
         <p>
@@ -95,7 +95,7 @@ const sections = [
   },
   {
     id: 'extensions',
-    title: '6. Requesting an Extension on Your Taxes Is an Extension To Pay Taxes',
+    title: '6. Requesting an Extension on Your Taxes Is an Extension to Pay Taxes',
     body: (
       <p>
         Extensions enable you to extend your filing date only. Penalties and interest begin accruing from the date your

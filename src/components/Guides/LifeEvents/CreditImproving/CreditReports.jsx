@@ -126,7 +126,7 @@ const sections = [
           qualifications must have been closely scrutinized when you applied.
         </p>
 
-        <h3>Checking And Savings Accounts</h3>
+        <h3>Checking and Savings Accounts</h3>
         <p>
           People who have checking and savings accounts usually score better than those who do not. Some
           banks give you extra points if you have checking or savings accounts with them. Some banks also
@@ -173,7 +173,7 @@ const sections = [
           timely paid department store card can help you develop a good credit history.
         </p>
 
-        <h3>Disputing Errors In Your Credit File</h3>
+        <h3>Disputing Errors in Your Credit File</h3>
         <p>
           The Fair Credit Reporting Act (FCRA) protects consumers in the case of inaccurate or incomplete
           information in credit files. The FCRA requires credit bureaus to investigate and correct any errors
@@ -220,7 +220,7 @@ const sections = [
           you that it is going to do so and provide you with information on how to dispute the delinquency.
         </p>
 
-        <h3>Closed Accounts And Inactive Accounts</h3>
+        <h3>Closed Accounts and Inactive Accounts</h3>
         <p>
           You may be surprised to find you are turned down for a loan because you have too much credit
           available. Accounts you no longer use, or have paid off, can count against you if they are listed
@@ -268,7 +268,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>Collection Accounts And Charge-Offs</h3>
+        <h3>Collection Accounts and Charge-Offs</h3>
         <p>
           Collection accounts are those that have been sent to collections by the creditor—either to the
           creditor's own collection department or an outside agency. Profit-and-loss accounts (also called
@@ -338,7 +338,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>Length Of Credit History</h3>
+        <h3>Length of Credit History</h3>
         <p>
           Many people with no credit history find it nearly impossible to get a major credit card or, to a
           lesser extent, other credit. Scoring systems are not designed with the first-time credit user in
@@ -415,7 +415,7 @@ const sections = [
           to fix your credit problems.
         </p>
 
-        <h3>Number Of Credit Accounts</h3>
+        <h3>Number of Credit Accounts</h3>
         <p>
           Creditors want to see that you are able to handle credit over a period of time, and good credit
           references on your credit report help prove this ability. However, do not carry too much credit.
@@ -423,7 +423,7 @@ const sections = [
           bankcards."
         </p>
 
-        <h3>Over The Limit</h3>
+        <h3>Over the Limit</h3>
         <p>Going over the limit on your credit cards will often count against you.</p>
 
         <h3>Payments</h3>
@@ -472,7 +472,7 @@ const sections = [
           loans could cause your credit score to drop.
         </p>
 
-        <h3>Income/Income Per Dependent</h3>
+        <h3>Income/Income per Dependent</h3>
         <p>
           Be sure to list gross (before tax), not net (after tax), income on your loan application, unless
           the application asks for net income. Include income from a part-time job, public assistance or
@@ -550,7 +550,7 @@ const sections = [
   },
   {
     id: 'cosigning',
-    title: 'Cosigning An Account',
+    title: 'Cosigning an Account',
     body: (
       <>
         <p>
@@ -842,7 +842,7 @@ const sections = [
   },
   {
     id: 'explanation',
-    title: 'Putting An Explanation In Your Credit File',
+    title: 'Putting an Explanation in Your Credit File',
     body: (
       <>
         <p>

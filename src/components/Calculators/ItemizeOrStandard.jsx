@@ -167,7 +167,7 @@ export default function ItemizeOrStandard() {
     <CalculatorPage
       page="Itemize or Standard Deduction"
       category={{ to: '/resources#taxation', label: 'Taxation' }}
-      title="Should I Itemize Or Take The Standard Deduction?"
+      title="Should I Itemize or Take the Standard Deduction?"
       intro={intro}
       formTitle="Your Deductions"
       sections={sections}
@@ -196,7 +196,7 @@ export default function ItemizeOrStandard() {
       cta={{
         title: (
           <>
-            Want help with <em>your deductions?</em>
+            Want Help with <em>Your Deductions?</em>
           </>
         ),
         text: 'Our team can help you decide whether to itemize and plan your deductions, in English or Spanish.',

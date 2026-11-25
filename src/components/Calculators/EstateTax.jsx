@@ -151,7 +151,7 @@ export default function EstateTax() {
       cta={{
         title: (
           <>
-            Planning your <em>estate?</em>
+            Planning Your <em>Estate?</em>
           </>
         ),
         text: 'Our team can help you estimate the tax on your estate and plan to reduce it, in English or Spanish.',

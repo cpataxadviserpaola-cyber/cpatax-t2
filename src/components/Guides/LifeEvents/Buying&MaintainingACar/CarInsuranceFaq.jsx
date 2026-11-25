@@ -14,7 +14,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'lower-costs',
-    title: 'How can I lower my car insurance costs?',
+    title: 'How Can I Lower My Car Insurance Costs?',
     body: (
       <>
         <p>If you're trying to lower your auto insurance premiums, try using the following tactics:</p>
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     id: 'coverage',
-    title: 'What coverage should my auto policy include?',
+    title: 'What Coverage Should My Auto Policy Include?',
     body: (
       <>
         <p>
@@ -98,7 +98,7 @@ const sections = [
   },
   {
     id: 'claims',
-    title: 'How should I handle an auto insurance claim?',
+    title: 'How Should I Handle an Auto Insurance Claim?',
     body: (
       <>
         <p>
@@ -131,7 +131,7 @@ const sections = [
   },
   {
     id: 'comparison-shop',
-    title: 'Does it make sense to comparison shop for car insurance?',
+    title: 'Does It Make Sense to Comparison Shop for Car Insurance?',
     body: (
       <>
         <p>
@@ -212,7 +212,7 @@ const sections = [
   },
   {
     id: 'deductible',
-    title: 'How much of a deductible should I take on my car insurance?',
+    title: 'How Much of a Deductible Should I Take on My Car Insurance?',
     body: (
       <>
         <p>
@@ -234,7 +234,7 @@ const sections = [
   },
   {
     id: 'collision-older-cars',
-    title: 'Is it worthwhile to maintain collision coverage on older cars?',
+    title: 'Is It Worthwhile to Maintain Collision Coverage on Older Cars?',
     body: (
       <>
         <p>
@@ -262,7 +262,7 @@ const sections = [
   },
   {
     id: 'kind-of-car',
-    title: 'Does the kind of car I buy affect my insurance?',
+    title: 'Does the Kind of Car I Buy Affect My Insurance?',
     body: (
       <>
         <p>
@@ -286,7 +286,7 @@ const sections = [
   },
   {
     id: 'address',
-    title: 'Does my address affect my car insurance?',
+    title: 'Does My Address Affect My Car Insurance?',
     body: (
       <p>
         Costs tend to be lowest in rural communities and highest in cities. Additionally, rates vary within cities
@@ -300,7 +300,7 @@ const sections = [
   },
   {
     id: 'payment-schedule',
-    title: 'Does it make a difference if I pay my insurance annually, semi-annually or monthly?',
+    title: 'Does It Make a Difference If I Pay My Insurance Annually, Semi-Annually or Monthly?',
     body: (
       <p>
         Installment plans are convenient but wind up costing more because of fees or interest charges. You are usually
@@ -310,7 +310,7 @@ const sections = [
   },
   {
     id: 'discounts',
-    title: 'What types of auto insurance discounts are available?',
+    title: 'What Types of Auto Insurance Discounts Are Available?',
     body: (
       <p>
         Most insurance companies will reduce premiums 10 percent to 20 percent for various reasons, such as alarm
@@ -323,14 +323,14 @@ const sections = [
   },
   {
     id: 'car-theft',
-    title: "What's the most cost-effective way to prevent car theft?",
+    title: "What's the Most Cost-Effective Way to Prevent Car Theft?",
     body: (
       <>
         <p>
           The extent to which you go to protect yourself from car theft will depend on (1) how attractive your car is
           to thieves, and (2) how much money you're willing to spend. You can use the following methods:
         </p>
-        <h3>Common-sense (no cost) measures</h3>
+        <h3>Common-Sense (No Cost) Measures</h3>
         <p>
           First, always park in safe, well-lighted, well-patrolled areas, don't leave your key in the ignition, and
           make sure to lock all the doors and close the windows.
@@ -341,7 +341,7 @@ const sections = [
           you've been out shopping, lock your purchase in the trunk. Don't leave them in plain site as temptation for
           would-be thieves.
         </p>
-        <h3>Deterrent devices</h3>
+        <h3>Deterrent Devices</h3>
         <p>
           These are devices, such as steering wheel locks and alarm systems, intended to deter theft. We'll start with
           the least expensive options.

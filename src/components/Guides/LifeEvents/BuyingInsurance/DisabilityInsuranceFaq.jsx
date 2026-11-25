@@ -11,7 +11,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'own-policy',
-    title: 'Should I purchase my own disability insurance policy?',
+    title: 'Should I Purchase My Own Disability Insurance Policy?',
     body: (
       <>
         <p>
@@ -29,7 +29,7 @@ const sections = [
   },
   {
     id: 'how-much',
-    title: 'How much disability insurance should I have?',
+    title: 'How Much Disability Insurance Should I Have?',
     body: (
       <p>
         A disability insurance company will usually not cover you for more than 60 percent of your income. Look for a
@@ -41,7 +41,7 @@ const sections = [
   },
   {
     id: 'workers-compensation',
-    title: 'What does workers compensation insurance cover?',
+    title: 'What Does Workers Compensation Insurance Cover?',
     body: (
       <>
         <p>
@@ -61,7 +61,7 @@ const sections = [
   },
   {
     id: 'disability-defined',
-    title: 'How is disability defined?',
+    title: 'How Is Disability Defined?',
     body: (
       <>
         <p>
@@ -87,7 +87,7 @@ const sections = [
   },
   {
     id: 'long-term-care',
-    title: 'How does long-term care insurance work?',
+    title: 'How Does Long-Term Care Insurance Work?',
     body: (
       <>
         <p>
@@ -125,7 +125,7 @@ const sections = [
   },
   {
     id: 'elimination-period',
-    title: 'In a long-term care policy, what is the elimination period?',
+    title: 'In a Long-Term Care Policy, What Is the Elimination Period?',
     body: (
       <>
         <p>
@@ -141,7 +141,7 @@ const sections = [
   },
   {
     id: 'select-provider',
-    title: 'How should I select a long-term care insurance provider?',
+    title: 'How Should I Select a Long-Term Care Insurance Provider?',
     body: (
       <>
         <p>
@@ -167,7 +167,7 @@ const sections = [
   },
   {
     id: 'medicaid',
-    title: 'When can I qualify for Medicaid insurance?',
+    title: 'When Can I Qualify for Medicaid Insurance?',
     body: (
       <>
         <p>

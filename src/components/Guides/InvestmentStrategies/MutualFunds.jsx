@@ -35,7 +35,7 @@ const organizations = [
 const sections = [
   {
     id: 'choosing',
-    title: 'How To Choose A Mutual Fund',
+    title: 'How to Choose a Mutual Fund',
     body: (
       <>
         <p>
@@ -300,7 +300,7 @@ const sections = [
   },
   {
     id: 'risks',
-    title: 'Risk Factors In General',
+    title: 'Risk Factors in General',
     body: (
       <>
         <p>
@@ -498,7 +498,7 @@ export default function MutualFunds() {
       page="Investing In Mutual Funds"
       title={
         <>
-          Investing In Mutual Funds: <em>The Time-Tested Guidelines</em>
+          Investing in Mutual Funds: <em>The Time-Tested Guidelines</em>
         </>
       }
       lead="Mutual funds are an excellent way to invest in stocks, bonds and other securities."

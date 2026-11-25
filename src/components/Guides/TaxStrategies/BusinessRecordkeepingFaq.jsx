@@ -12,7 +12,7 @@ import GuideArticle from '../GuideArticle.jsx';
 const sections = [
   {
     id: 'records-to-keep',
-    title: 'What kind of records do I need to keep in my business?',
+    title: 'What Kind of Records Do I Need to Keep in My Business?',
     body: (
       <>
         <p>
@@ -52,7 +52,7 @@ const sections = [
   },
   {
     id: 'automating',
-    title: 'What do I need to know about automating part or all of my business?',
+    title: 'What Do I Need to Know About Automating Part or All of My Business?',
     body: (
       <>
         <p>
@@ -87,7 +87,7 @@ const sections = [
   },
   {
     id: 'choosing-a-system',
-    title: "How can I ensure that I'm choosing the right computer system?",
+    title: "How Can I Ensure That I'm Choosing the Right Computer System?",
     body: (
       <>
         <p>
@@ -119,7 +119,7 @@ const sections = [
   },
   {
     id: 'implementing',
-    title: 'How can I successfully implement a new computer system?',
+    title: 'How Can I Successfully Implement a New Computer System?',
     body: (
       <>
         <p>

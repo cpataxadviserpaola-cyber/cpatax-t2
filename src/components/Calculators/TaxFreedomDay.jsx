@@ -137,7 +137,7 @@ export default function TaxFreedomDay() {
       cta={{
         title: (
           <>
-            Want to keep more of <em>what you earn?</em>
+            Want to Keep More of <em>What You Earn?</em>
           </>
         ),
         text: 'Our team can help you plan to lower your taxes, in English or Spanish.',

@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'records-to-keep',
-    title: 'What pieces of paper do I need to keep in order to do my taxes?',
+    title: 'What Pieces of Paper Do I Need to Keep in Order to Do My Taxes?',
     body: (
       <p>
         Keep detailed records supporting the income, expenses, and other information on your tax return. Organized
@@ -15,7 +15,7 @@ const sections = [
   },
   {
     id: 'types-of-records',
-    title: 'What type of records do I need to keep?',
+    title: 'What Type of Records Do I Need to Keep?',
     body: (
       <>
         <p>Keep current-year records for income and any deductions or credits you claim. The source FAQ lists:</p>
@@ -38,7 +38,7 @@ const sections = [
   },
   {
     id: 'retention-period',
-    title: 'How long should I keep these records?',
+    title: 'How Long Should I Keep These Records?',
     body: (
       <>
         <p>
@@ -59,7 +59,7 @@ const sections = [
   },
   {
     id: 'old-returns',
-    title: 'Should I keep my old tax returns? If so, for how long?',
+    title: 'Should I Keep My Old Tax Returns? If So, for How Long?',
     body: (
       <>
         <p>
@@ -78,7 +78,7 @@ const sections = [
   },
   {
     id: 'asset-records',
-    title: 'What other types of tax records should I keep?',
+    title: 'What Other Types of Tax Records Should I Keep?',
     body: (
       <>
         <p>
@@ -95,7 +95,7 @@ const sections = [
   },
   {
     id: 'non-tax-records',
-    title: 'Are there any non-tax records I should keep?',
+    title: 'Are There Any Non-Tax Records I Should Keep?',
     body: (
       <>
         <p>Some records may be useful beyond tax preparation, including:</p>
@@ -114,7 +114,7 @@ const sections = [
   },
   {
     id: 'recordkeeping-system',
-    title: 'What kind of recordkeeping system do I need?',
+    title: 'What Kind of Recordkeeping System Do I Need?',
     body: (
       <>
         <p>
@@ -123,7 +123,7 @@ const sections = [
           records. A business owner, partner, or S corporation shareholder may benefit from formal books and help from
           a bookkeeper or accountant.
         </p>
-        <h3>Charitable contributions</h3>
+        <h3>Charitable Contributions</h3>
         <p>
           Keep required proof of gifts. The source FAQ describes bank records, written acknowledgments from the
           organization, or employer payroll-deduction records as substantiation examples for cash or check
@@ -131,7 +131,7 @@ const sections = [
           IRS rules. If claiming charitable mileage, retain a contemporaneous record of the miles and how they were
           calculated.
         </p>
-        <h3>Records for particular situations</h3>
+        <h3>Records for Particular Situations</h3>
         <ul>
           <li>
             If you pay work expenses yourself, keep supporting records for reimbursement or any deduction currently

@@ -39,7 +39,7 @@ export default function FaqSection({ title, lead, faqs, contactLink = '/contact'
             <Icon name="chat" />
           </span>
           <p>
-            <strong>Still have a question?</strong> Our team is happy to help, in English or Spanish.
+            <strong>Still Have a Question?</strong> Our team is happy to help, in English or Spanish.
           </p>
           <div className="faq-help-actions">
             <a className="btn btn-outline" href={site.phone.href}>

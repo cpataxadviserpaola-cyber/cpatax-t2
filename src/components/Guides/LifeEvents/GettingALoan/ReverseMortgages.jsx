@@ -15,7 +15,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'how-it-works',
-    title: 'How Does A Reverse Mortgage Work?',
+    title: 'How Does a Reverse Mortgage Work?',
     body: (
       <>
         <p>
@@ -180,7 +180,7 @@ const sections = [
   },
   {
     id: 'is-it-for-you',
-    title: 'Is A Reverse Mortgage For You?',
+    title: 'Is a Reverse Mortgage for You?',
     body: (
       <>
         <p>
@@ -328,7 +328,7 @@ const sections = [
           <p>For an approved counselor, contact any HECM lender.</p>
         </Callout>
 
-        <h3>Single-purpose reverse mortgages</h3>
+        <h3>Single-Purpose Reverse Mortgages</h3>
         <p>
           Offered by some state and local government agencies and nonprofit organizations, these reverse mortgages are
           the least expensive option. They are not available everywhere and can be used for only one purpose, which is
@@ -337,7 +337,7 @@ const sections = [
           qualify for these loans.
         </p>
 
-        <h3>Proprietary reverse mortgages</h3>
+        <h3>Proprietary Reverse Mortgages</h3>
         <p>
           This type of reverse mortgage is a private loan that is backed by the company that develops it. Like HECM
           loans, they may be more expensive than traditional home loans and upfront costs can be high. There are no

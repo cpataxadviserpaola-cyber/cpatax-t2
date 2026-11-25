@@ -12,7 +12,7 @@ import GuideArticle, { ArticleTable, Callout, FigureTable } from '../../GuideArt
 const sections = [
   {
     id: 'what-is-a-heloc',
-    title: 'What Is a Home Equity Line Of Credit (HELOC)?',
+    title: 'What Is a Home Equity Line of Credit (HELOC)?',
     body: (
       <>
         <p>
@@ -174,7 +174,7 @@ const sections = [
   },
   {
     id: 'repaying',
-    title: 'How will You Repay Your Home Equity Plan',
+    title: 'How Will You Repay Your Home Equity Plan',
     body: (
       <>
         <p>
@@ -217,7 +217,7 @@ const sections = [
   },
   {
     id: 'second-mortgage',
-    title: 'Line Of Credit vs. Traditional Second Mortgage',
+    title: 'Line of Credit vs. Traditional Second Mortgage',
     body: (
       <>
         <p>
@@ -418,7 +418,7 @@ export default function HomeEquityLoans() {
       page="Home Equity Loans"
       title={
         <>
-          Home Equity Loans: <em>How To Shop For The One That Is Best For You</em>
+          Home Equity Loans: <em>How to Shop for the One That Is Best for You</em>
         </>
       }
       lead="By using the equity in your home, you may qualify for a home equity line of credit (HELOC), a sizable amount of credit that is available to you to use when you need it, and, at a relatively low interest rate. Furthermore, under the tax law, and depending on your specific situation, you may be allowed to deduct the interest because the debt is secured by your home. This Financial Guide provides the information you need to determine which home equity loan is right for you."

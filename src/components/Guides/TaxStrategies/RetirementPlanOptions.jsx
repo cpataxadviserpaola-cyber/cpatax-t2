@@ -187,7 +187,7 @@ export default function RetirementPlanOptions() {
       page="Retirement Plan Options"
       title={
         <>
-          Retirement Plan Options <em>For Small Businesses</em>
+          Retirement Plan Options <em>for Small Businesses</em>
         </>
       }
       lead="According to the US Small Business Administration, small businesses employ half of all private-sector employees in the United States. However, a majority of small businesses do not offer their workers retirement savings benefits."

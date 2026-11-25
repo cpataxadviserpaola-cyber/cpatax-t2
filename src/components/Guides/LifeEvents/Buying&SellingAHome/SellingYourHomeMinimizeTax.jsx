@@ -683,7 +683,7 @@ const sections = [
   },
   {
     id: 'recapture-of-federal-subsidy',
-    title: 'Recapture Of Federal Subsidy',
+    title: 'Recapture of Federal Subsidy',
     body: (
       <>
         <p>
@@ -756,7 +756,7 @@ export default function SellingYourHomeMinimizeTax() {
     <GuideArticle
       category="life-events"
       topic="/guides/life-events/buying-and-selling-a-home"
-      title="Selling Your Home: How To Minimize the Tax On the Gain"
+      title="Selling Your Home: How to Minimize the Tax on the Gain"
       sections={sections}
     >
       <>

@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'why-referrals',
-    title: 'Why referrals matter',
+    title: 'Why Referrals Matter',
     body: (
       <p>
         Referred prospects may begin with greater confidence because someone they know has introduced your business.
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'earn-and-ask',
-    title: 'Earn referrals and ask for them',
+    title: 'Earn Referrals and Ask for Them',
     body: (
       <p>
         First deliver products and service customers genuinely value. Then make a clear, respectful request for
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     id: 'appreciate-referrals',
-    title: 'Show appreciation',
+    title: 'Show Appreciation',
     body: (
       <p>
         Thank customers for referrals and, when appropriate, let them know the outcome. Personal follow-up and

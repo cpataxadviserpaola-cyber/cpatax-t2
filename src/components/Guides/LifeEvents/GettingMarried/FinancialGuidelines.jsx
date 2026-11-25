@@ -31,7 +31,7 @@ const agencies = [
 const sections = [
   {
     id: 'first-marriage',
-    title: 'How To Prepare Financially For A First Marriage',
+    title: 'How to Prepare Financially for a First Marriage',
     body: (
       <>
         <p>
@@ -45,7 +45,7 @@ const sections = [
           your family's present income level should you die. If you are the only breadwinner, or if
           you plan on starting a family soon, then you should purchase life insurance.
         </p>
-        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind To Buy'])}>
+        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind to Buy'])}>
           Please see the Financial Guide:
         </RelatedGuide>
 
@@ -75,7 +75,7 @@ const sections = [
           do have a financial plan in place, since your marital status has changed it might be time to
           review and update it.
         </p>
-        <RelatedGuide guide={related([10, 'Your Financial Plan: Getting Started On a Secure Future'])}>
+        <RelatedGuide guide={related([10, 'Your Financial Plan: Getting Started on a Secure Future'])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -83,7 +83,7 @@ const sections = [
   },
   {
     id: 'divorce',
-    title: 'How To Prepare Financially For A Divorce',
+    title: 'How to Prepare Financially for a Divorce',
     body: (
       <>
         <p>
@@ -94,7 +94,7 @@ const sections = [
           taking time to prepare financially during divorce pays off in the long run.
         </p>
 
-        <h3>Take Stock Of Your Situation</h3>
+        <h3>Take Stock of Your Situation</h3>
         <p>Assessing your financial situation helps you in two ways:</p>
         <ul>
           <li>It will provide you with preliminary information for an eventual division of the property.</li>
@@ -136,7 +136,7 @@ const sections = [
           </p>
         </Callout>
         <RelatedGuide
-          guide={related([102, 'Document Locator System: A Handy Aid For Keeping Track of Your Records'])}
+          guide={related([102, 'Document Locator System: A Handy Aid for Keeping Track of Your Records'])}
         >
           For a system that makes it easy to organize and locate your records, please see the Financial
           Guide:
@@ -153,7 +153,7 @@ const sections = [
           rent or mortgage. Then total your after-tax monthly income from all sources. The amount left
           over is your disposable income.
         </p>
-        <RelatedGuide guide={related([11, 'Budgeting: How To Prepare a Workable Plan'])}>
+        <RelatedGuide guide={related([11, 'Budgeting: How to Prepare a Workable Plan'])}>
           Please see the Financial Guide:
         </RelatedGuide>
 
@@ -323,7 +323,7 @@ const sections = [
   },
   {
     id: 'remarriage',
-    title: 'How To Prepare Financially For Remarriage',
+    title: 'How to Prepare Financially for Remarriage',
     body: (
       <>
         <p>When considering remarriage, it is important to plan for the following:</p>

@@ -8,14 +8,14 @@ const scamGuides = guide('life-events.php', 20);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [80, 'Con Artists: How To Spot and Stop Them'],
-      [79, 'Fraudulent Charities: How To Protect Yourself'],
+      [80, 'Con Artists: How to Spot and Stop Them'],
+      [79, 'Fraudulent Charities: How to Protect Yourself'],
     ].map(scamGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [[165, 'Avoiding Scams: Frequently Asked Questions']].map(scamGuides),
   },
 ];

@@ -10,28 +10,28 @@ import { asset } from '../utils/asset.js';
 const tools = [
   {
     icon: 'lock',
-    title: 'Client portal login',
+    title: 'Client Portal Login',
     text: 'Upload documents, sign forms electronically, and message our team securely.',
     href: links.portal,
     label: 'Log in to the portal',
   },
   {
     icon: 'card',
-    title: 'Pay my fee',
+    title: 'Pay My Fee',
     text: 'Pay your invoice online through our secure payment page.',
     href: links.payment,
     label: 'Make a payment',
   },
   {
     icon: 'calendar',
-    title: 'Schedule an appointment',
+    title: 'Schedule an Appointment',
     text: 'Book a consultation at a time that works for you.',
     href: links.schedule,
     label: 'Book a time',
   },
   {
     icon: 'file-check',
-    title: 'Track your refund',
+    title: 'Track Your Refund',
     text: "Check the status of your federal refund with the IRS. For state refunds, visit your state's revenue department.",
     href: links.refund,
     label: "IRS Where's My Refund",
@@ -45,21 +45,21 @@ const tools = [
   },
   {
     icon: 'user',
-    title: 'Your IRS account',
+    title: 'Your IRS Account',
     text: 'See your balance, payment history, and tax records with the IRS.',
     href: links.irsAccount,
     label: 'IRS online account',
   },
   {
     icon: 'target',
-    title: 'Check your withholding',
+    title: 'Check Your Withholding',
     text: 'Estimate how much tax your employer or pension provider should withhold.',
     href: links.irsWithholding,
     label: 'IRS Withholding Estimator',
   },
   {
     icon: 'file',
-    title: '2026 pricing guide',
+    title: '2026 Pricing Guide',
     text: 'Our current fees for individual and business tax preparation, in one PDF.',
     href: asset(links.pricingGuide),
     label: 'Download the guide',
@@ -76,7 +76,7 @@ export function TaxSeasonPricingContent() {
       <section className="pricing-structure">
         <SectionHead
           eyebrow="Our pricing structure"
-          title={<>Fees that reflect <em>your situation</em></>}
+          title={<>Fees That Reflect <em>Your Situation</em></>}
           center
         >
           We understand that every tax situation is unique. Our pricing structure is thoughtfully

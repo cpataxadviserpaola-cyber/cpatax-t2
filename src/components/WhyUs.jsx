@@ -15,14 +15,14 @@ const cards = [
   {
     tone: 'light',
     kicker: 'A trusted partner',
-    title: 'Not a once-a-year tax preparer',
+    title: 'Not a Once-a-Year Tax Preparer',
     text: 'Work with a CPA who understands how your business truly operates, not just the numbers.',
     visual: <ChatPreview />,
   },
   {
     tone: 'gold',
     kicker: 'Dual credentials',
-    title: 'Tax strategy meets financial planning',
+    title: 'Tax Strategy Meets Financial Planning',
     text: 'Our founder integrates tax strategy with long-term financial planning.',
     visual: (
       <p className="cred-big" aria-hidden="true">
@@ -33,21 +33,21 @@ const cards = [
   {
     tone: 'light',
     kicker: 'Certified & bilingual',
-    title: 'Minority & women-owned',
+    title: 'Minority & Women-Owned',
     text: 'A South Carolina Minority/Women-Owned Business Enterprise, serving clients in English and Spanish.',
     visual: <MwbeRing />,
   },
   {
     tone: 'light',
     kicker: 'Paperless & secure',
-    title: 'Upload, sign, and pay from anywhere',
+    title: 'Upload, Sign, and Pay from Anywhere',
     text: 'A secure client portal for documents and e-signatures, plus online payments.',
     visual: <UploadPreview />,
   },
   {
     tone: 'dark',
     kicker: 'International clients',
-    title: 'U.S. tax filing for clients with international ties',
+    title: 'U.S. Tax Filing for Clients with International Ties',
     text: 'Nonresidents, expatriates, international students, and foreign investors.',
     visual: <FormList />,
   },
@@ -60,7 +60,7 @@ export default function WhyUs({ id, showCards = true }) {
         <div className="why-intro">
           <SectionHead
             eyebrow="The CPA Tax Adviser difference"
-            title={<>More than tax planning &amp; <em>preparation.</em></>}
+            title={<>More Than Tax Planning &amp; <em>Preparation.</em></>}
           >
             We provide experienced tax and advisory support designed to help businesses,
             professionals, and individuals make informed decisions and plan confidently for the
@@ -179,7 +179,7 @@ function FormList() {
     <div className="case" aria-hidden="true">
       <p className="case-title">
         <Icon name="globe" />
-        International filings we handle
+        International Filings We Handle
       </p>
       <ul className="forms">
         {FORMS.map((item) => (

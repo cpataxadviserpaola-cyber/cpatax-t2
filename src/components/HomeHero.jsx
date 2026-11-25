@@ -15,7 +15,7 @@ const slides = [
   {
     label: 'Welcome',
     photo: 'client-meeting',
-    title: 'Trusted tax and accounting support to help you save more and grow.',
+    title: 'Trusted Tax and Accounting Support to Help You Save More and Grow.',
     line: ['South Carolina Licensed CPA Firm', 'Helping Clients Across the U.S.'],
     action: { href: links.schedule, label: 'Speak with our CPA' },
   },

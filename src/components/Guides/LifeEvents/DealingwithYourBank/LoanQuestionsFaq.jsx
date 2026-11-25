@@ -8,7 +8,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'cosigning-a-loan',
-    title: 'What should I do if a friend or family member asks me to co-sign a loan?',
+    title: 'What Should I Do If a Friend or Family Member Asks Me to Co-Sign a Loan?',
     body: (
       <>
         <p>
@@ -73,7 +73,7 @@ const sections = [
   },
   {
     id: 'best-deal-home-equity',
-    title: 'How can I get the best deal on a home equity loan or an equity line of credit?',
+    title: 'How Can I Get the Best Deal on a Home Equity Loan or an Equity Line of Credit?',
     body: (
       <>
         <p>
@@ -124,7 +124,7 @@ const sections = [
   },
   {
     id: 'costs-of-heloc',
-    title: 'What are the costs of obtaining a home equity line of credit?',
+    title: 'What Are the Costs of Obtaining a Home Equity Line of Credit?',
     body: (
       <>
         <p>Many of the costs in setting up a home equity line of credit are similar to those you pay when you buy a home.</p>
@@ -160,7 +160,7 @@ const sections = [
   },
   {
     id: 'heloc-vs-second-mortgage',
-    title: 'Should I obtain a home equity line of credit or a traditional second mortgage loan?',
+    title: 'Should I Obtain a Home Equity Line of Credit or a Traditional Second Mortgage Loan?',
     body: (
       <>
         <p>
@@ -191,7 +191,7 @@ const sections = [
   },
   {
     id: 'comparing-loan-alternatives',
-    title: 'How should I determine which of several loan alternatives is best?',
+    title: 'How Should I Determine Which of Several Loan Alternatives Is Best?',
     body: (
       <>
         <p>Use the legally-required disclosures of loan terms to compare the costs of home equity loans.</p>

@@ -7,19 +7,19 @@ const businessGuides = guide('business-strategies.php', 7);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
       [104, 'Starting a Business? 3 Things You Must Know'],
       [105, 'Form of Business Organization: Which Should You Choose?'],
       [106, 'Advantages of Incorporating'],
       [107, 'Advantages of Limited Liability Companies'],
-      [108, 'Business Plans: How To Prepare An Effective One'],
-      [122, 'Raising Capital: How To Get Money For a Small Business'],
+      [108, 'Business Plans: How to Prepare an Effective One'],
+      [122, 'Raising Capital: How to Get Money for a Small Business'],
       [130, 'The Home-Based Business: Some Basics You Should Consider'],
     ].map(businessGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [144, 'Business Forms of Organization: Frequently Asked Questions'],
       [145, 'Incorporating: Frequently Asked Questions'],
@@ -31,14 +31,14 @@ const groups = [
     ].map(businessGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [['bus05', 'How many units do I need to sell to breakeven?']].map(calculator),
   },
 ];
 
 export default function StartingABusiness() {
   return (
-    <GuideTopic category="business-strategies" title="Starting A Business" groups={groups}>
+    <GuideTopic category="business-strategies" title="Starting a Business" groups={groups}>
       This section contains a selection of articles pertinent to starting a business.
     </GuideTopic>
   );

@@ -94,7 +94,7 @@ const sections = [
   },
   {
     id: 'not-so-good',
-    title: "What's Not So Good about SIMPLE IRAs",
+    title: "What's Not So Good About SIMPLE IRAs",
     body: (
       <>
         <p>

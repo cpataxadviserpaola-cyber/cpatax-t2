@@ -3,7 +3,7 @@ import GuideArticle from '../../../GuideArticle.jsx';
 const sections = [
   {
     id: 'meals-away-from-office',
-    title: 'Can I deduct meals on days I call on customers or clients away from my office?',
+    title: 'Can I Deduct Meals on Days I Call on Customers or Clients Away from My Office?',
     body: (
       <p>
         Merely eating away from your office while meeting customers does not necessarily make a meal deductible.
@@ -17,7 +17,7 @@ const sections = [
   },
   {
     id: 'employer-reimbursements',
-    title: 'Must I report employer reimbursements for travel, entertainment, and meals?',
+    title: 'Must I Report Employer Reimbursements for Travel, Entertainment, and Meals?',
     body: (
       <p>
         Under an accountable reimbursement arrangement, an employee who substantiates expenses for business purpose,
@@ -30,7 +30,7 @@ const sections = [
   },
   {
     id: 'deduction-limits',
-    title: 'What are the limits on deductible travel, entertainment, and meal costs?',
+    title: 'What Are the Limits on Deductible Travel, Entertainment, and Meal Costs?',
     body: (
       <p>
         Expenses must qualify as ordinary and necessary business costs and meet substantiation requirements. Meal
@@ -44,7 +44,7 @@ const sections = [
   },
   {
     id: 'temporary-assignment',
-    title: 'Can I deduct living expenses on a temporary assignment away from where I live and work?',
+    title: 'Can I Deduct Living Expenses on a Temporary Assignment Away from Where I Live and Work?',
     body: (
       <p>
         Travel expenses may qualify when work takes you away from your tax home and the assignment is temporary. The
@@ -56,7 +56,7 @@ const sections = [
   },
   {
     id: 'travel-expenses',
-    title: 'What expenses can I deduct while traveling away from home?',
+    title: 'What Expenses Can I Deduct While Traveling Away from Home?',
     body: (
       <>
         <p>
@@ -74,7 +74,7 @@ const sections = [
   },
   {
     id: 'non-deductible-travel',
-    title: 'What cannot be deducted as a travel expense?',
+    title: 'What Cannot Be Deducted as a Travel Expense?',
     body: (
       <p>
         Personal commuting between home and a regular work location is generally not deductible. The source FAQ
@@ -86,7 +86,7 @@ const sections = [
   },
   {
     id: 'entertainment',
-    title: 'What can I deduct for business entertainment?',
+    title: 'What Can I Deduct for Business Entertainment?',
     body: (
       <p>
         Federal rules generally disallow deductions for business entertainment, with limited exceptions. A separately
@@ -99,7 +99,7 @@ const sections = [
   },
   {
     id: 'substantiation',
-    title: 'How do I prove travel and entertainment expenses?',
+    title: 'How Do I Prove Travel and Entertainment Expenses?',
     body: (
       <p>
         Keep timely records of the amount, date, location, business purpose, and business relationship for expenses.

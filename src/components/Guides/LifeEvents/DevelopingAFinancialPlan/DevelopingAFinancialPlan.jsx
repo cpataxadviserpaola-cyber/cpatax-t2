@@ -5,10 +5,10 @@ const related = guide('life-events.php', 4);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [10, 'Your Financial Plan: Getting Started On a Secure Future'],
-      [11, 'Budgeting: How To Prepare a Workable Plan'],
+      [10, 'Your Financial Plan: Getting Started on a Secure Future'],
+      [11, 'Budgeting: How to Prepare a Workable Plan'],
     ].map(related),
   },
   {
@@ -19,7 +19,7 @@ const groups = [
     ].map(related),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [
       ['bud02', 'How Much Am I Spending?'],
       ['sav09', 'How Do Taxes and Inflation Impact My Investment Return?'],

@@ -12,7 +12,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'types-of-loans',
-    title: 'Types Of Loans',
+    title: 'Types of Loans',
     body: (
       <>
         <p>Let's take a look at the various ways you can borrow money and the negative and positive aspects of each.</p>
@@ -27,7 +27,7 @@ const sections = [
           Please see the Financial Guide:
         </RelatedGuide>
 
-        <h3>Home Equity Lines Of Credit</h3>
+        <h3>Home Equity Lines of Credit</h3>
         <p>
           A home equity line of credit is a form of revolving credit in which your home serves as collateral. Because the
           home is likely to be a consumer's largest asset, many homeowners use their credit lines only for major items such as
@@ -120,14 +120,14 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>CD And Passbook Loans</h3>
+        <h3>CD and Passbook Loans</h3>
         <p>
           Because the rate of interest you are earning on the CD or savings account is probably less than the interest that
           would be charged on the loan, it is usually a better idea to withdraw the money in the account (waiting until the
           term of the CD is up, to avoid penalties), than to borrow against it.
         </p>
 
-        <h3>Loans Against 401(K) Plans And Life Insurance</h3>
+        <h3>Loans Against 401(K) Plans and Life Insurance</h3>
         <p>
           One advantage of borrowing from a 401(k) plan or profit-sharing plan, assuming loans are permitted, is that the
           interest you pay goes back into your own pocket—right into your 401(k) or profit-sharing account. The amount of
@@ -142,7 +142,7 @@ const sections = [
         <h3>Credit Union Loans</h3>
         <p>Credit union loans may be available at lower rates than those of banks.</p>
 
-        <h3>Banks And Savings And Loans</h3>
+        <h3>Banks and Savings and Loans</h3>
         <p>
           If you obtain an unsecured loan at a bank, the rate will be higher because there is no collateral. For this reason,
           unsecured bank loans are generally not attractive.
@@ -155,7 +155,7 @@ const sections = [
   },
   {
     id: 'how-to-shop-for-a-loan',
-    title: 'How To Shop For A Loan',
+    title: 'How to Shop for a Loan',
     body: (
       <>
         <p>
@@ -174,7 +174,7 @@ const sections = [
           changed term.
         </p>
 
-        <h3>Interest Rate Charges And Loan Features</h3>
+        <h3>Interest Rate Charges and Loan Features</h3>
         <p>
           Credit costs vary. By remembering two terms, you can compare credit prices from different sources. Under Truth in
           Lending, the creditor must tell you, in writing and before you sign any agreement, the finance charge, and the
@@ -241,7 +241,7 @@ const sections = [
           reaches the cap.
         </p>
 
-        <h3>Repaying The Loan</h3>
+        <h3>Repaying the Loan</h3>
         <p>
           Consider how you will pay back any money you might borrow. Some plans set minimum payments that cover a portion of
           the principal of the amount you borrow plus accrued interest. But, unlike the typical installment loan, the portion
@@ -370,7 +370,7 @@ export default function ApplyingForALoan() {
       category="life-events"
       topic="/guides/life-events/dealing-with-your-bank"
       page="Applying For a Loan"
-      title={<>Applying For a Loan: <em>How To Get The Best Loan At The Lowest Cost</em></>}
+      title={<>Applying for a Loan: <em>How to Get the Best Loan at the Lowest Cost</em></>}
       lead="Debt should be incurred with caution. Yet there are ways to take advantage of your available credit to enjoy a purchase, make an investment, or take care of an emergency. Here is a guide to finding out which form of borrowing will best suit your needs as well as some pointers on finding the lowest-cost loan available."
       sections={sections}
     />

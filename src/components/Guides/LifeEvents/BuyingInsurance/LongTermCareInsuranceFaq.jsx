@@ -13,7 +13,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'should-i-buy',
-    title: 'Should I buy long-term care insurance?',
+    title: 'Should I Buy Long-Term Care Insurance?',
     body: (
       <>
         <p>
@@ -72,11 +72,11 @@ const sections = [
   },
   {
     id: 'alternatives',
-    title: 'What are the alternatives to long-term care insurance?',
+    title: 'What Are the Alternatives to Long-Term Care Insurance?',
     body: (
       <>
         <p>Here are some options for paying for long-term care, along with their advantages and drawbacks:</p>
-        <h3>Applying For Medicaid</h3>
+        <h3>Applying for Medicaid</h3>
         <p>
           Eligibility rules vary from state to state, but beneficiaries are generally required to "spend down" their
           income and assets to qualify. New laws in many states make it possible for the spouses of Medicaid nursing
@@ -100,7 +100,7 @@ const sections = [
   },
   {
     id: 'cost',
-    title: 'How much does long-term care insurance cost?',
+    title: 'How Much Does Long-Term Care Insurance Cost?',
     body: (
       <>
         <p>
@@ -134,7 +134,7 @@ const sections = [
   },
   {
     id: 'what-to-look-for',
-    title: 'What should I look for in a long-term care insurance policy?',
+    title: 'What Should I Look For in a Long-Term Care Insurance Policy?',
     body: (
       <>
         <p>When you compare long-term care insurance policies, consider the following:</p>
@@ -164,7 +164,7 @@ const sections = [
   },
   {
     id: 'do-i-need',
-    title: 'Do I need long-term care insurance?',
+    title: 'Do I Need Long-Term Care Insurance?',
     body: (
       <>
         <p>
@@ -181,7 +181,7 @@ const sections = [
   },
   {
     id: 'how-it-works',
-    title: 'How does long-term care insurance work?',
+    title: 'How Does Long-Term Care Insurance Work?',
     body: (
       <>
         <p>
@@ -209,7 +209,7 @@ const sections = [
   },
   {
     id: 'elimination-period',
-    title: 'In a long-term care policy, what is the elimination period?',
+    title: 'In a Long-Term Care Policy, What Is the Elimination Period?',
     body: (
       <p>
         This period constitutes the number of days the insured must wait after becoming eligible for benefits before
@@ -220,7 +220,7 @@ const sections = [
   },
   {
     id: 'select-provider',
-    title: 'How should I select a long-term care insurance provider?',
+    title: 'How Should I Select a Long-Term Care Insurance Provider?',
     body: (
       <>
         <p>
@@ -246,7 +246,7 @@ const sections = [
   },
   {
     id: 'comparison-shop',
-    title: 'Should I comparison shop for long-term care insurance coverage?',
+    title: 'Should I Comparison Shop for Long-Term Care Insurance Coverage?',
     body: (
       <>
         <p>
@@ -276,7 +276,7 @@ const sections = [
   },
   {
     id: 'special-health-insurance',
-    title: 'Is it worthwhile buying special types of health insurance?',
+    title: 'Is It Worthwhile Buying Special Types of Health Insurance?',
     body: (
       <>
         <p>
@@ -318,7 +318,7 @@ const sections = [
   },
   {
     id: 'disability-insurance',
-    title: 'Do I need disability insurance? How can I ensure I have adequate coverage?',
+    title: 'Do I Need Disability Insurance? How Can I Ensure I Have Adequate Coverage?',
     body: (
       <>
         <p>

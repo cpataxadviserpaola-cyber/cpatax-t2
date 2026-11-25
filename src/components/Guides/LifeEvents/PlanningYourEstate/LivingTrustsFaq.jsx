@@ -11,7 +11,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'what-is-a-living-trust',
-    title: 'What is a living trust?',
+    title: 'What Is a Living Trust?',
     body: (
       <>
         <p>
@@ -35,7 +35,7 @@ const sections = [
   },
   {
     id: 'what-is-probate',
-    title: 'What is probate?',
+    title: 'What Is Probate?',
     body: (
       <>
         <p>
@@ -66,7 +66,7 @@ const sections = [
   },
   {
     id: 'do-i-need-one',
-    title: 'Do I need a living trust?',
+    title: 'Do I Need a Living Trust?',
     body: (
       <p>
         A living trust is a useful estate and tax planning document that keeps your estate out of probate court. While
@@ -78,7 +78,7 @@ const sections = [
   },
   {
     id: 'avoiding-probate',
-    title: 'How does a living trust avoid probate?',
+    title: 'How Does a Living Trust Avoid Probate?',
     body: (
       <p>
         Property you transfer into a living trust before your death doesn't go through probate. The successor
@@ -91,7 +91,7 @@ const sections = [
   },
   {
     id: 'cost',
-    title: 'Is it expensive to create a living trust?',
+    title: 'Is It Expensive to Create a Living Trust?',
     body: (
       <p>
         The cost of creating a living trust depends on what you want to achieve. The more complicated a living trust is,
@@ -102,7 +102,7 @@ const sections = [
   },
   {
     id: 'made-public',
-    title: 'Is a trust document ever made public, like a will?',
+    title: 'Is a Trust Document Ever Made Public, Like a Will?',
     body: (
       <p>
         A will becomes a matter of public record when submitted to a probate court, as do all the other documents
@@ -113,7 +113,7 @@ const sections = [
   },
   {
     id: 'creditors',
-    title: 'Does a trust protect property from creditors?',
+    title: 'Does a Trust Protect Property from Creditors?',
     body: (
       <>
         <p>
@@ -138,7 +138,7 @@ const sections = [
   },
   {
     id: 'young-and-healthy',
-    title: "Do I need a trust if I'm young and healthy?",
+    title: "Do I Need a Trust If I'm Young and Healthy?",
     body: (
       <p>
         Probably not. At this stage in your life, your main estate planning goals are probably making sure that in the
@@ -150,7 +150,7 @@ const sections = [
   },
   {
     id: 'taxes',
-    title: 'Can a living trust save taxes?',
+    title: 'Can a Living Trust Save Taxes?',
     body: (
       <p>
         A simple probate-avoidance living trust does not affect either income or estate taxes. More complicated living

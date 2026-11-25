@@ -11,7 +11,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'raise-money',
-    title: 'How Can I Raise Money For My Small Business?',
+    title: 'How Can I Raise Money for My Small Business?',
     body: (
       <>
         <p>
@@ -34,7 +34,7 @@ const sections = [
   },
   {
     id: 'types-of-loans',
-    title: 'What Types Of Loans Exist For Business Financing?',
+    title: 'What Types of Loans Exist for Business Financing?',
     body: (
       <>
         <p>
@@ -59,7 +59,7 @@ const sections = [
   },
   {
     id: 'what-banks-look-for',
-    title: 'What Do Banks Look For When Considering A Loan Request?',
+    title: 'What Do Banks Look For When Considering a Loan Request?',
     body: (
       <>
         <p>
@@ -89,7 +89,7 @@ const sections = [
   },
   {
     id: 'loan-proposal',
-    title: 'How Do I Write A Good Loan Proposal?',
+    title: 'How Do I Write a Good Loan Proposal?',
     body: (
       <>
         <p>A good loan proposal contains the following key elements:</p>

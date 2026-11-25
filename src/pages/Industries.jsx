@@ -51,7 +51,7 @@ export default function Industries() {
       </section>
 
       <CtaSection
-        title={<>Don't see <em>your industry?</em></>}
+        title={<>Don't See <em>Your Industry?</em></>}
         text="We serve a broad range of business owners and professionals. Tell us about yours and we'll show you how we can help."
       />
     </>

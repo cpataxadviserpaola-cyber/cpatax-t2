@@ -135,7 +135,7 @@ export default function StockOptionValue() {
     <CalculatorPage
       page="Employee Stock Options"
       category={{ to: '/resources#paycheck-benefits', label: 'Paycheck and Benefits' }}
-      title="What Is The Future Value Of My Employee Stock Options?"
+      title="What Is the Future Value of My Employee Stock Options?"
       intro={intro}
       formTitle="Your Stock Options"
       sections={sections}
@@ -155,7 +155,7 @@ export default function StockOptionValue() {
       cta={{
         title: (
           <>
-            Holding employee <em>stock options?</em>
+            Holding Employee <em>Stock Options?</em>
           </>
         ),
         text: 'Our team can help you plan when to exercise and how the tax works, in English or Spanish.',

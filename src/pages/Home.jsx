@@ -17,19 +17,19 @@ import { faqs } from '../data/faqs.js';
 const pillars = [
   {
     icon: 'building',
-    title: 'Who we are',
+    title: 'Who We Are',
     text: 'A full-service CPA firm licensed in South Carolina. We are experienced and friendly.',
     link: { to: '/about', label: 'About our firm' },
   },
   {
     icon: 'briefcase',
-    title: 'What we do',
+    title: 'What We Do',
     text: 'Our firm provides outstanding service to our clients because of our dedication to our underlying principles.',
     link: { to: '/services', label: 'Our services' },
   },
   {
     icon: 'users',
-    title: 'Who we serve',
+    title: 'Who We Serve',
     text: 'A broad range of services for business owners, executives, and independent professionals.',
     link: { to: '/industries', label: 'Industries we serve' },
   },
@@ -98,7 +98,7 @@ export default function Home() {
 
       <section className="section section-white">
         <div className="container">
-          <SectionHead eyebrow="How it works" title={<>Getting started is <em>simple</em></>} center>
+          <SectionHead eyebrow="How it works" title={<>Getting Started Is <em>Simple</em></>} center>
             A simple procedure that will offer you peace of mind and save you time.
           </SectionHead>
           <ProcessSteps steps={workSteps} />
@@ -106,7 +106,7 @@ export default function Home() {
       </section>
 
       <FaqSection
-        title={<>Frequently asked <em>questions</em></>}
+        title={<>Frequently Asked <em>Questions</em></>}
         lead="Answers to what new clients ask us most."
         faqs={faqs}
       />
@@ -115,7 +115,7 @@ export default function Home() {
         compact
         soft
         href={links.schedule}
-        title={<>Ready to become more organized and <em>confident?</em></>}
+        title={<>Ready to Become More Organized and <em>Confident?</em></>}
         text="Let's talk about your business, your taxes, and the plan that gets you where you want to be."
       />
     </>

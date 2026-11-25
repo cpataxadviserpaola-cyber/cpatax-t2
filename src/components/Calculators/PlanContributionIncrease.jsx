@@ -30,7 +30,7 @@ import { dollars, number, percent } from './format.js';
 const plans = {
   457: {
     page: '457 Plan Contribution',
-    title: 'What Is The Impact Of Increasing My 457 Plan Contribution?',
+    title: 'What Is the Impact of Increasing My 457 Plan Contribution?',
     name: '457 Plan',
     formTitle: 'Your 457 Plan',
     balance: 'Current 457 Plan balance',
@@ -41,7 +41,7 @@ const plans = {
   },
   '403b': {
     page: '403(b) Contribution',
-    title: 'What Is The Impact Of Increasing My 403(b) Contribution?',
+    title: 'What Is the Impact of Increasing My 403(b) Contribution?',
     name: '403(b)',
     formTitle: 'Your 403(b) Plan',
     balance: 'Current 403(b) balance',
@@ -52,7 +52,7 @@ const plans = {
   },
   '401k': {
     page: '401(k) Contribution',
-    title: 'What Is The Impact Of Increasing My 401(k) Contribution?',
+    title: 'What Is the Impact of Increasing My 401(k) Contribution?',
     name: '401(k)',
     formTitle: 'Your 401(k) Plan',
     balance: 'Current 401(k) balance',
@@ -302,7 +302,7 @@ export default function PlanContributionIncrease({ plan: planId = '457' }) {
       cta={{
         title: (
           <>
-            Planning for <em>retirement?</em>
+            Planning for <em>Retirement?</em>
           </>
         ),
         text: 'Our team can help you decide how much to save and how it fits with your taxes, in English or Spanish.',

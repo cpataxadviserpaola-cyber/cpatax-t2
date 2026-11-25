@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'fixed-or-adjustable',
-    title: 'What is the difference between a fixed-rate and adjustable-rate mortgage?',
+    title: 'What Is the Difference Between a Fixed-Rate and Adjustable-Rate Mortgage?',
     body: (
       <p>
         A fixed-rate mortgage keeps the interest rate steady for the loan term, so principal-and-interest payments
@@ -15,7 +15,7 @@ const sections = [
   },
   {
     id: 'compare-loans',
-    title: 'How should I compare mortgage offers?',
+    title: 'How Should I Compare Mortgage Offers?',
     body: (
       <p>
         Compare offers for the same loan amount, term, and type. Look at the interest rate, annual percentage rate,
@@ -26,7 +26,7 @@ const sections = [
   },
   {
     id: 'down-payment',
-    title: 'Do I need a 20 percent down payment?',
+    title: 'Do I Need a 20 Percent Down Payment?',
     body: (
       <p>
         Not always. Down-payment requirements vary by loan program and borrower circumstances. A smaller down
@@ -37,7 +37,7 @@ const sections = [
   },
   {
     id: 'rate-lock',
-    title: 'What does it mean to lock a mortgage rate?',
+    title: 'What Does It Mean to Lock a Mortgage Rate?',
     body: (
       <p>
         A rate lock is an agreement that may hold a quoted interest rate for a specified period while your loan is
@@ -48,7 +48,7 @@ const sections = [
   },
   {
     id: 'refinance',
-    title: 'When might refinancing make sense?',
+    title: 'When Might Refinancing Make Sense?',
     body: (
       <p>
         Refinancing replaces an existing mortgage with a new one. Compare the new payment and total borrowing costs,

@@ -40,7 +40,7 @@ export default function TeamSection({ id, soft = false, showAboutLink = false })
     <section className={`section team${soft ? ' section-white' : ''}`} id={id}>
       <div className="container">
         <div className="section-head-row">
-          <SectionHead eyebrow="Meet our team" title={<>The people behind <em>your numbers</em></>}>
+          <SectionHead eyebrow="Meet our team" title={<>The People Behind <em>Your Numbers</em></>}>
             Get to know the people who will work on your taxes and books before you come to see us.
           </SectionHead>
           {showAboutLink && (
@@ -105,7 +105,7 @@ export default function TeamSection({ id, soft = false, showAboutLink = false })
             <div className="section-head-row">
               <SectionHead
                 eyebrow="Specialized support"
-                title={<>Our <em>outsourced team</em></>}
+                title={<>Our <em>Outsourced Team</em></>}
               >
                 Trusted professionals and specialists who collaborate closely with our firm to support client accounts.
               </SectionHead>

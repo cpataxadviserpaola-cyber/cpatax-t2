@@ -6,7 +6,7 @@ const related = guide('business-strategies.php');
 const sections = [
   {
     id: 'assess-the-fit',
-    title: 'Assess whether working from home fits',
+    title: 'Assess Whether Working from Home Fits',
     body: (
       <>
         <p>
@@ -23,7 +23,7 @@ const sections = [
   },
   {
     id: 'check-requirements',
-    title: 'Check local rules and business requirements',
+    title: 'Check Local Rules and Business Requirements',
     body: (
       <>
         <p>
@@ -43,7 +43,7 @@ const sections = [
   },
   {
     id: 'plan-the-money',
-    title: 'Plan costs, sales, and cash flow',
+    title: 'Plan Costs, Sales, and Cash Flow',
     body: (
       <>
         <p>
@@ -57,7 +57,7 @@ const sections = [
           to pay its obligations. Leave room for a slower-than-expected start and revisit the forecast as real results
           come in.
         </p>
-        <RelatedGuide guide={related([108, 'Business Plans: How To Prepare An Effective One'])} />
+        <RelatedGuide guide={related([108, 'Business Plans: How to Prepare an Effective One'])} />
       </>
     ),
   },

@@ -18,7 +18,7 @@ const sections = [
           that never comes. It is important to identify your goals and determine how best to achieve them. A
           financial plan can help you do this.
         </p>
-        <RelatedGuide guide={related([10, 'Your Financial Plan: Getting Started On a Secure Future'])}>
+        <RelatedGuide guide={related([10, 'Your Financial Plan: Getting Started on a Secure Future'])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -42,7 +42,7 @@ const sections = [
         <Callout label="Tip">
           <p>A well-thought-out budget will help you determine how much you should and can save.</p>
         </Callout>
-        <RelatedGuide guide={related([11, 'Budgeting: How To Prepare a Workable Plan'])}>
+        <RelatedGuide guide={related([11, 'Budgeting: How to Prepare a Workable Plan'])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -82,7 +82,7 @@ const sections = [
           typically zero percent (0%) for anyone with excellent credit and a stellar FICO score. You may have to
           pay a transaction fee of two to five percent (2-5%) on the amount transferred.
         </p>
-        <RelatedGuide guide={related([52, 'Home Equity Loans: How To Shop For The One That Is Best For You'])}>
+        <RelatedGuide guide={related([52, 'Home Equity Loans: How to Shop for the One That Is Best for You'])}>
           Please see the Financial Guide:
         </RelatedGuide>
         <Callout label="Tip">
@@ -101,7 +101,7 @@ const sections = [
           doesn't charge an annual fee. Better yet, pay cash (or use a debit card) to pay for your purchases and
           avoid credit cards altogether.
         </p>
-        <RelatedGuide guide={related([24, 'Credit Cards: How To Choose—And Use—Them Wisely'])}>
+        <RelatedGuide guide={related([24, 'Credit Cards: How to Choose—And Use—Them Wisely'])}>
           For suggestions as to other ways to cut credit card costs, please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -138,7 +138,7 @@ const sections = [
             go to the bank to withdraw the money instead. This may help you to spend less cash.
           </p>
         </Callout>
-        <RelatedGuide guide={related([22, 'Bank Accounts: What To Look and Ask For'])}>
+        <RelatedGuide guide={related([22, 'Bank Accounts: What to Look and Ask For'])}>
           For suggestions as to other ways to cut bank fees, please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -163,7 +163,7 @@ const sections = [
             coverage.
           </li>
         </ul>
-        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind To Buy'])}>
+        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind to Buy'])}>
           For suggestions as to other ways to cut life insurance costs, please see the Financial Guide:
         </RelatedGuide>
         <ul>
@@ -176,7 +176,7 @@ const sections = [
             form a competing insurer.
           </li>
         </ul>
-        <RelatedGuide guide={related([43, 'Car Insurance: 10 Cost-Cutters To Save You Money'])}>
+        <RelatedGuide guide={related([43, 'Car Insurance: 10 Cost-Cutters to Save You Money'])}>
           For suggestions as to other ways to cut auto insurance costs, please see the Financial Guide:
         </RelatedGuide>
         <ul>
@@ -186,7 +186,7 @@ const sections = [
             insurance agent about other savings.
           </li>
         </ul>
-        <RelatedGuide guide={related([64, "Homeowner's Insurance: How To Get The Best Coverage and Value"])}>
+        <RelatedGuide guide={related([64, "Homeowner's Insurance: How to Get the Best Coverage and Value"])}>
           For suggestions as to other ways to cut home insurance costs, please see the Financial Guide:
         </RelatedGuide>
         <ul>
@@ -265,7 +265,7 @@ export default function SavingMoney() {
       page="Saving Money"
       title={
         <>
-          Saving Money: <em>10 Major Ways To Increase Your Nest Egg</em>
+          Saving Money: <em>10 Major Ways to Increase Your Nest Egg</em>
         </>
       }
       lead="One way to accumulate assets for retirement, education, or other major goals is to reduce your spending. Studies have shown that these savings can add up over the years to a substantially increased nest egg."

@@ -596,7 +596,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>Due-On-Sale-Clause</h3>
+        <h3>Due-on-Sale-Clause</h3>
         <p>
           A due on sale clause gives the lender the right to require immediate repayment of the balance you owe if the
           property changes hands. Here's an example of a due on sale clause: "All or any part of the Property or an
@@ -678,7 +678,7 @@ export default function MortgageAlternatives() {
       page="Mortgage Alternatives"
       title={
         <>
-          Mortgage Alternatives: <em>How To Choose The Right One</em>
+          Mortgage Alternatives: <em>How to Choose the Right One</em>
         </>
       }
       lead="If you've been thinking about buying a home, you may wonder how to select the right financing for your budget and needs. This Financial Guide explains the basics of most of the mortgage loans that are available today."

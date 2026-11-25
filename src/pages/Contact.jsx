@@ -6,7 +6,7 @@ import { site } from '../data/site.js';
 export default function Contact() {
   return (
     <>
-      <PageHero page="Contact" eyebrow="Contact us" title={<>Let's talk about <em>your business</em></>}>
+      <PageHero page="Contact" eyebrow="Contact us" title={<>Let's Talk About <em>Your Business</em></>}>
         Send us a message or give us a call. We serve clients nationwide, in English and
         Spanish.
       </PageHero>
@@ -19,7 +19,7 @@ export default function Contact() {
                 <Icon name="phone" />
               </span>
               <div>
-                <h2>Call us</h2>
+                <h2>Call Us</h2>
                 <a className="option-main" href={site.phone.href}>
                   {site.phone.display}
                 </a>
@@ -32,7 +32,7 @@ export default function Contact() {
                 <Icon name="mail" />
               </span>
               <div>
-                <h2>Email us</h2>
+                <h2>Email Us</h2>
                 {/* <wbr> lets a narrow phone wrap the address after the @, not mid-word. */}
                 <a className="option-main" href={`mailto:${site.email}`}>
                   {site.email.split('@')[0]}@<wbr />
@@ -46,7 +46,7 @@ export default function Contact() {
                 <Icon name="pin" />
               </span>
               <div>
-                <h2>Mailing address</h2>
+                <h2>Mailing Address</h2>
                 <p className="option-main-text">
                   {site.address[0]}
                   <br />
@@ -60,7 +60,7 @@ export default function Contact() {
           <div className="form-card reveal">
             <p className="eyebrow">Send a message</p>
             <h2>
-              Tell us about <em>your business</em>
+              Tell Us About <em>Your Business</em>
             </h2>
             <p>Share a little about your situation and the services you need. We'll get back to you soon.</p>
             <p className="notice">

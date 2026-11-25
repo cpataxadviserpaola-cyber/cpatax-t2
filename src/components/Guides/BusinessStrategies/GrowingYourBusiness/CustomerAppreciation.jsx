@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'customer-retention',
-    title: 'Make customers feel valued',
+    title: 'Make Customers Feel Valued',
     body: (
       <>
         <p>
@@ -26,7 +26,7 @@ const sections = [
   },
   {
     id: 'thank-you-notes',
-    title: 'Use personal thank-you notes',
+    title: 'Use Personal Thank-You Notes',
     body: (
       <>
         <p>
@@ -44,7 +44,7 @@ const sections = [
   },
   {
     id: 'long-term-relationships',
-    title: 'Build a long-term relationship',
+    title: 'Build a Long-Term Relationship',
     body: (
       <p>
         Focus on helping customers make choices that fit their needs. Appreciation should be part of consistent
@@ -55,7 +55,7 @@ const sections = [
   },
   {
     id: 'when-to-write',
-    title: 'When to send a thank-you note',
+    title: 'When to Send a Thank-You Note',
     body: (
       <p>
         The source suggests following up after business contacts, including meeting someone at a seminar or
@@ -66,7 +66,7 @@ const sections = [
   },
   {
     id: 'help-the-customer',
-    title: 'Act in the customer’s interests',
+    title: 'Act in the Customer’s Interests',
     body: (
       <p>
         The guide contrasts a one-time sale with becoming a trusted helper who supports customers in making
@@ -83,7 +83,7 @@ export default function CustomerAppreciation() {
       category="business-strategies"
       topic="/guides/business-strategies/growing-your-business"
       page="The Nicest Way to Build Your Business"
-      title="The Nicest Way To Build Your Business"
+      title="The Nicest Way to Build Your Business"
       lead="Customer loyalty grows when people feel appreciated and receive personal, attentive service."
       sections={sections}
       numbered={false}

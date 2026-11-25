@@ -9,7 +9,7 @@ export default function TaxSeasonProcess() {
         page="Our Tax Season Process"
         parents={[{ to: '/tax-season', label: 'Tax Season' }]}
         eyebrow="Our tax season process"
-        title={<>From documents to <em>filed return</em></>}
+        title={<>From Documents to <em>Filed Return</em></>}
       >
         A clear, secure process that keeps you informed at every step, from submitting your
         documents to your e-filed return.
@@ -29,7 +29,7 @@ export default function TaxSeasonProcess() {
           <TaxSeasonProcessContent />
         </div>
       </section>
-      <CtaSection title={<>Ready to get <em>started?</em></>} text="Our team can help you take the next step." />
+      <CtaSection title={<>Ready to Get <em>Started?</em></>} text="Our team can help you take the next step." />
     </>
   );
 }

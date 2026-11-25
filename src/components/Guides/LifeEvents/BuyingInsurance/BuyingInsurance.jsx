@@ -7,20 +7,20 @@ const insuranceGuides = guide('life-events.php', 10);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [64, "Homeowner's Insurance: How To Get The Best Coverage and Value"],
-      [43, 'Car Insurance: 10 Cost-Cutters To Save You Money'],
-      [47, 'Life Insurance: How Much and What Kind To Buy'],
-      [48, 'Disability Insurance: What To Look For'],
-      [49, "Disability Benefits: How To Get All You're Entitled To"],
-      [50, 'Long-Term Care Insurance: How To Get The Best Deal'],
+      [64, "Homeowner's Insurance: How to Get the Best Coverage and Value"],
+      [43, 'Car Insurance: 10 Cost-Cutters to Save You Money'],
+      [47, 'Life Insurance: How Much and What Kind to Buy'],
+      [48, 'Disability Insurance: What to Look For'],
+      [49, "Disability Benefits: How to Get All You're Entitled To"],
+      [50, 'Long-Term Care Insurance: How to Get the Best Deal'],
       [51, 'Annuities: How They Work and When You Should Use Them'],
       [232, 'The Affordable Care Act'],
     ].map(insuranceGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [150, "Homeowner's Insurance: Frequently Asked Questions"],
       [147, 'Car Insurance: Frequently Asked Questions'],
@@ -31,7 +31,7 @@ const groups = [
     ].map(insuranceGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [['ins01', 'How Much Life Insurance Do I Need?']].map(calculator),
   },
 ];

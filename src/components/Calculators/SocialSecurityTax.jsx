@@ -176,7 +176,7 @@ export default function SocialSecurityTax() {
     <CalculatorPage
       page="Social Security Tax"
       category={{ to: '/resources#taxation', label: 'Taxation' }}
-      title="How Much Of My Social Security Benefit May Be Taxed?"
+      title="How Much of My Social Security Benefit May Be Taxed?"
       intro={intro}
       formTitle="Your Income and Benefits"
       sections={sections}
@@ -198,7 +198,7 @@ export default function SocialSecurityTax() {
       cta={{
         title: (
           <>
-            Planning your <em>retirement income?</em>
+            Planning Your <em>Retirement Income?</em>
           </>
         ),
         text: 'Our team can help you arrange your withdrawals to keep more of your Social Security, in English or Spanish.',

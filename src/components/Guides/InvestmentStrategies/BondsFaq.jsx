@@ -68,7 +68,7 @@ const bondFunds = [
 const sections = [
   {
     id: 'what-is-a-bond',
-    title: 'What is a bond?',
+    title: 'What Is a Bond?',
     body: (
       <>
         <p>
@@ -90,7 +90,7 @@ const sections = [
   },
   {
     id: 'types-of-bonds',
-    title: 'What are the various types of bonds?',
+    title: 'What Are the Various Types of Bonds?',
     body: (
       <>
         <p>
@@ -116,7 +116,7 @@ const sections = [
   },
   {
     id: 'classified',
-    title: 'How are bonds classified?',
+    title: 'How Are Bonds Classified?',
     body: (
       <>
         <p>Bonds are classified in three ways: by the issuing organization, by their maturity, and by their quality.</p>
@@ -149,7 +149,7 @@ const sections = [
   },
   {
     id: 'bond-quality',
-    title: 'What is meant by the term "bond quality?"',
+    title: 'What Is Meant by the Term "Bond Quality?"',
     body: (
       <>
         <p>
@@ -174,7 +174,7 @@ const sections = [
   },
   {
     id: 'call-provision',
-    title: 'What is a "bond call provision?"',
+    title: 'What Is a "Bond Call Provision?"',
     body: (
       <>
         <p>
@@ -203,7 +203,7 @@ const sections = [
   },
   {
     id: 'bond-rating',
-    title: 'What is a bond rating?',
+    title: 'What Is a Bond Rating?',
     body: (
       <>
         <p>The table below provides a summary of the ratings:</p>
@@ -219,7 +219,7 @@ const sections = [
   },
   {
     id: 'bond-prices',
-    title: 'What factors affect bond prices?',
+    title: 'What Factors Affect Bond Prices?',
     body: (
       <>
         <p>
@@ -276,7 +276,7 @@ const sections = [
   },
   {
     id: 'bonds-or-bond-funds',
-    title: 'Should I buy individual bonds directly or through a mutual fund?',
+    title: 'Should I Buy Individual Bonds Directly or Through a Mutual Fund?',
     body: (
       <>
         <p>
@@ -319,7 +319,7 @@ const sections = [
   },
   {
     id: 'bond-fund-types',
-    title: 'What types of bond funds are there?',
+    title: 'What Types of Bond Funds Are There?',
     body: (
       <>
         <p>The table below shows eight common types of bond funds and some of their key characteristics.</p>
@@ -335,7 +335,7 @@ const sections = [
   },
   {
     id: 'municipal-bonds',
-    title: 'What are municipal bonds?',
+    title: 'What Are Municipal Bonds?',
     body: (
       <>
         <p>
@@ -368,7 +368,7 @@ const sections = [
   },
   {
     id: 'government-bonds',
-    title: 'What do I need to know about U.S. Government bonds?',
+    title: 'What Do I Need to Know About U.S. Government Bonds?',
     body: (
       <>
         <p>
@@ -389,7 +389,7 @@ const sections = [
   },
   {
     id: 'treasuries-without-a-broker',
-    title: 'Can I buy treasury bonds without a broker?',
+    title: 'Can I Buy Treasury Bonds Without a Broker?',
     body: (
       <p>
         Treasury bills, notes, and bonds can be purchased directly from the Federal Reserve. Call the Federal Reserve branch

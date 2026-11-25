@@ -11,7 +11,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'victims',
-    title: 'Who Are The Victims?',
+    title: 'Who Are the Victims?',
     body: (
       <>
         <p>
@@ -32,7 +32,7 @@ const sections = [
   },
   {
     id: 'buzz-words',
-    title: 'Buzz Words And Tip-Offs',
+    title: 'Buzz Words and Tip-Offs',
     body: (
       <>
         <p>
@@ -144,7 +144,7 @@ const sections = [
   },
   {
     id: 'where-they-operate',
-    title: 'Areas In Which Con Artists Operate',
+    title: 'Areas in Which Con Artists Operate',
     body: (
       <>
         <p>
@@ -214,7 +214,7 @@ const sections = [
   },
   {
     id: 'securities-con',
-    title: 'Five Questions That Will Reveal A Securities Con',
+    title: 'Five Questions That Will Reveal a Securities Con',
     body: (
       <>
         <p>Here are five simple questions that will expose even the most clever of con artists.</p>
@@ -263,7 +263,7 @@ const sections = [
   },
   {
     id: 'ten-steps',
-    title: 'Ten Steps For Avoiding Scams',
+    title: 'Ten Steps for Avoiding Scams',
     body: (
       <>
         <p>
@@ -362,7 +362,7 @@ const sections = [
   },
   {
     id: 'telemarketing-fraud',
-    title: 'Some Specific Suggestions For Telemarketing Fraud',
+    title: 'Some Specific Suggestions for Telemarketing Fraud',
     body: (
       <>
         <p>
@@ -420,7 +420,7 @@ const sections = [
   },
   {
     id: 'caller-tip-offs',
-    title: 'Tip-Offs That A Caller Could Be A Crook',
+    title: 'Tip-Offs That a Caller Could Be a Crook',
     body: (
       <ul>
         <li>High-pressure sales tactics.</li>
@@ -537,7 +537,7 @@ export default function ConArtists() {
       page="Con Artists"
       title={
         <>
-          Con Artists: <em>How To Spot and Stop Them</em>
+          Con Artists: <em>How to Spot and Stop Them</em>
         </>
       }
       lead="Make sure you and your family never fall prey to the schemes and cons that pervade all aspects of American life. Learn to recognize con artists and send them on their way before parting with any of your hard-earned money."

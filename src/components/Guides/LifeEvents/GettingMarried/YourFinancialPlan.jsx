@@ -254,7 +254,7 @@ const sections = [
   },
   {
     id: 'plan',
-    title: 'Plan To Achieve Your Goals',
+    title: 'Plan to Achieve Your Goals',
     body: (
       <>
         <p>
@@ -289,8 +289,8 @@ const sections = [
         </p>
         <RelatedGuide
           guides={[
-            related([48, 'Disability Insurance: What To Look For']),
-            related([49, "Disability Benefits: How To Get All You're Entitled To"]),
+            related([48, 'Disability Insurance: What to Look For']),
+            related([49, "Disability Benefits: How to Get All You're Entitled To"]),
           ]}
         >
           Please see the Financial Guides:
@@ -302,7 +302,7 @@ const sections = [
           accident or other catastrophe could wipe out a large portion of your assets or cash flow and you
           may be unable to achieve your goals.
         </p>
-        <RelatedGuide guide={related([64, "Homeowner's Insurance: How To Get The Best Coverage and Value"])}>
+        <RelatedGuide guide={related([64, "Homeowner's Insurance: How to Get the Best Coverage and Value"])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -403,7 +403,7 @@ const sections = [
           stock, bond, or mutual fund you select, and when you decide to buy it. In short, asset allocation
           and diversification are the cornerstones of good investing.
         </p>
-        <RelatedGuide guide={investing([84, 'Asset Allocation: How To Diversify For Maximum Return'])}>
+        <RelatedGuide guide={investing([84, 'Asset Allocation: How to Diversify for Maximum Return'])}>
           For a comprehensive discussion of asset allocation, please see the Financial Guide:
         </RelatedGuide>
         <p>Here, in a nutshell, are the three most important things an investor can do:</p>
@@ -459,7 +459,7 @@ export default function YourFinancialPlan() {
       page="Your Financial Plan"
       title={
         <>
-          Your Financial Plan: <em>Getting Started On a Secure Future</em>
+          Your Financial Plan: <em>Getting Started on a Secure Future</em>
         </>
       }
       lead="This Financial Guide tells you how to begin the financial planning process. It provides worksheets to help you find out where you are financially and where you want to be in the future. It will help you identify your goals, determine your net worth and cash flow, plan to achieve your goals as well as begin to put your plan into action."

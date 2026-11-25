@@ -12,27 +12,27 @@ export const pricingNotes = {
 export const pricingTables = [
   {
     id: 'individual',
-    title: 'Individual tax services',
+    title: 'Individual Tax Services',
     columns: ['Complexity level', 'Typical situation', 'Average investment'],
     rows: [
       {
-        level: 'Core complexity',
+        level: 'Core Complexity',
         detail: 'W-2 income, standard investment activity, limited additional reporting',
         price: '$650 – $900',
       },
       {
-        level: 'Layered complexity',
+        level: 'Layered Complexity',
         detail: 'Business income, rental properties, K-1s, multi-state filings, expanded investment portfolios',
         price: '$900 – $1,500+',
         featured: true,
       },
       {
-        level: 'Advanced & strategic',
+        level: 'Advanced & Strategic',
         detail: 'Equity compensation, AMT exposure, multiple entities, 1031 exchanges, significant transactions',
         price: '$1,500 – $2,500+',
       },
       {
-        level: 'International & cross-border',
+        level: 'International & Cross-Border',
         detail: 'Foreign earned income exclusion, FBAR, FATCA reporting, foreign entities',
         price: 'Custom pricing',
       },
@@ -40,11 +40,11 @@ export const pricingTables = [
   },
   {
     id: 'business',
-    title: 'Business tax services',
+    title: 'Business Tax Services',
     columns: ['Entity type', 'Scope considerations', 'Average investment'],
     rows: [
       {
-        level: 'S corporations',
+        level: 'S Corporations',
         detail: 'Payroll activity, shareholder basis tracking, multi-state filing',
         price: '$1,500 – $3,500+',
       },
@@ -54,7 +54,7 @@ export const pricingTables = [
         price: '$1,500 – $3,500+',
       },
       {
-        level: 'Advanced business reporting',
+        level: 'Advanced Business Reporting',
         detail: 'Multi-state apportionment, ownership changes, prior-year clean-up, restructuring',
         price: 'Custom pricing',
       },

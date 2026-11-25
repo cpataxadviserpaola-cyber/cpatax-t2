@@ -6,7 +6,7 @@ const related = guide('business-strategies.php');
 const sections = [
   {
     id: 'business-succession',
-    title: 'How can I help my small business survive a transition to the next generation?',
+    title: 'How Can I Help My Small Business Survive a Transition to the Next Generation?',
     body: (
       <p>
         Plan early for who will own and manage the business next. Options include closing, selling to an outsider or
@@ -18,7 +18,7 @@ const sections = [
   },
   {
     id: 'succession-planning',
-    title: 'What is involved in succession planning for a family business?',
+    title: 'What Is Involved in Succession Planning for a Family Business?',
     body: (
       <>
         <p>
@@ -35,7 +35,7 @@ const sections = [
   },
   {
     id: 'business-readiness',
-    title: 'How do I know whether I have what it takes to run my own business?',
+    title: 'How Do I Know Whether I Have What It Takes to Run My Own Business?',
     body: (
       <p>
         Assess your reasons for starting, the skills and experience you can bring, the work you enjoy, and the time
@@ -46,7 +46,7 @@ const sections = [
   },
   {
     id: 'business-plan',
-    title: 'What should I include in a business plan?',
+    title: 'What Should I Include in a Business Plan?',
     body: (
       <>
         <p>
@@ -74,13 +74,13 @@ const sections = [
             <strong>Conclusion:</strong> Restate objectives, commitment, and how you intend to reach your goals.
           </li>
         </ul>
-        <RelatedGuide guide={related([108, 'Business Plans: How To Prepare An Effective One'])} />
+        <RelatedGuide guide={related([108, 'Business Plans: How to Prepare an Effective One'])} />
       </>
     ),
   },
   {
     id: 'home-business',
-    title: 'Is a home-based business right for me?',
+    title: 'Is a Home-Based Business Right for Me?',
     body: (
       <p>
         Consider whether you can stay self-directed, understand the demands of the work, and adapt your plans as the
@@ -91,7 +91,7 @@ const sections = [
   },
   {
     id: 'home-business-law',
-    title: 'What legal requirements might affect a home-based business?',
+    title: 'What Legal Requirements Might Affect a Home-Based Business?',
     body: (
       <p>
         A home business may be subject to zoning, licensing, product, registration, tax, and employment rules. Some
@@ -104,7 +104,7 @@ const sections = [
   },
   {
     id: 'cash-flow-problems',
-    title: 'How can I avoid cash-flow problems in my small business?',
+    title: 'How Can I Avoid Cash-Flow Problems in My Small Business?',
     body: (
       <p>
         Understand the operating cycle: cash may be tied up in inventory and customer receivables before sales
@@ -116,7 +116,7 @@ const sections = [
   },
   {
     id: 'improve-cash-flow',
-    title: 'What steps can I take to improve business cash flow?',
+    title: 'What Steps Can I Take to Improve Business Cash Flow?',
     body: (
       <p>
         The source FAQ suggests managing and collecting overdue receivables, reviewing customer credit terms,
@@ -128,7 +128,7 @@ const sections = [
   },
   {
     id: 'cash-reserve',
-    title: 'Should I keep a cash reserve in my small business?',
+    title: 'Should I Keep a Cash Reserve in My Small Business?',
     body: (
       <p>
         Maintain accessible cash to meet expected expenses and provide a reasonable emergency cushion. If cash exceeds

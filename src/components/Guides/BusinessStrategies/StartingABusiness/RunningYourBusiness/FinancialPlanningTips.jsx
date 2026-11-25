@@ -3,7 +3,7 @@ import GuideArticle from '../../../GuideArticle.jsx';
 const sections = [
   {
     id: 'ownership-and-succession',
-    title: 'Plan for ownership, succession, and compensation',
+    title: 'Plan for Ownership, Succession, and Compensation',
     body: (
       <ul>
         <li>
@@ -28,7 +28,7 @@ const sections = [
   },
   {
     id: 'retirement-and-insurance',
-    title: 'Review retirement and health-insurance planning',
+    title: 'Review Retirement and Health-Insurance Planning',
     body: (
       <ul>
         <li>Compare employer retirement-plan options, including SIMPLE plans, SEP IRAs, and individual 401(k) plans.</li>
@@ -49,7 +49,7 @@ const sections = [
   },
   {
     id: 'business-tax-decisions',
-    title: 'Check business tax and filing decisions',
+    title: 'Check Business Tax and Filing Decisions',
     body: (
       <ul>
         <li>
@@ -87,7 +87,7 @@ export default function FinancialPlanningTips() {
       category="business-strategies"
       topic="/guides/business-strategies/running-your-business"
       page="Financial Planning Tips for Business Owners"
-      title={<>Financial Planning Tips <em>For Business Owners</em></>}
+      title={<>Financial Planning Tips <em>for Business Owners</em></>}
       lead="A checklist of ownership, succession, compensation, retirement, insurance, and tax-planning topics for business owners to review with their advisers."
       sections={sections}
     />

@@ -7,7 +7,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'best-price',
-    title: "How can I get the best homeowner's insurance at the best price?",
+    title: "How Can I Get the Best Homeowner's Insurance at the Best Price?",
     body: (
       <>
         <p>
@@ -30,10 +30,10 @@ const sections = [
   },
   {
     id: 'how-much',
-    title: "How much homeowner's insurance should I buy?",
+    title: "How Much Homeowner's Insurance Should I Buy?",
     body: (
       <>
-        <h3>Insure For 100 percent of Rebuilding Costs</h3>
+        <h3>Insure for 100 Percent of Rebuilding Costs</h3>
         <p>
           The amount of insurance you buy should be based on the cost of rebuilding, and not on the price of your
           home. The cost of rebuilding your house may be higher (or lower) than the price you paid for it or the price
@@ -60,7 +60,7 @@ const sections = [
   },
   {
     id: 'adequate',
-    title: "How can I make sure my homeowner's insurance is adequate?",
+    title: "How Can I Make Sure My Homeowner's Insurance Is Adequate?",
     body: (
       <>
         <h3>Check Your Policy and Keep Your Agent Informed</h3>
@@ -93,7 +93,7 @@ const sections = [
   },
   {
     id: 'shop',
-    title: 'How should I shop for a home insurer?',
+    title: 'How Should I Shop for a Home Insurer?',
     body: (
       <>
         <p>
@@ -117,14 +117,14 @@ const sections = [
   },
   {
     id: 'deductible',
-    title: "How much of a homeowner's deductible should I have?",
+    title: "How Much of a Homeowner's Deductible Should I Have?",
     body: (
       <p>Deductibles on homeowners' policies typically start at $250. Increasing your deductible saves you money.</p>
     ),
   },
   {
     id: 'same-company',
-    title: 'Should I buy home and auto policies from the same company?',
+    title: 'Should I Buy Home and Auto Policies from the Same Company?',
     body: (
       <p>
         Some companies that sell homeowner's, auto, and liability coverage will take 5 to 15 percent off your premium
@@ -134,7 +134,7 @@ const sections = [
   },
   {
     id: 'home-purchase',
-    title: 'Should insurance costs be a factor in the home purchase decision?',
+    title: 'Should Insurance Costs Be a Factor in the Home Purchase Decision?',
     body: (
       <>
         <p>
@@ -153,7 +153,7 @@ const sections = [
   },
   {
     id: 'land',
-    title: 'Should I insure the entire home cost including land?',
+    title: 'Should I Insure the Entire Home Cost Including Land?',
     body: (
       <p>
         Insuring the value of the land under your house is not necessary because land isn't at risk from theft,
@@ -163,7 +163,7 @@ const sections = [
   },
   {
     id: 'home-security',
-    title: 'Does home security reduce insurance cost?',
+    title: 'Does Home Security Reduce Insurance Cost?',
     body: (
       <>
         <p>
@@ -184,7 +184,7 @@ const sections = [
   },
   {
     id: 'non-smokers',
-    title: 'Do home insurers offer discounts for non-smokers?',
+    title: 'Do Home Insurers Offer Discounts for Non-Smokers?',
     body: (
       <p>
         Some insurers offer to reduce premiums if all the residents in a house don't smoke. Ask your insurer if this
@@ -194,7 +194,7 @@ const sections = [
   },
   {
     id: 'review',
-    title: "How often should I review my homeowner's policy?",
+    title: "How Often Should I Review My Homeowner's Policy?",
     body: (
       <>
         <p>
@@ -212,7 +212,7 @@ const sections = [
   },
   {
     id: 'storm-insurance',
-    title: 'Should I buy private or governmental sponsored storm insurance?',
+    title: 'Should I Buy Private or Governmental Sponsored Storm Insurance?',
     body: (
       <p>
         If you live in a high-risk area, one vulnerable to coastal storms, fires, or crime, for instance, and have been

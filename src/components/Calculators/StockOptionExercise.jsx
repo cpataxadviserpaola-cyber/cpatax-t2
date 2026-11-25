@@ -43,7 +43,7 @@ const sections = [
     ],
   },
   {
-    title: 'Taxation And Investment Assumptions',
+    title: 'Taxation and Investment Assumptions',
     fields: [
       {
         name: 'altReturn',
@@ -131,7 +131,7 @@ export default function StockOptionExercise() {
     <CalculatorPage
       page="Exercising Stock Options"
       category={{ to: '/resources#paycheck-benefits', label: 'Paycheck and Benefits' }}
-      title="Should I Exercise My 'In-The-Money' Stock Options?"
+      title="Should I Exercise My 'In-the-Money' Stock Options?"
       intro={intro}
       formTitle="Your Stock Options"
       sections={sections}
@@ -153,7 +153,7 @@ export default function StockOptionExercise() {
       cta={{
         title: (
           <>
-            Deciding when to <em>exercise?</em>
+            Deciding When to <em>Exercise?</em>
           </>
         ),
         text: 'Our team can help you weigh the tax on exercising and selling your options, in English or Spanish.',

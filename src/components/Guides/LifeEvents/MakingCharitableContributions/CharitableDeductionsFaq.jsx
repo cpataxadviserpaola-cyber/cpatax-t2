@@ -12,7 +12,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'is-it-deductible',
-    title: 'How can I find out if contributions to a particular charity are tax-deductible?',
+    title: 'How Can I Find Out If Contributions to a Particular Charity Are Tax-Deductible?',
     body: (
       <>
         <p>
@@ -46,7 +46,7 @@ const sections = [
   },
   {
     id: 'irs-information',
-    title: 'What information can I obtain from the IRS about a charity?',
+    title: 'What Information Can I Obtain from the IRS About a Charity?',
     body: (
       <>
         <p>
@@ -95,7 +95,7 @@ const sections = [
   },
   {
     id: 'types-of-contributions',
-    title: 'What types of deductible contributions can be made to charity?',
+    title: 'What Types of Deductible Contributions Can Be Made to Charity?',
     body: (
       <p>
         Generally, you can donate money or property to charity. A deduction is usually available for the fair market
@@ -108,7 +108,7 @@ const sections = [
   },
   {
     id: 'qualifying-organizations',
-    title: 'What types of organizations generally qualify for a charitable deduction?',
+    title: 'What Types of Organizations Generally Qualify for a Charitable Deduction?',
     body: (
       <>
         <p>
@@ -129,7 +129,7 @@ const sections = [
   },
   {
     id: 'non-qualifying-organizations',
-    title: 'What types of organizations generally do not qualify for a charitable deduction?',
+    title: 'What Types of Organizations Generally Do Not Qualify for a Charitable Deduction?',
     body: (
       <>
         <p>The following types of organizations generally do not qualify for a charitable deduction:</p>
@@ -147,7 +147,7 @@ const sections = [
   },
   {
     id: 'deduction-limit',
-    title: 'What is the limit on the deductibility of charitable contributions?',
+    title: 'What Is the Limit on the Deductibility of Charitable Contributions?',
     body: (
       <p>
         The amount of your deduction for charitable contributions is limited to 50 percent of your adjusted gross income
@@ -159,7 +159,7 @@ const sections = [
   },
   {
     id: 'tax-exempt-organizations',
-    title: 'Can I deduct contributions to tax-exempt organizations?',
+    title: 'Can I Deduct Contributions to Tax-Exempt Organizations?',
     body: (
       <p>
         Not necessarily. Tax-exempt means that the organization does not have to pay federal income taxes while
@@ -170,7 +170,7 @@ const sections = [
   },
   {
     id: 'look-out-for',
-    title: 'What should I look out for in my charitable giving?',
+    title: 'What Should I Look Out for in My Charitable Giving?',
     body: (
       <>
         <p>Not everything the charity gets from you qualifies for deduction:</p>
@@ -196,7 +196,7 @@ const sections = [
   },
   {
     id: 'gift-or-estate-tax',
-    title: 'Is federal gift or estate tax due on my charitable gift?',
+    title: 'Is Federal Gift or Estate Tax Due on My Charitable Gift?',
     body: (
       <p>
         Charitable gifts made pursuant to your will reduce the amount of your estate that is subject to estate tax.
@@ -207,7 +207,7 @@ const sections = [
   },
   {
     id: 'planned-or-deferred-giving',
-    title: 'Some charities talk about planned or deferred giving. What is that?',
+    title: 'Some Charities Talk About Planned or Deferred Giving. What Is That?',
     body: (
       <>
         <p>

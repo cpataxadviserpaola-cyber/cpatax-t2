@@ -154,7 +154,7 @@ const sections = [
             text: 'Keep organized bookkeeping records to facilitate the evaluation of revenue, costs, and company dealings.',
           },
           {
-            title: 'Better Visibility Into Profitability',
+            title: 'Better Visibility into Profitability',
             text: 'Use financial reports to understand revenue, operating costs, and the overall financial performance of your consulting business.',
           },
           {

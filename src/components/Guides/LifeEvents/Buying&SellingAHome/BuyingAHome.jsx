@@ -113,7 +113,7 @@ const checklist = [
 const sections = [
   {
     id: 'deciding-how-much-to-spend',
-    title: 'Deciding How Much To Spend',
+    title: 'Deciding How Much to Spend',
     body: (
       <>
         <p>
@@ -190,7 +190,7 @@ const sections = [
   },
   {
     id: 'working-with-your-real-estate-agent',
-    title: 'Working With Your Real Estate Agent',
+    title: 'Working with Your Real Estate Agent',
     body: (
       <>
         <p>
@@ -317,7 +317,7 @@ const sections = [
   },
   {
     id: 'finding-the-right-home',
-    title: 'Finding The Right Home',
+    title: 'Finding the Right Home',
     body: (
       <>
         <p>
@@ -343,7 +343,7 @@ const sections = [
   },
   {
     id: 'negotiating-the-selling-price',
-    title: 'Negotiating The Selling Price',
+    title: 'Negotiating the Selling Price',
     body: (
       <>
         <p>
@@ -372,7 +372,7 @@ const sections = [
   },
   {
     id: 'arranging-for-the-mortgage',
-    title: 'Arranging For The Mortgage',
+    title: 'Arranging for the Mortgage',
     body: (
       <>
         <p>
@@ -385,11 +385,11 @@ const sections = [
           over the term of the mortgage. Because the discussion of mortgages is quite extensive, it is beyond the scope of
           this Financial Guide. Rather, it is covered in detail in other related Financial Guides such as:
         </p>
-        <RelatedGuide guide={related([65, 'Mortgage Alternatives: How To Choose The Right One'])}>
+        <RelatedGuide guide={related([65, 'Mortgage Alternatives: How to Choose the Right One'])}>
           Please see the Financial Guide:
         </RelatedGuide>
 
-        <h3>What is a Mortgage Service Provider?</h3>
+        <h3>What Is a Mortgage Service Provider?</h3>
         <p>
           A mortgage servicer collects your monthly payments and handles your escrow account. It also is required to give
           you an annual statement that details the activity of your escrow account. This statement shows your account balance
@@ -484,7 +484,7 @@ const sections = [
   },
   {
     id: 'inspecting-the-home',
-    title: 'Inspecting The Home',
+    title: 'Inspecting the Home',
     body: (
       <>
         <p>
@@ -557,7 +557,7 @@ const sections = [
           .
         </p>
 
-        <h3>When Do You Call In the Home Inspector?</h3>
+        <h3>When Do You Call in the Home Inspector?</h3>
         <p>
           A home inspector is typically called right after the contract or purchase agreement has been signed. You don't
           need to be present for the inspection, but it is recommended. By following the home inspector around the house,
@@ -573,7 +573,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>What if the Report Reveals Problems?</h3>
+        <h3>What If the Report Reveals Problems?</h3>
         <p>
           No house is perfect. If the inspector finds problems, it does not necessarily mean you should not buy the house,
           only that you will know in advance what to expect. A seller may be flexible with the purchase price or contract
@@ -631,7 +631,7 @@ const sections = [
   },
   {
     id: 'renting-vs-buying',
-    title: 'Renting Vs. Buying',
+    title: 'Renting vs. Buying',
     body: (
       <>
         <p>
@@ -664,7 +664,7 @@ export default function BuyingAHome() {
       category="life-events"
       topic="/guides/life-events/buying-and-selling-a-home"
       page="Buying a Home"
-      title={<>Buying a Home: <em>What To Do and How To Do It</em></>}
+      title={<>Buying a Home: <em>What to Do and How to Do It</em></>}
       lead="Once you are ready to buy a home, you must be as informed as possible. This guide discusses how much money to save for a down payment, how to work with a real estate agent, how to negotiate, and what you need to know about closing on your new home—including fees and other costs."
       sections={sections}
     />

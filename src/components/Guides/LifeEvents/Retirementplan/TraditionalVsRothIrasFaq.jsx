@@ -12,7 +12,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'whats-good',
-    title: "What's good about investing in IRAs?",
+    title: "What's Good About Investing in IRAs?",
     body: (
       <p>
         There are two types of IRAs: traditional IRAs and Roth IRAs. Traditional IRAs defer taxation of investment
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     id: 'traditional-ira',
-    title: 'Can anyone have a traditional IRA?',
+    title: 'Can Anyone Have a Traditional IRA?',
     body: (
       <p>
         If you have income from wages or self-employment income, you can contribute up to $7,000 for 2025 (also $7,000
@@ -36,7 +36,7 @@ const sections = [
   },
   {
     id: 'stay-at-home-spouse',
-    title: 'Can my stay-at-home spouse have an IRA?',
+    title: 'Can My Stay-at-Home Spouse Have an IRA?',
     body: (
       <p>
         Yes. Contributions of $7,000 for each spouse are allowed for 2025 if the couple's wages or self-employment
@@ -47,7 +47,7 @@ const sections = [
   },
   {
     id: 'roth-advantages',
-    title: 'What makes Roth IRAs so special?',
+    title: 'What Makes Roth IRAs So Special?',
     body: (
       <>
         <p>Roth IRAs offer the following advantages:</p>
@@ -70,7 +70,7 @@ const sections = [
   },
   {
     id: 'roth-eligibility',
-    title: 'Can anyone have a Roth IRA?',
+    title: 'Can Anyone Have a Roth IRA?',
     body: (
       <>
         <p>Not everyone can contribute to a Roth IRA. The following conditions apply:</p>
@@ -95,7 +95,7 @@ const sections = [
   },
   {
     id: 'roth-for-spouse',
-    title: 'Can I set up a Roth IRA for my spouse?',
+    title: 'Can I Set Up a Roth IRA for My Spouse?',
     body: (
       <p>
         Yes, subject to the income conditions above, contributions of $7,000 each are allowed for 2025 if the couple's
@@ -108,12 +108,12 @@ const sections = [
   },
   {
     id: 'roth-for-child',
-    title: 'Can I set up a Roth IRA for my child?',
+    title: 'Can I Set Up a Roth IRA for My Child?',
     body: <p>Yes, for a child with personal service earnings and subject to the other income conditions.</p>,
   },
   {
     id: 'roth-downside',
-    title: "What's the downside to Roth IRAs?",
+    title: "What's the Downside to Roth IRAs?",
     body: (
       <>
         <p>The following is a brief list of negative issues regarding Roth IRAs:</p>
@@ -136,7 +136,7 @@ const sections = [
   },
   {
     id: 'heirs',
-    title: 'How are my heirs taxed on inherited Roth IRA wealth?',
+    title: 'How Are My Heirs Taxed on Inherited Roth IRA Wealth?',
     body: (
       <>
         <p>Your heirs are taxed as follows:</p>

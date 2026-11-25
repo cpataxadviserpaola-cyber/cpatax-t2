@@ -10,7 +10,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'long-term-goals',
-    title: 'How do I determine my long-term financial goals?',
+    title: 'How Do I Determine My Long-Term Financial Goals?',
     body: (
       <p>
         The first step is to decide what you realistically want to achieve financially. Financial goals might include
@@ -21,7 +21,7 @@ const sections = [
   },
   {
     id: 'rules-of-thumb',
-    title: 'Is there any validity to financial planning "rules of thumb" such as "saving 10 percent of your gross income?"',
+    title: 'Is There Any Validity to Financial Planning "Rules of Thumb" Such as "Saving 10 Percent of Your Gross Income?"',
     body: (
       <>
         <p>
@@ -31,7 +31,7 @@ const sections = [
           overlooked.
         </p>
 
-        <h3>1. Life insurance should equal five times your yearly salary</h3>
+        <h3>1. Life Insurance Should Equal Five Times Your Yearly Salary</h3>
         <p>
           This rule of thumb has been used to answer the question: How much life insurance should I have? The ideal
           amount of life insurance is the amount that will, when invested, generate enough income to allow your
@@ -42,7 +42,7 @@ const sections = [
           old your children are, and a few other factors.
         </p>
 
-        <h3>2. Save 10 percent of your salary per year</h3>
+        <h3>2. Save 10 Percent of Your Salary per Year</h3>
         <p>
           You may need to save much more than ten percent of your gross income to have a comfortable retirement. The
           amount you need to save for retirement depends on how large your existing nest egg is and how old you are.
@@ -50,21 +50,21 @@ const sections = [
           year.
         </p>
 
-        <h3>3. Contribute as much as you can to retirement plans</h3>
+        <h3>3. Contribute as Much as You Can to Retirement Plans</h3>
         <p>
           This makes sense for most people, but if you've accumulated a large amount of money in a retirement plan, say
           close to a million dollars, you may reach the point where the negatives of contributing to your retirement
           plan savings outweigh the positives.
         </p>
 
-        <h3>4. You need 80 percent of your pre-retirement income to retire comfortably</h3>
+        <h3>4. You Need 80 Percent of Your Pre-Retirement Income to Retire Comfortably</h3>
         <p>
           Although people may need 80 percent of their salaries during the first few years of retirement, later on, they
           are often able to live comfortably on less. The amount of income you need depends on whether you have paid off
           your mortgage, whether you will have other sources of retirement income, and other factors.
         </p>
 
-        <h3>5. Subtract your age from 100 and invest that percentage in stocks</h3>
+        <h3>5. Subtract Your Age from 100 and Invest That Percentage in Stocks</h3>
         <p>
           This is one of those "cookie cutter" rules that only pans out for certain investors. For others, it results in
           a portfolio that is much too conservative. The best method of allocating percentages among various types of
@@ -72,7 +72,7 @@ const sections = [
           case, rules of thumb do not serve the investor very well at all.
         </p>
 
-        <h3>6. Maintain an emergency fund of six months' worth of expenses</h3>
+        <h3>6. Maintain an Emergency Fund of Six Months' Worth of Expenses</h3>
         <p>
           Depending on your family's situation, three months' worth of expenses might be enough. On the other hand, for
           some families, even six months' worth might be totally inadequate. The amount you should keep on hand depends
@@ -91,7 +91,7 @@ const sections = [
   },
   {
     id: 'women',
-    title: 'What do women in particular need to keep in mind with regard to financial planning?',
+    title: 'What Do Women in Particular Need to Keep in Mind with Regard to Financial Planning?',
     body: (
       <>
         <p>
@@ -122,7 +122,7 @@ const sections = [
   },
   {
     id: 'unmarried-couples',
-    title: 'What special problems do unmarried couples have to be concerned with in financial and estate planning?',
+    title: 'What Special Problems Do Unmarried Couples Have to Be Concerned with in Financial and Estate Planning?',
     body: (
       <>
         <p>

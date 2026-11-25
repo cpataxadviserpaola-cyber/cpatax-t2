@@ -252,7 +252,7 @@ const sections = [
           and require a higher level of services from an attorney than a will does.
         </p>
 
-        <h3>What is a Trust?</h3>
+        <h3>What Is a Trust?</h3>
         <p>
           A trust owns its own property (holds the title). When it is set up, the trust appears on official
           papers and records as the legal owner of any property that is placed into it. The trust's principal is
@@ -283,7 +283,7 @@ const sections = [
           person, or a testamentary trust, which is created by a will.
         </p>
 
-        <h3>What is a Trust Used For?</h3>
+        <h3>What Is a Trust Used For?</h3>
         <p>A trust can be used for many worthwhile purposes:</p>
         <ol>
           <li>Giving property to children.</li>
@@ -350,7 +350,7 @@ const sections = [
           contacts. Without the postmortem letter, you risk losing part of your estate's assets because necessary
           documentation cannot be located.
         </p>
-        <RelatedGuide guide={related([74, 'Post-Mortem Letter: How To Prepare It and What To Include'])}>
+        <RelatedGuide guide={related([74, 'Post-Mortem Letter: How to Prepare It and What to Include'])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -388,7 +388,7 @@ const sections = [
             beneficiary other than the estate, the proceeds will not be included in the estate.
           </p>
         </Callout>
-        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind To Buy'])}>
+        <RelatedGuide guide={related([47, 'Life Insurance: How Much and What Kind to Buy'])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -450,7 +450,7 @@ export default function EstatePlanning() {
       page="Estate Planning"
       title={
         <>
-          Estate Planning: <em>How To Get Started</em>
+          Estate Planning: <em>How to Get Started</em>
         </>
       }
       lead="Proper estate planning can help to increase the size of your estate, whether large or small. Its basic purposes are to (1) choose how your property will be distributed after your death, (2) help assure that your property will be distributed in an orderly and efficient way and (3) minimize taxes."

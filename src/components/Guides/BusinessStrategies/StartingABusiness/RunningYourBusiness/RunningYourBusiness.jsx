@@ -7,7 +7,7 @@ const businessGuides = guide('business-strategies.php', 8);
 
 const groups = [
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [45, 'Recordkeeping For Your Taxes: Frequently Asked Questions'],
       [142, 'Travel and Entertainment: Frequently Asked Questions'],
@@ -17,19 +17,19 @@ const groups = [
     ].map(businessGuides),
   },
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
       [119, 'Cash Flow - The Pulse of Your Business'],
       [120, 'Travel and Entertainment: Maximizing the Tax Benefits'],
-      [121, 'Employee Benefits: How To Handle Them'],
-      [102, 'Document Locator System: A Handy Aid For Keeping Track of Your Records'],
+      [121, 'Employee Benefits: How to Handle Them'],
+      [102, 'Document Locator System: A Handy Aid for Keeping Track of Your Records'],
       [130, 'The Home-Based Business: Some Basics You Should Consider'],
-      [137, 'Financial Planning Tips For Business Owners'],
+      [137, 'Financial Planning Tips for Business Owners'],
       [61, 'The "SIMPLE" Plan: A Retirement Plan for the Really Small Business'],
     ].map(businessGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [
       ['bus05', 'How many units do I need to sell to breakeven?'],
       ['bus07', 'What are my business financial ratios?'],

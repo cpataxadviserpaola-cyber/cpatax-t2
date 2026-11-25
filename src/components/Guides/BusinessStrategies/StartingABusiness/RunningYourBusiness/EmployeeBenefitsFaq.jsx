@@ -3,7 +3,7 @@ import GuideArticle from '../../../GuideArticle.jsx';
 const sections = [
   {
     id: 'small-employer-benefits',
-    title: 'As a small employer, what do I need to know about employee benefits?',
+    title: 'As a Small Employer, What Do I Need to Know About Employee Benefits?',
     body: (
       <p>
         Employers may have obligations involving payroll taxes and programs such as Social Security, unemployment
@@ -17,7 +17,7 @@ const sections = [
   },
   {
     id: 'medical-plans',
-    title: 'What types of medical plans are available for employees?',
+    title: 'What Types of Medical Plans Are Available for Employees?',
     body: (
       <p>
         The source FAQ describes managed-care arrangements such as HMOs, PPOs, and point-of-service plans, which
@@ -30,7 +30,7 @@ const sections = [
   },
   {
     id: 'disability-benefits',
-    title: 'What types of disability benefits do companies provide to employees?',
+    title: 'What Types of Disability Benefits Do Companies Provide to Employees?',
     body: (
       <p>
         Employer disability coverage may replace part of an employee’s income during an illness or injury that keeps
@@ -42,7 +42,7 @@ const sections = [
   },
   {
     id: 'life-insurance',
-    title: 'What types of life insurance plans are available for employees?',
+    title: 'What Types of Life Insurance Plans Are Available for Employees?',
     body: (
       <p>
         Employers commonly offer group life insurance that pays a benefit to designated beneficiaries if a covered
@@ -54,7 +54,7 @@ const sections = [
   },
   {
     id: 'self-insurance',
-    title: 'What is self-insurance?',
+    title: 'What Is Self-Insurance?',
     body: (
       <p>
         Under a self-funded health arrangement, an employer pays covered claims from business funds or a dedicated
@@ -66,7 +66,7 @@ const sections = [
   },
   {
     id: 'cafeteria-plan',
-    title: 'What is a cafeteria plan?',
+    title: 'What Is a Cafeteria Plan?',
     body: (
       <p>
         A cafeteria plan is a written employee benefit arrangement that can let eligible employees choose among

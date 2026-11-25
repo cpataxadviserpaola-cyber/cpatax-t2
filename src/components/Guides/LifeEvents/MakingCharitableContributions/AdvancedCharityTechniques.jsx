@@ -226,8 +226,8 @@ export default function AdvancedCharityTechniques() {
       </Callout>
       <RelatedGuide
         guides={[
-          related([75, 'Charitable Contributions: How To Give Wisely']),
-          related([79, 'Fraudulent Charities: How To Protect Yourself']),
+          related([75, 'Charitable Contributions: How to Give Wisely']),
+          related([79, 'Fraudulent Charities: How to Protect Yourself']),
         ]}
       >
         For a discussion of how to make charitable donations, please see the Financial Guides:

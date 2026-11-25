@@ -16,7 +16,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'spot-a-rip-off',
-    title: 'How can I spot a rip-off?',
+    title: 'How Can I Spot a Rip-Off?',
     body: (
       <>
         <p>By taking the following precautions, you can spot a scam and avoid being ripped off.</p>
@@ -57,7 +57,7 @@ const sections = [
   },
   {
     id: 'internet-fraud',
-    title: 'What should I know about Internet fraud?',
+    title: 'What Should I Know About Internet Fraud?',
     body: (
       <>
         <p>
@@ -77,7 +77,7 @@ const sections = [
   },
   {
     id: 'internet-scams',
-    title: 'What are some of the Internet scams I should watch out for?',
+    title: 'What Are Some of the Internet Scams I Should Watch Out For?',
     body: (
       <>
         <p>New scams appear every year, but usually with the same themes. Here are a few of them:</p>
@@ -125,7 +125,7 @@ const sections = [
   },
   {
     id: 'credit-card-ssn',
-    title: 'How can I prevent the illegal use of my credit card or Social Security number?',
+    title: 'How Can I Prevent the Illegal Use of My Credit Card or Social Security Number?',
     body: (
       <>
         <p>
@@ -191,7 +191,7 @@ const sections = [
   },
   {
     id: 'credit-clinics',
-    title: 'How trustworthy are "credit clinics" and other organizations that claim to help me out of financial trouble?',
+    title: 'How Trustworthy Are "Credit Clinics" and Other Organizations That Claim to Help Me Out of Financial Trouble?',
     body: (
       <>
         <p>
@@ -231,7 +231,7 @@ const sections = [
   },
   {
     id: 'government-surplus',
-    title: 'How honest are ads touting "federal government surplus" sales?',
+    title: 'How Honest Are Ads Touting "Federal Government Surplus" Sales?',
     body: (
       <p>
         Advertisements touting access to little-known sources of federal government property are simply selling the
@@ -248,7 +248,7 @@ const sections = [
   },
   {
     id: 'penny-stocks',
-    title: 'How can I protect myself from penny stock scams?',
+    title: 'How Can I Protect Myself from Penny Stock Scams?',
     body: (
       <>
         <p>
@@ -302,7 +302,7 @@ const sections = [
   },
   {
     id: 'pyramid-schemes',
-    title: 'How can I protect myself from a pyramid scheme?',
+    title: 'How Can I Protect Myself from a Pyramid Scheme?',
     body: (
       <>
         <p>The best way to protect yourself is to understand how pyramid schemes operate, as this example shows:</p>
@@ -336,7 +336,7 @@ const sections = [
   },
   {
     id: 'ponzi-schemes',
-    title: 'How can I protect myself from a Ponzi scheme?',
+    title: 'How Can I Protect Myself from a Ponzi Scheme?',
     body: (
       <>
         <p>
@@ -368,7 +368,7 @@ const sections = [
   },
   {
     id: 'travel-scams',
-    title: 'How can I protect myself from travel scams?',
+    title: 'How Can I Protect Myself from Travel Scams?',
     body: (
       <>
         <p>
@@ -414,7 +414,7 @@ const sections = [
   },
   {
     id: 'used-car-lemon',
-    title: 'When buying a used car, how can I avoid buying a "lemon?"',
+    title: 'When Buying a Used Car, How Can I Avoid Buying a "Lemon?"',
     body: (
       <>
         <p>
@@ -467,7 +467,7 @@ const sections = [
   },
   {
     id: 'auto-mechanics',
-    title: 'How can I avoid being ripped off by auto mechanics?',
+    title: 'How Can I Avoid Being Ripped Off by Auto Mechanics?',
     body: (
       <>
         <p>
@@ -524,7 +524,7 @@ const sections = [
   },
   {
     id: 'pickpockets',
-    title: 'How can I avoid being pick-pocketed?',
+    title: 'How Can I Avoid Being Pick-Pocketed?',
     body: (
       <>
         <p>

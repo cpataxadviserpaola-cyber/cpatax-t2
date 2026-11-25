@@ -10,7 +10,7 @@ export default function ServicesDirectory() {
     <section className="section" id="services">
       <div className="container">
         <div className="section-head-row">
-          <SectionHead eyebrow="What we do" title={<>Comprehensive accounting &amp; <em>tax services</em></>}>
+          <SectionHead eyebrow="What we do" title={<>Comprehensive Accounting &amp; <em>Tax Services</em></>}>
             From cash flow statements to tax returns and business consulting, we are here to help
             your business succeed.
           </SectionHead>
@@ -54,7 +54,7 @@ export default function ServicesDirectory() {
 
           <li className="dir-ask surface-dark">
             <p>
-              <strong>Not sure which service fits?</strong>
+              <strong>Not Sure Which Service Fits?</strong>
               Tell us about your business and we'll recommend the right approach.
             </p>
             <Link className="btn btn-gold" to="/contact">

@@ -14,7 +14,7 @@ import GuideArticle, { Callout } from '../GuideArticle.jsx';
 const sections = [
   {
     id: 'distributions',
-    title: 'How are mutual fund distributions taxed?',
+    title: 'How Are Mutual Fund Distributions Taxed?',
     body: (
       <>
         <p>
@@ -56,7 +56,7 @@ const sections = [
   },
   {
     id: 'reinvested-dividends',
-    title: 'Are reinvested dividends from a mutual fund taxable?',
+    title: 'Are Reinvested Dividends from a Mutual Fund Taxable?',
     body: (
       <>
         <p>
@@ -100,7 +100,7 @@ const sections = [
   },
   {
     id: 'switching-funds',
-    title: 'Am I subject to tax if I switch from one fund to another in the same mutual fund family?',
+    title: 'Am I Subject to Tax If I Switch from One Fund to Another in the Same Mutual Fund Family?',
     body: (
       <>
         <p>
@@ -123,7 +123,7 @@ const sections = [
   },
   {
     id: 'return-of-capital',
-    title: 'Am I subject to tax on return-of-capital distributions?',
+    title: 'Am I Subject to Tax on Return-of-Capital Distributions?',
     body: (
       <>
         <p>
@@ -155,7 +155,7 @@ const sections = [
   },
   {
     id: 'tax-exempt-funds',
-    title: 'Should I invest in tax-exempt funds to cut my income taxes?',
+    title: 'Should I Invest in Tax-Exempt Funds to Cut My Income Taxes?',
     body: (
       <>
         <p>
@@ -216,7 +216,7 @@ const sections = [
   },
   {
     id: 'state-taxes',
-    title: 'How do states generally tax mutual fund distributions?',
+    title: 'How Do States Generally Tax Mutual Fund Distributions?',
     body: (
       <>
         <p>
@@ -236,7 +236,7 @@ const sections = [
   },
   {
     id: 'foreign-funds',
-    title: 'What are the tax benefits and drawbacks of investing in a foreign mutual fund?',
+    title: 'What Are the Tax Benefits and Drawbacks of Investing in a Foreign Mutual Fund?',
     body: (
       <>
         <p>

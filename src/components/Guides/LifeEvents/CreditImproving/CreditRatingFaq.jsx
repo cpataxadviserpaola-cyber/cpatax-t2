@@ -9,7 +9,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'divorce',
-    title: 'How will a divorce or separation affect my credit?',
+    title: 'How Will a Divorce or Separation Affect My Credit?',
     body: (
       <>
         <p>Here are some tips for handling the credit aspects of divorce, both in the planning stages and afterward.</p>
@@ -79,7 +79,7 @@ const sections = [
   },
   {
     id: 'factors',
-    title: 'What factors affect my credit rating?',
+    title: 'What Factors Affect My Credit Rating?',
     body: (
       <>
         <p>
@@ -101,7 +101,7 @@ const sections = [
   },
   {
     id: 'credit-card',
-    title: "Does having a credit card or using another person's credit card improve my credit rating?",
+    title: "Does Having a Credit Card or Using Another Person's Credit Card Improve My Credit Rating?",
     body: (
       <>
         <p>
@@ -120,7 +120,7 @@ const sections = [
   },
   {
     id: 'bank-account',
-    title: 'Does having a checking or savings account improve my credit rating?',
+    title: 'Does Having a Checking or Savings Account Improve My Credit Rating?',
     body: (
       <p>
         A checking or savings account will usually enhance your credit rating. Some banks give you extra points in
@@ -131,7 +131,7 @@ const sections = [
   },
   {
     id: 'where-you-live',
-    title: 'Is my credit rating affected by where I live?',
+    title: 'Is My Credit Rating Affected by Where I Live?',
     body: (
       <>
         <p>
@@ -157,7 +157,7 @@ const sections = [
   },
   {
     id: 'age',
-    title: 'Does my age affect my credit rating?',
+    title: 'Does My Age Affect My Credit Rating?',
     body: (
       <>
         <p>
@@ -175,7 +175,7 @@ const sections = [
   },
   {
     id: 'debt-income',
-    title: 'How important is my debt-income ratio in determining my credit-worthiness?',
+    title: 'How Important Is My Debt-Income Ratio in Determining My Credit-Worthiness?',
     body: (
       <>
         <p>
@@ -213,7 +213,7 @@ const sections = [
   },
   {
     id: 'bankruptcy',
-    title: 'Will bankruptcies or "charge-offs" affect my credit rating?',
+    title: 'Will Bankruptcies or "Charge-Offs" Affect My Credit Rating?',
     body: (
       <>
         <p>
@@ -250,7 +250,7 @@ const sections = [
   },
   {
     id: 'medical-child-support',
-    title: 'Will medical debt or delinquent child support payments affect my credit?',
+    title: 'Will Medical Debt or Delinquent Child Support Payments Affect My Credit?',
     body: (
       <>
         <p>
@@ -279,7 +279,7 @@ const sections = [
   },
   {
     id: 'too-much-credit',
-    title: 'Can my credit rating be negatively affected by having too much available credit?',
+    title: 'Can My Credit Rating Be Negatively Affected by Having Too Much Available Credit?',
     body: (
       <>
         <p>

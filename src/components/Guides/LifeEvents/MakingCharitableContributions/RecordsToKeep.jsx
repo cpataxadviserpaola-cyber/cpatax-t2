@@ -133,7 +133,7 @@ const sections = [
   },
   {
     id: '250-to-500',
-    title: 'Deductions of At Least $250 But Not More Than $500',
+    title: 'Deductions of at Least $250 but Not More Than $500',
     body: (
       <>
         <p>
@@ -172,7 +172,7 @@ const sections = [
   },
   {
     id: '500-to-5000',
-    title: 'Deductions Over $500 But Not Over $5,000',
+    title: 'Deductions Over $500 but Not Over $5,000',
     body: (
       <>
         <p>
@@ -275,7 +275,7 @@ export default function RecordsToKeep() {
       page="Records To Keep"
       title={
         <>
-          What Records You Must Keep <em>Relating To Your Charitable Contributions</em>
+          What Records You Must Keep <em>Relating to Your Charitable Contributions</em>
         </>
       }
       lead="You must keep records to prove the amount of the cash and noncash contributions you make during the year. Which records you must keep depends on the amount of your contributions and whether they are cash or property contributions. New recordkeeping requirements were established for all contributions made after January 1, 2007. You cannot deduct a cash contribution, regardless of the amount, unless you keep as a record of the contribution, bank records (such as a canceled check or bank statement containing the name of the charity, date, and the amount) or a written communication from the charity."

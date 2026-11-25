@@ -91,7 +91,7 @@ const sections = [
           savings accounts, and personal property will be needed. Land titles, stocks certificates, and
           other financial papers may be stored in a safe deposit box or another secure place.
         </p>
-        <RelatedGuide guide={related([74, 'Post-Mortem Letter: How To Prepare It and What To Include'])}>
+        <RelatedGuide guide={related([74, 'Post-Mortem Letter: How to Prepare It and What to Include'])}>
           To help your spouse find all the needed information and be better prepared for your death,
           please see the Financial Guide:
         </RelatedGuide>
@@ -240,10 +240,10 @@ const sections = [
           get professional guidance as to when and how to take any retirement plan distributions due
           your spouse or you.
         </p>
-        <RelatedGuide guide={related([58, 'Retirement Plan Distributions: When To Take Them'])}>
+        <RelatedGuide guide={related([58, 'Retirement Plan Distributions: When to Take Them'])}>
           Please see the Financial Guide:
         </RelatedGuide>
-        <RelatedGuide guide={related([59, 'Retirement Plan Distributions: How To Take Them'])}>
+        <RelatedGuide guide={related([59, 'Retirement Plan Distributions: How to Take Them'])}>
           Please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -381,7 +381,7 @@ const sections = [
           If your will provides for property to pass to your spouse, it should be updated. You may want
           to contact your estate planner for assistance.
         </p>
-        <RelatedGuide guide={related([73, 'Estate Planning: How To Get Started'])}>
+        <RelatedGuide guide={related([73, 'Estate Planning: How to Get Started'])}>
           Please see the Financial Guide:
         </RelatedGuide>
 

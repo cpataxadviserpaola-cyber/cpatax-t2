@@ -10,7 +10,7 @@ import GuideArticle, { Callout, FigureTable } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'prepaying-mortgage',
-    title: 'Should I prepay my mortgage?',
+    title: 'Should I Prepay My Mortgage?',
     body: (
       <>
         <p>
@@ -39,7 +39,7 @@ const sections = [
   },
   {
     id: 'when-to-refinance',
-    title: 'When should I refinance my home?',
+    title: 'When Should I Refinance My Home?',
     body: (
       <>
         <p>
@@ -61,7 +61,7 @@ const sections = [
   },
   {
     id: 'borrowing-against-securities',
-    title: 'Should I borrow against my securities?',
+    title: 'Should I Borrow Against My Securities?',
     body: (
       <>
         <p>
@@ -81,7 +81,7 @@ const sections = [
   },
   {
     id: 'home-equity-line-of-credit',
-    title: 'What is a home equity line of credit?',
+    title: 'What Is a Home Equity Line of Credit?',
     body: (
       <>
         <p>
@@ -124,7 +124,7 @@ const sections = [
   },
   {
     id: 'heloc-costs',
-    title: 'What are the costs of obtaining a home equity line of credit?',
+    title: 'What Are the Costs of Obtaining a Home Equity Line of Credit?',
     body: (
       <>
         <p>
@@ -147,7 +147,7 @@ const sections = [
   },
   {
     id: 'interest-rate-lock-in',
-    title: 'What is an interest rate "lock-in"?',
+    title: 'What Is an Interest Rate "Lock-In"?',
     body: (
       <>
         <p>
@@ -169,7 +169,7 @@ const sections = [
   },
   {
     id: 'lender-disclosures',
-    title: 'What disclosures must a lender give you?',
+    title: 'What Disclosures Must a Lender Give You?',
     body: (
       <>
         <p>
@@ -194,7 +194,7 @@ const sections = [
   },
   {
     id: 'reverse-mortgage',
-    title: 'What is a reverse mortgage?',
+    title: 'What Is a Reverse Mortgage?',
     body: (
       <>
         <p>
@@ -218,7 +218,7 @@ const sections = [
   },
   {
     id: 'tax-deductible-interest',
-    title: 'What loan interest is tax-deductible?',
+    title: 'What Loan Interest Is Tax-Deductible?',
     body: (
       <>
         <p>
@@ -236,7 +236,7 @@ const sections = [
   },
   {
     id: 'mortgage-interest-limitations',
-    title: 'What are the limitations on deductibility of mortgage interest?',
+    title: 'What Are the Limitations on Deductibility of Mortgage Interest?',
     body: (
       <p>
         Generally, interest expense on the taxpayer's primary residence and second (but not a third) home, is deductible.
@@ -249,7 +249,7 @@ const sections = [
   },
   {
     id: 'business-interest-deductibility',
-    title: 'Is interest expense incurred for business purposes deductible?',
+    title: 'Is Interest Expense Incurred for Business Purposes Deductible?',
     body: (
       <p>
         Yes. Interest expense incurred for a trade or business is deductible against the income of that business. For example,
@@ -259,14 +259,14 @@ const sections = [
   },
   {
     id: 'investment-interest-deductibility',
-    title: 'Is investment related interest expense deductible?',
+    title: 'Is Investment Related Interest Expense Deductible?',
     body: (
       <p>Yes. Investment interest is deductible up to the amount of investment income.</p>
     ),
   },
   {
     id: 'private-mortgage-insurance',
-    title: 'When can you stop paying private mortgage insurance?',
+    title: 'When Can You Stop Paying Private Mortgage Insurance?',
     body: (
       <>
         <p>

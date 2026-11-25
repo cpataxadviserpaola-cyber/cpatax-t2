@@ -7,19 +7,19 @@ const otherGuides = guide('life-events.php', 25);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [100, 'Saving Money: 10 Major Ways To Increase Your Nest Egg'],
+      [100, 'Saving Money: 10 Major Ways to Increase Your Nest Egg'],
       [101, 'Recordkeeping Guide: How Long You Should Retain Your Records'],
-      [102, 'Document Locator System: A Handy Aid For Keeping Track of Your Records'],
+      [102, 'Document Locator System: A Handy Aid for Keeping Track of Your Records'],
     ].map(otherGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [[157, 'Other Situations: Frequently Asked Questions']].map(otherGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [['sav01', 'Becoming A Millionaire']].map(calculator),
   },
 ];

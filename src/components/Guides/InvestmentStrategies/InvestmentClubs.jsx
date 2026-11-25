@@ -3,7 +3,7 @@ import GuideArticle, { Callout } from '../GuideArticle.jsx';
 const sections = [
   {
     id: 'how-clubs-work',
-    title: 'How investment clubs work',
+    title: 'How Investment Clubs Work',
     body: (
       <>
         <p>
@@ -22,7 +22,7 @@ const sections = [
   },
   {
     id: 'securities-offerings',
-    title: 'When club interests may be securities',
+    title: 'When Club Interests May Be Securities',
     body: (
       <>
         <p>
@@ -41,7 +41,7 @@ const sections = [
   },
   {
     id: 'investment-company',
-    title: 'Consider investment-company rules',
+    title: 'Consider Investment-Company Rules',
     body: (
       <>
         <p>
@@ -66,7 +66,7 @@ const sections = [
   },
   {
     id: 'investment-advisers',
-    title: 'Check investment-adviser requirements',
+    title: 'Check Investment-Adviser Requirements',
     body: (
       <>
         <p>
@@ -84,7 +84,7 @@ const sections = [
   },
   {
     id: 'state-law',
-    title: 'Check state securities laws',
+    title: 'Check State Securities Laws',
     body: (
       <>
         <p>
@@ -109,7 +109,7 @@ export default function InvestmentClubs() {
       category="investment-strategies"
       topic="/guides/life-events/getting-married/investment-basics"
       page="Investment Clubs"
-      title="Investment Clubs: What You Need To Know"
+      title="Investment Clubs: What You Need to Know"
       lead="Investment clubs pool members’ money and make investment decisions together. Learn how participation, membership interests, advisers, and state and federal rules may affect a club."
       sections={sections}
     />

@@ -8,7 +8,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'banking-fees',
-    title: 'What banking fees do you need to look out for when shopping for a bank account?',
+    title: 'What Banking Fees Do You Need to Look Out for When Shopping for a Bank Account?',
     body: (
       <>
         <p>
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     id: 'account-types',
-    title: 'What are the different types of bank accounts available?',
+    title: 'What Are the Different Types of Bank Accounts Available?',
     body: (
       <>
         <p>The accounts offered by depository institutions generally fall within one of these types:</p>
@@ -143,7 +143,7 @@ const sections = [
   },
   {
     id: 'type-to-open',
-    title: 'What type of account should I open?',
+    title: 'What Type of Account Should I Open?',
     body: (
       <>
         <p>
@@ -182,7 +182,7 @@ const sections = [
   },
   {
     id: 'shopping-for-best-buy',
-    title: 'How should I shop for a "best buy" bank account?',
+    title: 'How Should I Shop for a "Best Buy" Bank Account?',
     body: (
       <>
         <p>Choosing an account is a matter of comparing the features of accounts at various banks. The features that should be compared are:</p>
@@ -318,7 +318,7 @@ const sections = [
   },
   {
     id: 'deposit-insurance',
-    title: 'How much protection is provided by federal deposit insurance?',
+    title: 'How Much Protection Is Provided by Federal Deposit Insurance?',
     body: (
       <>
         <p>
@@ -339,7 +339,7 @@ const sections = [
   },
   {
     id: 'negotiating-fees',
-    title: 'How can I negotiate checking account fees with my current bank?',
+    title: 'How Can I Negotiate Checking Account Fees with My Current Bank?',
     body: (
       <>
         <p>
@@ -375,7 +375,7 @@ const sections = [
         <Callout label="Tip">
           <p>If you decide to take your business elsewhere, don't overlook smaller banks, which may be more eager for your business.</p>
         </Callout>
-        <h3>What questions should I ask when shopping for a Checking Account?</h3>
+        <h3>What Questions Should I Ask When Shopping for a Checking Account?</h3>
         <p>
           You need to know exactly how much a checking account will cost you. Get a list from your banker of all possible
           fees, including charges for maintaining the account, processing checks, bouncing checks, using the ATM, stopping
@@ -395,7 +395,7 @@ const sections = [
   },
   {
     id: 'overdraft-protection',
-    title: 'What is overdraft protection and should I have it?',
+    title: 'What Is Overdraft Protection and Should I Have It?',
     body: (
       <>
         <p>
@@ -417,7 +417,7 @@ const sections = [
   },
   {
     id: 'truth-in-savings',
-    title: 'What is the Truth in Savings Act?',
+    title: 'What Is the Truth in Savings Act?',
     body: (
       <>
         <p>

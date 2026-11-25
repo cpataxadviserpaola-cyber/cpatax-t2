@@ -138,7 +138,7 @@ export default function InvestmentInterest() {
       cta={{
         title: (
           <>
-            Investing with <em>borrowed money?</em>
+            Investing with <em>Borrowed Money?</em>
           </>
         ),
         text: 'Our team can help you time your interest and investment income for the best deduction, in English or Spanish.',

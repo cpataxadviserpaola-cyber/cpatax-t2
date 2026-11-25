@@ -28,7 +28,7 @@ const stockMarkets = [
 const sections = [
   {
     id: 'what-is-a-microcap-stock',
-    title: 'What is a Microcap Stock?',
+    title: 'What Is a Microcap Stock?',
     body: (
       <p>
         The term "microcap stock" applies to companies with low or "micro" capitalizations—meaning the total value of the
@@ -40,7 +40,7 @@ const sections = [
   },
   {
     id: 'where-microcap-stocks-trade',
-    title: 'Where do Microcap Stocks Trade?',
+    title: 'Where Do Microcap Stocks Trade?',
     body: (
       <>
         <p>
@@ -76,7 +76,7 @@ const sections = [
   },
   {
     id: 'how-microcap-stocks-differ',
-    title: 'How Are Microcap Stocks Different From Other Stocks?',
+    title: 'How Are Microcap Stocks Different from Other Stocks?',
     body: (
       <>
         <p>Microcap stocks differ from other stocks in a number of ways:</p>
@@ -110,7 +110,7 @@ const sections = [
   },
   {
     id: 'companies-that-file',
-    title: 'Which Companies File Reports With the SEC?',
+    title: 'Which Companies File Reports with the SEC?',
     body: (
       <>
         <p>
@@ -169,7 +169,7 @@ const sections = [
   },
   {
     id: 'companies-that-dont-file',
-    title: "Which Companies Don't Have to File Reports With the SEC?",
+    title: "Which Companies Don't Have to File Reports with the SEC?",
     body: (
       <p>
         Smaller companies—those with less than $10 million in assets—generally do not have to file reports with the SEC.
@@ -439,7 +439,7 @@ export default function PennyStocks() {
       page="Penny Stocks"
       title={
         <>
-          Penny Stocks: <em>How To Investigate Them and Avoid the Traps</em>
+          Penny Stocks: <em>How to Investigate Them and Avoid the Traps</em>
         </>
       }
       lead={`Information is the investor's best tool when it comes to investing wisely. But accurate information about "microcap stocks"—low-priced stocks issued by the smallest of companies, often called "penny stocks"—may be difficult to find. Many microcap companies do not file financial reports with the SEC, so it's hard for investors to get the facts about the company's management, products, services, and finances. When reliable information is scarce, wrongdoers can easily spread false information about microcap companies, making profits while creating losses for unsuspecting investors.`}

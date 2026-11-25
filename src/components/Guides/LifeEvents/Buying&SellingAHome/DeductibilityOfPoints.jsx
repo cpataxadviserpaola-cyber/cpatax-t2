@@ -114,7 +114,7 @@ const sections = [
   },
   {
     id: 'funds-less-than-points',
-    title: 'Funds Provided Are Less than Points',
+    title: 'Funds Provided Are Less Than Points',
     body: (
       <>
         <p>

@@ -36,7 +36,7 @@ export default function Values() {
         page="Our Values"
         parents={[{ to: '/about', label: 'About' }]}
         eyebrow="Our values"
-        title={<>Three principles. <em>One standard.</em></>}
+        title={<>Three Principles. <em>One Standard.</em></>}
       >
         Our firm provides outstanding service to our clients because of our dedication to the
         three underlying principles of professionalism, responsiveness and quality.
@@ -62,7 +62,7 @@ export default function Values() {
 
       <CtaSection
         soft
-        title={<>Let's work <em>together</em></>}
+        title={<>Let's Work <em>Together</em></>}
         text="We welcome your questions about your taxes."
       />
     </>

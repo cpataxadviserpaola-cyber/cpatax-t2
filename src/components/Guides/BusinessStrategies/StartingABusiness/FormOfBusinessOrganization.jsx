@@ -200,7 +200,7 @@ const sections = [
   },
   {
     id: 'pass-through-entity',
-    title: 'Choosing the Pass through Entity',
+    title: 'Choosing the Pass Through Entity',
     body: (
       <>
         <p>
@@ -208,7 +208,7 @@ const sections = [
           of the rules applicable to each.
         </p>
 
-        <h3>S-corporation</h3>
+        <h3>S-Corporation</h3>
         <p>
           Limitation of liability gives S-corps the edge—for business reasons—over general partnerships, sole
           proprietorships, limited partnerships (as to limited partners whose partnership activity might expose them to
@@ -254,7 +254,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>LLCs vs. S-corporations</h3>
+        <h3>LLCs vs. S-Corporations</h3>
         <p>
           LLCs and S-corps share the same business advantage—limitation of liability. S-corps are a bit better understood
           by the business community because LLCs are new and vary from state to state.
@@ -436,7 +436,7 @@ const sections = [
   },
   {
     id: 'changing-entity',
-    title: 'Changing To Another Entity',
+    title: 'Changing to Another Entity',
     body: (
       <>
         <p>

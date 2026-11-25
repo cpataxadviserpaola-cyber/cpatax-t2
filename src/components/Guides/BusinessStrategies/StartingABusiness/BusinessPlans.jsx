@@ -157,7 +157,7 @@ export default function BusinessPlans() {
       page="Business Plans"
       title={
         <>
-          Business Plans: <em>How To Prepare An Effective One</em>
+          Business Plans: <em>How to Prepare an Effective One</em>
         </>
       }
       lead="One of the major steps in starting a new business or getting financing is to prepare a business plan. This Financial Guide provides you with the basic information that you need to include in your business plan."

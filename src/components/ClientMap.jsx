@@ -52,7 +52,7 @@ export default function ClientMap() {
     <section className="section client-map surface-dark" id="client-map">
       <div className="container client-map-grid">
         <div className="client-map-copy">
-          <SectionHead eyebrow="Clients nationwide" title={<>Serving clients <em>across the U.S.</em></>}>
+          <SectionHead eyebrow="Clients nationwide" title={<>Serving Clients <em>Across the U.S.</em></>}>
             Licensed in South Carolina, we serve clients nationwide. Most of our clients are in
             these {clientStates.length} states.
           </SectionHead>

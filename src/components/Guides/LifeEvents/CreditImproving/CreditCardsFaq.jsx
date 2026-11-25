@@ -14,7 +14,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'best-cards',
-    title: 'Which are the best credit cards?',
+    title: 'Which Are the Best Credit Cards?',
     body: (
       <>
         <p>
@@ -74,7 +74,7 @@ const sections = [
   },
   {
     id: 'stolen-card',
-    title: 'If someone steals my credit card, how much am I liable for?',
+    title: 'If Someone Steals My Credit Card, How Much Am I Liable For?',
     body: (
       <>
         <p>
@@ -96,7 +96,7 @@ const sections = [
   },
   {
     id: 'rewards-cards',
-    title: 'Are rebate and rewards credit cards a good deal?',
+    title: 'Are Rebate and Rewards Credit Cards a Good Deal?',
     body: (
       <>
         <p>
@@ -118,7 +118,7 @@ const sections = [
   },
   {
     id: 'balance-methods',
-    title: 'What is the difference between the average daily balance, adjusted balance and previous balance?',
+    title: 'What Is the Difference Between the Average Daily Balance, Adjusted Balance and Previous Balance?',
     body: (
       <>
         <p>
@@ -148,7 +148,7 @@ const sections = [
   },
   {
     id: 'dissatisfied',
-    title: 'What can I do if I am dissatisfied with a credit card purchase?',
+    title: 'What Can I Do If I Am Dissatisfied with a Credit Card Purchase?',
     body: (
       <>
         <p>
@@ -206,7 +206,7 @@ const sections = [
   },
   {
     id: 'billing-mistake',
-    title: 'What can I do if there is a mistake on my credit card bill?',
+    title: 'What Can I Do If There Is a Mistake on My Credit Card Bill?',
     body: (
       <>
         <p>
@@ -250,7 +250,7 @@ const sections = [
   },
   {
     id: 'most-benefit',
-    title: 'How can I get the most benefit from my credit cards?',
+    title: 'How Can I Get the Most Benefit from My Credit Cards?',
     body: (
       <>
         <p>Here are some suggestions for the use of credit cards:</p>
@@ -294,7 +294,7 @@ const sections = [
   },
   {
     id: 'merchant-restrictions',
-    title: 'What restrictions and limitations can a merchant impose before accepting my credit card?',
+    title: 'What Restrictions and Limitations Can a Merchant Impose Before Accepting My Credit Card?',
     body: (
       <>
         <p>
@@ -316,7 +316,7 @@ const sections = [
   },
   {
     id: 'junk-mail',
-    title: 'How can I stop junk mail or telemarketing calls?',
+    title: 'How Can I Stop Junk Mail or Telemarketing Calls?',
     body: (
       <>
         <p>

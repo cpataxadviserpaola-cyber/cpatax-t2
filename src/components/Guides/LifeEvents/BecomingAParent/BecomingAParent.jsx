@@ -5,24 +5,24 @@ const related = guide('life-events.php');
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [10, 'Your Financial Plan: Getting Started On a Secure Future'],
-      [11, 'Budgeting: How To Prepare a Workable Plan'],
-      [47, 'Life Insurance: How Much and What Kind To Buy'],
-      [93, 'Survivor Benefits: A Guide To This Often Overlooked Insurance Add-On'],
-      [73, 'Estate Planning: How To Get Started'],
+      [10, 'Your Financial Plan: Getting Started on a Secure Future'],
+      [11, 'Budgeting: How to Prepare a Workable Plan'],
+      [47, 'Life Insurance: How Much and What Kind to Buy'],
+      [93, 'Survivor Benefits: A Guide to This Often Overlooked Insurance Add-On'],
+      [73, 'Estate Planning: How to Get Started'],
     ].map(related),
   },
   {
-    label: 'Official resources',
+    label: 'Official Resources',
     items: [
       {
-        title: 'IRS information about the Child Tax Credit',
+        title: 'IRS Information About the Child Tax Credit',
         href: 'https://www.irs.gov/credits-deductions/individuals/child-tax-credit',
       },
       {
-        title: 'Social Security information about getting a Social Security number for a newborn',
+        title: 'Social Security Information About Getting a Social Security Number for a Newborn',
         href: 'https://www.ssa.gov/number-card',
       },
     ],

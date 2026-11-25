@@ -8,7 +8,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'how-electronic-transfers-work',
-    title: 'How do automated teller machine (ATM) and other electronic transfer transactions work?',
+    title: 'How Do Automated Teller Machine (ATM) and Other Electronic Transfer Transactions Work?',
     body: (
       <>
         <p>There are various transactions that fall under the umbrella term &ldquo;electronic funds transfer.&rdquo;</p>
@@ -59,7 +59,7 @@ const sections = [
   },
   {
     id: 'reporting-errors',
-    title: 'What should I do if I find an error related to an electronic fund transfer or ATM transaction?',
+    title: 'What Should I Do If I Find an Error Related to an Electronic Fund Transfer or ATM Transaction?',
     body: (
       <>
         <p>If you believe there has been an error in an electronic fund transfer relating to your account:</p>
@@ -90,7 +90,7 @@ const sections = [
   },
   {
     id: 'lost-or-stolen',
-    title: 'What happens if my ATM card is lost or stolen?',
+    title: 'What Happens If My ATM Card Is Lost or Stolen?',
     body: (
       <>
         <p>
@@ -126,7 +126,7 @@ const sections = [
   },
   {
     id: 'overseas-use',
-    title: 'Will I be able to use my ATM card overseas?',
+    title: 'Will I Be Able to Use My ATM Card Overseas?',
     body: (
       <>
         <p>
@@ -147,7 +147,7 @@ const sections = [
   },
   {
     id: 'pre-authorized-credits',
-    title: 'How will I know a pre-authorized credit (such as automatic payroll deposit) has been made?',
+    title: 'How Will I Know a Pre-Authorized Credit (Such as Automatic Payroll Deposit) Has Been Made?',
     body: (
       <p>
         There are various ways you may be notified. Notice may be given by your employer (or whoever is sending the funds)
@@ -158,7 +158,7 @@ const sections = [
   },
   {
     id: 'stopping-pre-authorized-payments',
-    title: 'How do I stop a pre-authorized payment?',
+    title: 'How Do I Stop a Pre-Authorized Payment?',
     body: (
       <p>
         To stop the next scheduled payment, give your bank the stop payment order at least three business days before the
@@ -169,7 +169,7 @@ const sections = [
   },
   {
     id: 'protecting-against-fraud',
-    title: 'How do I protect my ATM and debit cards against fraud?',
+    title: 'How Do I Protect My ATM and Debit Cards Against Fraud?',
     body: (
       <ol>
         <li>Carry only those cards that you anticipate you'll need.</li>

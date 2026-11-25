@@ -5,7 +5,7 @@ const irsInstructions = 'https://www.irs.gov/instructions/i8824';
 const sections = [
   {
     id: 'qualifying-property',
-    title: 'What property may qualify',
+    title: 'What Property May Qualify',
     body: (
       <>
         <p>
@@ -24,7 +24,7 @@ const sections = [
   },
   {
     id: 'deferred-exchange',
-    title: 'Plan a deferred exchange in advance',
+    title: 'Plan a Deferred Exchange in Advance',
     body: (
       <>
         <p>
@@ -49,7 +49,7 @@ const sections = [
   },
   {
     id: 'cash-and-debt',
-    title: 'Cash, other property, and debt can affect the tax',
+    title: 'Cash, Other Property, and Debt Can Affect the Tax',
     body: (
       <>
         <p>
@@ -68,7 +68,7 @@ const sections = [
   },
   {
     id: 'reporting-and-basis',
-    title: 'Report the exchange and track your basis',
+    title: 'Report the Exchange and Track Your Basis',
     body: (
       <>
         <p>

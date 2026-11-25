@@ -94,7 +94,7 @@ export default function GuideArticle({
 
       <CtaSection
         soft
-        title={<>Want advice for <em>your situation?</em></>}
+        title={<>Want Advice for <em>Your Situation?</em></>}
         text="These guides are a good place to start. Our team can help you apply them to your own taxes and finances, in English or Spanish."
       />
     </>

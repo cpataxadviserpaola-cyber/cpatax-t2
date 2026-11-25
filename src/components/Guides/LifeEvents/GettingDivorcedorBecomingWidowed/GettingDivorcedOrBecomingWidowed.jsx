@@ -9,14 +9,14 @@ const divorceGuides = guide('life-events.php', 21);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
       [1, 'Getting Married (or Divorced): Some Financial Guidelines'],
-      [47, 'Life Insurance: How Much and What Kind To Buy'],
+      [47, 'Life Insurance: How Much and What Kind to Buy'],
     ].map(divorceGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [154, 'Getting Married: Frequently Asked Questions'],
       [155, 'Getting Divorced: Frequently Asked Questions'],

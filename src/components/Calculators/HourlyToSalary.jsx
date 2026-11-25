@@ -82,7 +82,7 @@ export default function HourlyToSalary() {
     <CalculatorPage
       page="Hourly Wage to Salary"
       category={{ to: '/resources#paycheck-benefits', label: 'Paycheck and Benefits' }}
-      title="Convert My Hourly Wage To An Equivalent Annual Salary"
+      title="Convert My Hourly Wage to an Equivalent Annual Salary"
       intro={intro}
       formTitle="Your Wage"
       sections={sections}
@@ -100,7 +100,7 @@ export default function HourlyToSalary() {
       cta={{
         title: (
           <>
-            Weighing a <em>job offer?</em>
+            Weighing a <em>Job Offer?</em>
           </>
         ),
         text: 'Our team can help you compare pay, benefits and the taxes on them, in English or Spanish.',

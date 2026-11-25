@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'timeline',
-    title: 'When should I start planning a move?',
+    title: 'When Should I Start Planning a Move?',
     body: (
       <p>
         Start as soon as you know your likely moving window. Make a checklist with dates for booking movers,
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'mover',
-    title: 'How can I choose a moving company?',
+    title: 'How Can I Choose a Moving Company?',
     body: (
       <p>
         Get written estimates from more than one mover and make sure each estimate reflects the services and items
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     id: 'budget',
-    title: 'What costs should I include in my moving budget?',
+    title: 'What Costs Should I Include in My Moving Budget?',
     body: (
       <p>
         Include packing materials, transportation, storage, travel, deposits, utility setup, cleaning, and any
@@ -36,7 +36,7 @@ const sections = [
   },
   {
     id: 'address',
-    title: 'Who should I notify about my new address?',
+    title: 'Who Should I Notify About My New Address?',
     body: (
       <p>
         Arrange mail forwarding and update your address with banks, insurers, employers, healthcare providers,
@@ -47,7 +47,7 @@ const sections = [
   },
   {
     id: 'protect',
-    title: 'How can I protect belongings during the move?',
+    title: 'How Can I Protect Belongings During the Move?',
     body: (
       <p>
         Photograph valuable items before packing, keep essential documents and medications with you, and label boxes
@@ -58,7 +58,7 @@ const sections = [
   },
   {
     id: 'deductions',
-    title: 'Can I deduct moving expenses on my federal tax return?',
+    title: 'Can I Deduct Moving Expenses on My Federal Tax Return?',
     body: (
       <p>
         For most taxpayers, moving expenses are not deductible for federal income-tax purposes under current general

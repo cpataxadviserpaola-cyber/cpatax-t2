@@ -152,7 +152,7 @@ const sections = [
           or provide any assurance as to risk and return.
         </p>
 
-        <h3>Over-The-Counter</h3>
+        <h3>Over-the-Counter</h3>
         <p>
           Many securities are not traded on an exchange but are traded over the counter (OTC) through a large network
           of securities brokers and dealers. In the National Association of Securities Dealers' Automated Quotation
@@ -180,7 +180,7 @@ const sections = [
   },
   {
     id: 'prices',
-    title: 'How Prices are Established',
+    title: 'How Prices Are Established',
     body: (
       <>
         <p>
@@ -227,7 +227,7 @@ const sections = [
   },
   {
     id: 'protected',
-    title: 'How Your Investments are Protected',
+    title: 'How Your Investments Are Protected',
     body: (
       <>
         <p>
@@ -527,7 +527,7 @@ const sections = [
           decisions. Mutual funds also provide an easy way to diversify a portfolio. Rather than purchasing 50 stocks
           yourself, you can purchase a single mutual fund.
         </p>
-        <RelatedGuide guide={related([92, 'Investing In Mutual Funds: The Time-Tested Guidelines'])}>
+        <RelatedGuide guide={related([92, 'Investing in Mutual Funds: The Time-Tested Guidelines'])}>
           For more detailed information, please see the Financial Guide
         </RelatedGuide>
       </>
@@ -564,7 +564,7 @@ const sections = [
           informal. This process can be complicated, but computer programs are available to assist in performing the
           allocation.
         </p>
-        <RelatedGuide guide={related([84, 'Asset Allocation: How To Diversify For Maximum Return'])}>
+        <RelatedGuide guide={related([84, 'Asset Allocation: How to Diversify for Maximum Return'])}>
           For a discussion of this very important concept, please see the Financial Guide
         </RelatedGuide>
       </>

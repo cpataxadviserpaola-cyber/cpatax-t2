@@ -99,7 +99,7 @@ export default function TaxRefundEstimator() {
       cta={{
         title: (
           <>
-            Want a closer look at <em>your return?</em>
+            Want a Closer Look at <em>Your Return?</em>
           </>
         ),
         text: 'Our team can prepare your return and help you set your withholding, in English or Spanish.',

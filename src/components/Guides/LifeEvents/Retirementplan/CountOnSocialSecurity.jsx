@@ -12,7 +12,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const sections = [
   {
     id: 'protect-yourself',
-    title: 'Taking Steps To Protect Yourself',
+    title: 'Taking Steps to Protect Yourself',
     body: (
       <>
         <p>
@@ -62,7 +62,7 @@ export default function CountOnSocialSecurity() {
       category="life-events"
       topic="/guides/life-events/planning-for-retirement"
       page="Should You Count On Social Security?"
-      title="Should You Count On Social Security?"
+      title="Should You Count on Social Security?"
       lead="In December 2022, 48.6 million retired American workers received an average of $1,825 average monthly benefit in Social Security retirement benefits. Social Security is the major source of income for many elderly, but by 2035, the number of Americans 65 and older will increase from approximately 58 million today to over 76 million—with only 2.3 workers for each beneficiary. Currently, there are 2.8 workers for each beneficiary."
       sections={sections}
       numbered={false}

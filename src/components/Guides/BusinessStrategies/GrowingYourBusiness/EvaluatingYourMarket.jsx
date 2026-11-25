@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'market-research',
-    title: 'Market research',
+    title: 'Market Research',
     body: (
       <p>
         Research helps define sales approaches, build realistic profit projections, organize marketing, set near-term
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'questions-to-ask',
-    title: 'Questions to ask',
+    title: 'Questions to Ask',
     body: (
       <>
         <p>Assess whether a market can support your product or service by investigating:</p>
@@ -29,7 +29,7 @@ const sections = [
   },
   {
     id: 'market-data',
-    title: 'Finding and using market data',
+    title: 'Finding and Using Market Data',
     body: (
       <p>
         Combine customer research with information from trade associations, regional planning groups, financial and
@@ -41,7 +41,7 @@ const sections = [
   },
   {
     id: 'export-markets',
-    title: 'Exploring export markets',
+    title: 'Exploring Export Markets',
     body: (
       <p>
         Evaluate international opportunities using the same basic discipline as domestic research. Identify countries

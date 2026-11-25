@@ -17,9 +17,9 @@ const expectations = [
 const showAudiences = false;
 
 const audiences = [
-  { icon: 'briefcase', title: 'Professionals and business owners', text: 'Building long-term wealth alongside a growing career or company.' },
+  { icon: 'briefcase', title: 'Professionals and Business Owners', text: 'Building long-term wealth alongside a growing career or company.' },
   { icon: 'home', title: 'Families', text: 'Looking for more financial organization and a shared plan.' },
-  { icon: 'calendar', title: 'Pre-retirees', text: 'Preparing for the next chapter with confidence.' },
+  { icon: 'calendar', title: 'Pre-Retirees', text: 'Preparing for the next chapter with confidence.' },
   { icon: 'target', title: 'Individuals', text: 'Wanting more clarity and confidence with money.' },
 ];
 
@@ -30,7 +30,7 @@ export default function FinancialPlanning() {
         page="Financial Planning"
         parents={[{ to: '/services', label: 'Services' }]}
         eyebrow="Beyond taxes"
-        title={<>Personalized financial guidance <em>beyond tax season</em></>}
+        title={<>Personalized Financial Guidance <em>Beyond Tax Season</em></>}
         actions={
           <a className="btn btn-primary btn-lg" href={links.financialPlanning} target="_blank" rel="noopener noreferrer">
             Build my financial plan
@@ -47,7 +47,7 @@ export default function FinancialPlanning() {
           <div className="prose reveal">
             <p className="eyebrow">Yellow Oak Financial Planning</p>
             <h2>
-              Tax strategy and long-term planning, <em>working together</em>
+              Tax Strategy and Long-Term Planning, <em>Working Together</em>
             </h2>
             <p>
               Our founder, Paola Martinez, is both a licensed CPA and a CFP® professional. She
@@ -101,7 +101,7 @@ export default function FinancialPlanning() {
 
       <CtaSection
         soft
-        title={<>Start with your taxes, <em>plan for the future</em></>}
+        title={<>Start with Your Taxes, <em>Plan for the Future</em></>}
         text="Talk with us about how tax planning and financial planning fit together for you."
         to="/contact?service=financial-planning"
       />

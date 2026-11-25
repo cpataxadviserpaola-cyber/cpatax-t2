@@ -9,21 +9,21 @@ const retirementGuides = guide('life-events.php', 24);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [58, 'Retirement Plan Distributions: When To Take Them'],
-      [59, 'Retirement Plan Distributions: How To Take Them'],
-      [56, 'Social Security Benefits: How To Get The Maximum Amount'],
+      [58, 'Retirement Plan Distributions: When to Take Them'],
+      [59, 'Retirement Plan Distributions: How to Take Them'],
+      [56, 'Social Security Benefits: How to Get the Maximum Amount'],
       [93, 'Survivors Benefits: A Guide To This Often overlooked Insurance Add-On'],
       [94, "Your Pension: What You're Entitled To"],
       [96, 'Reverse Mortgages: How They Can Enhance Your Retirement'],
       [97, 'Tap Your Retirement Money Early and Minimize Penalties'],
       [51, 'Annuities: How They Work and When You Should Use Them'],
-      [60, 'Roth IRAs: How They Work and How To Use Them'],
+      [60, 'Roth IRAs: How They Work and How to Use Them'],
     ].map(retirementGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [20, 'Retirement Plan Distributions: Frequently Asked Questions'],
       [27, 'Social Security Benefits: Frequently Asked Questions'],
@@ -33,7 +33,7 @@ const groups = [
     ].map(retirementGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [
       ['ret02', 'Am I saving enough for my retirement?'],
       ['ret04', 'Social Security Retirement Income Estimator'],

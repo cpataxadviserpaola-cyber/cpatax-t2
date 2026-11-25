@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'advertising-goals',
-    title: 'Set advertising goals',
+    title: 'Set Advertising Goals',
     body: (
       <p>
         Decide what each campaign should achieve before spending. Goals might include increasing awareness, attracting
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'target-audience',
-    title: 'Choose a target audience',
+    title: 'Choose a Target Audience',
     body: (
       <p>
         Define the audience using more than broad demographics. Consider where potential customers live or work, what
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     id: 'message',
-    title: 'Develop the message',
+    title: 'Develop the Message',
     body: (
       <p>
         Explain benefits that matter to the intended audience. A useful message earns attention, holds interest,
@@ -36,7 +36,7 @@ const sections = [
   },
   {
     id: 'media',
-    title: 'Choose where to advertise',
+    title: 'Choose Where to Advertise',
     body: (
       <p>
         Select media based on whether the target audience is likely to see or hear the message, the campaign goal, the
@@ -54,7 +54,7 @@ export default function AdvertisingProgram() {
       category="business-strategies"
       topic="/guides/business-strategies/growing-your-business"
       page="Developing an Advertising Program"
-      title="Developing An Advertising Program: A Basic Review"
+      title="Developing an Advertising Program: A Basic Review"
       lead="Plan advertising around defined goals, a specific audience, a useful message, and media suited to the budget."
       sections={sections}
       numbered={false}

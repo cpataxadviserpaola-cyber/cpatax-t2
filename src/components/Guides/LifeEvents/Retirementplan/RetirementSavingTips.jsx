@@ -10,7 +10,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'save-early',
-    title: '1. Save As Much As You Can As Early As You Can',
+    title: '1. Save as Much as You Can as Early as You Can',
     body: (
       <p>
         Though it's never too late to start, the sooner you begin saving, the more time your money has to grow. Gains
@@ -31,7 +31,7 @@ const sections = [
   },
   {
     id: '401k',
-    title: '3. A 401(k) Is One Of The Easiest And Best Ways To Save For Retirement',
+    title: '3. A 401(k) Is One of the Easiest and Best Ways to Save for Retirement',
     body: (
       <p>
         Contributing money to a 401(k) gives you an immediate tax deduction, tax-deferred growth on your savings,
@@ -41,7 +41,7 @@ const sections = [
   },
   {
     id: 'ira',
-    title: '4. An IRA Can Also Give Your Savings A Tax-Advantaged Boost',
+    title: '4. An IRA Can Also Give Your Savings a Tax-Advantaged Boost',
     body: (
       <p>
         Like a 401(k), IRAs offer huge tax breaks. There are two types: a traditional IRA offers tax-deferred growth,
@@ -53,14 +53,14 @@ const sections = [
   },
   {
     id: 'asset-allocation',
-    title: '5. Focus On Your Asset Allocation More Than On Individual Picks',
+    title: '5. Focus on Your Asset Allocation More Than on Individual Picks',
     body: (
       <p>How you divide your portfolio between stocks and bonds will have a big impact on your long-term returns.</p>
     ),
   },
   {
     id: 'stocks',
-    title: '6. Stocks Are Best For Long-Term Growth',
+    title: '6. Stocks Are Best for Long-Term Growth',
     body: (
       <p>
         Stocks have the best chance of achieving high returns over long periods. A healthy dose will help ensure that
@@ -70,7 +70,7 @@ const sections = [
   },
   {
     id: 'bonds',
-    title: "7. Don't Move Too Heavily Into Bonds, Even In Retirement",
+    title: "7. Don't Move Too Heavily into Bonds, Even in Retirement",
     body: (
       <p>
         Many retirees stash most of their portfolio in bonds for the income. Unfortunately, over 10 to 15 years,
@@ -80,7 +80,7 @@ const sections = [
   },
   {
     id: 'tax-efficient-withdrawals',
-    title: '8. Making Tax-Efficient Withdrawals Can Stretch The Life Of Your Nest Egg',
+    title: '8. Making Tax-Efficient Withdrawals Can Stretch the Life of Your Nest Egg',
     body: (
       <p>
         Once you're retired, your assets can last several more years if you draw on money from taxable accounts first
@@ -90,7 +90,7 @@ const sections = [
   },
   {
     id: 'part-time-work',
-    title: '9. Working Part-Time In Retirement Can Help In More Ways Than One',
+    title: '9. Working Part-Time in Retirement Can Help in More Ways Than One',
     body: (
       <p>
         Working keeps you socially engaged and reduces the amount of your nest egg you must withdraw annually once you
@@ -100,7 +100,7 @@ const sections = [
   },
   {
     id: 'creative-ways',
-    title: '10. There Are Other Creative Ways To Get More Mileage Out Of Retirement Assets',
+    title: '10. There Are Other Creative Ways to Get More Mileage Out of Retirement Assets',
     body: (
       <p>
         You might consider relocating to an area with lower living expenses or transforming the equity in your home into

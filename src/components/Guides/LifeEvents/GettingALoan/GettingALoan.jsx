@@ -7,17 +7,17 @@ const loanGuides = guide('life-events.php', 14);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [65, 'Mortgage Alternatives: How To Choose The Right One'],
+      [65, 'Mortgage Alternatives: How to Choose the Right One'],
       [68, 'Refinancing Your Mortgage: When and How'],
-      [52, 'Home Equity Loans: How To Shop For The One That Is Best For You'],
-      [53, 'Mortgage Lock-ins: Questions To Ask'],
+      [52, 'Home Equity Loans: How to Shop for the One That Is Best for You'],
+      [53, 'Mortgage Lock-Ins: Questions to Ask'],
       [31, 'Getting Out of Financial Trouble: Steps You Can Take'],
     ].map(loanGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [159, 'Getting a Loan: Frequently Asked Questions'],
       [160, 'Loan Questions: Frequently Asked Questions'],
@@ -28,7 +28,7 @@ const groups = [
     ].map(loanGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [
       ['hom02', 'Should I Refinance My Mortgage?'],
       ['hom04', 'Comparing Mortgage Terms (i.e. 15, 20, 30 year)'],

@@ -22,7 +22,7 @@ const intro =
 const sections = [
   { title: 'Bonus', fields: [{ name: 'bonus', label: 'Amount of bonus', kind: 'money', max: 99999999 }] },
   {
-    title: 'Your paycheck',
+    title: 'Your Paycheck',
     fields: [
       {
         name: 'periods',
@@ -56,7 +56,7 @@ const sections = [
     ],
   },
   {
-    title: 'Deductions from each paycheck',
+    title: 'Deductions from Each Paycheck',
     fields: [
       {
         name: 'preTax',
@@ -204,7 +204,7 @@ export default function BonusNetAfterTaxes() {
       cta={{
         title: (
           <>
-            Planning around a <em>bonus?</em>
+            Planning Around a <em>Bonus?</em>
           </>
         ),
         text: 'Our team can help you set your withholding and plan for the tax on a bonus, in English or Spanish.',

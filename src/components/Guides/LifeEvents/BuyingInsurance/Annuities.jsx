@@ -95,7 +95,7 @@ const sections = [
   },
   {
     id: 'types-of-annuities',
-    title: 'Types Of Annuities',
+    title: 'Types of Annuities',
     body: (
       <>
         <p>
@@ -181,7 +181,7 @@ const sections = [
   },
   {
     id: 'choosing-payout-option',
-    title: 'Choosing A Payout Option',
+    title: 'Choosing a Payout Option',
     body: (
       <>
         <p>
@@ -227,7 +227,7 @@ const sections = [
           of a beneficiary and (2) you want to maximize your monthly income.
         </p>
 
-        <h3>Life With Period Certain</h3>
+        <h3>Life with Period Certain</h3>
         <p>
           This form of payment gives you payments as long as you live (as does the life annuity) but
           with a minimum period during which you or your beneficiary will receive payments, even if
@@ -242,7 +242,7 @@ const sections = [
           than with a straight life annuity.
         </p>
 
-        <h3>Joint And Survivor</h3>
+        <h3>Joint and Survivor</h3>
         <p>
           In one joint and survivor option, monthly payments are made during the annuitants' joint
           lives, with the same or a lesser amount paid to whoever is the survivor. In the option
@@ -334,7 +334,7 @@ const sections = [
   },
   {
     id: 'how-to-shop',
-    title: 'How To Shop For An Annuity',
+    title: 'How to Shop for an Annuity',
     body: (
       <>
         <p>
@@ -347,7 +347,7 @@ const sections = [
           before buying an annuity.
         </p>
 
-        <h3>First, Check Out The Insurer</h3>
+        <h3>First, Check Out the Insurer</h3>
         <p>
           Before checking out the product itself, it is important to make sure that the insurance
           company offering it is financially sound. Because annuity investments are not federally
@@ -384,7 +384,7 @@ const sections = [
   },
   {
     id: 'costs-penalties-extras',
-    title: 'Costs, Penalties, And Extras',
+    title: 'Costs, Penalties, and Extras',
     body: (
       <>
         <p>Be sure to compare the following points when considering an annuity contract:</p>
@@ -403,7 +403,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>Fees And Costs</h3>
+        <h3>Fees and Costs</h3>
         <p>
           Be sure to ask about all other fees. With variable annuities, the fees must be disclosed in
           the prospectus. Fees lower your return, so it is important to know about them. Fees might
@@ -438,7 +438,7 @@ const sections = [
   },
   {
     id: 'risk-to-retirees',
-    title: 'Risk To Retirees of Using An Immediate Annuity',
+    title: 'Risk to Retirees of Using an Immediate Annuity',
     body: (
       <>
         <p>

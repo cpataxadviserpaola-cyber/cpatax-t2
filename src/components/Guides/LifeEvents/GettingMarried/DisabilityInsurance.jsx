@@ -8,7 +8,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'worst-case',
-    title: 'Planning For The Worst-Case Scenario',
+    title: 'Planning for the Worst-Case Scenario',
     body: (
       <>
         <p>
@@ -115,7 +115,7 @@ const sections = [
   },
   {
     id: 'private-policy',
-    title: 'What To Look For In A Private Policy',
+    title: 'What to Look For in a Private Policy',
     body: (
       <p>
         If you decide you need supplemental coverage, here are some things to look for in a private policy, as
@@ -125,7 +125,7 @@ const sections = [
   },
   {
     id: 'income-level',
-    title: 'Be Ready To Prove Your Income Level',
+    title: 'Be Ready to Prove Your Income Level',
     body: (
       <p>
         A disability insurance company will usually not cover you for more than 66 2/3 percent of your income.
@@ -136,7 +136,7 @@ const sections = [
   },
   {
     id: 'definition',
-    title: 'Watch Out For The "Definition Of Disability"',
+    title: 'Watch Out for the "Definition of Disability"',
     body: (
       <>
         <p>
@@ -225,7 +225,7 @@ const sections = [
           health reasons. You will pay about 10 percent of your premium to have this option.
         </p>
 
-        <h3>Cost-Of-Living</h3>
+        <h3>Cost-of-Living</h3>
         <p>The cost-of-living rider, which can add 20 to 40 percent to your premium, pays you increased benefits after you become disabled.</p>
 
         <h3>Social Security</h3>
@@ -287,7 +287,7 @@ export default function DisabilityInsurance() {
       page="Disability Insurance"
       title={
         <>
-          Disability Insurance: <em>What To Look For</em>
+          Disability Insurance: <em>What to Look For</em>
         </>
       }
       lead="Have you neglected to protect what could be your most important financial asset? For many individuals, it's not their home or portfolio—it's earning power. And you can protect this asset with long-term disability insurance. This Financial Guide provides you with information to assist you in determining how much disability insurance you should have."

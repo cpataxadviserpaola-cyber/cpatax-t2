@@ -528,7 +528,7 @@ export default function ContributionsOfProperty() {
         <li>Food Inventory.</li>
         <li>Bargain Sales.</li>
       </ul>
-      <RelatedGuide guide={related([77, 'What Records You Must Keep Relating To Your Charitable Contributions'])} />
+      <RelatedGuide guide={related([77, 'What Records You Must Keep Relating to Your Charitable Contributions'])} />
     </GuideArticle>
   );
 }

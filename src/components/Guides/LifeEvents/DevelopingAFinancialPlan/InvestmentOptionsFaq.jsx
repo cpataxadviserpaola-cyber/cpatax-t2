@@ -16,7 +16,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'investment-process',
-    title: 'What are the steps in the investment process?',
+    title: 'What Are the Steps in the Investment Process?',
     body: (
       <>
         <p>
@@ -29,7 +29,7 @@ const sections = [
           <li>Select diversified investments within each asset class</li>
           <li>Monitor your investments</li>
         </ul>
-        <h3>How are risk and return related?</h3>
+        <h3>How Are Risk and Return Related?</h3>
         <p>
           Risk and return are positively correlated. The higher the risk of an investment, the higher a return it must
           offer in order to compensate for the risk. Risks come in many forms such as the volatility of the market,
@@ -43,7 +43,7 @@ const sections = [
           have had long-term returns of 5 to 6 percent and have had the lowest level of risk. The more risk you can tolerate
           or the higher your desired rate of return, the higher the portion of your portfolio invested in stocks should be.
         </p>
-        <h3>What is an asset allocation plan?</h3>
+        <h3>What Is an Asset Allocation Plan?</h3>
         <p>
           Asset allocation is the distribution of investments among asset classes. Asset classes include different types
           of stocks, bonds, and mutual funds. It is a significant factor in determining your investment return relative to
@@ -53,14 +53,14 @@ const sections = [
           while diversification focuses on variety within an asset class. Generally, allocation among six or seven asset
           classes is recommended.
         </p>
-        <h3>What is diversification?</h3>
+        <h3>What Is Diversification?</h3>
         <p>
           Diversification is the selection of multiple investments within a portfolio. For example, investing in a
           portfolio of 30 stocks rather than in just a few. By maintaining a diversified, varied portfolio, you are
           minimizing risk. You're less likely to make that "big killing," but when individual investments take a nose-dive,
           you won't take a big hit.
         </p>
-        <h3>How can I best monitor my investments?</h3>
+        <h3>How Can I Best Monitor My Investments?</h3>
         <p>
           Examine carefully and promptly any written confirmations of trades that you receive from your broker, as well as
           all periodic account statements. Make sure that each trade was completed in accordance with your instructions.
@@ -99,7 +99,7 @@ const sections = [
   },
   {
     id: 'types-of-risk',
-    title: 'What types of risks are involved in investing?',
+    title: 'What Types of Risks Are Involved in Investing?',
     body: (
       <>
         <p>Nobody invests to lose money. However, investments always entail some degree of risk. Be aware that:</p>
@@ -131,7 +131,7 @@ const sections = [
   },
   {
     id: 'avoid-unnecessary-risks',
-    title: 'What steps can I take to avoid unnecessary risks?',
+    title: 'What Steps Can I Take to Avoid Unnecessary Risks?',
     body: (
       <>
         <ol>
@@ -165,7 +165,7 @@ const sections = [
   },
   {
     id: 'questions-before-investing',
-    title: 'What questions should I ask before making any investment?',
+    title: 'What Questions Should I Ask Before Making Any Investment?',
     body: (
       <>
         <p>
@@ -201,7 +201,7 @@ const sections = [
   },
   {
     id: 'questions-before-mutual-fund',
-    title: 'What questions should I ask before making a mutual fund investment?',
+    title: 'What Questions Should I Ask Before Making a Mutual Fund Investment?',
     body: (
       <>
         <p>Here is a list of potential questions to ask before making a mutual fund investment:</p>
@@ -225,7 +225,7 @@ const sections = [
   },
   {
     id: 'investment-hazards',
-    title: 'What investment hazards should I look out for?',
+    title: 'What Investment Hazards Should I Look Out For?',
     body: (
       <>
         <p>
@@ -272,7 +272,7 @@ const sections = [
   },
   {
     id: 'ira-investments',
-    title: 'What should I invest my IRA in?',
+    title: 'What Should I Invest My IRA In?',
     body: (
       <>
         <p>
@@ -296,7 +296,7 @@ const sections = [
   },
   {
     id: 'derivatives-and-options',
-    title: 'What are derivatives and options?',
+    title: 'What Are Derivatives and Options?',
     body: (
       <>
         <p>
@@ -329,7 +329,7 @@ const sections = [
   },
   {
     id: 'money-losing-mistakes',
-    title: 'How can I avoid the most frequent money-losing mistakes?',
+    title: 'How Can I Avoid the Most Frequent Money-Losing Mistakes?',
     body: (
       <>
         <p>Here are the top mistakes that cause investors to lose money unnecessarily.</p>
@@ -341,39 +341,39 @@ const sections = [
           <li>Ignoring the costs of taxes</li>
           <li>Letting emotion govern your investing</li>
         </ul>
-        <h3>Should I use a standard asset allocation formula such as those seen in many popular finance magazines?</h3>
+        <h3>Should I Use a Standard Asset Allocation Formula Such as Those Seen in Many Popular Finance Magazines?</h3>
         <p>
           Most investors are satisfied with a one-size-fits-all investment plan. However, your individual needs as an
           investor must govern any plans you make. For instance, how much of your investment can you risk losing? What is
           your investment timetable? (i.e., are you retired or a young professional?) The allocation of your portfolio's
           assets among various types of investments should match your particular needs.
         </p>
-        <h3>Can I make a decent return without taking unnecessary risks?</h3>
+        <h3>Can I Make a Decent Return Without Taking Unnecessary Risks?</h3>
         <p>
           You do not have to risk your capital to make a decent return on your money. While all investments have some
           degree or risk, many investments that offer a return that beats inflation without unduly jeopardizing your
           hard-earned money. For instance, Treasuries are one of the safest possible investments and offer a decent return
           with very little risk.
         </p>
-        <h3>What is the downside of high fees and commissions?</h3>
+        <h3>What Is the Downside of High Fees and Commissions?</h3>
         <p>
           Many investors allow brokers' commissions, fees, and other costs to cut into their returns. Be aware of the fees
           you are paying and make sure they are appropriate for the services you are receiving. The more you pay in fees
           the lower your net return will be.
         </p>
-        <h3>When should I start investing?</h3>
+        <h3>When Should I Start Investing?</h3>
         <p>
           Today. Many investors are not cognizant of the power of interest compounding. By starting out early enough with
           your investment plan, you can invest less, and in the long run, still come out ahead of where you would be if you
           start later in life.
         </p>
-        <h3>What is the impact of taxes on my investment returns?</h3>
+        <h3>What Is the Impact of Taxes on My Investment Returns?</h3>
         <p>
           Net profits on your share of your mutual funds' stock sales are taxable to you as capital gains. Unless you are in
           a tax-deferred retirement account, the taxes will eat into your profits. The solution? Invest in funds where
           shares are bought and sold less frequently and have a low turnover rate (10 percent or less per year).
         </p>
-        <h3>Should I let my emotions affect my investments?</h3>
+        <h3>Should I Let My Emotions Affect My Investments?</h3>
         <p>
           Never give in to pressure from a broker to invest in a "hot" security or to sell a fund and get into another one.
           The key to a successful portfolio lies in planning, discipline, and reason. Emotion and impulse have no role to
@@ -391,7 +391,7 @@ const sections = [
   },
   {
     id: 'cumulative-vs-annualized',
-    title: 'What is the difference between my cumulative return and annualized return?',
+    title: 'What Is the Difference Between My Cumulative Return and Annualized Return?',
     body: (
       <>
         <p>
@@ -413,7 +413,7 @@ const sections = [
   },
   {
     id: 'rule-of-72',
-    title: 'What is the rule of 72?',
+    title: 'What Is the Rule of 72?',
     body: (
       <>
         <p>
@@ -431,7 +431,7 @@ const sections = [
   },
   {
     id: 'total-return',
-    title: 'What is "Total Return" and why is it important?',
+    title: 'What Is "Total Return" and Why Is It Important?',
     body: (
       <>
         <p>
@@ -451,7 +451,7 @@ const sections = [
   },
   {
     id: 'yield-vs-total-return',
-    title: 'How does "yield" differ from "total return?"',
+    title: 'How Does "Yield" Differ from "Total Return?"',
     body: (
       <>
         <p>
@@ -468,7 +468,7 @@ const sections = [
   },
   {
     id: 'portfolio-value',
-    title: 'Can I measure my return as the increase in the value of my portfolio over a given period?',
+    title: 'Can I Measure My Return as the Increase in the Value of My Portfolio Over a Given Period?',
     body: (
       <>
         <p>

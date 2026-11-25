@@ -125,7 +125,7 @@ const sections = [
           closer look at your retirement plan and decided that you needed to save $20,000 per year for the
           next ten years to accumulate the nest egg you want for retirement.
         </p>
-        <RelatedGuide guide={related([54, 'Your Retirement Plan: How To Get Started'])}>
+        <RelatedGuide guide={related([54, 'Your Retirement Plan: How to Get Started'])}>
           Please see the Financial Guide:
         </RelatedGuide>
         <p>
@@ -133,7 +133,7 @@ const sections = [
           the next three years to come up with a down payment.
         </p>
         <p>You may also want to reduce credit card debt or pay down a mortgage with your increased savings.</p>
-        <RelatedGuide guide={related([100, 'Saving Money: 10 Major Ways To Increase Your Nest Egg'])}>
+        <RelatedGuide guide={related([100, 'Saving Money: 10 Major Ways to Increase Your Nest Egg'])}>
           Please see the Financial Guide:
         </RelatedGuide>
         <p>
@@ -263,7 +263,7 @@ export default function Budgeting() {
       page="Budgeting"
       title={
         <>
-          Budgeting: <em>How To Prepare a Workable Plan</em>
+          Budgeting: <em>How to Prepare a Workable Plan</em>
         </>
       }
       lead="A budget is an essential component of your financial plan. Not only does it force you to monitor your spending, it enables you to focus on which items (such as loans and credit card debt) you can pay off or pay down so that you can accumulate funds for retirement, education, or buying a home."
@@ -282,7 +282,7 @@ export default function Budgeting() {
           budget plan.
         </p>
       </Callout>
-      <RelatedGuide guide={related([10, 'Your Financial Plan: Getting Started On a Secure Future'])}>
+      <RelatedGuide guide={related([10, 'Your Financial Plan: Getting Started on a Secure Future'])}>
         Please see the Financial Guide:
       </RelatedGuide>
       <Callout label="Note">

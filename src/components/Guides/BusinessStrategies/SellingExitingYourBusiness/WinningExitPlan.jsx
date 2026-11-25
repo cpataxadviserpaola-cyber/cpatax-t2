@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'choose-exit',
-    title: 'Compare four ways to exit a business',
+    title: 'Compare Four Ways to Exit a Business',
     body: (
       <>
         <p>
@@ -20,7 +20,7 @@ const sections = [
   },
   {
     id: 'family-transfer',
-    title: 'Transfer ownership to family',
+    title: 'Transfer Ownership to Family',
     body: (
       <>
         <p>
@@ -41,7 +41,7 @@ const sections = [
   },
   {
     id: 'esop',
-    title: 'Consider an employee ownership plan',
+    title: 'Consider an Employee Ownership Plan',
     body: (
       <>
         <p>
@@ -63,7 +63,7 @@ const sections = [
   },
   {
     id: 'third-party-sale',
-    title: 'Prepare for a third-party sale',
+    title: 'Prepare for a Third-Party Sale',
     body: (
       <>
         <p>
@@ -82,7 +82,7 @@ const sections = [
   },
   {
     id: 'liquidation',
-    title: 'Understand liquidation as an exit path',
+    title: 'Understand Liquidation as an Exit Path',
     body: (
       <>
         <p>
@@ -102,7 +102,7 @@ const sections = [
   },
   {
     id: 'plan-early',
-    title: 'Plan early and compare your objectives',
+    title: 'Plan Early and Compare Your Objectives',
     body: (
       <p>
         Start by identifying what you need from an exit, who could take over, and what risks you can accept. Compare
@@ -120,7 +120,7 @@ export default function WinningExitPlan() {
       category="business-strategies"
       topic="/guides/business-strategies/selling-exiting-your-business"
       page="Winning Exit Plan"
-      title="Maximize Your Wealth With a Winning Exit Plan"
+      title="Maximize Your Wealth with a Winning Exit Plan"
       lead="Compare family succession, employee ownership, a third-party sale, and liquidation against your goals, finances, and desired role after exit."
       sections={sections}
       numbered={false}

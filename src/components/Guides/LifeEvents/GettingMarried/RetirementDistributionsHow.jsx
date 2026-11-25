@@ -13,7 +13,7 @@ const related = guide('life-events.php');
 const sections = [
   {
     id: 'lump-sum',
-    title: 'Take Everything In A Lump Sum',
+    title: 'Take Everything in a Lump Sum',
     body: (
       <>
         <h3>The Basics</h3>
@@ -82,7 +82,7 @@ const sections = [
   },
   {
     id: 'rollover',
-    title: 'Roll Over The Distribution',
+    title: 'Roll Over the Distribution',
     body: (
       <>
         <h3>The Basics</h3>
@@ -189,7 +189,7 @@ const sections = [
   },
   {
     id: 'partial',
-    title: 'Take A Partial Withdrawal',
+    title: 'Take a Partial Withdrawal',
     body: (
       <>
         <h3>The Basics</h3>
@@ -232,7 +232,7 @@ const sections = [
   },
   {
     id: 'combination',
-    title: 'Do Some Combination Of The Above',
+    title: 'Do Some Combination of the Above',
     body: (
       <>
         <p>Combination withdrawals are quite complex and beyond the scope of this Financial Guide.</p>
@@ -242,7 +242,7 @@ const sections = [
             <em>State Taxes On Retirement Plan Distributions.</em>
           </Link>
         </p>
-        <RelatedGuide guide={related([60, 'Roth IRAs: How They Work and How To Use Them'])}>
+        <RelatedGuide guide={related([60, 'Roth IRAs: How They Work and How to Use Them'])}>
           For a discussion of Roth IRAs, please see the Financial Guide:
         </RelatedGuide>
       </>
@@ -269,7 +269,7 @@ const sections = [
   },
   {
     id: 'in-kind',
-    title: 'Assets Withdrawn In Kind',
+    title: 'Assets Withdrawn in Kind',
     body: (
       <>
         <p>
@@ -298,7 +298,7 @@ const sections = [
   },
   {
     id: 'annuities',
-    title: 'The Economics Of Retirement Annuities',
+    title: 'The Economics of Retirement Annuities',
     body: (
       <>
         <p>
@@ -347,7 +347,7 @@ const sections = [
   },
   {
     id: 'state-taxes',
-    title: 'State Taxes On Retirement Plan Distributions',
+    title: 'State Taxes on Retirement Plan Distributions',
     body: (
       <>
         <p>
@@ -389,7 +389,7 @@ export default function RetirementDistributionsHow() {
       page="Retirement Plan Distributions: How"
       title={
         <>
-          Retirement Plan Distributions: <em>How To Take Them</em>
+          Retirement Plan Distributions: <em>How to Take Them</em>
         </>
       }
       lead="If you are thinking of retiring soon, you are about to make a major financial decision: how to take distributions from your retirement plan. This Financial Guide will discuss your various options. And, since the tax treatment of these distributions will influence your decision, we will also review the tax rules."
@@ -419,7 +419,7 @@ export default function RetirementDistributionsHow() {
         Before discussing the specific withdrawal options, let's consider the general tax rules affecting (1)
         tax-free withdrawals and (2) early withdrawals.
       </p>
-      <RelatedGuide guide={related([58, 'Retirement Plan Distributions: When To Take Them'])}>
+      <RelatedGuide guide={related([58, 'Retirement Plan Distributions: When to Take Them'])}>
         The tax treatment will be dictated not only by the <strong><em>form</em></strong> of the withdrawal (i.e.,{' '}
         <strong><em>how</em></strong> to take it) but also by the <strong><em>timing</em></strong> of the
         withdrawal (i.e., <strong><em>when</em></strong> to take it). This Financial Guide discusses the{' '}

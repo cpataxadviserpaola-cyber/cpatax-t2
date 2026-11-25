@@ -7,21 +7,21 @@ const carGuides = guide('life-events.php', 16);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [62, 'Your Next Car: Should You Buy Or Lease?'],
-      [43, 'Car Insurance: 10 Cost-Cutters To Save You Money'],
+      [62, 'Your Next Car: Should You Buy or Lease?'],
+      [43, 'Car Insurance: 10 Cost-Cutters to Save You Money'],
     ].map(carGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [153, 'Buying or Leasing Your Next Car: Frequently Asked Questions'],
       [147, 'Car Insurance: Frequently Asked Questions'],
     ].map(carGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [
       ['aut01', 'Should I Lease or Purchase An Auto?'],
       ['aut03', 'What Would My Auto Payments Be?'],
@@ -31,7 +31,7 @@ const groups = [
 
 export default function BuyingMaintainingACar() {
   return (
-    <GuideTopic category="life-events" title="Buying & Maintaining A Car" groups={groups}>
+    <GuideTopic category="life-events" title="Buying & Maintaining a Car" groups={groups}>
       This section has several articles pertaining to automobile acquisition and maintenance.
     </GuideTopic>
   );

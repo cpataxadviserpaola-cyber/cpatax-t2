@@ -92,7 +92,7 @@ function ServicePage({ service }) {
 
             <div className="talk-card reveal">
               <div>
-                <h3>Prefer to talk it through?</h3>
+                <h3>Prefer to Talk It Through?</h3>
                 <p>Call, email, or book a time online. We serve clients nationwide, in English and Spanish.</p>
               </div>
               <div className="talk-actions">
@@ -113,7 +113,7 @@ function ServicePage({ service }) {
       <section className="section">
         <div className="container">
           <div className="section-head-row">
-            <SectionHead eyebrow="Related services" title={<>You may <em>also need</em></>} />
+            <SectionHead eyebrow="Related services" title={<>You May <em>Also Need</em></>} />
             <Link className="btn btn-outline" to="/services">
               View all services
               <Icon name="arrow" />
@@ -130,7 +130,7 @@ function ServicePage({ service }) {
       <CtaSection
         soft
         to={contactLink}
-        title={<>Ready to <em>get started?</em></>}
+        title={<>Ready to <em>Get Started?</em></>}
         text="Book a free, no-obligation consultation and find out how we can help."
       />
     </>
@@ -143,23 +143,23 @@ function standardSections(service) {
   return [
     {
       eyebrow: 'Overview',
-      title: <>How we <em>help</em></>,
+      title: <>How We <em>Help</em></>,
       paragraphs: service.overview,
       idealFor: service.idealFor,
     },
     {
       eyebrow: 'Why choose us',
-      title: <>What you can <em>expect</em></>,
+      title: <>What You Can <em>Expect</em></>,
       features: service.highlights,
     },
     {
       eyebrow: 'How it works',
-      title: <>A clear process from <em>start to finish</em></>,
+      title: <>A Clear Process from <em>Start to Finish</em></>,
       steps: service.process,
     },
     {
       eyebrow: 'FAQ',
-      title: <>Common <em>questions</em></>,
+      title: <>Common <em>Questions</em></>,
       faqs: service.faqs,
     },
   ];

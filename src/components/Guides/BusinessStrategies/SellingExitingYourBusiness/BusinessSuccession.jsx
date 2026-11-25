@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'transfer-options',
-    title: 'Consider the available transfer options',
+    title: 'Consider the Available Transfer Options',
     body: (
       <p>
         Owners may retain family ownership and management, keep ownership while hiring outside management, sell to
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'why-planning-matters',
-    title: 'Plan for the barriers to a successful transfer',
+    title: 'Plan for the Barriers to a Successful Transfer',
     body: (
       <p>
         The source identifies four common barriers: a business that is not viable, insufficient planning, an owner
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     id: 'family-business-plan',
-    title: 'Coordinate family, business, succession, and estate planning',
+    title: 'Coordinate Family, Business, Succession, and Estate Planning',
     body: (
       <p>
         A family-business strategic plan can define the family’s role, participation criteria, entry and exit
@@ -38,7 +38,7 @@ const sections = [
   },
   {
     id: 'family-business-dynamics',
-    title: 'Recognize the family and business as connected systems',
+    title: 'Recognize the Family and Business as Connected Systems',
     body: (
       <p>
         Family businesses combine personal relationships with business roles and responsibilities. Family loyalty,
@@ -51,7 +51,7 @@ const sections = [
   },
   {
     id: 'share-information',
-    title: 'Share information and address issues together',
+    title: 'Share Information and Address Issues Together',
     body: (
       <p>
         The source emphasizes sharing relevant information with active and non-active family members. Identify
@@ -63,7 +63,7 @@ const sections = [
   },
   {
     id: 'dual-family-business-system',
-    title: 'Understand the family business as two connected systems',
+    title: 'Understand the Family Business as Two Connected Systems',
     body: (
       <p>
         The source describes a family business as both a family system and a business system. Family relationships
@@ -76,7 +76,7 @@ const sections = [
   },
   {
     id: 'family-business-roles',
-    title: 'Consider the perspectives of everyone involved',
+    title: 'Consider the Perspectives of Everyone Involved',
     body: (
       <p>
         Different participants can have different interests: relatives who do not work in the business, family
@@ -90,7 +90,7 @@ const sections = [
   },
   {
     id: 'strategic-planning',
-    title: 'Align the business strategy with family goals',
+    title: 'Align the Business Strategy with Family Goals',
     body: (
       <p>
         The source recommends considering personal and professional goals, the family mission, the future direction
@@ -103,7 +103,7 @@ const sections = [
   },
   {
     id: 'family-retreat',
-    title: 'Set aside time for family-business planning',
+    title: 'Set Aside Time for Family-Business Planning',
     body: (
       <p>
         The source proposes a dedicated family-business retreat as a forum to review the business’s history, discuss
@@ -117,7 +117,7 @@ const sections = [
   },
   {
     id: 'succession-barriers',
-    title: 'Recognize what can make succession difficult',
+    title: 'Recognize What Can Make Succession Difficult',
     body: (
       <p>
         In addition to the business and family challenges above, the source identifies barriers that can affect
@@ -130,7 +130,7 @@ const sections = [
   },
   {
     id: 'succession-stages',
-    title: 'Work through succession in stages',
+    title: 'Work Through Succession in Stages',
     body: (
       <>
         <p>The source describes succession as a process with four phases:</p>
@@ -160,7 +160,7 @@ const sections = [
   },
   {
     id: 'strategic-plan-details',
-    title: 'Turn the family and business vision into a strategic plan',
+    title: 'Turn the Family and Business Vision into a Strategic Plan',
     body: (
       <p>
         The source recommends starting with a mission that explains the business, its customers, and its purpose.
@@ -174,7 +174,7 @@ const sections = [
   },
   {
     id: 'retreat-practice',
-    title: 'Make family-business meetings productive',
+    title: 'Make Family-Business Meetings Productive',
     body: (
       <p>
         The source recommends setting aside dedicated time away from normal business operations for a family
@@ -188,7 +188,7 @@ const sections = [
   },
   {
     id: 'successor-development',
-    title: 'Define the successor’s role, preparation, and evaluation',
+    title: 'Define the Successor’s Role, Preparation, and Evaluation',
     body: (
       <p>
         Before choosing a successor, describe the leadership role the business will need in light of its future
@@ -203,7 +203,7 @@ const sections = [
   },
   {
     id: 'founder-transition',
-    title: 'Prepare the founder to let go',
+    title: 'Prepare the Founder to Let Go',
     body: (
       <p>
         Stepping away can be difficult when the business provides income, benefits, identity, status, social
@@ -217,7 +217,7 @@ const sections = [
   },
   {
     id: 'board-and-communication',
-    title: 'Use governance and communication to support the handoff',
+    title: 'Use Governance and Communication to Support the Handoff',
     body: (
       <p>
         A board that includes informed outside members can provide expertise, help clarify objectives, review a
@@ -231,7 +231,7 @@ const sections = [
   },
   {
     id: 'transfer-and-estate-planning',
-    title: 'Coordinate transfer mechanics and estate planning',
+    title: 'Coordinate Transfer Mechanics and Estate Planning',
     body: (
       <p>
         Depending on the business structure and the owner’s goals, a transfer may involve a gift, a sale, payments
@@ -245,7 +245,7 @@ const sections = [
   },
   {
     id: 'succession-checklist',
-    title: 'Use a checklist to keep planning on track',
+    title: 'Use a Checklist to Keep Planning on Track',
     body: (
       <p>
         The source’s planning checklist calls for ongoing communication; a business plan with a mission, goals, and
@@ -263,7 +263,7 @@ export default function BusinessSuccession() {
       category="business-strategies"
       topic="/guides/business-strategies/selling-exiting-your-business"
       page="Your Business Succession"
-      title="Your Business Succession: How To Plan For It"
+      title="Your Business Succession: How to Plan for It"
       lead="Plan a family-business transition by evaluating transfer options and coordinating business, family, succession, and estate plans."
       sections={sections}
       numbered={false}

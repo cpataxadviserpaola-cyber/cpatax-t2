@@ -9,17 +9,17 @@ const creditGuides = guide('life-events.php', 6);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [24, 'Credit Cards: How To Choose—And Use—Them Wisely'],
+      [24, 'Credit Cards: How to Choose—And Use—Them Wisely'],
       [25, 'Credit Reports: What You Should Know—And Do—About Yours'],
-      [29, 'Merchant Credit Card Abuses: What They Cannot Ask You To Do'],
-      [30, 'Your Credit Card Rights: What To Do If You Have a Problem'],
+      [29, 'Merchant Credit Card Abuses: What They Cannot Ask You to Do'],
+      [30, 'Your Credit Card Rights: What to Do If You Have a Problem'],
       [31, 'Getting Out of Financial Trouble: Steps You Can Take'],
     ].map(creditGuides),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [32, 'Credit Cards: Frequently Asked Questions'],
       [33, 'Credit Reports: Frequently Asked Questions'],
@@ -29,7 +29,7 @@ const groups = [
     ].map(creditGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [
       ['det06', 'Should I Consolidate My Personal Debt Into A New Loan?'],
       ['det09', 'What Is The Impact Of Making Extra Payments On My Debt?'],

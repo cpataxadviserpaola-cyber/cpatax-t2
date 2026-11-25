@@ -13,7 +13,7 @@ const related = guide('life-events.php');
 const sections = [
   {
     id: 'lock-ins-and-fees',
-    title: 'Lock-ins and Fees',
+    title: 'Lock-Ins and Fees',
     body: (
       <>
         <p>
@@ -79,7 +79,7 @@ const sections = [
           </p>
         </Callout>
 
-        <h3>Expiration of Lock-ins</h3>
+        <h3>Expiration of Lock-Ins</h3>
         <p>Because mortgage lock-in rates do expire, you'll want to ask potential lenders about the following:</p>
         <ul>
           <li>How long does the lender expect to take to process your loan?</li>
@@ -109,7 +109,7 @@ const sections = [
           When looking for a mortgage, you should shop among lenders for (1) the most favorable interest rate and (2)
           the lowest points and other up-front charges.
         </p>
-        <RelatedGuide guide={related([65, 'Mortgage Alternatives: How To Choose The Right One'])}>
+        <RelatedGuide guide={related([65, 'Mortgage Alternatives: How to Choose the Right One'])}>
           For a more in-depth discussion about mortgages, please see the Financial Guide
         </RelatedGuide>
         <p>
@@ -158,7 +158,7 @@ const sections = [
           such as receipt of a satisfactory title insurance policy protecting the lender.
         </p>
 
-        <h3>Will Your Lock-In Be In Writing?</h3>
+        <h3>Will Your Lock-In Be in Writing?</h3>
         <p>
           Some lenders have preprinted forms that set out the exact terms of the lock-in agreement. Others may only make
           an oral lock-in promise on the telephone or at the time of application. Oral agreements can be very difficult
@@ -228,7 +228,7 @@ const sections = [
         </p>
         <p>Because practices vary, you may want to ask your lender whether any other options are available to you.</p>
 
-        <h3>How Long Are Lock-ins Valid?</h3>
+        <h3>How Long Are Lock-Ins Valid?</h3>
         <p>
           Usually the lender will promise to hold a certain interest rate and number of points for a given number of
           days, but to get these terms you must settle on the loan within that time period. Lock-ins of 30 to 60 days
@@ -273,7 +273,7 @@ const sections = [
           in those cases where settlement is not reached before the lock-in expires.
         </p>
 
-        <h3>Complaints about Lock-ins</h3>
+        <h3>Complaints About Lock-Ins</h3>
         <p>
           Knowing what to look for puts you in a better position to decide whether, when, and how long to lock in
           mortgage terms. Also, by helping to keep the loan process moving, you can lessen the chance that your lock-in
@@ -312,7 +312,7 @@ const sections = [
           account. The following information will help you to understand how these accounts work.
         </p>
 
-        <h3>What Is An Escrow Account?</h3>
+        <h3>What Is an Escrow Account?</h3>
         <p>
           An escrow account is a fund that your lender establishes in order to pay property taxes and hazard insurance
           as they become due on your home during the year. In this way, the lender uses the escrow account to guard its
@@ -334,7 +334,7 @@ const sections = [
           account until the lender disburses them on your behalf.
         </p>
 
-        <h3>How Are The Payments Calculated?</h3>
+        <h3>How Are the Payments Calculated?</h3>
         <p>
           The goal of the escrow account is to have enough money to pay taxes and insurance when they become due. To
           achieve this goal, the lender adds one-twelfth of the tax and insurance amount to your mortgage payment each
@@ -406,7 +406,7 @@ export default function MortgageLockIns() {
       page="Mortgage Lock-ins"
       title={
         <>
-          Mortgage Lock-ins: <em>Questions To Ask</em>
+          Mortgage Lock-Ins: <em>Questions to Ask</em>
         </>
       }
       lead="When you are ready to settle on your mortgage loan, you want to get the best rate and loan terms that you can. To increase that likelihood, it is important to learn as much as you can about what the lender is promising you before you apply for a loan—including locking in your loan at a great rate. This guide provides information on how to do that."

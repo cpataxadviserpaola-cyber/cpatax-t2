@@ -518,7 +518,7 @@ export default function SocialSecurityBenefits() {
       page="Social Security Benefits"
       title={
         <>
-          Social Security Benefits: <em>How To Get The Maximum Amount</em>
+          Social Security Benefits: <em>How to Get the Maximum Amount</em>
         </>
       }
       lead="Decisions about retirement, including understanding your Social Security benefits, are among the most important ones you will ever make. This Financial Guide provides the information you need about Social Security benefits to help you plan for retirement."

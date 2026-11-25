@@ -6,7 +6,7 @@ const related = guide('business-strategies.php');
 const sections = [
   {
     id: 'benefit-plans',
-    title: 'What is an employee benefit plan?',
+    title: 'What Is an Employee Benefit Plan?',
     body: (
       <p>
         Benefit plans can help employees and their families address illness, disability, death, unemployment, and
@@ -18,7 +18,7 @@ const sections = [
   },
   {
     id: 'mandated-and-optional',
-    title: 'Mandated and optional benefits',
+    title: 'Mandated and Optional Benefits',
     body: (
       <p>
         The source guide identifies Social Security, unemployment insurance, and workers’ compensation among
@@ -31,7 +31,7 @@ const sections = [
   },
   {
     id: 'why-offer-benefits',
-    title: 'Why offer employees benefits?',
+    title: 'Why Offer Employees Benefits?',
     body: (
       <p>
         A benefits package can help recruit and retain capable staff, remain competitive, support employee morale,
@@ -42,7 +42,7 @@ const sections = [
   },
   {
     id: 'health-plans',
-    title: 'Health and dental plans',
+    title: 'Health and Dental Plans',
     body: (
       <p>
         The guide describes traditional indemnity coverage, where employees may choose providers and submit claims;
@@ -55,7 +55,7 @@ const sections = [
   },
   {
     id: 'disability-life',
-    title: 'Disability and life insurance',
+    title: 'Disability and Life Insurance',
     body: (
       <p>
         Short- and long-term disability plans can replace part of an employee’s income when illness or injury prevents
@@ -67,7 +67,7 @@ const sections = [
   },
   {
     id: 'self-insurance',
-    title: 'Self-insurance',
+    title: 'Self-Insurance',
     body: (
       <p>
         A self-funded health plan has the employer pay some or all covered claims, sometimes using a reserve or trust
@@ -79,7 +79,7 @@ const sections = [
   },
   {
     id: 'aca',
-    title: 'Affordable Care Act considerations',
+    title: 'Affordable Care Act Considerations',
     body: (
       <p>
         The source guide includes historical descriptions of small-employer coverage options, tax credits, employer
@@ -91,7 +91,7 @@ const sections = [
   },
   {
     id: 'selecting-a-plan',
-    title: 'Balancing cost, quality, and access',
+    title: 'Balancing Cost, Quality, and Access',
     body: (
       <>
         <p>
@@ -114,7 +114,7 @@ const sections = [
   },
   {
     id: 'retirement-benefits',
-    title: 'Retirement benefit plans',
+    title: 'Retirement Benefit Plans',
     body: (
       <>
         <p>
@@ -133,7 +133,7 @@ export default function EmployeeBenefits() {
       category="business-strategies"
       topic="/guides/business-strategies/running-your-business"
       page="Employee Benefits"
-      title={<>Employee Benefits: <em>How To Handle Them</em></>}
+      title={<>Employee Benefits: <em>How to Handle Them</em></>}
       lead="An overview of required and optional employee benefits, common health and insurance arrangements, self-funding, and questions to consider when choosing a plan."
       sections={sections}
     />

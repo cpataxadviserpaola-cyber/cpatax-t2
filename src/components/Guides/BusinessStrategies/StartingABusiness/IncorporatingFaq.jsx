@@ -6,7 +6,7 @@ const related = guide('business-strategies.php');
 const sections = [
   {
     id: 'corporation',
-    title: 'What is a corporation?',
+    title: 'What Is a Corporation?',
     body: (
       <p>
         A corporation is a legal entity distinct from its owners. It is generally formed by filing articles of
@@ -16,7 +16,7 @@ const sections = [
   },
   {
     id: 's-and-c-corporations',
-    title: 'What is the difference between an S corporation and a C corporation?',
+    title: 'What Is the Difference Between an S Corporation and a C Corporation?',
     body: (
       <p>
         A C corporation is generally taxed separately on its taxable income. An eligible corporation can elect S
@@ -29,7 +29,7 @@ const sections = [
   },
   {
     id: 'attorney',
-    title: 'Do I need an attorney to incorporate?',
+    title: 'Do I Need an Attorney to Incorporate?',
     body: (
       <p>
         Whether an attorney is legally required depends on the state and current filing rules. The source FAQ states
@@ -41,7 +41,7 @@ const sections = [
   },
   {
     id: 'name-availability',
-    title: 'How do I know if my name is available?',
+    title: 'How Do I Know If My Name Is Available?',
     body: (
       <p>
         Check the proposed name against the state’s business-name records and reservation rules before filing. The
@@ -53,7 +53,7 @@ const sections = [
   },
   {
     id: 'corporate-name',
-    title: 'How do I name my corporation?',
+    title: 'How Do I Name My Corporation?',
     body: (
       <p>
         State naming rules vary. Common requirements include using a corporate designator, such as “Inc.” or
@@ -64,7 +64,7 @@ const sections = [
   },
   {
     id: 'benefits',
-    title: 'What are the benefits of incorporating?',
+    title: 'What Are the Benefits of Incorporating?',
     body: (
       <>
         <p>
@@ -79,7 +79,7 @@ const sections = [
   },
   {
     id: 'registered-agent',
-    title: 'What is a registered agent?',
+    title: 'What Is a Registered Agent?',
     body: (
       <p>
         A registered agent is the person or authorized company designated to receive official notices and legal
@@ -90,7 +90,7 @@ const sections = [
   },
   {
     id: 'directors-shareholders',
-    title: 'How many directors and shareholders do I need?',
+    title: 'How Many Directors and Shareholders Do I Need?',
     body: (
       <p>
         The number depends on state law and the corporation’s structure. The source FAQ notes that many states permit
@@ -101,7 +101,7 @@ const sections = [
   },
   {
     id: 'shares',
-    title: 'How many shares should I authorize, and what par value should they have?',
+    title: 'How Many Shares Should I Authorize, and What Par Value Should They Have?',
     body: (
       <p>
         The appropriate number of authorized shares and any par value depend on the corporation’s plans and the
@@ -113,7 +113,7 @@ const sections = [
   },
   {
     id: 'ein',
-    title: 'What is a Federal Tax Identification Number or EIN?',
+    title: 'What Is a Federal Tax Identification Number or EIN?',
     body: (
       <p>
         An Employer Identification Number (EIN) is a federal tax ID issued by the IRS. Corporations commonly use it
@@ -124,7 +124,7 @@ const sections = [
   },
   {
     id: 'after-incorporation',
-    title: 'What do I need to do after I incorporate?',
+    title: 'What Do I Need to Do After I Incorporate?',
     body: (
       <p>
         Complete the corporation’s initial organizational actions. Depending on the state and how directors were
@@ -136,7 +136,7 @@ const sections = [
   },
   {
     id: 'getting-started',
-    title: 'How do I get started?',
+    title: 'How Do I Get Started?',
     body: (
       <p>
         First choose a compliant name and confirm the corporation is the right structure for your needs. Then follow

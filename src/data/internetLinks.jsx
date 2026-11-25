@@ -124,7 +124,7 @@ export const linkCategories = [
   },
   {
     id: 'news-and-magazines',
-    title: 'News And Magazines',
+    title: 'News and Magazines',
     links: [
       {
         title: 'CNN.com',
@@ -202,7 +202,7 @@ export const linkCategories = [
   },
   {
     id: 'just-for-fun',
-    title: 'Just For Fun',
+    title: 'Just for Fun',
     links: [
       {
         title: 'Investopedia Stock Market Simulation Game',

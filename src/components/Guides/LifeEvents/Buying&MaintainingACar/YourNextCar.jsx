@@ -23,7 +23,7 @@ const sections = [
           work:
         </p>
 
-        <h3>Closed-End Leases: The Dealer Bears the Risk Of Depreciated Value</h3>
+        <h3>Closed-End Leases: The Dealer Bears the Risk of Depreciated Value</h3>
         <p>
           When a closed-end lease is up, you bring the car back to the dealership and "walk away." The car must be
           returned with only normal wear and tear, and at or less than the mileage limit stated in your lease. Since the
@@ -311,7 +311,7 @@ const sections = [
   },
   {
     id: 'questions-to-ask',
-    title: 'Questions To Ask Before You Sign',
+    title: 'Questions to Ask Before You Sign',
     body: (
       <>
         <p>Here is a list of questions you may want to ask the dealer before you enter into a car lease:</p>
@@ -438,7 +438,7 @@ export default function YourNextCar() {
       page="Your Next Car"
       title={
         <>
-          Your Next Car: <em>Should You Buy Or Lease?</em>
+          Your Next Car: <em>Should You Buy or Lease?</em>
         </>
       }
       lead="This Financial Guide gives you a framework for deciding whether leasing a car makes sense for you. It explains the meaning of various lease provisions, as well as the initial, ongoing and final costs of leasing. Finally, it gives you the information you need to negotiate the best possible lease."

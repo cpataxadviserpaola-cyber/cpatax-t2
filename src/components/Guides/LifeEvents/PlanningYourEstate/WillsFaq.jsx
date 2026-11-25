@@ -11,7 +11,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'no-will',
-    title: 'What happens if I die without a will?',
+    title: 'What Happens If I Die Without a Will?',
     body: (
       <>
         <p>
@@ -30,7 +30,7 @@ const sections = [
   },
   {
     id: 'handwritten-will',
-    title: "Can I just make a handwritten will if I don't have much property?",
+    title: "Can I Just Make a Handwritten Will If I Don't Have Much Property?",
     body: (
       <>
         <p>
@@ -50,7 +50,7 @@ const sections = [
   },
   {
     id: 'filing',
-    title: 'Do I need to file my will with a court or in public records somewhere?',
+    title: 'Do I Need to File My Will with a Court or in Public Records Somewhere?',
     body: (
       <p>
         No. A will doesn't need to be recorded or filed with any government agency. Just keep your will in a safe,
@@ -60,7 +60,7 @@ const sections = [
   },
   {
     id: 'guardian',
-    title: 'Can I use my will to name somebody to care for my young children in case my spouse and I both die suddenly?',
+    title: 'Can I Use My Will to Name Somebody to Care for My Young Children in Case My Spouse and I Both Die Suddenly?',
     body: (
       <>
         <p>
@@ -81,7 +81,7 @@ const sections = [
   },
   {
     id: 'when-i-die',
-    title: 'What happens to my will when I die?',
+    title: 'What Happens to My Will When I Die?',
     body: (
       <p>
         After you die, your executor (the person you appointed in your will) is responsible for seeing that your wishes
@@ -92,7 +92,7 @@ const sections = [
   },
   {
     id: 'challenges',
-    title: 'What if someone challenges my will after I die?',
+    title: 'What If Someone Challenges My Will After I Die?',
     body: (
       <>
         <p>
@@ -113,7 +113,7 @@ const sections = [
   },
   {
     id: 'final-arrangements',
-    title: 'What instructions should I give my survivors about funeral ceremonies and the disposition of my body?',
+    title: 'What Instructions Should I Give My Survivors About Funeral Ceremonies and the Disposition of My Body?',
     body: (
       <>
         <p>

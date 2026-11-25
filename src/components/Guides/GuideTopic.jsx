@@ -38,7 +38,7 @@ export default function GuideTopic({ category: categoryId, title, groups, childr
           <div className="cat-aside reveal">
             <p className="eyebrow">{title}</p>
             <h2>
-              Guides for <em>this topic</em>
+              Guides for <em>This Topic</em>
             </h2>
             <p>Practical, unbiased information to help you reach your financial goals.</p>
             <Link className="link-arrow" to="/contact">
@@ -52,7 +52,7 @@ export default function GuideTopic({ category: categoryId, title, groups, childr
       {others.length > 0 && (
         <section className="section">
           <div className="container">
-            <SectionHead eyebrow={category.title} title={<>More <em>topics</em></>}>
+            <SectionHead eyebrow={category.title} title={<>More <em>Topics</em></>}>
               {category.text}
             </SectionHead>
             <GuideGroups groups={[{ items: others }]} wide />
@@ -68,7 +68,7 @@ export default function GuideTopic({ category: categoryId, title, groups, childr
 
       <CtaSection
         soft
-        title={<>Want advice for <em>your situation?</em></>}
+        title={<>Want Advice for <em>Your Situation?</em></>}
         text="These guides are a good place to start. Our team can help you apply them to your own taxes and finances, in English or Spanish."
       />
     </>

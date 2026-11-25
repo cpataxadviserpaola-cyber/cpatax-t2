@@ -16,7 +16,7 @@ import GuideArticle, { Callout } from '../GuideArticle.jsx';
 const sections = [
   {
     id: 'how-stocks-are-traded',
-    title: 'How are Stocks Traded?',
+    title: 'How Are Stocks Traded?',
     body: (
       <>
         <p>
@@ -40,7 +40,7 @@ const sections = [
   },
   {
     id: 'exchange-vs-otc',
-    title: 'What are the Differences between Stock Exchange Trades and Over-the-Counter Trades?',
+    title: 'What Are the Differences Between Stock Exchange Trades and Over-the-Counter Trades?',
     body: (
       <>
         <p>
@@ -103,7 +103,7 @@ const sections = [
   },
   {
     id: 'how-securities-are-held',
-    title: 'How are Securities Held?',
+    title: 'How Are Securities Held?',
     body: (
       <>
         <p>
@@ -123,7 +123,7 @@ const sections = [
   },
   {
     id: 'preferred-vs-common',
-    title: 'What are the Differences between Preferred Stock and Common Stock?',
+    title: 'What Are the Differences Between Preferred Stock and Common Stock?',
     body: (
       <p>
         Stocks may be designated as common stock, which is the most widely known form, or as preferred stock. Preferred
@@ -137,7 +137,7 @@ const sections = [
   },
   {
     id: 'restricted-securities',
-    title: 'What are Restricted Securities?',
+    title: 'What Are Restricted Securities?',
     body: (
       <p>
         Some stocks are designated as "restricted" or "unregistered" because they were originally issued in a private sale
@@ -169,7 +169,7 @@ const sections = [
   },
   {
     id: 'drips',
-    title: 'What are Dividend Reinvestment Plans (DRIPs)?',
+    title: 'What Are Dividend Reinvestment Plans (DRIPs)?',
     body: (
       <>
         <p>

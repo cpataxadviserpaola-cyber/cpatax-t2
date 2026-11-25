@@ -7,14 +7,14 @@ const businessGuides = guide('business-strategies.php', 12);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [122, 'Raising Capital: How To Get Money For a Small Business'],
-      [123, 'Show Me The Money! Strategies For Securing a Loan'],
+      [122, 'Raising Capital: How to Get Money for a Small Business'],
+      [123, 'Show Me the Money! Strategies for Securing a Loan'],
     ].map(businessGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [
       ['aut01', 'Should I lease or purchase an auto?'],
       ['bus07', 'What are my business financial ratios?'],

@@ -7,22 +7,22 @@ const lifeEvents = guide('life-events.php', 1);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
       [1, 'Getting Married (or Divorced): Some Financial Guidelines'],
-      [47, 'Life Insurance: How Much and What Kind To Buy'],
-      [93, 'Survivor Benefits: A Guide To This Often Overlooked Insurance Add-On'],
+      [47, 'Life Insurance: How Much and What Kind to Buy'],
+      [93, 'Survivor Benefits: A Guide to This Often Overlooked Insurance Add-On'],
     ].map(lifeEvents),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [
       [154, 'Getting Married: Frequently Asked Questions'],
       [151, 'Life Insurance: Frequently Asked Questions'],
     ].map(lifeEvents),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [['bud02', 'How Much Am I Spending?']].map(calculator),
   },
 ];

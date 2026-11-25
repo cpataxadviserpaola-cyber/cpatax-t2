@@ -7,15 +7,15 @@ const businessGuides = guide('business-strategies.php', 13);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
-      [124, 'Your Business Succession: How To Plan For It'],
-      [125, 'Successfully Pass On Your Family Business To Next Generation'],
-      [126, 'Maximize Your Wealth With a Winning Exit Plan'],
+      [124, 'Your Business Succession: How to Plan for It'],
+      [125, 'Successfully Pass On Your Family Business to Next Generation'],
+      [126, 'Maximize Your Wealth with a Winning Exit Plan'],
     ].map(businessGuides),
   },
   {
-    label: 'Financial calculators',
+    label: 'Financial Calculators',
     items: [['bus04', 'What is the value of my business?']].map(calculator),
   },
 ];

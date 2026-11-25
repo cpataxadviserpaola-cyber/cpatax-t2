@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'pricing-position',
-    title: 'Understand your market and position',
+    title: 'Understand Your Market and Position',
     body: (
       <p>
         Pricing should reflect customer demand, your costs, distribution, and competitors. A suggested retail price
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     id: 'pricing-strategies',
-    title: 'Pricing strategies',
+    title: 'Pricing Strategies',
     body: (
       <>
         <p>
@@ -29,7 +29,7 @@ const sections = [
   },
   {
     id: 'costs',
-    title: 'Account for all costs',
+    title: 'Account for All Costs',
     body: (
       <ul>
         <li>
@@ -47,7 +47,7 @@ const sections = [
   },
   {
     id: 'service-pricing',
-    title: 'Pricing services and reviewing results',
+    title: 'Pricing Services and Reviewing Results',
     body: (
       <p>
         Service businesses should account for time that cannot be billed, slow periods, and costs such as travel.

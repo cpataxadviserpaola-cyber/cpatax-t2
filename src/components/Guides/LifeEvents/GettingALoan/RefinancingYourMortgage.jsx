@@ -49,7 +49,7 @@ const savingsColumns = (rate) => [
 const sections = [
   {
     id: 'who-can-benefit',
-    title: 'Who Can Benefit From Refinancing?',
+    title: 'Who Can Benefit from Refinancing?',
     body: (
       <>
         <p>
@@ -345,11 +345,11 @@ const sections = [
           this statement carefully before you sign the loan. The disclosure tells you the APR, finance charge, amount
           financed, payment schedule, and other important credit terms.
         </p>
-        <RelatedGuide guide={related([53, 'Mortgage Lock-ins: Questions To Ask'])}>
+        <RelatedGuide guide={related([53, 'Mortgage Lock-Ins: Questions to Ask'])}>
           Please see the Financial Guide:
         </RelatedGuide>
 
-        <h3>4. Be Aware Of Your Right to Rescind</h3>
+        <h3>4. Be Aware of Your Right to Rescind</h3>
         <p>
           If you refinance with a different lender, or if you borrow beyond your unpaid balance with your current
           lender, you also must be given the right to rescind the loan. In these loans, you have the right to rescind

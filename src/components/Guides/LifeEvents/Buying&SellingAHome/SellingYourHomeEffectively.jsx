@@ -9,7 +9,7 @@ import GuideArticle, { Callout } from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'finding-a-good-real-estate-agent',
-    title: 'Finding A Good Real Estate Agent',
+    title: 'Finding a Good Real Estate Agent',
     body: (
       <>
         <p>
@@ -70,7 +70,7 @@ const sections = [
   },
   {
     id: 'reviewing-the-listing-agreement',
-    title: 'Reviewing The Listing Agreement',
+    title: 'Reviewing the Listing Agreement',
     body: (
       <>
         <p>
@@ -98,7 +98,7 @@ const sections = [
   },
   {
     id: 'speeding-up-the-selling-process',
-    title: 'Speeding Up The Selling Process',
+    title: 'Speeding Up the Selling Process',
     body: (
       <>
         <p>
@@ -205,7 +205,7 @@ const sections = [
           Once you have signed the contracts, it is time to start planning the move. The closing date, which is generally
           your moving date, will fall about two months after the contracts are signed.
         </p>
-        <h2>Hiring A Moving Company</h2>
+        <h2>Hiring a Moving Company</h2>
         <p>
           One thing you should do immediately after the contracts are signed even though your moving date may be months
           away is to begin calling moving companies. Try to get recommendations from friends or colleagues. Call a number
@@ -223,7 +223,7 @@ const sections = [
   },
   {
     id: 'getting-ready-for-the-move',
-    title: 'Getting Ready For the Move',
+    title: 'Getting Ready for the Move',
     body: (
       <>
         <p>Right after you have scheduled your move, start taking care of the following items:</p>
@@ -285,7 +285,7 @@ const sections = [
   },
   {
     id: 'notifying-people-of-your-move',
-    title: 'Notifying People Of Your Move',
+    title: 'Notifying People of Your Move',
     body: (
       <>
         <p>
@@ -318,7 +318,7 @@ const sections = [
   },
   {
     id: 'figuring-the-tax',
-    title: 'Figuring The Tax',
+    title: 'Figuring the Tax',
     body: (
       <>
         <p>
@@ -391,7 +391,7 @@ const sections = [
   },
   {
     id: 'improvements-that-help-the-most',
-    title: 'Improvements That Help The Most',
+    title: 'Improvements That Help the Most',
     body: (
       <>
         <p>
@@ -427,7 +427,7 @@ export default function SellingYourHomeEffectively() {
     <GuideArticle
       category="life-events"
       topic="/guides/life-events/buying-and-selling-a-home"
-      title="Selling Your Home: How To Do It Effectively"
+      title="Selling Your Home: How to Do It Effectively"
       sections={sections}
     >
       This Financial Guide gives you suggestions that can increase the sales price and reduce the frustrations involved

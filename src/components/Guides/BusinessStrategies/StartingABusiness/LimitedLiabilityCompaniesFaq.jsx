@@ -3,7 +3,7 @@ import GuideArticle from '../../GuideArticle.jsx';
 const sections = [
   {
     id: 'who-should-form',
-    title: 'Who should form an LLC?',
+    title: 'Who Should Form an LLC?',
     body: (
       <p>
         An LLC may be worth considering when owners want liability protection for many business debts and claims.
@@ -15,7 +15,7 @@ const sections = [
   },
   {
     id: 'llc-or-s-corporation',
-    title: 'Should I choose an LLC or an S corporation?',
+    title: 'Should I Choose an LLC or an S Corporation?',
     body: (
       <p>
         An S corporation may provide pass-through federal tax treatment, while an LLC can offer more flexibility in
@@ -27,7 +27,7 @@ const sections = [
   },
   {
     id: 'operating-agreement',
-    title: 'What is an LLC operating agreement?',
+    title: 'What Is an LLC Operating Agreement?',
     body: (
       <p>
         An operating agreement documents how the LLC and its members will work together. It can set out ownership
@@ -38,7 +38,7 @@ const sections = [
   },
   {
     id: 'need-agreement',
-    title: 'Do I need an operating agreement?',
+    title: 'Do I Need an Operating Agreement?',
     body: (
       <p>
         Even where state law does not require a written agreement, one can help establish clear rules for finances,
@@ -50,7 +50,7 @@ const sections = [
   },
   {
     id: 'meetings',
-    title: 'Must I hold LLC meetings?',
+    title: 'Must I Hold LLC Meetings?',
     body: (
       <p>
         Meeting requirements depend on state law and the LLC’s governing documents. The source FAQ notes that many
@@ -61,7 +61,7 @@ const sections = [
   },
   {
     id: 'exceptions-to-liability',
-    title: 'What are the exceptions to limited liability?',
+    title: 'What Are the Exceptions to Limited Liability?',
     body: (
       <>
         <p>

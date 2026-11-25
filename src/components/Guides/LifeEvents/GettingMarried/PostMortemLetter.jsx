@@ -47,7 +47,7 @@ const sections = [
   },
   {
     id: 'getting-it-to-executors',
-    title: 'How To Get the Postmortem Letter to Your Executors',
+    title: 'How to Get the Postmortem Letter to Your Executors',
     body: (
       <>
         <p>
@@ -75,7 +75,7 @@ const sections = [
   },
   {
     id: 'contents',
-    title: 'What The Postmortem Letter Should Contain',
+    title: 'What the Postmortem Letter Should Contain',
     body: (
       <>
         <p>The following items should be included in the postmortem letter.</p>
@@ -116,7 +116,7 @@ const sections = [
           to the burial plot should be mentioned. The letter should mention any instructions for the executor
           relating to burial.
         </p>
-        <RelatedGuide guide={related([82, 'Funerals: What To Do At This Stressful Time'])}>
+        <RelatedGuide guide={related([82, 'Funerals: What to Do at This Stressful Time'])}>
           Please see the Financial Guide:
         </RelatedGuide>
         <Callout label="Tip">
@@ -297,7 +297,7 @@ export default function PostMortemLetter() {
       page="Post-Mortem Letter"
       title={
         <>
-          Post-Mortem Letter: <em>How To Prepare It and What To Include</em>
+          Post-Mortem Letter: <em>How to Prepare It and What to Include</em>
         </>
       }
       lead="The postmortem letter, a simple and practical estate planning tool you can put together yourself, can protect your estate, maximize the amount available to heirs and save your spouse and executors a lot of trouble. This important letter tells your executor and survivors where to locate everything they need to carry out your instructions."
@@ -310,7 +310,7 @@ export default function PostMortemLetter() {
         heirs this information, it will cause many headaches. Worse than that, part of your estate may have to
         be spent on needless taxes, claims, or expenses because the information is missing.
       </p>
-      <RelatedGuide guide={related([73, 'Estate Planning: How To Get Started'])}>
+      <RelatedGuide guide={related([73, 'Estate Planning: How to Get Started'])}>
         Please see the Financial Guide:
       </RelatedGuide>
       <p>

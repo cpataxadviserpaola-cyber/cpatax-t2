@@ -8,15 +8,15 @@ const lifeEvents = guide('life-events.php', 23);
 
 const groups = [
   {
-    label: 'Financial guides',
+    label: 'Financial Guides',
     items: [
       [81, 'Death of a Spouse: Financial Steps You Should Take'],
-      [82, 'Funerals: What To Do At This Stressful Time'],
+      [82, 'Funerals: What to Do at This Stressful Time'],
       [74, 'Postmortem Letter: How To Prepare It and What To Include'],
     ].map(lifeEvents),
   },
   {
-    label: 'Frequently asked questions',
+    label: 'Frequently Asked Questions',
     items: [[156, 'Death of a Loved One: Frequently Asked Questions']].map(lifeEvents),
   },
 ];

@@ -10,7 +10,7 @@ export default function Team() {
         eyebrow="The people behind your numbers"
         title={<>Meet the People on <em>Your Side</em></>}
       >
-        Get to know the people who will work on your taxes and books before you come to see us.
+        Get to know the people who will work on your taxes and books.
       </PageHero>
       <TeamSection soft />
     </>

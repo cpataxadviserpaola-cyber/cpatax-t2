@@ -16,7 +16,7 @@ const categoryIntro = {
   },
   individual: {
     eyebrow: 'For individuals',
-    text: 'Personal tax returns, projections, and withholding reviews for professionals, executives, pre-retirees, and High-Net-Worth Individuals.',
+    text: 'Personal tax returns, projections, and withholding reviews for professionals, executives, pre-retirees, and high net worth individuals.',
   },
   international: {
     eyebrow: 'For international clients',

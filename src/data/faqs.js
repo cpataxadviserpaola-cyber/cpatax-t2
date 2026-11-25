@@ -10,7 +10,7 @@ export const faqs = [
   },
   {
     question: 'How much do your services cost?',
-    answer: 'The cost depends mainly on how organized your financial information is and how complex your tax situation is. The more organized your documents, the less time preparation takes, which saves you money. For small businesses we offer tailored accounting and tax bundles. Your initial consultation is free, and you can find our current pricing guide on our Tax Season page.',
+    answer: 'The cost depends mainly on how organized your financial information is and how complex your tax situation is. The more organized your documents, the less time preparation takes, which saves you money. For small businesses we offer tailored accounting and tax bundles. You can find our current pricing guide on our Tax Season page.',
   },
   {
     question: 'Do you offer services in Spanish?',
@@ -26,6 +26,6 @@ export const faqs = [
   },
   {
     question: 'Do you help clients with international tax matters?',
-    answer: 'Yes. We help nonresidents, expatriates, international students, and foreign investors with Form 1040-NR, FBAR and FATCA reporting, tax treaty benefits, and Form 8843.',
+    answer: 'Yes. We help nonresidents, expatriates, international students, and foreign investors with Form 1040-NR, FBAR and FATCA reporting, tax treaty benefits, U.S. citizens with international ties and Form 8843.',
   },
 ];

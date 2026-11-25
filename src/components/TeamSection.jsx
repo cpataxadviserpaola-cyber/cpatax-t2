@@ -41,7 +41,7 @@ export default function TeamSection({ id, soft = false, showAboutLink = false })
       <div className="container">
         <div className="section-head-row">
           <SectionHead eyebrow="Meet our team" title={<>The People Behind <em>Your Numbers</em></>}>
-            Get to know the people who will work on your taxes and books before you come to see us.
+            Get to know the people who will work on your taxes and books.
           </SectionHead>
           {showAboutLink && (
             <Link className="btn btn-outline" to="/about">

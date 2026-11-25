@@ -92,11 +92,6 @@ export const allServices = [
             title: 'Tax Strategy Service',
             text: 'A well-defined tax strategy helps small businesses make informed financial decisions and manage their tax liability. Our tax strategy services focus on applying practical tax planning strategies that support business financial goals and help businesses prepare for future tax obligations.',
           },
-          {
-            icon: 'ledger',
-            title: 'Profit and Loss Statements',
-            text: 'We provide profit and loss statements to help businesses maintain a clear view of their financial performance. These statements can support tax preparation and provide useful financial information for business management.',
-          },
         ],
       },
       {
@@ -284,7 +279,7 @@ export const allServices = [
             text: 'Based on our review, we develop tax planning strategies that can help manage and potentially reduce your tax liability.',
           },
           {
-            title: 'Review Withholding and Tax Deferral Options',
+            title: 'Review Your Withholding and Tax Deferral from Your Business',
             text: 'We review your paycheck withholding and help you understand available tax deferral options, including retirement contributions and pension plans.',
           },
           {
@@ -409,7 +404,7 @@ export const allServices = [
           {
             icon: 'file',
             title: 'Financial Statements',
-            text: 'Provide applicable monthly, quarterly, and annual financial statements.',
+            text: 'Provide monthly, quarterly, or annual financial statements upon client request, in accordance with applicable reporting guidelines.',
           },
           {
             icon: 'ledger',
@@ -1039,7 +1034,7 @@ export const allServices = [
     tagline: 'Know where you stand before year-end',
     headline: 'Plan Ahead and Keep More of Your Hard-Earned Money',
     summary:
-      'Tax projections and personalized strategies for professionals, executives, pre-retirees, and High-Net-Worth Individuals, so there are no surprises at tax time.',
+      'Tax projections and personalized strategies for professionals, executives, pre-retirees, and high net worth individuals, so there are no surprises at tax time.',
     description:
       "Planning is the key to successfully and legally reducing your tax liability. A tax projection shows where you stand while there is still time to act, and our strategies help you act on it.",
     included: [

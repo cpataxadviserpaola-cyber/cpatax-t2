@@ -131,7 +131,7 @@ function ServicePage({ service }) {
         soft
         to={contactLink}
         title={<>Ready to <em>Get Started?</em></>}
-        text="Book a free, no-obligation consultation and find out how we can help."
+        text="Book a no-obligation consultation and find out how we can help."
       />
     </>
   );

@@ -48,7 +48,7 @@ const sections = [
           },
           {
             title: 'Financial Statements',
-            text: 'Provide applicable monthly, quarterly, and annual financial statements.',
+            text: 'Provide monthly, quarterly, or annual financial statements upon client request, in accordance with applicable reporting guidelines.',
           },
           {
             title: 'Profit & Loss & Balance Sheets',

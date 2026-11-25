@@ -25,7 +25,7 @@ export default function OpportunityFinder() {
             Where Could You <em>Be Saving?</em>
           </h2>
           <p className="lead">
-            Choose what applies to you and see what our CPAs would recommend first.
+            Choose what applies to you and see what our CPA would recommend first.
           </p>
 
           <div className="finder-chips" role="group" aria-label="Your situation">

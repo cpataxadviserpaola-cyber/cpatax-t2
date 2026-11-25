@@ -73,6 +73,7 @@ Content lives in data files, so each change updates every page that uses it:
 - **`src/data/site.js`**: firm details (phone, fax, email, address, slogan, mission), the current client announcement, links to the client portal, payments, scheduling, and social profiles, and the key facts shown on the Home and About pages.
 - **`src/data/services.js`**: everything about each service, including its group, menu tagline, page headline, overview, "What's included" list, highlights, process steps, FAQs, notices, and related services, plus the industries list. Adding an entry here creates a new service page and menu item automatically.
 - **`src/data/team.js`**: team members, roles, bios, and photos (portrait files go in `public/team/`).
+- **`src/data/clientStates.js`**: the states pinned on the Home page map, where most clients are (two-letter codes), and the home state the map's lines run from. `src/data/usMap.js` holds the map's dots for every state, so adding a state needs only its code here.
 - **`src/data/pricing.js`**: pricing tiers shown in the Client Center. Update it together with the PDF in `public/files/`.
 - **`src/data/deadlines.js`**: the tax deadlines counted down in the top bar. Past dates drop off on their own; add the next year's dates before the list runs out.
 - **`src/data/seo.js`**: each page's search title, meta description, keywords, and what shared links show (Open Graph and X), by page address. Canonical URLs are built from `siteUrl` there. `npm run build` writes these into every page's HTML so search engines and link previews see them.

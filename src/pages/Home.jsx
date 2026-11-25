@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import Icon from '../components/Icon.jsx';
 import HomeHero from '../components/HomeHero.jsx';
+import ClientMap from '../components/ClientMap.jsx';
 import ServicesDirectory from '../components/ServicesDirectory.jsx';
 import WhyUs from '../components/WhyUs.jsx';
 import OpportunityFinder from '../components/OpportunityFinder.jsx';
@@ -86,6 +87,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ClientMap />
 
       <ServicesDirectory />
 

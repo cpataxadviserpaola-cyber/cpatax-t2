@@ -181,8 +181,10 @@ function Pricing() {
         <div className={`tiers tiers-${table.rows.length}`} key={table.id}>
           {table.rows.map((row) => (
             <article className={`tier${row.featured ? ' is-featured surface-dark' : ''}`} key={row.level}>
-              {row.featured && <span className="tier-tag">Most clients</span>}
-              <h3 className="tier-level">{row.level}</h3>
+              <div className="tier-head">
+                <h3 className="tier-level">{row.level}</h3>
+                {row.featured && <span className="tier-tag">Most clients</span>}
+              </div>
               <p className="tier-price">{row.price}</p>
               <p className="tier-caption">{table.columns[2]}</p>
               <p className="tier-detail">

@@ -484,9 +484,11 @@ button, input, select, textarea { font-family: inherit; }
   -webkit-backdrop-filter: saturate(160%) blur(18px);
   backdrop-filter: saturate(160%) blur(18px);
 }
+/* Over the open full-screen menu the bar is solid, so the menu's links scroll out of sight
+   under it instead of showing through behind the logo and the close button. */
 .site-header.is-menu-open::before {
   border-bottom-color: rgb(255 255 255 / 8%);
-  background: transparent;
+  background: var(--wine-950);
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
@@ -682,6 +684,8 @@ button, input, select, textarea { font-family: inherit; }
     /* Clears the header above the menu. */
     padding: calc(var(--header-h) + 1.5rem) max(1.25rem, (100vw - var(--container)) / 2) 2.5rem;
     overflow-y: auto;
+    /* Scrolling past the end of the menu doesn't scroll the page behind it. */
+    overscroll-behavior: contain;
     background:
       var(--grain),
       radial-gradient(700px 500px at 100% 0%, rgb(179 31 59 / 24%), transparent 60%),
@@ -738,6 +742,15 @@ button, input, select, textarea { font-family: inherit; }
 }
 @media (max-width: 600px) {
   .nav-cta { justify-self: stretch; }
+  /* Phones: smaller items and less space around them, so the whole menu and the
+     consultation button below it fit on the screen of most phones without scrolling. */
+  .nav { padding-top: calc(var(--header-h) + .75rem); }
+  .is-scrolled .nav { padding-top: calc(var(--header-h-scrolled) + .75rem); }
+  .nav-link { padding: .7rem 0; font-size: 1.6rem; }
+  .nav .nav-foot { gap: 1rem; margin-top: 1.5rem; }
+  .nav-extra { gap: .5rem; }
+  .site-header .nav-extra a { padding: .55rem .9rem; font-size: .85rem; }
+  .nav-cta { padding-inline: 1.25rem; }
 }
 @keyframes menu-in { from { opacity: 0; transform: translateY(18px); } }
 
@@ -884,7 +897,20 @@ button, input, select, textarea { font-family: inherit; }
 
 @media (max-width: 1200px) {
   .has-menu .nav-link { flex: 1; }
-  .nav-caret { width: 44px; height: 44px; color: var(--on-dark); }
+  /* The arrow that opens a section sits in an outlined circle, so it reads as a button of its
+     own beside the section's name (which goes to the section's page). */
+  .nav-caret {
+    width: 44px;
+    height: 44px;
+    margin-right: 0;
+    border: 1px solid rgb(255 255 255 / 18%);
+    color: var(--on-dark-strong);
+    transition: border-color .25s ease, background-color .25s ease;
+  }
+  .nav-caret .icon { width: 18px; height: 18px; }
+  .nav-caret:hover,
+  .has-menu.is-open .nav-caret { border-color: var(--gold-500); color: var(--gold-300); }
+  .has-menu.is-open .nav-caret { background: rgb(223 190 134 / 10%); }
   .mega {
     display: none;
     margin: 0 0 1rem;
@@ -1161,6 +1187,103 @@ button, input, select, textarea { font-family: inherit; }
 @media (max-width: 560px) {
   .welcome-creds { flex-direction: column; align-items: flex-start; gap: .3rem; }
   .welcome-creds span + span::before { display: none; }
+}
+
+/* ---------- Home: client map, the states most clients are in (ClientMap.jsx) ---------- */
+.client-map {
+  overflow: hidden;
+  background:
+    var(--grain),
+    radial-gradient(680px 440px at 75% 45%, rgb(223 190 134 / 11%), transparent 65%),
+    radial-gradient(780px 520px at 0% 0%, rgb(179 31 59 / 22%), transparent 60%),
+    var(--wine-950);
+}
+.client-map-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 8fr);
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4rem);
+}
+.client-map .section-head { margin-bottom: 1.75rem; }
+.client-states {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.client-state {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .42rem .85rem .42rem .65rem;
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 4%);
+  font-size: .86rem;
+  font-weight: 600;
+  color: var(--on-dark-strong);
+  transition: border-color .25s ease, background-color .25s ease;
+}
+.client-state .icon { width: 15px; height: 15px; color: var(--gold-500); }
+.client-state.is-active { border-color: rgb(223 190 134 / 60%); background: rgb(223 190 134 / 12%); }
+.client-map-figure { margin: 0; }
+.client-map-figure svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+/* The map: each state a field of round dots (zero-length dashes with round ends), the client
+   states in gold. */
+.map-dots path { fill: none; stroke-width: 3.4; stroke-linecap: round; }
+.map-dots-other { stroke: rgb(242 233 234 / 13%); }
+.map-dots-client { stroke: rgb(223 190 134 / 85%); transition: stroke .3s ease; }
+.map-dots-client.is-active { stroke: var(--gold-300); }
+/* Lines from the home state; `pathLength` makes each one 1 long, so it can draw itself in. */
+.map-arc { fill: none; stroke: rgb(223 190 134 / 45%); stroke-width: 1.3; stroke-dasharray: 1; }
+/* Pins glow, grow from their point when their state is pointed at, and the home state's is
+   larger and lighter. */
+.map-pin { --pin-scale: 1.15; --pin-boost: 1; --pin-size: 1; }
+.map-pin.is-home { --pin-scale: 1.45; }
+.map-pin.is-active { --pin-boost: 1.25; }
+.map-pin-mark {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  scale: calc(var(--pin-scale) * var(--pin-boost) * var(--pin-size));
+  filter: drop-shadow(0 0 5px rgb(223 190 134 / 55%));
+  transition: scale .3s var(--ease);
+}
+.map-pin-mark path { fill: var(--gold-500); }
+.map-pin.is-home .map-pin-mark path { fill: var(--gold-300); }
+.map-pin-mark circle { fill: var(--wine-950); }
+.map-pin-pulse {
+  fill: rgb(223 190 134 / 20%);
+  stroke: rgb(223 190 134 / 50%);
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* Once the map scrolls into view the lines draw out from the home state and the pins drop
+     in, one after another; each pin's ring keeps pulsing. */
+  .client-map-figure.is-visible .map-arc { animation: arc-draw 1.4s var(--ease) calc(.5s + var(--i) * 80ms) backwards; }
+  .client-map-figure.is-visible .map-pin-mark { animation: pin-drop .7s cubic-bezier(.3, 1.5, .5, 1) calc(.3s + var(--i) * 80ms) backwards; }
+  .map-pin-pulse { animation: pin-pulse 2.8s ease-out infinite; animation-delay: calc(var(--i) * -.35s); }
+}
+@keyframes arc-draw { from { stroke-dashoffset: 1; } }
+@keyframes pin-drop { from { opacity: 0; translate: 0 -18px; } }
+@keyframes pin-pulse {
+  from { scale: .5; opacity: 1; }
+  to { scale: 2.2; opacity: 0; }
+}
+/* Narrow screens: heading, then the map, then the names; pins a little larger. */
+@media (max-width: 900px) {
+  .client-map-grid { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+  .client-map-copy { display: contents; }
+  .client-map .section-head { margin-bottom: 0; }
+  .client-map-figure { order: 1; }
+  .client-states { order: 2; }
+}
+@media (max-width: 640px) {
+  .map-pin { --pin-size: 1.4; }
 }
 
 /* ---------- Home: services directory, a grid of compact tiles ---------- */
@@ -3327,10 +3450,18 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
     var(--wine-900);
   box-shadow: var(--shadow-lg);
 }
+/* The level and, on the featured tier, its tag side by side: the level wraps beside the tag
+   however narrow the card is, so the two never overlap. */
+.tier-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .75rem;
+  margin: 0 0 1.75rem;
+}
 .tier-tag {
-  position: absolute;
-  top: 1.35rem;
-  right: 1.35rem;
+  flex-shrink: 0;
+  margin-top: -.1rem;
   padding: .22rem .65rem;
   border-radius: 999px;
   background: var(--gold-500);
@@ -3341,8 +3472,7 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
   color: var(--wine-950);
 }
 .tier .tier-level {
-  margin: 0 0 1.75rem;
-  padding-right: 5.5rem;
+  margin: 0;
   font-family: var(--font-sans);
   font-size: .76rem;
   font-weight: 700;
@@ -3351,7 +3481,6 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
   text-transform: uppercase;
   color: var(--gold-700);
 }
-.tier:not(.is-featured) .tier-level { padding-right: 0; }
 .tier.is-featured .tier-level { color: var(--gold-300); }
 .tier-price {
   margin: 0;
@@ -3407,7 +3536,7 @@ body:has(.bio-dialog[open]) { overflow: hidden; }
 .pricing-page .pricing-tabs { margin-bottom: 1.5rem; }
 .pricing-page .tiers { gap: .75rem; }
 .pricing-page .tier { padding: 1.35rem 1.25rem; border-radius: 22px; }
-.pricing-page .tier .tier-level { margin-bottom: 1rem; }
+.pricing-page .tier-head { margin-bottom: 1rem; }
 .pricing-page .tier-caption { margin-bottom: 1rem; }
 .pricing-page .tier-detail { padding-top: .9rem; }
 .pricing-page .pricing-note { margin-top: 1rem; }
